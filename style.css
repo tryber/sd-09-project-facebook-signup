@@ -80,3 +80,12 @@ body {
 .radio-container label {
   margin-right: 5px;
 }
+
+.radio-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-form-container label {
+  align-self: flex-start;
+}
