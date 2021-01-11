@@ -6,14 +6,24 @@
 .top-bar {
     display: flex;
     background-color: rgb(66, 103, 178);
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .form-header {
     display: flex;
-    justify-content: flex-end;
     color: white;
     align-items: center;
+    height: 10vh;
+}
+
+.email-phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
@@ -23,20 +33,31 @@
 
 .form-control {
     display: flex;
-    align-self: flex-end
+    align-self: flex-end;
 }
 
 .main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    height: 90vh;
 }
 
 .left-content {
     width: 800px;
 }
 
+.left-content p {
+    font-size: 1.5rem;
+    color: rgb(66, 103, 178);
+    width: 500px;
+    
+}
+
 .right-content {
     width: 300px;
-    justify-content: space-around;
+}
+
+.div1 {
+    display: flex;
 }
 
