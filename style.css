@@ -22,3 +22,7 @@
   color: rgba(219, 219, 219, 0.822);
   margin: 0;
 }
+
+.form-control {
+    align-self: flex-end;
+}
