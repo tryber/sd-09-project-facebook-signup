@@ -42,3 +42,7 @@ body {
 .full-name {
   display: flex;
 }
+
+.genders {
+  display: flex;
+}
