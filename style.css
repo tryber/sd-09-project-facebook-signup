@@ -30,6 +30,10 @@ body {
   justify-content: center;
 }
 
+.radio-container {
+  display: flex;
+}
+
 .right-content {
   width: 300px;
 }
