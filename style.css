@@ -5,10 +5,15 @@
 }
 
 .header {
-  background-color: rgb(66, 103, 178)
+    display: flex;
+    background-color: rgb(66, 103, 178)
 }
 
 .facebook-logo {
   display: flex;
   justify-content: flex-start;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
