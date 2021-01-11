@@ -70,7 +70,3 @@ body {
 .form-container > div:nth-child( 1 ) {
   display: flex;
 }
-
-#label-birthdate {
-  color: red;
-}
