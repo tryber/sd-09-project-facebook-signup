@@ -25,12 +25,12 @@ body {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .user-email-phone-label , .user-password-label {
   color: white;
-  margin: 5% 0 0 0;
+  margin: 5% 0 0;
 }
 
 .user-password , .user-email-phone {
