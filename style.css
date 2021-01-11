@@ -37,10 +37,14 @@ body {
 .main-content {
   background-color: pink;
   display: flex;
-  flex-direction: row;
   height: 95vh;
+  justify-content: space-around;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
