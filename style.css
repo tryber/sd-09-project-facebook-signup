@@ -37,7 +37,7 @@ header {
   width: 130px;
 }
 
-.top-bar .form-group label{
+.top-bar .form-group label {
   color: white;
   font-size: 12px;
 }
@@ -79,7 +79,7 @@ header {
   width: 300px;
 }
 
-.left-content{
+.left-content {
   align-self: flex-start;
   width: 800px;
 }
