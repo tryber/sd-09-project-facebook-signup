@@ -22,13 +22,13 @@
   justify-content: space-between;
 }
 
-.form-subscribe-name {
+.form-subscribe-half-line {
   margin: 4px 2px;
   padding: 1px;
   width: 46%;
 }
 
-.form-subscribe-phone {
+.form-subscrib-full-line {
   margin: 4px 2px;
   padding: 1px;
   width: 100%;
