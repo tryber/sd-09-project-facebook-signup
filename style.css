@@ -17,6 +17,10 @@ body {
   flex-direction: column;
 }
 
+.row {
+  display: flex;
+}
+
 .left-content {
   width: 800px;
 }
@@ -25,6 +29,15 @@ body {
   display: flex;
   justify-content: center;
   margin: 1em 15px;
+}
+
+.new-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-e-sobrenome {
+  display: flex;
 }
 
 .right-content {
