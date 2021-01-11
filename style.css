@@ -18,7 +18,7 @@ body {
 
 .form-control {
   align-self: flex-end;
-  margin-bottom: 5.3%;
+  margin-bottom: 6.3%;
 }
 
 .button-login {
@@ -34,7 +34,7 @@ body {
 }
 
 .user-password , .user-email-phone {
-  margin: 0 5% 0 0;
+  margin: 3% 5% 3% 0;
 }
 
 /* Felipe */
