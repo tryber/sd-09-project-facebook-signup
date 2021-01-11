@@ -1,21 +1,21 @@
-*{
+body {
   font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 }
-.main-content{
+.main-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.left-content{
+.left-content {
   width: 800px;
 }
 
-.right-content{
-  width:300px;
+.right-content {
+  width: 300px;
 }
 
-#facebook-slogan {
+.slogan {
   color: #0e385f;
   font-size: 20px;
   font-weight: bold;
@@ -24,9 +24,9 @@
   word-spacing: -1px;
 }
 
-.right-content  > h1 {
+h1 {
   color: #141823;
-  font-family: 'Freight Sans Bold', 'lucida grande',tahoma,verdana,arial,sans-serif;
+  font-family: Freight Sans Bold, lucida grande, tahoma, verdana, arial, sans-serif;
 
 }
 
@@ -36,4 +36,8 @@ input {
   font-family: helvetica, arial, sans-serif;
   font-size: 18px;
   padding: 8px 10px;
+}
+
+form {
+	display: flex;
 }
