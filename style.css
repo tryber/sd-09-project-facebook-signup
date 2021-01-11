@@ -70,16 +70,14 @@ header {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .right-content {
-  align-self: flex-end;
   width: 300px;
 }
 
 .left-content {
-  align-self: flex-start;
   width: 800px;
 }
 
@@ -90,5 +88,5 @@ header {
 }
 
 .name-and-lastname {
-    display: flex;
+  display: flex;
 }
