@@ -8,9 +8,29 @@
 </head>
 <body>
     <header class="top-bar">
-        <img src="imgs/facebook-logo.png" alt="" class="facebook-logo">
-    
-
+        <img class="facebook-logo" src="imgs/facebook-logo.png">
+        <form class="facebook-login">
+            <section class="form-group">
+                <label id="user-email-phone-label">Email ou telefone</label>
+                <input type="text" id="user-email-phone">
+            </section>
+            <section class="form-group">
+                <label id="user-password-label">Senha</label>
+                <input type="password" id="user-password">
+            </section>
+            <section class="form-control">
+                <button id="button-login">Entrar</button>
+            </section>
+        </form>
     </header>
+    <script>
+        window.onload = function () {
+            const loginButton = document.getElementById('button-login');
+            loginButton.addEventListener('click', function () {
+                const user = document.getElementById('user-email-phone');
+                alert('User: ' + user.value);
+            });
+        }
+    </script>
 </body>
 </html>

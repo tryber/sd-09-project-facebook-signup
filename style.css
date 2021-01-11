@@ -1,8 +1,21 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
 }
-.facebook-logo{
+
+.facebook-login {
   display: flex;
-  align-items: flex-start;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+.main-content{
+  display: flex;
 }
