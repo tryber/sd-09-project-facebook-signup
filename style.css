@@ -1,5 +1,6 @@
 .facebook-login {
   display: flex;
+  align-items: flex-end;
 }
 
 .form-control {
