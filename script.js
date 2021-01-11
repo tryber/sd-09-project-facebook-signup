@@ -23,13 +23,13 @@ function validateRadios(formInputs) {
 }
 
 function genderSelected() {
-  let gender = "";
+  let gender = '';
   const genderRadioInputs = document.querySelectorAll('input[name="gender"]');
   for (let index = 0; index < genderRadioInputs.length; index += 1) {
     if (genderRadioInputs[index].checked) {
       gender = genderRadioInputs[index].value;
     }
-  } 
+  }
   return gender;
 }
 
@@ -47,7 +47,7 @@ function validateAndRegister(event) {
     const nome = document.getElementById('firstName').value;
     const sobrenome = document.getElementById('lastName').value;
     const phoneEmail = document.getElementById('phoneEmail').value;
-    const birthdate = document.getElementById('birthdate').value;    
+    const birthdate = document.getElementById('birthdate').value;
     const gender = genderSelected();
 
     const rightContent = document.querySelector('.right-content');
