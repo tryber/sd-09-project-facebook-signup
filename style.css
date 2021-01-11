@@ -16,3 +16,16 @@
 .form-control {
   align-self: flex-end;
 }
+
+.form-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
