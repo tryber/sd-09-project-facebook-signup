@@ -1,3 +1,9 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -38,4 +44,9 @@
 
 .right-content {
   width: 300px;
+}
+
+.lastname {
+  display: inline-block;
+  width: 45%;
 }
