@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    height: 80px;
+    background-color: rgb(66, 103, 178)
+}
