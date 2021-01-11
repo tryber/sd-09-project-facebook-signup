@@ -14,22 +14,15 @@
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
     <form class="facebook-login">
 
-      <div class="form-group">
-        <label id="user-email-phone-label">Email ou Telefone
-          <input type="text" name="" id="user-email-phone" value="">
-        </label>
-      </div>
-
-      <div class="form-group">
-        <div id="user-password-label">Senha
-          <input type="password" name="" id="user-password">
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Nome" aria-label="Nome">
+        </div>
+        <div class="col">
+          <input type="text" name="lastname" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
         </div>
       </div>
-
-
-      <div class="form-control">
-        <button type="submit" id="button-login">Entrar</button>
-      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
 
     </form>
   </div>
