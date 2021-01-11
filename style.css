@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.top-bar {
+    display: flex;
+    background-color: rgb(66, 103, 178);
+    width: 100%;
+    height: 100px;
+}
