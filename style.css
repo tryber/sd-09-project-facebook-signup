@@ -1,0 +1,21 @@
+header.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-around;
+}
+
+header.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-group label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+}
