@@ -1,0 +1,53 @@
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.register {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.full-name {
+  width: 47.3%;
+}
+
+.phone-and-password {
+  width: 100%;
+}
+
+.date-birth {
+  width: 100%;
+}
+
+.gender-label {
+  width: 100%;
+}

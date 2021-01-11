@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook - entre ou cadastrar-se</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <img src="imgs/facebook-logo.png" alt="facebook-logo" class="facebook-logo">
+    <form action="" class="facebook-login">
+      <div class="form-group">
+        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" id="user-email-phone" name="user" value="">
+      </div>
+      <div class="form-group">
+        <label for="user-email-phone" id="user-password-label">Senha</label>
+          <input type="password" id="user-password" name="password">
+      </div>
+      <div class="form-control">
+        <button id="button-login">Entrar</button>
+      </div>
+    </form>
+  </header>
+  <main class="main-content">
+    <div class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img src="imgs/networking.png" alt="networking " id="facebook-networking">
+    </div>
+    <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <span class="quick-easy">É rápido e fácil.</span>
+      <form action="" class="register">
+        <input type="text" name="firstname" placeholder="Nome" class="full-name">
+        <input type="text" name="lastname" placeholder="Sobrenome" class="full-name">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="phone-and-password">
+        <input type="password" name="password" placeholder="Nova senha" class="phone-and-password">
+        <label for="birthdate" id="label-birthdate" class="date-birth">Data de nascimento</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="date-birth">
+        <label for="" id="label-gender" class="gender-label">Gênero</label>
+        <input type="radio" name="gender" id="female" value="Feminino">
+        <label for="female">Feminino</label>
+        <input type="radio" name="gender" id="male" value="Masculino">
+        <label for="male">Masculino</label>
+        <input type="radio" name="gender" id="custom" value="Personalizado">
+        <label for="custom">Personalizado</label>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
