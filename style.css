@@ -31,8 +31,8 @@
 }
 
 .left-content {
-  width: 800px;
   margin-top: 30px;
+  width: 800px;
 }
 
 .right-content {
@@ -52,7 +52,7 @@
 }
 
 .name-lastname {
-	display: flex;
+  display: flex;
 }
 
 form {
