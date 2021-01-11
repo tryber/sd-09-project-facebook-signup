@@ -1,5 +1,5 @@
 body {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -10,8 +10,8 @@ body {
   display: flex;
   height: 82px;
   justify-content: space-between;
-  padding: 0 2.5%;
   max-width: 100%;
+  padding: 0 2.5%;
 }
 
 /* .facebook-logo {
