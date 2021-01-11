@@ -5,33 +5,33 @@ body {
 }
 
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   box-sizing: border-box;
   display: flex;
   height: 60px;
   justify-content: space-between;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .facebook-login {
+  align-items: center;
   color: white;
   display: flex;
-  align-items: center;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .form-group {
   color: white;
   display: flex;
   flex-direction: column;
-  margin: 0px 7px;
+  margin: 0 7px;
 }
 
 .form-control {
   align-self: flex-end;
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 
 .form-control button {
@@ -40,5 +40,4 @@ body {
   color: white;
   cursor: pointer;
   padding: 4px 8px;
-  outline: none;
 }
