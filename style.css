@@ -27,7 +27,6 @@ body {
 }
 
 .main-content {
-  background-color: aqua;
   display: flex;
   height: 600px;
   justify-content: center;
@@ -35,13 +34,11 @@ body {
 }
 
 .left-content {
-  background-color: cadetblue;
   text-align: left;
   width: 800px;
 }
 
 .right-content {
-  background-color: coral;
   width: 300px;
 }
 
@@ -64,8 +61,8 @@ body {
 }
 
 .register-child {
-  display: flex;
   align-self: center;
+  display: flex;
 }
 
 .birthdate-register {
@@ -74,6 +71,6 @@ body {
 }
 
 .gender {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
