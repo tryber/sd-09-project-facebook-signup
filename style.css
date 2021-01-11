@@ -26,9 +26,9 @@ body {
 }
 
 .left-content {
-  width: 800px;
   display: flex;
   flex-direction: column;
+  width: 800px;
 }
 
 .right-content {
