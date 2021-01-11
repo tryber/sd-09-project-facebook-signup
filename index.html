@@ -12,16 +12,14 @@
       <img src="imgs/facebook-logo.png" alt="Logo Facebook" class="facebook-logo">
       <form action="#" method="POST" class="facebook-login">
         <div class="form-group">
-          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone<br>
-            <input type="text" name="login" id="user-email-phone">
-          </label>
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label><br>
+          <input type="text" name="login" id="user-email-phone">
         </div>
         <div class="form-group">
-          <label for="user-password" id="user-password-label">Senha<br>
-            <input type="password" name="pass" id="user-password">
-          </label>
+          <label for="user-password" id="user-password-label">Senha</label><br>
+          <input type="password" name="pass" id="user-password">
         </div>
-        <div class="form-control">
+        <div class="form-group form-control">
           <button type="submit" id="button-login">Entrar</button>
         </div>
       </form>
@@ -34,21 +32,19 @@
       <section class="right-content">
         <h1>Abra uma conta</h1>
         <p>É rápido e fácil</p>
-        <form action="#" method="POST">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
-          <input type="text" name="phone-email" placeholder="Celular ou telefone">
-          <input type="password" name="password" placeholder="Nova senha">
-          <label for="label-birthdate">Data de nascimento<br>
-            <input type="text" name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa">
-          </label>
-          <label for="label-gender">Gênero<br>
-            <input type="radio" name="gender" id="" value="Feminino">Feminino
-            <input type="radio" name="gender" id="" value="Masculino">Masculino
-            <input type="radio" name="gender" id="" value="Personalizado">Personalizado
-          </label>
-        </form>
       </section>
+      <form action="#" method="POST">
+        <input type="text" name="firstname" placeholder="Nome">
+        <input type="text" name="lastname" placeholder="Sobrenome">
+        <input type="text" name="phone_email" placeholder="Celular ou telefone">
+        <input type="password" name="password" placeholder="Nova senha">
+        <label id="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <label for="label-gender">Gênero</label>
+        <input type="radio" name="gender" id="" value="Feminino">Feminino
+        <input type="radio" name="gender" id="" value="Masculino">Masculino
+        <input type="radio" name="gender-custom" id="" value="Personalizado">Personalizado
+      </form>
     </main>
   <script src="script.js"></script>
 </body>
