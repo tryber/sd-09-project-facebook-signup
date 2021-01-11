@@ -12,6 +12,11 @@ body {
 
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
