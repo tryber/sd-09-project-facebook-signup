@@ -14,8 +14,14 @@ header {
   display: flex;
   background-color: rgb(66, 103, 178);
   width: 80%;  
+  justify-content: space-between;
 }
 
 .facebook-logo {
   margin-top: 10px;
+}
+
+.facebook-login {
+  border: 1px solid red;
+  display: flex; 
 }
