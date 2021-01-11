@@ -18,6 +18,20 @@
 
 .form-subscribe {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-subscribe-name {
+  margin: 4px 2px;
+  padding: 1px;
+  width: 46%;
+}
+
+.form-subscribe-phone {
+  margin: 4px 2px;
+  padding: 1px;
+  width: 100%;
 }
 
 .left-content {
