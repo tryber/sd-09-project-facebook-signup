@@ -1,9 +1,4 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
-.top-bar{
+.top-bar {
 	align-items: center;
 	background-color: rgb(66, 103, 178);
   display: flex;
@@ -13,6 +8,8 @@
 
 .facebook-login {
 	display: flex;
+	justify-content: space-between;
+	margin-left: 100px;
 }
 
 .form-group {
@@ -21,42 +18,46 @@
   justify-content: space-around;
 }
 
-.form-control{
+.form-control {
   align-self: flex-end;
 }
 
 .main-content {
+  background-color: #f0f2f5;
 	display: flex;
   flex-direction: row;
-  justify-content: space-around;
   height: 577px;
-  background-color: #f0f2f5;
-  }
+  justify-content: space-around;
+}
 
 .left-content {
   height: 800px;
   margin-top: 30px;
 }
-.right-content{
+
+.right-content {
   width: 300px;
 }
-#label-birthdate{
-  flex-direction: row;
-  flex-wrap: nowrap;
+
+.label-birthdate {
+	flex-flow: row nowrap;
 }
-#label-gender{
-  flex-direction: row;
-  flex-wrap: nowrap;
+
+.label-gender {
+	flex-flow: row nowrap;
 }
-form{
+
+form {
 display: flex;
 flex-flow: row wrap;
 }
+
 .name-input {
 margin: 0 auto;
 padding: 5px;
 width: 40%;
 }
+
 .lastname-input {
 margin: 0 auto;
 padding: 5px;
@@ -85,19 +86,17 @@ width: 100%;
 .birthdate-input {
 margin-left: 10px;
 }
-#facebook-register{
+
+.facebook-register {
 margin: 10px;
 padding: 10px;
 }
-.facebook-login {
-display: flex;
-justify-content: space-between;
-margin-left: 100px;
-}
+
 .name {
 display: flex;
 justify-content: space-between;
 }
+
 .genero {
 display: flex;
 }
