@@ -2,13 +2,33 @@ body {
   margin: 0;
 }
 
+.facebook-login {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-control {
-  align-self: flex-end;
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em 15px;
+}
+
+.right-content {
+  width: 300px;
 }
 
 .top-bar {
