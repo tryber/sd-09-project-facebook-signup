@@ -6,12 +6,7 @@
 }
 
 .top-bar {
-<<<<<<< HEAD
-    background-color: rgb(66, 103, 178);
-    display: flex;
-=======
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
->>>>>>> 7c7b79f06f6fc282fed2bc213bb2a802c6c316c2
 }
