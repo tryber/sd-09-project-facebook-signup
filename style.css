@@ -18,7 +18,7 @@
 
 .left-content {
   background-color: rgb(235, 171, 111);
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 800px;
 }
