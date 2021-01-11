@@ -27,3 +27,24 @@
   justify-content: space-between;
   width: 100%;
 }
+
+.cadastro {
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+}
+
+.gender {
+  font-size: small;
+}
+
+.nascimento {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+
+.nascimento input {
+  width: 98%;
+}
