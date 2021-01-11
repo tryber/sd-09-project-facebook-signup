@@ -15,6 +15,13 @@ h1 {
   font-size: 12px;
 }
 
+.form-box {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
 .form-control {
   align-self: flex-end;
 }
@@ -26,8 +33,8 @@ h1 {
 
 .left-content {
   color: rgb(14, 56, 95);
+  flex-basis: 800px;
   font-size: 20px;
-  width: 800px;
 }
 
 .main-content {
