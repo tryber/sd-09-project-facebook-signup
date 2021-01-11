@@ -9,6 +9,7 @@
   display: flex;
   height: 70px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -22,6 +23,7 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .form-control {
