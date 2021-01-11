@@ -1,2 +1,10 @@
-* {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 100px;
 }
