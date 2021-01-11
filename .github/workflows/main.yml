@@ -28,5 +28,5 @@ jobs:
         if: steps.wait-for-build.outputs.conclusion == 'success'
         with:
           evaluation-data: ${{ steps.cypress.outputs.result }}
-          environment: staging
+          environment: production
           pr-number: ${{ github.event.number }}
