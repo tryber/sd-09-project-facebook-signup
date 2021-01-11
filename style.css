@@ -57,7 +57,7 @@ body {
 }
 
 .left-content p {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.5em;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .right-content p {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .name-container {
