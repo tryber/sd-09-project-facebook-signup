@@ -35,22 +35,22 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form>
                 <div class="facebook-login">
-                    <input name="firstname" placeholder="Nome" type="text">
-                    <input name="lastname" placeholder="Sobrenome" type="text">
+                    <input name="firstname" placeholder="Nome" type="text" required>
+                    <input name="lastname" placeholder="Sobrenome" type="text" required>
                 </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
+                <input type="text" name="phone_email" placeholder="Celular ou email" required>
+                <input type="password" name="password" placeholder="Nova senha" required>
                 <div>
                     <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                    <input name="birthdate" type="text" placeholder="dd/mm/aaaa">
+                    <input name="birthdate" type="text" placeholder="dd/mm/aaaa" required>
                 </div>
                 <label for="gender" id="label-gender">Genero</label>
                 <div class="facebook-login">
-                    <input type="radio" id="male" name="gender" value="male">
+                    <input type="radio" id="male" name="gender" value="male" required>
                     <label for="male">Feminino</label>
-                    <input type="radio" id="female" name="gender" value="female">
+                    <input type="radio" id="female" name="gender" value="female" required>
                     <label for="female">Masculino</label>
-                    <input type="radio" id="other" name="gender" value="other">
+                    <input type="radio" id="other" name="gender" value="other" required>
                     <label for="other">Personalizado</label>
                 </div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
