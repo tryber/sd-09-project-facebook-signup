@@ -1,4 +1,8 @@
+body {
+  margin: 0;
+}
+
 .top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178)
+  background-color: rgb(66, 103, 178);
 }
