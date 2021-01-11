@@ -86,4 +86,5 @@
 
 .opcoesDeGenero {
   display: flex;
+  justify-content: space-between;
 }
