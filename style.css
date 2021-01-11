@@ -1,15 +1,11 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .facebook-login {
   display: flex;
-}
-
-.facebook-logo {
-
 }
 
 .form-group {
@@ -18,7 +14,7 @@ body {
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
   justify-content: space-between;
 }
