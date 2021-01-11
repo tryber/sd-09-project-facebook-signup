@@ -18,6 +18,11 @@
   width: 800px;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .right-content {
   width: 300px;
 }
