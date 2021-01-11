@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="top-bar">gi
+    <header class="top-bar">
         <img class="facebook-logo" src="imgs/facebook-logo.png">
         <form class="facebook-login">
             <section class="form-group">
@@ -24,14 +24,17 @@
         </form>
     </header>
     <main class="main-content">
-
+        <section class="left-content">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img ID="facebok-networking" src="imgs/networking.png">
+        </section>
     </main>
     <script>
         window.onload = function () {
             const loginButton = document.getElementById('button-login');
             loginButton.addEventListener('click', function () {
                 const user = document.getElementById('user-email-phone');
-                alert('User: ' + user.value);
+                alert(user.value);
             });
         }
     </script>
