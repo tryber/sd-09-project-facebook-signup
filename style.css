@@ -25,3 +25,8 @@ header {
   border: 1px solid red;
   display: flex; 
 }
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
