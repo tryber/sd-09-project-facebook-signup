@@ -1,6 +1,6 @@
-let btnEntrar = document.getElementById('button-login');
-let inputEmail = document.getElementById('user-email-phone');
-let inputPw = document.getElementById('user-password');
+const btnEntrar = document.getElementById('button-login');
+const inputEmail = document.getElementById('user-email-phone');
+const inputPw = document.getElementById('user-password');
 
 console.log(btnEntrar);
 function addlistener(obj, func) {
