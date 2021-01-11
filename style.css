@@ -23,6 +23,6 @@ html {
 }
 
 .form-control {
-  display: flex;
   align-self: flex-end
+  display: flex;
 }
