@@ -17,6 +17,10 @@ body {
   flex-direction: column;
 }
 
+.row {
+  display: flex;
+}
+
 .left-content {
   width: 800px;
 }

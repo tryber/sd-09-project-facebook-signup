@@ -34,19 +34,22 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form action="#" method="POST" class="new-account">
           <div class="nome-e-sobrenome">
-            <input type="text" name="firstname" placeholder="Nome">
-            <input type="text" name="lastname" placeholder="Sobrenome">
+            <input type="text" name="firstname" placeholder="Nome" required>
+            <input type="text" name="lastname" placeholder="Sobrenome" required>
           </div>
-          <input type="text" name="phone-email" placeholder="Celular ou telefone">
-          <input type="password" name="password" placeholder="Nova senha">
-          <label for="label-birthdate">Data de nascimento<br>
-            <input type="text" name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa">
-          </label>
-          <label for="label-gender">Gênero<br>
-            <input type="radio" name="gender" value="Feminino">Feminino
-            <input type="radio" name="gender" value="Masculino">Masculino
-            <input type="radio" name="gender" value="Personalizado">Personalizado
-          </label>
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
+          <input type="password" name="password" placeholder="Nova senha" required>
+          <label for="label-birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa" required>
+          <label id="label-gender">Gênero</label>
+          <div class="row">
+            <label for="female">Feminino</label>
+            <input type="radio" name="gender" value="Feminino" id="female" required>
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" value="Masculino" id="male">
+            <label for="custom">Personalizado</label>
+            <input type="radio" name="gender" value="Personalizado" id="custom">
+          </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </section>
