@@ -29,6 +29,17 @@
   font-family: Helvetica, Arial, sans-serif;
   width: 300px;
 }
+.main-form {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+padding: 10px 10px;
+}
+
+.register-name {
+  display: flex;
+  flex-direction: row;
+}
 
 .top-bar {
   background-color: rgb(66, 103, 178);
