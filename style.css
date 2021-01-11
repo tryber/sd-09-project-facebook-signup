@@ -22,9 +22,9 @@ body {
 }
 
 .form-control {
+  align-self: flex-end;
   background-color: rgb(66, 103, 178);
   border: 0;
-  align-self: flex-end;
   margin-bottom: 6.3%;
   padding: 0;
 }
