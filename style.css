@@ -6,10 +6,6 @@
 }
 
 .top-bar {
-<<<<<<< HEAD
-=======
-  display: flex;
->>>>>>> 0d42abcffb8986a02553f4def21b8eac6991e27b
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
