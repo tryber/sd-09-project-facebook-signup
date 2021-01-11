@@ -8,3 +8,7 @@ body {
   background-color: rgb(66, 103, 178);
   height: 100px;
 }
+
+.facebook-logo {
+  align-self: flex-start;
+}
