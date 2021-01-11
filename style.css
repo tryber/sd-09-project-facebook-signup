@@ -1,6 +1,7 @@
 body {
   font-family: lucida grande, tahoma, verdana, arial, sans-serif;
 }
+
 .main-content {
   display: flex;
   flex-direction: row;
@@ -39,5 +40,5 @@ input {
 }
 
 form {
-	display: flex;
+  display: flex;
 }
