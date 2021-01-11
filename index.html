@@ -10,15 +10,21 @@
     <header class="top-bar">
       <img src="./imgs/facebook-logo.png" alt="Logo Facebook" class="facebook-logo"/>
       <form action="" class="formulario-login">
-        <section class="inputs">
-          <label for="user-name">E-mail ou Telefone</label>
-          <input type="text" id="user-name" name="user-name">
-          <label for="user-pass">Senha</label>
-          <input type="password" id="user-pass" name="password">
+        <section class="form-group">
+          <label for="user-email-phone" id="user-email-phone-label">E-mail ou Telefone</label>
+          <input type="text" id="user-email-phone" name="user-name">
         </section>
-        <input type="submit" value="Enviar">
+        <section class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="password" id="user-password" name="password">
+        </section>
+        <section class="form-control"></section>
+          <button class="btn" id="button-login">Entrar</button>
+        </section>
       </form>
     </header>
+    <main class="main-content">
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
