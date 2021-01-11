@@ -10,10 +10,10 @@ h1 {
 
 .main-content {
   display: flex;
-  flex-direction: column;
+  
   /* mudar para cor correta de background */
   background-color: lightgray;
-  justify-content: space-around;
+  
 }
 
 .left-content {
