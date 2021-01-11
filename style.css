@@ -51,5 +51,4 @@ body {
 
 .fullname {
   display: flex;
-  justify-content: space-between;
 }
