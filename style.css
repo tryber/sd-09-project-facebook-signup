@@ -28,7 +28,7 @@ body {
   width: 100%;
 }
 
-a:hover, a:visited, a:link {
+a:hover , a:visited , a:link {
   color: rgb(194, 194, 194);
   text-decoration: none;
 }
