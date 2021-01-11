@@ -6,6 +6,11 @@
   align-self:center;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
