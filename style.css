@@ -72,3 +72,12 @@ body {
 .register-form input {
   margin: 0 5px 5px 0;
 }
+
+.radio-classes {
+  display: flex;
+}
+
+.radio-classes label {
+  display: flex;
+  margin: 5px;
+}

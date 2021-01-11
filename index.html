@@ -42,15 +42,17 @@
         <label for="" id="label-birthdate">Data de nascimento</label>
         <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
           <label for="" id="label-gender">Gênero</label>
-          <label for="fem-radio">Feminino
-            <input type="radio" name="gender" value="Feminino" id="fem-radio">
-          </label>
-          <label for="masc-radio">Maculino
-            <input type="radio" name="gender" value="Masculino" id="masc-radio">
-          </label>
-          <label for="per-radio">Personalizado
-            <input type="radio" name="gender" value="Personalizado" id="per-radio">
-          </label>
+          <div class="radio-classes">
+            <label for="fem-radio">
+              <input type="radio" name="gender" value="Feminino" id="fem-radio">Feminino
+            </label>
+            <label for="masc-radio">
+              <input type="radio" name="gender" value="Masculino" id="masc-radio">Maculino
+            </label>
+            <label for="per-radio">
+              <input type="radio" name="gender" value="Personalizado" id="per-radio">Personalizado
+            </label>
+          </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </section>
