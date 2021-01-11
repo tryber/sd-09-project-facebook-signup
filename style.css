@@ -1,0 +1,39 @@
+*{
+  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+}
+.main-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-content{
+  width: 800px;
+}
+
+.right-content{
+  width:300px;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  word-spacing: -1px;
+}
+
+.right-content  > h1 {
+  color: #141823;
+  font-family: 'Freight Sans Bold', 'lucida grande',tahoma,verdana,arial,sans-serif;
+
+}
+
+input {
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+  padding: 8px 10px;
+}
