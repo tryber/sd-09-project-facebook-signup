@@ -6,13 +6,6 @@
 
 .facebook-login {
   display: flex;
-  flex-direction: row;
-}
-
-.container-autentication {
-  display: flex;
-  flex-direction: column;
-  margin: 0 15px;
 }
 
 .label-autentication {
@@ -22,4 +15,23 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 0 15px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }

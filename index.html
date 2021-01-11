@@ -10,16 +10,30 @@
   <header class='top-bar'>
     <img class='facebook-logo' src='imgs/facebook-logo.png' alt='Facebook Logo'>
     <form class='facebook-login' action="" method="GET">
-      <div class='container-autentication'>
-        <label for='user-autentication' class='label-autentication'>Email ou Usuário</label>
-        <input id='user-autentication' name='user-autentication' type='text' >
+      <div class='form-group'>
+        <label for='user-email-phone' id='user-email-phone-label' class='label-autentication'>Email ou telefone</label>
+        <input id='user-email-phone' name='user-autentication' type='text'>
       </div>
-      <div class='container-autentication'>
-        <label for='pass-autentication' class='label-autentication'>Senha</label>
-        <input id='pass-autentication' name='pass-autentication' type='password'>
+      <div class='form-group'>
+        <label for='user-password' id='user-password-label' class='label-autentication'>Senha</label>
+        <input id='user-password' name='pass-autentication' type='password'>
+      </div>
+      <div class='form-control'>
+        <button id='button-login'>Entrar</button>
       </div>
     </form>
   </header>
-  <script scr='script'></script>
+  <section class='main-content'>
+    <div class='left-content'>
+      <p id='facebook-slogan'>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img id='facebook-networking' src="imgs/networking.png" alt="Facebook Networking">
+    </div>
+    <div class='right-content'>
+      <h1>Abra uma conta</h1>
+      <p class='quick-easy'>É rápido e fácil.</p>
+      <form action=""></form>
+    </div>
+  </section>
+  <script src='script.js'></script>
 </body>
 </html>
