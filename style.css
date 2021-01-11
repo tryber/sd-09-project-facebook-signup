@@ -73,19 +73,4 @@ body {
   margin: 0 5px 5px 0;
 }
 
-.radio-container {
-  display: flex;
-}
-
-.radio-container label {
-  margin-right: 5px;
-}
-
-.radio-form-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.radio-form-container label {
-  align-self: flex-start;
-}
+.
