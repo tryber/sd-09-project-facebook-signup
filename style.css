@@ -14,3 +14,11 @@ body {
 .facebook.login {
   display: flex;
 }
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
