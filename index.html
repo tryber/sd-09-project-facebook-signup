@@ -45,12 +45,27 @@
       <div class="right-content">
           <h1>Abra uma conta</h1>
           <p class="quick-easy">É rápido e fácil</p>
-          <form action="">
-            <label for="" id="label-birthdate">Data de nascimento</label>
-            <div>
-              <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-            </div>
 
+
+          <form action="" class="form-group">
+            <div>
+                <input name="firstname" type="text" placeholder="Nome">
+            </div>
+            <div>
+                <input name="lastname" type="text" placeholder="Sobrenome"> 
+            </div>
+            <div>
+                <input name="phone_email" type="text" placeholder="Celular ou email"> 
+            </div>
+            <div>
+                <input name="password" type="password" placeholder="Nova senha"> 
+            </div>
+            <label for=""> Data de Nascimento
+              <div>
+                <input name="birthdate" type="text" id="label-birthdate" placeholder="dd/mm/aaaa"> 
+              </div>
+            </label>
+            
             <label for="" id="label-gender">Gênero
               <input type="radio" id="female" name="gender" value="female">
               <label for="female">Feminino</label>
@@ -61,6 +76,9 @@
             </label>
             <button id="facebook-register" type="submit">Cadastre-se</button>
           </form>
+
+           
+            
       </div>
       </section>
 

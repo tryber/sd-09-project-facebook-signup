@@ -95,7 +95,20 @@ header {
     align-self: end;
 }
 
+.facebook-cadastro {
+    display: flex;
+    width: auto;
+    height: auto;
+    border: 1px solid red;
+
+}
+
+input[name=phone_email] {
+    align-self: flex-end;   
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
+
