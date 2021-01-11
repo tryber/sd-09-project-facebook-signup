@@ -1,22 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-around;
 }
 
 .facebook-login {
+  align-self: flex-end;
   display: flex;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-
 }
 
 .form-control {
