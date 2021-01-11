@@ -11,6 +11,7 @@ body {
   height: 82px;
   justify-content: space-between;
   max-width: 100%;
+
   /* padding: 0 2.5%; */
 
 }
@@ -26,6 +27,7 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+
   /* margin: 0 20px; */
 
 }
