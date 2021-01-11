@@ -3,7 +3,6 @@ body {
 }
 
 .main-content {
-	background: rgb(185, 201, 201);
 	display: flex;
   flex-direction: row;
 	justify-content: center;
