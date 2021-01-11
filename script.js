@@ -1,2 +1,3 @@
 const email = document.querySelector('#user-email-phone');
-addEventListener('click', () => alert(email.value));
+const botao = document.querySelector('#button-login');
+botao.addEventListener('click', () => alert(email.value));
