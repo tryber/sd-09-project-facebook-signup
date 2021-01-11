@@ -16,6 +16,7 @@
 .facebook-login {
   align-items: center;
   display: flex;
+  color: white;
 }
 
 .form-group {
@@ -30,4 +31,12 @@
 .form-control {
   align-self: flex-end;
   padding: 0 15px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
 }
