@@ -13,6 +13,7 @@
   color: white;
   display: flex;
   flex-direction: column;
+  /* margin: 10px; */
 }
 
 .form-control {
@@ -46,6 +47,10 @@ form aside input {
   width: 130px;
 }
 
+.label-gender {
+  display: block;
+}
+
 .gender {
   display: flex;
   justify-content: space-between;
@@ -57,4 +62,8 @@ form aside input {
 
 .isVisible {
   display: none;
+}
+
+input[type=radio] {
+  display: inline;
 }

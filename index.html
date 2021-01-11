@@ -33,7 +33,7 @@
     <aside class="right-content">
       <h1>Abra uma conta</h1>
       <h2 class="quick-easy">É rápido e fácil.</h2>
-      <form action="">
+      <form>
         <aside>
           <input type="text" name="firstname" placeholder="Nome" required>
           <input type="text" name="lastname" placeholder="Sobrenome" required>
@@ -45,9 +45,9 @@
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
 
-        <label for="gender" id="label-gender">Gênero</label>
+        <label for="gender" id="label-gender" class="label-gender">Gênero</label>
 
-        <div class="gender">
+        <!-- <div class="gender"> -->
           <label for="female">
             <input id="female" type="radio" name="gender" required>Feminino</input>
           </label>
@@ -59,7 +59,7 @@
           <label for="gender-custom">
             <input class="gender-custom" type="radio" name="gender" id="gender-custom">Personalizado</input>
           </label>
-        </div>
+        <!-- </div> -->
 
         <input id="custom-gender-input" class="isVisible" type="text" name="gender-custom" placeholder="Gênero (opcional)"></input>
 
