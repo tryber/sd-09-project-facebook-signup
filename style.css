@@ -1,9 +1,10 @@
 /* Andre */
-* {
+body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -55,11 +56,10 @@
   width: 300px;
 }
 
-.form-container > div:nth-child(1) {
+.form-container > div:nth-child( 1 ) {
   display: flex;
 }
 
 .form-wrapper {
   margin: 10px;
 }
-
