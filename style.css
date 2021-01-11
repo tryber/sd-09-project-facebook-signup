@@ -1,7 +1,24 @@
 * {
     margin: 0px;
 }
-header {
-    background-color: blue;
-    border: 1px solid black;
+
+.top-bar {
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facebook-logo {
+    /* text-align: center;
+    margin-left: 15%; */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.facebook-login {
+    color: whitesmoke;
 }
