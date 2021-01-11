@@ -1,9 +1,13 @@
-
 .facebook-login form {
   border: 1px solid white;
   display: flex;
   align-items: baseline;
   justify-content: space-around;
+}
+
+.facebook-logo {
+  display: flex;
+  align-items: center;
 }
 
 .form-control {
@@ -12,17 +16,12 @@
 }
 
 .form-group {
-  align-items: right;
+  align-items: flex-start;
   color: white;
   display: flex;
   flex-direction: column;
   font-size: x-small;
   margin-right: 1rem;
-}
-
-.facebook-logo {
-  display: flex;
-  align-items: center;
 }
 
 .main-content {
@@ -41,7 +40,7 @@
   width: 300px;
 }
 
-.password-login p{
+.password-login p {
   color: gray;
 }
 
