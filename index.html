@@ -32,20 +32,20 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form>
-        <input type="text" name="firstname" placeholder="Nome">
-        <input type="text" name="lastname" placeholder="Sobrenome">
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="firstname" placeholder="Nome" class="small-input">
+        <input type="text" name="lastname" placeholder="Sobrenome" class="small-input">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="big-input">
+        <input type="password" name="password" placeholder="Nova senha" class="big-input">
         <label for="" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-        <section class="radio-container" >
-          <label id="label-gender">Gênero</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="big-input">
+        <label id="label-gender">Gênero</label>
+        <section class="radio-container">
           <input type="radio" name="gender" id="feminino" value="Feminino">
-          <label for="fem" id="label-gender">Feminino</label>
+          <label for="feminino">Feminino</label>
           <input type="radio" name="gender" id="masculino" value="Masculino">
-          <label for="mas" id="label-gender">Masculino</label>
+          <label for="masculino">Masculino</label>
           <input type="radio" name="gender" id="personalizado" value="Personalizado">
-          <label for="pers" id="label-gender">Personalizado</label>
+          <label for="personalizado">Personalizado</label>
         </section>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>

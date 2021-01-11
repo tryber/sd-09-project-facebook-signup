@@ -1,5 +1,4 @@
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -35,4 +34,27 @@ body {
 
 .right-content {
   width: 300px;
+}
+
+.small-input {
+  width: 40%;
+}
+
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.big-input {
+  width: 100%;
+}
+
+form input {
+  box-sizing: border-box;
+}
+
+.radio-container {
+  display: flex;
 }
