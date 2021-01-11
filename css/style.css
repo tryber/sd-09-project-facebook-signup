@@ -35,3 +35,12 @@ body {
 .right-content {
   width: 300px;
 }
+
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fullname {
+  display: flex;
+}
