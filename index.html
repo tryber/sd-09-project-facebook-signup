@@ -39,19 +39,21 @@
     </section>
 
     <section class='right-content'>
-      <h1>Abra sua conta</h1>
-      <p class='quick-easy'>É rápido e fácil</p>
-        <form action="">
+      <h1>Abra uma conta</h1>
+      <p class='quick-easy'>É rápido e fácil.</p>
+        <form action="" class='form'>
           <div class='fullName'>
-            <input type="text" placeholder="Nome">
-            <input type="text" placeholder="Sobrenome">
+            <input type="text" name='firstname' placeholder="Nome">
+            <input type="text" name='lastname' placeholder="Sobrenome">
           </div>
-          <div>
-            <input type="text" placeholder="Celular ou email">
-          </div>
-          <div>
-            <input type="text" placeholder="Nova Senha">
-          </div>
+
+          <input type="text" name='phone_email' placeholder="Celular ou email">
+          <input type='password' name='password' placeholder="Nova Senha">
+
+          <label for="birthdate">Data de Nascimento
+            <input type="text" name='birthdate' placeholder="dd/mm/aaaa" id='birthdate'>
+          </label>
+
         </form>
     </section>
 
