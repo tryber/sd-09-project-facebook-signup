@@ -1,5 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .facebook-login {
@@ -9,7 +11,7 @@ body {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
 }
 
 .form-group {
@@ -26,6 +28,7 @@ body {
   width: 100%;
 }
 
-.facebook-logo {
-  align-self: flex-start;
+a:hover, a:visited, a:link {
+  color: rgb(194, 194, 194);
+  text-decoration: none;
 }
