@@ -12,8 +12,19 @@ body {
 
 .main-content {
   display: flex;
+  justify-content: center;
 }
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.input-username {
+  display: flex;
 }
