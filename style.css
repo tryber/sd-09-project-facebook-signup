@@ -29,13 +29,24 @@
 
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .left-content {
+  border: 2px solid black;
   width: 800px;
 }
 
 .right-content {
-    width: 300px;
+  border: 2px solid red;
+  flex-wrap: nowrap;
+  width: 300px;
+}
+
+.name {
+    width: 120px;
+}
+
+.lastname {
+    width: 120px;
 }
