@@ -34,12 +34,12 @@ body {
 .form-control {
   align-self: flex-end;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .button-login {
-    border-radius: 3px;
-    border: none;
+  border: none;
+  border-radius: 3px;
 }
 
 .main-content {
