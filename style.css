@@ -14,3 +14,7 @@ body {
 .facebook-login {
   display: flex;
 }
+
+.facebook-logo {
+  align-self: flex-end;
+}
