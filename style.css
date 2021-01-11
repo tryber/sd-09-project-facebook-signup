@@ -7,17 +7,12 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: flex-start;
-}
-
-.top-bar img {
-  margin-left: 20%;
+  justify-content: space-between;
 }
 
 .facebook-login {
   display: flex;
   justify-content: flex-end;
-  margin-left: 40%;
 }
 
 .form-group {
