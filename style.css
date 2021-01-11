@@ -25,3 +25,9 @@
 .form-control {
   align-self: flex-end;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
