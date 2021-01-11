@@ -1,15 +1,20 @@
+body {
+    margin: 0;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
 }
 
 .facebook-logo {
-  justify-content: flex-start;
+  margin-right: auto;
 }
 
 .facebook-login {
   display: flex;
-  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 5px;
 }
 
 .form-group {
