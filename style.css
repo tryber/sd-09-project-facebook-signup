@@ -6,15 +6,32 @@
 
 .facebook-login {
   display: flex;
-  flex-direction: row;
 }
 
-.container-autentication {
+.label-autentication {
+  color: white;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
   margin: 0 15px;
 }
 
-.label-autentication {
-  color: white;
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
