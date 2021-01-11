@@ -18,7 +18,7 @@
         <label for="user-password" id="user-password-label">Senha</label>
         <input type="text" id="user-password"></input>
       </div>
-      <div class="form-control">
+      <div class="">
         <button id="button-login">Entrar</button>
       </div>
       </form>
@@ -31,35 +31,33 @@
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action="" method="GET" class="row">
-                <div class="col-6">
-                    <input type="text" name="firstname" placeholder="Nome" class="form-control">
+            <form action="" method="GET" class="form-container">
+                <div class="form-wrapper">
+                    <input type="text" name="firstname" placeholder="Nome" class="">
+                    <input type="text" name="lastname" placeholder="Sobrenome" class="">
                 </div>
-                <div class="col-6">
-                    <input type="text" name="lastname" placeholder="Sobrenome" class="form-control">
+                <div class="form-wrapper">
+                    <input type="text" name="phone_email" placeholder="Celular ou email" class="">
                 </div>
-                <div class="col-12">
-                    <input type="text" name="phone_email" placeholder="Celular ou email" class="form-control">
+                <div class="form-wrapper">
+                    <input type="password" name="password" placeholder="Nova senha" class="">
                 </div>
-                <div class="col-12">
-                    <input type="password" name="password" placeholder="Nova senha" class="form-control">
-                </div>
-                <div class="col-12">
+                <div class="form-wrapper">
                     <label for="label-birthdate">Data de nascimento</label>
-                    <input type="text" id="label-birthdate" name="password" placeholder="dd/mm/aaaa" class="form-control">
+                    <input type="text" id="label-birthdate" name="password" placeholder="dd/mm/aaaa" class="">
                 </div>
-                <div class="">
+                <div class="form-wrapper">
                     <label id="label-gender">Gênero</label>
                     <div>
-                        <input type="radio" id="label-gender-woman" name="gender" class="form-check-input col-4">
+                        <input type="radio" id="label-gender-woman" name="gender" class="form-check-input">
                         <label for="label-gender-woman">Feminino</label>
                     </div>
                     <div>
-                        <input type="radio" id="label-gender-man" name="gender" class="form-check-input col-4">
+                        <input type="radio" id="label-gender-man" name="gender" class="form-check-input">
                         <label for="label-gender-man">Masculino</label>
                     </div>
                     <div>
-                        <input type="radio" id="label-gender" name="gender" class="form-check-input col-4">
+                        <input type="radio" id="label-gender-custom"" name="gender" class="">
                         <label for="label-gender-custom">Personalizado</label>
                     </div>
                 </div>
