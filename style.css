@@ -43,3 +43,7 @@ body {
 .right-content {
   width: 300px;
 }
+
+.campo-name {
+  display: flex;
+}
