@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <header class="top-bar">
-        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do facebook">
+  <header class="top-bar">
+    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do facebook">
 
-        <form class="facebook-login" action="">
-            <div class="form-group" action="">
-              <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-              <input id="user-email-phone" type="text" data-validate-field="name" name="name">
-            </div>
+    <form class="facebook-login" action="">
+      <div class="form-group" action="">
+        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+        <input id="user-email-phone" type="text" data-validate-field="name" name="name">
+      </div>
 
-            <div class="form-group">
-              <label id="user-password-label" for="user-password">Senha</label>
-              <input id="user-password" type="password" data-validate-field="user-password" name="user-password">
-            </div>
+      <div class="form-group user-password">
+        <label id="user-password-label" for="user-password">Senha</label>
+        <input id="user-password" type="password" data-validate-field="user-password" name="user-password">
+      </div>
 
-            <div class="form-control">
-              <button id="button-login" class="button-login" type="submit">Entrar</button>
-            </div>
-          </form>
-    </header>
+      <div class="form-control">
+        <button id="button-login" class="button-login" type="submit">Entrar</button>
+      </div>
+    </form>
+  </header>
+  <script src="script.js"></script>
 </body>
+
 </html>
