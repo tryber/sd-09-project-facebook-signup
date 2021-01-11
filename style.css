@@ -13,13 +13,13 @@ body {
   cursor: pointer;
   font-family: inherit;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 600;
   padding: 2px 6px;
   text-align: center;
   text-decoration: none;
 }
 
-.entrar-button:active, .entrar-button:focus, .entrar-button:hover {
+.entrar-button:active , .entrar-button:focus , .entrar-button:hover {
   outline: transparent;
 }
 
@@ -46,8 +46,8 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .left-content {
@@ -60,12 +60,6 @@ body {
 
 .right-content form {
   display: flex;
-}
-
-.right-content .first-name {
-}
-
-.right-content .last-name {
 }
 
 .top-bar {
