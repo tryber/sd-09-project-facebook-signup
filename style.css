@@ -3,14 +3,13 @@ body {
 }
 
 .facebook-login {
-  align-self: flex-end;
   color: white;
   display: flex;
   font-size: 12px;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
 }
 
 .form-group {
@@ -23,7 +22,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 82px;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
