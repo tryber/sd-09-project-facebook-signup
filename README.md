@@ -397,7 +397,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
 ### 19. Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção `Personalizado` no campo Gênero
 
   Pontos importantes:
-  * O novo campo dever ser uma campo de texto com o atributo name "gender-custom" e um placeholder "Gênero (opcional)"
+  * O novo campo dever ser uma campo de texto com o atributo name "gender-custom" e um placeholder "Gênero (opcion al)"
   * O novo campo deve estar posicionado entre as opções de gênero e o botão "Cadastrar-se"
 
 ### 20. Substitua o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado
