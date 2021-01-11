@@ -38,3 +38,7 @@ body {
 .right-content {
   width: 300px;
 }
+
+.full-name {
+  display: flex;
+}
