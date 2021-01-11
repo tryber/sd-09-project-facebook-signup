@@ -9,6 +9,10 @@
   flex-direction: column;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -23,6 +27,11 @@
 }
 
 .facebook-login {
-  color: white;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.main-content {
   display: flex;
 }
