@@ -32,3 +32,8 @@ body {
   align-self: flex-end;
   margin-right: 1em;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
