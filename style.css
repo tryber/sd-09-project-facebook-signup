@@ -3,15 +3,17 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
 }
+
 .main-content {
   flex-direction: row;
 }
+
 .left-content {
   max-width: 800px;
 }
