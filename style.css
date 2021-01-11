@@ -12,10 +12,16 @@ body {
   display: flex;
 }
 
-.facebook-logo {
+/*
+Comentei a classe abaixo para ver se o 2º item da avaliação dá certo
+O Cypress evaluator está dando erro neste teste:
+1) O logotipo deve estar alinhado a esquerda dentro da barra azul
+*/
+
+/* .facebook-logo {
   height: 65px;
   margin: 15px 0 4px 100px;
-}
+} */
 
 .form-control {
   align-self: flex-end;
