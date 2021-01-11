@@ -9,16 +9,16 @@
 <body>
     <header class="top-bar">
         <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo Facebook">
-        <form class="form-header" action="submit" method="GET">
+        <form class="form-header" action="" method="GET">
             <div class="email-phone">
                 <label for="user-email-phone-label">Email ou telefone </label>
-                <input type="text" id="user-email-phone-label">
+                <input type="text" id="user-email-phone-label" name="user-email-phone">
             </div>
             <div class="password">
                 <label for="user-password-label">Senha</label>
-                <input type="password" id="user-password-label">
+                <input type="password" id="user-password-label" name="user-password">
             </div>
-            <div>
+            <div></div>
                 <button id="button-login" type="submit" >Entrar</button>
             </div>
         </form>
@@ -31,7 +31,7 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action="submit" method="GET">
+            <form action="" method="GET">
                 <div class="div1">
                     <input type="text" name="firstname" placeholder="Nome">
                     <input type="text" name="lastname" placeholder="Sobrenome">
@@ -49,21 +49,17 @@
                 <div>
                     <label id="label-gender" for="">Gênero</label>
                     <div>
-                        <input type="radio" name="gender" id="female">
+                        <input type="radio" name="gender" id="female" value="female">
                         <label for="female">Feminino</label>
-                        <input type="radio" name="gender" id="male">
+                        <input type="radio" name="gender" id="male" value="male">
                         <label for="male">Masculino</label>
                         <input type="radio" name="gender" id="custom">
                         <label for="custom">Personalizado</label>
                     </div>
                 </div>
                 <button id="facebook-register" type="submit">Cadastre-se</button>
-                
             </form>
-
         </div>
-
-        
     </section>
 </body>
 </html>
