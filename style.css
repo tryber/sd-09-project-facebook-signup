@@ -32,6 +32,7 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
+  font-size: small;
   justify-content: center;
 }
 
@@ -45,10 +46,10 @@ body {
 
 .full-name {
   height: 39px;
-  width: 49%;
+  width: 40%;
 }
 
 .rest-data {
   height: 39px;
-  width: 99.3%;
+  width: 84%;
 }
