@@ -1,8 +1,8 @@
-function logIn () {
+function logIn() {
   const buttonListener = document.getElementById('button-login');
 
-  buttonListener.addEventListener("click", function() {
-    alert("Email ou telefone");
+  buttonListener.addEventListener('click', function () {
+    alert('Email ou telefone');
   });
 }
 
