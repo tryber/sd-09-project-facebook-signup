@@ -1,9 +1,19 @@
-.facebook-login{
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.facebook-login {
   display: flex;
 }
 
-.facebook-logo{
+.facebook-logo {
   align-self:center;
+}
+
+.form-control{
+  align-self: flex-end;  
 }
 
 .form-group {
@@ -15,5 +25,6 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 500px;
 }
