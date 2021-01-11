@@ -41,3 +41,8 @@ function validateForm() {
   }
   createNewUserInfo();
 }
+
+document.querySelector('#facebook-register').addEventListener('click', function (event) {
+  event.preventDefault();
+  validateForm();
+});
