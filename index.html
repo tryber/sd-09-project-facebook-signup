@@ -9,7 +9,7 @@
 <body>
   <!--Barra Superior-->
   <div class="top-bar">
-    <img src="/imgs/facebook-logo.png">
+    <img src="/imgs/facebook-logo.png" class="facebook-logo">
     <div>
       <form class="facebook-login">
         <div class="nav form-group">
@@ -38,11 +38,19 @@
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form>
+          <div class="fullname">
           <label>
             <input type="text" placeholder="Nome" name="firtsname">
           </label>
           <label>
             <input type="text" placeholder="Sobrenome" name="lastname">
+          </label>
+          </div>
+          <label>
+            <input type="text" name="phone_email" placeholder="Celular ou email">
+          </label>
+          <label>
+            <input type="password" name="password" placeholder="Nova senha">
           </label>
         </form>
       </div>
