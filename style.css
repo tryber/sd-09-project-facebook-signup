@@ -8,8 +8,8 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
   height: 82px;
+  justify-content: space-around;
 }
 
 .facebook-login {
