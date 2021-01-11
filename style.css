@@ -12,6 +12,10 @@ body {
   width: 100%;
 }
 
+.facebook-login {
+  display: flex;
+}
+
 .title {
   align-self: flex-end;
 }
