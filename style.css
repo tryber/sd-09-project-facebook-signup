@@ -39,3 +39,8 @@ body {
 .form-SignUp {
   display: flex;
 }
+
+.gender-radios {
+  display: flex;
+  
+}
