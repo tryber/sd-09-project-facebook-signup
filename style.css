@@ -5,7 +5,9 @@
 }
 
 .header {
+    height: 5rem;
     display: flex;
+    justify-content: space-around;
     background-color: rgb(66, 103, 178)
 }
 
@@ -13,7 +15,18 @@
   display: flex;
   justify-content: flex-start;
 }
+.facebook-login{
+    display:flex;
+    justify-content: space-around;
+   align-items: baseline;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
+}
+.form-control {
+    display: flex;
+    align-self: center;
 }
