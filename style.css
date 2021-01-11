@@ -48,3 +48,9 @@ body {
 .right-content {
   width: 300px;
 }
+
+.input-name {
+  width: 24rem;
+  display: flex;
+  justify-content: space-between;
+}
