@@ -9,17 +9,15 @@
 </head>
 <body>
     <nav class="top-bar">
-      <img src="imgs/facebook-logo.png" alt="Logo Facebook">
+      <img src="imgs/facebook-logo.png" alt="Logo Facebook" class="facebook-logo">
       <form action="#" method="POST" class="facebook-login">
         <div class="form-group">
-          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone<br>
-            <input type="text" name="login" id="user-email-phone">
-          </label>
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" name="login" id="user-email-phone">
         </div>
         <div class="form-group">
-          <label for="user-password" id="user-password-label">Senha<br>
-            <input type="password" name="pass" id="user-password">
-          </label>
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="password" name="pass" id="user-password">
         </div>
         <div class="form-control">
           <button type="submit" id="button-login">Entrar</button>
@@ -33,10 +31,12 @@
       </section>
       <section class="right-content">
         <h1>Abra uma conta</h1>
-        <p>É rápido e fácil</p>
+        <p class="quick-easy">É rápido e fácil.</p>
         <form action="#" method="POST">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <div class="nome-e-sobrenome">
+            <input type="text" name="firstname" placeholder="Nome">
+            <input type="text" name="lastname" placeholder="Sobrenome">
+          </div>
           <input type="text" name="phone-email" placeholder="Celular ou telefone">
           <input type="password" name="password" placeholder="Nova senha">
         </form>

@@ -27,6 +27,10 @@ body {
   margin: 1em 15px;
 }
 
+.nome-e-sobrenome {
+  display: flex;
+}
+
 .right-content {
   width: 300px;
 }
