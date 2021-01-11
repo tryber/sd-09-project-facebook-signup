@@ -299,7 +299,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
   * Crie uma classe no CSS form-control com a propriedade `align-self: flex-end`
   * Dentro do novo subcontainer `form-control` criado, deve haver um botão com o id "button-login" e o texto "Entrar"
   * O botão deve estar alinhado a direita do campo de entrada para senha
-  * Ao clicar no botão com o id #button-login deve exibir um alert com o valor do campo "Email ou telefone"
+  * # Ao clicar no botão com o id #button-login deve exibir um alert com o valor do campo "Email ou telefone"
 
 ### 8. Crie um container abaixo da barra azul para agrupar o conteúdo principal da página
 
