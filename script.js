@@ -4,22 +4,22 @@ buttonLogin.addEventListener('click', function () {
   alert(userEmailPhone.value);
 });
 
-const validate = new window.JustValidate('.js-form', {
+new JustValidate('.js-form', {
   rules: {
     firstName: {
-      required: true
+      required: true,
     },
     lastName: {
-      required: true
+      required: true,
     },
     phoneEmail: {
-      required: true
+      required: true,
     },
     password: {
-      required: true
+      required: true,
     },
     birthdate: {
-      required: true
+      required: true,
     },
   },
   messages: {
