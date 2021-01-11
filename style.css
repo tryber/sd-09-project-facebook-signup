@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
 }
 
-.formulario-login {
+.facebook-login {
   display: flex;
 }
 
@@ -26,4 +26,13 @@ body {
 /* main */
 .main-content {
   display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
