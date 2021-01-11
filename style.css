@@ -36,7 +36,7 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   height: 82px;
   justify-content: space-between;
   width: 100%;
