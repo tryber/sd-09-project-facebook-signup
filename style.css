@@ -50,7 +50,7 @@ body {
 }
 
 .input-name {
-  width: 24rem;
   display: flex;
   justify-content: space-between;
+  width: 24rem;
 }
