@@ -7,6 +7,7 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  height: 5vh;
   justify-content: space-between;
 }
 
@@ -15,8 +16,8 @@ body {
 }
 
 .facebook-login {
-  align-self: flex-end;
   display: flex;
+  justify-content: flex-end;
 }
 
 .form-group {
@@ -26,4 +27,11 @@ body {
 
 .form-control {
   align-self: flex-end;
+}
+
+.main-content {
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
 }
