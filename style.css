@@ -7,9 +7,10 @@
   width: 100%;
 }
 
-.facebook-login {
+.form-group {
   color: white;
   display: flex;
+  justify-self: right;
 }
 
 .input-login {
