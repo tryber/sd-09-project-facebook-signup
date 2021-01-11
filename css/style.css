@@ -14,12 +14,6 @@ html {
   display: flex;
 }
 
-.user-id, .password {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
