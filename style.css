@@ -22,3 +22,7 @@
 .small-input {
   width: 45%;
 }
+
+.full-width-input {
+  width: 100%;
+}
