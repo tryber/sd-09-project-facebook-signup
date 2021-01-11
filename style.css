@@ -44,9 +44,17 @@
 }
 
 .name {
-    width: 120px;
+  width: 120px;
 }
 
 .lastname {
-    width: 120px;
+  width: 150px;
+}
+
+.phoneemail {
+  width: 280px;
+}
+
+.newpassword {
+  width: 280px;
 }
