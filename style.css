@@ -69,7 +69,6 @@ header {
   border-radius: 2px;
   color: white;
   cursor: pointer;
-  padding: 0 6px;
   font-size: 10px;
   font-weight: 700;
   height: 20px;
@@ -87,7 +86,7 @@ header {
 .right-content {
   align-self: flex-end;
   width: 300px;
-} 
+}
 
 .left-content{
   align-self: flex-start;
