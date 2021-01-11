@@ -9,12 +9,12 @@ html {
   justify-content: space-around;
 }
 
-.top-bar img {
-  align-items: flex-start;
+.facebook-logo {
+  align-self: flex-start;
 }
 
 .facebook-login {
-  align-items: flex-end;
+  align-self: flex-end;
   display: flex;
 }
 
@@ -26,8 +26,4 @@ html {
 .form-control {
   align-self: flex-end;
   display: flex;
-}
-
-.facebook-logo {
-  align-items: flex-start;
 }
