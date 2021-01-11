@@ -1,7 +1,6 @@
 function windowAlert() {
   const inputUser = document.querySelector('#user-email-phone');
-  const inputPassword = document.querySelector('#user-password');
-  alert(`Usuário: ${inputUser.value}, Senha: ${inputPassword.value}`);
+  alert(`Usuário: ${inputUser.value}`);
 }
 
 const btnLogin = document.querySelector('#button-login');
