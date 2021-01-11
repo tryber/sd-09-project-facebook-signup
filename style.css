@@ -60,7 +60,7 @@
 }
 
 .radioButtons {
-  font-size: small;
   display: flex;
+  font-size: small;
   justify-content: center;
 }
