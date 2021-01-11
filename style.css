@@ -13,6 +13,15 @@ body {
 
 @media screen and ( min-width : 780px ) {
 
+  .form-line-1 {
+    display: flex;
+  }
+
+  .facebook-register {
+    display: flex;
+    flex-direction: column;
+  }
+
   .right-content {
     border: 1px solid magenta;
     width: 300px;
