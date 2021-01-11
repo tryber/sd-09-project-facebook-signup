@@ -13,11 +13,11 @@
     <form class="facebook-login">
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-        <input type="text" id="user-email-phone">
+        <input type="text" id="user-email-phone" required>
       </div>
       <div class = 'form-group'>
         <label for ='user-password' id = 'user-password-label'>Senha</label>
-        <input type='password' id = 'user-password'>
+        <input type='password' id = 'user-password' required>
       </div>
       <div class ='form-control'>
         <button id = 'button-login'>Entrar</button>
@@ -26,31 +26,33 @@
   </section>
 
   <main class="main-content">
+
     <div class="left-content">
-      <p id="facebook-slogan">Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img id="facebook-networking" src="imgs/networking.png" alt="Facebook network">
     </div>
+
     <div class = 'right-content'>
       <h1>Abra uma conta</h1>
       <p class = 'quick-easy'>É rápido e fácil.</p>
-      <form name ='form1' method="post">
+      <form name ='form1'>
         <div class="name-lastname">
-          <input id = 'nome' type = 'text' name = 'firstname' placeholder = "Nome">
-          <input id = 'sobrenome' type = 'text' name = 'lastname' placeholder = "Sobrenome">
+          <input id = 'nome' type = 'text' name = 'firstname' placeholder = "Nome" required>
+          <input id = 'sobrenome' type = 'text' name = 'lastname' placeholder = "Sobrenome" required>
         </div>
-        <input id = 'phone-email' type = 'text' name = 'phone_email' placeholder = "Celular ou email">
-        <input id="senha" type="password" name="password" placeholder="Nova senha">
+        <input id = 'phone-email' type = 'text' name = 'phone_email' placeholder = "Celular ou email" required>
+        <input id="senha" type="password" name="password" placeholder="Nova senha" required>
         <label for="data-de-nascimento" class="label-birthdate" id="label-birthdate">Data de nascimento
         </label>
-        <input id="data-de-nascimento" type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <input id="data-de-nascimento" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         <label class="label-gender" id = 'label-gender'>Gênero</label>
         <div class='genero'>
-        <input id = 'fem' name = "gender" type = "radio">
-        <label for = 'fem'>Feminino</label>
-        <input id = 'masc' name = 'gender' type = "radio">
-        <label for = 'masc'>Masculino</label>
-        <input id = 'pers' name = 'gender' type = "radio">
-        <label for = 'pers'>Personalizado</label>
+          <label for = 'fem'>Feminino</label>
+          <input type = "radio" id = 'fem' name = "gender" required>
+          <label for = 'masc'>Masculino</label>
+          <input type = "radio" id = 'masc' name = 'gender' required>
+          <label for = 'pers'>Personalizado</label>
+          <input type = "radio" id = 'pers' name = 'gender' required>
         </div>
         <button class="facebook-register" id = 'facebook-register' type="submit">Cadastre-se</button>
         </form>
