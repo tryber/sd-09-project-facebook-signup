@@ -27,13 +27,15 @@ buttonLogin.addEventListener('click', () => {
 // Validation
 const inputs = document.querySelectorAll('.validation');
 const functionValidation = () => {
+  let responseValidation = true;
   inputs.forEach((input) => {
     if (!input.value) {
       const message = document.querySelector('.message');
       message.style.display = 'block';
+      responseValidation = false;
     }
   });
-  return true;
+  return responseValidation;
 };
 
 // Optional gender
