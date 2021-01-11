@@ -25,7 +25,7 @@ logo-header img {
 
 .main-content {
   display: flex;
-  
+  justify-content: center;  
   /* mudar para cor correta de background */
   background-color: lightgray;
   
