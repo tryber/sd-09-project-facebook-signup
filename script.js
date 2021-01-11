@@ -5,9 +5,9 @@ getButton.addEventListener('click', function () {
 
 function checkEmptyFields() {
   const getInputs = document.querySelectorAll('#register-form input');
-  for (index = 0; index < getInputs.length; index += 1) {
-    if ( getInputs[index].value === '' ) {
-      alert('Campos inválidos')
+  for (let index = 0; index < getInputs.length; index += 1) {
+    if (getInputs[index].value === '') {
+      alert('Campos inválidos');
     }
     continue;
   }
