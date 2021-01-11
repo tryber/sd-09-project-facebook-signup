@@ -5,5 +5,5 @@ window.onload = function () {
 
   button.addEventListener('click', function () {
     return alert(input.value);
-  })
-}
+  });
+};
