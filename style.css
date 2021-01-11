@@ -25,7 +25,7 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .left-content {
