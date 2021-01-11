@@ -9,6 +9,7 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
+  padding: 1% 0;
 }
 
 .facebook-login {
@@ -17,7 +18,7 @@ body {
 
 .form-control {
   align-self: flex-end;
-  margin-bottom: 5.6%;
+  margin-bottom: 5.3%;
 }
 
 .button-login {
@@ -30,7 +31,6 @@ body {
 
 .user-email-phone-label , .user-password-label {
   color: white;
-  margin: 5% 0 0;
 }
 
 .user-password , .user-email-phone {
