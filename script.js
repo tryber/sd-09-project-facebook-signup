@@ -1,3 +1,5 @@
-function clicar(){
-  window.alert("Email ou telefone")
+function clicar() {
+  window.alert('Email ou telefone');
 }
+
+clicar()
