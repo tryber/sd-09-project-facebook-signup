@@ -21,3 +21,7 @@
   color: white;
   display: block;
 }
+
+.form-control {
+  align-self: flex-end;
+}
