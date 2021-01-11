@@ -1,15 +1,15 @@
 .top-bar {
-	align-items: center;
-	background-color: rgb(66, 103, 178);
+  align-items: center;
+  background-color: rgb(66, 103, 178);
   display: flex;
-	justify-content: space-between;
-	width: 100%;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .facebook-login {
-	display: flex;
-	justify-content: space-between;
-	margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
 }
 
 .form-group {
@@ -24,7 +24,7 @@
 
 .main-content {
   background-color: #f0f2f5;
-	display: flex;
+  display: flex;
   flex-direction: row;
   height: 577px;
   justify-content: space-around;
@@ -40,63 +40,60 @@
 }
 
 .label-birthdate {
-	flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
 }
 
 .label-gender {
-	flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
 form {
-display: flex;
-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .name-input {
-margin: 0 auto;
-padding: 5px;
-width: 40%;
+  margin: 0 auto;
+  padding: 5px;
+  width: 40%;
 }
 
 .lastname-input {
-margin: 0 auto;
-padding: 5px;
-width: 40%;
+  margin: 0 auto;
+  padding: 5px;
+  width: 40%;
 }
 
 .phoneemail-input {
-margin: 10px auto;
-padding: 5px;
-width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+  width: 90%;
 }
 
 .password-input {
-margin: 0 auto;
-padding: 5px;
-width: 90%;
-}
-
-.label-birthdate {
-margin-left: 5px;
-margin-top: 5px;
-padding: 5px;
-width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  width: 90%;
 }
 
 .birthdate-input {
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 .facebook-register {
-margin: 10px;
-padding: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .name {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .genero {
-display: flex;
+  display: flex;
 }
