@@ -37,6 +37,10 @@ body {
   margin: 3% 5% 3% 0;
 }
 
+.form-group a {
+  text-decoration: none;
+}
+
 /* Felipe */
 .main-content {
   display: flex;
