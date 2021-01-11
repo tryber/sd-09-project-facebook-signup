@@ -9,7 +9,12 @@ body {
   justify-content: space-evenly;
 }
 
-.facebook-login {
+form.facebook-login {
   align-items: center;
   display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
