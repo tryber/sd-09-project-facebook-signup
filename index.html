@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bulma.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
 
@@ -13,17 +15,74 @@
     </header>
     <section class="main-content">
         <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <img src="imgs/networking.png" id="facebook-networking" alt="Icones de pessoas sobre os paises do mundo, possuindo traços que representam a conexão entre elas">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+                sua vida.</p>
+            <img src="imgs/networking.png" id="facebook-networking"
+                alt="Icones de pessoas sobre os paises do mundo, possuindo traços que representam a conexão entre elas">
         </div>
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <h3 class="quick-easy">É rápido e fácil.</h3>
             <form action="">
 
+                <div class="name-container">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Nome" name="firstname">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Sobrenome" name="lastname">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Celular ou email" name="phone_email">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="password" placeholder="Nova Senha" name="password">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="birthdate" id="label-birthdate">Data de nascimento</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" id="label-gender">Gênero</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="gender">
+                            Feminino
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="gender">
+                            Masculino
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="gender">
+                            Personalizado
+                        </label>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <input type="submit" id="facebook-register" class="button is-success" value="Cadastre-se">
+                </div>
             </form>
         </div>
     </section>
-    
+
 </body>
+
 </html>
