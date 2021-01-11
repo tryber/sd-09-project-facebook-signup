@@ -2,3 +2,11 @@
     display: flex;
     flex-direction: column;
 }
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+}
+
+.top-bar img {
+
+}
