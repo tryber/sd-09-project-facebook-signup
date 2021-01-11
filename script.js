@@ -8,10 +8,12 @@ loginBtn.addEventListener('click', function () {
 const registerBtn = document.querySelector('#facebook-register');
 const inputs = document.querySelectorAll('.input');
 
-registerBtn.addEventListener('click', function () {
+registerBtn.addEventListener('click', function (event) {
+  const invalid = document.querySelector('#invalid');
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
-      inputs[index].value = 'Campos inválidos';
+      event.preventDefault();
+      invalid.innerText = 'Campos inválidos';
     }
   }
 });
