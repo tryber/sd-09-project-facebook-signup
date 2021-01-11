@@ -1,5 +1,5 @@
 body {
-  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+  font-family: lucida grande, tahoma, verdana, arial, sans-serif;
 }
 .main-content {
   display: flex;
@@ -18,7 +18,7 @@ body {
 .slogan {
   color: #0e385f;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 29px;
   margin-top: 40px;
   word-spacing: -1px;
