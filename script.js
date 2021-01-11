@@ -12,14 +12,19 @@ function validadeField() {
   buttonSubmit.addEventListener('click', function (event) {
     event.preventDefault();
     const fields = document.querySelectorAll('.register-form input');
+    let validateFields = false;
     for (let index = 0; index < fields.length; index += 1) {
       const fieldValue = fields[index].value;
       if (fieldValue === '') {
-        const form = document.querySelector('.register-form');
-        const formWarning = document.createElement('p');
-        formWarning.innerText = 'Campos inválidos';
-        form.appendChild(formWarning);
+        validateFields = true;
       }
+    }
+
+    if (validateFields === true) {
+      const form = document.querySelector('.register-form');
+      const formWarning = document.createElement('p');
+      formWarning.innerText = 'Campos inválidos';
+      form.appendChild(formWarning);
     }
   });
 }
@@ -29,7 +34,9 @@ function personalizeGenderField() {
 
   personalizedField.addEventListener('click', function () {
     if (personalizedField.checked === true) {
-      const personalizedContainer = document.querySelector('#personalized-gender-container');
+      const personalizedContainer = document.querySelector(
+        '#personalized-gender-container'
+      );
       const inputPersonalizedGender = document.createElement('input');
       inputPersonalizedGender.type = 'type="text"';
       inputPersonalizedGender.name = 'gender-custom';
