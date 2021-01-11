@@ -28,6 +28,11 @@ body {
   align-self: flex-end;
 }
 
+.inputs-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .left-content {
   width: 800px;
 }
