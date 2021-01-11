@@ -31,4 +31,19 @@
 
 .right-content {
   width: 300px;
+  background-color: magenta;
 }
+
+.open-account {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right-content .name-lastname {
+  width: 117px;
+}
+
+.right-content .pass_phone_email {
+  width: 100%;
+}
+
