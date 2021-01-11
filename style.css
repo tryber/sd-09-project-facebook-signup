@@ -35,3 +35,17 @@ body {
 .right-content {
   width: 300px;
 }
+
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nomeSobrenome {
+  flex-grow: 1;
+  width: 100px;
+}
+
+.extra {
+  width: 100%;
+}

@@ -35,13 +35,18 @@
         </p>
         <img src="imgs/networking.png" alt="facebookNetworking" id="facebook-networking">
       </section>
-    
+
       <section class="right-content">
         <h1>Abra uma conta</h1>
         <p id="quick-easy">É rápido e fácil.</p>
         <form>
-          <input type="text" name="firstname" placeholder="Nome" >
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" class="nomeSobrenome">
+          <input type="text" name="lastname" placeholder="Sobrenome" class="nomeSobrenome">
+          <input type="text" name="phone_email" placeholder="Celular ou email" class="extra">
+          <input type="password" name="password" placeholder="Nova senha" class="extra">
+
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="extra">
         </form>
       </section>
     </main>
