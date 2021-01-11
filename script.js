@@ -1,5 +1,11 @@
 function clicar() {
-  window.alert('Email ou telefone');
+
+  btnclicar = document.querySelector('.form-botao');
+  btnclicar.addEventListener('click', function(){
+     alert('Email ou telefone')
+
+  })
+
 }
 
 clicar();

@@ -7,16 +7,17 @@ body {
   display: flex;
   height: 40px;
   justify-content: space-between;
-  
+
 }
 
 .facebook-login {
-  width: 280px;
-  margin-right: 80px;
-  display: flex;
-  justify-content: space-around;
-  font-size: 12px;
   color: white;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-around;
+  margin-right: 80px;
+  width: 280px;
+
 }
 
 .form-group {
@@ -26,18 +27,17 @@ body {
   width: 100px;
 }
 
-#user-email-phone-label {
+.form-senha {
   height: 10px;
   width: 100px;
 }
 
-#user-password-label {
+.form-login {
   height: 10px;
   width: 100px;
 }
 
-.form-control {
-  align-self: flex-end;
+.form-botao {
   background-color: rgb(80, 122, 207);
   border: none;
   color: white;
@@ -47,6 +47,10 @@ body {
   width: 35px;
  
 }
+.form-control {
+  align-self: flex-end;
+}
+
 
 .recuperar {
   text-decoration: none;
