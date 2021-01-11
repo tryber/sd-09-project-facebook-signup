@@ -30,10 +30,25 @@ body {
   background-color: aqua;
   display: flex;
   height: 600px;
+  justify-content: space-evenly;
   width: 100%;
 }
 
 .left-content {
   background-color: cadetblue;
+  text-align: left;
   width: 800px;
+}
+
+.right-content {
+  background-color: coral;
+  width: 300px;
+}
+
+#facebook-slogan {
+  padding: 3rem;
+}
+
+#facebook-networking {
+  margin-left: 2rem;
 }
