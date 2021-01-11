@@ -16,3 +16,8 @@
   color: white;
   font-family: fantasy;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
