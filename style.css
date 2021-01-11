@@ -5,18 +5,18 @@
 
 .facebook-login {
   display: flex;
-  margin: 10px 10px;
+  margin: 10px;
   position: absolute;
   right: 180px;
 }
 
-.facebook-login label  {
+.facebook-login label {
   color: white;
   font-family: fantasy;
   margin: 0 10px;
 }
 
-.left-content{
+.left-content {
   width: 800px;
 }
 
@@ -26,6 +26,6 @@
   justify-content: center;
 }
 
-.right-content{
+.right-content {
   width: 300px;
 }
