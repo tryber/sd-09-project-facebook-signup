@@ -47,3 +47,8 @@ body {
 .right-content {
   width: 300px;
 }
+
+.fullname {
+  display: flex;
+  justify-content: space-between;
+}
