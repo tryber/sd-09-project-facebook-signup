@@ -11,8 +11,7 @@
 }
 
 .facebook-logo {
-  align-self: center;
-  justify-self: flex-start;
+  float: left;
 }
 
 .user-data {
