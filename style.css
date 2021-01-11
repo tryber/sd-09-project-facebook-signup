@@ -17,11 +17,23 @@ body {
 
 .form-control {
   align-self: flex-end;
-  margin-bottom: 1.7%;
+  margin-bottom: 1.9%;
 }
 
 .button-login {
-  background-color: red;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.user-email-phone-label, .user-password-label {
+  color: #fff;
+}
+
+.user-password, .user-email-phone {
+  margin: 0 5% 0 0;
 }
 
 /* Felipe */
