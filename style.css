@@ -11,10 +11,6 @@ body {
   justify-content: space-around;
 }
 
-.facebook.login {
-  display: flex;
-}
-
 .main-content {
   display: flex;
 }
