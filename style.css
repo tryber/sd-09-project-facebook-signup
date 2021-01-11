@@ -9,13 +9,10 @@
   flex-direction: column;
 }
 
-<<<<<<< HEAD
 .form-control {
   align-self: flex-end;
 }
 
-=======
->>>>>>> 289ffc7fd04f402722b8a41aeb7d16f2a36e1220
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
