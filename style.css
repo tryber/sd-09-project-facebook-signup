@@ -7,7 +7,7 @@
   order: 0;
 }
 
-.form-grup {
+.form-group {
   display: flex;
   flex-direction: column;
 }
