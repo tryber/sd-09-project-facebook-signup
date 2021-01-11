@@ -14,7 +14,7 @@ body {
   margin-left: 20%;
 }
 
-form.facebook-login {
+.facebook-login {
   display: flex;
   justify-content: flex-end;
   margin-left: 40%;
