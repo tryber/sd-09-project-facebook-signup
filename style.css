@@ -34,8 +34,10 @@
   flex-direction: column;
 }
 
-.gender {
+.labelGender {
+  display: flex;
   font-size: small;
+  justify-content: center;
 }
 
 .nascimento {
@@ -47,4 +49,18 @@
 
 .nascimento input {
   width: 98%;
+}
+
+.nomeSobrenome {
+  display: flex;
+}
+
+.nomeSobrenome input {
+  width: 50%;
+}
+
+.radioButtons {
+  font-size: small;
+  display: flex;
+  justify-content: center;
 }

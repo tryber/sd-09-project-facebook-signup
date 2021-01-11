@@ -40,19 +40,21 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" class="cadastro">
-        <input type="text" name="firstname" placeholder="Nome"  required>
+        <section class="nomeSobrenome">
+        <input type="text"  name="firstname" placeholder="Nome"  required>
         <input type="text"  name="lastname" placeholder="Sobrenome" required>
+        </section>
         <input type="text"  name="phone_email"  placeholder="Celular ou email"  required>
         <input type="password"  name="password" placeholder="Nova senha"  required>
-        <label id="label-birthdate" class="nascimento">Data de Nascimento
-        <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa"  required>
-        </label>
-        <label id="label-gender" class="gender">Gênero
+        <label id="label-birthdate" class="nascimento">Data de Nascimento</label>
+        <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa" required>
+        <label id="label-gender" class="labelGender">Gênero</label>
+        <div class="radioButtons">
         <input type="radio" value="gender">Feminino
         <input type="radio" value="gender">Masculino
         <input type="radio" value="gender">Personalizado
+        </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
-      </label>
       </form>
     </div>
   </section>
