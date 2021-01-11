@@ -43,4 +43,9 @@ body {
 
 .right-content form {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.form-name {
+  width: 40%;
 }
