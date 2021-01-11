@@ -5,7 +5,20 @@
 }
 .top-bar {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: rgb(66, 103, 178);
     width: 100%;
     height: 100px;
 }
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+  }
