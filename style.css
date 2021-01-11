@@ -1,13 +1,20 @@
-* {
-  padding: 0;
-  margin: 0;
+body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .header-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  width: 100%;
+}
+
+.top-bar input {
+  display: flex;
+  float: right;
 }
