@@ -2,41 +2,33 @@
   color: white;
   margin: 0px;
 }
-
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  height: 3rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-h1 {
-  color: white;
-}
-
-<<<<<<< HEAD
-form {
-  
-  border: 1px solid black;
-}
-
-logo-header img {
-  
-=======
-.main-content {
+.email-login {
   display: flex;
   flex-direction: column;
+}
+.form-header {
+  border: 1px solid black;
+  display: flex;
+}
+/*  HEAD  */
+.main-content {
   /* mudar para cor correta de background */
   background-color: lightgray;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
-
 .left-content {
   width: 800px;
 }
-
 .right-content {
   width: 300px;
->>>>>>> 77f1e25cbd41cdbe3ed6c6a2711f49fba5a5fede
+  /* >>>>>>> 77f1e25cbd41cdbe3ed6c6a2711f49fba5a5fede */
+}
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  width: 100%;
 }
