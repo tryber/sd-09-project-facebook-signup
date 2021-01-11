@@ -45,3 +45,8 @@ body {
 .lastname {
   align-self: flex-end;
 }
+
+.facebook-datas {
+  display: flex;
+  flex-direction: column;
+}
