@@ -40,3 +40,7 @@ body {
   flex-direction: row;
   height: 95vh;
 }
+
+.left-content {
+  width: 800px;
+}
