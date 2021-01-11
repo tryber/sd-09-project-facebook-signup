@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 /* Felipe */
 .main-content {
   display: flex;
