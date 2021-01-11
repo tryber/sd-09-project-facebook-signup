@@ -26,10 +26,20 @@ function validacao (event) {
     event.preventDefault();
   }
 }
+function generoPersonaliza() {
+  const input = document.createElement('input');
+  input.placeholder = 'Gênero (opcional)';
+  input.name = 'gender-custom';
+  input.className = 'genero-personalizado';
+  const genero = document.querySelector('#genero');
+  genero.appendChild(input);
+}
 
 window.onload = function () {
   const btn = document.querySelector('#button-login');
   btn.addEventListener('click', alerta);
   const btnCadastro = document.querySelector('#facebook-register');
   btnCadastro.addEventListener('click' , validacao);
+  const radio = document.querySelector("#perso");
+  radio.addEventListener('click', generoPersonaliza);
 };
