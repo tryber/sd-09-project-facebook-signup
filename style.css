@@ -9,17 +9,7 @@
   justify-content: flex-end;
 }
 
-.facebook.logo {
-  display: flex;
-  /* justify-content: flex-start; */
-}
-
 .form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group label {
   color: white;
   display: flex;
   flex-direction: column;
