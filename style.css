@@ -1,13 +1,13 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .header-container {
-    display: flex;
+  display: flex;
 }
 
 .top-bar {
-    background-color: rgb(66, 103, 178)
+  background-color: rgb(66, 103, 178)
 }
