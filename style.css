@@ -16,6 +16,7 @@
 .form-control {
   align-self: flex-end;
 }
-.main-content{
+
+.main-content {
   display: flex;
 }
