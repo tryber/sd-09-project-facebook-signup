@@ -1,14 +1,35 @@
-function alerta() {
+function alerta(){
   const email = document.querySelector('#user-email-phone');
   alert(email.value);
 }
 
-function validacao (event) {
-  if(document.getElementById('name').value === '' || document.getElementById('lastname').value === '' || document.getElementById('phonemail').value === '' || document.getElementById('senha').value === '' || document.getElementById('nascimento').value === '' ) {
-    alert('Campos inválidos');
+function verify (){
+  alert('Campos inválidos');
     event.preventDefault();
-  }
+}
+
+function validacao (event){
   let status = false;
+  if(document.getElementById('name').value === ''){
+    verify();
+  }
+
+  if( document.getElementById('lastname').value === ''){
+    verify();
+  }
+
+  if( document.getElementById('phonemail').value === ''){
+    verify();
+  }
+
+  if( document.getElementById('senha').value === ''){
+    verify();
+  }
+
+  if( document.getElementById('nascimento').value === ''){
+    verify();
+  }
+  
   if (document.getElementById('fem').checked) {
     status = true;
   }
@@ -22,11 +43,11 @@ function validacao (event) {
   }
 
   if (status === false) {
-    alert('Campos inválidos');
-    event.preventDefault();
+    verify();
   }
 }
-function generoPersonaliza() {
+
+function generoPersonaliza(){
   const input = document.createElement('input');
   input.placeholder = 'Gênero (opcional)';
   input.name = 'gender-custom';
@@ -35,7 +56,7 @@ function generoPersonaliza() {
   genero.appendChild(input);
 }
 
-window.onload = function () {
+window.onload = function (){
   const btn = document.querySelector('#button-login');
   btn.addEventListener('click', alerta);
   const btnCadastro = document.querySelector('#facebook-register');
