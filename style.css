@@ -1,0 +1,35 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aqua;
+}
+
+.main-content {
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content {
+  background-color: antiquewhite;
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.full-name {
+  height: 39px;
+  width: 49%;
+}
+
+.rest-data {
+  height: 39px;
+  width: 99.3%;
+}
