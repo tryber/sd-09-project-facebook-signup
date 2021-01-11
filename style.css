@@ -1,5 +1,5 @@
-body{
-  margin-left: 0px;
+body {
+  margin-left: 0;
 }
 
 .top-bar {
@@ -8,9 +8,15 @@ body{
   height: 100px;
   position: absolute;
   width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .title {
   color: white;
   align-self: flex-end;
+}
+
+.nav {
+  display: flex;
 }
