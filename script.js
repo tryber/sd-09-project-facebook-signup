@@ -3,8 +3,7 @@ const loginInput = document.querySelector('#user-email-phone');
 
 function showAlert() {
   loginButton.addEventListener('click', function () {
-    let loginInputValue = loginInput.value;
-    alert(loginInputValue);
+    alert(loginInput.value);
   });
 }
 showAlert();
