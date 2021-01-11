@@ -3,13 +3,10 @@ html {
   padding: 0;
 }
 
-body {
-  padding: 0 200px;
-}
-
 .top-bar {
   background-color: #4267b2;
   display: flex;
+  justify-content: space-around;
 }
 
 .top-bar img {
@@ -18,4 +15,9 @@ body {
 
 .facebook-login {
   display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: wrap column;
 }
