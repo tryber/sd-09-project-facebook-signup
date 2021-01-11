@@ -3,26 +3,45 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .facebook-login {
   color: white;
   display: flex;
   font-size: 12px;
 }
+
 .form-control {
   align-self: flex-end;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
+
+.left-content {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   height: 82px;
   justify-content: space-between;
   width: 100%;
 }
+
 a:hover , a:visited , a:link {
   color: rgb(194, 194, 194);
   text-decoration: none;
