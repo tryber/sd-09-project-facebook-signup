@@ -13,11 +13,11 @@
     <form class="facebook-login" action="">
       <div class="form-group">
         <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-        <input type="text" id="user-email-phone" name="user-email-phone" />
+        <input type="text" id="user-email-phone" name="user-email-phone"/>
       </div>
       <div class="form-group">
         <label id="user-password-label" for="user-password">Senha</label>
-        <input type="text" id="user-password" name="user-email-phone" />
+        <input type="text" id="user-password" name="user-email-phone"/>
       </div>
       <div class="form-control">
         <button class="entrar-button" id="button-login">Entrar</button>
@@ -44,15 +44,16 @@
         <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
         <label for="" id="label-gender">Gênero</label>
         <div class="gender-radios">
-          <input type="radio" name="gender" id="gender-female">
+          <input type="radio" name="gender" id="gender-female" value="Feminino">
           <label for="gender-female">Feminino</label>
-          <input type="radio" name="gender" id="gender-male">
+          <input type="radio" name="gender" id="gender-male" value="Masculino">
           <label for="gender-male">Masculino</label>
-          <input type="radio" name="gender" id="gender-custom">
+          <input type="radio" name="gender" id="gender-custom" value="Personalizado">
           <label for="gender-custom">Personalizado</label>
         </div>
         <input class="input-genero" type="text" name="gender-custom" placeholder="Gênero (opcional)"/>
         <button type="submit" id="facebook-register">Cadastre-se</button>
+        <p id="invalid-fields"></p>
       </form>
     </section>
   </main>
