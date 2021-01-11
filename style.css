@@ -10,13 +10,13 @@ body {
   justify-content: space-between;
 }
 
-.max-width {
+/* .max-width {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
-}
+} */
 
 .facebook-login {
   display: flex;
