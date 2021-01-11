@@ -6,7 +6,8 @@ html {
 .top-bar {
   background-color: #4267b2;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .facebook-logo {
