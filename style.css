@@ -1,35 +1,51 @@
-body{
-  margin:0;
-
+body {
+  margin: 0;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 40px;
   justify-content: space-between;
-
+  
 }
 
 .facebook-login {
+  width: 280px;
+  margin-right: 80px;
   display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  color: white;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 100px;
   height: 10px;
+  width: 100px;
+}
+
+#user-email-phone-label {
+  height: 10px;
+  width: 100px;
+}
+
+#user-password-label {
+  height: 10px;
+  width: 100px;
 }
 
 .form-control {
   align-self: flex-end;
-  padding: 0;
-  font-size: 10px;
-  width: 35px;
-  height: 20px;
   background-color: rgb(80, 122, 207);
   border: none;
-  color: white; 
+  color: white;
+  font-size: 10px;
+  height: 20px;
+  padding: 0;
+  width: 35px;
+ 
 }
 
 .recuperar {
@@ -40,13 +56,4 @@ body{
 
 .facebook-logo {
   margin-left: 50px;
-}
-
-.facebook-login {
-  width: 280px;
-  margin-right: 80px;
-  display: flex;
-  justify-content: space-around;
-  font-size: 12px;
-  color: white; 
 }
