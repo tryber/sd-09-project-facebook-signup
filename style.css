@@ -43,3 +43,7 @@ body {
   flex-grow: 0;
   flex-shrink: 0;
 }
+
+.right-content form {
+  display: flex;
+}
