@@ -53,3 +53,12 @@
 .right-content {
   width: 300px;
 }
+
+.form-container > div:nth-child(1) {
+  display: flex;
+}
+
+.form-wrapper {
+  margin: 10px;
+}
+
