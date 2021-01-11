@@ -13,6 +13,11 @@ body {
 
 @media screen and ( min-width : 780px ) {
 
+  .right-content {
+    border: 1px solid magenta;
+    width: 300px;
+  }
+
   .left-content {
     border: 1px solid magenta;
     width: 800px;
@@ -20,6 +25,7 @@ body {
 
   .main-content {
     display: flex;
+    justify-content: center;
   }
 
   .facebook-login {
