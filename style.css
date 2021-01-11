@@ -44,6 +44,6 @@
   display: flex;
 }
 
-.genero input {
-  flex: 0 2 33%;
+.genero div {
+  display: flex;
 }
