@@ -63,6 +63,10 @@ body {
   width: 300px;
 }
 
+.form-container div {
+  margin-bottom: 10px;
+}
+
 .form-container > div:nth-child( 1 ) {
   display: flex;
 }

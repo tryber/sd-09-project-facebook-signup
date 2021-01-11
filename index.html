@@ -49,27 +49,25 @@
                 </div>
                 <div class="col-sm-12">
                     <label for="label-birthdate">Data de nascimento</label>
-                    <input type="text" id="label-birthdate" name="password" placeholder="dd/mm/aaaa" class="form-control">
+                    <input type="text" id="label-birthdate" name="birthdate" placeholder="dd/mm/aaaa" class="form-control">
                 </div>
-                <div class="col-sm-12">
-                    <div>
-                        <label id="label-gender">Gênero</label>
-                    </div>
-                    <span>
+                <div class="row">
+                    <label id="label-gender">Gênero</label>
+                    <div class="form-check col-sm-4">
                         <input type="radio" id="label-gender-woman" name="gender" class="form-check-input">
-                        <label for="label-gender-woman">Feminino</label>
-                    </span>
-                    <span>
+                        <label for="label-gender-woman" class="form-check-label">Feminino</label>
+                    </div>
+                    <div class="form-check col-sm-4">
                         <input type="radio" id="label-gender-man" name="gender" class="form-check-input">
-                        <label for="label-gender-man">Masculino</label>
-                    </span>
-                    <span>
-                        <input type="radio" id="label-gender-custom" name="gender" class="">
-                        <label for="label-gender-custom">Personalizado</label>
-                    </span>
+                        <label for="label-gender-man" class="form-check-label">Masculino</label>
+                    </div>
+                    <div class="form-check col-sm-4">
+                        <input type="radio" id="label-gender-custom" name="gender" class="form-check-input">
+                        <label for="label-gender-custom" class="form-check-label">Personalizado</label>
+                    </div>
                 </div>
                 <div class="form-wrapper">
-                    <button type="submit" id="facebook-register">Cadastre-se</button>
+                    <button type="submit" id="facebook-register" class="btn btn-success">Cadastre-se</button>
                 </div>
             </form>
         </section>
