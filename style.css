@@ -40,3 +40,64 @@
 .right-content{
   width: 300px;
 }
+#label-birthdate{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#label-gender{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+form{
+display: flex;
+flex-flow: row wrap;
+}
+.name-input {
+margin: 0 auto;
+padding: 5px;
+width: 40%;
+}
+.lastname-input {
+margin: 0 auto;
+padding: 5px;
+width: 40%;
+}
+
+.phoneemail-input {
+margin: 10px auto;
+padding: 5px;
+width: 90%;
+}
+
+.password-input {
+margin: 0 auto;
+padding: 5px;
+width: 90%;
+}
+
+.label-birthdate {
+margin-left: 5px;
+margin-top: 5px;
+padding: 5px;
+width: 100%;
+}
+
+.birthdate-input {
+margin-left: 10px;
+}
+#facebook-register{
+margin: 10px;
+padding: 10px;
+}
+.facebook-login {
+display: flex;
+justify-content: space-between;
+margin-left: 100px;
+}
+.name {
+display: flex;
+justify-content: space-between;
+}
+.genero {
+display: flex;
+}
