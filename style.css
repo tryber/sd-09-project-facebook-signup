@@ -28,16 +28,12 @@ body {
   font-weight: 700px;
 }
 
-.user-email-phone-label, .user-password-label {
-<<<<<<< HEAD
+.user-email-phone-label , .user-password-label {
   color: white;
-=======
-  color: #fff;
   margin: 5% 0 0 0;
->>>>>>> c546224da7c87944426b088f43aa1f51bb307bbd
 }
 
-.user-password, .user-email-phone {
+.user-password , .user-email-phone {
   margin: 0 5% 0 0;
 }
 
