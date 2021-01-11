@@ -31,7 +31,6 @@ const functionValidation = () => {
     if (!input.value) {
       const message = document.querySelector('.message');
       message.style.display = 'block';
-      return;
     }
   });
   return true;
