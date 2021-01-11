@@ -30,6 +30,7 @@ function createNewUserInfo() {
   document.querySelector('#facebook-networking').src = './imgs/beTrybe.jpg';
   document.querySelector('#facebook-slogan').innerText = 'A escola que te ensina a programar, a aprender e a trabalhar.';
   document.querySelector('.top-container').style.backgroundColor = 'rgb(64,145,108)';
+  document.querySelector('.top-bar').style.backgroundColor = 'rgb(64,145,108)';
   rightContentBox.removeChild(getFormNewAccount);
   rightContentBox.removeChild(rightContentBox.querySelector('h1'));
   rightContentBox.removeChild(rightContentBox.querySelector('p'));
