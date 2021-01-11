@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Header requisitos 1 ao 7 -->
+    <!-- Main content 8 ao 17 -->
+    <!-- js 18 ao 20 -->
+    <section class="top-container">
+      <header class="top-bar">
+          <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do facebook">
+          <form class="facebook-login" action="">
+            <section class="form-group">
+              <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+              <input type="text" id="user-email-phone" name="login-name">
+            </section>
+            <section class="form-group password-container">
+              <label id="user-password-label" for="user-password">Senha</label>
+              <input id="user-password" type="password" name="login-pass">
+            </section>
+            <section class="form-control">
+              <button id="button-login">Entrar</button>
+            </section>
+          </form>
+      </header>
+    </section>
+
+    <section class="main-content">
+      <section class="left-content">
+        <p id="facebook-slogan"> O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+          vida. </p>
+        <img src="imgs/networking.png" alt="" id="facebook-networking">
+      </section>
+      <section class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="" id="register-form">
+          <section class="name-container">
+            <label for="firstname">
+              <input type="text" name="firstname" id="firstname" placeholder="Nome" class="new-register" required>
+            </label>
+            <label for="lastname">
+              <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" class="new-register lastname" required>
+            </label>
+          </section>
+          <label for="phone_email">
+            <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" class="new-register" required>
+          </label>
+          <label for="password">
+            <input type="password" name="password" id="password" placeholder="Nova senha" class="new-register" required>
+          </label>
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="new-register" required>
+          <label for="gender" id="label-gender" class="gender-label">Gênero</label>
+          <label for="female">
+            <input type="radio" name="gender" id="female" value="Feminino" required>Feminino</label>
+          <label for="male">
+            <input type="radio" name="gender" id="male" value="Masculino">Masculino</label>
+          <label for="custom">
+            <input type="radio" name="gender" id="custom" value="Personalizado">Personalizado</label>
+          <label for="gender-custom">
+            <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" class="gender-input hidden">
+          </label>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
+          <p id="error-message"></p>
+        </form>
+      </section>
+    </section>
+    <footer class="footer">
+      <p>Português (Brasil) English (US) Español Français (France) Italiano العربية Deutsch हिन्दी 中文(简体) 日本語</p>
+      <hr />
+      <p>Cadastre-se Entrar Messenger Facebook Lite Watch Pessoas Páginas Categorias de Página Locais Jogos Locais Marketplace  Grupos Portal Instagram Local Campanhas de arrecadação de fundos Serviços Sobre Criar anúncio Criar Página Desenvolvedores Carreiras Privacidade Cookies Opções de anúncios Termos Ajuda</p>
+      <p>Facebook © 2020</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
