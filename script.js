@@ -9,7 +9,6 @@ function checkEmptyFields() {
     if (getInputs[index].value === '') {
       alert('Campos inválidos');
     }
-    continue;
   }
 }
 
