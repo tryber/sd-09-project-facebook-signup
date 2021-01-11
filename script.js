@@ -9,6 +9,6 @@ botaoCadastro.addEventListener('click', (event) => {
   // Baseado no código do Hugo Braga da turma 8
   const resultado = newUser.checkValidity();
   if (!resultado) {
-  newUser.appendChild(mensagemErro);
+    newUser.appendChild(mensagemErro);
   }
 });
