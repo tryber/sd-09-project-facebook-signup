@@ -45,17 +45,17 @@ body {
   height: 20px;
   padding: 0;
   width: 35px;
- 
 }
+
 .form-control {
   align-self: flex-end;
 }
 
 
 .recuperar {
-  text-decoration: none;
   color: white;
   font-size: 10px;
+  text-decoration: none;
 }
 
 .facebook-logo {
