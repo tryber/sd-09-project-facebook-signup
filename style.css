@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-
 /* DESAFIO 01*/
-=======
 body {
   margin: 0;
 }
 
->>>>>>> 34890941ee94bf359354a06099a1eff71c49baa0
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -22,20 +18,15 @@ body {
 .facebook-login label {
   color: white;
   font-family: fantasy;
-<<<<<<< HEAD
+  margin: 10px;
 }
 
 .form-group {
-  display: flex;
-  
-
+  display: flex; 
 }
 
 .form-control {
   align-self: flex-end
-}
-=======
-  margin: 0 10px;
 }
 
 .left-content {
@@ -51,4 +42,3 @@ body {
 .right-content {
   width: 300px;
 }
->>>>>>> 34890941ee94bf359354a06099a1eff71c49baa0
