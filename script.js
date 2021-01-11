@@ -34,9 +34,7 @@ function personalizeGenderField() {
 
   personalizedField.addEventListener('click', function () {
     if (personalizedField.checked === true) {
-      const personalizedContainer = document.querySelector(
-        '#personalized-gender-container'
-      );
+      const personalizedContainer = document.querySelector('#personalized-gender-container');
       const inputPersonalizedGender = document.createElement('input');
       inputPersonalizedGender.type = 'type="text"';
       inputPersonalizedGender.name = 'gender-custom';
