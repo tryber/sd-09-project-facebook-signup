@@ -45,7 +45,7 @@ body {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
   height: 80px;
-  color: white;
 }
