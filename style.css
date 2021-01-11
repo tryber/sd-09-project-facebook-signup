@@ -3,3 +3,16 @@
   display: flex;
   justify-content: space-between;
 }
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
