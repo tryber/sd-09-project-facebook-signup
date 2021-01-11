@@ -19,7 +19,7 @@
                 <input type="password" id="user-password-label">
             </div>
             <div>
-                <button id="button-login">Entrar</button>
+                <button id="button-login" type="submit" >Entrar</button>
             </div>
         </form>
     </header>
@@ -46,10 +46,24 @@
                     <label id="label-birthdate" for="id-birthdate">Data de nascimento</label>
                     <input type="text" name="birthdate" id="id-birthdate" placeholder="dd/mm/aaaa">
                 </div>
+                <div>
+                    <label id="label-gender" for="">Gênero</label>
+                    <div>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Feminino</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Masculino</label>
+                        <input type="radio" name="gender" id="custom">
+                        <label for="custom">Personalizado</label>
+                    </div>
+                </div>
+                <button id="facebook-register" type="submit">Cadastre-se</button>
                 
             </form>
 
         </div>
+
+        
     </section>
 </body>
 </html>
