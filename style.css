@@ -21,17 +21,25 @@ body {
   align-items: baseline;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
 .form-group {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   margin-right: 10px;
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   display: flex;
+  justify-content:center;
+}
+
+.button-login {
+    border-radius: 3px;
+    border: none;
 }
 
 .main-content {
