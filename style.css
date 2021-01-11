@@ -13,6 +13,7 @@
 
 .main-content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -30,4 +31,10 @@
 .right-content {
   background-color: darkgreen;
   width: 300px;
+}
+
+.fullName {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
