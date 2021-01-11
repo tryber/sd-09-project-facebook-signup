@@ -51,8 +51,8 @@ body {
 
 .input-name-lastname {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 0.4rem;
 }
 
