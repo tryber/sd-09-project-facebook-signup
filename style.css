@@ -1,18 +1,18 @@
 .facebook-login form {
+  align-items: baseline;
   border: 1px solid white;
   display: flex;
-  align-items: baseline;
   justify-content: space-around;
 }
 
 .facebook-logo {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .form-control {
-  display: flex;
   align-self: flex-end;
+  display: flex;
 }
 
 .form-group {
