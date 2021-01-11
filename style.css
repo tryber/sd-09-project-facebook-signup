@@ -2,10 +2,14 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and ( min-width: 780px ) {
+
+  .facebook-logo {
+    border: 1px solid magenta;
+  }
+
   .top-bar {
+    background-color: rgb(66, 103, 178);
     display: flex;
-    background-color: rgb(66 , 103 , 178);
-    height: 75px;
   }
 }
