@@ -7,13 +7,16 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
+
 }
 
+/*
 .form-header {
+  display: flex;
   align-items: center;
   color: white;
-  display: flex;
 }
+*/
 
 .email-phone {
   display: flex;
@@ -28,6 +31,7 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  background-color: teal;
 }
 
 .form-control {
