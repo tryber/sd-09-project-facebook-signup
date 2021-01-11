@@ -1,8 +1,14 @@
-.top-bar {
-    background-color: rgb(66, 103, 178);
+.facebook-login {
     display: flex;
+    order: 1; 
 }
 
 .facebook-logo {
     order: 0;
+}
+
+.top-bar {
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    justify-content: space-between;
 }
