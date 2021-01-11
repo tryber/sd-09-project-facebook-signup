@@ -14,3 +14,8 @@ body {
 .facebook-login {
   display: flex;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
