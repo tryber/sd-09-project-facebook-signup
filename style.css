@@ -1,17 +1,13 @@
-
-* {
+body {
   margin: 0;
 }
 
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-evenly;
   height: 50px;
-}
-
-.facebook-logo {
-  /* align-self: flex-start; */
+  justify-content: space-around;
 }
 
 .facebook-login {
@@ -21,4 +17,8 @@
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
