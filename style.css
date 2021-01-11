@@ -33,4 +33,13 @@
 
 .register {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.full-name {
+  width: 47.3%;
+}
+
+.phone-and-password {
+  width: 100%;
 }
