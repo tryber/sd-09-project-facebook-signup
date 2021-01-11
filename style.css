@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+}
+
+.facebook-login {
+  display: flex;
+  margin: 10px;
+  position: absolute;
+  right: 180px;
+}
+
+.facebook-login label {
+  color: white;
+  font-family: fantasy;
+  margin: 10px;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.inputs-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.right-content {
+  width: 300px;
+}
