@@ -11,11 +11,13 @@
     <nav class="top-bar">
       <img src="imgs/facebook-logo.png" alt="Logo Facebook">
       <form action="teste.php" method="POST">
-        <label for="login">Email ou Telefone<br>
-            <input type="text" name="login" id="login">
-        </label>
+        <div id="form-group">
+          <label for="login" id="user-email-phone-label">Email ou Telefone<br>
+            <input type="text" name="login" id="user-email-phone">
+          </label>
+        </div>
         <label for="pass">Senha<br>
-            <input type="password" name="pass" id="pass">
+          <input type="password" name="pass" id="pass">
         </label>
         <input type="submit" value="Enviar">
     </form>
