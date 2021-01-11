@@ -1,0 +1,64 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nomeSobrenome {
+  flex-grow: 1;
+  width: 100px;
+}
+
+.extra {
+  width: 100%;
+}
+
+.gender-section label {
+  font-size: 15px;
+}
+
+.message {
+  display: none;
+}
+
+.optional-input {
+  display: none;
+  width: 100%;
+}
