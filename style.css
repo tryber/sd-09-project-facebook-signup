@@ -2,14 +2,22 @@ body {
   margin: 0;
 }
 
-@media screen and ( min-width: 780px ) {
+@media screen and ( min-width : 780px ) {
+
+  .facebook-login {
+    height: 30px;
+    width: 300px;
+    border: 1px solid magenta;
+  }
 
   .facebook-logo {
     border: 1px solid magenta;
   }
 
   .top-bar {
+    align-items: center;
     background-color: rgb(66, 103, 178);
     display: flex;
+    justify-content: space-evenly;
   }
 }
