@@ -38,9 +38,13 @@ body {
 
 .right-content form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .fullname {
+  display: flex;
+}
+
+.gender {
   display: flex;
 }
