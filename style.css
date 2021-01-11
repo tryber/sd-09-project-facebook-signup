@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-form.facebook-login {
+.facebook-login {
   align-items: center;
   color: aliceblue;
   display: flex;
