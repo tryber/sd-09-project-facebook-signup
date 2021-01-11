@@ -41,12 +41,7 @@
   flex-direction: column;
 }
 
-.container-name-lastname {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.container-sex {
+.side-by-side-containers {
   display: flex;
   flex-wrap: nowrap;
 }

@@ -32,22 +32,22 @@
       <h1>Abra uma conta</h1>
       <p class='quick-easy'>É rápido e fácil.</p>
       <form class='register' action='' method='GET'>
-        <div class='container-name-lastname'>
+        <div class='side-by-side-containers'>
           <input name='firstname' type='text' placeholder='Nome'>
           <input name='lastname' type='text' placeholder='Sobrenome'>
         </div>
         <input name='phone_email' type='text' placeholder='Celular ou email'>
         <input name='password' type='password' placeholder='Nova senha'>
-        <label for='' id='label-birthdate'>Data de nascimento</label>
-        <input name='birthdate' type='text' placeholder='dd/mm/aaaa'>
-        <label for='' id='label-gender'>Gênero</label>
-        <div class='container-sex'>
-          <label for='feminino'>Feminino</label>
+        <label for='birthdate' id='label-birthdate'>Data de nascimento</label>
+        <input name='birthdate' id='birthdate' type='text' placeholder='dd/mm/aaaa'>
+        <label id='label-gender'>Gênero</label>
+        <div class='side-by-side-containers'>
           <input type='radio' name='gender' id='feminino'>
-          <label for='masculino'>Masculino</label>
+          <label for='feminino'>Feminino</label>
           <input type='radio' name='gender' id='masculino'>
-          <label for='custom'>Personalizado</label>
+          <label for='masculino'>Masculino</label>
           <input type='radio' name='gender' id='custom'>
+          <label for='custom'>Personalizado</label>
         </div>
         <button id='facebook-register' type='submit'>Cadastre-se</button>
       </form>
