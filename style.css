@@ -11,6 +11,10 @@ body {
 }
 
 .facebook-login {
+  align-self: flex-start;
+}
+
+.facebook-login {
   display: flex;
 }
 
@@ -21,4 +25,13 @@ body {
 
 .form-control {
   align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container {
+  width: 800px;
 }
