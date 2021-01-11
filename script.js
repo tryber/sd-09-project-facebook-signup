@@ -1,8 +1,8 @@
 const teste = 2;
 const teste2 = 4;
 
-function sum(teste, teste2) {
-  const resultado = teste + teste2;
+function sum(param1, param2) {
+  const resultado = param1 + param2;
   return resultado;
 }
 
