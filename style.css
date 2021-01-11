@@ -1,8 +1,5 @@
-* {
+.email-login, .password-login{
   color: white;
-  margin: 0px;
-}
-.email-login {
   display: flex;
   flex-direction: column;
 }
@@ -26,4 +23,3 @@
   justify-content: space-between;
   width: 100%;
 }
-
