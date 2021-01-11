@@ -34,15 +34,23 @@
 }
 
 .facebook-logo {
-    /* text-align: center;
-    margin-left: 15%; */
+  align-self: flex-start;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
 }
 
 .facebook-login {
-    color: whitesmoke;
+    align-self: flex-end;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.form-control {
+  align-self: flex-end;  
+  display: flex;
+  margin-left: 2px;
 }
