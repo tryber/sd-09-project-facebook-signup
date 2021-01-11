@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
-    background-color: rgb(66, 103, 178)
+  background-color: rgb(66, 103, 178)
+}
+
+.facebook-logo {
+  display: flex;
+  justify-content: flex-start;
 }
