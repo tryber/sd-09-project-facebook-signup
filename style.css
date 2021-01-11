@@ -22,6 +22,11 @@
 
 .main-content {
   display: flex;
+  justify-content: space-around;
+}
+
+.right-content {
+  flex-basis: 300px;
 }
 
 .top-bar {
