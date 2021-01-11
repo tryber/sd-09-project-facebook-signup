@@ -75,8 +75,8 @@
 }
 
 .fullName input {
+  flex-basis: 140px;
   width: 100%;
-  flex-basis: 140px
 }
 
 .birthDateField {
