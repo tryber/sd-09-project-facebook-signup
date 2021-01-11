@@ -29,3 +29,11 @@
 .right-content {
   width: 300px;
 }
+
+.form-line {
+  display: flex;
+}
+
+.form-line input {
+  width: 50%;
+}
