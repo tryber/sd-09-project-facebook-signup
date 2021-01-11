@@ -38,3 +38,8 @@
 .input-group input {
   width: 140px;
 }
+
+form-group {
+  display: flex;
+  flex-direction: column;
+}
