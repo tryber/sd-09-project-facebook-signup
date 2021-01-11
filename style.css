@@ -4,13 +4,28 @@
   padding: 0;
 }
 
+.facebook-login {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-control {
-  align-self: flex-end;
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  margin: 1em 15px;
 }
 
 .top-bar {
@@ -24,14 +39,4 @@
 .top-bar img {
   flex-shrink: 0;
   flex-grow: 0;
-}
-
-.facebook-login {
-  align-items: center;
-  color: rgb(255, 255, 255);
-  display: flex;
-}
-
-.main-content {
-  display: flex;
 }
