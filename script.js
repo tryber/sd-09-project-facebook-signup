@@ -3,3 +3,30 @@ const userEmailPhone = document.querySelector('#user-email-phone');
 buttonLogin.addEventListener('click', function () {
   alert(userEmailPhone.value);
 });
+
+const validate = new window.JustValidate('.js-form', {
+  rules: {
+    firstName: {
+      required: true
+    },
+    lastName: {
+      required: true
+    },
+    phoneEmail: {
+      required: true
+    },
+    password: {
+      required: true
+    },
+    birthdate: {
+      required: true
+    },
+  },
+  messages: {
+    firstName: 'Campos inválidos',
+    lastName: 'Campos inválidos',
+    phoneEmail: 'Campos inválidos',
+    password: 'Campos inválidos',
+    birthdate: 'Campos inválidos',
+  },
+});

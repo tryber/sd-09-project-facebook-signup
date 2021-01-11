@@ -32,16 +32,16 @@
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form>
+            <form class="js-form">
                 <div class="form-line">
-                    <input name="firstname" placeholder="Nome">
-                    <input name="lastname" placeholder="Sobrenome">
+                    <input name="firstname" placeholder="Nome" data-validate-field="firstName">
+                    <input name="lastname" placeholder="Sobrenome" data-validate-field="lastName">
                 </div>
-                <input name="phone_email" placeholder="Celular ou email">
-                <input name="password" type="password" placeholder="Nova senha">
+                <input name="phone_email" placeholder="Celular ou email" data-validate-field="phoneEmail">
+                <input name="password" type="password" placeholder="Nova senha" data-validate-field="password">
                 <div>
                     <label id="label-birthdate">Data de nascimento</label>
-                    <input name="birthdate" type="text" placeholder="dd/mm/aaaa">
+                    <input name="birthdate" type="text" placeholder="dd/mm/aaaa" data-validate-field="birthdate">
                 </div>
                 <label id='label-gender'>Gênero</label>
                 <div>
@@ -56,6 +56,7 @@
             </form>
         </section>
     </main>
+    <script src="libs/just-validate.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
