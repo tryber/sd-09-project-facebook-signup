@@ -19,6 +19,9 @@ body {
 .form-control {
   align-self: flex-end;
   margin-bottom: 5.3%;
+  padding: 0;
+  border: 0;
+  background-color: rgb(66, 103, 178);
 }
 
 .button-login {

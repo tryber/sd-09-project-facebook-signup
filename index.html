@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -48,19 +50,21 @@
                     <input type="text" id="label-birthdate" name="password" placeholder="dd/mm/aaaa" class="">
                 </div>
                 <div class="form-wrapper">
-                    <label id="label-gender">Gênero</label>
                     <div>
+                        <label id="label-gender">Gênero</label>
+                    </div>
+                    <span>
                         <input type="radio" id="label-gender-woman" name="gender" class="form-check-input">
                         <label for="label-gender-woman">Feminino</label>
-                    </div>
-                    <div>
+                    </span>
+                    <span>
                         <input type="radio" id="label-gender-man" name="gender" class="form-check-input">
                         <label for="label-gender-man">Masculino</label>
-                    </div>
-                    <div>
+                    </span>
+                    <span>
                         <input type="radio" id="label-gender-custom" name="gender" class="">
                         <label for="label-gender-custom">Personalizado</label>
-                    </div>
+                    </span>
                 </div>
                 <div class="form-wrapper">
                     <button type="submit" id="facebook-register">Cadastre-se</button>
