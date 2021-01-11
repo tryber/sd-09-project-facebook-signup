@@ -21,7 +21,7 @@ body {
   display: flex;
 }
 
-.login-input {
+.form-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
