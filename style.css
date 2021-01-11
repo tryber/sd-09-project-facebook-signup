@@ -39,3 +39,11 @@
 .full_name input {
   width: 50%;
 }
+
+.genero {
+  display: flex;
+}
+
+.genero input {
+  flex: 0 2 33%;
+}
