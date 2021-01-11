@@ -1,11 +1,8 @@
-* {
+body {
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 .top-bar {
