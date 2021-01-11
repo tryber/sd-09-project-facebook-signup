@@ -11,17 +11,17 @@
   <!-- Top Container -->
   <section class="top-container">
     <header class="top-bar">
-      <img src="imgs/facebook-logo.png" alt="logo do facebook">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do facebook">
       <form class="facebook-login" action="">
         <section class="form-group">
           <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
           <input type="text" id="user-email-phone" name="login-name">
         </section>
-        <section>
+        <section class="form-group password-container">
           <label id="user-password-label" for="user-password">Senha</label>
           <input id="user-password" type="password" name="login-pass">
         </section>
-        <section>
+        <section class="form-control">
           <button id="button-login">Entrar</button>
         </section>
       </form>
@@ -41,18 +41,28 @@
     <section class='right-content'>
       <h1>Abra uma conta</h1>
       <p class='quick-easy'>É rápido e fácil.</p>
-        <form action="" class='form'>
+        <form action="" class='form-new-user'>
           <div class='fullName'>
             <input type="text" name='firstname' placeholder="Nome">
             <input type="text" name='lastname' placeholder="Sobrenome">
           </div>
 
           <input type="text" name='phone_email' placeholder="Celular ou email">
-          <input type='password' name='password' placeholder="Nova Senha">
+          <input type='password' name='password' placeholder="Nova senha">
 
-          <label for="birthdate">Data de Nascimento
+          <div class='birthDateField'>
+            <label for="birthdate">Data de Nascimento</label>
             <input type="text" name='birthdate' placeholder="dd/mm/aaaa" id='birthdate'>
-          </label>
+          </div>
+
+          <div class='genero'>
+            <label>Gênero</label>
+            <div class='opcoes'>
+              <label for="fem"><input type="radio" id='fem' name='gender'>Feminino</label>
+              <label for="mas"><input type="radio" id='mas' name='gender'>Masculino</label>
+              <label for="custom"><input type="radio" id='custom' name='gender'>Personalizado</label>
+            </div>
+          </div>
 
         </form>
     </section>
