@@ -1,4 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 200px; 
+}
+
 .top-bar {
-    display: flex;
-    background-color: rgb(66, 103, 178);
+  background-color: rgb(66 , 103 , 178);
+  display: flex;
+}
+
+.top-bar img {
+  align-items: flex-start;
 }
