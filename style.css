@@ -49,8 +49,19 @@ body {
   width: 300px;
 }
 
-.input-name {
+.input-name-lastname {
   display: flex;
   justify-content: space-between;
-  width: 24rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+}
+
+.input-name-lastname > input {
+  width: 45%;
+}
+
+.input-user-password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.4rem;
 }
