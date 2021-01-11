@@ -27,12 +27,12 @@
         <section class="left-content">
             <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
             <br>
-            <img id="facebok-networking" src="imgs/networking.png">
+            <img id="facebook-networking" src="imgs/networking.png">
         </section>
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <h3 class="quick-easy">É rápido e fácil.</h3>
-            <form action="">
+            <form id="register-container" action="">
                 <div class="name-content">
                     <input type="text" name="firstname" placeholder="Nome">
                     <input type="text" name="lastname" placeholder="Sobrenome">
@@ -43,21 +43,42 @@
                 <label id="label-birthdate">Data de nascimento</label>
                 <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
                 <br>
-                <label for="label-gender" >Gênero</label>
+                <label for="label-gender">Gênero</label>
                 <br>
-                <input type="radio" value="" name="gender">Feminino
-                <input type="radio" value="" name="gender">Masculino
-                <input type="radio" value="" name="gender">Outros
+                <input type="radio" value="female" name="gender">Feminino
+                <input type="radio" value="male" name="gender">Masculino
+                <input type="radio" value="other" name="gender">Outros
+                <button type="submit" id="facebook-register">Cadastre-se</button>
+                <p id="error-msg" style="display: none;">Campos inválidos</p>
             </form>
         </section>
     </main>
     <script>
+       function validate() {
+            const submit = document.getElementById('facebook-register');
+            submit.addEventListener('click', function (event) {
+                const inputs = document.querySelector('.right-content').querySelectorAll('input');
+                for (let i = 0; i < inputs.length; i += 1) {
+                    if (inputs[i].value === "" || (inputs[i].type === 'radio' && !inputs[i].checked)) {
+                        const errorMsg = document.getElementById('error-msg');
+                        errorMsg.style = 'display: block;';
+                        event.preventDefault();
+                        break;
+                    } else {
+                        errorMsg.style = 'display: block;';
+                    }
+                }
+            });
+        }
+
         window.onload = function () {
             const loginButton = document.getElementById('button-login');
             loginButton.addEventListener('click', function () {
                 const user = document.getElementById('user-email-phone');
                 alert(user.value);
             });
+
+            validate();
         }
     </script>
 </body>
