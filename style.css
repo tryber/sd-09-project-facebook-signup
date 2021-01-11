@@ -49,3 +49,7 @@ body {
 .form-name {
   width: 40%;
 }
+
+#date {
+  width: 100%;
+}
