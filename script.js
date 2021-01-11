@@ -24,3 +24,10 @@ function validateAndRegister (event) {
     event.preventDefault();
   }
 }
+
+const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = `
+  <p>Olá, ${nome} ${sobrenome}</p>
+  <p>Email: ${email}</p>
+  <p>Data de nascimento: ${data}</p>
+  <p>Gênero: ${genero}</p>`;
