@@ -33,11 +33,11 @@ header {
   margin-right: 10px;
 }
 
-#user-email-phone {
+.top-bar .control input {
   width: 130px;
 }
 
-#user-email-phone-label {
+.top-bar .form-group label{
   color: white;
   font-size: 12px;
 }
@@ -48,21 +48,12 @@ header {
   text-decoration: none;
 }
 
-#user-password-label {
-  color: white;
-  font-size: 12px;
-}
-
-#user-password {
-  width: 130px;
-}
-
 .form-control {
   align-self: flex-end;
   display: flex;
 }
 
-#button-login {
+.form-control button {
   align-self: flex-end;
   background-color: #4267b2;
   border: 1px solid;
@@ -93,13 +84,8 @@ header {
   width: 800px;
 }
 
-
 .facebook-cadastro {
   display: flex;
   height: auto;
   width: auto;
-}
-
-input[ name = "phone_email" ] {
-  align-self: flex-end;
 }
