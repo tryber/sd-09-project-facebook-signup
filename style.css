@@ -1,21 +1,26 @@
-.email-login, .password-login{
+.email-login , .password-login {
   color: white;
   display: flex;
   flex-direction: column;
 }
+
 .main-content {
+
   /* mudar para cor correta de background */
   background-color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .left-content {
   width: 800px;
 }
+
 .right-content {
   width: 300px;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
