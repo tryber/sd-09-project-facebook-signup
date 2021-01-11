@@ -1,63 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
-    display: flex;
-    background-color: rgb(66, 103, 178);
-    justify-content: space-evenly;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-around;
 }
 
 .form-header {
-    display: flex;
-    color: white;
-    align-items: center;
-    height: 10vh;
+  align-items: center;
+  color: white;
+  display: flex;
 }
 
 .email-phone {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .password {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
-    display: flex;
-    align-self: flex-end;
+  align-self: flex-end;
+  display: flex;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    height: 90vh;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
 }
 
 .left-content {
-    width: 800px;
+  width: 800px;
 }
 
 .left-content p {
-    font-size: 1.5rem;
-    color: rgb(66, 103, 178);
-    width: 500px;
-    
+  color: rgb(66, 103, 178);
+  font-size: 1.5rem;
+  width: 500px;
 }
 
 .right-content {
-    width: 300px;
+  width: 300px;
 }
-
-.div1 {
-    display: flex;
-}
-
