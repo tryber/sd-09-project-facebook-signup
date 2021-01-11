@@ -57,6 +57,7 @@ body {
 .message {
   display: none;
 }
+
 .optional-input {
   display: none;
   width: 100%;

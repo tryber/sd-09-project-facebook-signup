@@ -7,14 +7,12 @@ buttonLogin.addEventListener('click', () => {
 
 const buttonSubmit = document.querySelector('#facebook-register');
 const inputs = document.querySelectorAll('.validation');
-const radio = document.getElementsByName('gender');
 buttonSubmit.addEventListener('click', (event) => {
   event.preventDefault();
   inputs.forEach((input) => {
     if (!input.value) {
       const message = document.querySelector('.message');
       message.style.display = 'block';
-      return;
     }
   });
 });
