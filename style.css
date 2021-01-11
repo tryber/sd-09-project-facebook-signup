@@ -17,6 +17,10 @@ body {
     display: flex;
   }
 
+  .form-line-1 input {
+    width: 45%;
+  }
+
   .facebook-register {
     display: flex;
     flex-direction: column;
