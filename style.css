@@ -8,6 +8,7 @@ body {
 }
 
 @media screen and ( min-width : 780px ) {
+  
   .facebook-login {
     border: 1px solid magenta;
     display: flex;
