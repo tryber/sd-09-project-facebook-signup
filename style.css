@@ -7,23 +7,27 @@
   width: 100%;
 }
 
-.form-group {
+.facebook-login {
   color: white;
   display: flex;
-  justify-self: right;
 }
 
-.input-login {
+.form-group {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
 }
 
-.input-senha {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-senha p {
+.form-group p {
   color: rgba(219, 219, 219, 0.822);
   margin: 0;
+}
+
+.test {
+    flex-direction: row;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
