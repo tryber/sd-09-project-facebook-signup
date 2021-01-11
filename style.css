@@ -51,7 +51,7 @@ body {
   flex-wrap: wrap;
 }
 
-.form-register input, .form-register label, .form-register div {
+.form-register input , .form-register label , .form-register div {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -62,7 +62,7 @@ body {
   width: 50%;
 }
 
-.form-register div{
+.form-register div {
   display: flex;
   flex-direction: row;
   width: 100%;
