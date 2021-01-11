@@ -35,3 +35,7 @@ body {
 .right-content {
   width: 300px;
 }
+
+.form-SignUp {
+  display: flex;
+}
