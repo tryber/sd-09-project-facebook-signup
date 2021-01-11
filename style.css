@@ -25,7 +25,12 @@
 
 .main-content {
   display: flex;
+  justify-content: center;
   margin: 1em 15px;
+}
+
+.right-content {
+  width: 300px;
 }
 
 .top-bar {
