@@ -11,3 +11,8 @@ body {
   height: 65px;
   margin: 15px 0 4px 100px;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
