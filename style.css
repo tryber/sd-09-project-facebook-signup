@@ -18,9 +18,16 @@
 
 .left-content {
   background-color: rgb(235, 171, 111);
+  display:flex;
+  flex-direction: column;
   width: 800px;
+}
+
+.left-content img {
+  align-self: center;
 }
 
 .right-content {
   background-color: darkgreen;
+  width: 300px;
 }
