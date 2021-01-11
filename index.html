@@ -9,17 +9,47 @@
 <body>
     <header class="top-bar">
         <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo Facebook">
-        <form class="form-header" action="submit" method="get">
+        <form class="form-header" action="submit" method="GET">
             <div class="email-phone">
-                <label for="user">Email ou telefone </label>
-                <input type="text" id="user">
+                <label for="user-email-phone-label">Email ou telefone </label>
+                <input type="text" id="user-email-phone-label">
+            </div>
+            <div class="password">
+                <label for="user-password-label">Senha</label>
+                <input type="password" id="user-password-label">
             </div>
             <div>
-                <label for="password">Senha</label>
-                <input type="password" id="password">
+                <button id="button-login">Entrar</button>
             </div>
         </form>
-
     </header>
+    <section class="main-content">
+        <div class="left-content">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img id="acebook-networking" src="imgs/networking.png" alt="">
+        </div>
+        <div class="right-content">
+            <h1>Abra uma conta</h1>
+            <p class="quick-easy">É rápido e fácil.</p>
+            <form action="submit" method="GET">
+                <div>
+                    <input type="text" name="firstname" placeholder="Nome">
+                    <input type="text" name="lastname" placeholder="Sobrenome">
+                </div>
+                <div>
+                    <input type="text" name="phone_email" placeholder="Celular ou email">
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Nova senha">
+                </div>
+                <div>
+                    <label id="label-birthdate" for="id-birthdate">Data de nascimento</label>
+                    <input type="text" name="birthdate" id="id-birthdate" placeholder="dd/mm/aaaa">
+                </div>
+                
+            </form>
+
+        </div>
+    </section>
 </body>
 </html>
