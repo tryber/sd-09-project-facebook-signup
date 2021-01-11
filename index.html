@@ -4,13 +4,23 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <title>Document</title>
+  <title>Projeto Facebook</title>
 </head>
 <body>
   <div class="top-bar"></div>
     <img src="/imgs/facebook-logo.png" alt="Logotipo Facebook" class="facebook-logo">
     <form class="facebook-login">
-
+      <div class="form-group">
+        <label for="email-telefone" id="user-email-phone-label">Email ou telefone</label>
+        <input type="text" id="user-email-phone" name="email-telefone">
+      </div>
+      <div class="form-group">
+        <label for="senha" id="user-password-label">Senha</label>
+        <input type="password" id="user-password" name="senha">
+      </div>
+      <div class="form-group">
+        <button id="button-login">Entrar</button>  
+      </div>
     </form>
 </body>
 </html>
