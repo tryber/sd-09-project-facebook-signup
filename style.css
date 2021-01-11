@@ -16,7 +16,23 @@ body {
   margin: 15px 0 4px 100px;
 }
 
+.form-control {
+  align-self: flex-end;
+  height: 100%;
+}
+
+/* Estilo do botão de login (ToDo) */
+/* .form-control button {
+  border: 1px solid  rgb(59, 90, 152);
+  background-color: rgb(66, 103, 178);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+} */
+
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
 }
