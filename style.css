@@ -1,8 +1,8 @@
-.top-bar{
-  background-color:rgb(66, 103, 178);
-  margin:auto;
-  position:fixed;
-  width:100%;
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  margin: auto;
+  position: fixed;
+  width: 100%;
 }
 .facebook-logo {
   float: left;
