@@ -20,6 +20,11 @@ body {
   margin: 0 10px;
 }
 
+.inputs-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .left-content {
   width: 800px;
 }

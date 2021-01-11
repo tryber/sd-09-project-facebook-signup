@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Facebook Login</title>
 </head>
@@ -32,12 +33,15 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="">
-        <input type="text" name="firstname" placeholder="name">
-        <input type="text" name="lastname" placeholder="sobrenome">
-        <input type="text">
-        <input type="text">
-        <input type="text">
+      <form action="" class="inputs-content">
+        <div class="row g-3">
+          <div class="col">
+            <input type="text" name="name" class="form-control" placeholder="Nome" aria-label="Nome">
+          </div>
+          <div class="col">
+            <input type="text" name="lastname" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+          </div>
+        </div>
       </form>
     </div>
   </section>
