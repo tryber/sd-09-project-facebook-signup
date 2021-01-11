@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -15,10 +15,10 @@ header {
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
-  width: 80%;  
+  display: flex;
   justify-content: space-between;
+  width: 80%;  
 }
 
 .facebook-logo {
@@ -39,19 +39,19 @@ header {
 }
 
 #user-email-phone-label {
-  font-size: 12px;
   color: #fff;
+  font-size: 12px;
 }
 
 .label a {
-  text-decoration: none;
   color: #9cb4d8;
   font-size: 10px;
+  text-decoration: none;
 }
 
 #user-password-label {
-  font-size: 12px;
   color: #fff;
+  font-size: 12px;
 }
 
 #user-password {
@@ -59,52 +59,49 @@ header {
 }
 
 .form-control {
-  display:flex;
   align-self: flex-end;
-  
+  display:flex;
 }
 
 #button-login {
-  color: #fff;
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 18px;
   background-color: #4267b2;
   border: 1px solid;
   border-color: #29487d;
   border-radius: 2px;
+  color: #fff;
   cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  height: 20px;
+  line-height: 18px;
   padding: 0px 6px;
   text-align: center;
-  height: 20px;
 }
 
 .main-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .left-content{
-    width: 800px;
-    align-self: start;
+  align-self: start;
+  width: 800px;
 }
 
 .right-content{
-    width: 300px;
-    align-self: end;
+  align-self: end;
+  width: 300px;
 }
 
 .facebook-cadastro {
-    display: flex;
-    width: auto;
-    height: auto;
-    border: 1px solid red;
-
+  display: flex;
+  height: auto;
+  width: auto;
 }
 
 input[name=phone_email] {
-    align-self: flex-end;   
+  align-self: flex-end;   
 }
 
 .form-group {
