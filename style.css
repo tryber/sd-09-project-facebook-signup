@@ -6,11 +6,6 @@
   display: flex;
   flex-direction: column;
 }
-.form-header {
-  border: 1px solid black;
-  display: flex;
-}
-/*  HEAD  */
 .main-content {
   /* mudar para cor correta de background */
   background-color: lightgray;
@@ -23,7 +18,6 @@
 }
 .right-content {
   width: 300px;
-  /* >>>>>>> 77f1e25cbd41cdbe3ed6c6a2711f49fba5a5fede */
 }
 .top-bar {
   background-color: rgb(66, 103, 178);
@@ -32,3 +26,4 @@
   justify-content: space-between;
   width: 100%;
 }
+
