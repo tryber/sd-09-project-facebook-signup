@@ -1,16 +1,18 @@
 const buttonLogin = document.querySelector('#button-login');
 const userEmailPhone = document.querySelector('#user-email-phone');
-const buttonFacebookRegister = document.querySelector('.facebook-register');
+const buttonFacebookRegister = document.querySelector('#facebook-register');
 
 buttonFacebookRegister.addEventListener('click', () => {
   const completeForm = document.querySelectorAll('#register-form input');
   for (let index = 0; index < completeForm.length; index += 1) {
-    if(completeForm[index].value === '') {
+    if (completeForm[index].value === '') {
       return alert('Campos inválidos');
     }
   }
+  return 0;
 });
 
-buttonLogin.addEventListener('click', () => {
+buttonLogin.addEventListener('click', (event) => {
+  event.preventDefault();
   alert(userEmailPhone.value);
 });
