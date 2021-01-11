@@ -11,11 +11,8 @@ body {
 }
 
 .facebook-login {
-  align-self: flex-start;
-}
-
-.facebook-login {
   display: flex;
+  align-self: flex-start;
 }
 
 .form-group {
@@ -28,10 +25,10 @@ body {
 }
 
 .main-content {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 .left-container {
