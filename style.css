@@ -27,9 +27,16 @@
 
 .main-content {
 	display: flex;
-	flex-direction: row;
-}
+  flex-direction: row;
+  justify-content: space-around;
+  height: 577px;
+  background-color: #f0f2f5;
+  }
 
 .left-content {
-	height: 800px;
+  height: 800px;
+  margin-top: 30px;
+}
+.right-content{
+  width: 300px;
 }
