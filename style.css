@@ -33,6 +33,7 @@ body {
 .main-content {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .left-content {
