@@ -14,13 +14,13 @@
           <div class="form-group">
             <label id="user-email-phone-label">
               E-mail ou telefone
-              <input id="user-email-phone" type="text" />
+              <input id="user-email-phone" type="text" required />
             </label>
           </div>
           <div class="form-group">
             <label id="user-password-label">
               Senha
-              <input id="user-password" type="password" />
+              <input id="user-password" type="password" required />
             </label>
           </div>
           <div class="form-control">
@@ -80,22 +80,24 @@
             required
           />
 
-          <div id="label-birthdate">Data de nascimento</div>
-          <input
-            type="text"
-            name="birthdate"
-            placeholder="dd/mm/aaaa"
-            required
-          />
-          <div id="label-gender">Gênero</div>
-          <span>
+          <label id="label-birthdate">Data de nascimento</label>
+          <div>
+            <input
+              type="text"
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+              required
+            />
+          </div>
+          <label id="label-gender">Gênero</label>
+          <div>
             <input type="radio" name="gender" id="female" required />
             <label for="female">Feminino</label>
             <input type="radio" name="gender" id="male" required />
             <label for="male">Masculino</label>
             <input type="radio" name="gender" id="custom" required />
             <label for="custom">Personalizado</label>
-          </span>
+          </div>
 
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
