@@ -33,6 +33,7 @@
 body {
   font-family: lucida, tahoma, verdana, arial, sans-serif;
 }
+
 .main-content {
   display: flex;
   flex-direction: row;
@@ -71,5 +72,5 @@ input {
 }
 
 form {
-	display: flex;
+  display: flex;
 }
