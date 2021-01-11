@@ -79,4 +79,5 @@ body {
 
 .radio-classes label {
   display: flex;
+  margin: 5px;
 }
