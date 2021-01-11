@@ -26,10 +26,25 @@ body {
 }
 
 .main-content {
+  background: linear-gradient(white, rgb(211, 216, 232));
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+}
+
+.right-content {
+  flex-basis: 300px;
+}
+
+.right-content h1 {
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+}
+
+.quick-easy {
+  color: rgb(29, 33, 41);
+  font-size: 19px;
 }
 
 .top-bar {
