@@ -1,13 +1,14 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -16,9 +17,11 @@
 
 .top-bar img {
   padding: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .facebook-login {
-    display: flex;
-    color: white;
+  color: white;
+  display: flex;
 }
