@@ -13,8 +13,13 @@ h1 {
   flex-direction: column;
   /* mudar para cor correta de background */
   background-color: lightgray;
+  justify-content: space-around;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
