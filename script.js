@@ -1,4 +1,4 @@
-document.querySelector('#button-login').addEventListener('click', () => {
+document.querySelector('#button-login').addEventListener('click', (event) => {
   alert(document.querySelector('#user-mail-phone').value);
 });
 
