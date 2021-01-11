@@ -27,3 +27,10 @@ body {
 .form-control {
   align-self: flex-end;
 }
+
+.main-content {
+  background-color: pink;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
