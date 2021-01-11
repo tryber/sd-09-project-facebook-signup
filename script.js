@@ -1,5 +1,5 @@
 const getInfo = () => {
-  let info = [];
+  const info = [];
   const nome = document.querySelectorAll('.validation')[0].value;
   const sobrenome = document.querySelectorAll('.validation')[1].value;
   const emailPhone = document.querySelectorAll('.validation')[2].value;
@@ -10,7 +10,7 @@ const getInfo = () => {
   for (let i = 0; i < genders.length; i += 1) {
     if (genders[i].checked) {
       gender = genders[i].value;
-    }    
+    }
   }
 
   info.push(nome, sobrenome, emailPhone, date, gender);
@@ -31,7 +31,7 @@ const functionValidation = () => {
     if (!input.value) {
       const message = document.querySelector('.message');
       message.style.display = 'block';
-      return false;
+      return;
     }
   });
   return true;
@@ -57,7 +57,7 @@ buttonSubmit.addEventListener('click', (event) => {
   event.preventDefault();
   if (functionValidation()) {
     const content = document.querySelector('.right-content');
-    let info = getInfo();
+    const info = getInfo();
     content.innerHTML = '';
 
     const salution = document.createElement('h2');
@@ -69,8 +69,8 @@ buttonSubmit.addEventListener('click', (event) => {
     const birthday = document.createElement('p');
     birthday.innerHTML = info[3];
     content.appendChild(birthday);
-    const gender = document.createElement('p');
-    gender.innerHTML = info[4];
-    content.appendChild(gender);
+    const gendere = document.createElement('p');
+    gendere.innerHTML = info[4];
+    content.appendChild(gendere);
   }
 });
