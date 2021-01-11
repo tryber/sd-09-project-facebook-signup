@@ -15,15 +15,14 @@ h1 {
   color: white;
 }
 
-<<<<<<< HEAD
 form {
   
   border: 1px solid black;
 }
 
 logo-header img {
-  
-=======
+}
+
 .main-content {
   display: flex;
   
@@ -38,5 +37,4 @@ logo-header img {
 
 .right-content {
   width: 300px;
->>>>>>> 77f1e25cbd41cdbe3ed6c6a2711f49fba5a5fede
 }
