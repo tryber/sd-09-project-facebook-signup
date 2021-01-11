@@ -13,7 +13,7 @@ function genderCustom() {
     const input = document.createElement('input');
     input.placeholder = 'Gênero (opcional)';
     input.name = 'gender-custom';
-    input.id = 'gender-custom'
+    input.id = 'gender-custom';
     father.appendChild(input);
   }
 }
