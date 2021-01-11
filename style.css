@@ -4,3 +4,10 @@
   height: 100px;
   width: 200;
 }
+.facebook-login {
+  display: flex;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
