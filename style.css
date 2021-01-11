@@ -10,6 +10,11 @@
   width: 100%;
 }
 
+.facebook-logo {
+  align-self: center;
+  justify-self: flex-start;
+}
+
 .user-data {
   align-items: center;
   display: flex;
