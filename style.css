@@ -1,0 +1,9 @@
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  height: 3rem;
+  display: flex;
+}
+
+h1 {
+  color: white;
+}
