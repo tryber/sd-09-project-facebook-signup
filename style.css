@@ -17,10 +17,10 @@ body {
 }
 
 .facebook-login {
+  align-content: flex-end;
   align-items: baseline;
   display: flex;
-  justify-content:right;
-  align-content: flex-end;
+  justify-content: flex-end;
 }
 
 .form-group {
