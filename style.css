@@ -13,6 +13,11 @@ body {
 
 @media screen and ( min-width : 780px ) {
 
+  .left-content {
+    border: 1px solid magenta;
+    width: 800px;
+  }
+
   .main-content {
     display: flex;
   }
