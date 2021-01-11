@@ -23,6 +23,11 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.forms-login {
+  display: flex;
 }
 
 .form-control {
