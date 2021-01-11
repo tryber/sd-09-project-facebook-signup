@@ -26,10 +26,9 @@ body {
 }
 
 .main-content {
-    display: flex;
+  display: flex;
 }
 
 .left-content {
-    width: 800px;
-    
+  width: 800px;
 }
