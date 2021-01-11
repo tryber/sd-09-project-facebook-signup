@@ -24,5 +24,21 @@ function validadeField() {
   });
 }
 
+function personalizeGenderField() {
+  const personalizedField = document.querySelector('#per-radio');
+
+  personalizedField.addEventListener('click', function () {
+    if (personalizedField.checked === true) {
+      const personalizedContainer = document.querySelector('#personalized-gender-container');
+      const inputPersonalizedGender = document.createElement('input');
+      inputPersonalizedGender.type = 'type="text"';
+      inputPersonalizedGender.name = 'gender-custom';
+      inputPersonalizedGender.placeholder = 'Gênero (opcional)';
+      personalizedContainer.appendChild(inputPersonalizedGender);
+    }
+  })
+}
+
+personalizeGenderField();
 validadeField();
 alertButton();
