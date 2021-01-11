@@ -22,7 +22,7 @@ body {
 }
 
 .left-content {
-  width: 800px;
+  min-width: 800px;
 }
 
 .main-content {
