@@ -22,14 +22,14 @@ body {
 
 .button-login {
   background: none;
-  color: #fff;
+  color: white;
   cursor: pointer;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700px;
 }
 
 .user-email-phone-label, .user-password-label {
-  color: #fff;
+  color: white;
 }
 
 .user-password, .user-email-phone {
