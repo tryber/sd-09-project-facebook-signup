@@ -4,8 +4,10 @@
   flex-direction: column;
 }
 
-.main-content {  
-/* mudar para cor correta de background */
+.main-content {
+
+  /* mudar para cor correta de background */
+
   background-color: lightgray;
   display: flex;
   flex-direction: column;
