@@ -45,3 +45,18 @@ body {
   flex-direction: column;
   width: 300px;
 }
+
+.form-register {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-register input {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+}
+
+.form-register input:first-child , .form-register input:nth-child( 2 ) {
+  width: 50%;
+}
