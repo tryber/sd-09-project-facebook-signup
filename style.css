@@ -1,26 +1,29 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding: 0;
 }
-
 .facebook-login {
   color: white;
   display: flex;
   font-size: 12px;
 }
-
 .form-control {
   align-self: flex-end;
 }
-
 .form-group {
   display: flex;
   flex-direction: column;
 }
-
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  flex-direction: row;
   height: 82px;
   justify-content: space-between;
+  width: 100%;
+}
+a:hover , a:visited , a:link {
+  color: rgb(194, 194, 194);
+  text-decoration: none;
 }
