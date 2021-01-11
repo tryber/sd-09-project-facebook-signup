@@ -44,6 +44,10 @@ body {
   width: 300px;
 }
 
-.campo-name {
+.name-container {
   display: flex;
+}
+
+.gender-custom-input {
+  display: none;
 }

@@ -1,8 +1,8 @@
 // Selectors
 const buttonLogin = document.querySelector('#button-login');
+const buttonRegister = document.querySelector('#facebook-register');
 const emailInput = document.querySelector('#user-email-phone');
-const customOption = document.querySelector('#custom-option');
-const inputsLabels = document.querySelector('.inputs-labels');
+const registerForm = document.querySelector('#register-form');
 // Function
 
 function alertEmailInput() {
@@ -10,15 +10,21 @@ function alertEmailInput() {
   alert(valueEmailInput);
 }
 
+function validateRegister(event) {
+  event.preventDefault();
+  const errorText = document.querySelector('#error-message');
+  const inputs = registerForm.querySelectorAll('[required]');
+  for (let index = 0; index < inputs.length; index += 1) {
+    if(!inputs[index].checkValidity()) {
+      errorText.innerText = 'Campos inválidos';
+    }
+    else {
+      errorText.innerText = '';
+    }
+  }
+}
+
 // Events listener
 
 buttonLogin.addEventListener('click', alertEmailInput);
-
-function plusOption() {
-  const optionCustom = document.createElement('input');
-  optionCustom.type = 'text';
-  optionCustom.name = 'gender-custom';
-  optionCustom.placeholder = 'Gênero (opcional)';
-  inputsLabels.appendChild(optionCustom);
-}
-customOption.addEventListener('click', plusOption);
+buttonRegister.addEventListener('click', validateRegister);
