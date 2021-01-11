@@ -36,7 +36,7 @@ function personalizeGenderField() {
       inputPersonalizedGender.placeholder = 'Gênero (opcional)';
       personalizedContainer.appendChild(inputPersonalizedGender);
     }
-  })
+  });
 }
 
 personalizeGenderField();
