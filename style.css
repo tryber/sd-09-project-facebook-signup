@@ -27,6 +27,11 @@ body {
   margin: 1em 15px;
 }
 
+.new-account {
+  display: flex;
+  flex-direction: column;
+}
+
 .nome-e-sobrenome {
   display: flex;
 }
