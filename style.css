@@ -16,6 +16,10 @@
   flex-direction: column;
 }
 
+.left-content {
+  flex-basis: 800px;
+}
+
 .main-content {
   display: flex;
 }
