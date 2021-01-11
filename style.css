@@ -15,6 +15,7 @@ h1 {
   color: white;
 }
 
+<<<<<<< HEAD
 form {
   
   border: 1px solid black;
@@ -22,4 +23,20 @@ form {
 
 logo-header img {
   
+=======
+.main-content {
+  display: flex;
+  flex-direction: column;
+  /* mudar para cor correta de background */
+  background-color: lightgray;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+>>>>>>> 77f1e25cbd41cdbe3ed6c6a2711f49fba5a5fede
 }
