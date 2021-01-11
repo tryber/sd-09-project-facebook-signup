@@ -1,11 +1,8 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
+  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -16,10 +13,9 @@ header {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-  width: 80%;
   display: flex;
   justify-content: space-between;
-  width: 80%;  
+  width: 80%;
 }
 
 .facebook-logo {
@@ -53,7 +49,7 @@ header {
 }
 
 #user-password-label {
-  color:white;
+  color: white;
   font-size: 12px;
 }
 
@@ -62,20 +58,12 @@ header {
 }
 
 .form-control {
+  align-self: flex-end;
   display: flex;
-  align-self: flex-end;
 }
 
 #button-login {
-  color: white;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 18px;
   align-self: flex-end;
-  display:flex;
-}
-
-#button-login {
   background-color: #4267b2;
   border: 1px solid;
   border-radius: 2px;
@@ -83,7 +71,7 @@ header {
   cursor: pointer;
   padding: 0 6px;
   font-size: 10px;
-  font-weight: bold;
+  font-weight: 700;
   height: 20px;
   line-height: 18px;
   padding: 0 6px;
@@ -102,19 +90,15 @@ header {
 } 
 
 .left-content{
-  align-self: start;
+  align-self: flex-start;
   width: 800px;
 }
 
-.right-content{
-  align-self: end;
-  width: 300px;
-}
 
 .facebook-cadastro {
   display: flex;
-  width: auto;
   height: auto;
+  width: auto;
 }
 
 input[ name = "phone_email" ] {
