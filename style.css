@@ -21,5 +21,13 @@
 
 .main-content {
   display: flex;
-  
+
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
