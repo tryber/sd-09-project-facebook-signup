@@ -39,3 +39,13 @@ body {
 .left-content {
   width: 800px;
 }
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+h1 , em {
+  flex: 1 0 100%;
+}
