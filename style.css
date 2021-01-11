@@ -1,0 +1,12 @@
+
+.top-bar{
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    position: fixed; top: 0px;
+    background-color: rgb(66, 103, 178)
+    }
+.facebook-logo {
+float: left;
+   }
+
