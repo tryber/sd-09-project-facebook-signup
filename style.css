@@ -1,5 +1,23 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .top-bar {
   display: flex;
+  flex-direction: row;
   background-color: rgb(66, 103, 178);
   height: 82px;
+  justify-content: space-evenly;
+}
+
+.facebook-login {
+  display: flex;
+  color: white;
+  font-size: 12px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
