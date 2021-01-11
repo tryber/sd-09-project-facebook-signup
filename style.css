@@ -37,11 +37,11 @@ form aside {
   justify-content: space-between;
 }
 
-form aside input {
-  width: 130px;
-}
-
-div label,input {
+div label , input {
   display: flex;
   flex-direction: column;
+}
+
+form aside input {
+  width: 130px;
 }
