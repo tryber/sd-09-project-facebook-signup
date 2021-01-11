@@ -1,7 +1,7 @@
 function showFacebookLoginFormValue() {
   const userEmailPhoneInput = document.querySelector('#user-email-phone');
 
-  window.alert(`E-mail ou Telefone: ${userEmailPhoneInput.value}`);
+  window.alert(userEmailPhoneInput.value);
 }
 
 function listenToButtonLoginButton() {
