@@ -1,13 +1,13 @@
 function showFacebookLoginFormValues () {
-    const userEmailPhoneInput = document.querySelector('#user-email-phone')
+  const userEmailPhoneInput = document.querySelector("#user-email-phone");
 
-    window.alert(`E-mail ou Telefone: ${userEmailPhoneInput.value}`)
+  window.alert(`E-mail ou Telefone: ${userEmailPhoneInput.value}`);
 }
 
 function listenToButtonLoginButton () {
-    const buttonLoginButton = document.querySelector('#button-login')
+  const buttonLoginButton = document.querySelector("#button-login");
 
-    buttonLoginButton.addEventListener('click', showFacebookLoginFormValues)
+  buttonLoginButton.addEventListener("click", showFacebookLoginFormValues);
 }
 
-listenToButtonLoginButton()
+listenToButtonLoginButton();
