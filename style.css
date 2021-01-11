@@ -3,6 +3,7 @@ body {
 }
 
 .facebook-login {
+  align-self: flex-end;
   color: white;
   display: flex;
   font-size: 12px;
@@ -23,4 +24,9 @@ body {
   flex-direction: row;
   height: 82px;
   justify-content: space-around;
+  width: 100%;
+}
+
+.facebook-logo {
+  align-self: flex-start;
 }
