@@ -48,6 +48,11 @@ form aside input {
 
 .gender {
   display: flex;
+  justify-content: space-between;
+}
+
+.custom-gender {
+  width: 100%;
 }
 
 .isVisible {
