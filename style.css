@@ -1,14 +1,22 @@
-*{
-  margin: 0%;
+* {
+  margin: 0;
 }
 
-.top-bar{
+.top-bar {
   background-color: rgb(66, 103, 178);
   color: white;
-  font-size:30px;
-  flex-direction:;
+  display: flex;
+  font-size: 12px;
+  padding: 15px;
   width: 100%;
-  padding: 20px;
-  
+}
+
+.facebook-login {
+    display: flex;
+    justify-content:;   
+}
+
+.form-group {
+   display: flex
 }
 
