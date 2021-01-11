@@ -46,7 +46,3 @@ html {
 .user-name {
   display: flex;
 }
-
-#label-gender{
-  display:inline-block;
-}
