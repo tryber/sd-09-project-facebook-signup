@@ -11,15 +11,12 @@ body {
   display: flex;
   height: 60px;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 
 .facebook-login {
   align-items: center;
   color: white;
   display: flex;
-  padding: 0 20px;
 }
 
 .form-group {
@@ -27,17 +24,4 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 7px;
-}
-
-.form-control {
-  align-self: flex-end;
-  margin: 0 20px;
-}
-
-.form-control button {
-  background-color: rgb(73, 121, 218);
-  border: 1px solid rgb(34, 62, 119);
-  color: white;
-  cursor: pointer;
-  padding: 4px 8px;
 }
