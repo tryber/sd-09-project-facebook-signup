@@ -1,22 +1,43 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: aqua;
+.facebook-login {
+  display: flex;
 }
 
-.main-content {
-  background-color: rebeccapurple;
+.facebook-logo {
+  align-self: center;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 50px;
   justify-content: space-around;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .left-content {
-  background-color: antiquewhite;
   width: 800px;
 }
 

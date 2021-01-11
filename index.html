@@ -3,10 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Facebook - entre ou cadastre-se</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <div class="top-bar">
+        <img class='facebook-logo' src=imgs/facebook-logo.png>
+        <form class="facebook-login">
+          <div class="form-group">
+            <label id="user-email-phone-label">
+              E-mail ou telefone
+              <input id="user-email-phone" type="text" />
+            </label>
+          </div>
+          <div class="form-group">
+            <label id="user-password-label">
+              Senha
+              <input id="user-password" type="password" />
+            </label>
+          </div>
+          <div class="form-control">
+            <button id="button-login">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </header>
     <main class="main-content">
       <!-- Lado Esquerdo < -->
       <div class="left-content">
@@ -79,5 +101,6 @@
         </form>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
