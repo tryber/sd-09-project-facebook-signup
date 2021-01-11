@@ -16,7 +16,7 @@
 
 .form-control {
   align-self: flex-end;
-  margin-bottom: 1.9%;
+  margin-bottom: 5.6%;
 }
 
 .button-login {
@@ -29,6 +29,7 @@
 
 .user-email-phone-label, .user-password-label {
   color: #fff;
+  margin: 5% 0 0 0;
 }
 
 .user-password, .user-email-phone {
