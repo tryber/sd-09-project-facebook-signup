@@ -35,12 +35,17 @@
     <h1>Abra uma conta</h1>
     <p class="quick-easy">É rápido e fácil.</p>
     <form action="">
-      <input type="text" name="firstname" placeholder='Nome' class="lastname">
+      <input type="text" name="firstname" placeholder='Nome' class="lastname marginName">
       <input type="text" name="lastname" class="lastname" placeholder="Sobrenome">
-      <input type="text" name="phone_email" placeholder="Celular ou email">
-      <input type="password" name="password" placeholder="Nova Senha">
+      <input type="text" name="phone_email" placeholder="Celular ou email" class="formInput">
+      <input type="password" name="password" placeholder="Nova Senha" class="formInput">
       <label for="" id="label-birthdate">Data de nascimento</label>
-      <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+      <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="formInput">
+      <label for="" id="label-gender">Gênero</label><br>
+      <input type="radio" name="gender">Feminino
+      <input type="radio" name="gender">Masculino
+      <input type="radio" name="gender">Personalizado
+
     </form>
   </aside>
 </main>

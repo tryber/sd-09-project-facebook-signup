@@ -43,10 +43,24 @@ body {
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   width: 300px;
 }
 
 .lastname {
   display: inline-block;
   width: 45%;
+}
+
+.formInput {
+  width: 95%;
+}
+
+.marginName {
+  margin-right: 3px;
 }
