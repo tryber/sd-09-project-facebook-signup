@@ -39,7 +39,7 @@
       <section class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form>
+        <form id="form-register">
           <input type="text" name="firstname" placeholder="Nome" class="nomeSobrenome validation">
           <input type="text" name="lastname" placeholder="Sobrenome" class="nomeSobrenome validation">
           <input type="text" name="phone_email" placeholder="Celular ou email" class="extra validation">
@@ -47,6 +47,19 @@
 
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="extra validation">
+
+          <label id="label-gender">Gênero</label>
+          <section class="gender-section">
+            <input type="radio" name="gender" id="Feminino" value="Feminino" class="gender" checked>
+            <label for="Feminino">Feminino</label>
+            <input type="radio" name="gender" id="Masculino" value="Masculino" class="gender">
+            <label for="Masculino">Masculino</label>
+            <input type="radio" name="gender" id="Personalizado" value="Personalizado" class="gender">
+            <label for="Personalizado">Personalizado</label>
+          </section>
+
+          <button type="submit" id="facebook-register">Cadastre-se</button>
+          <p class="message extra">Campos Inválidos</p>
         </form>
       </section>
     </main>

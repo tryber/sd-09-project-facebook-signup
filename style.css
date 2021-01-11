@@ -49,3 +49,11 @@ body {
 .extra {
   width: 100%;
 }
+
+.gender-section label {
+  font-size: 15px;
+}
+
+.message {
+  display: none;
+}
