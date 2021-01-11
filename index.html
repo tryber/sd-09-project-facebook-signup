@@ -26,9 +26,19 @@
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action="" method="GET">
-                <input type="text" name="firstname" placeholder="Nome">
-                <input type="text" name="lastname" placeholder="Sobrenome">
+            <form action="" method="GET" class="row">
+                <div class="col-6">
+                    <input type="text" name="firstname" placeholder="Nome" class="form-control">
+                </div>
+                <div class="col-6">
+                    <input type="text" name="lastname" placeholder="Sobrenome" class="form-control">
+                </div>
+                <div class="col-12">
+                    <input type="text" name="phone_email" placeholder="Celular ou email" class="form-control">
+                </div>
+                <div class="col-12">
+                    <input type="password" name="password" placeholder="Nova senha" class="form-control">
+                </div>
             </form>
         </section>
     </main>

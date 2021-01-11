@@ -26,3 +26,7 @@
 .right-content {
   width: 300px;
 }
+
+.form-container {
+  display: flex;
+}
