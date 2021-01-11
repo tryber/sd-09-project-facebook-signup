@@ -21,7 +21,7 @@ body {
   margin-right: 15%;
 }
 
-.form-control {
+.facebook-login > :nth-child( 3 ) {
   align-self: flex-end;
   background-color: rgb(66, 103, 178);
   border: 0;
@@ -72,6 +72,3 @@ body {
   display: flex;
 }
 
-.form-wrapper {
-  margin: 10px;
-}

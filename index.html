@@ -11,19 +11,19 @@
 <body>
     <header class="top-bar">
       <img src="imgs/facebook-logo.png" class="facebook-logo">
-      <form action="" method="GET" class="facebook-login">
-      <div class="form-group">
-        <label for="user-email-phone" class="user-email-phone-label" id="user-email-phone-label">Email ou telefone</label>
-        <input type="text" class="user-email-phone" id="user-email-phone"></input>
-      </div>
-      <div class="form-group">
-        <label for="user-password" class="user-password-label" id="user-password-label">Senha</label>
-        <input type="text" class="user-password" id="user-password"></input>
-        <a href="">Esqueceu a conta?</a>
-      </div>
-      <div class="form-control">
-        <button class="button-login" id="button-login">Entrar</button>
-      </div>
+        <form action="" method="GET" class="facebook-login">
+            <div class="form-group">
+                <label for="user-email-phone" class="user-email-phone-label" id="user-email-phone-label">Email ou telefone</label>
+                <input type="text" class="user-email-phone" id="user-email-phone"></input>
+            </div>
+            <div class="form-group">
+                <label for="user-password" class="user-password-label" id="user-password-label">Senha</label>
+                <input type="text" class="user-password" id="user-password"></input>
+                <a href="">Esqueceu a conta?</a>
+            </div>
+            <div class="form-control">
+                <button class="button-login" id="button-login">Entrar</button>
+            </div>
       </form>
     </header>
     <main class="main-content">
@@ -34,22 +34,24 @@
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action="" method="GET" class="form-container">
-                <div class="form-wrapper">
-                    <input type="text" name="firstname" placeholder="Nome" class="">
-                    <input type="text" name="lastname" placeholder="Sobrenome" class="">
+            <form action="" method="GET" class="form-container row">
+                <div class="col-sm-6">
+                    <input type="text" name="firstname" placeholder="Nome" class="form-control">
                 </div>
-                <div class="form-wrapper">
-                    <input type="text" name="phone_email" placeholder="Celular ou email" class="">
+                <div class="col-sm-6">
+                    <input type="text" name="lastname" placeholder="Sobrenome" class="form-control">
                 </div>
-                <div class="form-wrapper">
-                    <input type="password" name="password" placeholder="Nova senha" class="">
+                <div class="col-sm-12">
+                    <input type="text" name="phone_email" placeholder="Celular ou email" class="form-control">
                 </div>
-                <div class="form-wrapper">
+                <div class="col-sm-12">
+                    <input type="password" name="password" placeholder="Nova senha" class="form-control">
+                </div>
+                <div class="col-sm-12">
                     <label for="label-birthdate">Data de nascimento</label>
-                    <input type="text" id="label-birthdate" name="password" placeholder="dd/mm/aaaa" class="">
+                    <input type="text" id="label-birthdate" name="password" placeholder="dd/mm/aaaa" class="form-control">
                 </div>
-                <div class="form-wrapper">
+                <div class="col-sm-12">
                     <div>
                         <label id="label-gender">Gênero</label>
                     </div>
