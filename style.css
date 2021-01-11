@@ -1,0 +1,18 @@
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+
+}
+
+.facebook-login {
+  display: flex;
+  position: absolute;
+  right: 180px;
+  margin: 10px 10px;
+}
+
+.facebook-login label  {
+  margin: 0 10px;
+  color: white;
+  font-family: fantasy;
+}
