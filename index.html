@@ -16,7 +16,7 @@
       <form action="" class="facebook-login">
         <div class="form-group">
           <label id="user-email-phone-label" for="user-email-phone'">Email ou telefone</label>
-          <input type="text" id="user-email-phone'">
+          <input type="text" id="user-email-phone">
         </div>
         <div class="form-group">
           <label id="user-password-label" for="user-password">Senha</label>
@@ -41,8 +41,8 @@
           <input type="text" name="firstname" placeholder="Nome" required>
           <input type="text" name="lastname" placeholder="Sobrenome" required>
         </div>
-        <input type="text" name="phone-email" placeholder="Celular ou email" required>
-        <input type="password" name="password" placeholder="Nova Senha" required>
+        <input type="text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required>
         <div class="birthdate-div">
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
@@ -50,15 +50,15 @@
         <label id="label-gender" for="">Gênero</label>
         <div class="radios-buttons">
           <label for="feminino">
-            <input type="radio" name="gender" id="feminino" required>
+            <input type="radio" name="gender" id="feminino" value="Feminino" required>
             Feminino
           </label>
           <label for="masculino">
-            <input type="radio" name="gender" id="masculino" required>
+            <input type="radio" name="gender" id="masculino" value="Masculino" required>
             Masculino
           </label>
           <label for="personalizado">
-            <input type="radio" name="gender" id="personalizado" required>
+            <input type="radio" name="gender" id="personalizado" value="Personalizado" required>
             Personalizado
           </label>
         </div>
