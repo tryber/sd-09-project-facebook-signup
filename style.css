@@ -12,8 +12,13 @@ body {
   padding: 1% 0;
 }
 
+.facebook-logo {
+  margin-left: 10%;
+}
+
 .facebook-login {
   display: flex;
+  margin-right: 15%;
 }
 
 .form-control {
