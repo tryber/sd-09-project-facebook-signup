@@ -16,9 +16,10 @@ body {
   width: 170px;
 }
 
-.user-data {
+.facebook-login {
   align-items: center;
   display: flex;
+  margin: 0 1em;
 }
 
 .login-input {
@@ -26,5 +27,5 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 1em;
+  margin-right: 1em;
 }
