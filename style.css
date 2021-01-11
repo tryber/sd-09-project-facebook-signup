@@ -53,4 +53,17 @@
   align-self: flex-end;  
   display: flex;
   margin-left: 2px;
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook-login {
+  color: whitesmoke;
 }
