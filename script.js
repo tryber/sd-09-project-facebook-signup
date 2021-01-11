@@ -2,9 +2,18 @@ const buttonLogin = document.querySelector('#button-login');
 const userEmailPhone = document.querySelector('#user-email-phone');
 const buttonFacebookRegister = document.querySelector('#facebook-register');
 const radioCustom = document.querySelector('#custom');
+const completeForm = document.querySelectorAll('#register-form input');
+
+function validateField() {
+  for (let index = 0; index < completeForm.length; index += 1) {
+    if (completeForm[index].value === '') {
+      console.log(completeForm[index].value);
+    }
+  }
+}
 
 buttonFacebookRegister.addEventListener('click', () => {
-  const completeForm = document.querySelectorAll('#register-form input');
+  validateField();
   for (let index = 0; index < completeForm.length; index += 1) {
     if (completeForm[index].value === '') {
       return alert('Campos inválidos');
