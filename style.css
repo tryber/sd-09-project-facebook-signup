@@ -17,3 +17,8 @@
 .top-bar img {
   padding: 20px;
 }
+
+.facebook-login {
+    display: flex;
+    color: white;
+}
