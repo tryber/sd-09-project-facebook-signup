@@ -16,6 +16,11 @@ h1 {
 }
 
 .form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input {
   border: 1px solid rgb(189, 199, 216);
   border-radius: 5px;
   font-size: 18px;
@@ -29,6 +34,10 @@ h1 {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.inline-input {
+  display: flex;
 }
 
 .left-content {
@@ -46,7 +55,9 @@ h1 {
 }
 
 .right-content {
-  flex-basis: 300px;
+  display: flex;
+  flex-flow: column;
+  flex-basis: 400px;
 }
 
 .quick-easy {
