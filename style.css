@@ -41,7 +41,6 @@ body {
 }
 
 .right-content {
-  align-items: center;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -62,4 +61,14 @@ body {
 
 .left-content img {
   width: 60%;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register-form input{
+  margin: 0 5px 5px 0;
 }
