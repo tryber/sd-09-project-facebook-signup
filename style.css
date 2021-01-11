@@ -17,6 +17,10 @@ body {
   flex-direction: column;
 }
 
+.left-content {
+  width: 800px;
+}
+
 .main-content {
   display: flex;
 }
