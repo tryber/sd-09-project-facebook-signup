@@ -39,7 +39,7 @@
   width: 140px;
 }
 
-form-group {
+.form-group {
   display: flex;
   flex-direction: column;
 }
