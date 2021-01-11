@@ -19,7 +19,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .left-content {
@@ -27,5 +27,12 @@
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+}
+
+.name-content {
+  display: flex;
+  flex-flow: row;
 }
