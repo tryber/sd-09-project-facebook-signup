@@ -33,3 +33,7 @@ html {
   display: flex;
   flex-flow: wrap row;
 }
+
+.left-content {
+  width: 800px;
+}
