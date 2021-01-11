@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <title>Sign Up</title>
 </head>
 
@@ -52,16 +53,22 @@
                 <label for="new-password" id="label-birthdate">Data de nascimento</label>
                   <input type="text" name="birthdate" maxlength="10" id="new-password" placeholder="dd/mm/aaaa">
             </div>
-            <div class="line-content">
-                <p class="gender">Gênero</p>
-                <input type="radio" name="gender" id="man" value="house" required><label for="man">Masculino</label>
-                <input type="radio" name="gender" id="woman" value="apartment" required><label for="woman">Feminino</label>
-                <input type="radio" name="gender" id="none" value="apartment" required><label for="none">Personalizado</label>
+            <div>
+            <label for="gender" id="label-gender" class="gender-label">Gênero</label>
+                 <label for="female">
+                 <input type="radio" name="gender" id="female" value="Feminino" required>Feminino</label>
+                  <label for="male">
+                  <input type="radio" name="gender" id="male" value="Masculino">Masculino</label>
+                  <label for="custom">
+                  <input type="radio" name="gender" id="custom" value="Personalizado">Personalizado</label>
+                <label for="gender-custom">
+            <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" class="gender-input hidden">
             </div>
          </form>
      </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      </footer>
     <script src="script.js"></script>
 </body>
 
