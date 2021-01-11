@@ -40,16 +40,6 @@ body {
 }
 
 .top-bar img {
-  flex-grow: 0;
   flex-shrink: 0;
-}
-
-.facebook-login {
-  align-items: center;
-  color: white;
-  display: flex;
-}
-
-.main-content {
-  display: flex;
+  flex-grow: 0;
 }
