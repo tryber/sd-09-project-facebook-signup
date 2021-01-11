@@ -1,9 +1,9 @@
 function logIn () {
   const buttonListener = document.getElementById('button-login');
 
-  buttonListener.addEventListener("click", function(){
+  buttonListener.addEventListener("click", function() {
     alert("Email ou telefone");
   });
 }
 
-logIn()
+logIn();
