@@ -40,3 +40,8 @@ form aside {
 form aside input {
   width: 130px;
 }
+
+div label,input {
+  display: flex;
+  flex-direction: column;
+}
