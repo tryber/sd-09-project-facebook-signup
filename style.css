@@ -17,7 +17,7 @@ body {
 
 .form-control {
   align-self: flex-end;
-  margin-bottom: 1.9%;
+  margin-bottom: 5.6%;
 }
 
 .button-login {
@@ -29,7 +29,12 @@ body {
 }
 
 .user-email-phone-label, .user-password-label {
+<<<<<<< HEAD
   color: white;
+=======
+  color: #fff;
+  margin: 5% 0 0 0;
+>>>>>>> c546224da7c87944426b088f43aa1f51bb307bbd
 }
 
 .user-password, .user-email-phone {
