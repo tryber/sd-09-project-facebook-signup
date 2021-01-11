@@ -1,3 +1,7 @@
+.container {
+  display: flex;
+}
+
 .facebook-login {
   display: flex;
   order: 1;
