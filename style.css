@@ -8,6 +8,11 @@
     display: flex;
     flex-direction: column;
 }
+
+.form-control {
+  align-self: flex-end;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -19,6 +24,11 @@
 }
 
 .facebook-login {
-    display: flex;
-    color: white;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.main-content {
+  display: flex;
 }

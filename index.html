@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <nav class="top-bar">
       <img src="imgs/facebook-logo.png" alt="Logo Facebook">
-      <form action="teste.php" method="POST" class="facebook-login">
+      <form action="#" method="POST" class="facebook-login">
         <div class="form-group">
-          <label for="login" id="user-email-phone-label">Email ou Telefone<br>
+          <label for="user-email-phone" id="user-email-phone-label">Email ou Telefone<br>
             <input type="text" name="login" id="user-email-phone">
           </label>
         </div>
         <div class="form-group">
-          <label for="pass" id="user-password-label">Senha<br>
+          <label for="user-password" id="user-password-label">Senha<br>
             <input type="password" name="pass" id="user-password">
           </label>
         </div>
-        <input type="submit" value="Enviar">
-    </form>
+        <div class="form-control">
+          <button type="submit" id="button-login">Entrar</button>
+        </div>
+      </form>
     </nav>
+    <main class="main-content">
+
+    </main>
+  <script src="script.js"></script>
 </body>
 </html>
