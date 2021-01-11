@@ -1,5 +1,5 @@
 document.querySelector('#button-login').addEventListener('click', () => {
-  alert(document.querySelector('#user-mail-phone').value);
+  alert(document.querySelector('#user-email-phone').value);
 });
 
 function validateText(formInputs) {
