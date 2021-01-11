@@ -52,3 +52,28 @@ body {
 .facebook-networking {
   margin-left: 8rem;
 }
+
+.line-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-child {
+  display: flex;
+  align-self: center;
+}
+
+.birthdate-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender {
+    display: flex;
+    flex-direction: column;
+}
