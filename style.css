@@ -45,3 +45,7 @@ div label , input {
 form aside input {
   width: 130px;
 }
+
+.gender {
+  display: flex;
+}
