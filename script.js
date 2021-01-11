@@ -1,3 +1,8 @@
+const facebookRegister = document.getElementById('facebook-register');
+facebookRegister.addEventListener('click', validateAndRegister);
+document.querySelector('#button-login').addEventListener('click', () => {
+    alert(document.querySelector('#user-mail-phone').value);
+});
 function validateText (formInputs) {
   console.log('validateText');
   let validate = true;
@@ -19,6 +24,3 @@ function validateAndRegister (event) {
     event.preventDefault();
   }
 }
-
-const facebookRegister = document.getElementById('facebook-register');
-facebookRegister.addEventListener('click', validateAndRegister);
