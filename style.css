@@ -2,12 +2,12 @@ body {
   margin: 0;
 }
 
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
-}
-
 .facebook-logo {
   margin: 15px 0 4px 100px;
   height: 65px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
 }
