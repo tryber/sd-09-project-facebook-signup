@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
@@ -15,17 +16,21 @@
     </header>
     <section class="main-content">
         <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+            <p id="facebook-slogan" class="title is-5">O Facebook ajuda você a se conectar e compartilhar com as pessoas
+                que fazem parte da
                 sua vida.</p>
-            <img src="imgs/networking.png" id="facebook-networking"
-                alt="Icones de pessoas sobre os paises do mundo, possuindo traços que representam a conexão entre elas">
+            <div class="centered-image">
+                <img src="imgs/networking.png" id="facebook-networking"
+                    alt="Icones de pessoas sobre os paises do mundo, possuindo traços que representam a conexão entre elas">
+            </div>
+
         </div>
         <div class="right-content">
-            <h1>Abra uma conta</h1>
-            <h3 class="quick-easy">É rápido e fácil.</h3>
+            <h1 class="title">Abra uma conta</h1>
+            <h3 class="quick-easy subtitle">É rápido e fácil.</h3>
             <form action="">
 
-                <div class="name-container">
+                <div class="field is-grouped">
                     <div class="field">
                         <div class="control">
                             <input class="input" type="text" placeholder="Nome" name="firstname">
@@ -58,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="field">
+                <div class="field form-gender-option">
                     <label class="label" id="label-gender">Gênero</label>
                     <div class="control">
                         <label class="radio">
