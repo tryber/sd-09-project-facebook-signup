@@ -22,12 +22,3 @@
   color: rgba(219, 219, 219, 0.822);
   margin: 0;
 }
-
-.test {
-    flex-direction: row;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
