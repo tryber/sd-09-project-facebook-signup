@@ -26,12 +26,30 @@
   <section class='main-content'>
     <div class='left-content'>
       <p id='facebook-slogan'>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img id='facebook-networking' src="imgs/networking.png" alt="Facebook Networking">
+      <img id='facebook-networking' src='imgs/networking.png' alt='Facebook Networking'>
     </div>
     <div class='right-content'>
       <h1>Abra uma conta</h1>
       <p class='quick-easy'>É rápido e fácil.</p>
-      <form action=""></form>
+      <form class='register' action='' method='GET'>
+        <div class='container-name-lastname'>
+          <input name='firstname' type='text' placeholder='Nome'>
+          <input name='lastname' type='text' placeholder='Sobrenome'>
+        </div>
+        <input name='phone_email' type='text' placeholder='Celular ou email'>
+        <input name='password' type='password' placeholder='Nova senha'>
+        <label for='' id='label-birthdate'>Data de nascimento</label>
+        <input name='birthdate' type='text' placeholder='dd/mm/aaaa'>
+        <label for='feminino' id='label-gender'>Gênero</label>
+        <div class='container-sex'>
+            <label for='feminino'>Feminino</label>
+            <input type='radio' name='gender' id='feminino'>
+            <label for='masculino'>Masculino</label>
+            <input type='radio' name='gender' id='masculino'>
+            <label for='custom'>Personalizado</label>
+            <input type='radio' name='gender' id='custom'>
+          </div>
+      </form>
     </div>
   </section>
   <script src='script.js'></script>
