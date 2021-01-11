@@ -3,21 +3,21 @@ body {
 }
 
 .top-bar {
+  background-color: rgb(66, 103, 178);
   display: flex;
   flex-direction: row;
-  background-color: rgb(66, 103, 178);
   height: 82px;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .facebook-login {
-  display: flex;
   color: white;
+  display: flex;
   font-size: 12px;
 }
 
 .form-group {
+  align-items: baseline;
   display: flex;
   justify-content: center;
-  align-items: baseline;
 }
