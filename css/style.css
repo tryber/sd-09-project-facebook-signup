@@ -1,4 +1,4 @@
-html {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,4 +21,8 @@ html {
 
 .form-control {
   align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
 }
