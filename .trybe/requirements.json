@@ -1,0 +1,64 @@
+{
+    "requirements": [{
+      "description": "Crie uma barra azul na parte superior da página com a classe top-bar",
+      "bonus": false
+    }, {
+      "description": "A barra superior deve conter o logotipo do Facebook no canto esquerdo com a classe facebook-logo",
+      "bonus": false
+    }, {
+      "description": "A barra superior deve conter um formulário de autenticação no canto direito",
+      "bonus": false
+    },{
+      "description": "Crie uma classe no CSS chamada form-group",
+      "bonus": false
+    },{
+      "description": "Adicione o primeiro subcontainer com a classe form-group para agrupar o rótulo e campo \"E-mail ou telefone\" dentro do formulário criado na etapa 3",
+      "bonus": false
+    },{
+      "description": "Adicione o segundo subcontainer com a classe form-group para agrupar o rótulo e campo \"Senha\" dentro do formulário criado na etapa 3",
+      "bonus": false
+    },{
+      "description": "Adicione o terceiro subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3",
+      "bonus": false
+    },{
+      "description": "Crie um container com a classe main-content abaixo da barra azul para agrupar o conteúdo principal da página",
+      "bonus": false
+    },{
+      "description": "Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content",
+      "bonus": false
+    },{
+      "description": "Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content",
+      "bonus": false
+    },{
+      "description": "Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10",
+      "bonus": false
+    },{
+      "description": "Crie um campo de entrada de texto para o sobrenome do usuário dentro do formulário criado no requisito 10",
+      "bonus": false
+    },{
+      "description": "Crie um campo de entrada de texto para o celular ou email do usuário dentro do formulário criado no requisito 10",
+      "bonus": false
+    },{
+      "description": "Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10",
+      "bonus": false      
+    },{
+      "description": "Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10",
+      "bonus": false
+    },{
+      "description": "Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10",
+      "bonus": false
+    },{
+      "description": "Crie um botão para finalizar o cadastro dentro do formulário criado no requisito 10",
+      "bonus": false
+    },{
+      "description": "Validar se todos os campos foram preenchidos ao clicar no botão \"Cadastre-se\"",
+      "bonus": false
+    },{
+      "description": "Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção \"Personalizado\" no campo Gênero",
+      "bonus": false
+    },{
+      "description": "Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado",
+      "bonus": false
+    }]
+}
+
