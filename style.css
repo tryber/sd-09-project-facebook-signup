@@ -40,6 +40,7 @@
 }
 
 .main-content {
+  background-color: rgb(168, 196, 209);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -56,7 +57,6 @@
 }
 
 .right-content {
-  background-color: darkgreen;
   width: 300px;
 }
 
@@ -76,6 +76,7 @@
 
 .fullName input {
   width: 100%;
+  flex-basis: 140px
 }
 
 .birthDateField {
