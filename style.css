@@ -3,3 +3,18 @@
   margin: 0;
   padding: 0;
 }
+
+.top-bar {
+  background-color: rgb(66 , 103 , 178);
+  display: flex;
+  justify-content: space-around;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
