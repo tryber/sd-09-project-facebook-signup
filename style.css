@@ -10,13 +10,16 @@ body {
 }
 
 .top-bar {
-  align-items: center;
   background-color: rgb(66, 103, 178);
+  justify-content: space-around;
   display: flex;
-  width: 100%;
 }
 
 .facebook-login {
   display: flex;
-  float: right;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
