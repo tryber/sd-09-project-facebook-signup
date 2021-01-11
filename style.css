@@ -33,12 +33,10 @@
 }
 
 .left-content {
-  /* border: 2px solid black; */
   width: 800px;
 }
 
 .right-content {
-  /* border: 2px solid red; */
   flex-wrap: nowrap;
   width: 300px;
 }
