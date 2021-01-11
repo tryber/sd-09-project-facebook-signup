@@ -9,15 +9,15 @@ btnCadastro.addEventListener('click', function () {
   const fields = document.querySelectorAll('.open-account input');
 
   let campos = false;
-  for (const field of fields) {
-    if (field.type === 'text') {
-      if (field.value === '') {
+  for (let field = 0; field < fields.length; field += 1) {
+    if (fields[field].type === 'text') {
+      if (fields[field].value === '') {
         break;
       }
     }
 
-    if (field.type === 'radio') {
-      if (field.checked) {
+    if (fields[field].type === 'radio') {
+      if (fields[field].checked) {
         campos = true;
       }
     }
