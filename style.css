@@ -1,0 +1,24 @@
+
+.top-container {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.left-content {
+  background-color:rgb(235, 171, 111);
+  display:flex;
+  flex-direction: column;
+  width:800px; 
+}
+
+.right-content {
+  background-color: darkgreen;
+}
