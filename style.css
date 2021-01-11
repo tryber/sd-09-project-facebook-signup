@@ -26,10 +26,10 @@ body {
 }
 
 .main-content {
-  margin-right: auto;
-  margin-left: auto;
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
 }
 
