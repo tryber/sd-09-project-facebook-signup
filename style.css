@@ -36,3 +36,11 @@ body {
 .right-content {
   width: 300px;
 }
+
+.first-last-name {
+  display: flex;
+}
+
+.radios-buttons {
+  display: flex;
+}
