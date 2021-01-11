@@ -9,8 +9,7 @@
 .left-content {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   width: 800px;
 }
 
@@ -18,7 +17,7 @@
   color: rgb(50, 68, 128);
   font-family: Helvetica, sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: left;
   width: 500px;
 }
@@ -26,8 +25,8 @@
 .right-content {
   align-content: center;
   display: flex;
-  font-family: Helvetica, Arial, sans-serif;
   flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
   width: 300px;
 }
 
