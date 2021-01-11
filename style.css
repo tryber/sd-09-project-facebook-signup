@@ -11,7 +11,7 @@ body {
   height: 82px;
   justify-content: space-between;
   max-width: 100%;
-  padding: 0 2.5%;
+  /* padding: 0 2.5%; */
 }
 
 /* .facebook-logo {
@@ -25,5 +25,5 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  /* margin: 0 20px; */
 }
