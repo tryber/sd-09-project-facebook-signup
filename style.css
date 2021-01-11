@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -26,4 +31,9 @@
   display: flex;
   height: 600px;
   width: 100%;
+}
+
+.left-content {
+  background-color: cadetblue;
+  width: 800px;
 }
