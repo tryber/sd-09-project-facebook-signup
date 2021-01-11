@@ -18,10 +18,46 @@ header {
 }
 
 .facebook-logo {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .facebook-login {
   border: 1px solid red;
   display: flex; 
+}
+
+.field {
+  margin-right: 10px;
+}
+
+.input {
+  width: 130px;
+}
+
+.label {
+  font-size: 12px;
+  color: #fff;
+}
+
+.label a {
+  text-decoration: none;
+  color: #9cb4d8;
+}
+
+.btn {
+  display:flex;
+  align-self: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 18px;
+  background-color: #4267b2;
+  border: 1px solid;
+  border-color: #29487d;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0px 6px;
+  text-align: center;
+  height: 20px;
+
 }
