@@ -53,3 +53,8 @@ body {
 .gender-section label {
   font-size: 15px;
 }
+
+.optional-input {
+ display: none;
+ width: 100%;
+}
