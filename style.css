@@ -30,7 +30,6 @@
   /* mudar para cor correta de background */
   background-color: lightgray;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -52,4 +51,41 @@
   height: 4rem;
   justify-content: space-around;
   width: 100%;
+}
+
+.cadastro {
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+}
+
+.labelGender {
+  display: flex;
+  font-size: small;
+  justify-content: center;
+}
+
+.nascimento {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+
+.nascimento input {
+  width: 98%;
+}
+
+.nomeSobrenome {
+  display: flex;
+}
+
+.nomeSobrenome input {
+  width: 50%;
+}
+
+.radioButtons {
+  display: flex;
+  font-size: small;
+  justify-content: center;
 }

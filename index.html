@@ -6,7 +6,6 @@
   <title>Facebook</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
     <div class="top-bar">
@@ -28,8 +27,23 @@
             <button id="button-login">Entrar</button>
           </div>
         </Form>
+      <div class="logo-header">
+        <img src="imgs/facebook-logo.png">
       </div>
+    <div class='form-header'>
+      <Form>
+        <label for="name">Email ou Telefone</label>
+        <input type="text" name="login" id="login" maxlength="60" required>
+        <label for="password">Senha</label>
+        <input type="text" name="senha" id="password" maxlength="60" required>
+        <button>Entrar</button>
+        <label>Esqueceu a Senha</label>
+      </Form>
     </div>
+      </div class='form-header'>
+    <form action="">
+
+    </form>
   </header>
 
   <!-- main content -->
@@ -42,12 +56,25 @@
 
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <p  class="quick-easy">É rápido e fácil.</p>
-      <form action="">
-
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form action="" class="cadastro">
+        <section class="nomeSobrenome">
+        <input type="text"  name="firstname" placeholder="Nome"  required>
+        <input type="text"  name="lastname" placeholder="Sobrenome" required>
+        </section>
+        <input type="text"  name="phone_email"  placeholder="Celular ou email"  required>
+        <input type="password"  name="password" placeholder="Nova senha"  required>
+        <label id="label-birthdate" class="nascimento">Data de Nascimento</label>
+        <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa" required>
+        <label id="label-gender" class="labelGender">Gênero</label>
+        <div class="radioButtons">
+        <input type="radio" value="gender">Feminino
+        <input type="radio" value="gender">Masculino
+        <input type="radio" value="gender">Personalizado
+        </div>
+        <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
-
   </section>
   <script src="script.js"></script>
   <script src="/bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
