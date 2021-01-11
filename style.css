@@ -1,7 +1,13 @@
 /* Andre */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-around;
 }
 
 .facebook-login {
@@ -10,6 +16,11 @@
 
 .form-control {
   align-self: flex-end;
+  margin-bottom: 1.7%;
+}
+
+.button-login {
+  background-color: red;
 }
 
 /* Felipe */
