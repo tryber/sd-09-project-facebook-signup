@@ -1,9 +1,11 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178)
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: left;
 }
