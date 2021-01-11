@@ -51,6 +51,10 @@
   flex-flow: row nowrap;
 }
 
+.name-lastname {
+	display: flex;
+}
+
 form {
   display: flex;
   flex-flow: row wrap;
