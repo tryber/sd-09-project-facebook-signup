@@ -12,10 +12,16 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.facebook-logo {
+  align-self: flex-start;
 }
 
 .facebook-login {
+  align-items: flex-end;
   display: flex;
 }
 
@@ -40,4 +46,3 @@ body {
 .right-content {
   width: 300px;
 }
-
