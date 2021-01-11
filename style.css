@@ -49,3 +49,7 @@ form aside input {
 .gender {
   display: flex;
 }
+
+.isVisible {
+  display: none;
+}
