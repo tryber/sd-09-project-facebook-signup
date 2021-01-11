@@ -25,9 +25,15 @@ function createNewUserInfo() {
   createP(document.querySelector('#phone_email').value);
   createP(document.querySelector('#birthdate').value);
   createP(document.querySelector('input[type="radio"]:checked').value);
+  createP('A Trybe abre as portas para você')
+  document.querySelector('.facebook-logo').src = './imgs/Trybe.svg'
+  document.querySelector('#facebook-networking').src = './imgs/beTrybe.jpg'
+  document.querySelector('#facebook-slogan').innerText = 'A escola que te ensina a programar, a aprender e a trabalhar.'
+  document.querySelector('.top-container').style.backgroundColor = 'rgb(64,145,108)'
   rightContentBox.removeChild(getFormNewAccount);
   rightContentBox.removeChild(rightContentBox.querySelector('h1'));
   rightContentBox.removeChild(rightContentBox.querySelector('p'));
+
 }
 
 function validateForm() {
