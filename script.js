@@ -15,10 +15,9 @@ function validateRegister(event) {
   const errorText = document.querySelector('#error-message');
   const inputs = registerForm.querySelectorAll('[required]');
   for (let index = 0; index < inputs.length; index += 1) {
-    if(!inputs[index].checkValidity()) {
+    if (!inputs[index].checkValidity()) {
       errorText.innerText = 'Campos inválidos';
-    }
-    else {
+    } else {
       errorText.innerText = '';
     }
   }
