@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  width: 100%;  
+  width: 80%;  
+}
+
+.facebook-logo {
+  margin-top: 10px;
 }
