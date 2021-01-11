@@ -18,7 +18,19 @@
                 <label id="user-password-label">Senha</label>
                 <input type="password" id="user-password">
             </section>
+            <section class="form-control">
+                <button id="button-login">Entrar</button>
+            </section>
         </form>
     </header>
+    <script>
+        window.onload = function () {
+            const loginButton = document.getElementById('button-login');
+            loginButton.addEventListener('click', function () {
+                const user = document.getElementById('user-email-phone');
+                alert('User: ' + user.value);
+            });
+        }
+    </script>
 </body>
 </html>
