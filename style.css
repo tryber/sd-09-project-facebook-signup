@@ -27,3 +27,8 @@ body {
   justify-content: center;
   margin-right: 1em;
 }
+
+.form-control {
+  align-self: flex-end;
+  margin-right: 1em;
+}
