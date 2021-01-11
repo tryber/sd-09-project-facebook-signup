@@ -16,3 +16,8 @@
 .left-content {
   width: 800px;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
