@@ -15,8 +15,8 @@
 
 .facebook-login {
   align-items: center;
-  display: flex;
   color: white;
+  display: flex;
 }
 
 .form-group {
@@ -35,7 +35,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .left-content {
@@ -48,4 +48,8 @@
 
 .complete-name {
   display: flex;
+}
+
+.label-birthdate, .label-gender {
+  display: block;
 }
