@@ -19,3 +19,7 @@
 .fullname {
   display: flex;
 }
+
+.gender-radios {
+  display: flex;
+}
