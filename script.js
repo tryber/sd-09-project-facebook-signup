@@ -5,6 +5,13 @@ function alertEmailOrPhone() {
     alert(inputUserName.value);
   });
 }
+
+function clearRightSide(rightSide) {
+  for (let index = rightSide[0].children.length - 1; index >= 0 ; index -= 1) {
+    rightSide[0].removeChild(rightSide[0].children[index]);
+  }
+}
+
 function createAnswerLayout() {
   const rightSide = document.querySelectorAll('.right-content');
   const inputs = document.querySelectorAll('input');
@@ -17,7 +24,7 @@ function createAnswerLayout() {
   email.innerText = inputs[4].value;
   birthdate.innerText = inputs[6].value;
   // get the checked radio input
-  for (let index = 2; index < inputs.length ; index += 1) {
+  for (let index = 2; index < inputs.length; index += 1) {
     if (inputs[index].checked) {
       gender.innerText = inputs[index].value;
       if (inputs[index].value === 'Personalizado') {
@@ -25,10 +32,9 @@ function createAnswerLayout() {
       }
     }
   }
-  //clear the right side
-  for (let index = rightSide[0].children.length - 1; index >= 0 ; index -= 1) {
-    rightSide[0].removeChild(rightSide[0].children[index]);
-  }
+  // clear the right side
+  clearRightSide(rightSide)
+  // create answer layout
   rightSide[0].appendChild(greetings);
   rightSide[0].appendChild(email);
   rightSide[0].appendChild(birthdate);
