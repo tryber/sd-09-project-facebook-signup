@@ -43,7 +43,7 @@ choosedGenre.addEventListener('click', checkGenre = () => {
 
 const eventslistener = () => {
   btnEntrar.addEventListener('click', alertMsg);
-  btnCadastro.addEventListener('click', checkGenre);
+  /*btnCadastro.addEventListener('click', checkGenre);*/
 };
 
 window.onload = () => {
