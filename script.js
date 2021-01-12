@@ -49,7 +49,7 @@ function createHelloUserElement() {
   const userLastName = document.querySelector('#lastname').value;
   // const helloPhrase = document.createElement('p');
   // helloPhrase.innerText = `Hello, ${userFirstName} ${userLastName}`;
-  const helloPhrase = `Hello, ${userFirstName} ${userLastName}`;
+  const helloPhrase = `Olá, ${userFirstName} ${userLastName}`;
   return helloPhrase;
 }
 
