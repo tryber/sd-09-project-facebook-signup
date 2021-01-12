@@ -50,4 +50,5 @@ html {
 
 .gender {
   display: flex;
+  flex-wrap: wrap;
 }
