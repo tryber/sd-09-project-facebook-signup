@@ -11,25 +11,26 @@ const rightContent = document.querySelector('.right-content');
 const mainContent = document.querySelector('.main-content');
 
 function genereteNewRightContent() {
-  rightContent.style.display = 'none';
-  const newRighthContent = document.createElement('div');
-  mainContent.appendChild(newRighthContent);
+  rightContent.innerHTML = '';
+  // const newRighthContent = document.createElement('div');
+  // mainContent.appendChild(newRighthContent);
+  // newRighthContent.classList.add('right-content');
 
   const name = document.createElement('p');
   name.innerHTML = `Olá, ${form1.firstname.value} ${form1.lastname.value}`;
-  newRighthContent.appendChild(name);
+  rightContent.appendChild(name);
 
   const emailTelefone = document.createElement('p');
   emailTelefone.innerHTML = `${form1.phone_email.value}`;
-  newRighthContent.appendChild(emailTelefone);
+  rightContent.appendChild(emailTelefone);
 
   const dataNascimento = document.createElement('p');
   dataNascimento.innerHTML = `${form1.birthdate.value}`;
-  newRighthContent.appendChild(dataNascimento);
+  rightContent.appendChild(dataNascimento);
 
   const genero = document.createElement('p');
   genero.innerHTML = `${form1.gender.value}`;
-  newRighthContent.appendChild(genero);
+  rightContent.appendChild(genero);
 }
 
 botao.addEventListener('click', () => alert(email.value));
