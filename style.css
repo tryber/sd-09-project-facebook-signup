@@ -7,31 +7,11 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
-
-}
-
-/*
-.form-header {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-*/
-
-.email-phone {
-  display: flex;
-  flex-direction: column;
-}
-
-.password {
-  display: flex;
-  flex-direction: column;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  background-color: teal;
 }
 
 .form-control {
@@ -47,12 +27,6 @@ body {
 
 .left-content {
   width: 800px;
-}
-
-.left-content p {
-  color: rgb(66, 103, 178);
-  font-size: 1.5rem;
-  width: 500px;
 }
 
 .right-content {
