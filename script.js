@@ -10,11 +10,11 @@ function loginAlert() {
 
 function inputTextValidation() {
   let isTextValid = true;
-    for (let index = 0; index < formInputs.length; index += 1) {
-      if (!formInputs[index].value) {
+  for (let index = 0; index < formInputs.length; index += 1) {
+    if (!formInputs[index].value) {
       isTextValid = false;
-      }
     }
+  }
   return isTextValid;
 }
 
