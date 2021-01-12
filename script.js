@@ -14,7 +14,7 @@ listenToButtonLoginButton();
 
 function validateTextInputs() {
   const textInputsNodeList = document.querySelectorAll(
-    '.right-content input:not([type='radio'])'
+    '.right-content input:not([type="radio"])'
   );
   let isValid = true;
 
@@ -30,7 +30,7 @@ function validateTextInputs() {
 
 function validateRadioButtons() {
   const checkedRadioButtonsNodeList = document.querySelectorAll(
-    '.right-content input[type='radio']:checked'
+    '.right-content input[type="radio"]:checked'
   );
   let isValid = true;
 
