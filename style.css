@@ -52,8 +52,8 @@ h1 {
 
 .left-content {
   color: rgb(14, 56, 95);
-  flex-basis: 800px;
   margin-top: 40px;
+  width: 800px;
 }
 
 .main-content {
@@ -66,8 +66,8 @@ h1 {
 
 .right-content {
   display: flex;
-  flex-basis: 300px;
   flex-flow: column;
+  width: 300px;
 }
 
 .quick-easy {
