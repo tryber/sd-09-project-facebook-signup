@@ -17,6 +17,12 @@ function showAlert() {
 }
 showAlert();
 
+function greetUser() {
+  if (alertP.innerText === '') {
+    rightForm.innerHTML = '';
+  }
+}
+
 function verifyForm() {
   registerButton.addEventListener('click', function (event) {
     event.preventDefault();
@@ -25,12 +31,12 @@ function verifyForm() {
       if (formInputs[index].type === 'radio' && !formInputs[index].checked) {
         validation += 1;
       }
-      if (formInputs[index].value === '' || validation > 2 ) {
+      if (formInputs[index].value === '' || validation > 2) {
         alertP.innerText = ('Campos inválidos');
-      } 
+      }
     }
-  validation = 0
-  greetUser()
+    validation = 0;
+    greetUser();
   });
 }
 verifyForm();
@@ -43,9 +49,3 @@ function createCustominput() {
   });
 }
 createCustominput();
-
-function greetUser() {
-  if (alertP.innerText === '') {
-    rightForm.innerHTML = '';
-  }
-}
