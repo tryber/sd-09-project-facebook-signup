@@ -6,14 +6,27 @@ function alertEmailOrPhone() {
   });
 }
 
-function clearRightSide(rightSide) {
-  for (let index = rightSide[0].children.length - 1; index >= 0 ; index -= 1) {
-    rightSide[0].removeChild(rightSide[0].children[index]);
+function verifyCheckedRadioInputs(listElements) {
+  let checkBoxGender = '';
+  for (let index = 2; index < listElements.length; index += 1) {
+    if (listElements[index].checked) {
+      checkBoxGender = listElements[index].value;
+      if (listElements[index].value === 'Personalizado') {
+        checkBoxGender = listElements[10].value;
+      }
+    }
+  }
+  return checkBoxGender;
+}
+
+function clearRightSide(listElements) {
+  for (let index = listElements[0].children.length - 1; index >= 0 ; index -= 1) {
+    listElements[0].removeChild(listElements[0].children[index]);
   }
 }
 
 function createAnswerLayout() {
-  const rightSide = document.querySelectorAll('.right-content');
+  const rightSideList = document.querySelectorAll('.right-content');
   const inputs = document.querySelectorAll('input');
   // create elements to the card after verified
   const greetings = document.createElement('h3');
@@ -24,21 +37,14 @@ function createAnswerLayout() {
   email.innerText = inputs[4].value;
   birthdate.innerText = inputs[6].value;
   // get the checked radio input
-  for (let index = 2; index < inputs.length; index += 1) {
-    if (inputs[index].checked) {
-      gender.innerText = inputs[index].value;
-      if (inputs[index].value === 'Personalizado') {
-        gender.innerText = inputs[10].value;
-      }
-    }
-  }
+  gender.innerText = verifyCheckedRadioInputs(inputs);
   // clear the right side
-  clearRightSide(rightSide)
+  clearRightSide(rightSideList);
   // create answer layout
-  rightSide[0].appendChild(greetings);
-  rightSide[0].appendChild(email);
-  rightSide[0].appendChild(birthdate);
-  rightSide[0].appendChild(gender);
+  rightSideList[0].appendChild(greetings);
+  rightSideList[0].appendChild(email);
+  rightSideList[0].appendChild(birthdate);
+  rightSideList[0].appendChild(gender);
 }
 
 function validateForm() {
