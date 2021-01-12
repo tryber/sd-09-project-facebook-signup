@@ -84,9 +84,9 @@ h1 {
 }
 
 .right-content {
-  width: 300px;
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .register {
@@ -94,8 +94,12 @@ h1 {
 }
 
 .register div {
-  display: flex;
   align-items: stretch;
+  display: flex;
+}
+
+.full_name input {
+  width: 50%;
 }
 
 .register div input {
@@ -104,10 +108,6 @@ h1 {
 
 .full_name {
   display: flex;
-}
-
-.full_name input {
-  width: 50%;
 }
 
 .inside-labels {
