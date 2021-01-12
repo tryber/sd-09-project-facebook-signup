@@ -39,9 +39,9 @@ function submitInfo() {
       gender = femaleField.value;
     } else if (maleField.checked) {
       gender = maleField.value;
-    } 
+    }
   }
- 
+
   const greeting = document.createElement('p');
   greeting.innerText = `Olá, ${nameValue} ${surnameValue}`
 
@@ -53,8 +53,7 @@ function submitInfo() {
 
   const chosenGender = document.createElement('p');
   chosenGender.innerText = `${gender}`
- 
-  
+
   while (rightContent.firstChild) {
     rightContent.removeChild(rightContent.firstChild);
   }
@@ -89,6 +88,6 @@ function validateField() {
   });
 }
 
-personalizeGenderField() 
+personalizeGenderField();
 validateField();
 alertButton();
