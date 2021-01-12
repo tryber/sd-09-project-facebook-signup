@@ -54,7 +54,7 @@ body {
   .form-control-register {
     display: flex;
     justify-content: center;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
   }
 
   .form-control-register button {
@@ -75,8 +75,8 @@ body {
     background-color: rgb(244, 245, 247);
     border: 0.5px solid rgb(225, 225, 225);
     border-radius: 3px;
-    padding: 5px;
     height: 25px;
+    padding: 5px;
   }
 
   .email-input::placeholder {
@@ -91,8 +91,8 @@ body {
     background-color: rgb(244, 245, 247);
     border: 0.5px solid rgb(225, 225, 225);
     border-radius: 3px;
-    padding: 5px;
     height: 25px;
+    padding: 5px;
   }
 
   .password-input::placeholder {
@@ -112,7 +112,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
+
   .facebook-logo-container {
     background-color: rgb(66, 103, 178);
     display: flex;
