@@ -13,7 +13,6 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .form-control {
@@ -26,7 +25,7 @@
   border-radius: 0;
   font-family: arial, sans-serif;
   font-size: 15px;
-  margin-right: 5;
+  margin-right: 5px;
   padding: 0;
 }
 
