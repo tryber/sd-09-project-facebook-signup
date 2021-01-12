@@ -31,9 +31,9 @@
   width: 90%;
 }
 
-main.main-content {
+/* main.main-content {
   background-image: linear-gradient(white, rgb(204, 202, 202));
-}
+} */
 
 .main-content {
   background-image: linear-gradient(#FCFBFA, #CBD2E4 );
@@ -129,7 +129,13 @@ footer ul li {
 }
 
 .links-footer {
+  display: inline-block;
+}
 
+.links-footer li {
+  display: inline;
+  /* margin: 3px; */
+  padding: 5px;
 }
 
 .plus-sign {
