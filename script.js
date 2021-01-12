@@ -43,11 +43,11 @@ function changeContent(event) {
     rightContent.innerHTML = '';
     const newtext1 = document.createElement('h2');
     newtext1.innerText = `Olá, ${name} ${lastname}`;
+    rightContent.appendChild(newtext1);
     const newText2 = document.createElement('p');
     newText2.innerText = `${email}
     ${birthdate}
     ${gender}`;
-    rightContent.appendChild(newtext1);
     rightContent.appendChild(newText2);
   }
 }
