@@ -14,14 +14,10 @@ function handleValidateFields(event) {
   event.preventDefault();
 
   const inputs = document.querySelectorAll('.facebook-register input');
-  
   for (let index = 0; index < inputs.length; index += 1) {
-    if (inputs[index].value == '') {
-      console.log(inputs[index]);
-    } 
+    if (inputs[index].value === '') {
+    }
   }
-  
-
 }
 
 formSubmit.addEventListener('submit', handleValidateFields);
