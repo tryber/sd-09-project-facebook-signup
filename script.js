@@ -29,12 +29,16 @@ function insertWelcome() {
 }
 
 function checkEmptyFields() {
+  let invalidField = 0;
   for (let index = 0; index < getInputs.length; index += 1) {
     if (getInputs[index].value === '') {
-      getInputs[index].innerText = 'Campos inválidos';
-    } else {
-      insertWelcome();
+      invalidField += 1
+      getInputs[index].innerHTML = 'Campos Invalidos';
+      getInputs[index].placeholder = 'Campos Invalidos';
     }
+  }
+  if (invalidField === 0) {
+    insertWelcome();
   }
 }
 
