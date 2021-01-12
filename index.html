@@ -38,7 +38,7 @@
       <form action="">
         <!-- INPUT NAME -->
         <div class="fullname">
-          <input type="text" name="firstname" placeholder="Nome" required>
+          <input type="text" name="firstname" placeholder="Nome" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
           <input type="text" name="lastname" placeholder="Sobrenome" required>
         </div>
         <!-- INPUT ID -->
@@ -61,7 +61,7 @@
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
-  </section> 
+  </section>
 </body>
 <script src="js/script.js"></script>
 </html>
