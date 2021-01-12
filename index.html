@@ -45,14 +45,22 @@
       <p class="quick-easy">
         É rápido e fácil.
       </p>
-      <div class="nome-container">
-        <input id="firstname" type="text" name="firstname" placeholder="Nome">
-        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome">
-      </div>
-      <input type="text" name="phone_email" placeholder="Celular ou email">
-      <input type="text" name="password" placeholder="Nova senha">
-      <label for="">Data de nascimento</label>
-      <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+      <form action="">
+        <div class="nome-container">
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
+        </div>
+        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="text" name="password" placeholder="Nova senha">
+        <label for="">Data de nascimento</label>
+        <input id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <label id="label-gender" for="">Gênero</label>
+        <div class="gender-container">
+          <input type="radio" name="gender">Feminino
+          <input type="radio" name="gender">Masculino
+          <input type="radio" name="gender">Personalizado
+        </div>
+      </form>
     </aside>
   </main>
   <script src="script.js"></script>

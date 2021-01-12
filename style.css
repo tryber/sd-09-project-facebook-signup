@@ -52,3 +52,7 @@ body {
 .nome-container {
   display: flex;
 }
+
+.gender-container {
+    display: flex;
+}
