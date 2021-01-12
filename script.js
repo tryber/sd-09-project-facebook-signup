@@ -14,8 +14,7 @@ function checkEmptyFields() {
 
 function validateGenderDiv() {
   const genderDiv = document.querySelector('#personalized-gender');
-  if (genderDiv.innerHTML === null) {
-  }
+  if (genderDiv.innerHTML === '');
   return true;
 }
 function checkRadio() {
