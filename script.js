@@ -4,16 +4,18 @@ buttonLogin.addEventListener('click', function () {
   alert(userEmailPhone.value);
 });
 
-// const facebookRegister = document.querySelector('#facebook-register');
-// const inputs = document.querySelectorAll('input');
-// facebookRegister.addEventListener('click', function (event) {
-//   event.preventDefault();
-//   for (let index = 2; index < inputs.length; index += 1) {
-//     if (inputs[index].value === '') {
-//       inputs[index].value = 'Campos inválidos';
-//     }
-//   }
-// });
+const facebookRegister = document.querySelector('#facebook-register');
+const inputs = document.querySelectorAll('input');
+const inputValidation = document.querySelector('#input-validation');
+facebookRegister.addEventListener('click', function (event) {
+  event.preventDefault();
+  for (let index = 2; index < inputs.length; index += 1) {
+    if (inputs[index].value === '') {
+      inputs[index].value = 'Campos inválidos';
+      inputValidation.innerText = 'Campos inválidos';
+    }
+  }
+});
 
 const customGender = document.querySelector('#custom-gender');
 const personalizado = document.querySelector('#personalizado');
