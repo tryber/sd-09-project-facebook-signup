@@ -6,7 +6,7 @@ document.querySelector('#button-login').addEventListener('click', function (even
 
 function removeTextArea() {
   const genderContainer = document.querySelector('.gender').children;
-  for (let index = 0; index < genderContainer.length; index +=1) {
+  for (let index = 0; index < genderContainer.length; index += 1) {
     if (genderContainer[index].className === 'textarea-gender') {
       const removedItem = genderContainer[index];
       genderContainer.removeChild(removedItem);
@@ -14,9 +14,9 @@ function removeTextArea() {
   }
 }
 
-binaryGendersArray = document.getElementsByClassName('binary-genders');
-for (let index = 0; index < binaryGendersArray; index +=1) {
-  binaryGendersArray[index].addEventListener('click', removeTextArea)
+let binaryGendersArray = document.getElementsByClassName('binary-genders');
+for (let index = 0; index < binaryGendersArray; index += 1) {
+  binaryGendersArray[index].addEventListener('click', removeTextArea);
 }
 
 function createTextArea() {
@@ -25,7 +25,7 @@ function createTextArea() {
     const lastElement = document.querySelector('.gender').lastElementChild;
     genderContainer.removeChild(lastElement);
   }
-  const textarea = document.createElement('textarea')
+  const textarea = document.createElement('textarea');
   textarea.name = 'gender-custom';
   textarea.className = 'textarea-gender';
   textarea.placeholder = 'Gênero (opcional)';
@@ -35,4 +35,4 @@ function createTextArea() {
 
 const inputOtherGender = document.getElementsByClassName('other-gender')[0];
 
-inputOtherGender.addEventListener('click', createTextArea)
+inputOtherGender.addEventListener('click', createTextArea);
