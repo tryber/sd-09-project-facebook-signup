@@ -51,11 +51,21 @@ function validateAndRegister(event) {
     const gender = genderSelected();
 
     const rightContent = document.querySelector('.right-content');
-    rightContent.innerHTML = `
-    Olá, ${nome} ${sobrenome}
-    Email ou Telefone: ${phoneEmail}
-    Data de nascimento: ${birthdate}
-    Gênero: ${gender}`;
+    rightContent.innerHTML = '';
+    let p = document.createElement('p');
+    p.innerText = `Olá, ${nome} ${sobrenome}`;
+    rightContent.appendChild(p);
+    p.innerText = `Email ou Telefone: ${phoneEmail}`;
+    rightContent.appendChild(p);
+    p.innerText = `Data de nascimento: ${birthdate}`;
+    rightContent.appendChild(p);
+    p.innerText = `Gênero: ${gender}`;
+    rightContent.appendChild(p);
+    // `
+    // <p>Olá, ${nome} ${sobrenome}</p>
+    // <p>Email ou Telefone: ${phoneEmail}</p>
+    // <p>Data de nascimento: ${birthdate}</p>
+    // <p>Gênero: ${gender}</p>`;
   }
 }
 const facebookRegister = document.getElementById('facebook-register');
