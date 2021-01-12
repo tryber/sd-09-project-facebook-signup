@@ -50,6 +50,6 @@ body {
   flex-direction: column;
 }
 
-.gender {
-  font-size: 15px;
+.gender-input {
+  font-size: 12px;
 }
