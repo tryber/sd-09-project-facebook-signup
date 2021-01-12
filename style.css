@@ -37,10 +37,10 @@ body {
   text-decoration: none;
 }
 
-.main-content{
+.main-content {
   display: flex;
 }
 
-.left-content{
+.left-content {
   width: 800px;
 }
