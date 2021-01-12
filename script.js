@@ -8,18 +8,18 @@ buttonLogin.addEventListener('click', function () {
   window.alert(userEmail.value);
 });
 
-function createInputText () {
-  const createInputText = document.createElement('input');
-  createInputText.className = 'gender-custom';
-  createInputText.name = 'gender-custom';
-  createInputText.placeholder = 'Gênero (opcional)';
+function createInputText() {
+  const createInput = document.createElement('input');
+  createInput.className = 'gender-custom';
+  createInput.name = 'gender-custom';
+  createInput.placeholder = 'Gênero (opcional)';
 
-  return createInputText
+  return createInput;
 }
 
 genderCustom.addEventListener('click', function () {
-  const register = document.querySelector('.form-group .gender-custom')
-  if (register === null){
+  const register = document.querySelector('.form-group .gender-custom');
+  if (register === null) {
     formGroup.appendChild(createInputText());
   }
 });
