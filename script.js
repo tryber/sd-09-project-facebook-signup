@@ -76,7 +76,7 @@ function addInputBox() {
     const customGenderInput = document.createElement('input');
     customGenderInput.type = 'text';
     customGenderInput.name = 'gender-custom';
-    customGenderInput.placeholder = 'Gênero(opcional)';
+    customGenderInput.placeholder = 'Gênero (opcional)';
     customGenderInput.id = 'custom-gender';
     signUpForm.insertBefore(customGenderInput, signUpForm.lastElementChild);
   }
