@@ -30,8 +30,6 @@ p {
 }
 
 .form-group {
-  display: flex;
-  flex-direction: row;
 }
 
 .genero-radio {
