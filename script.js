@@ -17,7 +17,7 @@ function createMessageCamposInvalidos() {
 
 function validatorRadio(inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    if (inputs[i].type === 'radio' && inputs[i].type === 'radio'.checked) {
+    if (inputs[i].type === 'radio' && !inputs[i].checked) {
       createMessageCamposInvalidos();
     }
   }
