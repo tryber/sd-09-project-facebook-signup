@@ -33,6 +33,10 @@ p {
   flex-direction: row;
 }
 
+.genero-radio {
+  margin: 8px;
+}
+
 .inputs-content {
   display: flex;
   flex-wrap: wrap;
@@ -52,6 +56,10 @@ p {
 
 .pad-zero {
   padding: 0;
+}
+
+.radios {
+  display: flex;
 }
 
 .right-content {
