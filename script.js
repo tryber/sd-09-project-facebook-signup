@@ -1,7 +1,7 @@
 /* Variaveis e constantes */
 const inputEmailPhone = document.querySelector('#user-email-phone');
 const buttonSender = document.querySelector('#button-login');
-const custom = document.querySelector('#custom')
+//const custom = document.querySelector('#custom');
 
 /* Funcoes */
 
@@ -13,5 +13,3 @@ buttonSender.addEventListener('click', function () {
     alert(inputEmailPhone.value);
   }
 });
-
-//if (custom.checked === true){}
