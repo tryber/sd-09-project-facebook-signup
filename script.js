@@ -4,7 +4,6 @@ loginButton.addEventListener('click', function () {
 });
 
 
-
 const personalizedGender = document.getElementById('gender-inputp');
 personalizedGender.addEventListener('click', function () {
   const genderForm = document.getElementById('gender');
@@ -13,4 +12,4 @@ personalizedGender.addEventListener('click', function () {
   newGenderInput.name = 'gender-custom';
   newGenderInput.placeholder = 'Gênero (opcional)';
   genderForm.appendChild(newGenderInput);
-}) 
+});
