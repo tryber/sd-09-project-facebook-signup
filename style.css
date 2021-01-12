@@ -25,13 +25,13 @@ p {
   margin: 10px;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .genero-radio {
