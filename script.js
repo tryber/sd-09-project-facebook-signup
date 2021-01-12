@@ -12,7 +12,7 @@ personalizedGender.addEventListener('click', function () {
     newGenderInput.type = 'text';
     newGenderInput.name = 'gender-custom';
     newGenderInput.placeholder = 'Gênero (opcional)';
-    newGenderInput.id = "gender-input";
+    newGenderInput.id = 'gender-input';
     customGender.appendChild(newGenderInput);
   }
 });
