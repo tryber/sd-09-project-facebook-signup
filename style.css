@@ -50,7 +50,6 @@ header {
 
 .form-control {
   align-self: flex-end;
-  display: flex;
 }
 
 .form-control button {
@@ -71,16 +70,14 @@ header {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .right-content {
-  align-self: flex-end;
   width: 300px;
 }
 
 .left-content {
-  align-self: flex-start;
   width: 800px;
 }
 
@@ -88,4 +85,8 @@ header {
   display: flex;
   height: auto;
   width: auto;
+}
+
+.name-and-lastname {
+  display: flex;
 }
