@@ -60,3 +60,39 @@ function checkFields() {
 }
 
 checkFields();
+
+// Adicionar/remover input de gênero personalizado
+function removeInputBox() {
+  if (document.querySelector('#custom-gender')) {
+    const signUpForm = document.querySelector('.signup-form');
+    const customGenderInput = document.querySelector('#custom-gender');
+    signUpForm.removeChild(customGenderInput);
+  }
+}
+
+function addInputBox() {
+  if (!document.querySelector('#custom-gender')) {
+    const signUpForm = document.querySelector('.signup-form');
+    const customGenderInput = document.createElement('input');
+    customGenderInput.type = 'text';
+    customGenderInput.name = 'gender-custom';
+    customGenderInput.placeholder = 'Gênero(opcional)';
+    customGenderInput.id = 'custom-gender';
+    signUpForm.insertBefore(customGenderInput, signUpForm.lastElementChild);
+  }
+}
+
+function addOrRemoveCustomGenderInput() {
+  const genderRadioButtons = document.querySelectorAll('.right-content input[type=radio]');
+  for (let index = 0; index < genderRadioButtons.length; index += 1) {
+    genderRadioButtons[index].addEventListener('change', function (event) {
+      if (event.target.id === 'custom') {
+        addInputBox();
+      } else {
+        removeInputBox();
+      }
+    });
+  }
+}
+
+addOrRemoveCustomGenderInput();
