@@ -34,7 +34,7 @@ body {
   background-color: #dfe1ee;
   display: flex;
   height: 100vh;
-  justify-content: end;
+  justify-content: flex-start;
 }
 
 .left-content {
@@ -96,7 +96,7 @@ body {
 
 .radioButtons {
   display: flex;
-  font-size: medium;  
+  font-size: medium;
   justify-content: center;
 }
 
@@ -125,6 +125,6 @@ body {
 
 .facebook-logo {
   height: 57px;
-  width: 150px;
   margin-left: 15%;
+  width: 150px;  
 }
