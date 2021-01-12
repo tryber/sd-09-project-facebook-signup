@@ -19,7 +19,7 @@ genderCheck.addEventListener('click', (event) => {
   if (event.target.type === 'radio') {
     const container = document.querySelector('#div-gender-custom');
     const inputGenderCustom = document.createElement('input');
-    if (event.target.id === 'label-gender-custom') {
+    if (event.target.id === 'gender-custom') {
       deleteInputGenderCustom(container);
       inputGenderCustom.placeholder = 'Gênero (opcional)';
       inputGenderCustom.name = 'gender-custom';
@@ -50,18 +50,18 @@ function createParagraph() {
 registerButton.addEventListener('click', (event) => {
   event.preventDefault();
   const registerInput = document.getElementsByClassName('register-input');
+  const genderMan = document.getElementById('gender-man');
+  const genderWoman = document.getElementById('gender-woman');
+  const genderCustom = document.getElementById('gender-custom');
   let cont = 0;
+  if ((genderCustom.checked === false) && (genderMan.checked === false) && (genderWoman.checked === false)) {
+    createParagraph();
+    return;
+  }
   for (let index = 0; index < registerInput.length; index += 1) {
-    if (registerInput[index].type === 'radio') {
-      if (registerInput[index].checked === false) {
-        cont += 1;
-      }
-    } else if (registerInput[index].value === '') {
+    if (registerInput[index].value === '') {
       createParagraph();
       return;
     }
-  }
-  if (cont >= 3) {
-    createParagraph();
   }
 });
