@@ -33,8 +33,10 @@ body {
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  font-family: Roboto, sans-serif;
   justify-content: center;
 }
 
@@ -48,18 +50,23 @@ body {
 }
 
 .main-content {
-  background-image: url('./imgs/main-content-bg.png');
   display: flex;
   justify-content: center;
 }
 
 .left-content {
+  text-align: center;
   width: 800px;
 }
 
 .left-content p {
   font-family: Roboto, sans-serif;
   font-size: 1.5em;
+  text-align: left;
+}
+
+.left-content img {
+  max-height: 350px;
 }
 
 .right-content {
