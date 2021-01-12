@@ -31,7 +31,6 @@ body {
 }
 
 .top-bar {
-  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
