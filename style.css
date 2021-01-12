@@ -12,11 +12,13 @@ body {
 }
 
 .facebook-logo {
+  align-self: center;
   margin: 0;
   padding: 0;
 }
 
 .facebook-login {
+  align-self: center;
   display: flex;
 }
 
