@@ -8,7 +8,6 @@ const genderDiv = document.querySelector('#personalized-gender');
 const rightContent = document.querySelector('.right-content');
 
 function validateGenderDiv() {
-  const genderDiv = document.querySelector('#personalized-gender');
   if (genderDiv.innerHTML === '');
   return true;
 }
