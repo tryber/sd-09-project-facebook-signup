@@ -51,19 +51,13 @@ body {
   flex-wrap: wrap;
 }
 
-.form-register input , .form-register label , .form-register div {
+.form-register > input , .form-register label , .form-register div , .form-register p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-.form-register input:first-child , .form-register input:nth-child( 2 ) {
+.form-register > input:first-child , .form-register > input:nth-child( 2 ) {
   width: 50%;
-}
-
-.form-register div {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
 }
