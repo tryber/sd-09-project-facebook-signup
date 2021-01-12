@@ -55,4 +55,3 @@ function inputTxtPerso() {
   rdoPerso2.appendChild(rdoPersoNew);
 }
 rdoPerso.addEventListener('click', inputTxtPerso);
-
