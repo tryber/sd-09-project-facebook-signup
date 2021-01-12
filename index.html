@@ -45,9 +45,10 @@
                 <br>
                 <label for="label-gender">Gênero</label>
                 <br>
-                <input type="radio" value="Feminino" name="gender">Feminino
-                <input type="radio" value="Masculino" name="gender">Masculino
-                <input type="radio" value="other" name="gender">Outros
+                <input type="radio" value="Feminino" name="gender" class="genero">Feminino
+                <input type="radio" value="Masculino" name="gender" class="genero">Masculino
+                <input type="radio" value="other" name="gender" class="personalizado">Personalizado
+                <div class="outroGenero"></div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
                 <p id="error-msg" style="display: none;">Campos inválidos</p>
             </form>
@@ -77,8 +78,35 @@
                 const user = document.getElementById('user-email-phone');
                 alert(user.value);
             });
-
             validate();
+          const outroGenero = document.querySelector('.outroGenero');
+          const personalizar = document.querySelector('.personalizado');
+          personalizar.addEventListener('click', function () {
+            if (personalizar.checked === true ) {
+              const newImput = document.createElement('input');
+              newImput.name = 'gender-custom';
+              newImput.placeholder = 'Gênero (opcional)';
+              newImput.className = 'opcional';
+              outroGenero.appendChild(newImput);
+            }
+            const opcional = document.querySelectorAll ('.opcional');
+              if (opcional.length > 1) {
+                  outroGenero.removeChild(outroGenero.firstChild);
+              }
+          });
+          const genero = document.querySelectorAll ('.genero');
+          genero[0].addEventListener('click', function () {
+          const opcional = document.querySelectorAll ('.opcional');
+            if (opcional.length === 1) {
+              outroGenero.removeChild(outroGenero.firstChild);
+            }
+          });
+          genero[1].addEventListener('click', function () {
+            const opcional = document.querySelectorAll ('.opcional');
+            if (opcional.length === 1) {
+              outroGenero.removeChild(outroGenero.firstChild);
+            }
+          });
         }
     </script>
 </body>
