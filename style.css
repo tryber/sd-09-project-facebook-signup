@@ -35,14 +35,14 @@ body {
 }
 
 .left-content {
-  width: 800px;
   margin-left: 350px;
+  width: 800px;
 }
 
 .right-content {
-  width: 300px;
-  padding: 10px;
   margin-right: 150px;
+  padding: 10px;
+  width: 300px;
 }
 
 .password-login p {
