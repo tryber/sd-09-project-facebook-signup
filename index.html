@@ -38,17 +38,19 @@
         </div>
         <div class="right-content">
           <h1>Abra uma conta</h1>
-          <p class="quick-easy">É rápido e fácil</p>
+          <p class="quick-easy">É rápido e fácil.</p>
           <div>
-              <form>
-                <input type="text" name="firstname" placeholder="Nome" id="" />
-                <input type="text" name="Lastname" placeholder="Sobrenome" id="" />
+              <form class="main-form">
+                <div class="register-name">
+                  <input type="text" name="firstname" placeholder="Nome" id="" />
+                  <input type="text" name="lastname" placeholder="Sobrenome" id="" />
+                </div>
                 <input
                   type="email"
                   type="number"
                   name="phone_email"
                   placeholder="Celular ou email"
-                  id=""
+                  id="user-email-phone-label"
                 />
                 <input
                   type="password"
@@ -56,10 +58,8 @@
                   placeholder="Nova senha"
                   id=""
                 />
-                <label for=""
-                  >Data de nascimento
-                  <input type="date" name="" id="" />
-                </label>
+                <label for="" id="label-birthdate">Data de nascimento</label>
+                <input type="date" placeholder="dd/mm/aaaa" name="birthdate" id="" />
               </form>
           </div>
         </div>

@@ -19,7 +19,6 @@
   font-size: 20px;
   font-weight: 700;
   text-align: left;
-  width: 500px;
 }
 
 .right-content {
@@ -28,6 +27,18 @@
   flex-direction: column;
   font-family: Helvetica, Arial, sans-serif;
   width: 300px;
+}
+
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.register-name {
+  display: flex;
+  flex-direction: row;
 }
 
 .top-bar {
@@ -54,4 +65,5 @@
 
 .form-control {
   align-self: flex-end;
+  order: 2;
 }
