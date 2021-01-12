@@ -34,13 +34,46 @@
     </header>
     <main class="main-content">
         <section class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+                sua vida.</p>
             <img id="facebook-networking" src="imgs/networking.png" alt="Networking Facebook">
         </section>
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action=""></form>
+            <form action="">
+                <div>
+                    <input class="small" type="text" name="firstname" placeholder="Nome" id="firstname">
+                    <input class="small" type="text" name="lastname" placeholder="Sobrenome" id="lastname">
+                </div>
+                <div>
+                    <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Nova senha" id="password">
+                </div>
+                <div>
+                    <label id="label-birth-date" for="">Data de nascimento</label>
+                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
+                </div>
+                <div>
+                    <label id="label-gender" for="">Gênero</label>
+                    <br>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female">Feminino
+                    </label>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male">Masculino
+                    </label>
+                    <label for="custom">
+                        <input type="radio" name="gender" id="custom">Personalizado
+                    </label>
+                </div>
+                <div>
+                    <button id="facebook-register" type="submit">Cadastre-se</button>
+                </div>
+
+            </form>
         </section>
     </main>
     <script src="script.js"></script>
