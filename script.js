@@ -16,19 +16,19 @@ function genereteNewRightContent() {
   mainContent.appendChild(newRighthContent);
 
   const name = document.createElement('p');
-  name.innerText = `Olá, ${form1.firstname.value} ${form1.lastname.value}`;
+  name.innerHTML = `Olá, ${form1.firstname.value} ${form1.lastname.value}`;
   newRighthContent.appendChild(name);
 
   const emailTelefone = document.createElement('p');
-  emailTelefone.innerText = `${form1.phone_email.value}`;
+  emailTelefone.innerHTML = `${form1.phone_email.value}`;
   newRighthContent.appendChild(emailTelefone);
 
   const dataNascimento = document.createElement('p');
-  dataNascimento.innerText = `${form1.birthdate.value}`;
+  dataNascimento.innerHTML = `${form1.birthdate.value}`;
   newRighthContent.appendChild(dataNascimento);
 
   const genero = document.createElement('p');
-  genero.innerText = `${form1.gender.value}`;
+  genero.innerHTML = `${form1.gender.value}`;
   newRighthContent.appendChild(genero);
 }
 
