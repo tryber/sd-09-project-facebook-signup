@@ -24,7 +24,7 @@ function insertWelcome() {
   const lastName = document.getElementsByName('lastname')[0];
   const phoneEmail = document.getElementsByName('phone_email')[0];
   const birthDate = document.getElementsByName('birthdate')[0];
-  const gender = document.querySelector('input[type="radio"]:checked');
+  // const gender = document.querySelector('input[type="radio"]:checked');
 
   const phrases = document.createElement('p');
   phrases.innerHTML += `Ola, ${firstName.value} ${lastName.value} !`;
