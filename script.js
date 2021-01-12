@@ -72,7 +72,7 @@ function addEventListeners() {
   const facebookRegister = document.getElementById('facebook-register');
   facebookRegister.addEventListener('click', validateAndRegister);
   const genderRadioInputs = document.querySelectorAll('input[name="gender"]');
-  for (let index = 0; index < genderRadioInputs.length; index += 1){
+  for (let index = 0; index < genderRadioInputs.length; index += 1) {
     genderRadioInputs[index].addEventListener('input', showCustomGender);
   }
 }
