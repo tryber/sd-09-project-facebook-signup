@@ -1,25 +1,62 @@
 body {
+  font-family: sans-serif;
   margin: 0;
 }
 
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
   font-size: 12px;
+  height: 53px;
+  justify-content: space-between;
   padding: 15px;
   width: 100%;
 }
 
-.facebook-login {
-  text-align: right;
+.top-bar .facebook-logo {
+  padding-left: 170px;
+  width: 180px;
 }
 
-.facebook-login {
+.top-bar .facebook-login {
   display: flex;
-  
+  flex-basis: 400px;
+  justify-content: space-around;
+  margin-right: 200px;
+}
+
+.top-bar .facebook-login button {
+  align-self: center;
+  background-color: rgb(67, 100, 167);
+  border: 1px solid rgb(33, 71, 146);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 5px;
+}
+
+.top-bar .facebook-login input {
+  width: 150px;
+}
+
+.top-bar .facebook-login label {
+  line-height: 25px;
+}
+
+.top-bar .facebook-login p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px 0;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-bottom: 23px;
 }
 
 .form-group {
   display: flex;
+  flex-direction: column;
+  height: 70px;
 }
