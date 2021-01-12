@@ -6,21 +6,30 @@ function alertEmailOrPhone() {
   });
 }
 
-function verifyCheckedRadioInputs(listElements) {
-  let checkBoxGender = '';
-  for (let index = 2; index < listElements.length; index += 1) {
-    if (listElements[index].checked) {
-      checkBoxGender = listElements[index].value;
-      if (listElements[index].value === 'Personalizado') {
-        checkBoxGender = listElements[10].value;
-      }
+function verifyCheckedRadioInputs(listElements, index) {
+  let getGender = ''
+  if (listElements[index].checked) {
+    getGender = listElements[index].value;
+    if (listElements[index].value === 'Personalizado') {
+      getGender = listElements[10].value;
     }
   }
-  return checkBoxGender;
+  console.log(getGender);
+  return getGender;
+}
+
+function verifyGender(listElements) {
+  let checkBoxGender = '';
+  for (let index = 2; index < listElements.length; index += 1) {
+    checkBoxGender = verifyCheckedRadioInputs(listElements, index);
+    if (checkBoxGender !== '') {
+      return checkBoxGender;
+    }
+  }
 }
 
 function clearRightSide(listElements) {
-  for (let index = listElements[0].children.length - 1; index >= 0 ; index -= 1) {
+  for (let index = listElements[0].children.length - 1; index >= 0; index -= 1) {
     listElements[0].removeChild(listElements[0].children[index]);
   }
 }
@@ -33,11 +42,11 @@ function createAnswerLayout() {
   const email = document.createElement('p');
   const birthdate = document.createElement('p');
   const gender = document.createElement('p');
-  greetings.innerText = `Olá ${inputs[2].value}, ${inputs[3].value}`;
+  greetings.innerText = `Olá, ${inputs[2].value} ${inputs[3].value}`;
   email.innerText = inputs[4].value;
   birthdate.innerText = inputs[6].value;
   // get the checked radio input
-  gender.innerText = verifyCheckedRadioInputs(inputs);
+  gender.innerText = verifyGender(inputs);
   // clear the right side
   clearRightSide(rightSideList);
   // create answer layout
@@ -62,7 +71,7 @@ function validateForm() {
   });
 }
 
-function gender() {
+function customGender() {
   const formSubscribe = document.querySelector('#form-subscribe');
   const radioGender = document.querySelector('#gender-custom');
   const buttonSubmitForm = document.querySelector('#facebook-register');
@@ -84,4 +93,4 @@ function gender() {
 
 validateForm();
 alertEmailOrPhone();
-gender();
+customGender();
