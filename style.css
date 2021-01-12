@@ -6,12 +6,32 @@
 
 .facebook-login{
     display: flex;
-    float: right;
-    margin-left: auto;   
-    text-align: center;
-    
+}
+ 
+.form-group{
+  display: flex;
+  flex-direction: column;
 }
 
-.facebook-login input{
-    height: 20px;    
-} 
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.form-gender-option .control label {
+  font-size: 90%;
+}
+
+.centered-image {
+  text-align: center;
+}
+
+
