@@ -13,6 +13,9 @@ body {
   width: 100%;
 }
 
+.facebook-logo {
+}
+
 .facebook-login {
   display: flex;
 }
