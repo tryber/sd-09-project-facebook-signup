@@ -11,6 +11,7 @@ customGender.addEventListener('click', function () {
     return;
 }
   const newGender = document.createElement('input');
+  newGender.type = 'text';
   newGender.placeholder = 'Gênero (opcional)';
   custom.appendChild(newGender);
   customGender.classList = 'checked';
