@@ -1,6 +1,5 @@
 body {
-
-  /* font-family: 'Freight--Sans--Condensed--Bold', Arial, Helvetica, sans-serif; */
+  font-family: Freight--Sans--Condensed--Bold, Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -66,6 +65,10 @@ body {
   display: flex;
   flex-basis: 300px;
   flex-direction: column;
+}
+
+.cadastro input {
+  border-radius: 4px;  
 }
 
 .labelGender {
