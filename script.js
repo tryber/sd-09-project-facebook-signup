@@ -27,7 +27,6 @@ function alertEmailInput() {
 }
 
 function showValues() {
-
   const hello = document.createElement('h1');
   hello.innerText = `Olá, ${document.querySelector('#firstname-input').value} ${document.querySelector('#lastname-input').value}`;
   rightContent.appendChild(hello);
@@ -39,7 +38,6 @@ function showValues() {
   rightContent.removeChild(registerForm);
   rightContent.removeChild(title);
   rightContent.removeChild(quickEasy);
-
 }
 
 function validateRegister(event) {
@@ -50,9 +48,8 @@ function validateRegister(event) {
     if (!inputs[index].checkValidity() || !document.querySelector('input[type="radio"]:checked')) {
       errorText.innerText = 'Campos inválidos';
       return;
-    } else {
-      errorText.innerText = '';
     }
+    errorText.innerText = '';
   }
   showValues();
 }
