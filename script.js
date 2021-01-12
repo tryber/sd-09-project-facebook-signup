@@ -33,6 +33,15 @@ function genderSelected() {
   return gender;
 }
 
+function showCustomGender(event) {
+  const customGenderInput = document.querySelector('.input-genero');
+  if (event.target.id === 'gender-custom') {
+    customGenderInput.style.display = 'block';
+  } else {
+    customGenderInput.style.display = 'none';
+  }
+}
+
 function validateAndRegister(event) {
   const formInputs = document.querySelectorAll('.right-content input');
   let isTextValid = true;
@@ -58,5 +67,14 @@ function validateAndRegister(event) {
     <p>Gênero: ${gender}</p>`;
   }
 }
-const facebookRegister = document.getElementById('facebook-register');
-facebookRegister.addEventListener('click', validateAndRegister);
+
+function addEventListeners() {
+  const facebookRegister = document.getElementById('facebook-register');
+  facebookRegister.addEventListener('click', validateAndRegister);
+  const genderRadioInputs = document.querySelectorAll('input[name="gender"]');
+  for (let index = 0; index < genderRadioInputs.length; index += 1){
+    genderRadioInputs[index].addEventListener('input', showCustomGender);
+  }
+}
+
+addEventListeners();

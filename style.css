@@ -49,3 +49,7 @@
 .gender-radios {
   display: flex;
 }
+
+.input-genero {
+  display: none;
+}
