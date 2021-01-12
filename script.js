@@ -19,14 +19,14 @@ personalizedGender.addEventListener('click', function () {
 
 function validateForm(event) {
   event.preventDefault();
-  let requiredItems = document.querySelectorAll('.required');
-  let validateMessage = document.getElementById('validate-message');
+  const requiredItems = document.querySelectorAll('.required');
+  const validateMessage = document.getElementById('validate-message');
   for (let index = 0; index < requiredItems.length; index += 1) {
     if (index.value == null) {
-      validateMessage.innerText= 'Campos inválidos';
+      validateMessage.innerText = 'Campos inválidos';
     }
   }
-} 
+}
 
 const registerBtn = document.getElementById('facebook-register');
 registerBtn.addEventListener('click', validateForm);
