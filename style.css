@@ -5,22 +5,38 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  height: 3rem;
+  justify-content: space-evenly;
 }
 
 .facebook-logo {
-  margin-right: auto;
+  align-self: flex-end;
 }
 
 .facebook-login {
+  align-items: center;
   display: flex;
-  justify-content: flex-end;
+  height: 2rem;
+  justify-content: space-between;
+  margin: 0.6rem;
+  width: 16rem;
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
+  font-size: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
-.form-control {
+.form-group input {
+  height: 0.9rem;
+  margin: 0.01rem 0;
+  width: 5rem;
+}
+
+.button-login {
   align-self: flex-end;
 }
