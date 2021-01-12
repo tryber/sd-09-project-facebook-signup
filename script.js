@@ -42,7 +42,7 @@ function showFormsValues() {
 
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = '';
-  let h2 = document.createElement('h2');
+  const h2 = document.createElement('h2');
   let p = document.createElement('p');
   h2.innerText = `Olá, ${nome} ${sobrenome}`;
   rightContent.appendChild(h2);
