@@ -22,42 +22,41 @@ function personalizeGenderField() {
   });
 }
 
+
+function checkGender() {
+  let genero;
+  if (document.querySelector('#personalized-gender-container input')) {
+    genero = document.querySelector('#personalized-gender-container input').value;
+  } else {
+    const femaleField = document.querySelector('#fem-radio');
+    const maleField = document.querySelector('#masc-radio');
+    if (femaleField.checked) {
+      genero = femaleField.value;
+    } else if (maleField.checked) {
+      genero = maleField.value;
+    }
+  }
+  return genero;
+}
+
 function submitInfo() {
   const rightContent = document.querySelector('.right-content');
   const nameValue = document.querySelector('.names-container input:nth-child(1)').value;
   const surnameValue = document.querySelector('.names-container input:nth-child(2)').value;
   const emailValue = document.querySelector('.register-form>input:nth-child(2)').value;
   const birthdateValue = document.querySelector('.register-form>input:nth-child(5)').value;
-  let gender;
-  if (document.querySelector('#personalized-gender-container input')) {
-    gender = document.querySelector('#personalized-gender-container input').value;
-  } else {
-    const femaleField = document.querySelector('#fem-radio');
-    const maleField = document.querySelector('#masc-radio');
-
-    if (femaleField.checked) {
-      gender = femaleField.value;
-    } else if (maleField.checked) {
-      gender = maleField.value;
-    }
-  }
-
+  const gender = checkGender();
   const greeting = document.createElement('p');
   greeting.innerText = `Olá, ${nameValue} ${surnameValue}`;
-
   const email = document.createElement('p');
   email.innerText = `${emailValue}`;
-
   const birthdate = document.createElement('p');
   birthdate.innerText = `${birthdateValue}`;
-
   const chosenGender = document.createElement('p');
   chosenGender.innerText = `${gender}`;
-
   while (rightContent.firstChild) {
     rightContent.removeChild(rightContent.firstChild);
   }
-
   rightContent.appendChild(greeting);
   rightContent.appendChild(email);
   rightContent.appendChild(birthdate);
