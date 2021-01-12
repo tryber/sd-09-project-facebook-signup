@@ -60,39 +60,42 @@
       <aside class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form action="">
-          <div class="name-container">
-            <input type="text" name="firstname" placeholder="Nome" />
-            <input type="text" name="lastname" placeholder="Sobrenome" />
-          </div>
-          <div class="phone-email-container">
-            <input
-              type="text"
-              name="phone_email"
-              placeholder="Celular ou email"
-            />
-            <input type="password" name="password" placeholder="Nova senha" />
-          </div>
-          <div class="birthdate-container">
-            <label for="" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
-          </div>
-          <div class="gender-radios">
-            <label for="label-gender">Gênero</label>
-            <div class="gender-container">
-              <input type="radio" name="gender" value="feminino" />Feminino
-              <input type="radio" name="gender" value="masculino" />Masculino
-              <input
-                type="radio"
-                name="gender"
-                value="masculino"
-              />Personalizado
+        <div class="form-container">
+          <form action="">
+            <div class="name-container">
+              <input type="text" name="firstname" placeholder="Nome" />
+              <input type="text" name="lastname" placeholder="Sobrenome" />
             </div>
-          </div>
-          <div class="button-container">
-            <button id="facebook-register" type="submit">Cadastre-se</button>
-          </div>
-        </form>
+            <div class="phone-email-container">
+              <input
+                type="text"
+                name="phone_email"
+                placeholder="Celular ou email"
+              />
+              <input type="password" name="password" placeholder="Nova senha" />
+            </div>
+            <div class="birthdate-container">
+              <label for="" id="label-birthdate">Data de nascimento</label>
+              <br />
+              <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
+            </div>
+            <div class="gender-radios">
+              <label for="label-gender">Gênero</label>
+              <div class="gender-container">
+                <input type="radio" name="gender" value="feminino" />Feminino
+                <input type="radio" name="gender" value="masculino" />Masculino
+                <input
+                  type="radio"
+                  name="gender"
+                  value="masculino"
+                />Personalizado
+              </div>
+            </div>
+            <div class="button-container">
+              <button id="facebook-register" type="submit">Cadastre-se</button>
+            </div>
+          </form>
+        </div>
       </aside>
     </main>
   </body>
