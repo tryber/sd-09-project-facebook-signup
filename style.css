@@ -34,7 +34,9 @@ header {
 }
 
 .top-bar input {
-  width: 130px;
+  border: 1px solid #ccd0d5;
+  padding-bottom: 4px;
+  width: 142px;
 }
 
 .top-bar .form-group label {
@@ -49,11 +51,10 @@ header {
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
 }
 
 .form-control button {
-  align-self: flex-end;
   background-color: #4267b2;
   border: 1px solid;
   border-radius: 2px;
