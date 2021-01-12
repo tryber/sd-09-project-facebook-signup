@@ -24,12 +24,13 @@ function gender() {
   const formSubscribe = document.querySelector('#form-subscribe');
   const radioGender = document.querySelector('#gender3');
   const buttonSubmitForm = document.querySelector('#facebook-register');
-  radioGender.addEventListener('click', function (event) {
+  radioGender.addEventListener('click', function () {
     const trigger = document.querySelectorAll('#input-gender3').length;
     if (trigger === 0) {
       const inputGender = document.createElement('input');
       inputGender.id = 'input-gender3';
       inputGender.placeholder = 'Gênero (opcional)';
+      inputGender.className = 'form-subscrib-full-line';
       formSubscribe.insertBefore(inputGender, buttonSubmitForm);
     } else {
       formSubscribe.removeChild(buttonSubmitForm.previousSibling);
