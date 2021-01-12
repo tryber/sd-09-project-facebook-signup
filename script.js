@@ -8,7 +8,6 @@ function handleClickButtonLogin() {
 buttonLogin.addEventListener('click', handleClickButtonLogin);
 
 const formSubmit = document.querySelector('.facebook-register');
-// console.log(formSubmit);
 
 function handleValidateFields(event) {
   event.preventDefault();
@@ -24,3 +23,17 @@ function handleValidateFields(event) {
 }
 
 formSubmit.addEventListener('submit', handleValidateFields);
+
+const customGender = document.getElementById('personalizado');
+
+function handleGenderCustom() {
+  const customField = document.querySelector('.gender-custom');
+  console.log(customGender.checked);
+  if (customGender.checked === true) {
+    customField.style.display = 'block';
+  } else {
+    customField.style.display = 'none';
+  }
+}
+
+customGender.addEventListener('change', handleGenderCustom);

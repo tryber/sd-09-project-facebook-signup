@@ -42,12 +42,13 @@
         <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
         <label for="" id="label-gender">Gênero</label>
         <div class="radio-group">
-          <input type="radio" name="gender" value="Feminino" id="feminino">
+          <input type="radio" name="gender" value="Feminino" id="feminino" checked>
           <label for="feminino">Feminino</label>
           <input type="radio" name="gender" value="Masculino" id="masculino">
           <label for="masculino">Masculino</label>
-          <input type="radio" name="gender" value="Personalizado" id="personalizado" checked>
+          <input type="radio" name="gender" value="Personalizado" id="personalizado">
           <label for="personalizado">Personalizado</label>
+          <input type="text" class="gender-custom" name="gender-custom" placeholder="Gênero (opcional)">
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
         <p id="alert" class="alert-message">Campos inválidos!</p>
