@@ -30,7 +30,7 @@ personalizado.addEventListener('click', function () {
 
 facebookRegister.addEventListener('click', function () {
   for (let index = 2; index < inputs.length; index += 1) {
-    if (valido){
+    if (valido) {
       const rightContent = document.querySelector('.right-content');
       const nome = inputs[2].value;
       const sobrenome = inputs[3].value;
@@ -42,8 +42,8 @@ facebookRegister.addEventListener('click', function () {
       } else if (inputs[8].checked) {
         genero = inputs[8].value;
       } else {
-        genero = inputs[9].value
-      } 
+        genero = inputs[9].value;
+      }
       rightContent.innerText = `Olá, ${nome} ${sobrenome}\n${emailTelefone}\n${dataNascimento}\n${genero}`;
     }
   }
