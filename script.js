@@ -1,8 +1,6 @@
 const buttonLogin = document.querySelector('#button-login');
-const userEmailPhoneInput = document.querySelector('#user-email-phone');
 buttonLogin.addEventListener('click', function () {
-  const userEmailPhoneInputValue = userEmailPhoneInput.value;
-  alert(userEmailPhoneInputValue);
+  alert(document.querySelector('#user-email-phone').value);
 });
 
 function checkRadio() {
@@ -29,10 +27,13 @@ function checkInputValue() {
 
 window.onload = function () {
   const submitButton = document.querySelector('#facebook-register');
+  let errorMessage = document.querySelector('#errorMessage');
   submitButton.addEventListener('click', function (event) {
     event.preventDefault();
+    errorMessage.innerText = '';
     if (checkInputValue()) {
-      alert('Campos inválidos');
+      errorMessage.innerText = 'Campos inválidos';
+      errorMessage.style.color = 'red';
     }
   });
 };
