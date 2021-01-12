@@ -33,6 +33,29 @@ function genderSelected() {
   return gender;
 }
 
+function showFormsValues() {
+  const nome = document.getElementById('firstName').value;
+  const sobrenome = document.getElementById('lastName').value;
+  const phoneEmail = document.getElementById('phoneEmail').value;
+  const birthdate = document.getElementById('birthdate').value;
+  const gender = genderSelected();
+
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+  let p = document.createElement('p');
+  p.innerText = `Olá, ${nome} ${sobrenome}`;
+  rightContent.appendChild(p);
+  p = document.createElement('p');
+  p.innerText = `Email ou Telefone: ${phoneEmail}`;
+  rightContent.appendChild(p);
+  p = document.createElement('p');
+  p.innerText = `Data de nascimento: ${birthdate}`;
+  rightContent.appendChild(p);
+  p = document.createElement('p');
+  p.innerText = `Gênero: ${gender}`;
+  rightContent.appendChild(p);
+}
+
 function validateAndRegister(event) {
   const formInputs = document.querySelectorAll('.right-content input');
   let isTextValid = true;
@@ -44,28 +67,7 @@ function validateAndRegister(event) {
     const invalidFieldsParagraph = document.getElementById('invalid-fields');
     invalidFieldsParagraph.innerText = 'Campos inválidos';
   } else {
-    const nome = document.getElementById('firstName').value;
-    const sobrenome = document.getElementById('lastName').value;
-    const phoneEmail = document.getElementById('phoneEmail').value;
-    const birthdate = document.getElementById('birthdate').value;
-    const gender = genderSelected();
-
-    const rightContent = document.querySelector('.right-content');
-    rightContent.innerHTML = '';
-    let p = document.createElement('p');
-    p.innerText = `Olá, ${nome} ${sobrenome}`;
-    rightContent.appendChild(p);
-    p.innerText = `Email ou Telefone: ${phoneEmail}`;
-    rightContent.appendChild(p);
-    p.innerText = `Data de nascimento: ${birthdate}`;
-    rightContent.appendChild(p);
-    p.innerText = `Gênero: ${gender}`;
-    rightContent.appendChild(p);
-    // `
-    // <p>Olá, ${nome} ${sobrenome}</p>
-    // <p>Email ou Telefone: ${phoneEmail}</p>
-    // <p>Data de nascimento: ${birthdate}</p>
-    // <p>Gênero: ${gender}</p>`;
+    showFormsValues();
   }
 }
 const facebookRegister = document.getElementById('facebook-register');
