@@ -30,8 +30,8 @@ body {
 .main-content {
   background-color: #dfe1ee;
   display: flex;
-  justify-content: space-around;
   height: 100vh;
+  justify-content: center;
 }
 
 .left-content {
