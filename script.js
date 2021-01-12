@@ -20,7 +20,7 @@ function validInput(event) {
   const inputPhoneValue = inputPhone.value;
   const inputNewpwValue = inputNewpw.value;
   const inputBirthValue = inputBirth.value;
-  if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '' ) {
+  if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '') {
     alert('Campos inválidos');
   }
 }
