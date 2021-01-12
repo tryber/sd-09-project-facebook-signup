@@ -33,24 +33,26 @@
       <span class="quick-easy">É rápido e fácil.</span>
       <form action="">
         <div class="fullname">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" class="inputText">
+          <input type="text" name="lastname" placeholder="Sobrenome" class="inputText">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="inputText">
+        <input type="password" name="password" placeholder="Nova senha" class="inputText">
         <div class="dateBirth">
           <label for="" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="inputText">
         </div>
         <label for="" id="label-gender">Gênero</label>
         <div class="genderDiv">
-          <input type="radio" name="gender" id="" value="Feminino">
+          <input type="radio" name="gender" id="" value="Feminino" class="inputRadio">
           <label for="">Feminino</label>
-          <input type="radio" name="gender" id="" value="Masculino">
+          <input type="radio" name="gender" id="" value="Masculino" class="inputRadio">
           <label for="">Masculino</label>
-          <input type="radio" name="gender" id="" value="Personalizado">
+          <input type="radio" name="gender" id="" value="Personalizado" class="inputRadio">
           <label for="">Personalizado</label>
         </div>
+        <button type="submit" id="facebook-register">Cadastre-se</button>
+        <p id="validate"></p>
       </form>
     </div>
   </main>
