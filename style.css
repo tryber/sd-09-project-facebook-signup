@@ -70,7 +70,6 @@ body {
   width: 100%;
 }
 
-.right-content input[type='radio'] {
-  margin: 0;
+.right-content .input-gender {
   width: auto;
 }
