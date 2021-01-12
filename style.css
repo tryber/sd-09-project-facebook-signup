@@ -7,8 +7,11 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 40px;
-  justify-content: space-between;
+  
+}
 
+.facebook-logo {
+  justify-content: flex-start; 
 }
 
 .facebook-login {
@@ -59,6 +62,3 @@ body {
   text-decoration: none;
 }
 
-.facebook-logo {
-  margin-left: 50px;
-}
