@@ -12,7 +12,7 @@ function verifySelectedGender() {
   const gendersInput = document.getElementsByName('gender');
   const customGenderInput = document.getElementsByName('gender-custom');
   for (let index = 0; index < gendersInput.length; index += 1) {
-    checkAndChangeClassName(customGenderInput, gendersInput[index])
+    checkAndChangeClassName(customGenderInput, gendersInput[index]);
   }
 }
 
