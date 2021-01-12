@@ -12,9 +12,9 @@ function alertMsgLogIn() {
   alert(inputEmail.value);
 }
 
-function isEmpty(obj){
-  for(let index = 0; index < obj.length; index +=1) {
-    if(obj[index].value == "") {
+function isEmpty(obj) {
+  for (let index = 0; index < obj.length; index += 1) {
+    if (obj[index].value == "") {
       return true;
     }
   }
@@ -22,8 +22,8 @@ function isEmpty(obj){
 }
 
 function isCheck(obj) {
-  for(let index = 0; index < obj.length; index +=1) {
-    if(obj[index].checked) {
+  for (let index = 0; index < obj.length; index += 1) {
+    if (obj[index].checked) {
       return true;
     }
   }
@@ -33,13 +33,13 @@ function isCheck(obj) {
 function verifyInputValue(event) {
   event.preventDefault();
 
-  if(isEmpty(listImputNoRadioCad)){
+  if (isEmpty(listImputNoRadioCad)) {
     alert('Campos inválidos');
-  } else if (!isCheck(listInputRadioCad)){
+  } else if (!isCheck(listInputRadioCad)) {
     alert('Campos inválidos');
   }
 }
 
 
 addlistener(btnEntrar, alertMsgLogIn);
-addlistener(btnReg ,verifyInputValue)
+addlistener(btnReg, verifyInputValue)
