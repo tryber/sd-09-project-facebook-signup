@@ -40,3 +40,12 @@ body {
 .fullname {
   display: flex;
 }
+
+.dateBirth {
+  display: flex;
+  flex-direction: column;
+}
+
+.genderDiv {
+  display: flex;
+}
