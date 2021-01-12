@@ -38,25 +38,25 @@
       <form action="" class="right-form">
         <!-- INPUT NAME -- Obrigado ao Marcelo do Stackoverflow por disponibilizar essa solução simples com o HTML5 de como personalizar a mensagem no campo required! https://pt.stackoverflow.com/questions/8293/personalizar-a-mensagem-do-navegador-para-um-campo-required -->
         <div class="fullname">
-          <input type="text" name="firstname" placeholder="Nome" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
-          <input type="text" name="lastname" placeholder="Sobrenome" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+          <input type="text" name="firstname" placeholder="Nome" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
+          <input type="text" name="lastname" placeholder="Sobrenome" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
         </div>
         <!-- INPUT ID -->
-        <input type="text" name="phone_email" placeholder="Celular ou email" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+        <input type="text" name="phone_email" placeholder="Celular ou email" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
         <!-- INPUT SENHA -->
-        <input type="password" name="password" placeholder="Nova senha" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+        <input type="password" name="password" placeholder="Nova senha" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
         <!-- INPUT DATA DE NASCIMENTO -->
         <label for="" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
         <!-- INPUT GENERO -->
         <label for="gender" id="label-gender">Gênero</label>
         <div class="gender">
             <label for="female" class="binary-genders">Feminino</label><br>
-            <input type="radio" class="binary-genders" id="female" name="gender" value="female" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+            <input type="radio" class="binary-genders" id="female" name="gender" value="female" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
             <label for="male" class="binary-genders" >Masculino</label><br>
-            <input type="radio" class="binary-genders" id="male" name="gender" value="male" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+            <input type="radio" class="binary-genders" id="male" name="gender" value="male" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
             <label for="other">Personalizado</label>
-            <input class="other-gender" type="radio" id="other" name="gender" value="other" required oninvalid="this.setCustomValidity('Campo requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+            <input class="other-gender" type="radio" id="other" name="gender" value="other" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>

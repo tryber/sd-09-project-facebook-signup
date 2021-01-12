@@ -29,6 +29,9 @@ function createTextArea() {
   textarea.name = 'gender-custom';
   textarea.className = 'textarea-gender';
   textarea.placeholder = 'Gênero (opcional)';
+  textarea.required = true;
+  textarea.oninvalid = "this.setCustomValidity('Campo requerido')";
+  textarea.onchange = "try{setCustomValidity('')}catch(e){}";
   textarea.style.width = '100%';
   genderContainer.appendChild(textarea);
 }
