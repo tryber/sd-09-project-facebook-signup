@@ -40,6 +40,11 @@ body {
 
 .facebook-fullname {
   display: flex;
+  justify-content: space-between;
+}
+
+.lastname {
+  justify-content: flex-end;
 }
 
 .facebook-datas {
