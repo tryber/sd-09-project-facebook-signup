@@ -1,15 +1,31 @@
 body {
   font-family: sans-serif;
+  margin: 0;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .facebook-login {
+  color: white;
   display: flex;
+  font-size: 12px;
+}
+
+.facebook-login div {
+  margin: 5px;
+}
+
+.facebook-login label {
+  margin-bottom: 5px;
+}
+
+.facebook-logo {
+  width: auto;
 }
 
 .form-group {
@@ -20,6 +36,21 @@ body {
 .form-control {
   align-self: flex-end;
   display: flex;
+}
+
+.form-control button {
+  background-color: #4a6aa8;
+  border: solid 1px;
+  border-color: #29487d;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.form-control button:hover {
+  background-color: #365aa1;
 }
 
 .main-content {
@@ -46,8 +77,11 @@ h1 {
 }
 
 .main-content input {
-  border: solid rgb(170, 170, 170) 1px;
-  border-radius: 8px;
+  border: solid rgb(187, 192, 211) 1px;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 18px;
+  margin: 5px;
 }
 
 .left-content {
