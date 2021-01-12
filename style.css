@@ -13,7 +13,7 @@ body {
 }
 
 .facebook-logo {
-  align-self: flex-end;
+  align-self: flex-start;
   width: 13rem;
 }
 
@@ -24,6 +24,7 @@ body {
   justify-content: space-between;
   margin: 0.6rem;
   width: 23rem;
+  align-self: flex-end;
 }
 
 .form-group {
@@ -75,6 +76,7 @@ label {
 }
 
 .left-content {
+  box-sizing: border-box;
   display: inline-grid;
   justify-content: flex-end;
   padding-right: 80px;
