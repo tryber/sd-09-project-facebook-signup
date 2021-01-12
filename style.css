@@ -9,6 +9,7 @@
 .form-control {
   align-self: flex-end;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .right-content {
