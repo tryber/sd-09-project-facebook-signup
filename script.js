@@ -8,13 +8,9 @@ form1.appendChild(paragrafoErro);
 const generoPersonalizado = document.querySelector('#gender-custom');
 const sessaoGenero = document.querySelector('.gender');
 const rightContent = document.querySelector('.right-content');
-const mainContent = document.querySelector('.main-content');
 
 function genereteNewRightContent() {
   rightContent.innerHTML = '';
-  // const newRighthContent = document.createElement('div');
-  // mainContent.appendChild(newRighthContent);
-  // newRighthContent.classList.add('right-content');
 
   const name = document.createElement('p');
   name.innerHTML = `Olá, ${form1.firstname.value} ${form1.lastname.value}`;
