@@ -13,6 +13,13 @@ facebookRegister.addEventListener('click', function (event) {
     if (inputs[index].value === '') {
       inputs[index].value = 'Campos inválidos';
       inputValidation.innerText = 'Campos inválidos';
+    } else {
+      const rightContent = document.querySelector('.right-content');
+      const nome = inputs[2].value;
+      const sobrenome = inputs[3].value;
+      const emailTelefone = inputs[4].value;
+      const dataNascimento = inputs[6].value;
+      rightContent.innerText = `Olá, ${nome} ${sobrenome}\n${emailTelefone}\n${dataNascimento}`;
     }
   }
 });
