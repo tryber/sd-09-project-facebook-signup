@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-const checkGenre = (event) => {
+const checkGenre = () => {
   const choosedGenre = document.getElementById('personalizado');
   const divCustonGenre = document.getElementById('custonGenre');
   while (divCustonGenre.firstChild) {
@@ -34,7 +34,6 @@ const checkGenre = (event) => {
     inputCustonGenre.name = 'gender-custom';
     inputCustonGenre.placeholder = 'Gênero (opcional)';
     divCustonGenre.appendChild(inputCustonGenre);
-    event.preventDefault();
   } else {
     while (divCustonGenre.firstChild) {
       divCustonGenre.removeChild(divCustonGenre.lastChild);
