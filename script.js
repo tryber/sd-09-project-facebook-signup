@@ -15,7 +15,7 @@ const validateCamps = document.querySelectorAll('.cadastro input');
 function registerValidate() {
   for (let index = 0; index < validateCamps.length; index += 1) {
     if (validateCamps[index].value === '') {
-      let div = document.createElement('div');
+      const div = document.createElement('div');
       div.innerHTML = 'Campos inválidos';
       document.querySelector('form.cadastro').appendChild(div);
     }
