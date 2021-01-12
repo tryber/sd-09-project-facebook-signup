@@ -9,17 +9,36 @@ body {
   display: flex;
   font-size: 12px;
   height: 53px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
   width: 100%;
 }
 
 .facebook-login {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.facebook-login .email {
+  margin-right: 73px;
+}
+
+.facebook-login input {
+  width: 150px;
+}
+
+.facebook-login label {
+  line-height: 25px;
+}
+
+.facebook-login p {
+  line-height: 25px;
+  margin: 0 auto 0 163px;
 }
 
 .facebook-logo {
-  margin-left: 12%;
+  align-self: flex-end;
   width: 180px;
 }
 
