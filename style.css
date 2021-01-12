@@ -4,29 +4,54 @@ body {
   padding: 0;
 }
 
+.button-entrar {
+  background-color: #3578E5;
+  border-radius: 5px;
+  color: white;
+  height: 23px;
+}
+
 .facebook-login {
+  align-items: center;
   display: flex;
+  height: 60px;
+  justify-content:space-between;
+  width: 300px;
 }
 
 .facebook-logo {
   align-self: center;
+  width: 170px;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self:flex-end;
+  height: 40px;
+  width: 60px;
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  font-style:inherit;
+  font-size: 12px;
+  height: 40px;
+  width: 162px;
 }
 
-.top-bar {
-  align-items: center;
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  height: 50px;
-  justify-content: space-between;
+.full-name {
+  height: 39px;
+  width: 46.7%;
+}
+
+.header-input {
+  width: 100px;
+}
+
+.left-content {
+  width: 800px;
 }
 
 .main-content {
@@ -36,20 +61,19 @@ body {
   justify-content: center;
 }
 
-.left-content {
-  width: 800px;
+.rest-data {
+  height: 39px;
+  width: 97%;
 }
 
 .right-content {
   width: 300px;
 }
 
-.full-name {
-  height: 39px;
-  width: 46.7%;
-}
-
-.rest-data {
-  height: 39px;
-  width: 97%;
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 65px;
+  justify-content: space-between;
 }
