@@ -1,5 +1,15 @@
-function validateRegisterFields() {
-  
+function verifySelectedGender() {
+  const gendersInput = document.getElementsByName('gender');
+  const customGenderInput = document.getElementsByName('gender-custom');
+  for (let index = 0; index < gendersInput.length; index += 1) {
+    if (gendersInput[index].checked) {
+      if (gendersInput[index].value === 'custom') {
+        customGenderInput[0].className = 'showed';
+      } else {
+        customGenderInput[0].className = 'hidden';
+      }
+    }
+  }
 }
 
 function verifyUserEmailPhone() {
@@ -10,8 +20,10 @@ function verifyUserEmailPhone() {
 function createEvents() {
   const enter = document.querySelector('#button-login');
   enter.addEventListener('click', verifyUserEmailPhone);
-  const register = document.querySelector('#facebook-register');
-  register.addEventListener('click', validateRegisterFields);
+  const gendersInput = document.getElementsByName('gender');
+  for (let index = 0; index < gendersInput.length; index += 1) {
+    gendersInput[index].addEventListener('click', verifySelectedGender);
+  }
 }
 
 window.onload = function () {

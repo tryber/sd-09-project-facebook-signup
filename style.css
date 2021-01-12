@@ -11,21 +11,12 @@ body {
   align-self: flex-end;
 }
 
-.invalid {
-  color: red;
+.showed {
   display: block;
 }
 
-.valid {
+.hidden {
   display: none;
-}
-
-.invalid-border {
-  border: 1px solid red;
-}
-
-.valid-border {
-  border: none;
 }
 
 @media screen and ( min-width : 780px ) {
