@@ -79,14 +79,14 @@ body {
   justify-content: center;
 }
 
-.nascimento, .labelGender {
+.nascimento , .labelGender {
   align-items: inherit;
-  color: #43464a8c;  
+  color: #43464a8c;
   display: flex;
   flex-direction: column;
   font-size: 1em;
   font-weight: 700;
-  margin-left: 2%;  
+  margin-left: 2%;
 }
 
 .nomeSobrenome {
@@ -98,7 +98,7 @@ body {
 }
 
 .cadastro input {
-  border-radius: 4px;  
+  border-radius: 4px;
   height: 2em;
   margin: 1%;
 }
