@@ -3,7 +3,6 @@ const getRegisterBnt = document.querySelector('#facebook-register');
 const getButton = document.querySelector('#button-login');
 const personalizedInput = document.querySelector('#personalized');
 const genderDiv = document.querySelector('#personalized-gender');
-
 const rightContent = document.querySelector('.right-content');
 
 // TEST AREA
@@ -37,15 +36,14 @@ function insertWelcome() {
 
 function checkEmptyFields() {
   let invalidField = 0;
-  const form = document.querySelector('#register-form');
   const checked = document.querySelector('input[type="radio"]:checked');
   const inputsNotRadio = document.querySelectorAll('#register-form input:not([type=radio])');
   for (let index = 0; index < inputsNotRadio.length; index += 1) {
     if (inputsNotRadio[index].value === '' || checked === null) {
       invalidField += 1;
-      form.innerHTML = 'Campos Invalidos';
-      // getInputs[index].innerHTML = 'Campos Invalidos';
-      // getInputs[index].placeholder = 'Campos Invalidos';
+      // form.innerHTML = 'Campos Invalidos';
+      inputsNotRadio[index].innerHTML = 'Campos Invalidos';
+      inputsNotRadio[index].placeholder = 'Campos Invalidos';
     }
   }
   if (invalidField === 0) {
