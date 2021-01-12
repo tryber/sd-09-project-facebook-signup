@@ -64,6 +64,7 @@ function loopGender() {
   }
 }
 
+
 const buttonFeminino = document.querySelector('#feminino');
 buttonFeminino.addEventListener('click', loopGender);
 const buttonMasculino = document.querySelector('#masculino');
