@@ -6,3 +6,22 @@ function handleClickButtonLogin() {
 }
 
 buttonLogin.addEventListener('click', handleClickButtonLogin);
+
+const formSubmit = document.querySelector('.facebook-register');
+// console.log(formSubmit);
+
+function handleValidateFields(event) {
+  event.preventDefault();
+
+  const inputs = document.querySelectorAll('.facebook-register input');
+  
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].value == '') {
+      console.log(inputs[index]);
+    } 
+  }
+  
+
+}
+
+formSubmit.addEventListener('submit', handleValidateFields);
