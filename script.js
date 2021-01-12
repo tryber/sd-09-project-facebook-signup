@@ -7,6 +7,15 @@ function alertLogin() {
   });
 }
 
+function stopDefault(event) {
+  event.preventDefault();
+}
+
+function listeners() {
+  const registerButton = document.getElementById('facebook-register');
+  registerButton.addEventListener('click', stopDefault);
+}
+
 // function checkEmail() {
 //   const email = document.querySelector('.input-login');
 //   let insertedEmail = email.value;
@@ -21,4 +30,5 @@ function alertLogin() {
 
 window.onload = function () {
   alertLogin();
+  listeners();
 };
