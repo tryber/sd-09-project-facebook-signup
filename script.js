@@ -7,6 +7,14 @@ function falert(event) {
 }
 button.addEventListener('click', falert);
 
+function createP () {
+  const newP = document.querySelector('.right-content');
+  const newP2 = document.createElement('p');
+  const newP2Text = 'Campos inválidos';
+  newP2.innerText = newP2Text;
+  newP.appendChild(newP2);
+}
+
 const btnCadastre = document.getElementById('facebook-register');
 function validInput(event) {
   event.preventDefault();
@@ -33,11 +41,3 @@ function validInput(event) {
   }
 }
 btnCadastre.addEventListener('click', validInput);
-
-function createP () {
-  const newP = document.querySelector('.right-content');
-    const newP2 = document.createElement('p');
-    const newP2Text = 'Campos inválidos';
-    newP2.innerText = newP2Text;
-    newP.appendChild(newP2);
-}
