@@ -47,10 +47,7 @@ body {
 }
 
 .facebook-login {
-  align-self: flex-end;
-  color: whitesmoke;
   display: flex;
-  padding: 10px;
 }
 
 .form-control {
