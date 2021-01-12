@@ -26,3 +26,18 @@ function buttonSignUp(event) {
 
 const btnSignUp = document.querySelector('#facebook-register');
 btnSignUp.addEventListener('click', buttonSignUp);
+
+function customizedGender(event) {
+  const genderInput = document.querySelector('.customized-gender');
+  while (genderInput.firstChild) {
+    genderInput.removeChild(genderInput.lastChild);
+  }
+  if (event.target.value === 'Personalizado') {
+    const creatInput = document.createElement('input');
+    creatInput.setAttribute('name', 'gender-custom');
+    creatInput.setAttribute('placeholder', 'Gênero (opcional)');
+    genderInput.appendChild(creatInput);
+  }
+}
+const genderOption = document.querySelector('.gender-options');
+genderOption.addEventListener('click', customizedGender);
