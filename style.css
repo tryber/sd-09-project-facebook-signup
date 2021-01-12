@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 .top-bar {
@@ -7,7 +8,6 @@ body {
   display: flex;
   height: 40px;
   justify-content: space-between;
-
 }
 
 .facebook-login {
@@ -15,7 +15,6 @@ body {
   display: flex;
   font-size: 12px;
   justify-content: space-around;
-  margin-right: 80px;
   width: 280px;
 
 }
@@ -56,8 +55,4 @@ body {
   color: white;
   font-size: 10px;
   text-decoration: none;
-}
-
-.facebook-logo {
-  margin-left: 50px;
 }
