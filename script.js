@@ -3,23 +3,29 @@ function alerta() {
   alert(email.value);
 }
 
-function validacao(event) {
-  let status1 = false;
-  let status2 = false;
+function validacaoInput() {
+  let status = false;
   const input = document.querySelectorAll('.input');
   for (let index = 0; index < input.length; index += 1) {
     if (input[index].value === '') {
-      status1 = true;
+      status = true;
     }
   }
+  return status;
+}
 
+function validacaoRadio() {
   const radio = document.querySelectorAll('.radio');
   for (let index = 0; index < radio.length; index += 1) {
     if (radio[index].checked) {
       status2 = true;
     }
   }
+}
 
+function validacao(event) {
+  let status1 = validacaoInput();
+  let status2 = validacaoRadio();
   if (status1 === true || status2 === false) {
     alert('Campos inválidos');
     event.preventDefault();
