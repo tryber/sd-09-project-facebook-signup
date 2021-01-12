@@ -36,9 +36,9 @@ function changeContent(event) {
   if (validateForm(event)) {
     const name = document.querySelector('#firstname').value;
     const lastname = document.querySelector('#lastname').value;
-    const email = document.querySelector('#phone_email').value;
-    const birthdate = document.querySelector('#birthdate-input').value;
-    const gender = document.querySelector('input[type="radio"]:checked').value;
+    // const email = document.querySelector('#phone_email').value;
+    // const birthdate = document.querySelector('#birthdate-input').value;
+    // const gender = document.querySelector('input[type="radio"]:checked').value;
     const rightContent = document.querySelector('.right-content');
     rightContent.innerHTML = '';
     const newtext1 = document.createElement('h2');
