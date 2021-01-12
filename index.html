@@ -15,8 +15,8 @@
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
     <form class="facebook-login">
       <div class="form-group">
-        <label for="email telefone" id="user-email-phone-label">Email ou Telefone
-          <input type="text" name="email telefone" id="user-email-phone" value="">
+        <label id="user-email-phone-label">Email ou Telefone
+          <input type="text" name="" id="user-email-phone" value="">
         </label>
       </div>
       <div class="form-group">
@@ -28,7 +28,6 @@
         <button type="submit" id="button-login">Entrar</button>
       </div>
     </form>
-
   </div>
   <section class="main-content">
     <div class="left-content">
@@ -36,7 +35,6 @@
         vida.</p>
       <img id="facebook-networking" src="imgs/networking.png" alt="" srcset="">
     </div>
-
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
@@ -61,10 +59,13 @@
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
           <label for="" class="row label-content" id="label-gender">Gênero</label>
           <div class="radios">
+            <input type="radio" name="gender" class="gender" id="Feminino" value="Feminino"><br>
             <input type="radio" name="gender" class="gender" id="Feminino" value="Feminino" required><br>
             <label for="Feminino" aria-checked="true">Feminino</label>
+            <input type="radio" name="gender" class="gender" id="Masculino" value="Masculino"><br>
             <input type="radio" name="gender" class="gender" id="Masculino" value="Masculino" required><br>
             <label for="Masculino">Masculino</label>
+            <input type="radio" name="gender" class="gender" id="Personalizado" value="Personalizado"><br><br>
             <input type="radio" name="gender" class="gender" id="Personalizado" value="Personalizado" required><br><br>
             <label for="Personalizado">Personalizado</label>
           </div>
