@@ -34,3 +34,8 @@ body {
 .right-content {
   width: 300px;
 }
+
+.sign-up-fullname {
+  display: flex;
+  flex-direction: row;
+}
