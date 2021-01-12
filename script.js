@@ -35,7 +35,7 @@ function notNullRegisterValidation(event) {
   isGenderValid = inputGenderValidation();
   if (!isTextValid || !isGenderValid) {
     event.preventDefault();
-    formAlert.innerText = 'Campos Inválidos';
+    formAlert.innerText = 'Campos inválidos';
   }
 }
 
