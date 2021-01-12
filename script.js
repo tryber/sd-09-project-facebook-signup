@@ -23,11 +23,11 @@ function fieldsInput() {
   for (let index = 0; index < camposDeInput.length; index += 1) {
     if (camposDeInput[index].value === '') {
       createInvalid();
+      console.log('Ok')
       valid = false;
       return;
     }
     valid = true;
-    return;
   }
 }
 
