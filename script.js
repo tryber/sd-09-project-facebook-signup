@@ -40,11 +40,11 @@ function generoPersonaliza() {
   genero.appendChild(input);
 }
 
-window.onload = function (){
+window.onload = function () {
   const btn = document.querySelector('#button-login');
   btn.addEventListener('click', alerta);
   const btnCadastro = document.querySelector('#facebook-register');
-  btnCadastro.addEventListener('click' , validacao);
-  const radio = document.querySelector("#perso");
+  btnCadastro.addEventListener('click', validacao);
+  const radio = document.querySelector('#perso');
   radio.addEventListener('click', generoPersonaliza);
 };
