@@ -1,3 +1,13 @@
+.button {
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  margin: 10px 0;
+  width: 50%;
+}
+
 .container {
   display: flex;
 }
@@ -45,6 +55,15 @@
 .main-content {
   display: flex;
   justify-content: space-around;
+}
+
+.nova::after {
+  align-items: center;
+  display: flex;
+  content: 'Campos inválidos';
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
 }
 
 .right-content {

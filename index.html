@@ -31,25 +31,26 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" class="form-subscribe">
-        <input type="text" name="firstname" placeholder="Nome" class="form-subscribe-half-line">
-        <input type="text" name="lastname" placeholder="Sobrenome" class="form-subscribe-half-line">
-        <input type="text" name="phone_email" placeholder="Celular ou email" class="form-subscrib-full-line">
-        <input type="password" name="password" placeholder="Nova senha" class="form-subscrib-full-line">
+      <form id="form-subscribe" action="" class="form-subscribe">
+        <input type="text" name="firstname" placeholder="Nome" class="form-subscribe-half-line" required>
+        <input type="text" name="lastname" placeholder="Sobrenome" class="form-subscribe-half-line" required>
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="form-subscrib-full-line" required>
+        <input type="password" name="password" placeholder="Nova senha" class="form-subscrib-full-line" required>
         <div class="form-group">
           <label for="birthdate" id="label-birthdate" class="">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
         </div>
         <label for="" id="label-gender" class="container form-subscrib-full-line">Gênero</label>
-        <input type="radio" value="Feminino" name="gender" id="gender1">
+        <input type="radio" value="Feminino" name="gender" id="gender1" required>
         <label for="gender1">Feminino</label>
         <input type="radio" value="Masculino" name="gender" id="gender2">
         <label for="gender2">Masculino</label>
         <input type="radio" value="Personalizado" name="gender" id="gender3">
         <label for="gender3">Personalizado</label>
-        <button type="submit" id="facebook-register">Cadastre-se</button>
+        <button class="button" type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
