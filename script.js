@@ -15,12 +15,24 @@ function validInput(event) {
   const inputPhone = document.getElementById('phoneemail');
   const inputNewpw = document.getElementById('newpassword');
   const inputBirth = document.getElementById('birthdate');
+  const inputFeminino = document.getElementById('feminino');
+  const inputMasculino = document.getElementById('masculino');
+  const inputPersonalizado = document.getElementById('personalizado');
   const inputNameValue = inputName.value;
   const inputLastnameValue = inputLastname.value;
   const inputPhoneValue = inputPhone.value;
   const inputNewpwValue = inputNewpw.value;
   const inputBirthValue = inputBirth.value;
+  const inputFemininoValue = inputFeminino.checked;
+  const inputMasculinoValue = inputMasculino.checked;
+  const inputPersonalizadoValue = inputPersonalizado.checked;
   if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '') {
+    const newP = document.querySelector('.right-content');
+    const newP2 = document.createElement('p');
+    const newP2Text = 'Campos inválidos';
+    newP2.innerText = newP2Text;
+    newP.appendChild(newP2);
+  } else if (inputFemininoValue === false && inputMasculinoValue === false && inputPersonalizadoValue === false) {
     const newP = document.querySelector('.right-content');
     const newP2 = document.createElement('p');
     const newP2Text = 'Campos inválidos';
