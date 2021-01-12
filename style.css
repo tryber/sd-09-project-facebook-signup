@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.left-content {
-  width: 800px;
-}
-
 .label-birthdate , .label-gender {
   color: rgb(144, 148, 156);
   font-size: 16px;
@@ -79,8 +75,6 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 0 200px;
   padding-bottom: 30px;
 }
 
@@ -155,4 +149,8 @@ body {
   height: 80px;
   justify-content: space-between;
   padding: 0 110px;
+}
+
+.left-content {
+  width: 800px;
 }
