@@ -36,8 +36,13 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
