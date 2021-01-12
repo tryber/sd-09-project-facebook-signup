@@ -49,3 +49,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.gender {
+  font-size: 15px;
+}
