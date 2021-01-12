@@ -60,6 +60,10 @@ body {
   justify-content: center;
 }
 
+.other-gender {
+  display: none;
+}
+
 .rest-data {
   height: 39px;
   width: 97%;
