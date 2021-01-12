@@ -19,7 +19,7 @@ function genderInput() {
     } else {
       document.querySelector('.other-gender').style.display = 'none';
     }
-  })
-};
+  });
+}
 
 genderInput();
