@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="top-bar">
-    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo" width="190px">
+    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo" width="210px">
     <form method="GET" class="facebook-login">
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
@@ -34,18 +34,18 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form method="GET" class="form-box">
         <div class="inline-input">
-          <input type="text" name="firstname" class="inline-input" placeholder="Nome">
-          <input type="text" name="lastname" class="inline-input" placeholder="Sobrenome">
+          <input type="text" name="firstname" class="inline-input" placeholder="Nome" required>
+          <input type="text" name="lastname" class="inline-input" placeholder="Sobrenome" required>
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required>
         <label for="birthdate-input" id="label-birthdate">Data de nascimento</label>
-        <input type="text" id="birthdate-input" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" id="birthdate-input" name="birthdate" placeholder="dd/mm/aaaa" required>
         <label for="gender-input" id="label-gender">Gênero</label>
         <div class="inline-input">
-          <label for="gender-inputf"><input type="radio" id="gender-inputf" name="gender" value="Feminino">Feminino</label>
-          <label for="gender-inputm"><input type="radio" id="gender-inputm" name="gender" value="Masculino">Masculino</label>
-          <label for="gender-inputp"><input type="radio" id="gender-inputp" name="gender" value="Personalizado">Personalizado</label>
+          <label for="gender-inputf"><input type="radio" id="gender-inputf" name="gender" value="Feminino" required>Feminino</label>
+          <label for="gender-inputm"><input type="radio" id="gender-inputm" name="gender" value="Masculino" required>Masculino</label>
+          <label for="gender-inputp"><input type="radio" id="gender-inputp" name="gender" value="Personalizado" required>Personalizado</label>
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
