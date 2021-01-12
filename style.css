@@ -38,4 +38,15 @@ body {
 .sign-up-fullname {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sign-up-fullname input {
+  width: 45%;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
 }
