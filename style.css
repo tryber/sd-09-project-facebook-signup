@@ -101,13 +101,13 @@ body {
   .facebook-login {
     border: 1px solid magenta;
     display: flex;
-    margin-right: 5%;
+    padding-right: 5%;
   }
 
   .facebook-logo {
     align-self: flex-end;
     border: 1px solid magenta;
-    margin-left: 20%;
+    padding-left: 20%;
     width: 130px;
   }
 
