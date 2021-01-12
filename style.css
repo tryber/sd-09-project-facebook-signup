@@ -13,13 +13,12 @@ body {
 
 .facebook-logo {
   display: flex;
-  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .facebook-login {
-  align-items: baseline;
+  align-items: flex-end;
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 10px;
 }
 
