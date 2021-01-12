@@ -16,8 +16,11 @@ function handleValidateFields(event) {
   const inputs = document.querySelectorAll('.facebook-register input');
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
+      const alertMessage = document.getElementById('alert');
+      alertMessage.style.display = 'block';
     }
   }
+  formSubmit.submit();
 }
 
 formSubmit.addEventListener('submit', handleValidateFields);
