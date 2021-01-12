@@ -49,7 +49,7 @@ body {
 .facebook-login {
   align-self: flex-end;
   color: whitesmoke;
-  display: inline-flex;
+  display: flex;
   padding: 10px;
 }
 
