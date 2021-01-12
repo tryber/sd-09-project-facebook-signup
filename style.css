@@ -6,7 +6,7 @@ body {
 .facebook-login {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* .facebook-logo {
