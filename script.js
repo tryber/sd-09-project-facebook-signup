@@ -38,8 +38,7 @@ function deleteParagraph(container) {
   }
 }
 
-function createParagraph() {
-  const container = document.querySelector('.form-container');
+function createParagraph(container) {
   const paragraph = document.createElement('p');
   deleteParagraph(container);
   container.appendChild(paragraph);
@@ -47,21 +46,36 @@ function createParagraph() {
   paragraph.id = 'validation-error';
 }
 
-registerButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  const registerInput = document.getElementsByClassName('register-input');
+function checkRadioButtons() {
   const genderMan = document.getElementById('gender-man');
   const genderWoman = document.getElementById('gender-woman');
   const genderCustom = document.getElementById('gender-custom');
-  let cont = 0;
-  if ((genderCustom.checked === false) && (genderMan.checked === false) && (genderWoman.checked === false)) {
-    createParagraph();
-    return;
+  let radioChecked = false;
+  if (genderCustom.checked === true) {
+    radioChecked = true;
+  } else if (genderMan.checked === true) {
+    radioChecked = true;
+  } else if (genderWoman.checked === true) {
+    radioChecked = true;
   }
+  return radioChecked;
+}
+
+registerButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  const registerInput = document.getElementsByClassName('register-input');
+  const container = document.querySelector('.form-container');
   for (let index = 0; index < registerInput.length; index += 1) {
-    if (registerInput[index].value === '') {
-      createParagraph();
+    if (registerInput[index].type === 'radio') {
+      const checked = checkRadioButtons();
+      if (checked === false) {
+        createParagraph(container);
+        return;
+      } 
+    } else if (registerInput[index].value === '') {
+      createParagraph(container);
       return;
     }
   }
+  deleteParagraph(container);
 });
