@@ -45,7 +45,7 @@ body {
   border-radius: 2px;
   color: white;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 800;
   padding: 4px;
 }
 
@@ -79,9 +79,9 @@ h1 {
 .main-content input {
   border: solid rgb(187, 192, 211) 1px;
   border-radius: 5px;
-  padding: 8px;
   font-size: 18px;
   margin: 5px;
+  padding: 8px;
 }
 
 .left-content {
