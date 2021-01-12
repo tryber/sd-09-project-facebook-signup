@@ -61,3 +61,16 @@ body {
   margin: 0;
   width: 49%;
 }
+
+.right-content .label-form {
+  color: rgb(93, 99, 102);
+  display: block;
+  font-weight: 900;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.right-content input[type='radio'] {
+  margin: 0;
+  width: auto;
+}
