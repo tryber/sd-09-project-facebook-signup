@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('campos_invalidos').style.color = 'red';
       }
     };
-    // elements[i].oninput = function () {
-    //   document.getElementById('campos_invalidos').innerText = '';
-    // };
+    elements[i].oninput = function () {
+      document.getElementById('campos_invalidos').innerText = '';
+    };
   }
 });
 
