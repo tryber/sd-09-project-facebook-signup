@@ -25,16 +25,14 @@ p {
   margin: 10px;
 }
 
-.form-control {
-  align-self: flex-end;
-  display: flex;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
-  padding: 5px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
 }
 
 .genero-radio {
