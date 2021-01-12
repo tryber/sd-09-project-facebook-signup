@@ -24,7 +24,6 @@ function verifyGender(listElements) {
     if (checkBoxGender !== '') {
       break;
     }
-    console.log(checkBoxGender)
   }
   return checkBoxGender;
 }
