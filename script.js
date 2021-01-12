@@ -34,15 +34,26 @@ function showHiddenInput() {
 }
 genderCustom.addEventListener('click', showHiddenInput);
 
+function createWelcomeParagraph() {
+  rightContent = document.querySelector('.right-content');
+  rightContent.innerText = `
+  Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}
+  ${document.querySelector('#phone_email').value}
+  ${document.querySelector('#birthdate').value}
+  ${checkRadio()}`
+}
+
 window.onload = function () {
   const submitButton = document.querySelector('#facebook-register');
   const errorMessage = document.querySelector('#errorMessage');
-  submitButton.addEventListener('click', function (event) {
+  submitButton.addEventListener('click', event => {
     event.preventDefault();
     errorMessage.innerText = '';
     if (checkInputValue()) {
       errorMessage.innerText = 'Campos inválidos';
       errorMessage.style.color = 'red';
+    } else {
+      createWelcomeParagraph();
     }
   });
 };

@@ -32,12 +32,12 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form class="form">
-        <input type="text" name="firstname" placeholder="Nome" class="small-input">
-        <input type="text" name="lastname" placeholder="Sobrenome" class="small-input">
-        <input type="text" name="phone_email" placeholder="Celular ou email" class="big-input">
+        <input type="text" name="firstname" placeholder="Nome" class="small-input" id="firstname">
+        <input type="text" name="lastname" placeholder="Sobrenome" class="small-input" id="lastname">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="big-input" id="phone_email">
         <input type="password" name="password" placeholder="Nova senha" class="big-input">
         <label for="" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="big-input">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="big-input" id="birthdate">
         <label id="label-gender">Gênero</label>
         <section class="radio-container">
           <input type="radio" name="gender" id="feminino" value="Feminino">
@@ -47,10 +47,10 @@
           <input type="radio" name="gender" id="personalizado" value="Personalizado">
           <label for="personalizado">Personalizado</label>
         </section>
-        <input type="text" class="hidden-input" name="gender-custom" placeholder="Gênero (opcional)">
-        <button type="submit" id="facebook-register">Cadastre-se</button>
         <span id="errorMessage"></span>
       </form>
+      <input type="text" class="hidden-input" name="gender-custom" placeholder="Gênero (opcional)">
+      <button type="submit" id="facebook-register">Cadastre-se</button>
     </section>
   </main>
   <script src="script.js"></script>
