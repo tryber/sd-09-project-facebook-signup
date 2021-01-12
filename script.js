@@ -1,3 +1,12 @@
+function alertLogin () {
+  const buttonLogin = document.getElementById('button-login');
+  const inputLogin = document.getElementById('user-email-phone');
+  buttonLogin.addEventListener('click',function(){
+    let loginValue = inputLogin.value;
+    alert(loginValue);
+  })
+}
+
 // function checkEmail() {
 //   const email = document.querySelector('.input-login');
 //   let insertedEmail = email.value;
@@ -10,6 +19,6 @@
 //   return emailFormat
 // }
 
-// window.onload = function () {
-//   checkEmail()
-// }
+window.onload = function () {
+  alertLogin()
+}
