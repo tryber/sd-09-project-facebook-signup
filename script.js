@@ -7,14 +7,13 @@ function alertEmailOrPhone() {
 }
 
 function verifyCheckedRadioInputs(listElements, index) {
-  let getGender = ''
+  let getGender = '';
   if (listElements[index].checked) {
     getGender = listElements[index].value;
     if (listElements[index].value === 'Personalizado') {
       getGender = listElements[10].value;
     }
   }
-  console.log(getGender);
   return getGender;
 }
 
@@ -23,9 +22,11 @@ function verifyGender(listElements) {
   for (let index = 2; index < listElements.length; index += 1) {
     checkBoxGender = verifyCheckedRadioInputs(listElements, index);
     if (checkBoxGender !== '') {
-      return checkBoxGender;
+      break;
     }
+    console.log(checkBoxGender)
   }
+  return checkBoxGender;
 }
 
 function clearRightSide(listElements) {
