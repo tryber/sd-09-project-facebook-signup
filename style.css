@@ -44,9 +44,11 @@ body {
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
 }
 
-.inputs-container {
-    display: flex;
+.nome-container {
+  display: flex;
 }
