@@ -24,7 +24,6 @@ function validateForm(event) {
   const validateMessage = document.getElementById('validate-message');
   let validate = true;
   for (let index = 0; index < requiredItems.length; index += 1) {
-    console.log(requiredItems[index]);
     if (requiredItems[index].value === null || checkedInput === null) {
       validateMessage.innerText = 'Campos inválidos';
       validate = false;
