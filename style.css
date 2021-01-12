@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -21,6 +25,32 @@
 .main-content {
   display: flex;
   justify-content: space-around;
+  background: linear-gradient(white, #D3D8E8);
+  background-attachment: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-image: linear-gradient(white, rgb(211, 216, 232));
+  background-origin: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+}
+
+h1 {
+  color: #333;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.quick-easy {
+  font-weight: normal;
+  color: #1d2129;
+  font-size: 19px;
+}
+
+.main-content input {
+  border-radius: 8px;
+  border: solid rgb(170, 170, 170) 1px;
 }
 
 .left-content {
