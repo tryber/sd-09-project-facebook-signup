@@ -7,8 +7,6 @@ const alertMsg = (event) => {
   event.preventDefault();
 };
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const elements = document.getElementsByTagName('input');
   for (let i = 0; i < elements.length; i += 1) {
@@ -17,36 +15,32 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!e.target.validity.valid) {
         document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
         document.getElementById('campos_invalidos').style.color = 'red';
-      }
+      };
     };
     elements[i].oninput = function () {
       document.getElementById('campos_invalidos').innerText = '';
     };
-  }
+  };
 });
 
 const checkGenre = (event) => {
   const choosedGenre = document.getElementById('personalizado');
-  const div_custonGenre = document.getElementById('custonGenre');
-  while (div_custonGenre.firstChild) {
-    div_custonGenre.removeChild(div_custonGenre.lastChild);
+  const divCustonGenre = document.getElementById('custonGenre');
+  while (divCustonGenre.firstChild) {
+    divCustonGenre.removeChild(divCustonGenre.lastChild);
   }
   if (choosedGenre.checked) {
-    const input_custonGenre = document.createElement('input');
-    input_custonGenre.name = 'gender-custom';
-    input_custonGenre.placeholder = 'Gênero (opcional)';
-    console.log(div_custonGenre);
-    console.log(input_custonGenre);
-    div_custonGenre.appendChild(input_custonGenre);
-    console.log(div_custonGenre);
+    const inputCustonGenre = document.createElement('input');
+    inputCustonGenre.name = 'gender-custom';
+    inputCustonGenre.placeholder = 'Gênero (opcional)';
+    divCustonGenre.appendChild(inputCustonGenre);
     event.preventDefault();
   } else {
-    while (div_custonGenre.firstChild) {
-      div_custonGenre.removeChild(div_custonGenre.lastChild);
-    }
-  }
-
-}
+    while (divCustonGenre.firstChild) {
+      divCustonGenre.removeChild(divCustonGenre.lastChild);
+    };
+  };
+};
 
 const eventslistener = () => {
   btnEntrar.addEventListener('click', alertMsg);
