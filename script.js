@@ -43,8 +43,8 @@ function notNullRegisterValidation(event) {
 function customGender() {
   const genderInput = document.querySelector('.gender-input');
   const checkGender = document.getElementsByClassName('gender-custom');
-  if(uniqueGender.checked) {
-    if(checkGender.length > 0) {
+  if (uniqueGender.checked) {
+    if (checkGender.length > 0) {
       return;
     }
     const newGender = document.createElement('input');
