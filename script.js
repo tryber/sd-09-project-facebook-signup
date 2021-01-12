@@ -29,7 +29,6 @@ let breakChecked = false;
 
 function perField(event) {
   if (event.target.id === 'per' && !breakChecked) {
-    console.log('dentro ', event.target.id);
     breakChecked = true;
     fieldGender.name = 'gender-custom';
     fieldGender.placeholder = 'Gênero (opcional)';
