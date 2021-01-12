@@ -1,18 +1,26 @@
-/* * {
+body {
   margin: 0;
-} */
+}
 
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
   font-size: 12px;
+  height: 53px;
+  justify-content: space-between;
   padding: 15px;
   width: 100%;
 }
 
 .facebook-login {
   display: flex;
+}
+
+.facebook-logo {
+  margin-left: 12%;
+  width: 180px;
 }
 
 .form-group {
