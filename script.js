@@ -7,8 +7,8 @@ const buttonSender = document.querySelector('#button-login');
 /* Inicio do codigo */
 
 /* Exibe e-mail-telefone */
-buttonSender.addEventListener('click', function() {
-  if (inputEmailPhone.value  !== '') {
-      alert(inputEmailPhone.value);
+buttonSender.addEventListener('click', function () {
+  if (inputEmailPhone.value !== '') {
+    alert(inputEmailPhone.value);
   }
 });
