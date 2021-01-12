@@ -1,3 +1,5 @@
+let emptyInputs = 0;
+
 function alertEmailOrPhone() {
   const inputEmail = document.querySelector('#user-email-phone');
   alert(inputEmail.value);
@@ -6,20 +8,19 @@ function alertEmailOrPhone() {
 const button = document.querySelector('#button-login');
 button.addEventListener('click', alertEmailOrPhone);
 
-function buttonSignUp() {
-  let emptyInputs = 0;
-  const inputs = document.getElementsByTagName('input');
+function buttonSignUp(event) {
+  event.preventDefault();
   const form = document.querySelector('.personal-infos');
+  const infoClass = document.querySelectorAll('.info');
   const message = document.createElement('p');
-  form.appendChild(message);
-
-  for (let index = 0; index < inputs.length; index += 1) {
-    if (inputs[index].required.value === '') {
-        emptyInputs += 1;
+  for (let index = 0; index < infoClass.length; index += 1) {
+    if (infoClass[index].value === '') {
+      emptyInputs += 1;
     }
   }
   if (emptyInputs > 0) {
-      message.innerText = 'Campos inválidos';
+    form.appendChild(message);
+    message.innerText = 'Campos inválidos';
   }
 }
 
