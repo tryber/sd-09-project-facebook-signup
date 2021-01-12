@@ -69,16 +69,30 @@ function deleteDiv(div) {
 function saveDataInput(registerInput) {
   const registerData = [];
   for (let index = 0; index < registerInput.length; index += 1) {
-    if (registerInput[index].type === 'radio') {
-      if (registerInput[index].checked) {
+    switch (true){
+      case (registerInput[index].type === 'radio'):
+        if (registerInput[index].checked) {
+          registerData.push(`${registerInput[index].value}`);
+        }
+        break;
+      case (registerInput[index].name === 'firstname'):
+        registerData.push(`Olá, ${registerInput[index].value} ${registerInput[index + 1].value}`);
+        index += 1;
+        break;
+      case (registerInput[index].name !== 'password'):
         registerData.push(`${registerInput[index].value}`);
-      }
-    } else if (registerInput[index].name === 'firstname') {
-      registerData.push(`Olá, ${registerInput[index].value} ${registerInput[index + 1].value}`);
-      index += 1;
-    } else if (registerInput[index].name !== 'password'){
-      registerData.push(`${registerInput[index].value}`);
+        break;
     }
+  //   if (registerInput[index].type === 'radio') {
+  //     if (registerInput[index].checked) {
+  //       registerData.push(`${registerInput[index].value}`);
+  //     }
+  //   } else if (registerInput[index].name === 'firstname') {
+  //     registerData.push(`Olá, ${registerInput[index].value} ${registerInput[index + 1].value}`);
+  //     index += 1;
+  //   } else if (registerInput[index].name !== 'password') {
+  //     registerData.push(`${registerInput[index].value}`);
+  //   }
   }
   return registerData;
 }
