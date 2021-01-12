@@ -39,6 +39,11 @@ body {
 
 .fullname {
   display: flex;
+  justify-content: space-between;
+}
+
+.fullname input {
+  width: 45%;
 }
 
 .dateBirth {
@@ -48,4 +53,11 @@ body {
 
 .genderDiv {
   display: flex;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
 }

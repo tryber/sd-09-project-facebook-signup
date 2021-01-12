@@ -1,6 +1,10 @@
 const loginEmail = document.querySelector('#user-email-phone');
 const buttonLogin = document.querySelector('#button-login');
 const buttonSubmit = document.querySelector('#facebook-register');
+const inputRadio = document.querySelectorAll('.inputRadio');
+const inputText = document.querySelectorAll('.inputText');
+const content = document.querySelector('.right-content');
+const text = document.querySelectorAll('.text');
 
 function getLogin() {
   buttonLogin.addEventListener('click', function () {
@@ -10,7 +14,6 @@ function getLogin() {
 
 
 function allRadioMade() {
-  const inputRadio = document.querySelectorAll('.inputRadio');
   const isValide = false;
   for (let index = 0; index < inputRadio.length; index += 1) {
     if (inputRadio[index].checked) {
@@ -21,7 +24,6 @@ function allRadioMade() {
 }
 
 function allTextMade() {
-  const inputText = document.querySelectorAll('.inputText');
   const isValide = true;
   for (let index = 0; index < inputText.length; index += 1) {
     if (inputText[index].value === '') {
@@ -32,8 +34,6 @@ function allTextMade() {
 }
 
 function setInfos() {
-  const content = document.querySelector('.right-content');
-  const text = document.querySelectorAll('.text');
   const radio = document.querySelector('.inputRadio[type="radio"]:checked').value;
   content.innerHTML = '';
   const h2 = document.createElement('h2');
