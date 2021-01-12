@@ -49,7 +49,7 @@ function createHelloUserElement() {
   const userLastName = document.querySelector('#lastname').value;
   // const helloPhrase = document.createElement('p');
   // helloPhrase.innerText = `Hello, ${userFirstName} ${userLastName}`;
-  helloPhrase = `Hello, ${userFirstName} ${userLastName}`;
+  const helloPhrase = `Hello, ${userFirstName} ${userLastName}`;
   return helloPhrase;
 }
 
@@ -86,7 +86,7 @@ function showUserData() {
   const fieldsContent = getFieldsContent();
   const rightContainer = document.querySelector('.right-content');
   clearContainer(rightContainer);
-  newFieldsContent = fieldsContent.join(' ');
+  const newFieldsContent = fieldsContent.join(' ');
   rightContainer.innerText = newFieldsContent;
   // for (let index = 0; index < fieldsContent.length; index += 1) {
   //   rightContainer.appendChild(fieldsContent[index]);
