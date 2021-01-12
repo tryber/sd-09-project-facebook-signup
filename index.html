@@ -32,7 +32,7 @@
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
+      <div class="quick-easy">É rápido e fácil.</div>
       <form action="">
         <div class="fullname-input">
           <input type="text" name="firstname" placeholder="Nome">
@@ -40,6 +40,21 @@
         </div>
         <input type="text" name="phone_email" placeholder="Celular ou email">
         <input type="password" name="password" placeholder="Nova senha">
+        <div class="birthdate-input">
+          <div id="label-birthdate">Data de nascimento</div>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="gender-input">
+          <div id="label-gender">Gênero</div>
+          <div class="gender-options">
+            <input type="radio" name="gender" id="female">
+            <label for="female">Feminino</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Personalizado</label>
+          </div>
+        </div>
       </form>
     </div>
   </section>

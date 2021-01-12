@@ -51,3 +51,7 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.gender-options {
+  display: flex;
+}
