@@ -109,14 +109,19 @@ function personalData() {
 
   const dataContent = [firstname, lastname, phoneEmail, password, birthdate, gender];
 
-  if (gender === 'Personalizado') {
-    dataContent[5] = document.querySelector('.gender-custom').value;
-  }
+  // if (gender === 'Personalizado') {
+  //   dataContent[5] = document.querySelector('.gender-custom').value;
+  // }
 
   dataContent[3] = '*****';
 
   rightContent.innerHTML = '';
-  for (let index = 0; index < dataContent.length; index += 1) {
+
+  const p = document.createElement('p');
+  p.innerText = `Olá ${firstname} ${lastname}`;
+  rightContent.appendChild(p);
+
+  for (let index = 2; index < dataContent.length; index += 1) {
     const p = document.createElement('p');
     p.innerText = dataContent[index];
     rightContent.appendChild(p);
