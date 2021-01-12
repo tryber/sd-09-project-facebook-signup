@@ -45,3 +45,7 @@ O Cypress evaluator está dando erro neste teste:
   display: flex;
   flex-direction: column;
 }
+
+.main-content {
+  display: flex;
+}
