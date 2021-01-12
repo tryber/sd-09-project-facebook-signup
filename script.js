@@ -21,7 +21,11 @@ function validInput(event) {
   const inputNewpwValue = inputNewpw.value;
   const inputBirthValue = inputBirth.value;
   if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '') {
-    alert('Campos inválidos');
+    const newP = document.querySelector('.right-content');
+    const newP2 = document.createElement('p');
+    const newP2Text = 'Campos inválidos';
+    newP2.innerText = newP2Text;
+    newP.appendChild(newP2);
   }
 }
 btnCadastre.addEventListener('click', validInput);
