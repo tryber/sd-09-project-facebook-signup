@@ -51,7 +51,7 @@ header {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
 }
 
 .form-control button {
