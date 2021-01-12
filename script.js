@@ -1,6 +1,6 @@
 const buttonEntrar = document.getElementById('button-login');
 const registerButton = document.getElementById('facebook-register');
-const genderCustom = document.getElementById('label-gender-custom');
+const genderCheck = document.querySelector('.form-check-container');
 
 buttonEntrar.addEventListener('click', (event) => {
   event.preventDefault();
@@ -8,22 +8,27 @@ buttonEntrar.addEventListener('click', (event) => {
   alert(emailOrPhone);
 });
 
-function deleteInputGenterCustom(container) {
-  const inputGenterCustom = document.querySelector('#inputGenterCustom');
-  if (inputGenterCustom !== null) {
-    container.removeChild(inputGenterCustom);
+function deleteInputGenderCustom(container) {
+  const inputGenderCustom = document.querySelector('#inputGenderCustom');
+  if (inputGenderCustom !== null) {
+    container.removeChild(inputGenderCustom);
   }
 }
 
-genderCustom.addEventListener('change', (event) => {
-  event.preventDefault();
-  const container = document.querySelector('#div-gender-custom');
-  const inputGenterCustom = document.createElement('input');
-  deleteInputGenterCustom(container);
-  inputGenterCustom.placeholder = 'Gênero (opcional)';
-  inputGenterCustom.name = 'gender-custom';
-  container.appendChild(inputGenterCustom);
-  inputGenterCustom.id = 'inputGenterCustom';
+genderCheck.addEventListener('click', (event) => {
+  if (event.target.type === 'radio') {
+    const container = document.querySelector('#div-gender-custom');
+    const inputGenderCustom = document.createElement('input');
+    if (event.target.id === 'label-gender-custom'){
+      deleteInputGenderCustom(container);
+      inputGenderCustom.placeholder = 'Gênero (opcional)';
+      inputGenderCustom.name = 'gender-custom';
+      container.appendChild(inputGenderCustom);
+      inputGenderCustom.id = 'inputGenderCustom';
+    } else {
+      deleteInputGenderCustom(container);
+    }
+  }
 });
 
 function deleteParagraph(container) {
@@ -60,4 +65,3 @@ registerButton.addEventListener('click', (event) => {
     createParagraph();
   }
 });
-
