@@ -9,20 +9,12 @@ body {
   justify-content: space-around;
 }
 
-.form-header {
-  align-items: center;
-  color: white;
-  display: flex;
+.facebook-logo {
+  align-self: center;
 }
 
-.email-phone {
+.facebook-login {
   display: flex;
-  flex-direction: column;
-}
-
-.password {
-  display: flex;
-  flex-direction: column;
 }
 
 .form-group {
@@ -31,7 +23,7 @@ body {
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
   display: flex;
 }
 
@@ -43,12 +35,6 @@ body {
 
 .left-content {
   width: 800px;
-}
-
-.left-content p {
-  color: rgb(66, 103, 178);
-  font-size: 1.5rem;
-  width: 500px;
 }
 
 .right-content {
