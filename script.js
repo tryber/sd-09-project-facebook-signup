@@ -10,10 +10,10 @@ botao.addEventListener('click', () => alert(email.value));
 botaoCadastro.addEventListener('click', (event) => {
   event.preventDefault();
   if (errorParagraph.innerHTML) errorParagraph.innerHTML = '';
-    const mensagemErro = document.createTextNode('Campos inválidos');
-    // Baseado no código do Hugo Braga da turma 8
-    const resultado = form1.checkValidity();
-    if (!resultado) {
-      errorParagraph.appendChild(mensagemErro);
-    }
+  const mensagemErro = document.createTextNode('Campos inválidos');
+  // Baseado no código do Hugo Braga da turma 8
+  const resultado = form1.checkValidity();
+  if (!resultado) {
+    errorParagraph.appendChild(mensagemErro);
+  }
 });
