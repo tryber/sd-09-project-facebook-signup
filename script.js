@@ -42,8 +42,7 @@ function createParagraph(container) {
   const paragraph = document.createElement('p');
   deleteParagraph(container);
   container.appendChild(paragraph);
-  paragraph.innerText = 'Campos inválidos';
-  paragraph.id = 'validation-error';
+  return paragraph;
 }
 
 function checkRadioButtons() {
@@ -61,6 +60,37 @@ function checkRadioButtons() {
   return radioChecked;
 }
 
+function deleteDiv(div) {
+  while(div.firstChild){
+    div.removeChild(div.lastChild);
+  }
+}
+
+function loadRegistrationInput() {
+  const div = document.querySelector('.right-content');
+  const registerInput = document.getElementsByClassName('register-input');
+  const registerData = [];
+  for (let index = 0; index < registerInput.length; index += 1) {
+    if (registerInput[index].type === 'radio') {
+      if (registerInput[index].checked) {
+        registerData.push(`${registerInput[index].value}`);
+      }
+    } else if (registerInput[index].name !== 'password') {
+      if (registerInput[index].name === 'firstname') {
+        registerData.push(`Olá, ${registerInput[index].value} ${registerInput[index + 1].value}`);
+        index += 1;
+      } else {
+        registerData.push(`${registerInput[index].value}`);
+      }
+    }
+  }
+  deleteDiv(div);
+  for (let index = 0; index < registerData.length; index +=1) {
+    const paragraph = createParagraph(div);
+    paragraph.innerText = registerData[index];
+  }
+}
+
 registerButton.addEventListener('click', (event) => {
   event.preventDefault();
   const registerInput = document.getElementsByClassName('register-input');
@@ -69,13 +99,17 @@ registerButton.addEventListener('click', (event) => {
     if (registerInput[index].type === 'radio') {
       const checked = checkRadioButtons();
       if (checked === false) {
-        createParagraph(container);
+        const paragraph = createParagraph(container);
+        paragraph.innerText = 'Campos inválidos';
+        paragraph.id = 'validation-error';
         return;
       }
     } else if (registerInput[index].value === '') {
-      createParagraph(container);
+      const paragraph = createParagraph(container);
+      paragraph.innerText = 'Campos inválidos';
+      paragraph.id = 'validation-error';
       return;
     }
   }
-  deleteParagraph(container);
+  loadRegistrationInput();
 });
