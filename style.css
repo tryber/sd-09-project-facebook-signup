@@ -39,6 +39,18 @@
   flex-wrap: wrap;
 }
 
+.form-container-main {
+  width: 100%;
+}
+
+.name-container input {
+  width: 50%;
+}
+
+.name-container input:nth-child(1) {
+  margin-right: 15px;
+}
+
 .name-container {
   display: flex;
 }
