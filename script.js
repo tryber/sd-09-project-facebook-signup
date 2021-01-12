@@ -1,4 +1,5 @@
 const btnEntrar = document.querySelector('#button-login');
+const btnCadastro = document.querySelector('#facebook-register');
 
 const alertMsg = (event) => {
   const textEmailTel = document.querySelector('#user-email-phone');
@@ -6,15 +7,7 @@ const alertMsg = (event) => {
   event.preventDefault();
 };
 
-// const customGenre = () => {
-//   const customChoose = document.querySelector('#personalizado');
-//   if ()
-// }
 
-const eventslistener = () => {
-  btnEntrar.addEventListener('click', alertMsg);
-  // btnEntrar.addEventListener('click', customGenre);
-};
 
 document.addEventListener('DOMContentLoaded', function () {
   const elements = document.getElementsByTagName('input');
@@ -31,6 +24,34 @@ document.addEventListener('DOMContentLoaded', function () {
     };
   }
 });
+
+const checkGenre = (event) => {
+  const choosedGenre = document.getElementById('personalizado');
+  const div_custonGenre = document.getElementById('custonGenre');
+  while (div_custonGenre.firstChild) {
+    div_custonGenre.removeChild(div_custonGenre.lastChild);
+  }
+  if (choosedGenre.checked) {
+    const input_custonGenre = document.createElement('input');
+    input_custonGenre.name = 'gender-custom';
+    input_custonGenre.placeholder = 'Gênero (opcional)';
+    console.log(div_custonGenre);
+    console.log(input_custonGenre);
+    div_custonGenre.appendChild(input_custonGenre);
+    console.log(div_custonGenre);
+    event.preventDefault();
+  } else {
+    while (div_custonGenre.firstChild) {
+      div_custonGenre.removeChild(div_custonGenre.lastChild);
+    }
+  }
+
+}
+
+const eventslistener = () => {
+  btnEntrar.addEventListener('click', alertMsg);
+  btnCadastro.addEventListener('click', checkGenre);
+};
 
 window.onload = () => {
   eventslistener();
