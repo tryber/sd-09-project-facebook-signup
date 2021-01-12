@@ -1,4 +1,5 @@
 body {
+  font-family: sans-serif;
   margin: 0;
 }
 
@@ -9,39 +10,54 @@ body {
   display: flex;
   font-size: 12px;
   height: 53px;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 15px;
   width: 100%;
 }
 
-.facebook-login {
+.top-bar .facebook-logo {
+  align-self: flex-end;
+  padding-left: 170px;
+  text-align: left;
+  width: 180px;
+}
+
+.top-bar .facebook-login {
   display: flex;
+  flex-basis: 550px;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.facebook-login .email {
-  margin-right: 73px;
+.top-bar .facebook-login button {
+  background-color: rgb(67, 100, 167);
+  border: 1px solid rgb(33, 71, 146);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 5px;
 }
 
-.facebook-login input {
+.top-bar .facebook-login .email {
+  margin-right: 70px;
+}
+
+.top-bar .facebook-login input {
+  margin-right: 7px;
   width: 150px;
 }
 
-.facebook-login label {
+.top-bar .facebook-login label {
   line-height: 25px;
 }
 
-.facebook-login p {
+.top-bar .facebook-login p {
+  color: rgba(255, 255, 255, 0.5);
   line-height: 25px;
-  margin: 0 auto 0 163px;
-}
-
-.facebook-logo {
-  align-self: flex-end;
-  width: 180px;
+  margin: 0 auto 0 170px;
 }
 
 .form-group {
   display: flex;
+  flex-direction: column;
 }
