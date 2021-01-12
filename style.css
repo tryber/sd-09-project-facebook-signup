@@ -28,11 +28,10 @@ body {
 }
 
 .main-content {
-
-  /* mudar para cor correta de background */
-  background-color: #f0f2f5;
+  background-color: #dfe1ee;
   display: flex;
-  justify-content: space-around;
+  height: 100vh;
+  justify-content: center;
 }
 
 .left-content {
@@ -91,6 +90,16 @@ body {
 
 .radioButtons {
   display: flex;
-  font-size: small;
+  font-size: medium;
   justify-content: center;
+}
+
+.submit {
+  background-color: #56953e;
+  border: 1px solid #6d8255;
+  border-radius: 4px;
+  color: white;
+  font: caption;
+  height: 35px;
+  width: 70%;
 }
