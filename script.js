@@ -7,10 +7,10 @@ const buttonLogin = document.querySelector('#button-login');
 buttonLogin.addEventListener('click', alertInput);
 
 // Requisito 18
-let valid = false;
+let valid = tru;
 
 function createInvalid() {
-  const mensagemInvalida = document.querySelector('.mensagem-invalida');
+  const mensagemInvalida = document.querySelector('.form-main');
   const alerta = document.createElement('p');
   alerta.innerText = 'Campos inválidos!';
   alerta.id = 'alerta-valid';
