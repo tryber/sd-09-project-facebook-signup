@@ -3,8 +3,8 @@ const userEmailPhone = document.querySelector('#user-email-phone');
 const buttonFacebookRegister = document.querySelector('#facebook-register');
 const radioCustom = document.querySelector('#custom');
 const registerForm = document.querySelector('#register-form');
-//Faz a mensagem de erro caso os campos não estejam preenchidos
-buttonFacebookRegister.addEventListener('click', (event) => {
+// Faz a mensagem de erro caso os campos não estejam preenchidos
+buttonFacebookRegister.addEventListener('click', () => {
   const completeForm = document.querySelectorAll('#register-form input');
   for (let index = 0; index < completeForm.length; index += 1) {
     if (completeForm[index].value === '') {
@@ -22,14 +22,8 @@ buttonLogin.addEventListener('click', (event) => {
   event.preventDefault();
   alert(userEmailPhone.value);
 });
-//faz o campo caso o gênero seja Personalizado
-radioCustom.addEventListener('click', () => {
-  const customOptionGenre = document.querySelector('#register-form .gender-custom');
 
-  if (customOptionGenre === null) {
-    registerForm.appendChild(createField());
-  }
-});
+// faz o campo caso o gênero seja Personalizado
 
 function createField() {
   const inputText = document.createElement('input');
@@ -39,3 +33,11 @@ function createField() {
 
   return inputText;
 }
+
+radioCustom.addEventListener('click', () => {
+  const customOptionGenre = document.querySelector('#register-form .gender-custom');
+
+  if (customOptionGenre === null) {
+    registerForm.appendChild(createField());
+  }
+});
