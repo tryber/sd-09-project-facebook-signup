@@ -27,7 +27,7 @@ function checkInputValue() {
 
 window.onload = function () {
   const submitButton = document.querySelector('#facebook-register');
-  let errorMessage = document.querySelector('#errorMessage');
+  const errorMessage = document.querySelector('#errorMessage');
   submitButton.addEventListener('click', function (event) {
     event.preventDefault();
     errorMessage.innerText = '';
