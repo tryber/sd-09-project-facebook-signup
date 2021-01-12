@@ -1,6 +1,6 @@
 function checkAndChangeClassName(customGenderInput, gendersInput) {
   if (gendersInput.checked) {
-    if (gendersInput.value === 'custom') {
+    if (gendersInput.value === 'Personalizado') {
       customGenderInput[0].className = 'showed';
     } else {
       customGenderInput[0].className = 'hidden';
