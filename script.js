@@ -33,11 +33,11 @@ function allTextMade() {
 }
 
 function isValidate(event) {
-    if (!allTextMade() || !allRadioMade()) {
-      event.preventDefault();
-      const p = document.querySelector('#validate');
-      p.innerText = 'Campos inválidos';
-    }
+  if (!allTextMade() || !allRadioMade()) {
+    event.preventDefault();
+    const p = document.querySelector('#validate');
+    p.innerText = 'Campos inválidos';
+  }
 }
 
 buttonSubmit.addEventListener('click', isValidate);
