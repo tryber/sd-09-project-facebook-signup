@@ -61,7 +61,6 @@ body {
   }
 
   .right-content {
-    border: 1px solid magenta;
     padding: 20px;
     width: 300px;
   }
@@ -85,7 +84,6 @@ body {
 
   .left-content {
     align-items: center;
-    border: 1px solid magenta;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,13 +97,7 @@ body {
   }
 
   .facebook-login {
-    border: 1px solid magenta;
     display: flex;
-  }
-
-  .facebook-logo {
-    align-self: flex-end;
-    border: 1px solid magenta;
   }
 
   .top-bar {
