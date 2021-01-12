@@ -7,6 +7,15 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
+  
+}
+
+.facebook-logo{
+  align-self: center;
+}
+
+.facebook-login {
+  display: flex;
 }
 
 .form-group {
@@ -15,7 +24,7 @@ body {
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
   display: flex;
 }
 
