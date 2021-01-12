@@ -9,7 +9,7 @@ function alertEmailOrPhone() {
 function validateForm() {
   const formSubscribe = document.querySelector('#form-subscribe');
   const formSubscribeSubmitButton = document.querySelector('#facebook-register');
-  const paragraph = document.querySelector('#message')
+  const paragraph = document.querySelector('#message');
   formSubscribeSubmitButton.addEventListener('click', function (event) {
     event.preventDefault();
     if (!formSubscribe.checkValidity()) {
@@ -20,5 +20,23 @@ function validateForm() {
   });
 }
 
+function gender() {
+  const formSubscribe = document.querySelector('#form-subscribe');
+  const radioGender = document.querySelector('#gender3');
+  const buttonSubmitForm = document.querySelector('#facebook-register');
+  radioGender.addEventListener('click', function (event) {
+    const trigger = document.querySelectorAll('#input-gender3').length;
+    if (trigger === 0) {
+      const inputGender = document.createElement('input');
+      inputGender.id = 'input-gender3';
+      inputGender.placeholder = 'Gênero (opcional)';
+      formSubscribe.insertBefore(inputGender, buttonSubmitForm);
+    } else {
+      formSubscribe.removeChild(buttonSubmitForm.previousSibling);
+    }
+  });
+}
+
 validateForm();
 alertEmailOrPhone();
+gender();
