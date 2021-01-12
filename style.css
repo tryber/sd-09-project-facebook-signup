@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.left-content {
+  width: 800px;
+}
+
 .label-birthdate , .label-gender {
   color: rgb(144, 148, 156);
   font-size: 16px;
@@ -62,10 +66,6 @@ body {
   color: rgb(29, 33, 41);
   font-size: 18px;
   padding-top: 5px;
-}
-
-.left-content {
-  width: 800px;
 }
 
 .facebook-slogan {
