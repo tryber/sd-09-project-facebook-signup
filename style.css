@@ -28,13 +28,14 @@ body {
 
 .facebook-login {
   display: flex;
+  height: 50px;
 }
 
 .facebook-login > :nth-child( 3 ) {
   align-self: flex-end;
   background-color: rgb(66, 103, 178);
   border: 0;
-  padding-bottom: 4%;
+  padding-bottom: 3.5%;
 }
 
 .button-login {
