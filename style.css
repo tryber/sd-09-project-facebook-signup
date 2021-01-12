@@ -1,0 +1,156 @@
+.birthdate-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-birthdate , .label-gender {
+  color: rgb(144, 148, 156);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 0 5px;
+}
+
+body {
+  background: linear-gradient(white, #d3d8e8);
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.entrar-button {
+  background-color: #4267b2;
+  border: 1px solid #2f588a;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.entrar-button:active , .entrar-button:focus , .entrar-button:hover {
+  outline: transparent;
+}
+
+.facebook-login {
+  align-items: center;
+  color: white;
+  display: flex;
+}
+
+.facebook-logo {
+  width: 170px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 7px;
+}
+
+.gender-content {
+  color: rgb(29, 33, 41);
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+.facebook-slogan {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+.name-content {
+  display: flex;
+  padding: 10px 0;
+}
+
+.other-gender {
+  transform: translateX(1000px);
+  transition: 0.3s ease;
+}
+
+.hide-gender {
+  transform: translateX(0);
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content .heading-signup {
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.right-content .quick-easy {
+  color: rgb(29, 33, 41);
+  font-size: 19px;
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.short-input {
+  background: white;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+  width: 190px;
+}
+
+.sign-up-form input {
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+}
+
+.phone-email , .new-password , .birthdate {
+  background: white;
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
+.sign-up-form::placeholder {
+  color: #999;
+  cursor: text;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  box-sizing: border-box;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 110px;
+}
+
+.left-content {
+  width: 800px;
+}
