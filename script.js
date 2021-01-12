@@ -10,9 +10,9 @@ buttonLogin.addEventListener('click', alertInput);
 let valid = false;
 
 function createInvalid() {
-  const mensagemInvalida = document.querySelector('.form-main');
+  const mensagemInvalida = document.querySelector('.main-content form');
   const alerta = document.createElement('p');
-  alerta.innerText = 'Campos inválidos!';
+  alerta.innerText = 'Campos inválidos';
   alerta.className = 'mensagem-invalida';
   alerta.id = 'alerta-valid';
   mensagemInvalida.appendChild(alerta);
