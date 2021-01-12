@@ -13,8 +13,8 @@ function stopDefault(event) {
 
 const validateCamps = document.querySelectorAll('.cadastro input');
 function registerValidate() {
-  for(let index = 0; index < validateCamps.length; index += 1) {
-    if(validateCamps[index].value === "") {
+  for (let index = 0; index < validateCamps.length; index += 1) {
+    if (validateCamps[index].value === '') {
       validateCamps[index].placeholder = 'Campos inválidos';
     }
   }
@@ -24,7 +24,6 @@ function listeners() {
   const registerButton = document.getElementById('facebook-register');
   registerButton.addEventListener('click', stopDefault);
   registerButton.addEventListener('click', registerValidate);
-
 }
 
 // function checkEmail() {
