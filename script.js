@@ -35,11 +35,15 @@ function insertWelcome() {
   rightContent.appendChild(phrases);
 }
 
+
+
 function checkEmptyFields() {
   let invalidField = 0;
   const form = document.querySelector('#register-form');
-  for (let index = 0; index < getInputs.length; index += 1) {
-    if (getInputs[index].value === '') {
+  const checked = document.querySelector('input[type="radio"]:checked');
+  const inputsNotRadio = document.querySelectorAll('#register-form input:not([type=radio])');
+  for (let index = 0; index < inputsNotRadio.length; index += 1) {
+    if (inputsNotRadio[index].value === '' || checked === null) {
       invalidField += 1;
       form.innerHTML = 'Campos Invalidos';
       // getInputs[index].innerHTML = 'Campos Invalidos';
@@ -47,6 +51,7 @@ function checkEmptyFields() {
     }
   }
   if (invalidField === 0) {
+    changeChosenGender();
     insertWelcome();
   }
 }
@@ -67,6 +72,5 @@ personalizedInput.addEventListener('change', function () {
 
 getRegisterBnt.addEventListener('click', function (event) {
   event.preventDefault();
-  changeChosenGender();
   checkEmptyFields();
 });
