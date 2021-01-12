@@ -26,16 +26,6 @@ body {
   width: 100px;
 }
 
-.form-senha {
-  height: 10px;
-  width: 100px;
-}
-
-.form-login {
-  height: 10px;
-  width: 100px;
-}
-
 .form-botao {
   background-color: rgb(80, 122, 207);
   border: none;
