@@ -34,17 +34,17 @@
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil</p>
             <form>
-                <input class="form-name" type="text" name="firstname" placeholder="Nome">
-                <input class="form-name" type="text" name="lastname" placeholder="Sobrenome">
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" placeholder="Nova senha">
+                <input class="form-name" type="text" name="firstname" placeholder="Nome" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
+                <input class="form-name" type="text" name="lastname" placeholder="Sobrenome" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
+                <input type="text" name="phone_email" placeholder="Celular ou email" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
+                <input type="password" placeholder="Nova senha" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
                 <label for="" id="label-birthdate">Data de nascimento</label>
-                <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="date">
+                <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="date" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
                 <label for="" id="gender-label">Gênero</label>
                 <div>
-                    <input type="radio" name="gender" class="gender">Feminino
-                    <input type="radio" name="gender" class="gender">Masculino
-                    <input type="radio" name="gender" class="gender">Personalizado
+                    <input type="radio" name="gender"  class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required="required">Feminino
+                    <input type="radio" name="gender" class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')">Masculino
+                    <input type="radio" name="gender" class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')">Personalizado
                 </div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
             </form>
