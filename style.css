@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Freight--Sans--Condensed--Bold", Arial, Helvetica, sans-serif;
 }
 
 .facebook-login {
@@ -97,6 +98,18 @@ body {
   border-radius: 4px;
   color: white;
   font: caption;
+  font-size: large;
+  font-weight: bold;
   height: 35px;
+  margin-top: 3%;
   width: 70%;
+  text-shadow: 1.5px 1.5px #8080809e;
+}
+
+.slogan {
+  color: rgb(66, 103, 178);
+  font-weight: bold;
+  font-size: large;
+  width: 50%;
+  text-shadow: 0.5px 0.5px #0000006b;
 }
