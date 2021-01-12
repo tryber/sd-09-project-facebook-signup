@@ -63,11 +63,19 @@ form aside input {
   display: inline;
 }
 
-.languages {
+footer ul {
   display: flex;
   justify-content: space-between;
 }
 
-.languages li {
+footer ul li {
   list-style: none;
+}
+
+.links-footer {
+
+}
+
+.plus-sign {
+  border: solid gray 1px;
 }
