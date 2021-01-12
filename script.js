@@ -27,7 +27,7 @@ function insertWelcome() {
   // const gender = document.querySelector('input[type="radio"]:checked');
 
   const phrases = document.createElement('p');
-  phrases.innerHTML += `Ola, ${firstName.value} ${lastName.value} !`;
+  phrases.innerHTML += `Ola, ${firstName.value} ${lastName.value}`;
   phrases.innerHTML += `<br> ${phoneEmail.value}`;
   phrases.innerHTML += `<br> ${birthDate.value}`;
   phrases.innerHTML += `<br> ${chosenGender}`;
