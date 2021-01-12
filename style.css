@@ -48,19 +48,18 @@ body {
   width: 100px;
 }
 
-.full-name {
-  display: flex;
-}
-
 .header-input {
   width: 100px;
+}
+
+.full-name {
+  display: flex;
 }
 
 .main-content {
   background: linear-gradient(white, #d3d8e8);
   display: flex;
   flex-direction: row;
-  font-size: small;
   justify-content: center;
 }
 
@@ -80,6 +79,10 @@ body {
 
 .right-content {
   width: 300px;
+}
+
+.left-content {
+  width: 800px;
 }
 
 .quick-easy {
