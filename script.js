@@ -71,7 +71,7 @@ registerButton.addEventListener('click', (event) => {
       if (checked === false) {
         createParagraph(container);
         return;
-      } 
+      }
     } else if (registerInput[index].value === '') {
       createParagraph(container);
       return;
