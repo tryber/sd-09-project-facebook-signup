@@ -13,6 +13,14 @@ customGender.addEventListener('click', function () {
   const newGender = document.createElement('input');
   newGender.type = 'text';
   newGender.placeholder = 'Gênero (opcional)';
+  newGender.required = true;
   custom.appendChild(newGender);
   customGender.classList = 'checked';
 });
+
+const genderInput = document.querySelector('#gender-input');
+const notCustom = document.querySelectorAll('.not-custom-gender');
+  notCustom.addEventListener('click', function () {
+    document.getElementById('custom-gender').remove();
+  });
+
