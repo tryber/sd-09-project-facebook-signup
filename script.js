@@ -57,12 +57,8 @@ function customGender() {
   }
 }
 
-function replaceRightContent(event) {
-  notNullRegisterValidation(event);
-  if (formAlert.innerText === 'Campos inválidos') {
-    return;
-  }
-  let newContent = [];
+function readNewContent() {
+  const newContent = [];
   for (let index = 0; index < formInputs.length; index += 1) {
     if (index < 3) {
       newContent[index] = formInputs[index].value;
@@ -72,17 +68,31 @@ function replaceRightContent(event) {
       newContent[4] = formInputs[index].value;
     }
   }
-  while (rightContent.children.length > 0) {
-    rightContent.removeChild(rightContent.children[rightContent.children.length - 1]);
-  }
+  return newContent;
+}
+
+function createNewContent() {
   let newSection = document.createElement('p');
   newSection.innerText = `Olá, ${newContent[0]} ${newContent[1]}`;
   rightContent.appendChild(newSection);
   for (let index = 2; index < newContent.length; index += 1) {
-    let newSection = document.createElement('p');
+    newSection = document.createElement('p');
     newSection.innerText = newContent[index];
     rightContent.appendChild(newSection);
   }
+}
+
+function replaceRightContent(event) {
+  notNullRegisterValidation(event);
+  if (formAlert.innerText === 'Campos inválidos') {
+    return;
+  }
+  let newContent = readNewContent();
+  
+  while (rightContent.children.length > 0) {
+    rightContent.removeChild(rightContent.children[rightContent.children.length - 1]);
+  }
+  createNewContent();
 }
 
 submitBtn.addEventListener('click', loginAlert);
