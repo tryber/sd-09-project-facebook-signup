@@ -47,7 +47,7 @@ body {
   width: 300px;
 }
 
-#fullname-input {
+.fullname-input {
   display: flex;
   flex-direction: row;
 }
