@@ -5,7 +5,7 @@ body {
 }
 
 .invalid-field {
-  border-color: rgb(255, 0, 0);
+  border-color: red;
   box-shadow: 0 0 3px rgba(255, 0, 0, 0.3);
 }
 

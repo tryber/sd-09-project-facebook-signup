@@ -5,6 +5,37 @@ const radioCustom = document.querySelector('#custom');
 const registerForm = document.querySelector('#register-form');
 const completeForm = document.querySelectorAll('#register-form input');
 
+// Exibe as informções do formulário depois de preenchido
+function personalData() {
+  const firstname = document.querySelector('.firstname').value;
+  const lastname = document.querySelector('.lastname').value;
+  const phoneEmail = document.querySelector('input[name="phone_email"]').value;
+  const password = document.querySelector('input[name="password"]').value;
+  const birthdate = document.querySelector('input[name="birthdate"]').value;
+  const gender = document.querySelector('input[name="gender"]:checked').value;
+  const rightContent = document.querySelector('.right-content');
+
+  const dataContent = [firstname, lastname, phoneEmail, password, birthdate, gender];
+
+  // if (gender === 'Personalizado') {
+  //   dataContent[5] = document.querySelector('.gender-custom').value;
+  // }
+
+  dataContent[3] = '*****';
+
+  rightContent.innerHTML = '';
+
+  const hello = document.createElement('p');
+  hello.innerText = `Olá ${firstname} ${lastname}`;
+  rightContent.appendChild(hello);
+
+  for (let index = 2; index < dataContent.length; index += 1) {
+    const p = document.createElement('p');
+    p.innerText = dataContent[index];
+    rightContent.appendChild(p);
+  }
+}
+
 // Remove o texto com a mensagem "Campos inválidos"
 function removeLabel() {
   const label = document.querySelector('.invalid-label');
@@ -37,13 +68,14 @@ function validateField() {
   return isValid;
 }
 
-// Adiciona um evento quando um campo é focado e outro evento quando digitamos algo no campo selecionado
+// Adiciona um evento quando um campo é focado e outro evento quando
+// digitamos algo no campo selecionado
 registerForm.addEventListener('focusin', (event) => {
   event.target.addEventListener('keydown', () => {
     removeLabel();
-  if (!validateField()) {
-    createLabel();
-  }
+    if (!validateField()) {
+      createLabel();
+    }
   });
 });
 
@@ -83,9 +115,11 @@ function removeCustomField() {
 }
 
 // Remove o campo de gênero personalizado ao selecionar "Masculino"
+const male = document.querySelector('#male')
 male.addEventListener('click', () => removeCustomField());
 
 // Remove o campo de gênero personalizado ao selecionar "Feminino"
+const female = document.querySelector('#female')
 female.addEventListener('click', () => removeCustomField());
 
 // Adiciona um campo caso sja selecionado o gênero personalizado
@@ -96,34 +130,3 @@ radioCustom.addEventListener('click', () => {
     registerForm.appendChild(createField());
   }
 });
-
-// Exibe as informções do formulário depois de preenchido
-function personalData() {
-  const firstname = document.querySelector('.firstname').value;
-  const lastname = document.querySelector('.lastname').value;
-  const phoneEmail = document.querySelector('input[name="phone_email"]').value;
-  const password = document.querySelector('input[name="password"]').value;
-  const birthdate = document.querySelector('input[name="birthdate"]').value;
-  const gender = document.querySelector('input[name="gender"]:checked').value;
-  const rightContent = document.querySelector('.right-content');
-
-  const dataContent = [firstname, lastname, phoneEmail, password, birthdate, gender];
-
-  // if (gender === 'Personalizado') {
-  //   dataContent[5] = document.querySelector('.gender-custom').value;
-  // }
-
-  dataContent[3] = '*****';
-
-  rightContent.innerHTML = '';
-
-  const p = document.createElement('p');
-  p.innerText = `Olá ${firstname} ${lastname}`;
-  rightContent.appendChild(p);
-
-  for (let index = 2; index < dataContent.length; index += 1) {
-    const p = document.createElement('p');
-    p.innerText = dataContent[index];
-    rightContent.appendChild(p);
-  }
-}
