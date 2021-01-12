@@ -1,3 +1,8 @@
+.birthdate-content {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
@@ -45,14 +50,27 @@ body {
   margin: 0 7px;
 }
 
+.hide-gender {
+  transform: translateX(0);
+}
+
+.left-content {
+  width: 800px;
+}
+
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.left-content {
-  width: 800px;
+.name-content {
+  display: flex;
+}
+
+.other-gender {
+  transform: translateX(1000px);
+  transition: 0.3s ease;
 }
 
 .right-content {
@@ -65,7 +83,13 @@ body {
 
 .short-input {
   width: 85px;
+}
 
+.sign-up-form input {
+  border: 1px solid #343a40;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0;
+  padding: 10px;
 }
 
 .top-bar {
@@ -78,32 +102,4 @@ body {
   height: 80px;
   justify-content: space-between;
   padding: 0 110px;
-}
-
-
-.sing-up-form input {
-  border: 1px solid #343a40;
-  border-radius: 5px;
-  margin: 10px 10px 10px 0;
-  padding: 10px;
-}
-
-.name-content {
-  display: flex;
-}
-
-.birthdate-content {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.other-gender {
-  transform: translateX(1000px);
-  transition: 0.3s ease;
-
-}
-
-.hide-gender {
-  transform: translateX(0);
 }

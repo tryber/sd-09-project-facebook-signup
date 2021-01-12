@@ -63,3 +63,22 @@ function formsCheck() {
   });
 }
 formsCheck();
+
+function showGender() {
+  const otherGender = document.getElementsByName('gender');
+  const input = document.querySelector('.other-gender')
+  for(let index = 0; index < otherGender.length; index += 1)
+  otherGender[index].addEventListener('click', function () {
+    const inputValues = otherGender[index].value;
+    console.log(inputValues[index])
+    switch(inputValues[index]) {
+      case 'r':
+        input.classList.add('hide-gender');
+        break;
+      default:
+        input.classList.remove('hide-gender');
+        break;
+    }
+  });
+}
+showGender();
