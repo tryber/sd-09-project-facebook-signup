@@ -41,3 +41,18 @@ function isValidate(event) {
 }
 
 buttonSubmit.addEventListener('click', isValidate);
+
+function genderFluid() {
+  const radioPerson = document.querySelector('#perso');
+  radioPerson.addEventListener('change', function () {
+    const genderDiv = document.querySelector('#genero');
+    if (radioPerson.checked) {
+      const input = document.createElement('input');
+      input.name = 'gender-custom';
+      input.placeholder = 'Gênero (opcional)';
+      genderDiv.appendChild(input);
+    }
+  });
+}
+
+genderFluid();
