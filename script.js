@@ -32,7 +32,7 @@ function checkEmptyFields() {
   let invalidField = 0;
   for (let index = 0; index < getInputs.length; index += 1) {
     if (getInputs[index].value === '') {
-      invalidField += 1
+      invalidField += 1;
       getInputs[index].innerHTML = 'Campos Invalidos';
       getInputs[index].placeholder = 'Campos Invalidos';
     }
@@ -47,7 +47,7 @@ getButton.addEventListener('click', function () {
 });
 
 personalizedInput.addEventListener('click', function () {
-  if (validateGenderDiv) {
+  if (validateGenderDiv === true) {
     const personalizedGender = document.createElement('input');
     personalizedGender.type = 'text';
     personalizedGender.name = 'gender-custom';
