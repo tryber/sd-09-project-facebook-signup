@@ -71,7 +71,7 @@ input {
   padding: 8px 10px;
 }
 
-.flex1{
+.flex1 {
   display: flex;
 }
 
@@ -80,11 +80,11 @@ input {
   flex-flow: column;
 }
 
-#label-gender {
+.labelgender {
   display: block;
 }
 
-#facebook-register {
+.buttonregister {
   display: block;
   margin: 10px;
 }
