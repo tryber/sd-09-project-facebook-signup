@@ -12,8 +12,8 @@ function genderInput() {
   const flagGenderOption = document.querySelector('.gender-box');
   const otherGenderOption = document.querySelector('.other-gender');
 
-  flagGenderOption.addEventListener('click', function() {
-    otherGenderOption.style.display = "block";
+  flagGenderOption.addEventListener('click', function () {
+    otherGenderOption.style.display = 'block';
   });
 }
 

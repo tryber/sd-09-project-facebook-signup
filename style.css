@@ -65,6 +65,11 @@ body {
   justify-content: center;
 }
 
+.main-title {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
 .other-gender {
   display: none;
 }
@@ -76,11 +81,6 @@ body {
 
 .right-content {
   width: 300px;
-}
-
-.right-content h1 {
-  font-size: 36px;
-  margin-bottom: 0;
 }
 
 .quick-easy {
