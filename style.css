@@ -1,0 +1,109 @@
+/* Andre */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+  width: 1100px;
+}
+
+.facebook-logo {
+  height: auto;
+  width: auto;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.facebook-login > :nth-child( 3 ) {
+  align-self: flex-end;
+  background-color: rgb(66, 103, 178);
+  border: 0;
+  margin-bottom: 6.3%;
+  padding: 0;
+}
+
+.button-login {
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.user-email-phone-label , .user-password-label {
+  color: white;
+}
+
+.user-password , .user-email-phone {
+  margin: 3% 5% 3% 0;
+}
+
+.form-group a {
+  color: white;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.form-group a:hover {
+  opacity: 1;
+}
+
+/* Felipe */
+.main-content {
+  background: linear-gradient(white, rgb(211, 216, 232));
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.slogan {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.form-container div {
+  margin-bottom: 10px;
+}
+
+.form-container > div:nth-child( 1 ) {
+  display: flex;
+}
+
+.form-label {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 700;
+}
