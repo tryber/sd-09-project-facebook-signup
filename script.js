@@ -35,18 +35,18 @@ function showHiddenInput() {
 genderCustom.addEventListener('click', showHiddenInput);
 
 function createWelcomeParagraph() {
-  rightContent = document.querySelector('.right-content');
+  const rightContent = document.querySelector('.right-content');
   rightContent.innerText = `
   Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}
   ${document.querySelector('#phone_email').value}
   ${document.querySelector('#birthdate').value}
-  ${checkRadio()}`
+  ${checkRadio()}`;
 }
 
 window.onload = function () {
   const submitButton = document.querySelector('#facebook-register');
   const errorMessage = document.querySelector('#errorMessage');
-  submitButton.addEventListener('click', event => {
+  submitButton.addEventListener('click', (event) => {
     event.preventDefault();
     errorMessage.innerText = '';
     if (checkInputValue()) {
