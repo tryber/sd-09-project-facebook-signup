@@ -63,9 +63,13 @@ body {
   display: flex;
 }
 
-.short-input {
-  width: 85px;
+.right-content input {
+  /* width: 97.5%; */
+}
 
+
+.short-input {
+  width: 50%;
 }
 
 .top-bar {
