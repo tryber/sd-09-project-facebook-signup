@@ -1,7 +1,7 @@
-
-
 const buttonEntrar = document.getElementById('button-login');
 const registerButton = document.getElementById('facebook-register');
+const genderCustom = document.getElementById('gender-custom');
+
 
 buttonEntrar.addEventListener('click', (event) => {
   event.preventDefault();
@@ -43,3 +43,4 @@ registerButton.addEventListener('click', (event) => {
     createParagraph();
   }
 });
+
