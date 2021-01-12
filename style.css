@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 .facebook-login {
   display: flex;
 }
@@ -33,6 +32,11 @@
 
 .right-content {
   width: 300px;
+}
+
+.form-container-main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .name-container {
