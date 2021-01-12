@@ -64,6 +64,7 @@ body {
 
 /* Felipe */
 .main-content {
+  background: linear-gradient(white, rgb(211, 216, 232));
   display: flex;
   justify-content: center;
 }
@@ -99,4 +100,10 @@ body {
 
 .form-container > div:nth-child( 1 ) {
   display: flex;
+}
+
+.form-label {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: bold;
 }
