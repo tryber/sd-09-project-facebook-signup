@@ -25,6 +25,7 @@ section {
   border-radius: 5px;
   color: white;
   font-weight: 600;
+  height: 23px;
   text-shadow: 0.7px 0.7px black;
 }
 
@@ -85,8 +86,9 @@ section {
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  font-size: 17px;
   font-weight: 600;
-  height: 25px;
+  height: 35px;
   margin-top: 1em;
   text-shadow: 0.7px 0.7px black;
   width: 200px;
