@@ -78,10 +78,10 @@ function getFieldsContent() {
 }
 
 function showUserData() {
-  fieldsContent = getFieldsContent();
+  const fieldsContent = getFieldsContent();
   const rightContainer = document.querySelector('.right-content');
   clearContainer(rightContainer);
-  for (let index in fieldsContent) {
+  for (let index = 0; index < fieldsContent.length; index += 1) {
     rightContainer.appendChild(fieldsContent[index]);
   }
 }
