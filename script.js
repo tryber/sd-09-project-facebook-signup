@@ -9,23 +9,23 @@ function loginAlert() {
 }
 
 function inputTextValidation() {
-    let isTextValid = true;
+  let isTextValid = true;
     for (let index = 0; index < formInputs.length; index += 1) {
-        if (!formInputs[index].value) {
-            isTextValid = false;
-        }
+      if (!formInputs[index].value) {
+      isTextValid = false;
+      }
     }
     return isTextValid;
 }
 
 function inputGenderValidation() {
-    let isGenderValid = false;
-    for (let index = 0; index < formInputs.length; index += 1) {
-        if (formInputs[index].checked) {
-            isGenderValid = true;
-        }
+  let isGenderValid = false;
+  for (let index = 0; index < formInputs.length; index += 1) {
+    if (formInputs[index].checked) {
+      isGenderValid = true;
     }
-    return isGenderValid;
+  }
+  return isGenderValid;
 }
 
 function notNullRegisterValidation(event) {
@@ -34,8 +34,8 @@ function notNullRegisterValidation(event) {
   isTextValid = inputTextValidation();
   isGenderValid = inputGenderValidation();
   if (!isTextValid || !isGenderValid) {
-      event.preventDefault();
-      formAlert.innerText = 'Campos Inválidos';
+    event.preventDefault();
+    formAlert.innerText = 'Campos Inválidos';
   }
 }
 
