@@ -38,14 +38,8 @@ body {
   width: 300px;
 }
 
-.facebook-fullname {
+.fullname {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.lastname {
-  justify-content: flex-end;
 }
 
 .facebook-datas {
