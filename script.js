@@ -22,11 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
     elements[i].oninvalid = function (e) {
       e.target.setCustomValidity('');
       if (!e.target.validity.valid) {
-        e.target.setCustomValidity('Campos inválidos');
+        document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
       }
     };
     elements[i].oninput = function (e) {
-      e.target.setCustomValidity('');
+      document.getElementById('campos_invalidos').innerText = '';
+
     };
   }
 });
