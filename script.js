@@ -1,10 +1,10 @@
-function alertLogin () {
+function alertLogin() {
   const buttonLogin = document.getElementById('button-login');
   const inputLogin = document.getElementById('user-email-phone');
-  buttonLogin.addEventListener('click',function(){
-    let loginValue = inputLogin.value;
+  buttonLogin.addEventListener('click', function () {
+    const loginValue = inputLogin.value;
     alert(loginValue);
-  })
+  });
 }
 
 // function checkEmail() {
@@ -20,5 +20,5 @@ function alertLogin () {
 // }
 
 window.onload = function () {
-  alertLogin()
-}
+  alertLogin();
+};
