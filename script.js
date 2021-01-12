@@ -52,10 +52,10 @@ function validateAndRegister(event) {
 
     const rightContent = document.querySelector('.right-content');
     rightContent.innerHTML = `
-    <p>Olá, ${nome} ${sobrenome}</p>
-    <p>${phoneEmail}</p>
-    <p>${birthdate}</p>
-    <p>Gênero: ${gender}</p>`;
+    Olá, ${nome} ${sobrenome}
+    Email ou Telefone: ${phoneEmail}
+    Data de nascimento: ${birthdate}
+    Gênero: ${gender}`;
   }
 }
 const facebookRegister = document.getElementById('facebook-register');
