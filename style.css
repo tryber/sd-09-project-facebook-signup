@@ -1,5 +1,37 @@
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.formInput {
+  background-color: white;
+  border: 0;
+  border-radius: 0;
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  margin-right: 5px;
+  padding: 0;
+}
+
 body {
-  font-family: lucida grande, tahoma, verdana, arial, sans-serif;
+  font-family: lucida, tahoma, verdana, arial, sans-serif;
+  margin: 0;
 }
 
 .main-content {
@@ -56,4 +88,3 @@ input {
   display: block;
   margin: 10px;
 }
-
