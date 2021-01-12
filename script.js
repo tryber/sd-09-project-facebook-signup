@@ -23,27 +23,53 @@ function showFieldsAreInvalid() {
   formData.appendChild(div);
 }
 
-function validateGender() {
+function isGenderValid() {
   const radiosButtons = document.querySelectorAll('#radio-buttons-form > input');
   for (let index = 0; radiosButtons.length > index; index += 1) {
     if (radiosButtons[index].checked === true) {
       return true;
     }
   }
-  showFieldsAreInvalid();
   return false;
 }
 
-function validateRegistration() {
+function isTextInputValid() {
   const formData = document.querySelectorAll('#new-account-form > input');
   for (let index = 0; formData.length > index; index += 1) {
     if (formData[index].value === '') {
-      showFieldsAreInvalid();
-      return;
+      return false;
     }
   }
-  validateGender();
+  return true;
 }
+
+function writeNewUserData() {
+  const contentField = document.querySelector('#right-content');
+  const formData = document.querySelectorAll('#new-account-form input');
+  const lastName = formData[0].value;
+  const name = formData[1].value;
+  const celphoneOrEmail = formData[2].value;
+  const gender = document.querySelector('#new-account-form input:checked').value;
+  const wellcomeText = document.createElement('p');
+  wellcomeText.textContent = `Olá, ${name} ${lastName}`;
+  const celphoneOrEmailText = document.createElement('p');
+  celphoneOrEmailText.textContent = `${celphoneOrEmail}`;
+  const genderText = document.createElement('p');
+  genderText.textContent = `${gender}`;
+  contentField.innerHTML = '';
+  contentField.appendChild(wellcomeText);
+  contentField.appendChild(celphoneOrEmailText);
+  contentField.appendChild(genderText);
+}
+
+function validateRegistration() {
+  if (isTextInputValid() === false || isGenderValid() === false) {
+    showFieldsAreInvalid();
+    return;
+  }
+  writeNewUserData();
+}
+
 
 function addListeners() {
   const personalizadoButton = document.querySelector('#personalizado-button');
