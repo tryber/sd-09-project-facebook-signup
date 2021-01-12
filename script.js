@@ -14,7 +14,7 @@ const birthDate = document.getElementById('birthdate');
 const emailOrPhone = document.getElementById('phone-email');
 const rightSection = document.querySelector('.right-content');
 
-// Utilizei a lógica utilizada por Tiago Yoneda para fazer a 
+// Utilizei a lógica utilizada por Tiago Yoneda para fazer a
 // função showRegisteredData e createFormDataResult
 
 function createFormDataResult(text) {
