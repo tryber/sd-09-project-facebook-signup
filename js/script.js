@@ -14,7 +14,7 @@ function removeTextArea() {
   }
 }
 
-let binaryGendersArray = document.getElementsByClassName('binary-genders');
+const binaryGendersArray = document.getElementsByClassName('binary-genders');
 for (let index = 0; index < binaryGendersArray; index += 1) {
   binaryGendersArray[index].addEventListener('click', removeTextArea);
 }
