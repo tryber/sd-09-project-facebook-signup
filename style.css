@@ -33,16 +33,19 @@ body {
   background-color: #dfe1ee;
   display: flex;
   height: 100vh;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .left-content {
-  margin-left: 350px;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
 .right-content {
-  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   width: 300px;
 }
@@ -103,8 +106,7 @@ body {
   color: white;
   font: caption;
   font-size: large;
-
-  /* font-weight: normal; */
+  font-weight: 700;
   height: 35px;
   margin-top: 3%;
   text-shadow: 1.5px 1.5px #8080809e;
@@ -114,8 +116,14 @@ body {
 .slogan {
   color: rgb(66, 103, 178);
   font-size: large;
-
-  /* font-weight: normal; */
+  font-weight: 700;
+  margin-right: 7%;
   text-shadow: 0.5px 0.5px #0000006b;
   width: 50%;
+}
+
+.facebook-logo {
+  display: flex;
+  height: 57px;
+  width: 150px;
 }
