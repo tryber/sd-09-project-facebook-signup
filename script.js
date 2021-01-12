@@ -7,6 +7,30 @@ paragrafoErro.classList.add('message-error');
 form1.appendChild(paragrafoErro);
 const generoPersonalizado = document.querySelector('#gender-custom');
 const sessaoGenero = document.querySelector('.gender');
+const rightContent = document.querySelector('.right-content');
+const mainContent =document.querySelector('.main-content');
+
+function genereteNewRightContent() {
+  rightContent.style.display = 'none';
+  const newRighthContent = document.createElement('div');
+  mainContent.appendChild(newRighthContent);
+  
+  const name = document.createElement('p');
+  name.innerText = `Olá, ${form1.firstname.value} ${form1.lastname.value}`;
+  newRighthContent.appendChild(name);
+  
+  const emailTelefone = document.createElement('p');
+  emailTelefone.innerText = `${form1.phone_email.value}`;
+  newRighthContent.appendChild(emailTelefone);
+  
+  const dataNascimento = document.createElement('p');
+  dataNascimento.innerText = `${form1.birthdate.value}`;
+  newRighthContent.appendChild(dataNascimento);
+  
+  const genero = document.createElement('p');
+  genero.innerText = `${form1.gender.value}`;
+  newRighthContent.appendChild(genero);
+}
 
 botao.addEventListener('click', () => alert(email.value));
 botaoCadastro.addEventListener('click', (event) => {
@@ -17,7 +41,7 @@ botaoCadastro.addEventListener('click', (event) => {
   const resultado = form1.checkValidity();
   if (!resultado) {
     paragrafoErro.appendChild(mensagemErro);
-  }
+  } else if (resultado) genereteNewRightContent();
 });
 
 function showOptionalGender(event) {
