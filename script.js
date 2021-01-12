@@ -82,5 +82,3 @@ function showGender() {
   }
 }
 showGender();
-
-
