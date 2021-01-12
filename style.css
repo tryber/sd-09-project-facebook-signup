@@ -20,6 +20,7 @@
 }
 
 .main-content {
+  background-image: linear-gradient(#FCFBFA, #CBD2E4 );
   display: flex;
   justify-content: center;
 }
@@ -50,11 +51,6 @@ form aside input {
   display: block;
 }
 
-.gender {
-  display: flex;
-  justify-content: space-between;
-}
-
 .custom-gender {
   width: 100%;
 }
@@ -65,4 +61,13 @@ form aside input {
 
 .radio {
   display: inline;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.languages li {
+  list-style: none;
 }
