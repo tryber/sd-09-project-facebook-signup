@@ -5,7 +5,7 @@ btnLogin.addEventListener('click', function () {
 });
 
 const btnCadastro = document.querySelector('#facebook-register');
-btnCadastro.addEventListener('click', function () {
+btnCadastro.addEventListener('click', function (event) {
   const fields = document.querySelectorAll('.open-account input');
 
   let campos = false;
@@ -24,6 +24,7 @@ btnCadastro.addEventListener('click', function () {
   }
 
   if (campos === false) {
+    event.preventDefault();
     const camposInvalidos = document.createElement('p');
     camposInvalidos.innerText = 'Campos inválidos';
     document.querySelector('.open-account').appendChild(camposInvalidos);
