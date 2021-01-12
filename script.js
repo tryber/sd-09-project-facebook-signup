@@ -6,6 +6,34 @@ function alertInput() {
 const buttonLogin = document.querySelector('#button-login');
 buttonLogin.addEventListener('click', alertInput);
 
+// Requisito 18
+let valid = false;
+
+function validacaoDeCadastro() {
+  const camposDeInput = document.querySelectorAll('.validacao');
+  const mensagemInvalida = document.querySelector('.mensagem-invalida');
+  const alertaValid = document.querySelector('#alerta-valid');
+  if (alertaValid === null) {
+    for (let index = 0; index < camposDeInput.length; index += 1) {
+      if (camposDeInput[index].value === '') {
+        const alerta = document.createElement('p');
+        alerta.innerText = 'Campos inválidos!';
+        alerta.id = 'alerta-valid'
+        mensagemInvalida.appendChild(alerta);
+        valid = false
+        return;
+      } else {
+        valid = true;
+      }
+    }
+  }
+}
+
+const btn = document.getElementById('facebook-register');
+btn.addEventListener('click', validacaoDeCadastro);
+
+//
+
 function genderCustom() {
   const father = document.querySelector('.radio-div');
   const inputGender = document.querySelector('#gender-custom');
@@ -32,4 +60,47 @@ buttonMasculino.addEventListener('click', loopGender);
 const buttonPersonalizado = document.querySelector('#personalizado');
 buttonPersonalizado.addEventListener('click', genderCustom);
 
+function genderChecked() {
+  const genderValid = document.querySelectorAll('.validacao');
+  const gender = '';
+  for (let index = 5; index < genderValid.length; index += 1) {
+    if (genderValid[index].checked){
+      gender = genderValid[index].value
+    }
+  }
+  return gender;
+}
 
+function showInfo(event) {
+  event.preventDefault();
+  const inputValid = document.querySelectorAll('.validacao');
+  const firstName = inputValid[0].value;
+  const lastName = inputValid[1].value;
+  const emailAndPhone = inputValid[2].value;
+  const date = inputValid[4].value;
+  let gender = '';
+
+  for (let index = 5; index < inputValid.length; index += 1) {
+    if (inputValid[index].checked){
+      gender = inputValid[index].value;
+    }
+  }
+  if (valid === true) {
+    const rightInfo = document.querySelector('.right-content');
+    rightInfo.innerHTML = "";
+    const firstLastName = document.createElement('p');
+    firstLastName.innerHTML = `Olá, ${firstName} ${lastName}`;
+    rightInfo.appendChild(firstLastName);
+    const emailValid = document.createElement('p');
+    emailValid.innerHTML = emailAndPhone;
+    rightInfo.appendChild(emailValid);
+    const dateValid = document.createElement('p');
+    dateValid.innerHTML = date;
+    rightInfo.appendChild(dateValid);
+    const genderValid = document.createElement('p');
+    genderValid.innerHTML = gender;
+    rightInfo.appendChild(genderValid);
+  }
+}
+
+btn.addEventListener('click', showInfo);

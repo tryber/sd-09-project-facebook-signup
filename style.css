@@ -41,6 +41,10 @@ body {
   display: flex;
 }
 
+.mensagem-invalida {
+  color: red;
+}
+
 .radios-buttons {
   display: flex;
 }

@@ -41,39 +41,41 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
+
       <form action="">
         <div class="first-last-name">
-          <input type="text" name="firstname" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
+          <input class="validacao" type="text" name="firstname" placeholder="Nome">
+          <input class="validacao" type="text" name="lastname" placeholder="Sobrenome">
         </div>
 
-        <input type="text" name="phone_email" placeholder="Celular ou email" required>
-        <input type="password" name="password" placeholder="Nova senha" required>
+        <input class="validacao" type="text" name="phone_email" placeholder="Celular ou email">
+        <input class="validacao" type="password" name="password" placeholder="Nova senha">
 
         <div class="birthdate-div">
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
+          <input class="validacao" type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
         </div>
 
         <div class="radio-div">
           <label id="label-gender" for="">Gênero</label>
           <div class="radios-buttons">
             <label for="feminino">
-              <input type="radio" name="gender" id="feminino" value="Feminino" required>
+              <input type="radio" class="validacao" name="gender" id="feminino" value="Feminino">
               Feminino
             </label>
             <label for="masculino">
-              <input type="radio" name="gender" id="masculino" value="Masculino" required>
+              <input type="radio" class="validacao" name="gender" id="masculino" value="Masculino">
               Masculino
             </label>
             <label for="personalizado">
-              <input type="radio" name="gender" id="personalizado" value="Personalizado" required>
+              <input type="radio" class="validacao" name="gender" id="personalizado" value="Personalizado">
               Personalizado
             </label>
           </div>
         </div>
 
         <button id="facebook-register" type="submit">Cadastre-se</button>
+        <div class="mensagem-invalida"></div>
       </form>
     </div>
   </main>
