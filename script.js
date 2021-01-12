@@ -6,6 +6,8 @@ const customGender = document.getElementById('custom');
 const registerForm = document.querySelector('.new-account');
 const maleGender = document.getElementById('male');
 const femaleGender = document.getElementById('female');
+const allInputs = document.querySelectorAll('.input');
+const invalidMessage = document.createElement('p');
 
 loginButton.addEventListener('click', (evt) => {
   evt.preventDefault();
@@ -14,6 +16,7 @@ loginButton.addEventListener('click', (evt) => {
 
 registerButton.addEventListener('click', (evt) => {
   evt.preventDefault();
+  checkValidity();
 });
 
 customGender.addEventListener('click', () => {
@@ -27,3 +30,12 @@ femaleGender.addEventListener('click', () => {
 maleGender.addEventListener('click', () => {
   customGenderInput.style.display = 'none';
 })
+
+function checkValidity() {
+  for (let index = 0; index < allInputs.length; index += 1) {
+    if (!allInputs[index].checkValidity()) {
+      invalidMessage.innerText = 'Campos inválidos';
+      return registerForm.appendChild(invalidMessage);
+    }
+  }
+}
