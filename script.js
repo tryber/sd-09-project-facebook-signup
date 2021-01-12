@@ -26,7 +26,7 @@ function personalData() {
   rightContent.innerHTML = '';
 
   const hello = document.createElement('p');
-  hello.innerText = `Olá ${firstname} ${lastname}`;
+  hello.innerText = `Olá, ${firstname} ${lastname}`;
   rightContent.appendChild(hello);
 
   for (let index = 2; index < dataContent.length; index += 1) {
