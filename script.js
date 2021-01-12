@@ -3,6 +3,13 @@ function alerta() {
   alert(email.value);
 }
 
+function removeInputGender() {
+  const div = document.querySelector('#genero');
+  while (div.firstChild) {
+    div.removeChild(div.firstChild);
+  }
+}
+
 function validacaoInput() {
   let status = false;
   const input = document.querySelectorAll('.input');
@@ -35,6 +42,7 @@ function validacao(event) {
 }
 
 function generoPersonaliza() {
+  removeInputGender();
   const input = document.createElement('input');
   input.placeholder = 'Gênero (opcional)';
   input.name = 'gender-custom';
@@ -48,6 +56,10 @@ window.onload = function () {
   btn.addEventListener('click', alerta);
   const btnCadastro = document.querySelector('#facebook-register');
   btnCadastro.addEventListener('click', validacao);
-  const radio = document.querySelector('#perso');
-  radio.addEventListener('click', generoPersonaliza);
+  const radioPerso = document.querySelector('#perso');
+  radioPerso.addEventListener('click', generoPersonaliza);
+  const radioFem = document.querySelector('#fem');
+  radioFem.addEventListener('click', removeInputGender);
+  const radioMasc = document.querySelector('#masc');
+  radioMasc.addEventListener('click', removeInputGender);
 };
