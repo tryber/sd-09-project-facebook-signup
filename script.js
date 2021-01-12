@@ -52,16 +52,16 @@ function customGenderVerify() {
 
 function customGender(event) {
   const radios = document.querySelector('.radios');
-    if (event.target.value === 'Personalizado') {
-      customGenderVerify();
-      const element = document.createElement('input');
-      element.name = 'gender-custom';
-      element.id = 'gender-custom';
-      element.placeholder = 'Gênero';
-      radios.appendChild(element);
-    } else {
-      customGenderVerify();
-    }
+  if (event.target.value === 'Personalizado') {
+    customGenderVerify();
+    const element = document.createElement('input');
+    element.name = 'gender-custom';
+    element.id = 'gender-custom';
+    element.placeholder = 'Gênero';
+    radios.appendChild(element);
+  } else {
+    customGenderVerify();
+  }
 }
 
 const radios = document.querySelectorAll('.radios input');
