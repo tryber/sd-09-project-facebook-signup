@@ -39,18 +39,20 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" class="cadastro">
         <section class="nomeSobrenome">
-        <input type="text"  name="firstname" placeholder="Nome"  required>
-        <input type="text"  name="lastname" placeholder="Sobrenome" required>
+          <input type="text"  name="firstname" placeholder="Nome"  required>
+          <input type="text"  name="lastname" placeholder="Sobrenome" required>
         </section>
         <input type="text"  name="phone_email"  placeholder="Celular ou email"  required>
         <input type="password"  name="password" placeholder="Nova senha"  required>
-        <label id="label-birthdate" class="nascimento">Data de Nascimento</label>
+
+        <!-- Troquei o "id" por "for" no label abaixo para fazer o vinculo da label com o input. Repeti a operacao nos outros labels-->
+        <label for="label-birthday" class="nascimento">Data de Nascimento</label>
         <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa" required>
-        <label id="label-gender" class="labelGender">Gênero</label>
+        <label for="label-gender" class="labelGender">Gênero</label>
         <div class="radioButtons">
-        <input type="radio" name="Feminino" value="gender">Feminino
-        <input type="radio" value="gender"  name="Masculino">Masculino
-        <input type="radio" value="gender"  name="Personalizado">Personalizado
+          <input type="radio" name="Feminino" value="gender">Feminino
+          <input type="radio" value="gender"  name="Masculino">Masculino
+          <input type="radio" value="gender"  name="Personalizado">Personalizado
         </div>
         <input type="text" hidden name="gender-custom" id="genderText" placeholder="Gênero (opcional)">
         <button type="submit" id="facebook-register">Cadastre-se</button>
