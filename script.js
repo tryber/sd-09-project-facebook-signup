@@ -7,19 +7,14 @@ buttonLogin.addEventListener('click', function () {
 const facebookRegister = document.querySelector('#facebook-register');
 const inputs = document.querySelectorAll('input');
 const inputValidation = document.querySelector('#input-validation');
+let valido = true;
 facebookRegister.addEventListener('click', function (event) {
   event.preventDefault();
   for (let index = 2; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
       inputs[index].value = 'Campos inválidos';
       inputValidation.innerText = 'Campos inválidos';
-    } else {
-      const rightContent = document.querySelector('.right-content');
-      const nome = inputs[2].value;
-      const sobrenome = inputs[3].value;
-      const emailTelefone = inputs[4].value;
-      const dataNascimento = inputs[6].value;
-      rightContent.innerText = `Olá, ${nome} ${sobrenome}\n${emailTelefone}\n${dataNascimento}`;
+      valido = false;
     }
   }
 });
@@ -31,4 +26,25 @@ personalizado.addEventListener('click', function () {
   input.name = 'gender-custom';
   input.placeholder = 'Gênero (opcional)';
   customGender.appendChild(input);
+});
+
+facebookRegister.addEventListener('click', function () {
+  for (let index = 2; index < inputs.length; index += 1) {
+    if (valido){
+      const rightContent = document.querySelector('.right-content');
+      const nome = inputs[2].value;
+      const sobrenome = inputs[3].value;
+      const emailTelefone = inputs[4].value;
+      const dataNascimento = inputs[6].value;
+      let genero;
+      if (inputs[7].checked) {
+        genero = inputs[7].value;
+      } else if (inputs[8].checked) {
+        genero = inputs[8].value;
+      } else {
+        genero = inputs[9].value
+      } 
+      rightContent.innerText = `Olá, ${nome} ${sobrenome}\n${emailTelefone}\n${dataNascimento}\n${genero}`;
+    }
+  }
 });
