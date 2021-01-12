@@ -53,8 +53,8 @@ function validateAndRegister(event) {
     const rightContent = document.querySelector('.right-content');
     rightContent.innerHTML = `
     <p>Olá, ${nome} ${sobrenome}</p>
-    <p>Email ou Telefone: ${phoneEmail}</p>
-    <p>Data de nascimento: ${birthdate}</p>
+    <p>${phoneEmail}</p>
+    <p>${birthdate}</p>
     <p>Gênero: ${gender}</p>`;
   }
 }
