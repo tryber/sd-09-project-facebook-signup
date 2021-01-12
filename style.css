@@ -31,14 +31,22 @@
 
 .main-form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+  flex-direction: column;
+  padding: 8px 10px;
+}
+
+.form-content {
+width: 200px;
 }
 
 .register-name {
   display: flex;
   flex-direction: row;
+  padding: 8px 10px;
+}
+
+.phone-password {
+
 }
 
 .top-bar {
