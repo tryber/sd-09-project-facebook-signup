@@ -56,13 +56,15 @@ section {
   display: flex;
 }
 
+section input {
+  margin: 0.3em;
+}
+
 .fullname-input input {
   width: 50%;
 }
 
-section input {
-  margin: 0.3em;
-}
+
 
 .gender-input {
   margin: 0.5em 0;
