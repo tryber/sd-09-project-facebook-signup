@@ -66,14 +66,18 @@ function deleteDiv(div) {
   }
 }
 
+function validadeRadioInputChecked(input, registerData) {
+  if (input.checked) {
+    registerData.push(`${input.value}`);
+  }
+}
+
 function saveDataInput(registerInput) {
   const registerData = [];
   for (let index = 0; index < registerInput.length; index += 1) {
     switch (true) {
       case (registerInput[index].type === 'radio'):
-        if (registerInput[index].checked) {
-          registerData.push(`${registerInput[index].value}`);
-        }
+        validadeRadioInputChecked(registerInput[index], registerData);
         break;
       case (registerInput[index].name === 'firstname'):
         registerData.push(`Olá, ${registerInput[index].value} ${registerInput[index + 1].value}`);
