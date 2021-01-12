@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <img src="imgs/facebook-logo.png" class="facebook-logo">
+            <form action="" method="GET" class="facebook-login">
+                <div class="form-group">
+                    <label for="user-email-phone" class="user-email-phone-label" id="user-email-phone-label">Email ou telefone</label>
+                    <input type="text" class="user-email-phone" id="user-email-phone"></input>
+                </div>
+                <div class="form-group">
+                    <label for="user-password" class="user-password-label" id="user-password-label">Senha</label>
+                    <input type="text" class="user-password" id="user-password"></input>
+                    <a href="">Esqueceu a conta?</a>
+                </div>
+                <div class="form-control">
+                    <button class="button-login" id="button-login">Entrar</button>
+                </div>
+          </form>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="left-content">
+            <p id="facebook-slogan" class="slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img id="facebook-networking" src="imgs/networking.png">
+        </section>
+        <section class="right-content">
+            <h1>Abra uma conta</h1>
+            <p class="quick-easy">É rápido e fácil.</p>
+            <form action="" method="GET" class="form-container row">
+                <div class="form-wrapper col-sm-6">
+                    <input type="text" name="firstname" placeholder="Nome" class="form-control register-input">
+                </div>
+                <div class="form-wrapper col-sm-6">
+                    <input type="text" name="lastname" placeholder="Sobrenome" class="form-control register-input">
+                </div>
+                <div class="form-wrapper col-sm-12">
+                    <input type="text" name="phone_email" placeholder="Celular ou email" class="form-control register-input">
+                </div>
+                <div class="form-wrapper col-sm-12">
+                    <input type="password" name="password" placeholder="Nova senha" class="form-control register-input">
+                </div>
+                <div class="form-wrapper col-sm-12">
+                    <label id="label-birthdate" class="form-label">Data de nascimento</label>
+                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="form-control register-input">
+                </div>
+                <div class="row form-check-container">
+                    <label id="label-gender" class="form-label">Gênero</label>
+                    <div class="form-wrapper form-check col-sm-4">
+                        <input type="radio" id="gender-woman" name="gender" class="form-check-input register-input" value="Feminino">
+                        <label for="gender-woman" class="form-check-label">Feminino</label>
+                    </div>
+                    <div class="form-wrapper form-check col-sm-4">
+                        <input type="radio" id="gender-man" name="gender" class="form-check-input register-input" value="Masculino">
+                        <label for="gender-man" class="form-check-label">Masculino</label>
+                    </div>
+                    <div class="form-wrapper form-check col-sm-4">
+                        <input type="radio" id="gender-custom" name="gender" class="form-check-input register-input" value="Personalizado">
+                        <label for="gender-custom" class="form-check-label">Personalizado</label>
+                    </div>
+                    <div id="div-gender-custom"></div>
+                </div>
+                <div>
+                    <button type="submit" id="facebook-register" class="btn btn-success">Cadastre-se</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
