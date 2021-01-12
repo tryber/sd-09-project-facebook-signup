@@ -57,13 +57,13 @@ function showFormsValues() {
 }
 
 function validateAndRegister(event) {
+  event.preventDefault();
   const formInputs = document.querySelectorAll('.right-content input');
   let isTextValid = true;
   let isRadioChecked = false;
   isTextValid = validateText(formInputs);
   isRadioChecked = validateRadios(formInputs);
   if (!isTextValid || !isRadioChecked) {
-    event.preventDefault();
     const invalidFieldsParagraph = document.getElementById('invalid-fields');
     invalidFieldsParagraph.innerText = 'Campos inválidos';
   } else {
