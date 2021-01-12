@@ -1,14 +1,18 @@
+function checkAndChangeClassName(customGenderInput, gendersInput) {
+  if (gendersInput.checked) {
+    if (gendersInput.value === 'custom') {
+      customGenderInput[0].className = 'showed';
+    } else {
+      customGenderInput[0].className = 'hidden';
+    }
+  }
+}
+
 function verifySelectedGender() {
   const gendersInput = document.getElementsByName('gender');
   const customGenderInput = document.getElementsByName('gender-custom');
   for (let index = 0; index < gendersInput.length; index += 1) {
-    if (gendersInput[index].checked) {
-      if (gendersInput[index].value === 'custom') {
-        customGenderInput[0].className = 'showed';
-      } else {
-        customGenderInput[0].className = 'hidden';
-      }
-    }
+    checkAndChangeClassName(customGenderInput, gendersInput[index])
   }
 }
 
