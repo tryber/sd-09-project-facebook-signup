@@ -28,9 +28,10 @@ body {
 }
 
 .main-content {
-  background-color: #f0f2f5;
+  background-color: #dfe1ee;
   display: flex;
   justify-content: space-around;
+  height: 100vh;
 }
 
 .left-content {
@@ -91,11 +92,11 @@ body {
 }
 
 .submit {
-  background-color: #3b9928bb;
-  border: 1px solid #6d8255;  
+  background-color: #56953e;
+  border: 1px solid #6d8255;
   border-radius: 4px;
   color: white;
-  font: caption;  
-  height: 35px;  
+  font: caption;
+  height: 35px;
   width: 70%;
 }

@@ -1,19 +1,3 @@
-// const getChecked = document.querySelectorAll('.radioButtons input');
-
-// function displayGender() {
-//   if (getChecked[2].checked === true) {
-//     const getGender = document.getElementById('genderText');
-//     getGender.style.display = 'block';
-//   }
-// }
-
-// function listeners() {
-//   getChecked[2].addEventListener('click', displayGender);  
-// }
-
-// window.onload = function () {
-//   listeners();
-// };
 // function checkEmail() {
 //   const email = document.querySelector('.input-login');
 //   let insertedEmail = email.value;
