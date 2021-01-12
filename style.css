@@ -129,6 +129,8 @@ body {
   }
 
   .register-data {
-    justify-self: center;
+    background-color: greenyellow;
+    border: 0.4px solid gray;
+    padding: 5px;
   }
 }
