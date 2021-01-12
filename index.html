@@ -31,16 +31,16 @@
       </section>
       <section class="right-content">
         <h1>Abra uma conta</h1>
-        <p class="quick-easy">É rápido e fácil.</p>
+        <span class="quick-easy">É rápido e fácil.</span>
         <form action="#" method="POST" class="new-account right-content">
           <div class="nome-e-sobrenome">
-            <input type="text" name="firstname" placeholder="Nome" class="input" required>
-            <input type="text" name="lastname" placeholder="Sobrenome" class="input" required>
+            <input type="text" name="firstname" placeholder="Nome" class="input" id="first-name" required>
+            <input type="text" name="lastname" placeholder="Sobrenome" class="input" id="last-name" required>
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email" class="input" required>
+          <input type="text" name="phone_email" placeholder="Celular ou email" class="input" id="phone-email" required>
           <input type="password" name="password" placeholder="Nova senha" class="input" required>
-          <label id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" class="input" id="label-birthdate" placeholder="dd/mm/aaaa" required>
+          <label for="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" class="input" id="birthdate" placeholder="dd/mm/aaaa" required>
           <label id="label-gender" for="gender-custom">Gênero</label>
           <div class="row">
             <label for="female">Feminino</label>
