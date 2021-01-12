@@ -37,28 +37,26 @@
     </div>
 
     <div class="right-content">
-      <div class="title">
         <h1>Abra uma conta</h1>
-        <p class="quick-easy"><h6>É rápido e fácil.</h6></p>
-      </div>
-      <form action="" class="inputs-content">
+        <p class="quick-easy">É rápido e fácil.</p>
+      <form action="GET" class="inputs-content">
         <div class="row">
           <div class="col mb-3 pad-zero">
-            <input type="text" name="firstname" class="form-control" placeholder="Nome" aria-label="Nome">
+            <input type="text" name="firstname" class="form-control" placeholder="Nome" aria-label="Nome" required>
           </div>
           <div class="col mb-3 pad-zero">
-            <input type="text" name="lastname" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+            <input type="text" name="lastname" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome" required>
           </div>
           <div class="mb-3 pad-zero">
             <input type="text" name="phone_email" class="form-control" id="formGroupExampleInput"
-              placeholder="Celular ou email">
+              placeholder="Celular ou email" required>
           </div>
           <div class="mb-3 pad-zero">
-            <input type="password" name="password" class="form-control" id="formGroupExampleInput2" placeholder="Nova senha">
+            <input type="password" name="password" class="form-control" id="formGroupExampleInput2" placeholder="Nova senha" required>
           </div>
           <label class="row" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-          <label for="GET" class="row label-content" id="label-gender">Gênero</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+          <label for="" class="row label-content" id="label-gender">Gênero</label>
           <div class="radios">
             <input type="radio" name="gender" class="gender" id="Feminino" value="Feminino"><br>
             <label for="Feminino" aria-checked="true">Feminino</label>
