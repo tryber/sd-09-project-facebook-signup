@@ -41,9 +41,9 @@ body {
   border: none;
   color: white;
   flex-direction: column;
+  height: 20px;
   font-size: 10px;
   text-align: center;
-  height: 20px;
   width: 35px;
 }
 
