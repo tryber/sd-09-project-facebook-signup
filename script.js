@@ -7,12 +7,12 @@ const custom = document.querySelector('#custom-gender');
 const customGender = document.querySelector('#pers');
 
 customGender.addEventListener('click', function () {
-  if(customGender.classList.contains('checked')) {
+  if (customGender.classList.contains('checked')) {
     return;
-}
+  }
   const newGender = document.createElement('input');
   newGender.type = 'text';
   newGender.placeholder = 'Gênero (opcional)';
   custom.appendChild(newGender);
   customGender.classList = 'checked';
-})
+});
