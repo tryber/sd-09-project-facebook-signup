@@ -33,8 +33,7 @@ body {
 .form-group {
   color: white;
   display: flex;
-  flex-direction: column;
-  flex-flow: wrap;
+  flex-flow: column wrap;
   font-size: 12px;
   font-style: inherit;
   height: 40px;
