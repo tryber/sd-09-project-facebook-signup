@@ -49,8 +49,7 @@ body {
 }
 
 .full-name {
-  height: 20px;
-  width: 46.7%;
+  display: flex;
 }
 
 .header-input {
@@ -90,4 +89,10 @@ body {
 .others-data {
   height: 39px;
   width: 97%;
+}
+
+.gerder-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

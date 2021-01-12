@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook - entre ou cadastre-se</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="libs/bulma.min.css" />
   </head>
   <body>
     <header>
@@ -12,12 +13,24 @@
         <img class='facebook-logo' src=imgs/facebook-logo.png>
         <form class="facebook-login">
           <div class="form-group">
-            <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-            <input id="user-email-phone" class="header-input" type="text" required />
+            <label for="user-email-phone" id="user-email-phone-label"
+              >Email ou telefone</label
+            >
+            <input
+              id="user-email-phone"
+              class="header-input"
+              type="text"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="user-password" id="user-password-label">Senha</label>
-            <input id="user-password" class="header-input" type="password" required />
+            <input
+              id="user-password"
+              class="header-input"
+              type="password"
+              required
+            />
           </div>
           <div class="form-control">
             <button id="button-login" class="button-entrar">Entrar</button>
@@ -44,24 +57,25 @@
         <h1>Abra uma conta</h1>
         <div class="quick-easy">É rápido e fácil.</div>
         <form action="" method="GET">
-          <input
-            class="full-name"
-            type="text"
-            name="firstname"
-            placeholder="Nome"
-            required
-          />
+          <div class="full-name">
+            <input
+              class="input is-small"
+              type="text"
+              name="firstname"
+              placeholder="Nome"
+              required
+            />
 
+            <input
+              class="input is-small"
+              type="text"
+              name="lastname"
+              placeholder="Sobrenome"
+              required
+            />
+          </div>
           <input
-            class="full-name"
-            type="text"
-            name="lastname"
-            placeholder="Sobrenome"
-            required
-          />
-
-          <input
-            class="others-data"
+            class="input is-small"
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
@@ -69,7 +83,7 @@
           />
 
           <input
-            class="others-data"
+            class="input is-small"
             type="password"
             name="password"
             placeholder="Nova senha"
@@ -79,6 +93,7 @@
           <label id="label-birthdate">Data de nascimento</label>
           <div>
             <input
+              class="input is-small"
               type="text"
               name="birthdate"
               placeholder="dd/mm/aaaa"
@@ -86,7 +101,7 @@
             />
           </div>
           <label id="label-gender">Gênero</label>
-          <div>
+          <div class="gerder-control">
             <label>
               <input type="radio" name="gender" value="female" required />
               Feminino
@@ -96,19 +111,25 @@
               Masculino
             </label>
             <label>
-              <input type="radio" name="gender" value="others" class="gender-box" required />
+              <input
+                type="radio"
+                name="gender"
+                value="others"
+                class="gender-box"
+                required
+              />
               Personalizado
             </label>
-            <label>
-              <input
+          </div>
+          <div>
+            <input
               class="other-gender"
               type="text"
               name="gender-custom"
               placeholder="Gênero (opcional)"
-              />
-            </label>
+            />
           </div>
-          <button type="submit" id="facebook-register">Cadastre-se</button>
+          <button class="button is-success" type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>
     </main>
