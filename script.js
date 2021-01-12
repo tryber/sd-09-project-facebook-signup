@@ -36,7 +36,7 @@ function createCustominput() {
   custoInput.addEventListener('click', function () {
     customGender.name = 'gender-custom';
     customGender.placeholder = 'Gênero (opcional)';
-    registerForm.insertBefore(customGender,registerForm.children[11]);
+    registerForm.insertBefore(customGender, registerForm.children[11]);
   });
 }
 createCustominput();
