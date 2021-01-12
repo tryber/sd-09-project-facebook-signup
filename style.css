@@ -27,6 +27,7 @@ p {
 
 .form-control {
   align-self: flex-end;
+  display: flex;
 }
 
 .form-group {
