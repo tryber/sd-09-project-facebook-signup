@@ -9,12 +9,17 @@ function logIn() {
 logIn();
 
 function genderInput() {
-  const flagGenderOption = document.querySelector('.gender-box');
-  const otherGenderOption = document.querySelector('.other-gender');
+  const gerderListner = document.querySelector('.gender-control');
 
-  flagGenderOption.addEventListener('click', function () {
-    otherGenderOption.style.display = 'block';
-  });
-}
+  gerderListner.addEventListener('click', function () {
+    const radioValue = document.querySelector('input[name="gender"]:checked').value;
+
+    if (radioValue === 'Personalizado') {
+      document.querySelector('.other-gender').style.display = 'block';
+    } else {
+      document.querySelector('.other-gender').style.display = 'none';
+    }
+  })
+};
 
 genderInput();

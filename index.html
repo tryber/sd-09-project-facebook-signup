@@ -101,41 +101,21 @@
             />
           </div>
           <label id="label-gender">Gênero</label>
-          <div class="gerder-control">
-            <input type="radio" name="gender" value="female" required />
-            Feminino
-            <input
-              id="male-gender"
-              type="radio"
-              name="gender"
-              value="male"
-              required
-            />
-            Masculino
-            <input
-              type="radio"
-              name="gender"
-              value="others"
-              class="gender-box"
-              required
-            />
-            Personalizado
+          <div class="gender-control">
+            <input id="female" type="radio" name="gender" value="Feminino" required />
+            <label for="female">Feminino</label>
+            <input id="male" type="radio" name="gender" value="Masculino" required />
+            <label for="male">Masculino</label>
+            <input id="other" type="radio" name="gender" value="Personalizado" required />
+            <label for="other">Personalizado</label>
           </div>
-          <div>
             <input
               class="other-gender"
               type="text"
               name="gender-custom"
               placeholder="Gênero (opcional)"
             />
-          </div>
-          <button
-            id="facebook-register"
-            class="button is-success"
-            type="submit"
-          >
-            Cadastre-se
-          </button>
+          <button id="facebook-register" class="button is-success" type="submit">Cadastre-se</button>
         </form>
       </div>
     </main>
