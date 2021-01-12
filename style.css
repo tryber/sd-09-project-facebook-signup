@@ -1,13 +1,9 @@
-* {
-  margin: 0;
-}
-
 .top-bar {
   background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-between;
   color: white;
+  display: flex;
   height: 50px;
+  justify-content: space-between;
 }
 
 .facebook-login {
@@ -28,16 +24,17 @@
 
 .formInput {
   background-color: white;
-  border-radius: 0px;
-  border: 0px;
-  margin-right: 5px;
+  border-radius: 0;
+  border: 0;
   font-family: arial, sans-serif;
   font-size: 15px;
-  padding: 0px;
+  margin-right: 5;
+  padding: 0;
 }
 
 body {
   font-family: lucida, tahoma, verdana, arial, sans-serif;
+  margin: 0;
 }
 
 .main-content {
