@@ -56,8 +56,8 @@ h1 {
 
 .right-content {
   display: flex;
-  flex-flow: column;
   flex-basis: 400px;
+  flex-flow: column;
 }
 
 .quick-easy {
