@@ -12,7 +12,7 @@ function replaceContainer(elementos) {
 
   // adcionar um novo elemento texto para visualizar os dados
   const text = document.createElement('span');
-  text.innerText = `Olá, ${elementos.firstname} ${elementos.lastname}`;
+  text.innerText = `Olá, ${elementos.firstname} ${elementos.lastname} ${elementos.phone_email} ${elementos.birthdate} ${elementos.gender}`;
   document.querySelector('.right-content').append(text);
 }
 
