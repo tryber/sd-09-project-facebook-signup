@@ -6,6 +6,27 @@ function alertInput() {
 const buttonLogin = document.querySelector('#button-login');
 buttonLogin.addEventListener('click', alertInput);
 
+// Requisito 18
+
+function validacaoDeCadastro() {
+  const camposDeInput = document.querySelectorAll('.validacao');
+  const mensagemInvalida = document.querySelector('.mensagem-invalida');
+
+  for (let index = 0; index < camposDeInput.length; index += 1) {
+    if (camposDeInput[index].value === '') {
+      const alerta = document.createElement('p');
+      alerta.innerText = 'Campos inválidos!';
+      mensagemInvalida.appendChild(alerta);
+      return;
+    }
+  }
+}
+
+const btn = document.getElementById('facebook-register');
+btn.addEventListener('click', validacaoDeCadastro);
+
+//
+
 function genderCustom() {
   const father = document.querySelector('.radio-div');
   const inputGender = document.querySelector('#gender-custom');

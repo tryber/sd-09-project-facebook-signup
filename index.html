@@ -36,22 +36,24 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
+
       <form action="">
+        <div class="mensagem-invalida"></div>
         <div class="first-last-name">
-          <input type="text" name="firstname" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
+          <input class="validacao" type="text" name="firstname" placeholder="Nome">
+          <input class="validacao" type="text" name="lastname" placeholder="Sobrenome">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" required>
-        <input type="password" name="password" placeholder="Nova senha" required>
+        <input class="validacao" type="text" name="phone_email" placeholder="Celular ou email">
+        <input class="validacao" type="password" name="password" placeholder="Nova senha">
         <div class="birthdate-div">
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
+          <input class="validacao" type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
         </div>
         <div class="radio-div">
           <label id="label-gender" for="">Gênero</label>
           <div class="radios-buttons">
             <label for="feminino">
-              <input type="radio" name="gender" id="feminino" value="Feminino" required>
+              <input type="radio" name="gender" id="feminino" value="Feminino" checked>
               Feminino
             </label>
             <label for="masculino">
