@@ -9,6 +9,13 @@ buttonEntrar.addEventListener('click', (event) => {
   alert(emailOrPhone);
 });
 
+function deleteParagraph(container) {
+  const paragraph = document.querySelector('#validation-error');
+  if (paragraph !== null) {
+    container.removeChild(paragraph);
+  }
+}
+
 function createParagraph() {
   const container = document.querySelector('.form-container');
   const paragraph = document.createElement('p');
@@ -16,13 +23,6 @@ function createParagraph() {
   container.appendChild(paragraph);
   paragraph.innerText = 'Campos inválidos';
   paragraph.id = 'validation-error';
-}
-
-function deleteParagraph(container) {
-  const paragraph = document.querySelector('#validation-error');
-  if (paragraph !== null) {
-    container.removeChild(paragraph);
-  }
 }
 
 registerButton.addEventListener('click', (event) => {
@@ -41,6 +41,5 @@ registerButton.addEventListener('click', (event) => {
   }
   if (cont >= 3) {
     createParagraph();
-    return;
   }
 });
