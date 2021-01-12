@@ -61,3 +61,7 @@ body {
 .form-register > input:first-child , .form-register > input:nth-child( 2 ) {
   width: 50%;
 }
+
+.hidden {
+  display: none;
+}

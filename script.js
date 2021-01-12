@@ -37,6 +37,8 @@ function validate(event) {
   if (errorMsg > 0) {
     document.querySelector('.form-register p').innerText = 'Campos inválidos';
     errorMsg = 0;
+  } else {
+    writeValues();
   }
 }
 
@@ -67,4 +69,18 @@ function customGender(event) {
 const radios = document.querySelectorAll('.radios input');
 for (let index = 0; index < radios.length; index += 1) {
   radios[index].addEventListener('click', customGender);
+}
+
+function writeValues() {
+  const hidden = document.querySelector('#hidden');
+  hidden.classList.toggle('hidden');
+  const input = document.querySelectorAll('.form-register input');
+  const writeValues = document.querySelector('.write-values');
+  writeValues.innerText = 'Olá,';
+  for (let index = 0; index < input.length; index += 1) {
+    if (index === 3 || (index > 4 && !input[index].checked)) {
+      continue;
+    }
+    writeValues.innerText += ` ${input[index].value}`;
+  }
 }
