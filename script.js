@@ -9,40 +9,28 @@ function verify (){
 }
 
 function validacao (event){
-  let status = false;
-  if(document.getElementById('name').value === ''){
-    verify();
+  let status1 = false;
+  let status2 = false;
+  const input = document.querySelectorAll('.input');
+  for (let index = 0; index < input.length; index += 1) {
+    if (input[index].value === '') {
+      status1 = true;
+    }
   }
 
-  if( document.getElementById('lastname').value === ''){
-    verify();
-  }
-
-  if( document.getElementById('phonemail').value === ''){
-    verify();
-  }
-
-  if( document.getElementById('senha').value === ''){
-    verify();
-  }
-
-  if( document.getElementById('nascimento').value === ''){
-    verify();
-  }
-  
   if (document.getElementById('fem').checked) {
-    status = true;
+    status2 = true;
   }
 
   if (document.getElementById('masc').checked) {
-    status = true;
+    status2 = true;
   }
 
   if (document.getElementById('perso').checked) {
-    status = true;
+    status2 = true;
   }
-
-  if (status === false) {
+  
+  if (status1 === true || status2 === false) {
     verify();
   }
 }
