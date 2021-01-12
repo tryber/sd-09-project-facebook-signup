@@ -43,11 +43,54 @@ function isGenderInputChecked() {
   return isChecked;
 }
 
+function createHelloUserElement() {
+  const userFirstName = document.querySelector('#firstname').value;
+  const userLastName = document.querySelector('#lastname').value;
+  const helloPhrase = document.createElement('p');
+  helloPhrase.innerText = `Hello, ${userFirstName} ${userLastName}`;
+  return helloPhrase;
+}
+
+function clearContainer(container) {
+  while (container.childElementCount > 0) {
+    container.removeChild(container.lastChild);
+  }
+}
+
+function createNewPContent(input) {
+  const newP = document.createElement('p');
+  if (input.type === 'text') {
+    newP.innerText = input.value;
+  } else if (input.type === 'radio' && input.checked) {
+    newP.innerText = input.value;
+  }
+  return newP;
+}
+
+function getFieldsContent() {
+  const formInfo = [createHelloUserElement()];
+  const inputs = document.querySelectorAll('.right-content input');
+  for (let index = 2; index < inputs.length; index += 1) {
+    const input = inputs[index];
+    formInfo.push(createNewPContent(input));
+  }
+  return formInfo;
+}
+
+function showUserData() {
+  fieldsContent = getFieldsContent();
+  const rightContainer = document.querySelector('.right-content');
+  clearContainer(rightContainer);
+  for (let index in fieldsContent) {
+    rightContainer.appendChild(fieldsContent[index]);
+  }
+}
+
 function checkFields() {
   const signUpButton = document.querySelector('#facebook-register');
   signUpButton.addEventListener('click', function (event) {
+    event.preventDefault();
     if (isTextInputEmpty() || isPasswordInputEmpty() || !isGenderInputChecked()) {
-      event.preventDefault();
       if (!document.querySelector('.form-alert')) {
         const signUpForm = document.querySelector('.signup-form');
         const alertText = document.createElement('p');
@@ -55,6 +98,8 @@ function checkFields() {
         alertText.className = 'form-alert';
         signUpForm.prepend(alertText);
       }
+    } else {
+      showUserData();
     }
   });
 }
