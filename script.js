@@ -8,7 +8,7 @@ function falert(event) {
 button.addEventListener('click', falert);
 
 function createP() {
-  const newP = document.querySelector('.right-content');
+  const newP = document.querySelector('.form');
   const newP2 = document.createElement('p');
   const newP2Text = 'Campos inválidos';
   newP2.innerText = newP2Text;
