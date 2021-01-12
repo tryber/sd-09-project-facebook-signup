@@ -46,7 +46,7 @@ btnCadastre.addEventListener('click', validInput);
 
 const rdoPerso = document.getElementById('personalizado');
 function inputTxtPerso() {
-  const rdoPerso2 = document.getElementById('personalizado');
+  const rdoPerso2 = document.querySelector('.radios');
   const rdoPersoNew = document.createElement('input');
   const rdoPersoNewName = 'gender-custom';
   const rdoPersoNewPh = 'Gênero (opcional)';
