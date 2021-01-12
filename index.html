@@ -27,7 +27,7 @@
   <main class="main-content">
     <section class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img id="facebook-slogan" src="imgs/networking.png">
+      <img id="facebook-networking" src="imgs/networking.png">
     </section>
     <section class="right-content">
       <h1>Abra uma conta</h1>
@@ -37,23 +37,16 @@
         <input class="small-input" type="text" name="lastname" placeholder="Sobrenome">
         <input class="full-width-input" type="text" name="phone_email" placeholder="Celular ou email">
         <input class="full-width-input" type="password" name="password" placeholder="Nova senha">
-        <label> Data de nascimento
-          <input id="label-birthdate" class="full-width-input" type="text" name="birthdate" placeholder="dd/mm/aaaa">
-        </label>
+        <label id="label-birthdate">Data de nascimento</label>
+        <input class="full-width-input" type="text" name="birthdate" placeholder="dd/mm/aaaa">
         <label id="label-gender">Gênero</label>
         <div class="radio-buttons-form">
-          <label>
-            <input type="radio" name="gender">
-            Feminino
-          </label>
-          <label>
-            <input type="radio" name="gender">
-            Masculino
-          </label>
-          <label>
-            <input type="radio" name="gender">
-            Personalizado
-          </label>
+          <input type="radio" name="gender" value="Feminino">
+          <label>Feminino</label>
+          <input type="radio" name="gender" value="Masculino">
+          <label>Masculino</label>
+          <input type="radio" name="gender" value="Personalizado">
+          <label>Personalizado</label>
         </div>
         </form>
     </section>
