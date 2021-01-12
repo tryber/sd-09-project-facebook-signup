@@ -15,7 +15,7 @@ function inputTextValidation() {
       isTextValid = false;
       }
     }
-    return isTextValid;
+  return isTextValid;
 }
 
 function inputGenderValidation() {
