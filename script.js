@@ -13,6 +13,7 @@ function createInvalid() {
   const mensagemInvalida = document.querySelector('.form-main');
   const alerta = document.createElement('p');
   alerta.innerText = 'Campos inválidos!';
+  alerta.className = 'mensagem-invalida';
   alerta.id = 'alerta-valid';
   mensagemInvalida.appendChild(alerta);
 }
@@ -72,9 +73,9 @@ const buttonPersonalizado = document.querySelector('#personalizado');
 buttonPersonalizado.addEventListener('click', genderCustom);
 
 function genderChecked() {
-  const genderValid = document.querySelectorAll('.validacao');
+  const genderValid = document.querySelectorAll('.genders');
   let gender = '';
-  for (let index = 5; index < genderValid.length; index += 1) {
+  for (let index = 0; index < genderValid.length; index += 1) {
     if (genderValid[index].checked) {
       gender = genderValid[index].value;
     }
