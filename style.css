@@ -22,6 +22,13 @@ h1 {
   margin-left: 15%;
 }
 
+.facebook-slogan {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  width: 450px;
+}
+
 .form-box {
   display: flex;
   flex-direction: column;
@@ -53,13 +60,6 @@ h1 {
   flex-basis: 800px;
   margin-left: 15%;
   margin-top: 40px;
-}
-
-.left-content #facebook-slogan {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 29px;
-  width: 450px;
 }
 
 .main-content {
