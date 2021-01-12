@@ -27,17 +27,17 @@ function validInput(event) {
   const inputMasculinoValue = inputMasculino.checked;
   const inputPersonalizadoValue = inputPersonalizado.checked;
   if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '') {
-    const newP = document.querySelector('.right-content');
-    const newP2 = document.createElement('p');
-    const newP2Text = 'Campos inválidos';
-    newP2.innerText = newP2Text;
-    newP.appendChild(newP2);
+    createP();
   } else if (inputFemininoValue === false && inputMasculinoValue === false && inputPersonalizadoValue === false) {
-    const newP = document.querySelector('.right-content');
-    const newP2 = document.createElement('p');
-    const newP2Text = 'Campos inválidos';
-    newP2.innerText = newP2Text;
-    newP.appendChild(newP2);
+    createP();
   }
 }
 btnCadastre.addEventListener('click', validInput);
+
+function createP () {
+  const newP = document.querySelector('.right-content');
+    const newP2 = document.createElement('p');
+    const newP2Text = 'Campos inválidos';
+    newP2.innerText = newP2Text;
+    newP.appendChild(newP2);
+}
