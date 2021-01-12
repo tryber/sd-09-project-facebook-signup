@@ -16,17 +16,18 @@ function createMessageCamposInvalidos() {
 
 
 function validatorRadio(inputs) {
-
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].type === 'radio' && inputs[i].type === 'radio'.checked) {
-      return createMessageCamposInvalidos();
+      createMessageCamposInvalidos();
     }
   }
 }
 
 function validatorInputs(inputs) {
   for (let i = 0; i < inputs.length; i += 1) {
-    if (inputs[i].value === '') return createMessageCamposInvalidos();
+    if (inputs[i].value === '') {
+      createMessageCamposInvalidos();
+    }
   }
 }
 
