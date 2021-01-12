@@ -26,7 +26,7 @@ function customGender() {
     const verifyInputPlus = document.querySelectorAll('#input-gender-plus');
     if (verifyInputPlus.length === 0) {
       const inputGender = document.createElement('input');
-      inputGender.name = 'gender';
+      inputGender.name = 'gender-custom';
       inputGender.id = 'input-gender-plus';
       inputGender.placeholder = 'Gênero (opcional)';
       inputGender.className = 'form-subscrib-full-line';
