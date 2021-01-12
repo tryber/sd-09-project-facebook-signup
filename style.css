@@ -28,8 +28,8 @@ body {
   align-self: flex-end;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   margin-right: 10px;
-  justify-content: end;
 }
 
 .form-control {
