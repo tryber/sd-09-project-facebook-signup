@@ -53,6 +53,17 @@ body {
 
 .right-content {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   width: 300px;
+}
+
+.form-sign-in {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.names {
+    display: flex;
+    margin-bottom: 5px;
 }
