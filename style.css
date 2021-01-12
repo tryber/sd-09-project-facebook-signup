@@ -1,0 +1,68 @@
+.button {
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.container {
+  display: flex;
+}
+
+.facebook-login {
+  display: flex;
+  order: 1;
+}
+
+.facebook-logo {
+  order: 0;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-subscribe-half-line {
+  margin: 4px 2px;
+  padding: 1px;
+  width: 46%;
+}
+
+.form-subscrib-full-line {
+  margin: 4px 2px;
+  padding: 1px;
+  width: 100%;
+}
+
+.left-content {
+  flex-basis: 800px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right-content {
+  flex-basis: 300px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
