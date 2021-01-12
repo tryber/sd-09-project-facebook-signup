@@ -19,3 +19,27 @@ registerBtn.addEventListener('click', function (event) {
     }
   }
 });
+
+const per = document.querySelector('#per');
+const man = document.querySelector('#man');
+const fem = document.querySelector('#fem');
+const inputGender = document.querySelector('#input-gender');
+const fieldGender = document.createElement('input');
+let breakChecked = false;
+
+function perField(event) {
+  if (event.target.id === 'per' && !breakChecked) {
+    console.log('dentro ', event.target.id);
+    breakChecked = true;
+    fieldGender.name = 'gender-custom';
+    fieldGender.placeholder = 'Gênero (opcional)';
+    fieldGender.type = 'text';
+    inputGender.appendChild(fieldGender);
+  }else if (event.target.id !== 'per') {
+    breakChecked = false;
+    inputGender.removeChild(fieldGender);
+  }
+}
+per.addEventListener('click', perField);
+man.addEventListener('click', perField);
+fem.addEventListener('click', perField);
