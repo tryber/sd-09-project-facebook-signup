@@ -1,6 +1,6 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .top-bar {
@@ -26,18 +26,16 @@ body {
 .main-content {
   display: flex;
   justify-content: center;
-  
 }
 
 .left-content {
   width: 800px;
-  
 }
 
 .right-content {
-    width: 300px;
+  width: 300px;
 }
 
 .small {
-    width: 140px;
+  width: 140px;
 }
