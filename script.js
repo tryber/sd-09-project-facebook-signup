@@ -43,11 +43,13 @@ function isGenderInputChecked() {
   return isChecked;
 }
 
+// População de itens
 function createHelloUserElement() {
   const userFirstName = document.querySelector('#firstname').value;
   const userLastName = document.querySelector('#lastname').value;
-  const helloPhrase = document.createElement('p');
-  helloPhrase.innerText = `Hello, ${userFirstName} ${userLastName}`;
+  // const helloPhrase = document.createElement('p');
+  // helloPhrase.innerText = `Hello, ${userFirstName} ${userLastName}`;
+  helloPhrase = `Hello, ${userFirstName} ${userLastName}`;
   return helloPhrase;
 }
 
@@ -58,11 +60,14 @@ function clearContainer(container) {
 }
 
 function createNewPContent(input) {
-  const newP = document.createElement('p');
+  // const newP = document.createElement('p');
+  let newP;
   if (input.type === 'text') {
-    newP.innerText = input.value;
+    // newP.innerText = input.value;
+    newP = input.value;
   } else if (input.type === 'radio' && input.checked) {
-    newP.innerText = input.value;
+    // newP.innerText = input.value;
+    newP = input.value;
   }
   return newP;
 }
@@ -81,9 +86,11 @@ function showUserData() {
   const fieldsContent = getFieldsContent();
   const rightContainer = document.querySelector('.right-content');
   clearContainer(rightContainer);
-  for (let index = 0; index < fieldsContent.length; index += 1) {
-    rightContainer.appendChild(fieldsContent[index]);
-  }
+  newFieldsContent = fieldsContent.join(' ');
+  rightContainer.innerText = newFieldsContent;
+  // for (let index = 0; index < fieldsContent.length; index += 1) {
+  //   rightContainer.appendChild(fieldsContent[index]);
+  // }
 }
 
 function checkFields() {
