@@ -22,4 +22,4 @@ personalizado.addEventListener('click', function () {
   input.name = 'gender-custom';
   input.placeholder = 'Gênero (opcional)';
   customGender.appendChild(input);
-})
+});
