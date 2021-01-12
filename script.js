@@ -14,12 +14,12 @@ function validacao(event) {
   }
 
   const radio = document.querySelectorAll('.radio');
-  for (let index = 0; index < radio.length; index +=1 ) {
+  for (let index = 0; index < radio.length; index += 1) {
     if (radio[index].checked) {
-      status2 =  true;
+      status2 = true;
     }
   }
-  
+
   if (status1 === true || status2 === false) {
     alert('Campos inválidos');
     event.preventDefault();
