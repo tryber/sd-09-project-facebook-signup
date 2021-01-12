@@ -14,7 +14,7 @@ function stopDefault(event) {
 const validateCamps = document.querySelectorAll('.cadastro input');
 function registerValidate() {
   for (let index = 0; index < validateCamps.length; index += 1) {
-    if (validateCamps[index].value === '') {      
+    if (validateCamps[index].value === '') {
       validateCamps[index].value = 'Campos inválidos';
     }
   }
