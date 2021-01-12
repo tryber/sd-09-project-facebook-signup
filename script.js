@@ -46,13 +46,13 @@ function showFormsValues() {
   p.innerText = `Olá, ${nome} ${sobrenome}`;
   rightContent.appendChild(p);
   p = document.createElement('p');
-  p.innerText = `Email ou Telefone: ${phoneEmail}`;
+  p.innerText = phoneEmail;
   rightContent.appendChild(p);
   p = document.createElement('p');
-  p.innerText = `Data de nascimento: ${birthdate}`;
+  p.innerText = birthdate;
   rightContent.appendChild(p);
   p = document.createElement('p');
-  p.innerText = `Gênero: ${gender}`;
+  p.innerText = gender;
   rightContent.appendChild(p);
 }
 
