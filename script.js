@@ -31,6 +31,24 @@ function allTextMade() {
   return isValide;
 }
 
+function setInfos() {
+  const content = document.querySelector('.right-content');
+  const text = document.querySelectorAll('.text');
+  const radio = document.querySelector('.inputRadio[type="radio"]:checked').value;
+  content.innerHTML = '';
+  const h2 = document.createElement('h2');
+  h2.innerText = `Olá, ${text[0].value} ${text[1].value}`;
+  content.appendChild(h2);
+  for (let index = 2; index < text.length; index += 1) {
+    const p = document.createElement('p');
+    p.innerText = text[index].value;
+    content.appendChild(p);
+  }
+  const p = document.createElement('p');
+  p.innerText = radio;
+  content.appendChild(p);
+}
+
 function isValidate(event) {
   event.preventDefault();
   if (!allTextMade() || !allRadioMade()) {
@@ -56,24 +74,6 @@ function genderFluid() {
       genderDiv.appendChild(input);
     }
   });
-}
-
-function setInfos() {
-  const content = document.querySelector('.right-content');
-  const text = document.querySelectorAll('.text');
-  const radio = document.querySelector('.inputRadio[type="radio"]:checked').value;
-  content.innerHTML = '';
-  const h2 = document.createElement('h2');
-  h2.innerText = `Olá, ${text[0].value} ${text[1].value}`;
-  content.appendChild(h2);
-  for (let index = 2; index < text.length; index += 1) {
-    const p = document.createElement('p');
-    p.innerText = text[index].value;
-    content.appendChild(p);
-  }
-  const p = document.createElement('p');
-  p.innerText = radio;
-  content.appendChild(p);
 }
 
 getLogin();
