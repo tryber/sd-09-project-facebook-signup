@@ -8,15 +8,23 @@ buttonEntrar.addEventListener('click', (event) => {
 });
 
 registerButton.addEventListener('click', (event) => {
-  const formContainer = document.getElementsByClassName('form-wrapper');
-  for (let index = 0; index < formContainer.length; index += 1) {
-    for (let index_2 = 0; index < formContainer[index].childNodes.length; index += 1) {
-      if (formContainer[index].childNodes[index].value !== undefined) {
-        if (formContainer[index].childNodes[index].value === ''){
-          alert('Campos inválidos');
-          event.preventDefault();
-        }
+  const registerInput = document.getElementsByClassName('register-input');
+  let cont = 0;
+  for (let index = 0; index < registerInput.length; index += 1) {
+    if (registerInput[index].type === 'radio') {
+      if (registerInput[index].checked === false) {
+        cont += 1;
+      }
+    } else {
+      if (registerInput[index].value === '') {
+        alert('Campos inválidos');
+        event.preventDefault();
+        return;
       }
     }
+  }
+  if (cont >= 3) {
+    alert('Campos inválidos');
+    event.preventDefault();
   }
 });
