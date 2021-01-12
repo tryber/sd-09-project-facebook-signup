@@ -15,17 +15,19 @@ function validacaoInput() {
 }
 
 function validacaoRadio() {
+  let status = false;
   const radio = document.querySelectorAll('.radio');
   for (let index = 0; index < radio.length; index += 1) {
     if (radio[index].checked) {
-      status2 = true;
+      status = true;
     }
   }
+  return status;
 }
 
 function validacao(event) {
-  let status1 = validacaoInput();
-  let status2 = validacaoRadio();
+  const status1 = validacaoInput();
+  const status2 = validacaoRadio();
   if (status1 === true || status2 === false) {
     alert('Campos inválidos');
     event.preventDefault();
