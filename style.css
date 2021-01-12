@@ -7,7 +7,7 @@
   color: rgb(144, 148, 156);
   font-size: 16px;
   font-weight: 600;
-  padding: 15px 0 5px 0;
+  padding: 15px 0 5px;
 }
 
 body {
@@ -86,7 +86,7 @@ body {
 
 .name-content {
   display: flex;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
 }
 
 .other-gender {
