@@ -1,12 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 10px 80px;
 }
 
 .facebook-login {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .form-group {
@@ -19,14 +27,31 @@
   align-self: flex-end;
 }
 
+.form-group input {
+  width: 90%;
+}
+
+main.main-content {
+  background-image: linear-gradient(white, rgb(204, 202, 202));
+}
+
 .main-content {
   background-image: linear-gradient(#FCFBFA, #CBD2E4 );
   display: flex;
   justify-content: center;
+  padding: 40px 20px;
 }
 
 .left-content {
+  display: flex;
+  flex-direction: column;
   width: 800px;
+  justify-content: space-between;
+}
+
+.left-content img {
+  margin-top: 30px;
+  width: 80%;
 }
 
 .right-content {
@@ -38,13 +63,44 @@ form aside {
   justify-content: space-between;
 }
 
+aside h1 {
+  font-size: 2rem;
+}
+
+aside h2 {
+  font-size: 1.3rem;
+}
+
+form aside {
+  margin-top: 20px;
+}
+
+.fullname input {
+  width: 45%;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+div input {
+  margin-top: 10px;
+  width: 100%;
+  align-self: center;
+}
+
+div label {
+  margin-top: 10px;
+}
+
 div label , input {
   display: flex;
   flex-direction: column;
 }
 
-form aside input {
-  width: 130px;
+form label {
+  margin-top: 10px;
 }
 
 .label-gender {
