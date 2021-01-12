@@ -79,42 +79,42 @@ body {
   justify-content: center;
 }
 
-.nascimento, .labelGender{
+.nascimento, .labelGender {
   align-items: inherit;
+  color: #43464a8c;  
   display: flex;
   flex-direction: column;
   font-size: 1em;
-  margin-left: 2%;
-  color: #43464a8c;
   font-weight: 700;
+  margin-left: 2%;  
 }
 
 .nomeSobrenome {
   display: flex;
-}  
+}
 
 .nomeSobrenome input {
   width: 50%;
 }
 
 .cadastro input {
-  border-radius: 4px;
-  margin: 1%;
+  border-radius: 4px;  
   height: 2em;
+  margin: 1%;
 }
 
 .radioButtons {
   align-items: center;
   color: #000000ab;
   display: flex;
-  font-size: 3vh;
+  font-size: 2vh;
   font-weight: 600;
   justify-content: center;
 }
 
 .submit {
-  background-color: #56953e;
-  border: 1px solid #6d8255;
+  background-color: rgb(86, 147, 62);
+  border: 1px solid rgb(109, 130, 85);
   border-radius: 4px;
   color: white;
   font: caption;
@@ -122,7 +122,7 @@ body {
   font-weight: 700;
   height: 35px;
   margin-top: 3%;
-  text-shadow: 1.5px 1.5px #8080809e;
+  text-shadow: 1.5px 1.5px rgba(128, 128, 128, 0.62);
   width: 70%;
 }
 
@@ -131,7 +131,7 @@ body {
   font-size: large;
   font-weight: 700;
   margin-right: 7%;
-  text-shadow: 0.5px 0.5px #0000006b;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.42);
   width: 50%;
 }
 
@@ -141,22 +141,22 @@ body {
   width: 150px;
 }
 
-.right-content h1 {
+.right-content .h1 {
   color: #181846;
   font-size: 2em;
-  margin-bottom: 0%;
-  text-shadow: 1px 1px #ccccff;
+  margin-bottom: 0.1%;
+  text-shadow: 1px 1px rgb(204, 204, 255);
 }
 
 .right-content p {
   color: #181846;
   font-size: larger;
   margin-top: 1%;
-  text-shadow: 1px 1px #ccccff;
+  text-shadow: 1px 1px rgb(204, 204, 255);
 }
 
 .right-content input {
-  border-color: #9b9ac33b;
+  border-color: rgba(155, 154, 195, 0.231);
 }
 
 ::placeholder {
