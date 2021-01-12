@@ -63,6 +63,6 @@ form aside input {
   display: none;
 }
 
-input[ type = "radio" ] {
+.radio {
   display: inline;
 }
