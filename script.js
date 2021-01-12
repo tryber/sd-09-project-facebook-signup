@@ -7,24 +7,34 @@ function alertButton() {
   });
 }
 
-function validadeField() {
+function submitInfo() {
+  const rightContent = document.querySelector('.right-content');
+
+  while (rightContent.firstChild) {
+    rightContent.removeChild(rightContent.firstChild);
+  }
+}
+
+function validateField() {
   const buttonSubmit = document.querySelector('#facebook-register');
   buttonSubmit.addEventListener('click', function (event) {
     event.preventDefault();
     const fields = document.querySelectorAll('.register-form input');
-    let validateFields = false;
+    let validate = true;
     for (let index = 0; index < fields.length; index += 1) {
       const fieldValue = fields[index].value;
       if (fieldValue === '') {
-        validateFields = true;
+        validate = false;
       }
     }
 
-    if (validateFields === true) {
+    if (validate === false) {
       const form = document.querySelector('.register-form');
       const formWarning = document.createElement('p');
       formWarning.innerText = 'Campos inválidos';
       form.appendChild(formWarning);
+    } else {
+      submitInfo();
     }
   });
 }
@@ -45,5 +55,5 @@ function personalizeGenderField() {
 }
 
 personalizeGenderField();
-validadeField();
+validateField();
 alertButton();
