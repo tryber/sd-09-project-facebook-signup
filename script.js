@@ -61,7 +61,7 @@ function checkRadioButtons() {
 }
 
 function deleteDiv(div) {
-  while(div.firstChild) {
+  while (div.firstChild) {
     div.removeChild(div.lastChild);
   }
 }
@@ -73,13 +73,11 @@ function saveDataInput(registerInput) {
       if (registerInput[index].checked) {
         registerData.push(`${registerInput[index].value}`);
       }
-    } else if (registerInput[index].name !== 'password') {
-      if (registerInput[index].name === 'firstname') {
-        registerData.push(`Olá, ${registerInput[index].value} ${registerInput[index + 1].value}`);
-        index += 1;
-      } else {
-        registerData.push(`${registerInput[index].value}`);
-      }
+    } else if (registerInput[index].name === 'firstname') {
+      registerData.push(`Olá, ${registerInput[index].value} ${registerInput[index + 1].value}`);
+      index += 1;
+    } else if (registerInput[index].name !== 'password'){
+      registerData.push(`${registerInput[index].value}`);
     }
   }
   return registerData;
