@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 * {
+=======
+body {
+  box-sizing: border-box;
+>>>>>>> 7b1efa60d78acf5929e56fc443f9679efc3d6cbe
   margin: 0;
   padding: 0;
 }
@@ -10,7 +15,7 @@ html {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-login {
@@ -24,4 +29,30 @@ html {
 
 .form-control {
   align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullname {
+  display: flex;
+}
+
+.gender {
+  display: flex;
 }
