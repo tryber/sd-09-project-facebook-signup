@@ -69,5 +69,10 @@
 }
 
 .radio-in-line {
-  display: inline-flex;
+  display: flex;
+}
+
+.radio-column {
+  display: flex;
+  flex-direction: column;
 }
