@@ -26,17 +26,6 @@ body {
   width: 100px;
 }
 
-.form-botao {
-  background-color: rgb(80, 122, 207);
-  border: none;
-  color: white;
-  flex-direction: column;
-  font-size: 10px;
-  height: 20px;
-  text-align: center;
-  width: 35px;
-}
-
 .form-control {
   align-self: center;
 
