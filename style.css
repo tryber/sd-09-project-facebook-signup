@@ -34,7 +34,7 @@ body {
   align-self: flex-end;
   background-color: rgb(66, 103, 178);
   border: 0;
-  padding: 0;
+  padding-bottom: 4%;
 }
 
 .button-login {
@@ -43,14 +43,16 @@ body {
   cursor: pointer;
   font-size: 12px;
   font-weight: 700;
+
 }
 
 .user-email-phone-label , .user-password-label {
   color: white;
+  height: 16px;
 }
 
 .user-password , .user-email-phone {
-  height: 23px;
+  height: 19px;
   margin-right: 14px;
   padding: 3 3 4;
   width: 150px;
@@ -59,6 +61,7 @@ body {
 .form-group a {
   color: white;
   opacity: 0.9;
+  padding-top: 5px;
   text-decoration: none;
 }
 
