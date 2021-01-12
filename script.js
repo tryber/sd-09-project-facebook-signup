@@ -37,7 +37,7 @@ function validInput(event) {
   if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '') {
     createP();
   } else if (inputFemininoValue === false &&
-     inputMasculinoValue === false &&
+      inputMasculinoValue === false &&
       inputPersonalizadoValue === false) {
     createP();
   }
