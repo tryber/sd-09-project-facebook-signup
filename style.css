@@ -53,7 +53,13 @@ body {
 }
 
 .form-group a {
+  color: white;
+  opacity: 0.9;
   text-decoration: none;
+}
+
+.form-group a:hover {
+  opacity: 1;
 }
 
 /* Felipe */
