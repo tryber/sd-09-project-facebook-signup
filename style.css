@@ -103,7 +103,7 @@ body {
   color: white;
   font: caption;
   font-size: large;
-  font-weight: 22;
+  font-weight: normal;
   height: 35px;
   margin-top: 3%;
   text-shadow: 1.5px 1.5px #8080809e;
@@ -113,7 +113,7 @@ body {
 .slogan {
   color: rgb(66, 103, 178);
   font-size: large;
-  font-weight: bold;
+  font-weight: normal;
   text-shadow: 0.5px 0.5px #0000006b;
   width: 50%;
 }
