@@ -7,5 +7,5 @@ loginButton.addEventListener('click', (evt) => {
 });
 
 registerButton.addEventListener('click', (evt) => {
-  evt.preventDefault();
+
 });
