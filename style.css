@@ -40,7 +40,7 @@ body {
 @media screen and ( min-width : 780px ) {
 
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .form-line-1 {
@@ -66,7 +66,7 @@ body {
     width: 300px;
   }
 
-  .right-content h1 {
+  .title {
     color: rgb(50, 50, 50);
     font-size: 27px;
     font-weight: 700;
@@ -79,16 +79,16 @@ body {
   }
 
   .right-content input {
-    margin: 5px;
     height: 22px;
+    margin: 5px;
   }
 
   .left-content {
+    align-items: center;
+    border: 1px solid magenta;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 1px solid magenta;
     width: 800px;
   }
 
@@ -105,9 +105,9 @@ body {
   }
 
   .facebook-logo {
+    align-self: flex-end;
     border: 1px solid magenta;
     margin-left: 20%;
-    align-self: flex-end;
     width: 130px;
   }
 
