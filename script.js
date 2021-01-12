@@ -40,7 +40,7 @@ function changeContent(event) {
     const birthdate = document.querySelector('#birthdate-input').value;
     const gender = document.querySelector('input[type="radio"]:checked').value;
     const rightContent = document.querySelector('.right-content');
-    rightContent.innerHTML = `<br><br><h2>Olá, ${name} ${lastname}</h2><h3>${email}</h3><h3>${birthdate}</h3><h3>${gender}</h3>`;
+    rightContent.innerHTML = `Olá, ${name} ${lastname} ${email} ${birthdate} ${gender}`;
   }
 }
 
