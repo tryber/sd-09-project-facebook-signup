@@ -115,11 +115,11 @@ function removeCustomField() {
 }
 
 // Remove o campo de gênero personalizado ao selecionar "Masculino"
-const male = document.querySelector('#male')
+const male = document.querySelector('#male');
 male.addEventListener('click', () => removeCustomField());
 
 // Remove o campo de gênero personalizado ao selecionar "Feminino"
-const female = document.querySelector('#female')
+const female = document.querySelector('#female');
 female.addEventListener('click', () => removeCustomField());
 
 // Adiciona um campo caso sja selecionado o gênero personalizado
