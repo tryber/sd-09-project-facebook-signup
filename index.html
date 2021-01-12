@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- header -->
   <header class="top-bar">
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebook-logo">
     <form class="facebook-login" action="" method="get">
@@ -23,23 +24,27 @@
       </div>
     </form>
   </header>
+  <!-- Main content -->
   <div class="main-content">
      <div class="left-content">
-          <p id="facebook-slogan" >O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-           <img src="imgs/networking.png" id="facebook-networking" alt="networking">
-        </div>
-
-        <div class="right-content">
-          <h1>Abra uma conta</h1>
-          <h2 class="quick-easy">É rápido e fácil.</h2>
-          <form action="">
-            <div class="fullname">
-              <input type="text" name="firstname" placeholder="Nome">
-              <input type="text" name="lastname" placeholder="Sobrenome">
-            </div>
-            <input type="text" name="phone_email" placeholder="Celular ou email">
-            <input type="password" name="password" placeholder="Nova senha">
-          </form>
+        <p id="facebook-slogan" >O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <img src="imgs/networking.png" id="facebook-networking" alt="networking">
+      </div>
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <h2 class="quick-easy">É rápido e fácil.</h2>
+        <form action="" class="signup-form">
+          <!-- fullname -->
+          <div class="fullname">
+            <input type="text" name="firstname" placeholder="Nome">
+            <input type="text" name="lastname" placeholder="Sobrenome">
+          </div>
+          <!-- Phone-email e senha -->
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="password" name="password" placeholder="Nova senha">
+          <label for="" id="abel-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        </form>
         </div>
   </div>
   <script src="script.js" >
