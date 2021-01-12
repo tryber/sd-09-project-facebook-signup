@@ -58,7 +58,7 @@ body {
 }
 
 .main-content {
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, #d3d8e8);
   display: flex;
   flex-direction: row;
   font-size: small;
