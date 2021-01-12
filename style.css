@@ -41,23 +41,41 @@ body {
   width: 800px;
 }
 
+/* right-content */
 .right-content {
   width: 300px;
 }
 
 .open-account {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.right-content .name-lastname {
-  width: 117px;
+.open-account .name {
+  display: flex;
 }
 
-.right-content .pass_phone_email {
-  width: 100%;
+.open-account .phone_email {
+  display: flex;
+  flex-direction: column;
 }
 
-.font-size-gender {
-  font-size: 0.8rem;
+.open-account .password {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-account .birthdate {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-account .gender {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-account .gender div {
+  display: flex;
 }
