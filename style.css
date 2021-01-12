@@ -50,10 +50,6 @@ body {
   margin: 0 7px;
 }
 
-.hide-gender {
-  transform: translateX(0);
-}
-
 .left-content {
   width: 800px;
 }
@@ -71,6 +67,10 @@ body {
 .other-gender {
   transform: translateX(1000px);
   transition: 0.3s ease;
+}
+
+.hide-gender {
+  transform: translateX(0);
 }
 
 .right-content {
