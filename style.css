@@ -1,5 +1,5 @@
 .facebook-login {
-  align-items: baseline;
+  align-items: center;
   display: flex;
   justify-content: space-around;
 }
@@ -11,7 +11,7 @@
 .form-control {
   align-self: flex-end;
   display: flex;
-  padding: 39px 0;
+  padding: 19px 8px;
 }
 
 .form-group {
@@ -86,4 +86,8 @@
   display: flex;
   font-size: small;
   justify-content: center;
+}
+
+* {
+  margin: 0;
 }
