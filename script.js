@@ -42,3 +42,29 @@ function validate(event) {
 
 const btnRegister = document.querySelector('#facebook-register');
 btnRegister.addEventListener('click', validate);
+
+function customGenderVerify() {
+  const genderCustom = document.getElementsByName('gender-custom');
+  if (genderCustom[0] !== undefined) {
+    genderCustom[0].remove();
+  }
+}
+
+function customGender(event) {
+  const radios = document.querySelector('.radios');
+    if (event.target.value === 'Personalizado') {
+      customGenderVerify();
+      const element = document.createElement('input');
+      element.name = 'gender-custom';
+      element.id = 'gender-custom';
+      element.placeholder = 'Gênero';
+      radios.appendChild(element);
+    } else {
+      customGenderVerify();
+    }
+}
+
+const radios = document.querySelectorAll('.radios input');
+for (let index = 0; index < radios.length; index += 1) {
+  radios[index].addEventListener('click', customGender);
+}
