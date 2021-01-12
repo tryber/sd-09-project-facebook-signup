@@ -4,7 +4,6 @@ function alertEmailOrPhone() {
   inputEmailPhone.addEventListener('click', function () {
     alert(inputUserName.value);
   });
-
 }
 
 function validateForm() {
@@ -15,7 +14,7 @@ function validateForm() {
     if (!formSubscribe.checkValidity()) {
       formSubscribe.classList.add('nova');
     } else {
-    formSubscribe.classList.remove('nova');
+      formSubscribe.classList.remove('nova');
     }
   });
 }

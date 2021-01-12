@@ -57,10 +57,10 @@
   justify-content: space-around;
 }
 
-.nova::after {
+.nova:after {
   align-items: center;
-  display: flex;
   content: 'Campos inválidos';
+  display: flex;
   justify-content: center;
   padding: 10px;
   width: 100%;
