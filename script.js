@@ -7,11 +7,6 @@ const genderDiv = document.querySelector('#personalized-gender');
 
 const rightContent = document.querySelector('.right-content');
 
-function validateGenderDiv() {
-  if (genderDiv.innerHTML === '');
-  return true;
-}
-
 function insertWelcome() {
   const firstName = document.querySelector('input[name="firstname"]');
   const lastName = document.getElementsByName('lastname')[0];
@@ -30,11 +25,13 @@ function insertWelcome() {
 
 function checkEmptyFields() {
   let invalidField = 0;
+  const form = document.querySelector('#register-form');
   for (let index = 0; index < getInputs.length; index += 1) {
     if (getInputs[index].value === '') {
       invalidField += 1;
-      getInputs[index].innerHTML = 'Campos Invalidos';
-      getInputs[index].placeholder = 'Campos Invalidos';
+      form.innerHTML = 'Campos Invalidos';
+      // getInputs[index].innerHTML = 'Campos Invalidos';
+      // getInputs[index].placeholder = 'Campos Invalidos';
     }
   }
   if (invalidField === 0) {
@@ -46,14 +43,13 @@ getButton.addEventListener('click', function () {
   alert(document.querySelector('#user-email-phone').value);
 });
 
-personalizedInput.addEventListener('click', function () {
-  if (validateGenderDiv) {
-    const personalizedGender = document.createElement('input');
-    personalizedGender.type = 'text';
-    personalizedGender.name = 'gender-custom';
-    personalizedGender.placeholder = 'Gênero (opcional)';
-    genderDiv.appendChild(personalizedGender);
-  }
+personalizedInput.addEventListener('change', function () {
+  genderDiv.innerHTML = null;
+  const personalizedGender = document.createElement('input');
+  personalizedGender.type = 'text';
+  personalizedGender.name = 'gender-custom';
+  personalizedGender.placeholder = 'Gênero (opcional)';
+  genderDiv.appendChild(personalizedGender);
 });
 
 getRegisterBnt.addEventListener('click', function (event) {
