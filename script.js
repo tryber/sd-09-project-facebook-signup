@@ -32,7 +32,6 @@ function validateRegister(event) {
 function genderCustom() {
   if (genderCustomRadio.checked) {
     genderCustomInput.classList.remove('gender-custom-input');
-    console.log('checked');
   }
 }
 
