@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .facebook-login {
   align-items: center;
   display: flex;
@@ -86,8 +90,4 @@
   display: flex;
   font-size: small;
   justify-content: center;
-}
-
-* {
-  margin: 0;
 }
