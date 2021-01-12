@@ -61,14 +61,12 @@ function checkRadioButtons() {
 }
 
 function deleteDiv(div) {
-  while(div.firstChild){
+  while(div.firstChild) {
     div.removeChild(div.lastChild);
   }
 }
 
-function loadRegistrationInput() {
-  const div = document.querySelector('.right-content');
-  const registerInput = document.getElementsByClassName('register-input');
+function saveDataInput(registerInput) {
   const registerData = [];
   for (let index = 0; index < registerInput.length; index += 1) {
     if (registerInput[index].type === 'radio') {
@@ -84,8 +82,15 @@ function loadRegistrationInput() {
       }
     }
   }
+  return registerData;
+}
+
+function addRegistrationDataInput() {
+  const div = document.querySelector('.right-content');
+  const registerInput = document.getElementsByClassName('register-input');
+  const registerData = saveDataInput(registerInput);
   deleteDiv(div);
-  for (let index = 0; index < registerData.length; index +=1) {
+  for (let index = 0; index < registerData.length; index += 1) {
     const paragraph = createParagraph(div);
     paragraph.innerText = registerData[index];
   }
@@ -111,5 +116,5 @@ registerButton.addEventListener('click', (event) => {
       return;
     }
   }
-  loadRegistrationInput();
+  addRegistrationDataInput();
 });
