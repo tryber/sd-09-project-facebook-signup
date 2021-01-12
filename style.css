@@ -5,10 +5,28 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 1em;
+  width: 9em;
+}
+
+.form-group label {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .form-control {
   align-self: flex-end;
+  padding: 1em;
+}
+
+.form-control button {
+  background-color: rgb(54, 95, 171);
+  border: 0.5px solid rgb(47, 79, 140);
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 5px;
 }
 
 .showed {
@@ -21,8 +39,16 @@ body {
 
 @media screen and ( min-width : 780px ) {
 
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
   .form-line-1 {
     display: flex;
+  }
+
+  .form-line-5 {
+    font-size: 14px;
   }
 
   .form-line-1 input {
@@ -36,10 +62,32 @@ body {
 
   .right-content {
     border: 1px solid magenta;
+    padding: 20px;
     width: 300px;
   }
 
+  .right-content h1 {
+    color: rgb(50, 50, 50);
+    font-size: 27px;
+    font-weight: 700;
+  }
+
+  .right-content p {
+    color: rgb(50, 50, 50);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .right-content input {
+    margin: 5px;
+    height: 22px;
+  }
+
   .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid magenta;
     width: 800px;
   }
@@ -47,15 +95,20 @@ body {
   .main-content {
     display: flex;
     justify-content: center;
+    margin-top: 25px;
   }
 
   .facebook-login {
     border: 1px solid magenta;
     display: flex;
+    margin-right: 5%;
   }
 
   .facebook-logo {
     border: 1px solid magenta;
+    margin-left: 20%;
+    align-self: flex-end;
+    width: 130px;
   }
 
   .top-bar {
@@ -63,5 +116,18 @@ body {
     background-color: rgb(66, 103, 178);
     display: flex;
     justify-content: space-between;
+  }
+
+  .facebook-networking {
+    align-self: flex-end;
+    margin-right: 7em;
+    width: 60%;
+  }
+
+  .facebook-slogan {
+    color: rgb(66, 103, 178);
+    font-size: large;
+    font-weight: 700;
+    width: 22em;
   }
 }
