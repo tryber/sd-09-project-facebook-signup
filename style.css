@@ -4,6 +4,11 @@ body {
   padding: 0;
 }
 
+.invalid-field {
+  border-color: rgb(255, 0, 0);
+  box-shadow: 0 0 3px rgba(255, 0, 0, 0.3);
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -52,4 +57,8 @@ body {
 
 .label-birthdate , .label-gender {
   display: block;
+}
+
+.radios label {
+  font-size: 15px;
 }
