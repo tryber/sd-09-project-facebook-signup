@@ -10,7 +10,8 @@ html {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 5px;
 }
 
 .facebook-login {
@@ -18,12 +19,13 @@ html {
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
 }
 
 .main-content {
@@ -52,3 +54,4 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+
