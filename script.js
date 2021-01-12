@@ -1,5 +1,6 @@
 const btnEntrar = document.querySelector('#button-login');
 const btnCadastro = document.querySelector('#facebook-register');
+const choosedGenre = document.getElementById('personalizado');
 
 const alertMsg = (event) => {
   const textEmailTel = document.querySelector('#user-email-phone');
@@ -23,8 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-const checkGenre = () => {
-  const choosedGenre = document.getElementById('personalizado');
+choosedGenre.addEventListener('click', checkGenre = () => {
   const divCustonGenre = document.getElementById('custonGenre');
   while (divCustonGenre.firstChild) {
     divCustonGenre.removeChild(divCustonGenre.lastChild);
@@ -39,7 +39,7 @@ const checkGenre = () => {
       divCustonGenre.removeChild(divCustonGenre.lastChild);
     }
   }
-};
+});
 
 const eventslistener = () => {
   btnEntrar.addEventListener('click', alertMsg);
