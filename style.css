@@ -8,8 +8,9 @@ body {
 
 .entrar-button {
   background-color: #4267b2;
-  border: 1px solid #ccd0d5;
+  border: 1px solid #2f588a;
   border-radius: 2px;
+  color: white;
   cursor: pointer;
   font-family: inherit;
   font-size: 12px;
@@ -94,4 +95,15 @@ body {
 .birthdate-content {
   display: flex;
   flex-direction: column;
+}
+
+
+.other-gender {
+  transform: translateX(1000px);
+  transition: .3s ease;
+
+}
+
+.hide-gender {
+  transform: translateX(0px);
 }
