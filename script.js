@@ -28,7 +28,7 @@ function submitInfo() {
   const surnameValue = document.querySelector('.names-container input:nth-child(2)').value;
   const emailValue = document.querySelector('.register-form>input:nth-child(2)').value;
   const birthdateValue = document.querySelector('.register-form>input:nth-child(5)').value;
-  let gender = undefined;
+  let gender;
   if (document.querySelector('#personalized-gender-container input')) {
     gender = document.querySelector('#personalized-gender-container input').value;
   } else {
@@ -43,16 +43,16 @@ function submitInfo() {
   }
 
   const greeting = document.createElement('p');
-  greeting.innerText = `Olá, ${nameValue} ${surnameValue}`
+  greeting.innerText = `Olá, ${nameValue} ${surnameValue}`;
 
   const email = document.createElement('p');
-  email.innerText = `${emailValue}`
+  email.innerText = `${emailValue}`;
 
   const birthdate = document.createElement('p');
-  birthdate.innerText = `${birthdateValue}`
+  birthdate.innerText = `${birthdateValue}`;
 
   const chosenGender = document.createElement('p');
-  chosenGender.innerText = `${gender}`
+  chosenGender.innerText = `${gender}`;
 
   while (rightContent.firstChild) {
     rightContent.removeChild(rightContent.firstChild);
