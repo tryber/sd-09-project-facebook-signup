@@ -2,6 +2,15 @@ body {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: row;
+}
+
 .facebook-login {
   display: flex;
   margin: 10px;
@@ -39,6 +48,10 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-top: 15px;
+}
+
+.pad-zero {
+  padding: 0;
 }
 
 .right-content {
