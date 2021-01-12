@@ -39,6 +39,21 @@ input {
   padding: 8px 10px;
 }
 
-form {
+.flex1{
   display: flex;
 }
+
+.flex {
+  display: flex;
+  flex-flow: column;
+}
+
+#label-gender {
+  display: block;
+}
+
+#facebook-register {
+  display: block;
+  margin: 10px;
+}
+

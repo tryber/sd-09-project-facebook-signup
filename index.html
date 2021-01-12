@@ -17,13 +17,35 @@
       <!-- Requisito 10 -->
 		<div class = "right-content">
 			<h1>Abra uma conta</h1>
-			<h2 class ="quick-easy">É rápido e fácil</h2>
+			<h2 class ="quick-easy">É rápido e fácil.</h2>
 			<!-- Requisito 11 -->
 			<form>
+				<div class="flex1">
 				<input type="text" name="firstname" placeholder="Nome">
-			<!-- Requisito 12 -->
-				<input type="text" name="lastname" placeholder="Sobrenome">
-			</form>
+			<!-- Requisito 12 -->	
+			<input type="text" name="lastname" placeholder="Sobrenome">
+				</div>
+			<div class ="flex">
+			<!-- Requisito 13 -->
+				<input type="text" name="phone_email" placeholder="Celular ou email">
+			<!-- Requisito 14 -->
+			<input type="password" name="password" placeholder="Nova senha">
+			<!-- Requisito 15 -->
+			<label id ="label-birthdate" for="birth_date">Data de Nascimento:</label>
+			<input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+				</div>
+			<!-- Requisito 16 -->
+			<label id ="label-gender" for="Gênero">Gênero</label>
+			<input type="radio" id="masculino" name="gender" value="masculino">		
+			<label for="masculino">Masculino</label>
+			<input type="radio" id="feminino" name="gender" value="feminino">
+      <label for="feminino">Feminino</label>
+      <input type="radio" id="outro" name="gender" value="outro">
+			<label for="outro">Outro</label>
+			<!-- Requisito 17 -->
+			<button id ="facebook-register" type="submit">Cadastre-se</button>
+				
+		</form>
 		</div>
   </div>
 </body>
