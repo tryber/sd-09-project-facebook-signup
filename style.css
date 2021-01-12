@@ -4,6 +4,7 @@ body {
 
 p {
   margin: 0;
+  padding: 0;
 }
 
 .calendar {
@@ -42,12 +43,20 @@ p {
   flex-wrap: wrap;
 }
 
+.gender {
+  margin: 0 10px;
+}
+
+.label-content {
+  margin: 15px 0;
+  padding: 0;
+}
+
 .left-content {
   width: 800px;
 }
 
 .main-content {
-  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -60,9 +69,12 @@ p {
 
 .radios {
   display: flex;
+  padding: 0;
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
 }
 

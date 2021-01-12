@@ -37,8 +37,10 @@
     </div>
 
     <div class="right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
+      <div class="title">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy"><h6>É rápido e fácil.</h6></p>
+      </div>
       <form action="" class="inputs-content">
         <div class="row">
           <div class="col mb-3 pad-zero">
@@ -56,13 +58,17 @@
           </div>
           <label class="row" id="label-birthdate">Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-          <label class="row" id="label-gender" >Gênero</label>
-            <div class="radios">
-              <input type="radio" name="gender" class="genero-radio">Feminino
-              <input type="radio" name="gender" class="genero-radio">Masculino
-              <input type="radio" name="gender" class="genero-radio">Personalizado
-            </div>
+          <label for="GET" class="row label-content" id="label-gender">Gênero</label>
+          <div class="radios">
+            <input type="radio" name="gender" class="gender" id="Feminino" value="male"><br>
+            <label for="Feminino">Feminino</label>
+            <input type="radio" name="gender" class="gender" id="Masculino" value="female"><br>
+            <label for="Masculino">Masculino</label>
+            <input type="radio" name="gender" class="gender" id="Personalizado" value="other"><br><br>
+            <label for="Personalizado">Personalizado</label>
+          </div>
         </div>
+        <button type="submit" class="btn btn-success" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
   </section>
