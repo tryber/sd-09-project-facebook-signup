@@ -19,7 +19,7 @@ genderCheck.addEventListener('click', (event) => {
   if (event.target.type === 'radio') {
     const container = document.querySelector('#div-gender-custom');
     const inputGenderCustom = document.createElement('input');
-    if (event.target.id === 'label-gender-custom'){
+    if (event.target.id === 'label-gender-custom') {
       deleteInputGenderCustom(container);
       inputGenderCustom.placeholder = 'Gênero (opcional)';
       inputGenderCustom.name = 'gender-custom';
