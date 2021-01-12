@@ -8,19 +8,18 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 5rem;
-  justify-content: space-around;
+  justify-content:space-around;
 }
 
 .facebook-logo {
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
 }
 
 .facebook-login {
-  align-content: flex-end;
   align-items: baseline;
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
   margin-bottom: 10px;
 }
 
