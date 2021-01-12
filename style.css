@@ -67,3 +67,15 @@ body {
     display: flex;
     margin-bottom: 5px;
 }
+
+.container-radios {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.radio-buttons {
+    display: flex;
+    margin-right: 5px;
+    margin-top: 5px;
+}
