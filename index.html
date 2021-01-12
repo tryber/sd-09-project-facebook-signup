@@ -41,19 +41,39 @@
       <section class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
+        <!-- FORM CRIAR USUARIO -->
         <form action="" method="GET">
-        <div class="input-name-lastname"
-          class="input-user-password">
-          <input  type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
-        </div>
-        <div class="input-user-password">
-          <input type="text" name="phone_email" placeholder="Celular ou email">
-        </div>
-        <div class="input-user-password">
-          <input type="password" name="password" placeholder="Nova senha">
-        </div>
-          </form>
+          <!-- NOME E SOBRENOME -->
+          <div class="input-name-lastname" class="input-user-password">
+            <input  type="text" name="firstname" placeholder="Nome">
+            <input type="text" name="lastname" placeholder="Sobrenome">
+          </div>
+          <!-- CELULAR OU E-MAIL -->
+          <div class="new-user-password-birthdate">
+            <input type="text" name="phone_email" placeholder="Celular ou email">
+          </div>
+          <!-- NOVA SENHA -->
+          <div class="new-user-password-birthdate">
+            <input type="password" name="password" placeholder="Nova senha">
+          </div>
+          <!-- DATA DE NASCIMENTO -->
+          <div class="new-user-password-birthdate">
+            <label id="label-birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          </div>
+          <!-- GENERO -->
+          <div class="gender-container">
+            <label id="label-gender">Gênero</label>
+            <div class="options">
+              <input type="radio" name="gender" id="female">
+              <label for="female">Feminino</label>
+              <input type="radio" name="gender" id="male">
+              <label for="male">Masculino</label>
+              <input type="radio" name="gender" id="other">
+              <label for="other">Personalizado</label>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <script src="script.js"></script>
