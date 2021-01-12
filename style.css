@@ -41,5 +41,5 @@ body {
 
 .fullname {
   display: flex;
-  flex-direction:  row;
+  flex-direction: row;
 }
