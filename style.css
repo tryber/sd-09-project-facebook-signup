@@ -1,7 +1,7 @@
 body {
-  margin: 0;
   background-color: rgb(217, 221, 235);
   box-sizing: border-box;
+  margin: 0;
 }
 
 .top-bar {
@@ -58,7 +58,7 @@ body {
 }
 
 .fullname input {
-  width: 49%;
   margin: 0;
+  width: 49%;
 }
 
