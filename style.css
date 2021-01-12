@@ -60,10 +60,14 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-end;
 }
 
 .form-control {
   align-self: flex-end;
   order: 2;
+}
+
+.radio-in-line {
+  display: inline-flex;
 }
