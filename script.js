@@ -9,12 +9,13 @@ function alertEmailOrPhone() {
 function validateForm() {
   const formSubscribe = document.querySelector('#form-subscribe');
   const formSubscribeSubmitButton = document.querySelector('#facebook-register');
+  const paragraph = document.querySelector('#message')
   formSubscribeSubmitButton.addEventListener('click', function (event) {
     event.preventDefault();
     if (!formSubscribe.checkValidity()) {
-      formSubscribe.classList.add('nova');
+      paragraph.innerText = 'Campos inválidos';
     } else {
-      formSubscribe.classList.remove('nova');
+      paragraph.innerText = '';
     }
   });
 }
