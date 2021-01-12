@@ -89,21 +89,22 @@ h1 {
   width: 300px;
 }
 
-.register {
-  display: flex;
+.right-content form input {
+  width: 99%;
+  box-sizing: border-box;
 }
 
-.register div {
-  align-items: stretch;
+.full_name {
   display: flex;
 }
 
 .full_name input {
   width: 50%;
+  flex-grow: 1;
 }
 
-.register div input {
-  align-self: stretch;
+.full_name :nth-of-type(2) {
+  margin-right: 0;
 }
 
 .full_name {
