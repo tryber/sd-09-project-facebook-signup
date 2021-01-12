@@ -44,8 +44,7 @@
 .name-container input {
   width: 50%;
 }
-
-.name-container input:nth-child( 1 ) {
+.name-input-class {
   margin-right: 15px;
 }
 
