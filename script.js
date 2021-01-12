@@ -6,11 +6,13 @@ loginButton.addEventListener('click', function () {
 
 const personalizedGender = document.getElementById('gender-inputp');
 personalizedGender.addEventListener('click', function () {
-  const customGender = document.getElementById('custom-gender');
-  const newGenderInput = document.createElement('input');
-  newGenderInput.type = 'text';
-  newGenderInput.name = 'gender-custom';
-  newGenderInput.placeholder = 'Gênero (opcional)';
-  newGenderInput.display = 'block';
-  customGender.appendChild(newGenderInput);
+  if (document.getElementById('gender-input') === null) {
+    const customGender = document.getElementById('custom-gender');
+    const newGenderInput = document.createElement('input');
+    newGenderInput.type = 'text';
+    newGenderInput.name = 'gender-custom';
+    newGenderInput.placeholder = 'Gênero (opcional)';
+    newGenderInput.id = "gender-input";
+    customGender.appendChild(newGenderInput);
+  }
 });

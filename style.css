@@ -14,12 +14,7 @@ h1 {
   display: flex;
   font-size: 12px;
   line-height: 1.34;
-  padding-right: 15%;
   padding-top: 13px;
-}
-
-.facebook-logo {
-  padding-left: 15%;
 }
 
 .facebook-slogan {
@@ -59,7 +54,6 @@ h1 {
   color: rgb(14, 56, 95);
   flex-basis: 800px;
   margin-top: 40px;
-  padding-left: 15%;
 }
 
 .main-content {
@@ -74,7 +68,6 @@ h1 {
   display: flex;
   flex-basis: 300px;
   flex-flow: column;
-  padding-right: 15%;
 }
 
 .quick-easy {
