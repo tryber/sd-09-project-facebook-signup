@@ -45,34 +45,35 @@
         <form action="" method="GET">
           <!-- NOME E SOBRENOME -->
           <div class="input-name-lastname" class="input-user-password">
-            <input  type="text" name="firstname" placeholder="Nome">
-            <input type="text" name="lastname" placeholder="Sobrenome">
+            <input  type="text" name="firstname" placeholder="Nome" class="forms-cad">
+            <input type="text" name="lastname" placeholder="Sobrenome" class="forms-cad">
           </div>
           <!-- CELULAR OU E-MAIL -->
           <div class="new-user-password-birthdate">
-            <input type="text" name="phone_email" placeholder="Celular ou email">
+            <input type="text" name="phone_email" placeholder="Celular ou email" class="forms-cad">
           </div>
           <!-- NOVA SENHA -->
           <div class="new-user-password-birthdate">
-            <input type="password" name="password" placeholder="Nova senha">
+            <input type="password" name="password" placeholder="Nova senha" class="forms-cad">
           </div>
           <!-- DATA DE NASCIMENTO -->
           <div class="new-user-password-birthdate">
             <label id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="forms-cad">
           </div>
           <!-- GENERO -->
           <div class="gender-container">
             <label id="label-gender">Gênero</label>
             <div class="options">
+              <input type="radio" name="gender" id="female" value="Feminino" class="isRadio">
               <label for="female">Feminino</label>
-              <input type="radio" name="gender" id="female" value="Feminino">
-              <label for="male">Masculino</label>
-              <input type="radio" name="gender" id="male" value="Masculino">
+              <input type="radio" name="gender" id="male" value="Masculino" class="isRadio">
+              <label for="male">Masculino</label>    
+              <input type="radio" name="gender" id="other" value="Personalizado" class="isRadio">          
               <label for="other">Personalizado</label>
-              <input type="radio" name="gender" id="other" value="Personalizado">
             </div>
           </div>
+            <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>
       </section>
     </main>
