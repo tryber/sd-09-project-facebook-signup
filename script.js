@@ -25,6 +25,15 @@ function checkInputValue() {
   return check;
 }
 
+const genderCustom = document.querySelector('#personalizado');
+function showHiddenInput() {
+  const hiddenInput = document.querySelector('.hidden-input');
+  if (genderCustom.checked) {
+    hiddenInput.style.display = 'unset';
+  }
+}
+genderCustom.addEventListener('click', showHiddenInput);
+
 window.onload = function () {
   const submitButton = document.querySelector('#facebook-register');
   const errorMessage = document.querySelector('#errorMessage');
