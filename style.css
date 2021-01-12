@@ -55,8 +55,6 @@ body {
   background-clip: initial;
   background-color: initial;
   background-image: linear-gradient(white, rgb(211, 216, 232));
-  background-origin: initial;
-  background-size: initial;
   display: flex;
   justify-content: space-around;
   min-height: 560px;
@@ -87,11 +85,25 @@ h1 {
 
 .right-content {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register {
+  display: flex;
+}
+
+.register div {
+  display: flex;
+  align-items: stretch;
+}
+
+.register div input {
+  align-self: stretch;
 }
 
 .full_name {
   display: flex;
-
 }
 
 .full_name input {
