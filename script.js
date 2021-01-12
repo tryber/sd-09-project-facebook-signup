@@ -1,4 +1,4 @@
-/*Global variables*/
+/* Global variables*/
 const getInputs = document.querySelectorAll('#register-form input');
 const getRegisterBnt = document.querySelector('#facebook-register');
 const getButton = document.querySelector('#button-login');
@@ -6,7 +6,7 @@ const personalizedInput = document.querySelector('#personalized');
 const genderDiv = document.querySelector('#personalized-gender');
 const rightContent = document.querySelector('.right-content');
 
-/*Criar campo de boas vinda*/
+/* Criar campo de boas vinda*/
 function insertWelcome() {
   const firstName = document.querySelector('input[name="firstname"]');
   const lastName = document.getElementsByName('lastname')[0];
