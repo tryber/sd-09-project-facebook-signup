@@ -31,3 +31,5 @@ const buttonMasculino = document.querySelector('#masculino');
 buttonMasculino.addEventListener('click', loopGender);
 const buttonPersonalizado = document.querySelector('#personalizado');
 buttonPersonalizado.addEventListener('click', genderCustom);
+
+
