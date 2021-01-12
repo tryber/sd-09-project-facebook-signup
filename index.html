@@ -44,8 +44,10 @@
                 <div>
                     <input type="radio" name="gender"  class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required="required">Feminino
                     <input type="radio" name="gender" class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')">Masculino
-                    <input type="radio" name="gender" class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')">Personalizado
+                    <input type="radio" id="customGender" name="gender" class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')">Personalizado
                 </div>
+                
+                <div id="genderInputDiv" style="display: inline-block;"></div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
             </form>
         </div>
