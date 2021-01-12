@@ -27,10 +27,10 @@
 }
 
 .top-bar {
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -38,32 +38,23 @@
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-}
-
-.facebook-login {
-    align-self: flex-end;
-    display: inline-flex;
-    padding: 10px;
-}
-
-.form-control {
-  align-self: flex-end;  
-  display: flex;
-  margin-left: 2px;
-  align-items: center;
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-between;
-}
-
-.form-group {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
 }
 
 .facebook-login {
+  align-self: flex-end;
   color: whitesmoke;
+  display: inline-flex;
+  padding: 10px;
+}
+
+.form-control {
+  align-items: center;
+  align-self: flex-end;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2px;
 }
