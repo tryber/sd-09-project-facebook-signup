@@ -47,7 +47,7 @@ getButton.addEventListener('click', function () {
 });
 
 personalizedInput.addEventListener('click', function () {
-  if (validateGenderDiv === true) {
+  if (validateGenderDiv) {
     const personalizedGender = document.createElement('input');
     personalizedGender.type = 'text';
     personalizedGender.name = 'gender-custom';
