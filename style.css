@@ -104,8 +104,11 @@ body {
 }
 
 .radioButtons {
+  align-items: center;
+  color: #000000ab;
   display: flex;
-  font-size: medium;
+  font-size: 3vh;
+  font-weight: 600;
   justify-content: center;
 }
 
