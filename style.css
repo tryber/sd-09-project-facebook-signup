@@ -49,3 +49,7 @@ O Cypress evaluator está dando erro neste teste:
 .main-content {
   display: flex;
 }
+
+.left-content {
+  width: 800px;
+}
