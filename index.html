@@ -34,7 +34,7 @@
   <aside class="right-content">
     <h1>Abra uma conta</h1>
     <p class="quick-easy">É rápido e fácil.</p>
-    <form action="">
+    <form action="" id='register-form'>
       <input type="text" name="firstname" placeholder='Nome' class="lastname marginName countInput">
       <input type="text" name="lastname" class="lastname countInput" placeholder="Sobrenome">
       <input type="text" name="phone_email" placeholder="Celular ou email" class="formInput countInput">
@@ -44,7 +44,7 @@
       <label for="" id="label-gender">Gênero</label><br>
       <input type="radio" name="gender" class="countInput" value="Feminino">Feminino
       <input type="radio" name="gender" class="countInput" value="Masculino">Masculino
-      <input type="radio" name="gender" class="countInput" value="Personalizado">Personalizado
+      <input type="radio" name="gender" class="countInput" id='custom-input' value="Personalizado">Personalizado
       <button type='submit' id="facebook-register">Cadastre-se</button>
       <p id="alertP"></p>
     </form>

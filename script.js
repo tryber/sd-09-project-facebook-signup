@@ -3,6 +3,10 @@ const loginInput = document.querySelector('#user-email-phone');
 const registerButton = document.querySelector('#facebook-register');
 const formInputs = document.querySelectorAll('.countInput');
 const alertP = document.querySelector('#alertP');
+const customGender = document.createElement('input');
+const custoInput = document.querySelector('#custom-input')
+const registerForm = document.querySelector('#register-form')
+
 let validation = 0;
 
 function showAlert() {
@@ -27,3 +31,13 @@ function verifyForm() {
   });
 }
 verifyForm();
+
+function createCustominput() {
+  custoInput.addEventListener('click', function () {
+    customGender.name = 'gender-custom'
+    customGender.placeholder = 'Gênero (opcional)'
+    registerForm.insertBefore(customGender,registerForm.children[11])
+  });
+}
+
+createCustominput();
