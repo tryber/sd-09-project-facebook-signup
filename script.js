@@ -71,7 +71,7 @@ function readNewContent() {
   return newContent;
 }
 
-function createNewContent() {
+function createNewContent(newContent) {
   let newSection = document.createElement('p');
   newSection.innerText = `Olá, ${newContent[0]} ${newContent[1]}`;
   rightContent.appendChild(newSection);
@@ -87,12 +87,11 @@ function replaceRightContent(event) {
   if (formAlert.innerText === 'Campos inválidos') {
     return;
   }
-  let newContent = readNewContent();
-  
+  const newContent = readNewContent();
   while (rightContent.children.length > 0) {
     rightContent.removeChild(rightContent.children[rightContent.children.length - 1]);
   }
-  createNewContent();
+  createNewContent(newContent);
 }
 
 submitBtn.addEventListener('click', loginAlert);
