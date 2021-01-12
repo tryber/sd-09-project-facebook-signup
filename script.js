@@ -25,9 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
       }
     };
-    elements[i].oninput = function (e) {
+    elements[i].oninput = function () {
       document.getElementById('campos_invalidos').innerText = '';
-
     };
   }
 });
