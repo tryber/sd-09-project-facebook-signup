@@ -9,19 +9,24 @@
 <body>
   <header class="top-bar">
     <img class="facebook-logo" alt="Facebook logo" src="imgs/facebook-logo.png">
+    <!-- sugestão para tamanho do logo > width: 150px; height: 57px; -->
     <Form class='facebook-login'>
+      <!-- sugestão de alinhamento para este form  > justify-content: space-around; -->
       <container class='form-group'>
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
         <input type="text" class='input-login' name="login" id="user-email-phone" maxlength="60" required>
+        <!-- sugestão para tamanho do input > width: 107px; height: 7px; -->
       </container>
       <container class='form-group'>
         <label for="user-password" id="user-password-label">Senha</label>
         <input type="text" name="senha" id="user-password" maxlength="60" required>
+        <!-- sugestão para tamanho do input > width: 107px; height: 7px; -->
 
         <!-- <p href="">Esqueceu a Senha</p> -->
       </container>
       <container class='form-control'>
         <button id="button-login">Entrar</button>
+        <!--  sugestão para style do button > height: 16px; background: transparent; font-size: xx-small; color: white; display: flex; align-self: baseline; -->
       </container>
     </Form>
   </header>
@@ -31,7 +36,7 @@
 
     <div class="left-content">
       <p id="facebook-slogan">"O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida."</p>
-      <img src="imgs/networking.png" alt="glogal net" id="facebook-networking">
+      <img src="imgs/networking.png" alt="glogal net" id="facebook-networking">      
     </div>
 
     <div class="right-content">
@@ -46,15 +51,18 @@
         <input type="password"  name="password" placeholder="Nova senha"  required>
 
         <!-- Troquei o "id" por "for" no label abaixo para fazer o vinculo da label com o input. Repeti a operacao nos outros labels-->
-        <label for="label-birthday" class="nascimento">Data de Nascimento</label>
-        <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa" required>
-        <label for="label-gender" class="labelGender">Gênero</label>
+        <label for="label-birthday" id="label-birthdate" class="nascimento">Data de nascimento</label>
+        <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa" required>     
+        <label for="" id="label-gender" class="labelGender">Gênero</label>
         <div class="radioButtons">
-          <input type="radio" name="Feminino" value="gender">Feminino
-          <input type="radio" value="gender"  name="Masculino">Masculino
-          <input type="radio" value="gender"  name="Personalizado">Personalizado
-        </div>
-        <input type="text" hidden name="gender-custom" id="genderText" placeholder="Gênero (opcional)">
+          <input type="radio" name="gender" id="gender-female" value="Feminino">
+          <label for="gender-female">Feminino</label>
+          <input type="radio" name="gender" id="gender-male" value="Masculino">
+          <label for="gender-male">Masculino</label>
+          <input type="radio" name="gender" id="gender-custom" value="Personalizado">
+          <label for="gender-custom">Personalizado</label>          
+        </div> 
+        <input type="text"  name="gender-custom" id="genderText" placeholder="Gênero (opcional)">       
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>

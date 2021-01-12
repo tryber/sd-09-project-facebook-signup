@@ -88,6 +88,6 @@ body {
 
 .radioButtons {
   display: flex;
-  font-size: small;
+  font-size: medium;
   justify-content: center;
 }
