@@ -41,8 +41,8 @@ body {
   border: none;
   color: white;
   flex-direction: column;
-  height: 20px;
   font-size: 10px;
+  height: 20px;
   text-align: center;
   width: 35px;
 }
