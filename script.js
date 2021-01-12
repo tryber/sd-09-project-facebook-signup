@@ -1,14 +1,9 @@
-function alerta(){
+function alerta() {
   const email = document.querySelector('#user-email-phone');
   alert(email.value);
 }
 
-function verify (){
-  alert('Campos inválidos');
-    event.preventDefault();
-}
-
-function validacao (event){
+function validacao(event) {
   let status1 = false;
   let status2 = false;
   const input = document.querySelectorAll('.input');
@@ -31,11 +26,12 @@ function validacao (event){
   }
   
   if (status1 === true || status2 === false) {
-    verify();
+    alert('Campos inválidos');
+    event.preventDefault();
   }
 }
 
-function generoPersonaliza(){
+function generoPersonaliza() {
   const input = document.createElement('input');
   input.placeholder = 'Gênero (opcional)';
   input.name = 'gender-custom';
