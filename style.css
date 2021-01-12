@@ -3,7 +3,15 @@
   flex-direction: column;
 }
 
+.label-birthdate , .label-gender{
+  color: rgb(144, 148, 156);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 0 5px 0;
+}
+
 body {
+  background: linear-gradient(white, #D3D8E8);
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -50,18 +58,35 @@ body {
   margin: 0 7px;
 }
 
+.gender-content {
+  color: rgb(29, 33, 41);
+  font-size: 18px;
+  padding-top: 5px;
+}
+
 .left-content {
   width: 800px;
+}
+
+.left-content .facebook-slogan {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 0 200px;
+  padding-bottom: 30px;
 }
 
 .name-content {
   display: flex;
+  padding: 10px 0 10px 0;
 }
 
 .other-gender {
@@ -81,15 +106,47 @@ body {
   display: flex;
 }
 
+.right-content h1 {
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.right-content .quick-easy {
+  color: rgb(29, 33, 41);
+  font-size: 19px;
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
 .short-input {
-  width: 85px;
+  background: white;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+  width: 190px;
 }
 
 .sign-up-form input {
-  border: 1px solid #343a40;
-  border-radius: 5px;
   margin: 10px 10px 10px 0;
   padding: 10px;
+}
+
+.phone-email , .new-password , .birthdate {
+  background: white;
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
+.sign-up-form::placeholder {
+  color: #999;
+  cursor: text;
 }
 
 .top-bar {
