@@ -34,7 +34,7 @@ function perField(event) {
     fieldGender.placeholder = 'Gênero (opcional)';
     fieldGender.type = 'text';
     inputGender.appendChild(fieldGender);
-  }else if (event.target.id !== 'per') {
+  } else if (event.target.id !== 'per') {
     breakChecked = false;
     inputGender.removeChild(fieldGender);
   }
