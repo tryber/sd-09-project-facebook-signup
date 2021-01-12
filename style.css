@@ -40,22 +40,17 @@ body {
   background-color: rgb(80, 122, 207);
   border: none;
   color: white;
+  flex-direction: column;
   font-size: 10px;
+  text-align: center;
   height: 20px;
   width: 35px;
-  flex-direction: column;
-  text-align: center;
 }
 
 .form-control {
   align-self: center;
-  
 
-
-
-  
 }
-
 
 .recuperar {
   color: white;
