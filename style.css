@@ -51,6 +51,7 @@ body {
   width: 800px;
 }
 .right-content {
-  width: 300px;
   display: flex;
+  width: 300px;
 }
+
