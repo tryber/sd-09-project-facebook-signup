@@ -12,12 +12,10 @@ registerBtn.addEventListener('click', function (event) {
   const invalid = document.querySelector('#invalid');
   let breakIf = false;
   for (let index = 0; index < inputs.length; index += 1) {
-    console.log('gabriel', breakIf, index);
     if (!inputs[index].value && !breakIf) {
       breakIf = true;
       event.preventDefault();
       invalid.innerText = 'Campos inválidos';
-      console.log('jhoif', breakIf, index);
     }
   }
 });
