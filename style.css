@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+section {
+  margin: 3em;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -26,6 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-right: 1em;
+  width: 100%;
 }
 
 .form-control {
@@ -36,7 +41,7 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .left-content {
@@ -49,5 +54,16 @@ body {
 
 .fullname-input {
   display: flex;
-  flex-direction: row;
+}
+
+.fullname-input input {
+  width: 50%;
+}
+
+section input {
+  margin: 0.3em;
+}
+
+.gender-input {
+  margin: 0.5em 0;
 }
