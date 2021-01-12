@@ -122,6 +122,7 @@ form label {
 footer ul {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 footer ul li {
@@ -130,6 +131,7 @@ footer ul li {
 
 .links-footer {
   display: inline-block;
+  margin-top: 25px;
 }
 
 .links-footer li {
