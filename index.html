@@ -34,18 +34,18 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form method="GET" class="form-box">
         <div class="inline-input">
-          <input type="text" name="firstname" class="inline-input" placeholder="Nome" required>
-          <input type="text" name="lastname" class="inline-input" placeholder="Sobrenome" required>
+          <input type="text" name="firstname" class="required" placeholder="Nome">
+          <input type="text" name="lastname" class="required" placeholder="Sobrenome">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" required>
-        <input type="password" name="password" placeholder="Nova senha" required>
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="required">
+        <input type="password" name="password" placeholder="Nova senha" class="required">
         <label for="birthdate-input" id="label-birthdate">Data de nascimento</label>
-        <input type="text" id="birthdate-input" name="birthdate" placeholder="dd/mm/aaaa" required>
+        <input type="text" id="birthdate-input" name="birthdate" placeholder="dd/mm/aaaa" class="required">
         <label for="gender-input" id="label-gender">Gênero</label>
         <div class="inline-input">
-          <label for="gender-inputf"><input type="radio" id="gender-inputf" name="gender" value="Feminino" required>Feminino</label>
-          <label for="gender-inputm"><input type="radio" id="gender-inputm" name="gender" value="Masculino" required>Masculino</label>
-          <label for="gender-inputp"><input type="radio" id="gender-inputp" name="gender" value="Personalizado" required>Personalizado</label>
+          <label for="gender-inputf"><input type="radio" id="gender-inputf" class="required" name="gender" value="Feminino">Feminino</label>
+          <label for="gender-inputm"><input type="radio" id="gender-inputm" class="required" name="gender" value="Masculino">Masculino</label>
+          <label for="gender-inputp"><input type="radio" id="gender-inputp" class="required" name="gender" value="Personalizado">Personalizado</label>
         </div>
         <div id="custom-gender"></div>
         <p id="validate-message"></p>

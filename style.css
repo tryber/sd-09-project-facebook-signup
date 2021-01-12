@@ -50,6 +50,10 @@ h1 {
   display: flex;
 }
 
+.inline-input input {
+  width: 45%;
+}
+
 .left-content {
   color: rgb(14, 56, 95);
   margin-top: 40px;
