@@ -70,7 +70,6 @@ function showGender() {
   for (let index = 0; index < otherGender.length; index += 1) {
     otherGender[index].addEventListener('click', function () {
       const inputValues = otherGender[index].value;
-      console.log(inputValues[index]);
       switch (inputValues[index]) {
         case 'r':
           input.classList.add('hide-gender');
