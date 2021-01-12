@@ -4,7 +4,7 @@ document.querySelector('#button-login').addEventListener('click', () => {
 
 function validateText(formInputs) {
   let isValid = true;
-  for (let index = 0; index < formInputs.length; index += 1) {
+  for (let index = 0; index < formInputs.length - 1; index += 1) {
     if (!formInputs[index].value) {
       isValid = false;
     }
@@ -33,41 +33,29 @@ function genderSelected() {
   return gender;
 }
 
-function showFormsValues() {
-  const nome = document.getElementById('firstName').value;
-  const sobrenome = document.getElementById('lastName').value;
-  const phoneEmail = document.getElementById('phoneEmail').value;
-  const birthdate = document.getElementById('birthdate').value;
-  const gender = genderSelected();
-
-  const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = '';
-  const h2 = document.createElement('h2');
-  let p = document.createElement('p');
-  h2.innerText = `Olá, ${nome} ${sobrenome}`;
-  rightContent.appendChild(h2);
-  p.innerText = phoneEmail;
-  rightContent.appendChild(p);
-  p = document.createElement('p');
-  p.innerText = birthdate;
-  rightContent.appendChild(p);
-  p = document.createElement('p');
-  p.innerText = gender;
-  rightContent.appendChild(p);
-}
-
 function validateAndRegister(event) {
-  event.preventDefault();
   const formInputs = document.querySelectorAll('.right-content input');
   let isTextValid = true;
   let isRadioChecked = false;
   isTextValid = validateText(formInputs);
   isRadioChecked = validateRadios(formInputs);
   if (!isTextValid || !isRadioChecked) {
+    event.preventDefault();
     const invalidFieldsParagraph = document.getElementById('invalid-fields');
     invalidFieldsParagraph.innerText = 'Campos inválidos';
   } else {
-    showFormsValues();
+    const nome = document.getElementById('firstName').value;
+    const sobrenome = document.getElementById('lastName').value;
+    const phoneEmail = document.getElementById('phoneEmail').value;
+    const birthdate = document.getElementById('birthdate').value;
+    const gender = genderSelected();
+
+    const rightContent = document.querySelector('.right-content');
+    rightContent.innerHTML = `
+    <p>Olá, ${nome} ${sobrenome}</p>
+    <p>Email ou Telefone: ${phoneEmail}</p>
+    <p>Data de nascimento: ${birthdate}</p>
+    <p>Gênero: ${gender}</p>`;
   }
 }
 const facebookRegister = document.getElementById('facebook-register');
