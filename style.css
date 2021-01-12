@@ -11,13 +11,11 @@ body {
 
 .facebook-logo {
   align-self: center;
-  margin-left: 15%;
 }
 
 .facebook-login {
   color: white;
   display: flex;
-  margin-right: 15%;
 }
 
 .form-group {
