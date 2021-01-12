@@ -14,15 +14,25 @@
           <div class="form-group" id="user-email-phone-label">
             <label for="user-email-phone">
               Email ou telefone
-              <br>
-              <input id="user-email-phone" class="header-input" type="text" required />
+              <br />
+              <input
+                id="user-email-phone"
+                class="header-input"
+                type="text"
+                required
+              />
             </label>
           </div>
           <div class="form-group" id="user-password-label">
             <label for="user-password">
               Senha
-              <br>
-              <input id="user-password" class="header-input" type="password" required />
+              <br />
+              <input
+                id="user-password"
+                class="header-input"
+                type="password"
+                required
+              />
             </label>
           </div>
           <div class="form-control">
@@ -93,12 +103,18 @@
           </div>
           <label id="label-gender">Gênero</label>
           <div>
-            <input type="radio" name="gender" id="female" required />
-            <label for="female">Feminino</label>
-            <input type="radio" name="gender" id="male" required />
-            <label for="male">Masculino</label>
-            <input type="radio" name="gender" id="custom" required />
-            <label for="custom">Personalizado</label>
+            <label>
+              <input type="radio" name="gender" value="female" required />
+              Feminino
+            </label>
+            <label>
+              <input type="radio" name="gender" value="male" required />
+              Masculino
+            </label>
+            <label>
+              <input type="radio" name="gender" value="others" required />
+              Personalizado
+            </label>
           </div>
 
           <button type="submit" id="facebook-register">Cadastre-se</button>
