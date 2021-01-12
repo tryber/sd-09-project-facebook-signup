@@ -3,8 +3,14 @@ const buttonLogin = document.querySelector('#button-login');
 const buttonRegister = document.querySelector('#facebook-register');
 const emailInput = document.querySelector('#user-email-phone');
 const registerForm = document.querySelector('#register-form');
-// Function
 
+// Selectors gender
+const genderCustomRadio = document.querySelector('#custom');
+const femaleRadio = document.querySelector('#female');
+const maleRadio = document.querySelector('#male');
+const genderCustomInput = document.querySelector('#gender-custom');
+
+// Functions
 function alertEmailInput() {
   const valueEmailInput = emailInput.value;
   alert(valueEmailInput);
@@ -23,7 +29,28 @@ function validateRegister(event) {
   }
 }
 
-// Events listener
+function genderCustom() {
+  if (genderCustomRadio.checked) {
+    genderCustomInput.classList.remove('gender-custom-input');
+    console.log('checked');
+  }
+}
 
+function genderFemale() {
+  if (femaleRadio.checked) {
+    genderCustomInput.classList.add('gender-custom-input');
+  }
+}
+
+function genderMale() {
+  if (maleRadio.checked) {
+    genderCustomInput.classList.add('gender-custom-input');
+  }
+}
+
+// Events listener
+femaleRadio.addEventListener('click', genderFemale);
+maleRadio.addEventListener('click', genderMale);
+genderCustomRadio.addEventListener('click', genderCustom);
 buttonLogin.addEventListener('click', alertEmailInput);
 buttonRegister.addEventListener('click', validateRegister);
