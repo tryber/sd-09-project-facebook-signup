@@ -1,3 +1,6 @@
+body {
+  margin: 0px;
+}
 .main-content {
   display: flex;
   flex-direction: row;
