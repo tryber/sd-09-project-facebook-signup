@@ -35,18 +35,18 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form class="signup-form">
                 <div class="form-wrapper">
-                    <input type="text" name="firstname" placeholder="Nome">
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                    <input type="text" id="firstname" name="firstname" placeholder="Nome">
+                    <input type="text" id="lastname" name="lastname" placeholder="Sobrenome">
                 </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
+                <input type="text" id="phone_email" name="phone_email" placeholder="Celular ou email">
+                <input type="password" id="password" name="password" placeholder="Nova senha">
                 <label for="birthdate" id="label-birthdate">Data de nascimento</label>
                 <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
                 <label id="label-gender">Gênero</label>
                 <div class="form-wrapper">
-                    <input type="radio" name="gender">Feminino
-                    <input type="radio" name="gender">Masculino
-                    <input type="radio" name="gender">Personalizado
+                    <input type="radio" name="gender" id="female" value="Feminino"><label for="female">Feminino</label>
+                    <input type="radio" name="gender" id="male" value="Masculino"><label for="male">Masculino</label>
+                    <input type="radio" name="gender" id="custom" value="Personalizado"><label for="custom">Personalizado</label>
                 </div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
             </form>
