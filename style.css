@@ -9,6 +9,11 @@ body {
   justify-content: space-around;
 }
 
+.network {
+  height: 206px;
+  width: 502px;
+}
+
 /* .facebook-logo {
   padding: 10px;
 } */
@@ -29,7 +34,7 @@ body {
 }
 
 .main-content {
-  background-color: #dfe1ee;
+  background-color: #f1f3ff;
   display: flex;
   height: 100vh;
   justify-content: flex-start;
@@ -39,6 +44,7 @@ body {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
   width: 800px;
 }
 
@@ -67,33 +73,34 @@ body {
   flex-direction: column;
 }
 
-.cadastro input {
-  border-radius: 4px;
-}
-
 .labelGender {
   display: flex;
   font-size: small;
   justify-content: center;
 }
 
-.nascimento {
-  align-items: center;
+.nascimento, .labelGender{
+  align-items: inherit;
   display: flex;
   flex-direction: column;
-  font-size: small;
-}
-
-.nascimento input {
-  width: 98%;
+  font-size: 1em;
+  margin-left: 2%;
+  color: #43464a8c;
+  font-weight: 700;
 }
 
 .nomeSobrenome {
   display: flex;
-}
+}  
 
 .nomeSobrenome input {
   width: 50%;
+}
+
+.cadastro input {
+  border-radius: 4px;
+  margin: 1%;
+  height: 2em;
 }
 
 .radioButtons {
@@ -129,4 +136,29 @@ body {
   display: flex;
   height: 57px;
   width: 150px;
+}
+
+.right-content h1 {
+  color: #181846;
+  font-size: 2em;
+  margin-bottom: 0%;
+  text-shadow: 1px 1px #ccccff;
+}
+
+.right-content p {
+  color: #181846;
+  font-size: larger;
+  margin-top: 1%;
+  text-shadow: 1px 1px #ccccff;
+}
+
+.right-content input {
+  border-color: #9b9ac33b;
+}
+
+::placeholder {
+  font-size: medium;
+  font-weight: 700;
+  opacity: 0.5;
+  text-indent: 3%;
 }
