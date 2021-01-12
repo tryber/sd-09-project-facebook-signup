@@ -9,23 +9,30 @@ buttonLogin.addEventListener('click', alertInput);
 // Requisito 18
 let valid = false;
 
+function createInvalid() {
+  const mensagemInvalida = document.querySelector('.mensagem-invalida');
+  const alerta = document.createElement('p');
+  alerta.innerText = 'Campos inválidos!';
+  alerta.id = 'alerta-valid';
+  mensagemInvalida.appendChild(alerta);
+}
+
 function validacaoDeCadastro() {
   const camposDeInput = document.querySelectorAll('.validacao');
-  const mensagemInvalida = document.querySelector('.mensagem-invalida');
   const alertaValid = document.querySelector('#alerta-valid');
   if (alertaValid === null) {
     for (let index = 0; index < camposDeInput.length; index += 1) {
       if (camposDeInput[index].value === '') {
-        const alerta = document.createElement('p');
-        alerta.innerText = 'Campos inválidos!';
-        alerta.id = 'alerta-valid'
-        mensagemInvalida.appendChild(alerta);
-        valid = false
+        createInvalid();
+        valid = false;
         return;
-      } else {
-        valid = true;
       }
+      valid = true;
+      return;
     }
+  } else {
+    alertaValid.remove();
+    validacaoDeCadastro();
   }
 }
 
@@ -62,10 +69,10 @@ buttonPersonalizado.addEventListener('click', genderCustom);
 
 function genderChecked() {
   const genderValid = document.querySelectorAll('.validacao');
-  const gender = '';
+  let gender = '';
   for (let index = 5; index < genderValid.length; index += 1) {
-    if (genderValid[index].checked){
-      gender = genderValid[index].value
+    if (genderValid[index].checked) {
+      gender = genderValid[index].value;
     }
   }
   return gender;
@@ -78,16 +85,11 @@ function showInfo(event) {
   const lastName = inputValid[1].value;
   const emailAndPhone = inputValid[2].value;
   const date = inputValid[4].value;
-  let gender = '';
+  let gender = genderChecked();
 
-  for (let index = 5; index < inputValid.length; index += 1) {
-    if (inputValid[index].checked){
-      gender = inputValid[index].value;
-    }
-  }
   if (valid === true) {
     const rightInfo = document.querySelector('.right-content');
-    rightInfo.innerHTML = "";
+    rightInfo.innerHTML = '';
     const firstLastName = document.createElement('p');
     firstLastName.innerHTML = `Olá, ${firstName} ${lastName}`;
     rightInfo.appendChild(firstLastName);
