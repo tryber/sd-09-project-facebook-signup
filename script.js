@@ -30,3 +30,12 @@ btnCadastro.addEventListener('click', function (event) {
     document.querySelector('.open-account').appendChild(camposInvalidos);
   }
 });
+
+const genderCustom = document.querySelector('#personalizado');
+genderCustom.addEventListener('click', function () {
+  const fieldCustom = document.createElement('input');
+  fieldCustom.type = 'text';
+  fieldCustom.name = 'gender-custom';
+  fieldCustom.placeholder = 'Gênero (opcional)';
+  document.querySelector('.gender').append(fieldCustom);
+});
