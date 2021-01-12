@@ -10,21 +10,39 @@
 </head>
 <body>
   <header class="top-bar">
-    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do Facebook">
+    <div class="facebook-logo-container">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do Facebook">
+    </div>
+    <div class="alert-message">
+      <p>Você deve se conectar primeiro.</p>
+    </div>
     <form class="facebook-login" action="" enctype="multipart/form-data" method="GET">
       <div class="form-group">
-        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-        <input type="text" name="" id="user-email-phone">
+        <label class="email-label" for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+        <input class="email-input" type="text" name="" id="user-email-phone" placeholder="Número de celular ou email">
       </div>
       <div class="form-group">
-        <label for="user-password" id="user-password-label">Senha</label>
-        <input type="text" name="" id="user-password">
+        <label class="password-label" for="user-password" id="user-password-label">Senha</label>
+        <input class="password-input" type="text" name="" id="user-password" placeholder="Senha">
       </div>
       <div class="form-control">
         <button type="submit" id="button-login">Entrar</button>
       </div>
     </form>
   </header>
+  <section class="register-mobile">
+    <div class="register-yourself">
+      <hr>
+      <span>ou</span>
+      <hr>
+    </div>
+    <div class="form-control-register">
+      <button id="button-register">Criar nova conta</button>
+    </div>
+    <div class="forget-password">
+      <p>esqueceu sua senha ?</p>
+    </div>
+  </section>
   <section class="main-content">
     <div class="left-content">
       <p class="facebook-slogan" id="facebook-slogan">
