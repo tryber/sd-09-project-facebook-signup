@@ -5,7 +5,7 @@ body {
 }
 
 .button-entrar {
-  background-color: #3578E5;
+  background-color: #3578e5;
   border-radius: 5px;
   color: white;
   height: 23px;
@@ -15,7 +15,7 @@ body {
   align-items: center;
   display: flex;
   height: 60px;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 300px;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .form-control {
-  align-self:flex-end;
+  align-self: flex-end;
   height: 40px;
   width: 60px;
 }
@@ -34,9 +34,9 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  font-style:inherit;
+  flex-flow: wrap;
   font-size: 12px;
+  font-style: inherit;
   height: 40px;
   width: 162px;
 }
