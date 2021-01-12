@@ -10,6 +10,13 @@ buttonEntrar.addEventListener('click', (event) => {
   alert(emailOrPhone);
 });
 
+function deleteInputGenterCustom(container) {
+  const inputGenterCustom = document.querySelector('#inputGenterCustom');
+  if (inputGenterCustom !== null) {
+    container.removeChild(inputGenterCustom);
+  }
+}
+
 genderCustom.addEventListener('change', (event) => {
   event.preventDefault();
   const container = document.querySelector('#div-gender-custom');
@@ -25,13 +32,6 @@ function deleteParagraph(container) {
   const paragraph = document.querySelector('#validation-error');
   if (paragraph !== null) {
     container.removeChild(paragraph);
-  }
-}
-
-function deleteInputGenterCustom(container) {
-  const inputGenterCustom = document.querySelector('#inputGenterCustom');
-  if (inputGenterCustom !== null) {
-    container.removeChild(inputGenterCustom);
   }
 }
 
