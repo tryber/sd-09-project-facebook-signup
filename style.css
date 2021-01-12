@@ -28,8 +28,6 @@ body {
 }
 
 .main-content {
-
-  /* mudar para cor correta de background */
   background-color: #f0f2f5;
   display: flex;
   justify-content: space-around;
