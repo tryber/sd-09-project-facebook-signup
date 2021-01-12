@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+}
+
+.form-group label {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding: 1em;
+}
+
+.showed {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and ( max-width : 780px ) {
+
+  .forget-password {
+    display: flex;
+    justify-content: center;
+  }
+
+  .forget-password p {
+    color: rgb(115, 137, 171);
+    font-size: 14px;
+  }
+
+  .register-yourself {
+    display: flex;
+  }
+
+  .register-yourself hr {
+    display: inline-block;
+    width: 30%;
+  }
+
+  .form-control button {
+    background-color: rgb(22, 112, 235);
+    border: 0.5px solid rgb(52, 108, 185);
+    color: white;
+    font-size: 14px;
+    height: 40px;
+    width: 15em;
+  }
+
+  .form-control-register {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+  }
+
+  .form-control-register button {
+    background-color: rgb(24, 151, 33);
+    border: 0.4px solid gray;
+    border-radius: 2px;
+    color: white;
+    height: 35px;
+    padding: 5px;
+    width: 10em;
+  }
+
+  .email-label {
+    display: none;
+  }
+
+  .email-input {
+    background-color: rgb(244, 245, 247);
+    border: 0.5px solid rgb(225, 225, 225);
+    border-radius: 3px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  .email-input::placeholder {
+    color: rgb(111, 112, 114);
+  }
+
+  .password-label {
+    display: none;
+  }
+
+  .password-input {
+    background-color: rgb(244, 245, 247);
+    border: 0.5px solid rgb(225, 225, 225);
+    border-radius: 3px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  .password-input::placeholder {
+    color: rgb(111, 112, 114);
+  }
+
+  body {
+    font-family: Roboto, sans-serif;
+  }
+
+  .main-content {
+    display: none;
+  }
+
+  .top-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .facebook-logo-container {
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .alert-message {
+    background-color: rgb(255, 249, 223);
+    border: 0.5px solid rgb(112, 102, 50);
+    color: rgb(112, 102, 50);
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .alert-message p {
+    margin: 5px;
+  }
+
+  .facebook-login {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 13em;
+  }
+}
+
+@media screen and ( min-width : 780px ) {
+
+  .register-mobile {
+    display: none;
+  }
+
+  .form-control button {
+    background-color: rgb(54, 95, 171);
+    border: 0.5px solid rgb(47, 79, 140);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 5px;
+  }
+
+  .email-input::placeholder {
+    color: transparent;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 9em;
+  }
+
+  body {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .form-line-1 {
+    display: flex;
+  }
+
+  .alert-message {
+    display: none;
+  }
+
+  .form-line-5 {
+    font-size: 14px;
+  }
+
+  .form-line-1 input {
+    width: 45%;
+  }
+
+  .facebook-register {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-content {
+    padding: 20px;
+    width: 300px;
+  }
+
+  .title {
+    color: rgb(50, 50, 50);
+    font-size: 27px;
+    font-weight: 700;
+  }
+
+  .right-content p {
+    color: rgb(50, 50, 50);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .right-content input {
+    height: 22px;
+    margin: 5px;
+  }
+
+  .left-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .facebook-login {
+    display: flex;
+  }
+
+  .top-bar {
+    align-items: center;
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .facebook-networking {
+    align-self: flex-end;
+    margin-right: 7em;
+    width: 60%;
+  }
+
+  .facebook-slogan {
+    color: rgb(66, 103, 178);
+    font-size: large;
+    font-weight: 700;
+    width: 22em;
+  }
+
+  .register-data {
+    background-color: rgb(24, 151, 33);
+    border: 0.4px solid gray;
+    color: white;
+    padding: 5px;
+  }
+}
