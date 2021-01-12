@@ -8,8 +8,7 @@
 // }
 
 // function listeners() {
-//   getChecked[2].addEventListener('click', displayGender);
-  
+//   getChecked[2].addEventListener('click', displayGender);  
 // }
 
 // window.onload = function () {
