@@ -7,7 +7,7 @@ function falert(event) {
 }
 button.addEventListener('click', falert);
 
-function createP () {
+function createP() {
   const newP = document.querySelector('.right-content');
   const newP2 = document.createElement('p');
   const newP2Text = 'Campos inválidos';
@@ -36,7 +36,9 @@ function validInput(event) {
   const inputPersonalizadoValue = inputPersonalizado.checked;
   if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '') {
     createP();
-  } else if (inputFemininoValue === false && inputMasculinoValue === false && inputPersonalizadoValue === false) {
+  } else if (inputFemininoValue === false &&
+     inputMasculinoValue === false &&
+      inputPersonalizadoValue === false) {
     createP();
   }
 }
