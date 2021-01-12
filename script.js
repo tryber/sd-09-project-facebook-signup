@@ -24,7 +24,6 @@ function validateTextInputs() {
       break;
     }
   }
-
   return isValid;
 }
 
