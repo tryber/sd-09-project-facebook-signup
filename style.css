@@ -42,7 +42,7 @@ body {
 }
 
 .mensagem-invalida {
-  color: orange;
+  color: red;
 }
 
 .radios-buttons {
