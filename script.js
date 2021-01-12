@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!e.target.validity.valid) {
         document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
         document.getElementById('campos_invalidos').style.color = 'red';
-      };
+      }
     };
     elements[i].oninput = function () {
       document.getElementById('campos_invalidos').innerText = '';
     };
-  };
+  }
 });
 
 const checkGenre = (event) => {
@@ -38,8 +38,8 @@ const checkGenre = (event) => {
   } else {
     while (divCustonGenre.firstChild) {
       divCustonGenre.removeChild(divCustonGenre.lastChild);
-    };
-  };
+    }
+  }
 };
 
 const eventslistener = () => {
