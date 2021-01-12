@@ -14,7 +14,7 @@ function alertMsgLogIn() {
 
 function isEmpty(obj) {
   for (let index = 0; index < obj.length; index += 1) {
-    if (obj[index].value == "") {
+    if (obj[index].value === '') {
       return true;
     }
   }
@@ -42,4 +42,4 @@ function verifyInputValue(event) {
 
 
 addlistener(btnEntrar, alertMsgLogIn);
-addlistener(btnReg, verifyInputValue)
+addlistener(btnReg, verifyInputValue);
