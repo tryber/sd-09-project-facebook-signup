@@ -4,29 +4,13 @@ buttonLogin.addEventListener('click', function () {
   alert(userEmailPhone.value);
 });
 
-new JustValidate('.js-form', {
-  rules: {
-    firstName: {
-      required: true,
-    },
-    lastName: {
-      required: true,
-    },
-    phoneEmail: {
-      required: true,
-    },
-    password: {
-      required: true,
-    },
-    birthdate: {
-      required: true,
-    },
-  },
-  messages: {
-    firstName: 'Campos inválidos',
-    lastName: 'Campos inválidos',
-    phoneEmail: 'Campos inválidos',
-    password: 'Campos inválidos',
-    birthdate: 'Campos inválidos',
-  },
+const facebookRegister = document.querySelector('#facebook-register');
+const inputs = document.querySelectorAll('input');
+facebookRegister.addEventListener('click', function (event) {
+  event.preventDefault();
+  for (let index = 2; index < inputs.length; index += 1) {
+    if (inputs[index].value === '') {
+      inputs[index].value = 'Campos inválidos';
+    }
+  }
 });
