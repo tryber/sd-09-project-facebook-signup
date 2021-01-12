@@ -46,3 +46,8 @@ body {
 .genders {
   display: flex;
 }
+
+.div-birthdate {
+  display: flex;
+  flex-direction: column;
+}
