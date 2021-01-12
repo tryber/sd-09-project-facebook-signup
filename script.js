@@ -17,22 +17,26 @@ function createInvalid() {
   mensagemInvalida.appendChild(alerta);
 }
 
-function validacaoDeCadastro() {
+function fieldsInput() {
   const camposDeInput = document.querySelectorAll('.validacao');
-  const alertaValid = document.querySelector('#alerta-valid');
-  if (alertaValid === null) {
-    for (let index = 0; index < camposDeInput.length; index += 1) {
-      if (camposDeInput[index].value === '') {
-        createInvalid();
-        valid = false;
-        return;
-      }
-      valid = true;
+  for (let index = 0; index < camposDeInput.length; index += 1) {
+    if (camposDeInput[index].value === '') {
+      createInvalid();
+      valid = false;
       return;
     }
-  } else {
+    valid = true;
+    return;
+  }
+}
+
+function validacaoDeCadastro() {
+  const alertaValid = document.querySelector('#alerta-valid');
+  if (alertaValid) {
     alertaValid.remove();
     validacaoDeCadastro();
+  } else {
+    fieldsInput();
   }
 }
 
@@ -85,7 +89,7 @@ function showInfo(event) {
   const lastName = inputValid[1].value;
   const emailAndPhone = inputValid[2].value;
   const date = inputValid[4].value;
-  let gender = genderChecked();
+  const gender = genderChecked();
 
   if (valid === true) {
     const rightInfo = document.querySelector('.right-content');
