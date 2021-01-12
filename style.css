@@ -49,9 +49,11 @@ body {
 
 .left-content {
   width: 800px;
+  justify-content: left;
 }
 
 .right-content {
   display: flex;
+  justify-content: right;
   width: 300px;
 }
