@@ -36,3 +36,11 @@ body {
   font-size: 10px;
   text-decoration: none;
 }
+
+.main-content{
+  display: flex;
+}
+
+.left-content{
+  width: 800px;
+}

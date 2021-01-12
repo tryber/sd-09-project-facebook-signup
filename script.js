@@ -5,5 +5,5 @@ function clicar() {
     alert(emailPhone.value);
   });
 }
-
+// Interpretei errado e a mensagem do alert não era "email ou telefone" mas sim, o valor do campo e-mail e telefone. Agora deu
 clicar();
