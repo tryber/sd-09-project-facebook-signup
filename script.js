@@ -24,7 +24,7 @@ function validacao(event) {
   if (document.getElementById('perso').checked) {
     status2 = true;
   }
-  
+
   if (status1 === true || status2 === false) {
     alert('Campos inválidos');
     event.preventDefault();
