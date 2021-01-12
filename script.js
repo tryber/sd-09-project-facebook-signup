@@ -15,12 +15,10 @@ registerButton.addEventListener('click', (event) => {
       if (registerInput[index].checked === false) {
         cont += 1;
       }
-    } else {
-      if (registerInput[index].value === '') {
-        alert('Campos inválidos');
-        event.preventDefault();
-        return;
-      }
+    } else if (registerInput[index].value === '') {
+      alert('Campos inválidos');
+      event.preventDefault();
+      return;
     }
   }
   if (cont >= 3) {
