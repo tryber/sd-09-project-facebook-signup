@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Projeto Facebook</title>
   <link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 <body>
@@ -19,7 +19,7 @@
         <input type="password" id="user-password" name="user-password">
       </div>
       <div class="form-control">
-        <button id="button-login" type="submit" >Entrar</button>
+        <button id="button-login" type="submit">Entrar</button>
       </div>
     </form>
   </header>
@@ -33,14 +33,14 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" method="GET">
         <div class="nome-sobrenome">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" id="id-firstname" placeholder="Nome">
+          <input type="text" name="lastname" id="id-lastname" placeholder="Sobrenome">
         </div>
         <div>
-          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="text" name="phone_email" id="id-phone_email" placeholder="Celular ou email">
         </div>
         <div>
-          <input type="password" name="password" placeholder="Nova senha">
+          <input type="password" name="password" id="id-password" placeholder="Nova senha">
         </div>
         <div>
           <label id="label-birthdate" for="id-birthdate">Data de nascimento</label>
@@ -50,20 +50,21 @@
           <label id="label-gender">Gênero</label>
         </div>
         <div>
-          <label for="female">
-            <input type="radio" name="gender" id="female" value="Feminino">Feminino
+          <label for="id-female">
+            <input type="radio" name="gender" id="id-female" value="Feminino">Feminino
           </label>
           <label for="male">
-            <input type="radio" name="gender" id="male" value="Masculino">Masculino
+            <input type="radio" name="gender" id="id-male" value="Masculino">Masculino
           </label>
           <label for="custom">
-            <input type="radio" name="gender" id="custom" value="Personalizado">Personalizado
+            <input type="radio" name="gender" id="id-custom" value="Personalizado">Personalizado
           </label>
         </div>
         <button id="facebook-register" type="submit">Cadastre-se</button>
       </form>
     </div>
   </section>
+  <!-- <script src="libs/moment.js"></script> -->
   <script src="script.js"></script>
-</body>
+ </body>
 </html>
