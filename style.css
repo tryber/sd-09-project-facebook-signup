@@ -38,15 +38,15 @@ p {
   flex-direction: column;
 }
 
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
 .genero {
   display: none;
   margin: 0 0 15px;
   width: 100%;
-}
-
-.form-control {
-  align-self: flex-end;
-  display: flex;
 }
 
 .gender {
@@ -59,8 +59,8 @@ p {
 
 .login-content {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
 }
 
 .main-content {
