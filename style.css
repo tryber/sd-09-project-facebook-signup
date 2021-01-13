@@ -2,8 +2,9 @@ body {
   background-image: linear-gradient(to bottom, white, #dfe3ee);
   color: #2d2d2d;
   font-family: sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  min-width: 1200px;
   padding: 0;
 }
 
@@ -58,12 +59,11 @@ header {
 
 .hidden-input {
   display: none;
-  width: 100%;
+  width: 95%;
 }
 
 .left-content {
-  display: flex;
-  flex-flow: column;
+  width: 800px;
 }
 
 .left-content img {
@@ -81,7 +81,7 @@ header {
   align-items: baseline;
   display: flex;
   margin: 1em auto;
-  max-width: 1100px;
+  width: fit-content;
 }
 
 .radio-container {
@@ -96,7 +96,7 @@ header {
 .right-content {
   display: flex;
   flex-flow: column;
-  max-width: 300px;
+  width: 300px;
 }
 
 .right-content form {
@@ -133,5 +133,5 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1100px;
+  width: 1100px;
 }
