@@ -5,14 +5,14 @@
 const inputEmailPhone = document.querySelector('#user-email-phone');
 const buttonSender = document.querySelector('#button-login');
 const buttonRegister = document.querySelector('#facebook-register');
-const firstName = document.querySelector('#id-firstname');
-const lastName = document.querySelector('#id-lastname');
-const phoneEmail = document.querySelector('#id-phone_email');
-const password = document.querySelector('#id-password');
-const birthDate = document.querySelector('#id-birthdate');
-const female = document.querySelector('#id-female');
-const male = document.querySelector('#id-male');
-const custom = document.querySelector('#id-custom');
+const formFirstName = document.querySelector('#id-firstname');
+const formLastName = document.querySelector('#id-lastname');
+const formPhoneEmail = document.querySelector('#id-phone_email');
+const formPassword = document.querySelector('#id-password');
+const formBirthDate = document.querySelector('#id-birthdate');
+const formFemale = document.querySelector('#id-female');
+const formMale = document.querySelector('#id-male');
+const FormCustom = document.querySelector('#id-custom');
 
 /* Exibe e-mail-telefone */
 buttonSender.addEventListener('click', function (event) {
@@ -25,9 +25,9 @@ buttonSender.addEventListener('click', function (event) {
 /* Valida dados cadastrais */
 buttonRegister.addEventListener('click', function(event) {
   let formValid = true;
-   if (firstName.value.length < 1) {
-     formValid = false;
-   }
+  if (firstName.value.length < 1) {
+    formValid = false;
+  }
   if (lastName.value.length < 1) {
     formValid = false;
   }
@@ -37,9 +37,6 @@ buttonRegister.addEventListener('click', function(event) {
   if (password.value.length < 1) {
     formValid = false;
   }
- 
   console.log(formValid);
-
   event.preventDefault();
-
 });
