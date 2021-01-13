@@ -8,12 +8,13 @@ p {
 }
 
 .btn {
+  background-color: mediumseagreen;
+  border: 0 solid;
+  border-radius: 4px;
+  color: white;
+  font-size: large;
+  padding: 8px;
   width: 170px;
-}
-
-.calendar {
-  display: flex;
-  flex-direction: row;
 }
 
 .data-content {
@@ -24,8 +25,6 @@ p {
 .facebook-login {
   display: flex;
   margin: 10px;
-  position: absolute;
-  right: 180px;
 }
 
 .facebook-login label {
@@ -40,8 +39,9 @@ p {
 }
 
 .genero {
-  display: block;
+  display: none;
   margin: 0 0 15px;
+  width: 100%;
 }
 
 .form-control {
@@ -49,26 +49,18 @@ p {
   display: flex;
 }
 
-.genero-radio {
-  margin: 8px;
-}
-
-.inputs-content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .gender {
   margin: 0 10px;
 }
 
-.label-content {
-  margin: 15px 0;
-  padding: 0;
-}
-
 .left-content {
   width: 800px;
+}
+
+.login-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .main-content {
@@ -80,10 +72,6 @@ p {
 
 .nome {
   display: flex;
-}
-
-.pad-zero {
-  padding: 0;
 }
 
 .radios {
