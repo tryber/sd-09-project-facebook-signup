@@ -71,8 +71,8 @@ body {
 }
 
 .left-content {
-  flex-basis: 800px;
   background-color: yellow;
+  flex-basis: 800px;
   margin: 0;
 }
 
