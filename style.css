@@ -40,7 +40,7 @@
 }
 
 .aolado {
-  color: rgb( 255, 255, 255 );
+  color: rgb(255,255,255);
   display: flex;
 }
 
@@ -76,11 +76,11 @@
   margin-top: 3px;
 }
 
-#feminino{
+#feminino {
   font-size: 10px;
 }
 
-#label-gender{
+#label-gender {
   color: rgb(66, 103, 178);
   margin-top: 5px;
   margin-bottom: 3px;
