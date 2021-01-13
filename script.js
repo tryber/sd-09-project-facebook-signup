@@ -17,46 +17,55 @@ function registerValidate() {
     if (validateCamps[index].value === '') {
       const div = document.createElement('div');
       div.innerHTML = `${validateCamps[index].name}: Campos inválidos`;
-      document.querySelector('form.cadastro').appendChild(div);
+      document.getElementById('appendRegister').appendChild(div);
     }
   }
 }
 
-// function createValidRegister() {
-//   for (let index = 0; index < 5; index += 1) {
-//     if (validateCamps[index] !== '') {
-//     const createDiv = document.createElement('div');
-//     createDiv.innerHTML = `${validateCamps[index].name}: ${validateCamps[index].value}`;
-//     document.getElementById('right-content').appendChild(createDiv);
-//     }
-//   }
-//   const removeForm = document.getElementById('cadastro').remove();
-// }
+function createValidRegister() {
+  for (let index = 0; index < 5; index += 1) {
+    if (validateCamps[index].value !== '') {
+    const createDiv = document.createElement('div');
+    createDiv.innerHTML = `${validateCamps[index].name}: ${validateCamps[index].value}`;
+    document.getElementById('appendRegister').appendChild(createDiv);    
+    }
+  }   
+}
 
-// function createGenderRegister() {
-//   const getGender = document.querySelectorAll('.radioButtons input');
-//   for (let index = 0; index < 3; index += 1) {
-//     if (getGender[index].checked === true) {
-//       const createDiv = document.createElement('div');
-//       createDiv.innerHTML = `${getGender[index].name}: ${getGender[index].value}`;
-//       document.getElementById('right-content').appendChild(createDiv);
-//     }
-//   }
-//   if (getGender[2].checked === true) {
-//     const customGender = document.getElementById('genderText')
-//     const createDiv = document.createElement('div');
-//     createDiv.innerHTML = `${customGender.name}: ${customGender.value}`;
-//     document.getElementById('right-content').appendChild(createDiv);
-//   }
-// }
+function createGenderRegister() {
+  const getGender = document.querySelectorAll('.radioButtons input');
+  for (let index = 0; index < 3; index += 1) {
+    if (getGender[index].checked === true) {
+      const createDiv = document.createElement('div');
+      createDiv.innerHTML = `${getGender[index].name}: ${getGender[index].value}`;
+      document.getElementById('appendRegister').appendChild(createDiv);
+    }
+  }
+  if (getGender[2].checked === true) {
+    const customGender = document.getElementById('genderText')
+    const createDiv = document.createElement('div');
+    createDiv.innerHTML = `${customGender.name}: ${customGender.value}`;
+    document.getElementById('appendRegister').appendChild(createDiv);
+  }
+}
+
+function checkValidRegister() {
+  const sectionCheck = document.getElementById('appendRegister').childElementCount;
+  if (sectionCheck === 0) {
+    createValidRegister();
+    createGenderRegister();
+    document.getElementById('cadastro').remove()
+  }
+}
 
 function listeners() {
   const registerButton = document.getElementById('facebook-register');
   registerButton.addEventListener('click', stopDefault);
   registerButton.addEventListener('click', registerValidate);
+  registerButton.addEventListener('click', checkValidRegister);  
 }
-// registerButton.addEventListener('click', createValidRegister);
-// registerButton.addEventListener('click', createGenderRegister);
+// 
+// 
 
 // function checkEmail() {
 //   const email = document.querySelector('.input-login');
