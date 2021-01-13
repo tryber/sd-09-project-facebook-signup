@@ -41,12 +41,18 @@ function checkEmptyFields() {
   for (let index = 0; index < inputsNotRadio.length; index += 1) {
     if (inputsNotRadio[index].value === '' || checked === null) {
       invalidField += 1;
-      // form.innerHTML = 'Campos Invalidos';
-      inputsNotRadio[index].innerHTML = 'Campos Invalidos';
-      inputsNotRadio[index].placeholder = 'Campos Invalidos';
     }
   }
-  if (invalidField === 0) {
+  validateEmptyFields(invalidField);
+}
+
+function validateEmptyFields(fields) {
+  const form = document.querySelector('#register-form');
+  if (fields > 0) {
+    const text = document.createElement('p');
+    text.innerHTML = 'Campos Invalidos';
+    form.appendChild(text);
+  } else {
     changeChosenGender();
     insertWelcome();
   }
