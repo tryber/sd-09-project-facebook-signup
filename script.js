@@ -56,9 +56,9 @@ function createGenderRegister() {
 }
 
 function createSection() {
-  const createSection = document.createElement('section');
-  createSection.id = 'appendRegister';
-  createSection.className = 'appendRegister';
+  const createSectionValidate = document.createElement('section');
+  createSectionValidate.id = 'appendRegister';
+  createSectionValidate.className = 'appendRegister';
   document.getElementById('right-content').appendChild(createSection);
 }
 
