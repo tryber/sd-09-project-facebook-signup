@@ -67,11 +67,9 @@ function validInput(event) {
   const inputFemininoValue = inputFeminino.checked;
   const inputMasculinoValue = inputMasculino.checked;
   const inputPersonalizadoValue = inputPersonalizado.checked;
-  if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '') {
-    createP();
-  } else if (inputFemininoValue === false &&
-      inputMasculinoValue === false &&
-      inputPersonalizadoValue === false) {
+  if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '' || (inputFemininoValue === false &&
+    inputMasculinoValue === false &&
+    inputPersonalizadoValue === false) ) {
     createP();
   } else {
     write();
