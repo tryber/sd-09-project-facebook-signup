@@ -7,9 +7,8 @@ body {
 }
 
 .facebook-login {
-  color: white;
   display: flex;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 .facebook-logo {
