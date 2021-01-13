@@ -1,6 +1,6 @@
-function loginAlert() {
+/* function loginAlert() {
     
 }
 
 const btLogin = document.getElementById('button-login');
-btLogin.addEventListener('click', loginAlert);
+btLogin.addEventListener('click', loginAlert); */
