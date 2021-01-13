@@ -32,6 +32,7 @@
             </form>
             </div>
     </header>
+
     <section class="main-content">
         <div class="left-content">
             <p id="facebook-slogan" class="title is-5">O Facebook ajuda você a se conectar e compartilhar com as pessoas
@@ -51,33 +52,34 @@
                 <div class="field is-grouped">
                     <div class="field">
                         <div class="control">
-                            <input class="input" type="text" placeholder="Nome" name="firstname">
+                            <input class="input" type="text" placeholder="Nome" name="firstname" required>
                         </div>
                     </div>
 
                     <div class="field">
                         <div class="control">
-                            <input class="input" type="text" placeholder="Sobrenome" name="lastname">
+                            <input class="input" type="text" placeholder="Sobrenome" name="lastname" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="field">
                     <div class="control">
-                        <input class="input" type="text" placeholder="Celular ou email" name="phone_email">
+                        <input class="input" type="text" placeholder="Celular ou email" name="phone_email" required>
                     </div>
                 </div>
 
                 <div class="field">
                     <div class="control">
-                        <input class="input" type="password" placeholder="Nova senha" name="password">
+                        <input class="input" type="password" placeholder="Nova senha" name="password" required>
                     </div>
                 </div>
 
                 <div class="field">
                     <label class="label" for="birthdate" id="label-birthdate">Data de nascimento</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate">
+                        <input class="input" type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate"
+                            required>
                     </div>
                 </div>
 
@@ -85,22 +87,27 @@
                     <label class="label" id="label-gender">Gênero</label>
                     <div class="control">
                         <label class="radio">
-                            <input type="radio" name="gender">
+                            <input type="radio" name="gender" value="Feminino" required>
                             Feminino
                         </label>
                         <label class="radio">
-                            <input type="radio" name="gender">
+                            <input type="radio" name="gender" value="Masculino">
                             Masculino
                         </label>
                         <label class="radio">
-                            <input type="radio" name="gender">
+                            <input type="radio" name="gender" value="Personalizado" id="custom-gender-option">
                             Personalizado
                         </label>
                     </div>
                 </div>
+                <!-- Gender INPUT HERE -->
+                <div class="field">
+                    <div class="control" id="gender-input-container">
+                    </div>
+                </div>
 
                 <div class="control">
-                    <input type="submit" id="facebook-register" class="button is-success" value="Cadastre-se">
+                    <button type="submit" id="facebook-register" class="button is-success">Cadastre-se</button>
                 </div>
             </form>
         </div>
