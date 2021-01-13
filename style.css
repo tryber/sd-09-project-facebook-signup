@@ -1,10 +1,16 @@
 body {
+  background-image: linear-gradient(to bottom, #fefefe, #d3d4e8);
+  font-family: sans-serif;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 .facebook-login {
+  color: white;
   display: flex;
+  align-items: center;
+  margin: 10px;
 }
 
 .facebook-logo {
@@ -25,7 +31,6 @@ body {
 }
 
 .main-content {
-  background-color: #edf0f5;
   display: flex;
   justify-content: center;
 }
