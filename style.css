@@ -1,80 +1,77 @@
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   margin: auto;
   position: fixed;
   width: 100%;
-  margin: 0px;
 }
 
 .facebook-logo {
   float: left;
 }
 
-.top-bar{
-  align-items: center;
-}
-
 .form-group {
   display: flex;
 }
 
-.form-control{
-  align-self: flex-end;
+.form-control {
   align-items: flex-end;
+  align-self: flex-end;
 }
 
-.main-content{
+.main-content {
   display: flex;
   padding-top: 40px;
 }
 
-#facebook-slogan{
+#facebook-slogan {
+  color:rgb( 66, 103, 178 );
   font-size: 30px;
-  color:rgb(66, 103, 178)
 }
 
-.left-content{
+.left-content {
   width: 800px;
 }
 
-.right-content{
+.right-content {
+  justify-content: flex-start;
   width: 300px;
-  justify-content:flex-start;
 }
 
-#lado{
+.aolado {
   display: flex;
+  color: rgb( 255, 255, 255 );
 }
 
-#phone_email{
+#phone_email {
   width: 310px;
   border-radius: 5px;
   margin-top: 3px;
 }
 
-#firstname{
+#firstname {
   border-radius: 5px;
   margin-top: 3px;
 }
 
-#lastname{
+#lastname {
   border-radius: 5px;
   margin-top: 3px;
 }
 
-#password{
+#pass-word {
   width: 310px;
   border-radius: 5px;
   margin-top: 3px;
 }
 
-#label-birthdate{
+#label-birthdate {
   color: rgb(66, 103, 178);
   margin-top: 5px;
 }
 
-#birthdate{
+#birthdate {
   border-radius: 5px;
   margin-top: 3px;
 }
@@ -89,14 +86,14 @@
   margin-bottom: 3px;
 }
 
-#feminino{
+#feminino {
   font-size: 5px;
 }
 
-#facebook-register{
+#facebook-register {
   background-color: seagreen;
-  padding: 15px;
   border-radius: 10px;
-  font-size: 15px;
   color: antiquewhite;
+  font-size: 15px;
+  padding: 15px;
 }
