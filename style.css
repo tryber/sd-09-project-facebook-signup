@@ -34,10 +34,6 @@ p {
   margin: 10px;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
@@ -46,6 +42,11 @@ p {
 .genero {
   display: block;
   margin: 0 0 15px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
 }
 
 .genero-radio {
