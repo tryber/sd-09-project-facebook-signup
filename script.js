@@ -69,7 +69,7 @@ function validInput(event) {
   const inputPersonalizadoValue = inputPersonalizado.checked;
   if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '' || (inputFemininoValue === false &&
     inputMasculinoValue === false &&
-    inputPersonalizadoValue === false) ) {
+    inputPersonalizadoValue === false)) {
     createP();
   } else {
     write();
