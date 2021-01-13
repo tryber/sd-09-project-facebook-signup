@@ -1,14 +1,21 @@
-.top-bar{
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    padding: 10px;
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  border: 1px red solid;
 }
 
-.facebook-login{
-    display: flex;
+.facebook-logo{
+  text-align: left;
+  border: 1px red solid;
 }
- 
-.form-group{
+
+.facebook-login {
+  display: flex;
+  align-self: right;
+  border: 1px black solid;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
 }
@@ -33,5 +40,3 @@
 .centered-image {
   text-align: center;
 }
-
-
