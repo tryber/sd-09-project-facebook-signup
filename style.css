@@ -58,3 +58,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.gender-radios {
+  display: flex;
+  flex-direction: row;
+}
