@@ -6,16 +6,6 @@ body {
   padding: 0;
 }
 
-button[type='submit'] {
-  background-color: #5b9d4e;
-  border: none;
-  border-radius: 0.3em;
-  color: white;
-  font-weight: 700;
-  margin: 1em 0;
-  padding: 0.5em 2em
-}
-
 form input {
   box-sizing: border-box;
 }
@@ -40,10 +30,10 @@ form input {
   font-weight: 700;
 }
 
-.form-control button{
+.form-control button {
+  background-color: #3e61a8;
   border: 1px solid #34518b;
   color: white;
-  background-color: #3e61a8;
   height: 21px;
 }
 
@@ -119,12 +109,22 @@ form input {
   padding: 0.5em;
 }
 
-.right-content h1, .right-content p {
+.right-content p , .right-content .title {
   color: #2d2d2d;
 }
 
 .small-input {
   width: 48%;
+}
+
+.submitButton {
+  background-color: #5b9d4e;
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+  font-weight: 700;
+  margin: 1em 0;
+  padding: 0.5em 2em;
 }
 
 .top-bar {
