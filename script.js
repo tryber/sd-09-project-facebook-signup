@@ -12,6 +12,7 @@ customGender.addEventListener('click', function () {
   }
   const newGender = document.createElement('input');
   newGender.type = 'text';
+  newGender.name = 'gender-custom';
   newGender.placeholder = 'Gênero (opcional)';
   newGender.required = true;
   custom.appendChild(newGender);
