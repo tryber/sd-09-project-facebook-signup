@@ -1,8 +1,10 @@
+//login button
 const btnLogin = document.querySelector('#button-login');
 btnLogin.addEventListener('click', function () {
   const userMailPhone = document.querySelector('#user-email-phone').value;
   alert(userMailPhone);
 });
+//register button
 const fullName = document.createElement('p');
 const phoneEmail = document.createElement('p');
 const birthdate = document.createElement('p');
@@ -20,17 +22,17 @@ const btnCadastro = document.querySelector('#facebook-register');
 btnCadastro.addEventListener('click', function (event) {
   const fields = document.querySelectorAll('.open-account input');
   let campos = false;
-  for (let field = 0; field < fields.length; field += 1) {
-    if (fields[field].type === 'text') {
-      if (fields[field].value === '') {
+  for (let index = 0; index < fields.length -1; index += 1) {
+    if (fields[index].type === 'text') {
+      if (fields[index].value === '') {
         break;
       }
     }
 
-    if (fields[field].type === 'radio') {
-      if (fields[field].checked) {
+    if (fields[index].type === 'radio') {
+      if (fields[index].checked) {
         campos = true;
-        gender2.innerText = `Gênero: ${fields[field].value}`;
+        gender2.innerText = `Gênero: ${fields[index].value}`;
       }
     }
   }
@@ -49,7 +51,7 @@ btnCadastro.addEventListener('click', function (event) {
     addContent();
   }
 });
-
+//gender custom
 const genderCustom = document.querySelector('#personalizado');
 genderCustom.addEventListener('click', function () {
   const fieldCustom = document.createElement('input');
