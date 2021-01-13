@@ -10,14 +10,13 @@ function addCustomGenderInput(event) {
   } else if (genderInputContainer.childNodes.length !== 0) {
     genderInputContainer.removeChild(genderInputContainer.lastChild);
   }
-
 }
 
 window.onload = function () {
   // const signInButton = document.getElementById('facebook-register');
   const customGenderOptions = document.getElementsByClassName('gender-radio');
 
-  for (const radio of customGenderOptions) {
-    radio.addEventListener('change', addCustomGenderInput);
+  for (let index = 0; index < customGenderOptions.length; index++) {
+    customGenderOptions[index].addEventListener('change', addCustomGenderInput);
   }
 };
