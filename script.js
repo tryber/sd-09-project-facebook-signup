@@ -60,10 +60,11 @@ function messageWelcome(array, gender) {
 function registerUser() {
   const registerButton = document.querySelector('#facebook-register');
   const dataUser = document.querySelectorAll('.input');
+  const errorMessageLocation = document.querySelector('#invalidFields');
 
-  registerButton.addEventListener('click', function () {
+  registerButton.addEventListener('click', function (event) {
     if (checkDataUser() > 0) {
-      const errorMessageLocation = document.querySelector('#invalidFields');
+      event.preventDefault()
       errorMessageLocation.innerText = 'Campos inválidos';
     } else {
       const selectedGender = document.querySelector('input[name="gender"]:checked');
