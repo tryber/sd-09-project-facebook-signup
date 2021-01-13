@@ -44,25 +44,7 @@ function validInput(event) {
       inputMasculinoValue === false &&
       inputPersonalizadoValue === false) {
     createP();
-  } else {
-    box.removeChild(inputName);
-    box.removeChild(inputLastname);
-    box.removeChild(inputPhone);
-    box.removeChild(inputNewpw);
-    box.removeChild(inputBirth);
-    box.removeChild(boxRadio);
-    box.removeChild(labelBirth);
-    box.removeChild(labelRadio);
-    let checked = '';
-    if (inputFemininoValue === true) {
-      checked = 'Feminino';
-    } else if (inputMasculinoValue === true) {
-      checked = 'Masculino';
-    } else if (inputPersonalizadoValue === true) {
-      checked = 'Personalizado';
-    }
-    box.innerText = (`Olá, ${inputNameValue} ${inputLastnameValue} ${inputPhoneValue} ${inputBirthValue} ${checked}`);
-  }
+  } 
 }
 btnCadastre.addEventListener('click', validInput);
 
@@ -81,7 +63,6 @@ rdoPerso.addEventListener('click', inputTxtPerso);
 const btnCadastre2 = document.getElementById('facebook-register');
 function deleteWrite(event) {
   event.preventDefault();
-  const box2 = document.getElementById('form');
   const boxRadio2 = document.getElementById('radios');
   const inputName2 = document.getElementById('name');
   const inputLastname2 = document.getElementById('lastname');
@@ -96,7 +77,6 @@ function deleteWrite(event) {
   const inputNameValue2 = inputName2.value;
   const inputLastnameValue2 = inputLastname2.value;
   const inputPhoneValue2 = inputPhone2.value;
-  const inputNewpwValue2 = inputNewpw2.value;
   const inputBirthValue2 = inputBirth2.value;
   const inputFemininoValue2 = inputFeminino2.checked;
   const inputMasculinoValue2 = inputMasculino2.checked;
@@ -117,6 +97,6 @@ function deleteWrite(event) {
   } else if (inputPersonalizadoValue2 === true) {
     checked2 = 'Personalizado';
   }
-  box.innerText2 = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);  
+  box.innerText2 = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);
 }
 btnCadastre2.addEventListener('click', deleteWrite);
