@@ -56,4 +56,5 @@ body {
 
 .birthdate {
   display: flex;
+  flex-direction: column;
 }
