@@ -10,8 +10,8 @@ body {
   display: flex;
   height: 65px;
   justify-content: space-between;
-  padding-left: 210px;
-  padding-right: 280px;
+  padding-left: 220px;
+  padding-right: 250px;
 }
 
 .button-entrar {
@@ -59,7 +59,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-right: 230px;
+  padding-right: 180px;
 }
 
 .right-content {
@@ -78,6 +78,7 @@ body {
 
 .left-content :nth-child( 2 ) {
   align-self: flex-end;
+  margin-right: 30px;
 }
 
 .left-content p {
