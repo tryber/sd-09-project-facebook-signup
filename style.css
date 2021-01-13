@@ -75,3 +75,7 @@ O Cypress evaluator está dando erro neste teste:
   justify-content: center;
   padding: 5px;
 }
+
+.hide {
+  display: none;
+}

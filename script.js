@@ -9,7 +9,7 @@ function showEmailPhoneAlert() {
 }
 
 function pushIfUniqueIn(item, targetArray) {
-  const isValid = !targetArray.includes(item) && item !== ''
+  const isValid = !targetArray.includes(item) && item !== '';
   if (isValid) {
     targetArray.push(item);
   }
@@ -55,7 +55,7 @@ const alertMessage = {
     alertMessage.element.innerHTML = 'Campos inválidos';
     alertMessage.element.classList.add('fail');
   },
-}
+};
 
 function checkRegisterFields(event) {
   event.preventDefault();
@@ -68,7 +68,28 @@ function checkRegisterFields(event) {
   }
 }
 
-window.onload = function () {
+function setLoginButtonEvent() {
   loginButton.addEventListener('click', showEmailPhoneAlert);
+}
+
+function setRegisterButtonEvent() {
   registerButton.addEventListener('click', checkRegisterFields);
+}
+
+function setCustomGenderField() {
+  const customGenderRadio = document.querySelector('#gender-container');
+  const customGenderInput = document.querySelector('#gender-custom');
+  customGenderRadio.addEventListener('change', (event) => {
+    if (event.target.id === 'gender-personalized') {
+      customGenderInput.classList.remove('hide');
+    } else {
+      customGenderInput.classList.add('hide');
+    }
+  });
+}
+
+window.onload = function () {
+  setCustomGenderField();
+  setLoginButtonEvent();
+  setRegisterButtonEvent();
 };
