@@ -72,3 +72,8 @@ body {
   margin-right: 5px;
   margin-top: 5px;
 }
+
+.text-button-location{
+  display: flex;
+  flex-direction: column;
+}
