@@ -1,0 +1,45 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-name-container {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.radio-container {
+  display: flex;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
