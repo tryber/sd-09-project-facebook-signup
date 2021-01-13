@@ -1,3 +1,18 @@
+.top-bar{
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    padding: 10px;
+}
+
+.facebook-login{
+    display: flex;
+}
+ 
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
@@ -18,3 +33,5 @@
 .centered-image {
   text-align: center;
 }
+
+
