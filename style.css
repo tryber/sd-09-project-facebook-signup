@@ -2,8 +2,8 @@ body {
   background-image: linear-gradient(to bottom, #fefefe, #d3d4e8);
   font-family: sans-serif;
   height: 100vh;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 header {
