@@ -28,9 +28,6 @@ body {
 .main-content {
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
 }
 
 .left-content {

@@ -9,7 +9,7 @@
 <body>
     <header class='top-bar'>
         <img src="imgs/facebook-logo.png" class="facebook-logo">
-        <form action="" class="facebook-login">
+        <form class="facebook-login">
             <div id="form-group">
                 <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
                 <input type='text' id='user-email-phone'>
@@ -27,20 +27,20 @@
     <div class='main-content'>
         <div class='left-content'>
             <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <img id='acebook-networking ' src="imgs/networking.png">
+            <img id='facebook-networking' src="imgs/networking.png">
         </div>
 
         <div class='right-content'>
             <h1>Abra uma conta</h1>
-            <p class="quick-easy">É rápido e fácil</p>
+            <p class="quick-easy">É rápido e fácil.</p>
             <form>
                 <input class="form-name" type="text" name="firstname" placeholder="Nome" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
                 <input class="form-name" type="text" name="lastname" placeholder="Sobrenome" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
                 <input type="text" name="phone_email" placeholder="Celular ou email" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
-                <input type="password" placeholder="Nova senha" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
+                <input type="password" name="password" placeholder="Nova senha" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
                 <label for="" id="label-birthdate">Data de nascimento</label>
                 <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="date" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required>
-                <label for="" id="gender-label">Gênero</label>
+                <label for="" id="label-gender">Gênero</label>
                 <div>
                     <input type="radio" name="gender"  class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')" required="required">Feminino
                     <input type="radio" name="gender" class="gender" oninvalid="this.setCustomValidity('Campo inválido')" oninput="this.setCustomValidity('')">Masculino
