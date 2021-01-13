@@ -77,3 +77,46 @@ function inputTxtPerso() {
   rdoPerso2.appendChild(rdoPersoNew);
 }
 rdoPerso.addEventListener('click', inputTxtPerso);
+
+const btnCadastre2 = document.getElementById('facebook-register');
+function deleteWrite(event) {
+  event.preventDefault();
+  const box2 = document.getElementById('form');
+  const boxRadio2 = document.getElementById('radios');
+  const inputName2 = document.getElementById('name');
+  const inputLastname2 = document.getElementById('lastname');
+  const inputPhone2 = document.getElementById('phoneemail');
+  const inputNewpw2 = document.getElementById('newpassword');
+  const labelBirth2 = document.getElementById('label-birthdate');
+  const inputBirth2 = document.getElementById('birthdate');
+  const labelRadio2 = document.getElementById('label-gender');
+  const inputFeminino2 = document.getElementById('feminino');
+  const inputMasculino2 = document.getElementById('masculino');
+  const inputPersonalizado2 = document.getElementById('personalizado');
+  const inputNameValue2 = inputName2.value;
+  const inputLastnameValue2 = inputLastname2.value;
+  const inputPhoneValue2 = inputPhone2.value;
+  const inputNewpwValue2 = inputNewpw2.value;
+  const inputBirthValue2 = inputBirth2.value;
+  const inputFemininoValue2 = inputFeminino2.checked;
+  const inputMasculinoValue2 = inputMasculino2.checked;
+  const inputPersonalizadoValue2 = inputPersonalizado2.checked;
+  box.removeChild(inputName2);
+  box.removeChild(inputLastname2);
+  box.removeChild(inputPhone2);
+  box.removeChild(inputNewpw2);
+  box.removeChild(inputBirth2);
+  box.removeChild(boxRadio2);
+  box.removeChild(labelBirth2);
+  box.removeChild(labelRadio2);
+  let checked2 = '';
+  if (inputFemininoValue2 === true) {
+    checked2 = 'Feminino';
+  } else if (inputMasculinoValue2 === true) {
+    checked2 = 'Masculino';
+  } else if (inputPersonalizadoValue2 === true) {
+    checked2 = 'Personalizado';
+  }
+  box.innerText2 = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);  
+}
+btnCadastre2.addEventListener('click', deleteWrite);
