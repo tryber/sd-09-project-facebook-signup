@@ -20,7 +20,9 @@
               <div class="form-group">
                 <label id="user-password-label">Senha</label>
                 <input id="user-password" type="text">
-                <label class="label"><a href="#">Esqueceu a conta?</a></label>
+                <div class="label-forgot">
+                  <label class="label"><a href="#">Esqueceu a conta?</a></label>
+                </div>
               </div>
              <div class="form-control">
               <button id="button-login">Entrar</button>
@@ -30,24 +32,26 @@
       </header>
       <section class="main-content">
         <div class="left-content">
+          <div class="facebook-slogan-container">
           <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
           <img id="facebook-networking" src="imgs/networking.png" alt="Image facebook networking">
+        </div>
       </div>
       <div class="right-content">
-          <h1>Abra uma conta</h1>
+          <h1 class="open-account">Abra uma conta</h1>
           <p class="quick-easy">É rápido e fácil.</p>
           <form action="" class="form-group">
           <section class="name-and-lastname">
-            <input name="firstname" type="text" placeholder="Nome">
-            <input name="lastname" type="text" placeholder="Sobrenome">
+            <input class="input-text" name="firstname" type="text" placeholder="Nome">
+            <input class="input-text" name="lastname" type="text" placeholder="Sobrenome">
           </section>
-          <input name="phone_email" type="text" placeholder="Celular ou email">
-          <input name="password" type="password" placeholder="Nova senha">
+          <input class="input-text bigger" name="phone_email" type="text" placeholder="Celular ou email">
+          <input class="input-text bigger" name="password" type="password" placeholder="Nova senha">
           <label for="" id="label-birthdate">Data de nascimento</label>
-          <input name="birthdate" type="text"  placeholder="dd/mm/aaaa">
+          <input class="input-text" name="birthdate" type="text"  placeholder="dd/mm/aaaa">
           <label for="" id="label-gender">Gênero</label>
           <div class="radios">
-            <input type="radio" id="female" name="gender" value="Feminino">
+            <input class="gender-custom" type="radio" id="female" name="gender" value="Feminino">
             <label for="female">Feminino</label>
             <input type="radio" id="male" name="gender" value="Masculino">
             <label for="male">Masculino</label>
