@@ -34,18 +34,6 @@ function insertWelcome() {
   rightContent.appendChild(phrases);
 }
 
-function checkEmptyFields() {
-  let invalidField = 0;
-  const checked = document.querySelector('input[type="radio"]:checked');
-  const inputsNotRadio = document.querySelectorAll('#register-form input:not([type=radio])');
-  for (let index = 0; index < inputsNotRadio.length; index += 1) {
-    if (inputsNotRadio[index].value === '' || checked === null) {
-      invalidField += 1;
-    }
-  }
-  validateEmptyFields(invalidField);
-}
-
 function validateEmptyFields(fields) {
   const form = document.querySelector('#register-form');
   if (fields > 0) {
@@ -56,6 +44,18 @@ function validateEmptyFields(fields) {
     changeChosenGender();
     insertWelcome();
   }
+}
+
+function checkEmptyFields() {
+  let invalidField = 0;
+  const checked = document.querySelector('input[type="radio"]:checked');
+  const inputsNotRadio = document.querySelectorAll('#register-form input:not([type=radio])');
+  for (let index = 0; index < inputsNotRadio.length; index += 1) {
+    if (inputsNotRadio[index].value === '' || checked === null) {
+      invalidField += 1;
+    }
+  }
+  validateEmptyFields(invalidField);
 }
 
 getButton.addEventListener('click', function () {
