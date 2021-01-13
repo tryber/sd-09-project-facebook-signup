@@ -53,6 +53,10 @@ body {
   flex-direction: column;
   padding: 10px;
   width: 300px;
+  color: #4567b2;
+  font-size: 1em;
+  font-weight: 700;
+  
 }
 
 .password-login p {
