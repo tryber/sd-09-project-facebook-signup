@@ -7,13 +7,23 @@
   <title>Facebook - entre ou cadastre-se</title>
 </head>
 <body>
+  <!-- Barra de Navegação -->
   <nav class="top-bar">
+    <!-- FB Logo -->
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+    <!-- Form de Login -->
     <form class="facebook-login" action="">
-      <label for="">Email ou telefone</label>
-      <input type="text">
-      <label for="">Senha</label>
-      <input type="text">
+      <div class="form-group">
+        <label id="user-email-phone-label" for="">Email ou telefone</label>
+        <input id="user-email-phone" type="text">
+      </div>
+      <div class="form-group">  
+        <label id="user-password-label" for="">Senha</label>
+        <input id="user-password" type="text">
+      </div>
+      <div class="form-group">  
+        <button id="button-login">Entrar</button>
+      </div>
     </form>
   </nav>
   <!-- Pagina Principal -->

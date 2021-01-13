@@ -12,6 +12,7 @@ body {
 }
 
 .form-group {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
 }
