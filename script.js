@@ -9,7 +9,7 @@
 
 const loginButton = document.getElementById('button-login');
 function alertEmail() {
-  let email = document.getElementById('user-email-phone').value;
+  const email = document.getElementById('user-email-phone').value;
   alert(email);
 }
 loginButton.addEventListener('click', alertEmail);
