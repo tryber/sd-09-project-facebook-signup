@@ -14,10 +14,10 @@ function validateTextInputs() {
 }
 
 function validateRadioInput() {
-  const radioInput = document.querySelectorAll('input[type=radio]')
+  const radioInput = document.querySelectorAll('input[type=radio]');
   let isRadioValid = false;
   for (let index = 0; index < radioInput.length; index += 1) {
-    if(radioInput[index].checked) {
+    if (radioInput[index].checked) {
       isRadioValid = true;
     }
   }
@@ -27,12 +27,12 @@ function validateRadioInput() {
 function submitButton(event) {
   event.preventDefault();
   const invalidField = document.querySelector('#invalid-fields');
-  let isValidText = validateTextInputs();
-  let isValidRadio = validateRadioInput();
+  const isValidText = validateTextInputs();
+  const isValidRadio = validateRadioInput();
   if (!isValidText || !isValidRadio) {
-    invalidField.innerText = "Campos inválidos";
+    invalidField.innerText = 'Campos inválidos';
   } else {
-    invalidField.innerText = "";
+    invalidField.innerText = '';
   }
 }
 
@@ -43,7 +43,7 @@ submitForm.addEventListener('click', submitButton);
 const custom = document.querySelector('#custom-gender');
 const customGender = document.querySelector('#unique');
 
-customGender.addEventListener('click', function () {
+function openCustomGenderInput() {
   if (customGender.classList.contains('checked')) {
     return;
   }
@@ -55,7 +55,9 @@ customGender.addEventListener('click', function () {
   custom.appendChild(newGender);
   customGender.classList = 'checked';
   newGender.required = true;
-});
+}
+
+customGender.addEventListener('click', openCustomGenderInput);
 
 // const genderInput = document.querySelector('#gender-input');
 // const notCustom = document.querySelectorAll('.not-custom-gender');
