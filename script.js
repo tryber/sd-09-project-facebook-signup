@@ -66,16 +66,16 @@ function registerUser() {
       const errorMessageLocation = document.querySelector('#invalidFields');
       errorMessageLocation.innerText = 'Campos inválidos';
     } else {
-      const selectedGender = document.querySelector('input[name="gender"]:checked')
+      const selectedGender = document.querySelector('input[name="gender"]:checked');
       
-      removeRightContent()
-      createParagraph()
-      createParagraph()
-      createParagraph()
-      createParagraph()
-      messageWelcome(dataUser, selectedGender.value)
-    }
-  })
+      removeRightContent();
+      createParagraph();
+      createParagraph();
+      createParagraph();
+      createParagraph();
+      messageWelcome(dataUser, selectedGender.value);
+    };
+  });
 }
 
 
