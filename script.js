@@ -17,7 +17,7 @@ function registerValidate() {
     if (validateCamps[index].value === '') {
       const div = document.createElement('div');
       div.innerHTML = `${validateCamps[index].name}: Campos inválidos`;
-      document.getElementById('appendRegister').appendChild(div);
+      document.getElementById('cadastro').appendChild(div);
     }
   }
 }
