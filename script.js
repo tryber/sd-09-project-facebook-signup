@@ -65,11 +65,11 @@ function readFormData() {
 
 function showCompletedForm() {
   const formValidated = validateForm();
-  if(formValidated){
-    const contentRight = document.querySelector(".right-content");
+  if (formValidated) {
+    const contentRight = document.querySelector('.right-content');
     const userForm = document.querySelector('.facebook-register-form');
     contentRight.innerText = readFormData();
-    userForm.style.display = "none";
+    userForm.style.display = 'none';
   }
 }
 
