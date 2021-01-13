@@ -11,8 +11,7 @@ function checkPersonalizado() {
   const outers = document.querySelector('#personalizado');
   const gender = document.querySelector('.radio-buttons');
   outers.addEventListener('click', function () {
-    const newInput = document.createElement('input');
-    gender.appendChild(newInput);
+    gender.innerHTML = '<input placeholder="Gênero (opcional)" name="gender-custom">';
   });
 }
 checkPersonalizado();
