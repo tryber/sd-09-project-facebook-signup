@@ -88,8 +88,6 @@ header {
 }
 
 .right-content {
-  left: -100px;
-  position: relative;
   width: 300px;
 }
 
