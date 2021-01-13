@@ -64,7 +64,7 @@ function registerUser() {
 
   registerButton.addEventListener('click', function (event) {
     if (checkDataUser() > 0) {
-      event.preventDefault()
+      event.preventDefault();
       errorMessageLocation.innerText = 'Campos inválidos';
     } else {
       const selectedGender = document.querySelector('input[name="gender"]:checked');
