@@ -7,8 +7,8 @@
   width: 100%;
 }
 
-.facebook-logo {
-  float: left;
+.facebook-login {
+  display: flex;
 }
 
 .form-group {
