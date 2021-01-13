@@ -32,7 +32,6 @@ p {
 }
 
 .facebook-login {
-  align-self: flex-end;
   display: flex;
   margin: 10px;
 }
