@@ -15,8 +15,14 @@ function checkPersonalizado() {
   });
 }
 checkPersonalizado();
+
+function finalText() {
+  let modifContain = document.querySelector('.main-content');
+  modifContain.innerHTML = 'hghghghghg'
+}
 function validate(evento) {
-  const infoForm = document.querySelector('.form-sign-in input');
+  const infoForm = document.querySelectorAll('.form-sign-in input');
+  evento.preventDefault();
   let isValid = false;
   for (let i = 0; i <= infoForm.length; i += 1) {
     if (infoForm[i] !== ' ') {
