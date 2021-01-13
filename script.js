@@ -29,7 +29,7 @@ function validate(evento) {
   evento.preventDefault();
   if (isValid === false) {
     document.getElementById('answerVal').innerText = 'Campos inválidos';
-    }
+  }
 }
 
 const validation = document.getElementById('facebook-register');
