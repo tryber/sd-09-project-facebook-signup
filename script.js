@@ -1,5 +1,6 @@
 const userEmailPhoneInput = document.querySelector('#user-email-phone');
-const buttonLogin = document.querySelector('#button-login');
+const loginButton = document.querySelector('#button-login');
+const registerButton = document.querySelector('#facebook-register');
 
 function showEmailPhoneAlert() {
   const emailPhone = userEmailPhoneInput.value;
@@ -7,5 +8,5 @@ function showEmailPhoneAlert() {
 }
 
 window.onload = function () {
-  buttonLogin.addEventListener('click', showEmailPhoneAlert);
+  loginButton.addEventListener('click', showEmailPhoneAlert);
 };
