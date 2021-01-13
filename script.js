@@ -9,10 +9,10 @@ const formFirstName = document.querySelector('#id-firstname');
 const formLastName = document.querySelector('#id-lastname');
 const formPhoneEmail = document.querySelector('#id-phone_email');
 const formPassword = document.querySelector('#id-password');
-const formBirthDate = document.querySelector('#id-birthdate');
+/*const formBirthDate = document.querySelector('#id-birthdate');
 const formFemale = document.querySelector('#id-female');
 const formMale = document.querySelector('#id-male');
-const FormCustom = document.querySelector('#id-custom');
+const FormCustom = document.querySelector('#id-custom');  */
 
 /* Exibe e-mail-telefone */
 buttonSender.addEventListener('click', function (event) {
@@ -25,16 +25,16 @@ buttonSender.addEventListener('click', function (event) {
 /* Valida dados cadastrais */
 buttonRegister.addEventListener('click', function(event) {
   let formValid = true;
-  if (firstName.value.length < 1) {
+  if (formFirstName.value.length < 1) {
     formValid = false;
   }
-  if (lastName.value.length < 1) {
+  if (formLastName.value.length < 1) {
     formValid = false;
   }
-  if (phoneEmail.value.length < 1 || !phoneEmail.value.includes('@')) {
+  if (formPhoneEmail.value.length < 1 || !phoneEmail.value.includes('@')) {
     formValid = false;
   }
-  if (password.value.length < 1) {
+  if (formPassword.value.length < 1) {
     formValid = false;
   }
   console.log(formValid);
