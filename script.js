@@ -6,7 +6,7 @@ function showEmailPhoneAlert() {
   alert(emailPhone);
 }
 
-function setCustomGenderField () {
+function setCustomGenderField() {
   const customGenderRadio = document.querySelector('#gender-container');
   const customGenderInput = document.querySelector('#gender-custom');
   customGenderRadio.addEventListener('change', (event) => {
