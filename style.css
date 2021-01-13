@@ -7,9 +7,9 @@ body {
 }
 
 .facebook-login {
+  align-items: center;
   color: white;
   display: flex;
-  align-items: center;
   margin: 10px;
 }
 
