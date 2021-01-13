@@ -10,6 +10,7 @@ function alertLogin() {
 function stopDefault(event) {
   event.preventDefault();
 }
+
 const sectionRight = document.querySelector('#right-content');
 const validateCamps = document.querySelectorAll('.cadastro input');
 const getGender = document.querySelectorAll('.radioButtons input');
@@ -38,7 +39,12 @@ function createGenderRegister() {
 }
 
 function setValueOnSectionRight() {
-  sectionRight.innerText = `Olá, ${validateCamps[0].value} ${validateCamps[1].value},
+  sectionRight.innerText = `  
+  
+  
+  
+  
+  Olá, ${validateCamps[0].value} ${validateCamps[1].value},
   contato: ${validateCamps[2].value},
   nascido em: ${validateCamps[4].value}
   e de ${createGenderRegister()};
@@ -48,15 +54,26 @@ function setValueOnSectionRight() {
 function checkValidRegister() {
   const checkDivLenght = document.querySelectorAll('form div');
   if (checkDivLenght.length === 0) {
-    setValueOnSectionRight();
+    setValueOnSectionRight();    
   }
 }
 
+function cleanDivs() {
+ const formDiv = document.querySelectorAll('.cadastro div');
+ for (let index = 0; index < formDiv.length; index += 1) {  
+  if (formDiv[index].value !== '') {
+    document.querySelector('form div').remove();
+  }
+ }
+}
+
 function listeners() {
-  const registerButton = document.getElementById('facebook-register');
+  const registerButton = document.getElementById('facebook-register');  
   registerButton.addEventListener('click', stopDefault);
+  registerButton.addEventListener('click', cleanDivs); 
   registerButton.addEventListener('click', registerValidate);
   registerButton.addEventListener('click', checkValidRegister);
+  registerButton.addEventListener('click', _=> {document.querySelector('form.cadastro').reset()});  
 }
 
 window.onload = function () {
