@@ -41,14 +41,7 @@ function changeContent(event) {
     const gender = document.querySelector('input[type="radio"]:checked').value;
     const rightContent = document.querySelector('.right-content');
     rightContent.innerHTML = '';
-    // const newtext1 = document.createElement('h2');
     rightContent.innerText = `Olá, ${name} ${lastname} ${email} ${birthdate} ${gender}`;
-    // rightContent.appendChild(newtext1);
-    // const newText2 = document.createElement('p');
-    // newText2.innerText = `${email}
-    // ${birthdate}
-    // ${gender}`;
-    // rightContent.appendChild(newText2);
   }
 }
 
