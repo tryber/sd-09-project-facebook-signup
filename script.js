@@ -61,7 +61,7 @@ function validInput(event) {
     } else if (inputPersonalizadoValue === true) {
       checked = 'Personalizado';
     }
-    box.innerText = ('Olá, ' + inputNameValue + inputLastnameValue + inputPhoneValue + inputBirthValue + checked);
+    box.innerText = (`Olá, ${inputNameValue} ${inputLastnameValue} ${inputPhoneValue} ${inputBirthValue} ${checked}`);
   }
 }
 btnCadastre.addEventListener('click', validInput);
