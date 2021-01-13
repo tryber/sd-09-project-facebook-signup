@@ -1,8 +1,8 @@
 const buttonLogin = document.querySelector('#button-login');
 const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
-const botaoVerifica = document.querySelector('.btn');
-const containerDireito = document.querySelector('.row').childNodes;
+// const botaoVerifica = document.querySelector('.btn');
+// const containerDireito = document.querySelector('.row').childNodes;
 
 function alertaBotao() {
   buttonLogin.addEventListener('click', function () {
