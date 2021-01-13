@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+}
+
+.facebook-login {
+  color: white;
+  display: flex;
+  font-size: 12px;
+  line-height: 1.34;
+  padding-top: 13px;
+}
+
+.facebook-slogan {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  width: 450px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding-bottom: 32px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.inline-input {
+  display: flex;
+}
+
+.inline-input input {
+  width: 45%;
+}
+
+.left-content {
+  color: rgb(14, 56, 95);
+  margin-top: 40px;
+  width: 800px;
+}
+
+.main-content {
+  background: linear-gradient(white, rgb(211, 216, 232));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.right-content {
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+}
+
+.quick-easy {
+  color: rgb(29, 33, 41);
+  font-size: 19px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  flex-flow: row wrap;
+  height: 82px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+a:hover , a:visited , a:link {
+  color: rgb(194, 194, 194);
+  text-decoration: none;
+}
