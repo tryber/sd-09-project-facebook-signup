@@ -1,45 +1,108 @@
 body {
   background-image: linear-gradient(to bottom, #fefefe, #d3d4e8);
+  font-family: sans-serif;
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-between;
+button[type='submit'] {
+  background-color: #5b9d4e;
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+  font-weight: 700;
+  margin: 1em 0;
+  padding: 0.5em 2em
+}
+
+form input {
+  box-sizing: border-box;
+}
+
+.big-input {
   width: 100%;
 }
 
 .facebook-login {
+  align-items: flex-end;
   display: flex;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.form {
+  color: #858991;
+}
+
+.form-control {
+  align-self: flex-end;
+  font-weight: 700;
+}
+
+.form-control button{
+  border: 1px solid #34518b;
+  color: white;
+  background-color: #3e61a8;
+  height: 21px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
 }
 
-.form-control {
-  align-self: flex-end;
+.form-group input {
+  margin: 5px 0;
+  width: 150px;
 }
 
-.main-content {
+.header-content {
+  color: white;
   display: flex;
   justify-content: space-between;
+  margin: 10px auto;
+  width: 1100px;
+}
+
+.hidden-input {
+  display: none;
+  width: 100%;
 }
 
 .left-content {
   width: 800px;
 }
 
-.right-content {
+.left-content p {
+  color: #123455;
+  font-weight: 700;
+  margin: 0;
   width: 300px;
 }
 
-.small-input {
-  width: 40%;
+.main-content {
+  align-items: baseline;
+  display: flex;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.radio-container {
+  align-items: center;
+  display: flex;
+}
+
+.radio-container label {
+  color: #2d2d2d;
+  margin: 0 1em 0 0.2em;
+}
+
+.right-content {
+  left: -100px;
+  position: relative;
+  width: 300px;
 }
 
 .right-content form {
@@ -49,19 +112,24 @@ body {
   width: 100%;
 }
 
-.big-input {
-  width: 100%;
+.right-content form input {
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 0.5em;
 }
 
-form input {
-  box-sizing: border-box;
+.right-content h1, .right-content p {
+  color: #2d2d2d;
 }
 
-.radio-container {
+.small-input {
+  width: 48%;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
   display: flex;
-}
-
-.hidden-input {
-  display: none;
+  justify-content: space-between;
   width: 100%;
 }
