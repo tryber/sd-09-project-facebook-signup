@@ -26,11 +26,8 @@ formSubmit.addEventListener('submit', handleValidateFields);
 
 const inputsRadioGender = document.querySelectorAll('.radio-group input[type="radio"]');
 
-console.log(inputsRadioGender);
-
 function handleGenderCustom(event) {
   const customField = document.querySelector('.gender-custom');
-
   if ((event.target.checked === true) && (event.target.value === 'Personalizado')) {
     customField.style.display = 'block';
   } else {
@@ -39,5 +36,5 @@ function handleGenderCustom(event) {
 }
 
 for (let index = 0; index < inputsRadioGender.length; index += 1) {
-  inputsRadioGender[index].addEventListener('change', handleGenderCustom)
+  inputsRadioGender[index].addEventListener('change', handleGenderCustom);
 }
