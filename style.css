@@ -33,12 +33,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
 }
 
 .register-name {
   display: flex;
   flex-direction: row;
+  padding: 5px
 }
 
 .top-bar {
@@ -66,13 +66,31 @@
 .form-control {
   align-self: flex-end;
   order: 2;
+  padding: 5px;
 }
 
 .radio-in-line {
   display: flex;
+  padding: 5px;
 }
 
 .radio-column {
   display: flex;
   flex-direction: column;
+  padding: 5px;
+}
+
+.date {
+  padding: 5px;
+}
+
+.button {
+  padding: 5px;
+}
+
+.general-test {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: stretch
 }
