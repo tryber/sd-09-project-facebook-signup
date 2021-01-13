@@ -22,7 +22,7 @@ function logIn() {
 
 function createParagraph() {
   const welcomeMessageLocation = document.createElement('p');
-  welcomeMessageLocation.classList.add('welcome')
+  welcomeMessageLocation.classList.add('welcome');
 
   const rightContentLocation = document.querySelector('.right-content');
 
@@ -31,7 +31,6 @@ function createParagraph() {
 
 function removeRightContent() {
   const rightContentLocation = document.querySelector('.right-content');
-  
   while (rightContentLocation.firstChild) {
     rightContentLocation.removeChild(rightContentLocation.firstChild);
   }
@@ -43,7 +42,7 @@ function messageWelcome(array) {
   paragraphWelcome[0].innerText = `Olá, ${array[0].value} ${array[1].value}`;
   paragraphWelcome[1].innerText = `${array[2].value}`;
   paragraphWelcome[2].innerText = `${array[4].value}`;
-  paragraphWelcome[3].innerText = `teste`;
+  paragraphWelcome[3].innerText = 'teste';
 }
 
 function checkRegister() {
