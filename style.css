@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: #4267b2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.facebook-logo {
+  align-self: flex-start;
+}
+
+.facebook-login {
+  align-self: flex-end;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: wrap column;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.user-name {
+  display: flex;
+}
+
+.facebook-register-form {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.Empty-Field-Warning {
+  background-color: yellow;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
