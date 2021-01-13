@@ -52,9 +52,9 @@ function messageWelcome(array, gender) {
   const paragraphWelcome = document.querySelectorAll('.welcome');
 
   paragraphWelcome[0].innerText = `Olá, ${array[0].value} ${array[1].value}`;
-  paragraphWelcome[1].innerText = `${array[2].value}`;
-  paragraphWelcome[2].innerText = `${array[4].value}`;
-  paragraphWelcome[3].innerText = `${gender}`;
+  paragraphWelcome[1].innerText = `E-mail: ${array[2].value}`;
+  paragraphWelcome[2].innerText = `Nascimento: ${array[4].value}`;
+  paragraphWelcome[3].innerText = `Gênero: ${gender}`;
 }
 
 function registerUser() {

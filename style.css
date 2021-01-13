@@ -9,7 +9,7 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 65px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .button-entrar {
@@ -52,20 +52,48 @@ body {
   width: 100px;
 }
 
-.full-name {
-  display: flex;
-}
-
 .main-content {
   background: linear-gradient(white, #d3d8e8);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.right-content {
+  align-self: flex-start;
+  margin-right: 230px;
+  margin-top: 40px;
+  width: 300px;
+}
+
+.left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 40px;
+  width: 800px;
+}
+
+.left-content :nth-child(2) {
+  align-self: flex-end;
+}
+
+.left-content p {
+  align-self: center;
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 450px;
 }
 
 .main-title {
   font-size: 36px;
   margin-bottom: 0;
+}
+
+.full-name {
+  display: flex;
 }
 
 .other-gender {
@@ -75,17 +103,6 @@ body {
 .rest-data {
   height: 39px;
   width: 97%;
-}
-
-.right-content {
-  width: 300px;
-}
-
-.left-content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 800px;
 }
 
 .quick-easy {
