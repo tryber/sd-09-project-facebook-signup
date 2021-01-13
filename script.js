@@ -29,7 +29,7 @@ function registerUser() {
 
     for (let index = 0; index < dataFields.length; index += 1) {
       if (dataFields[index].value === '') {
-        checkContent += 1
+        checkContent += 1;
       }
     }
 
