@@ -1,0 +1,13 @@
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  background-color: #edf0f5;
+  display: flex;
+  justify-content: center;
+}
+
+.right-content{
+  width: 300px;
+}
