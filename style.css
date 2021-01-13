@@ -66,3 +66,7 @@ O Cypress evaluator está dando erro neste teste:
 .col {
   flex-direction: column;
 }
+
+.hide {
+  display: none;
+}
