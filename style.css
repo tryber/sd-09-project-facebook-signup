@@ -25,7 +25,7 @@
   padding-top: 40px;
 }
 
-#facebook-slogan {
+.facebook-slogan {
   color:rgb( 66, 103, 178 );
   font-size: 30px;
 }
@@ -40,14 +40,14 @@
 }
 
 .aolado {
-  display: flex;
   color: rgb( 255, 255, 255 );
+  display: flex;
 }
 
-#phone_email {
-  width: 310px;
+.phone_email {
   border-radius: 5px;
   margin-top: 3px;
+  width: 310px;
 }
 
 #firstname {
@@ -61,9 +61,9 @@
 }
 
 #pass-word {
-  width: 310px;
   border-radius: 5px;
   margin-top: 3px;
+  width: 310px;
 }
 
 #label-birthdate {
