@@ -66,3 +66,12 @@ O Cypress evaluator está dando erro neste teste:
 .col {
   flex-direction: column;
 }
+
+.fail {
+  background-color: rgb(255, 197, 197);
+  border: 1px solid red;
+  color: red;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
