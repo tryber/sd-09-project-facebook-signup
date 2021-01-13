@@ -5,10 +5,13 @@ body {
 
 .facebook-login {
   display: flex;
+  align-items: flex-end;
+  margin: 10px;
 }
 
 .form-control {
   align-self: flex-end;
+  display: flex;
 }
 
 .form-group {
