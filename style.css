@@ -1,12 +1,8 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
-<<<<<<< HEAD
-  display: flex;
-  justify-content: space-between;
-=======
->>>>>>> 764308c8f6a41696e162b402708684075a69b666
   border: 1px red solid;
   display: flex;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -15,15 +11,9 @@
 }
 
 .facebook-login {
-<<<<<<< HEAD
-  display: flex;
-  align-self: right;
-  border: 2px black solid;
-=======
   align-self: flex-end;
   border: 1px black solid;
   display: flex;
->>>>>>> 764308c8f6a41696e162b402708684075a69b666
 }
 
 .form-group {
