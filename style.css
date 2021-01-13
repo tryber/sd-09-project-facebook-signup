@@ -10,7 +10,7 @@ body {
   display: flex;
   font-size: 12px;
   height: 53px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   padding: 15px;
   width: 100%;
 }
@@ -59,4 +59,20 @@ body {
   display: flex;
   flex-direction: column;
   height: 70px;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.left-content{
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+  justify-content: right;
+  
 }

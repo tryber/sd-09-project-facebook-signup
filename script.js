@@ -1,7 +1,9 @@
 function login() {
-  const btn = document.getElementById('button-login');
+  const btn = document.querySelector('#button-login');
+  const msg = document.querySelector('#user-email-phone-label');
   btn.addEventListener('click', function () {
-    alert('Email ou telefone');
+    alert(msg.value);
+    e.preventDefault();
   });
 }
 
