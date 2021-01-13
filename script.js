@@ -46,43 +46,43 @@ function validInput(event) {
 }
 btnCadastre.addEventListener('click', validInput);
 
-const rdoPerso = document.getElementById('personalizado');
-function inputTxtPerso() {
-  const rdoPerso2 = document.querySelector('.radios');
-  const rdoPersoNew = document.createElement('input');
-  const rdoPersoNewName = 'gender-custom';
-  const rdoPersoNewPh = 'Gênero (opcional)';
-  rdoPersoNew.name = rdoPersoNewName;
-  rdoPersoNew.placeholder = rdoPersoNewPh;
-  rdoPerso2.appendChild(rdoPersoNew);
-}
-rdoPerso.addEventListener('click', inputTxtPerso);
+// const rdoPerso = document.getElementById('personalizado');
+// function inputTxtPerso() {
+//   const rdoPerso2 = document.querySelector('.radios');
+//   const rdoPersoNew = document.createElement('input');
+//   const rdoPersoNewName = 'gender-custom';
+//   const rdoPersoNewPh = 'Gênero (opcional)';
+//   rdoPersoNew.name = rdoPersoNewName;
+//   rdoPersoNew.placeholder = rdoPersoNewPh;
+//   rdoPerso2.appendChild(rdoPersoNew);
+// }
+// rdoPerso.addEventListener('click', inputTxtPerso);
 
-function deleteWrite() {
-  const inputName2 = document.getElementById('name');
-  const box = document.getElementById('right-content');
-  const form = document.getElementById('form');
-  const inputLastname2 = document.getElementById('lastname');
-  const inputPhone2 = document.getElementById('phoneemail');
-  const inputBirth2 = document.getElementById('birthdate');
-  const inputFeminino2 = document.getElementById('feminino');
-  const inputMasculino2 = document.getElementById('masculino');
-  const inputPersonalizado2 = document.getElementById('personalizado');
-  const inputNameValue2 = inputName2.value;
-  const inputLastnameValue2 = inputLastname2.value;
-  const inputPhoneValue2 = inputPhone2.value;
-  const inputBirthValue2 = inputBirth2.value;
-  const inputFemininoValue2 = inputFeminino2.checked;
-  const inputMasculinoValue2 = inputMasculino2.checked;
-  const inputPersonalizadoValue2 = inputPersonalizado2.checked;
-  box.removeChild(form);
-  let checked2 = '';
-  if (inputFemininoValue2 === true) {
-    checked2 = 'Feminino';
-  } else if (inputMasculinoValue2 === true) {
-    checked2 = 'Masculino';
-  } else if (inputPersonalizadoValue2 === true) {
-    checked2 = 'Personalizado';
-  }
-  box.innerText = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);
-}
+// function deleteWrite() {
+//   const inputName2 = document.getElementById('name');
+//   const box = document.getElementById('right-content');
+//   const form = document.getElementById('form');
+//   const inputLastname2 = document.getElementById('lastname');
+//   const inputPhone2 = document.getElementById('phoneemail');
+//   const inputBirth2 = document.getElementById('birthdate');
+//   const inputFeminino2 = document.getElementById('feminino');
+//   const inputMasculino2 = document.getElementById('masculino');
+//   const inputPersonalizado2 = document.getElementById('personalizado');
+//   const inputNameValue2 = inputName2.value;
+//   const inputLastnameValue2 = inputLastname2.value;
+//   const inputPhoneValue2 = inputPhone2.value;
+//   const inputBirthValue2 = inputBirth2.value;
+//   const inputFemininoValue2 = inputFeminino2.checked;
+//   const inputMasculinoValue2 = inputMasculino2.checked;
+//   const inputPersonalizadoValue2 = inputPersonalizado2.checked;
+//   box.removeChild(form);
+//   let checked2 = '';
+//   if (inputFemininoValue2 === true) {
+//     checked2 = 'Feminino';
+//   } else if (inputMasculinoValue2 === true) {
+//     checked2 = 'Masculino';
+//   } else if (inputPersonalizadoValue2 === true) {
+//     checked2 = 'Personalizado';
+//   }
+//   box.innerText = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);
+// }
