@@ -20,6 +20,32 @@ function logIn() {
   });
 }
 
+function createParagraph() {
+  const welcomeMessageLocation = document.createElement('p');
+  welcomeMessageLocation.classList.add('welcome')
+
+  const rightContentLocation = document.querySelector('.right-content');
+
+  rightContentLocation.appendChild(welcomeMessageLocation);
+}
+
+function removeRightContent() {
+  const rightContentLocation = document.querySelector('.right-content');
+  
+  while (rightContentLocation.firstChild) {
+    rightContentLocation.removeChild(rightContentLocation.firstChild);
+  }
+}
+
+function messageWelcome(array) {
+  const paragraphWelcome = document.querySelectorAll('.welcome');
+
+  paragraphWelcome[0].innerText = `Olá, ${array[0].value} ${array[1].value}`;
+  paragraphWelcome[1].innerText = `${array[2].value}`;
+  paragraphWelcome[2].innerText = `${array[4].value}`;
+  paragraphWelcome[3].innerText = `teste`;
+}
+
 function checkRegister() {
   const inputLocation = document.querySelectorAll('.input');
   let countInvalidFields = 0;
@@ -37,15 +63,12 @@ function checkRegister() {
       event.preventDefault();
       errorMessageLocation.innerText = 'Campos inválidos';
     } else {
-      const rightContentLocation = document.querySelector('.right-content');
-      while (rightContentLocation.firstChild) {
-        rightContentLocation.removeChild(rightContentLocation.firstChild);
-      }
-
-      const welcomeMessageLocation = document.createElement('p');
-      welcomeMessageLocation.innerText = `Olá ${inputLocation[0].value} ${inputLocation[1].value}, ${inputLocation[2].value} e ${inputLocation[4].value}`;
-
-      rightContentLocation.appendChild(welcomeMessageLocation);
+      removeRightContent();
+      createParagraph();
+      createParagraph();
+      createParagraph();
+      createParagraph();
+      messageWelcome(inputLocation);
     }
   });
 }
