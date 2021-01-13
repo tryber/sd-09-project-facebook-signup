@@ -7,9 +7,9 @@
 
 // clickEnter.addEventListener('click', loginAlert);
 
-let loginButton = document.getElementById("button-login")
+const loginButton = document.getElementById('button-login');
 function alertEmail() {
-    let email = document.getElementById("user-email-phone").value
-    alert(email)
+  let email = document.getElementById('user-email-phone').value;
+  alert(email);
 }
-loginButton.addEventListener('click', alertEmail)
+loginButton.addEventListener('click', alertEmail);

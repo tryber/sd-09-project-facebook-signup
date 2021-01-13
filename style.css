@@ -15,8 +15,8 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
-  width: 13rem;
   padding-right: 80px;
+  width: 13rem;
 }
 
 .facebook-login {
