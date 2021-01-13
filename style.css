@@ -48,12 +48,12 @@
   width: 310px;
 }
 
-#phone_email,
-#firstname,
-#phone_email,
-#pass-word,
-#birthdate,
-#lastname {
+.phone_email,
+.firstname,
+.phone_email,
+.pass-word,
+.birthdate,
+.lastname {
   border-radius: 5px;
   margin-bottom: 5px;
 }
