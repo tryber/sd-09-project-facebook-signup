@@ -38,7 +38,7 @@ function createGenderRegister() {
 }
 
 function setValueOnSectionRight() {
-  sectionRight.innerHTML = `Olá, ${validateCamps[0].value} ${validateCamps[1].value},
+  sectionRight.innerText = `Olá, ${validateCamps[0].value} ${validateCamps[1].value},
   contato: ${validateCamps[2].value},
   nascido em: ${validateCamps[4].value}
   e de ${createGenderRegister()};
