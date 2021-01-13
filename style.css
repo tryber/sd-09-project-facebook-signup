@@ -3,14 +3,14 @@ body {
   padding: 0;
 }
 
-img.facebook-logo {
-  height: 60px;
-}
-
 .facebook-login {
   align-items: flex-end;
   display: flex;
   margin: 10px;
+}
+
+.facebook-logo {
+  height: 60px;
 }
 
 .form-control {
