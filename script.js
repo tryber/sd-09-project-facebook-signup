@@ -1,10 +1,9 @@
-//login button
 const btnLogin = document.querySelector('#button-login');
 btnLogin.addEventListener('click', function () {
   const userMailPhone = document.querySelector('#user-email-phone').value;
   alert(userMailPhone);
 });
-//register button
+
 const fullName = document.createElement('p');
 const phoneEmail = document.createElement('p');
 const birthdate = document.createElement('p');
@@ -19,10 +18,10 @@ function addContent() {
   document.querySelector('.right-content').appendChild(gender2);
 }
 const btnCadastro = document.querySelector('#facebook-register');
-btnCadastro.addEventListener('click', function (event) {
+btnCadastro.addEventListener('click', (event) => {
   const fields = document.querySelectorAll('.open-account input');
   let campos = false;
-  for (let index = 0; index < fields.length -1; index += 1) {
+  for (let index = 0; index < fields.length - 1; index += 1) {
     if (fields[index].type === 'text') {
       if (fields[index].value === '') {
         break;
@@ -39,9 +38,7 @@ btnCadastro.addEventListener('click', function (event) {
 
   if (campos === false) {
     event.preventDefault();
-    const camposInvalidos = document.createElement('p');
-    camposInvalidos.innerText = 'Campos inválidos';
-    document.querySelector('.open-account').appendChild(camposInvalidos);
+    document.querySelector('#campos-invalidos').style.display = 'flex';
   }
   if (campos === true) {
     event.preventDefault();
@@ -51,12 +48,20 @@ btnCadastro.addEventListener('click', function (event) {
     addContent();
   }
 });
-//gender custom
+
 const genderCustom = document.querySelector('#personalizado');
-genderCustom.addEventListener('click', function () {
-  const fieldCustom = document.createElement('input');
-  fieldCustom.type = 'text';
-  fieldCustom.name = 'gender-custom';
-  fieldCustom.placeholder = 'Gênero (opcional)';
-  document.querySelector('.gender').append(fieldCustom);
+genderCustom.addEventListener('click', () => {
+  document.querySelector('#personalizado-box').style.display = 'flex';
+});
+const genderMale = document.querySelector('#masculino');
+genderMale.addEventListener('click', () => {
+  if (document.querySelector('#personalizado-box').style.display === 'flex') {
+    document.querySelector('#personalizado-box').style.display = 'none';
+  }
+});
+const genderFemale = document.querySelector('#feminino');
+genderFemale.addEventListener('click', () => {
+  if (document.querySelector('#personalizado-box').style.display === 'flex') {
+    document.querySelector('#personalizado-box').style.display = 'none';
+  }
 });
