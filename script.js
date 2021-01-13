@@ -1,10 +1,10 @@
 function genderInput() {
-  const gerderListner = document.querySelector('.gender-control');
+  const gerderListener = document.querySelector('.gender-control');
 
-  gerderListner.addEventListener('click', function () {
-    const radioValue = document.querySelector('input[name="gender"]:checked').value;
+  gerderListener.addEventListener('click', function (event) {
+    const radioValue = event.target;
 
-    if (radioValue === 'Personalizado') {
+    if (radioValue.value === 'Personalizado') {
       document.querySelector('.other-gender').style.display = 'block';
     } else {
       document.querySelector('.other-gender').style.display = 'none';
@@ -50,9 +50,9 @@ function checkRegister() {
   let countInvalidFields = 0;
   const errorMessageLocation = document.querySelector('#invalidFields');
   const registerButton = document.querySelector('#facebook-register');
-  const userGender = document.querySelector('input[name="gender"]:checked').value;
-  // Alterei essa variavel, polpando uma função de check ali em cima
-  // aí eu removi a função ali de cima e trouxe o valor do radio para a variável userGender
+  const userGender = document.querySelector('input[name="gender"]').value;
+  // Tá dificil referenciar o valor do input, sendo que por padrão ele é radio, 
+  // mas pode ter um text se for personalizado, aí o :checked não funciona bem.
 
   registerButton.addEventListener('click', function (event) {
     for (let index = 0; index < inputLocation.length; index += 1) {
@@ -75,6 +75,6 @@ function checkRegister() {
   });
 }
 
-checkRegister();
 genderInput();
+checkRegister();
 logIn();
