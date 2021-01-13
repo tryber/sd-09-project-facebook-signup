@@ -14,10 +14,6 @@
   align-self: flex-end;
 }
 
-.facebook-login {
-  display: flex;
-}
-
 .main-content {
   display: flex;
   padding-top: 40px;
@@ -48,7 +44,6 @@
   width: 310px;
 }
 
-.phone_email,
 .firstname,
 .phone_email,
 .pass-word,
@@ -65,5 +60,5 @@
 }
 
 #label-gender {
-  font: bold;
+  font-style: oblique;
 }
