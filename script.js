@@ -20,6 +20,13 @@ function logIn() {
   });
 }
 
+function removeRightContent() {
+  const rightContentLocation = document.querySelector('.right-content');
+  while (rightContentLocation.firstChild) {
+    rightContentLocation.removeChild(rightContentLocation.firstChild);
+  }
+}
+
 function createParagraph() {
   const welcomeMessageLocation = document.createElement('p');
   welcomeMessageLocation.classList.add('welcome');
@@ -27,13 +34,6 @@ function createParagraph() {
   const rightContentLocation = document.querySelector('.right-content');
 
   rightContentLocation.appendChild(welcomeMessageLocation);
-}
-
-function removeRightContent() {
-  const rightContentLocation = document.querySelector('.right-content');
-  while (rightContentLocation.firstChild) {
-    rightContentLocation.removeChild(rightContentLocation.firstChild);
-  }
 }
 
 function messageWelcome(array, string) {
@@ -45,23 +45,34 @@ function messageWelcome(array, string) {
   paragraphWelcome[3].innerText = `${string}`;
 }
 
+// function genderReturn() {
+//   const selectedRadio = document.querySelector('input[name="gender"]:checked').value;
+//   if (selectedRadio.length > 1) {
+//     return selectedRadio;
+//   } else {
+//     selectedRadio = document.querySelector('input[name="gender-custom"]').value;
+//     return selectedRadio;
+//   }
+// }
+// função para pegar o valor do gênero, mas ele inicia com erro por n ter nada selecionado no radio
+
 function checkRegister() {
-  const inputLocation = document.querySelectorAll('.input');
-  let countInvalidFields = 0;
+  const inputLocation = document.querySelectorAll('input');
   const errorMessageLocation = document.querySelector('#invalidFields');
   const registerButton = document.querySelector('#facebook-register');
-  const userGender = document.querySelector('input[name="gender"]').value;
-  // Tá dificil referenciar o valor do input, sendo que por padrão ele é radio,
-  // mas pode ter um text se for personalizado, aí o :checked não funciona bem.
+  const userGender = 'Gênero'; // aqu entraria a função genderReturn
 
   registerButton.addEventListener('click', function (event) {
+    let countInvalidFields = 0; 
+    // coloquei a variavel aqui dentro da função, pq ela estava acumulando os vazios de outros click
     for (let index = 0; index < inputLocation.length; index += 1) {
       if (inputLocation[index].value === '') {
+        // me parece que aqui ele não está pegando os radios
         countInvalidFields += 1;
       }
     }
-
-    if (countInvalidFields > 0) {
+    console.log(countInvalidFields);
+    if (countInvalidFields > 3) {
       event.preventDefault();
       errorMessageLocation.innerText = 'Campos inválidos';
     } else {
