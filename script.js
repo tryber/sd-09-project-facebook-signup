@@ -30,8 +30,6 @@ function checkRegister() {
     for (let index = 0; index < inputLocation.length; index += 1) {
       if (inputLocation[index].value === '') {
         countInvalidFields += 1;
-      } else {
-        userData.push(inputLocation[index].value);
       }
     }
 
@@ -45,7 +43,7 @@ function checkRegister() {
       }
 
       const welcomeMessageLocation = document.createElement('p');
-      welcomeMessageLocation.innerText = `Olá ${inputLocation[0].value} ${inputLocation[1].value}, ${inputLocation[2].value} e ${inputLocation[4].value}`
+      welcomeMessageLocation.innerText = `Olá ${inputLocation[0].value} ${inputLocation[1].value}, ${inputLocation[2].value} e ${inputLocation[4].value}`;
 
       rightContentLocation.appendChild(welcomeMessageLocation);
     }
