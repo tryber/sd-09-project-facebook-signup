@@ -10,11 +10,13 @@ body {
   display: flex;
   height: 5rem;
   justify-content: space-around;
+  width: 100%;
 }
 
 .facebook-logo {
-  align-self: flex-start;
+  justify-content: flex-start;
   width: 13rem;
+  padding-right: 80px;
 }
 
 .facebook-login {
