@@ -1,6 +1,8 @@
 const buttonLogin = document.querySelector('#button-login');
 const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
+const botaoVerifica = document.querySelector('.btn');
+const containerDireito = document.querySelector('.row').childNodes;
 
 function alertaBotao() {
   buttonLogin.addEventListener('click', function () {
@@ -18,3 +20,11 @@ function botaoAbreGenero(event) {
   }
 }
 roudePersonl.addEventListener('click', botaoAbreGenero);
+
+function verificandoVazios() {
+  for (let index = 0; index < containerDireito.length; index++) {
+    const elemento = containerDireito[index];
+    console.log(elemento.value);
+  }
+}
+botaoVerifica.addEventListener('click', verificandoVazios);
