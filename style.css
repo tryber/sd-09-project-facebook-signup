@@ -1,0 +1,81 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.facebook-login {
+  align-self: center;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+/* main */
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+/* right-content */
+.right-content {
+  width: 300px;
+}
+
+.open-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.open-account .name {
+  display: flex;
+}
+
+.open-account .phone_email {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-account .password {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-account .birthdate {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-account .gender {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-account .gender div {
+  display: flex;
+}
