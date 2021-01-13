@@ -1,0 +1,133 @@
+body {
+  background-image: linear-gradient(to bottom, #fefefe, #d3d4e8);
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+form input {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(66, 103, 178);
+  margin: 0;
+  padding: 10px 0;
+}
+
+.big-input {
+  width: 100%;
+}
+
+.facebook-login {
+  align-items: flex-end;
+  display: flex;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.form {
+  color: #858991;
+}
+
+.form-control {
+  align-self: flex-end;
+  font-weight: 700;
+}
+
+.form-control button {
+  background-color: #3e61a8;
+  border: 1px solid #34518b;
+  color: white;
+  height: 21px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.form-group input {
+  margin: 5px 0;
+  width: 150px;
+}
+
+.hidden-input {
+  display: none;
+  width: 100%;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.left-content p {
+  color: #123455;
+  font-weight: 700;
+  margin: 0;
+  width: 300px;
+}
+
+.main-content {
+  align-items: baseline;
+  display: flex;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.radio-container {
+  align-items: center;
+  display: flex;
+}
+
+.radio-container label {
+  color: #2d2d2d;
+  margin: 0 1em 0 0.2em;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.right-content form input {
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.right-content p , .right-content .title {
+  color: #2d2d2d;
+}
+
+.small-input {
+  width: 48%;
+}
+
+.submitButton {
+  background-color: #5b9d4e;
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+  font-weight: 700;
+  margin: 1em 0;
+  padding: 0.5em 2em;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1100px;
+}
