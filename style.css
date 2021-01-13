@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+img.facebook-logo {
+  height: 60px;
+}
+
 .facebook-login {
   align-items: flex-end;
   display: flex;
@@ -11,10 +15,10 @@ body {
 
 .form-control {
   align-self: flex-end;
-  display: flex;
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
 }
