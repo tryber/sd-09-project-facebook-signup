@@ -90,3 +90,9 @@ header {
 .name-and-lastname {
   display: flex;
 }
+
+#form-message {
+  font-size: 10px;
+  color: red;
+  cursor: pointer;
+}
