@@ -51,7 +51,7 @@ function checkRegister() {
   const errorMessageLocation = document.querySelector('#invalidFields');
   const registerButton = document.querySelector('#facebook-register');
   const userGender = document.querySelector('input[name="gender"]').value;
-  // Tá dificil referenciar o valor do input, sendo que por padrão ele é radio, 
+  // Tá dificil referenciar o valor do input, sendo que por padrão ele é radio,
   // mas pode ter um text se for personalizado, aí o :checked não funciona bem.
 
   registerButton.addEventListener('click', function (event) {
