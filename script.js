@@ -20,20 +20,6 @@ function logIn() {
   });
 }
 
-function checkGender() {
-  /*const genderSelectLocation = document.querySelectorAll('.gender-select')
-  let genderSelected = ''
-
-  for (let index = 0; index < genderSelectLocation.length; index += 1) {
-    if (genderSelectLocation[index].checked === true) {
-      genderSelected = genderSelectLocation[index].value
-    } 
-  }
-  return genderSelected*/
-  let teste = "batatinha"
-  return teste
-}
-
 function createParagraph() {
   const welcomeMessageLocation = document.createElement('p');
   welcomeMessageLocation.classList.add('welcome');
@@ -64,7 +50,9 @@ function checkRegister() {
   let countInvalidFields = 0;
   const errorMessageLocation = document.querySelector('#invalidFields');
   const registerButton = document.querySelector('#facebook-register');
-  let userGender = checkGender()
+  const userGender = document.querySelector('input[name="gender"]:checked').value;
+  // Alterei essa variavel, polpando uma função de check ali em cima
+  // aí eu removi a função ali de cima e trouxe o valor do radio para a variável userGender
 
   registerButton.addEventListener('click', function (event) {
     for (let index = 0; index < inputLocation.length; index += 1) {
