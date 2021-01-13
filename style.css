@@ -1,11 +1,18 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  padding: 10px;
+  border: 1px red solid;
+}
+
+.facebook-logo{
+  text-align: left;
+  border: 1px red solid;
 }
 
 .facebook-login {
   display: flex;
+  align-self: right;
+  border: 1px black solid;
 }
 
 .form-group {
