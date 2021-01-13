@@ -9,13 +9,13 @@ const formFirstName = document.querySelector('#id-firstname');
 const formLastName = document.querySelector('#id-lastname');
 const formPhoneEmail = document.querySelector('#id-phone_email');
 const formPassword = document.querySelector('#id-password');
-/*const formBirthDate = document.querySelector('#id-birthdate');
+/*  const formBirthDate = document.querySelector('#id-birthdate');
 const formFemale = document.querySelector('#id-female');
 const formMale = document.querySelector('#id-male');
 const FormCustom = document.querySelector('#id-custom');  */
 
 /* Exibe e-mail-telefone */
-buttonSender.addEventListener('click', function (event) {
+buttonSender.addEventListener('click', function(event) {
   if (inputEmailPhone.value.length > 0) {
     alert(inputEmailPhone.value);
   }
@@ -31,12 +31,11 @@ buttonRegister.addEventListener('click', function(event) {
   if (formLastName.value.length < 1) {
     formValid = false;
   }
-  if (formPhoneEmail.value.length < 1 || !phoneEmail.value.includes('@')) {
+  if (formPhoneEmail.value.length < 1 || !formPhoneEmail.value.includes('@')) {
     formValid = false;
   }
   if (formPassword.value.length < 1) {
     formValid = false;
   }
-  console.log(formValid);
-  event.preventDefault();
+   event.preventDefault();
 });
