@@ -63,7 +63,7 @@ function checkRegister() {
   const userGender = 'Gênero'; // aqu entraria a função genderReturn
 
   registerButton.addEventListener('click', function (event) {
-    let countInvalidFields = 0; 
+    let countInvalidFields = 0;
     // coloquei a variavel aqui dentro da função, pq ela estava acumulando os vazios de outros click
     for (let index = 0; index < inputLocation.length; index += 1) {
       if (inputLocation[index].value === '') {
@@ -71,7 +71,6 @@ function checkRegister() {
         countInvalidFields += 1;
       }
     }
-    console.log(countInvalidFields);
     if (countInvalidFields > 3) {
       event.preventDefault();
       errorMessageLocation.innerText = 'Campos inválidos';
