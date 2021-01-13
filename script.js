@@ -40,6 +40,8 @@ function validInput(event) {
       inputMasculinoValue === false &&
       inputPersonalizadoValue === false) {
     createP();
+  } else {
+    deleteWrite();
   }
 }
 btnCadastre.addEventListener('click', validInput);
@@ -56,9 +58,7 @@ function inputTxtPerso() {
 }
 rdoPerso.addEventListener('click', inputTxtPerso);
 
-const btnCadastre2 = document.getElementById('facebook-register');
-function deleteWrite(event) {
-  event.preventDefault();
+function deleteWrite() {
   const inputName2 = document.getElementById('name');
   const box = document.getElementById('right-content');
   const form = document.getElementById('form');
@@ -86,4 +86,3 @@ function deleteWrite(event) {
   }
   box.innerText = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);
 }
-btnCadastre2.addEventListener('click', deleteWrite);
