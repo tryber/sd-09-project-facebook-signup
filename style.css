@@ -1,5 +1,14 @@
 body {
+  background-image: linear-gradient(to bottom, #fefefe, #d3d4e8);
+  font-family: sans-serif;
+  height: 100vh;
+  padding: 0;
   margin: 0;
+}
+
+header {
+  background-color: rgb(66, 103, 178);
+  padding: 10px 0;
 }
 
 p {
@@ -23,21 +32,27 @@ p {
 }
 
 .facebook-login {
+  align-self: flex-end;
   display: flex;
   margin: 10px;
-  position: absolute;
-  right: 0;
 }
 
 .facebook-login label {
   color: white;
-  font-family: fantasy;
-  margin: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 5px 0;
+}
+
+.facebook-logo {
+  align-self: center;
+  height: 60px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
 }
 
 .form-control {
@@ -88,8 +103,8 @@ p {
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
-  color: white;
   display: flex;
-  height: 80px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 60%;
 }
