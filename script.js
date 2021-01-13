@@ -15,7 +15,7 @@ const formMale = document.querySelector('#id-male');
 const FormCustom = document.querySelector('#id-custom');  */
 
 /* Exibe e-mail-telefone */
-buttonSender.addEventListener('click', function(event) {
+buttonSender.addEventListener('click', function (event) {
   if (inputEmailPhone.value.length > 0) {
     alert(inputEmailPhone.value);
   }
@@ -23,7 +23,7 @@ buttonSender.addEventListener('click', function(event) {
 });
 
 /* Valida dados cadastrais */
-buttonRegister.addEventListener('click', function(event) {
+buttonRegister.addEventListener('click', function (event) {
   let formValid = true;
   if (formFirstName.value.length < 1) {
     formValid = false;
@@ -39,6 +39,7 @@ buttonRegister.addEventListener('click', function(event) {
   }
   if (formValid) {
     let teste = 0;
+    teste += 1;
   }
   event.preventDefault();
 });
