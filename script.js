@@ -1,4 +1,6 @@
+const form = document.querySelector('.personal-infos');
 let emptyInputs = 0;
+let infoValue = '';
 
 function alertEmailOrPhone() {
   const inputEmail = document.querySelector('#user-email-phone');
@@ -10,7 +12,6 @@ button.addEventListener('click', alertEmailOrPhone);
 
 function buttonSignUp(event) {
   event.preventDefault();
-  const form = document.querySelector('.personal-infos');
   const infoClass = document.querySelectorAll('.info');
   const message = document.createElement('p');
   for (let index = 0; index < infoClass.length; index += 1) {
