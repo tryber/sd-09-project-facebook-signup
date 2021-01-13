@@ -22,10 +22,16 @@ function botaoAbreGenero(event) {
 }
 roudePersonl.addEventListener('click', botaoAbreGenero);
 
+function msgDeCampoVazio() {
+  if (contador > 0) {
+    alert('Campos inválidos');
+  }
+}
+
 function verificandoVazios() {
   for (let index = 0; index < containerDireito.length; index += 1) {
     const elemento = containerDireito[index];
-    contador+=1;
+    contador += 1;
     if (elemento.value === '') {
       msgDeCampoVazio();
       break;
@@ -33,9 +39,3 @@ function verificandoVazios() {
   }
 }
 botaoVerifica.addEventListener('click', verificandoVazios);
-
-function msgDeCampoVazio() {
-  if (contador > 0) {
-    alert('Campos inválidos');
-  }
-}
