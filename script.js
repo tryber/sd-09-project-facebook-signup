@@ -20,15 +20,15 @@ function logIn() {
   });
 }
 
-function checkRegister () {
+function checkRegister() {
   const inputLocation = document.querySelectorAll('.input');
   let countInvalidFields = 0;
-  const errorMessageLocation = document.querySelector('#invalidFields')
-  const registerButton = document.querySelector('#facebook-register')
+  const errorMessageLocation = document.querySelector('#invalidFields');
+  const registerButton = document.querySelector('#facebook-register');
 
   registerButton.addEventListener('click', function (event) {
     for (let index = 0; index < inputLocation.length; index += 1) {
-      if (inputLocation[index].value === "") {
+      if (inputLocation[index].value === '') {
         countInvalidFields += 1;
       }
     }
@@ -37,11 +37,9 @@ function checkRegister () {
       event.preventDefault();
       errorMessageLocation.innerText = 'Campos inválidos';
     }
-  })
+  });
 }
 
-
-
-checkRegister ()
+checkRegister();
 genderInput();
 logIn();
