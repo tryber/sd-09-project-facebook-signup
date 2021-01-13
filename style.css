@@ -11,6 +11,11 @@
   float: left;
 }
 
+.facebook-login {
+  align-content: flex-end;
+  display: flex;
+}
+
 .form-group {
   display: flex;
 }
