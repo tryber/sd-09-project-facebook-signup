@@ -7,9 +7,18 @@ p {
   padding: 0;
 }
 
+.btn {
+  width: 170px;
+}
+
 .calendar {
   display: flex;
   flex-direction: row;
+}
+
+.data-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .facebook-login {
@@ -32,6 +41,11 @@ p {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.genero {
+  display: block;
+  margin: 0 0 15px;
 }
 
 .genero-radio {
@@ -60,7 +74,11 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 15px;
+  padding: 20px 0 90px;
+}
+
+.nome {
+  display: flex;
 }
 
 .pad-zero {
