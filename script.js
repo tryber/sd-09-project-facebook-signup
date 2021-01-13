@@ -12,7 +12,7 @@ function stopDefault(event) {
 }
 const sectionRight = document.querySelector('#right-content');
 const validateCamps = document.querySelectorAll('.cadastro input');
-const getGender = document.querySelectorAll('.radioButtons input')
+const getGender = document.querySelectorAll('.radioButtons input');
 function registerValidate() {
   for (let index = 0; index < 5; index += 1) {
     if (validateCamps[index].value === '') {
@@ -22,15 +22,6 @@ function registerValidate() {
     }
   }
 }
-
-function setValueOnSectionRight() {
-  sectionRight.innerHTML = `Olá ${validateCamps[0].value} ${validateCamps[1].value},
-  contato: ${validateCamps[2].value}
-  nascido em: ${validateCamps[4].value}
-  e de ${createGenderRegister()};
-  Seus dados foram cadastrados com sucesso!`;
-}
-
 function createGenderRegister() {
   let gender1 = '';
   let gender2 = '';
@@ -43,7 +34,15 @@ function createGenderRegister() {
     const customGender = document.getElementById('genderText');
     gender2 = ` > ${customGender.value}`;
   }
-  return gender1 + gender2
+  return gender1 + gender2;
+}
+
+function setValueOnSectionRight() {
+  sectionRight.innerHTML = `Olá ${validateCamps[0].value} ${validateCamps[1].value},
+  contato: ${validateCamps[2].value},
+  nascido em: ${validateCamps[4].value}
+  e de ${createGenderRegister()};
+  Seus dados foram cadastrados com sucesso!`;
 }
 
 function checkValidRegister() {
