@@ -15,10 +15,10 @@ function checkPersonalizado() {
   });
 }
 checkPersonalizado();
-function validate(evento){
+function validate(evento) {
   const infoForm = document.querySelector('.form-sign-in input');
   let isValid = false;
-  for (let i = 0; i <= infoForm.length; i+= 1){
+  for (let i = 0; i <= infoForm.length; i += 1) {
     if (infoForm[i] !== ' ') {
       isValid = true;
     } else {
@@ -26,8 +26,8 @@ function validate(evento){
     }
   }
   evento.preventDefault();
-  if (isValid === false){
-    document.getElementById('answerVal').innerText ='Campos Inválidos';
+  if (isValid === false) {
+    document.getElementById('answerVal').innerText = 'Campos Inválidos';
   }
 }
 
