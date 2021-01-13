@@ -8,11 +8,11 @@ function buttonAlertLogin() {
 buttonAlertLogin();
 
 function checkPersonalizado() {
-    const outers = document.querySelector('#personalizado');
-    const gender = document.querySelector('.radio-buttons');
-    outers.addEventListener('click', function () {
-        let newInput = document.createElement('input');
-        gender.appendChild(newInput);
-    })
+  const outers = document.querySelector('#personalizado');
+  const gender = document.querySelector('.radio-buttons');
+  outers.addEventListener('click', function () {
+    let newInput = document.createElement('input');
+    gender.appendChild(newInput);
+  })
 }
 checkPersonalizado();
