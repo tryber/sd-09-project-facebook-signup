@@ -50,7 +50,7 @@ function writeNewUserData() {
   const lastName = formData[1].value;
   const celphoneOrEmail = formData[2].value;
   const gender = document.querySelector('#new-account-form input:checked').value;
-  const birthday = formData[4].value
+  const birthday = formData[4].value;
   const wellcomeText = document.createElement('p');
   wellcomeText.textContent = `Olá, ${name} ${lastName}`;
   const celphoneOrEmailText = document.createElement('p');
