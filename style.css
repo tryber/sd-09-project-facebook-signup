@@ -4,8 +4,8 @@ body {
 }
 
 .facebook-login {
-  display: flex;
   align-items: flex-end;
+  display: flex;
   margin: 10px;
 }
 
