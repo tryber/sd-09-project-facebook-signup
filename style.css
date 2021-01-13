@@ -44,21 +44,37 @@
   width: 310px;
 }
 
-.firstname,
-.phone_email,
-.pass-word,
-.birthdate,
+.firstname {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.phone_email {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.pass-word {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.birthdate {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
 .lastname {
   border-radius: 5px;
   margin-bottom: 5px;
 }
 
-#facebook-register {
+.facebook-register {
   background-color: chartreuse;
   border-radius: 5px;
   padding: 10px;
 }
 
-#label-gender {
+.label-gender {
   font-style: oblique;
 }
