@@ -4,7 +4,7 @@
   display: flex;
   height: 82px;
   justify-content: space-between;
-}  
+} 
 
 .aolado {
   color: white;
@@ -14,31 +14,31 @@
 .facebook-slogan {
   color: rgb(66, 103, 178);
   font-size: 30px;
-}  
+}
 
 .facebook-login {
   display: flex;
-}    
+}  
 
 .form-control {
   align-self: flex-end;
-}      
+}
 
 .left-content {
   width: 800px;
-}  
+}
 
 .main-content {
   display: flex;
   padding-top: 40px;
-}      
+}
 
 .right-content {
   justify-content: flex-start;
   width: 300px;
-}  
+}
 
-.phone_email {
+.phone-email {
   border-radius: 5px;
   margin-top: 3px;
   width: 310px;
@@ -48,7 +48,6 @@
   border-radius: 5px;
   margin-bottom: 5px;
 }
-
 
 .pass-word {
   border-radius: 5px;
