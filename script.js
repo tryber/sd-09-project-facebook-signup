@@ -20,6 +20,20 @@ function logIn() {
   });
 }
 
+function checkGender() {
+  /*const genderSelectLocation = document.querySelectorAll('.gender-select')
+  let genderSelected = ''
+
+  for (let index = 0; index < genderSelectLocation.length; index += 1) {
+    if (genderSelectLocation[index].checked === true) {
+      genderSelected = genderSelectLocation[index].value
+    } 
+  }
+  return genderSelected*/
+  let teste = "batatinha"
+  return teste
+}
+
 function createParagraph() {
   const welcomeMessageLocation = document.createElement('p');
   welcomeMessageLocation.classList.add('welcome');
@@ -36,13 +50,13 @@ function removeRightContent() {
   }
 }
 
-function messageWelcome(array) {
+function messageWelcome(array, string) {
   const paragraphWelcome = document.querySelectorAll('.welcome');
 
   paragraphWelcome[0].innerText = `Olá, ${array[0].value} ${array[1].value}`;
   paragraphWelcome[1].innerText = `${array[2].value}`;
   paragraphWelcome[2].innerText = `${array[4].value}`;
-  paragraphWelcome[3].innerText = 'teste';
+  paragraphWelcome[3].innerText = `${string}`;
 }
 
 function checkRegister() {
@@ -50,6 +64,7 @@ function checkRegister() {
   let countInvalidFields = 0;
   const errorMessageLocation = document.querySelector('#invalidFields');
   const registerButton = document.querySelector('#facebook-register');
+  let userGender = checkGender()
 
   registerButton.addEventListener('click', function (event) {
     for (let index = 0; index < inputLocation.length; index += 1) {
@@ -67,7 +82,7 @@ function checkRegister() {
       createParagraph();
       createParagraph();
       createParagraph();
-      messageWelcome(inputLocation);
+      messageWelcome(inputLocation, userGender);
     }
   });
 }
