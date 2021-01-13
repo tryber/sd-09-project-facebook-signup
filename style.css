@@ -77,8 +77,8 @@ body {
 
 .textButton {
   display: flex;
-  margin-bottom: 5px;
   flex-direction: column;
+  margin-bottom: 5px;
 }
 
 .left-content p {
