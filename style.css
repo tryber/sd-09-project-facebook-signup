@@ -23,7 +23,7 @@ body {
   display: flex;
   height: 2rem;
   justify-content: space-between;
-  margin: 0.6rem;
+  margin-bottom: 30px;
   width: 23rem;
 }
 
