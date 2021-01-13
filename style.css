@@ -10,7 +10,7 @@ body {
   display: flex;
   font-size: 12px;
   height: 53px;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   padding: 15px;
   width: 100%;
 }
@@ -61,24 +61,23 @@ body {
   height: 70px;
 }
 
-.main-content{
+.main-content {
   align-items: baseline;
+  background-color: hotpink;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
-  background-color: hotpink;
   padding: 0;
 }
 
-.left-content{
+.left-content {
   flex-basis: 800px;
   background-color: yellow;
   margin: 0;
 }
 
 .right-content {
-  flex-basis: 300px;
   background-color: green;
+  flex-basis: 300px;
   margin: 0;
 }
