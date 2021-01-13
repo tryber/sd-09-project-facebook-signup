@@ -38,24 +38,28 @@
   </header>
 
   <!-- main content -->
+
   <section class="main-content">
+
+    <!-- left content -->
+
     <div class="left-content">
       <p id="facebook-slogan" class="slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img src="imgs/networking.png" alt="glogal net" id="facebook-networking" class="network">
     </div>
 
-    <div class="right-content">
+    <!-- right content -->
+
+    <div class="right-content" id="right-content">
       <h1 class="h1">Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" class="cadastro">
+      <form action="" class="cadastro" id="cadastro">
         <section class="nomeSobrenome">
           <input type="text"  name="firstname" placeholder="Nome"  required>
           <input type="text"  name="lastname" placeholder="Sobrenome" required>
         </section>
         <input type="text"  name="phone_email"  placeholder="Celular ou email"  required>
         <input type="password"  name="password" placeholder="Nova senha"  required>
-
-        <!-- Troquei o "id" por "for" no label abaixo para fazer o vinculo da label com o input. Repeti a operacao nos outros labels-->
         <label for="label-birthday" id="label-birthdate" class="nascimento">Data de nascimento</label>
         <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa" required>
         <label for="" id="label-gender" class="labelGender">Gênero</label>
