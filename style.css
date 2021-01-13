@@ -19,11 +19,6 @@
   align-self: flex-end;
 }
 
-.form-control {
-  align-items: flex-end;
-  align-self: flex-end;
-}
-
 .main-content {
   display: flex;
   padding-top: 40px;
