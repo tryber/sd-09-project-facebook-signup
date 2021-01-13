@@ -40,7 +40,7 @@ function validInput(event) {
       inputMasculinoValue === false &&
       inputPersonalizadoValue === false) {
     createP();
-  } 
+  }
 }
 btnCadastre.addEventListener('click', validInput);
 
@@ -75,9 +75,7 @@ function deleteWrite(event) {
   const inputFemininoValue2 = inputFeminino2.checked;
   const inputMasculinoValue2 = inputMasculino2.checked;
   const inputPersonalizadoValue2 = inputPersonalizado2.checked;
-
   box.removeChild(form);
- 
   let checked2 = '';
   if (inputFemininoValue2 === true) {
     checked2 = 'Feminino';
