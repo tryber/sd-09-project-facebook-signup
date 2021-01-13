@@ -58,3 +58,11 @@ O Cypress evaluator está dando erro neste teste:
 .right-content {
   width: 300px;
 }
+
+.container {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
