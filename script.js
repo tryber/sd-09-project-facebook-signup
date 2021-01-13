@@ -29,20 +29,13 @@ const lastname = document.querySelector('input[name="lastname"]');
 const emaiLrOrPhone = document.querySelector('input[name="phone_email"]');
 const birthDate = document.querySelector('input[name="birthdate"]');
 
-function genferCustom() {
-  const customGender = document.querySelector('input[name="gender-custom"]')
-  if (customGender !== null) {
-    return `Gênero personalizado: ${customGender}`;
-  }
-}
-
 function getInputValues(inpuType) {
   return inpuType.value;
 }
 
 function getGenderValue(event) {
   if (event.target.name === 'gender') {
-    alert(event.target.value)
+    alert(event.target.value);
   }
 }
 const gender = document.querySelector('.gender-options');
@@ -56,24 +49,29 @@ function addPersonalInfos() {
       rightContent.removeChild(rightContent.lastChild);
     }
     const form = document.createElement('p');
-      form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
-      Email ou Telefone: ${getInputValues(emaiLrOrPhone)}
-      Data de nascimento: ${getInputValues(birthDate)}
-      Gênero: ${getGenderValue(event)}`;
-      rightContent.appendChild(form);
+    form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
+    Email ou Telefone: ${getInputValues(emaiLrOrPhone)}
+    Data de nascimento: ${getInputValues(birthDate)}
+    Gênero: ${getGenderValue(event)}`;
+    rightContent.appendChild(form);
+  }
+}
+
+function clearParagraph() {
+  const form = document.querySelector('.message');
+  while (form.firstChild) {
+    form.removeChild(form.lastChild);
   }
 }
 
 function buttonSignUp(event) {
   event.preventDefault();
   let emptyInputs = 0;
-  let checked = document.querySelector('input[name="gender"]:checked');
+  const checked = document.querySelector('input[name="gender"]:checked');
   const form = document.querySelector('.message');
   const infoClass = document.querySelectorAll('.info');
   const message = document.createElement('p');
-  while (form.firstChild) {
-    form.removeChild(form.lastChild);
-  }
+  clearParagraph();
   for (let index = 0; index < infoClass.length; index += 1) {
     if (infoClass[index].value === '') {
       emptyInputs += 1;
@@ -95,7 +93,6 @@ function removeMessage(event) {
   if (event.target) {
     if (form.hasChildNodes()) {
       form.removeChild(form.lastChild);
-    } else {
     }
   }
 }
