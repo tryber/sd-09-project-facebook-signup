@@ -10,21 +10,18 @@ buttonLogin.addEventListener('click', function () {
 
 // Validar form de cadastro
 
+let formInput = firstName = document.querySelector('.first-name').value,
+      lastName = document.querySelector('.last-name').value, 
+      phone_email = document.querySelector('.password').value, 
+      password = document.querySelector('.birthdate').value,
+      birthdate = document.querySelector('.birthdate').value,
+      female = document.querySelector('.female').value, 
+      male = document.querySelector('.male').value, 
+      custom = document.querySelector('.custom').value
+
 function validateForm() {
 
-  let firstName = document.querySelector('.first-name').value
-  let lastName = document.querySelector('.last-name').value
-  let phone_email = document.querySelector('.phone_email').value
-  let password = document.querySelector('.password').value
-  let birthdate = document.querySelector('.birthdate').value
-  let female = document.querySelector('.female').value
-  let male = document.querySelector('.male').value
-  let custom = document.querySelector('.custom').value
-
-
-  if (firstName === '' || lastName === '' || phone_email === '' ||
-    password === '' || birthdate === '' || female === '' ||
-    male === '' || custom === '') {
+  if (formInput === '') {
 
     let form = document.querySelector('#register-form');
 
@@ -93,3 +90,20 @@ genderCustom.addEventListener('click', function () {
 // cria um elemento
 // adiciona o valor da lista no elemento 
 // manda pro html
+
+/* 
+
+
+let firstName = document.querySelector('.first-name').value
+  let lastName = document.querySelector('.last-name').value
+  let phone_email = document.querySelector('.phone_email').value
+  let password = document.querySelector('.password').value
+  let birthdate = document.querySelector('.birthdate').value
+  let female = document.querySelector('.female').value
+  let male = document.querySelector('.male').value
+  let custom = document.querySelector('.custom').value
+
+firstName === '' || lastName === '' || phone_email === '' ||
+    password === '' || birthdate === '' || female === '' ||
+    male === '' || custom === ''
+*/
