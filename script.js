@@ -18,15 +18,11 @@ function createP() {
 const btnCadastre = document.getElementById('facebook-register');
 function validInput(event) {
   event.preventDefault();
-  const box = document.getElementById('form');
-  const boxRadio = document.getElementById('radios');
   const inputName = document.getElementById('name');
   const inputLastname = document.getElementById('lastname');
   const inputPhone = document.getElementById('phoneemail');
   const inputNewpw = document.getElementById('newpassword');
-  const labelBirth = document.getElementById('label-birthdate');
   const inputBirth = document.getElementById('birthdate');
-  const labelRadio = document.getElementById('label-gender');
   const inputFeminino = document.getElementById('feminino');
   const inputMasculino = document.getElementById('masculino');
   const inputPersonalizado = document.getElementById('personalizado');
@@ -63,14 +59,12 @@ rdoPerso.addEventListener('click', inputTxtPerso);
 const btnCadastre2 = document.getElementById('facebook-register');
 function deleteWrite(event) {
   event.preventDefault();
-  const boxRadio2 = document.getElementById('radios');
   const inputName2 = document.getElementById('name');
+  const box = document.getElementById('right-content');
+  const form = document.getElementById('form');
   const inputLastname2 = document.getElementById('lastname');
   const inputPhone2 = document.getElementById('phoneemail');
-  const inputNewpw2 = document.getElementById('newpassword');
-  const labelBirth2 = document.getElementById('label-birthdate');
   const inputBirth2 = document.getElementById('birthdate');
-  const labelRadio2 = document.getElementById('label-gender');
   const inputFeminino2 = document.getElementById('feminino');
   const inputMasculino2 = document.getElementById('masculino');
   const inputPersonalizado2 = document.getElementById('personalizado');
@@ -81,14 +75,9 @@ function deleteWrite(event) {
   const inputFemininoValue2 = inputFeminino2.checked;
   const inputMasculinoValue2 = inputMasculino2.checked;
   const inputPersonalizadoValue2 = inputPersonalizado2.checked;
-  box.removeChild(inputName2);
-  box.removeChild(inputLastname2);
-  box.removeChild(inputPhone2);
-  box.removeChild(inputNewpw2);
-  box.removeChild(inputBirth2);
-  box.removeChild(boxRadio2);
-  box.removeChild(labelBirth2);
-  box.removeChild(labelRadio2);
+
+  box.removeChild(form);
+ 
   let checked2 = '';
   if (inputFemininoValue2 === true) {
     checked2 = 'Feminino';
@@ -97,6 +86,6 @@ function deleteWrite(event) {
   } else if (inputPersonalizadoValue2 === true) {
     checked2 = 'Personalizado';
   }
-  box.innerText2 = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);
+  box.innerText = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);
 }
 btnCadastre2.addEventListener('click', deleteWrite);
