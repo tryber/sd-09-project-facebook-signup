@@ -18,11 +18,15 @@ function createP() {
 const btnCadastre = document.getElementById('facebook-register');
 function validInput(event) {
   event.preventDefault();
+  const box = document.getElementById('form');
+  const boxRadio = document.getElementById('radios')
   const inputName = document.getElementById('name');
   const inputLastname = document.getElementById('lastname');
   const inputPhone = document.getElementById('phoneemail');
   const inputNewpw = document.getElementById('newpassword');
+  const labelBirth = document.getElementById('label-birthdate');
   const inputBirth = document.getElementById('birthdate');
+  const labelRadio = document.getElementById('label-gender');
   const inputFeminino = document.getElementById('feminino');
   const inputMasculino = document.getElementById('masculino');
   const inputPersonalizado = document.getElementById('personalizado');
@@ -40,6 +44,25 @@ function validInput(event) {
       inputMasculinoValue === false &&
       inputPersonalizadoValue === false) {
     createP();
+  } else {
+      box.removeChild(inputName);
+      box.removeChild(inputLastname);
+      box.removeChild(inputPhone);
+      box.removeChild(inputNewpw);
+      box.removeChild(inputBirth);
+      box.removeChild(boxRadio);
+      box.removeChild(labelBirth);
+      box.removeChild(labelRadio);
+      let checked = '';
+      if (inputFemininoValue === true) {
+        checked = 'Feminino';
+      } else if (inputMasculinoValue === true) {
+        checked = 'Masculino';
+      } else if (inputPersonalizadoValue === true) {
+        checked = 'Personalizado';
+      }
+      console.log(checked);
+      box.innerText = ('Olá, ' + inputNameValue + inputLastnameValue + inputPhoneValue + inputBirthValue + checked);
   }
 }
 btnCadastre.addEventListener('click', validInput);
