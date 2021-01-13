@@ -20,25 +20,28 @@ function logIn() {
   });
 }
 
-function registerUser() {
-  const buttonRegister = document.querySelector('#facebook-register');
+function checkRegister () {
+  const inputLocation = document.querySelectorAll('.input');
+  let countInvalidFields = 0;
+  const errorMessageLocation = document.querySelector('#invalidFields')
+  const registerButton = document.querySelector('#facebook-register')
 
-  buttonRegister.addEventListener('click', function () {
-    const dataFields = document.querySelectorAll('.input');
-    let checkContent = 0;
-
-    for (let index = 0; index < dataFields.length; index += 1) {
-      if (dataFields[index].value === '') {
-        checkContent += 1;
+  registerButton.addEventListener('click', function (event) {
+    for (let index = 0; index < inputLocation.length; index += 1) {
+      if (inputLocation[index].value === "") {
+        countInvalidFields += 1;
       }
     }
 
-    if (checkContent !== 0) {
-      document.querySelector('#invalidFields').innerText = 'Campos inválidos';
+    if (countInvalidFields > 0) {
+      event.preventDefault();
+      errorMessageLocation.innerText = 'Campos inválidos';
     }
-  });
+  })
 }
 
+
+
+checkRegister ()
 genderInput();
 logIn();
-registerUser();
