@@ -10,6 +10,12 @@ form input {
   box-sizing: border-box;
 }
 
+header {
+  background-color: rgb(66, 103, 178);
+  margin: 0;
+  padding: 10px 0;
+}
+
 .big-input {
   width: 100%;
 }
@@ -46,14 +52,6 @@ form input {
 .form-group input {
   margin: 5px 0;
   width: 150px;
-}
-
-.header-content {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  margin: 10px auto;
-  width: 1100px;
 }
 
 .hidden-input {
@@ -129,7 +127,9 @@ form input {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  margin: 0 auto;
+  width: 1100px;
 }
