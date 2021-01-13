@@ -34,7 +34,7 @@ function validate(evento) {
   if (isValid === false) {
     document.getElementById('answerVal').innerText = 'Campos inválidos';
   }
-    finalText();
+  finalText();
 }
 
 const validation = document.getElementById('facebook-register');
