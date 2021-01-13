@@ -46,19 +46,23 @@ function isTextInputValid() {
 function writeNewUserData() {
   const contentField = document.querySelector('#right-content');
   const formData = document.querySelectorAll('#new-account-form input');
-  const lastName = formData[0].value;
-  const name = formData[1].value;
+  const name = formData[0].value;
+  const lastName = formData[1].value;
   const celphoneOrEmail = formData[2].value;
   const gender = document.querySelector('#new-account-form input:checked').value;
+  const birthday = formData[4].value
   const wellcomeText = document.createElement('p');
   wellcomeText.textContent = `Olá, ${name} ${lastName}`;
   const celphoneOrEmailText = document.createElement('p');
   celphoneOrEmailText.textContent = `${celphoneOrEmail}`;
   const genderText = document.createElement('p');
   genderText.textContent = `${gender}`;
+  const birthdayText = document.createElement('p');
+  birthdayText.textContent = `${birthday}`;
   contentField.innerHTML = '';
   contentField.appendChild(wellcomeText);
   contentField.appendChild(celphoneOrEmailText);
+  contentField.appendChild(birthdayText);
   contentField.appendChild(genderText);
 }
 
