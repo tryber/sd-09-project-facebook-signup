@@ -15,4 +15,5 @@ customGender.addEventListener('click', function () {
   newGender.placeholder = 'Gênero (opcional)';
   custom.appendChild(newGender);
   customGender.classList = 'checked';
+  newGender.required = true;
 });
