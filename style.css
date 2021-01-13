@@ -2,22 +2,21 @@
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  margin: auto;
-  position: fixed;
-  width: 100%;
-}
-
-.facebook-logo {
-  float: left;
+  height: 82px;
+  justify-content: space-between;
 }
 
 .facebook-login {
-  align-content: flex-end;
   display: flex;
 }
 
 .form-group {
   display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .form-control {
