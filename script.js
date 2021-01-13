@@ -37,5 +37,8 @@ buttonRegister.addEventListener('click', function(event) {
   if (formPassword.value.length < 1) {
     formValid = false;
   }
-   event.preventDefault();
+  if (formValid) {
+    let teste = 0;
+  }
+  event.preventDefault();
 });
