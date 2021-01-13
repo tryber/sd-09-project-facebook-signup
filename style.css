@@ -27,6 +27,10 @@ header {
   font-weight: 700;
 }
 
+.facebook-logo {
+  height: 50px;
+}
+
 .form {
   color: #858991;
 }
