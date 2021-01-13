@@ -64,20 +64,25 @@ function clearParagraph() {
   }
 }
 
-function buttonSignUp(event) {
-  event.preventDefault();
-  let emptyInputs = 0;
-  const checked = document.querySelector('input[name="gender"]:checked');
-  const form = document.querySelector('.message');
+function checkEmptyinputs() {
   const infoClass = document.querySelectorAll('.info');
-  const message = document.createElement('p');
-  clearParagraph();
+  let emptyInputs = 0;
   for (let index = 0; index < infoClass.length; index += 1) {
     if (infoClass[index].value === '') {
       emptyInputs += 1;
     }
   }
-  if (checked === null || emptyInputs > 0) {
+  return emptyInputs;
+}
+
+function buttonSignUp(event) {
+  event.preventDefault();
+  const checked = document.querySelector('input[name="gender"]:checked');
+  const form = document.querySelector('.message');
+  const message = document.createElement('p');
+  clearParagraph();
+
+  if (checked === null || checkEmptyinputs() > 0) {
     form.appendChild(message);
     message.innerText = 'Campos inválidos';
   } else {
