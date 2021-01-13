@@ -40,7 +40,7 @@ function registerValidate() {
 //       const createDiv = document.createElement('div');
 //       createDiv.innerHTML = `${getGender[index].name}: ${getGender[index].value}`;
 //       document.getElementById('right-content').appendChild(createDiv);
-//     } 
+//     }
 //   }
 //   if (getGender[2].checked === true) {
 //     const customGender = document.getElementById('genderText')
