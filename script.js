@@ -1,13 +1,3 @@
-function logIn() {
-  const buttonListener = document.getElementById('button-login');
-
-  buttonListener.addEventListener('click', function () {
-    alert(document.getElementById('user-email-phone').value);
-  });
-}
-
-logIn();
-
 function genderInput() {
   const gerderListner = document.querySelector('.gender-control');
 
@@ -22,4 +12,35 @@ function genderInput() {
   });
 }
 
-genderInput();
+function logIn() {
+  const buttonListener = document.getElementById('button-login');
+
+  buttonListener.addEventListener('click', function () {
+    alert(document.getElementById('user-email-phone').value);
+  });
+}
+
+function registerUser() {
+  const buttonRegister = document.querySelector('#facebook-register')
+  
+  buttonRegister.addEventListener('click', function() {
+
+    const dataFields = document.querySelectorAll('.input');
+    let checkContent = 0
+
+    for(let index = 0; index < dataFields.length; index += 1) {
+      if (dataFields[index].value === "") {
+        checkContent = checkContent + 1
+      }
+    }
+    
+    if (checkContent !== 0) {
+      document.querySelector('#invalidFields').innerText = 'Campos inválidos'
+    }
+  })
+}
+
+
+logIn();
+genderInput()
+registerUser()
