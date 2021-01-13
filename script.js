@@ -17,12 +17,11 @@ function checkPersonalizado() {
 checkPersonalizado();
 
 function finalText() {
-  let modifContain = document.querySelector('.main-content');
-  modifContain.innerHTML = 'hghghghghg'
+  const modifContain = document.querySelector('.main-content');
+  modifContain.innerHTML = 'TESTE';
 }
 function validate(evento) {
   const infoForm = document.querySelectorAll('.form-sign-in input');
-  evento.preventDefault();
   let isValid = false;
   for (let i = 0; i <= infoForm.length; i += 1) {
     if (infoForm[i] !== ' ') {
@@ -34,6 +33,8 @@ function validate(evento) {
   evento.preventDefault();
   if (isValid === false) {
     document.getElementById('answerVal').innerText = 'Campos inválidos';
+  }else{
+    finalText();
   }
 }
 
