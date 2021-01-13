@@ -16,7 +16,7 @@ window.onload = function () {
   // const signInButton = document.getElementById('facebook-register');
   const customGenderOptions = document.getElementsByClassName('gender-radio');
 
-  for (let index = 0; index < customGenderOptions.length; index++) {
+  for (let index = 0; index < customGenderOptions.length; index += 1) {
     customGenderOptions[index].addEventListener('change', addCustomGenderInput);
   }
 };
