@@ -21,9 +21,9 @@ function botaoAbreGenero(event) {
 }
 roudePersonl.addEventListener('click', botaoAbreGenero);
 
-function verificandoVazios() {
-  for (let index = 0; index < containerDireito.length; index += 1) {
-    const elemento = containerDireito[index];
-  }
-}
-botaoVerifica.addEventListener('click', verificandoVazios);
+// function verificandoVazios() {
+//   for (let index = 0; index < containerDireito.length; index += 1) {
+//     const elemento = containerDireito[index];
+//   }
+// }
+// botaoVerifica.addEventListener('click', verificandoVazios);
