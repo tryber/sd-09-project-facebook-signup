@@ -53,3 +53,7 @@ body {
 .name-and-surname {
   display: flex;
 }
+
+.birthdate {
+  display: flex;
+}
