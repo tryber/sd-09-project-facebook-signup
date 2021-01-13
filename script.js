@@ -16,10 +16,6 @@ function checkPersonalizado() {
 }
 checkPersonalizado();
 
-function finalText() {
-  const modifContain = document.querySelector('.main-content');
-  modifContain.innerHTML = 'TESTE';
-}
 function validate(evento) {
   const infoForm = document.querySelectorAll('.form-sign-in input');
   let isValid = false;
@@ -33,8 +29,7 @@ function validate(evento) {
   evento.preventDefault();
   if (isValid === false) {
     document.getElementById('answerVal').innerText = 'Campos inválidos';
-  }
-  finalText();
+    }
 }
 
 const validation = document.getElementById('facebook-register');
