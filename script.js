@@ -45,7 +45,8 @@ customGender.addEventListener('click', () => {
   const customGenderExists = document.querySelector('.Custom-Gender');
   if (customGenderExists === null) {
     const newGenderField = document.createElement('input');
-    newGenderField.setAttribute('name', 'Gender-Custom');
+    newGenderField.setAttribute('type', 'text');
+    newGenderField.setAttribute('name', 'gender-custom');
     newGenderField.setAttribute('placeholder', 'Gênero (opcional)');
     newGenderField.className = 'Custom-Gender';
     registerButton.before(newGenderField);
