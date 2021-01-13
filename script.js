@@ -15,3 +15,22 @@ function checkPersonalizado() {
   });
 }
 checkPersonalizado();
+
+const validation = document.getElementById("facebook-register");
+validation.addEventListener("click",validate);
+
+function validate(evento){
+  const infoForm = document.querySelector(".form-sign-in input");
+  let isValid = false;
+  for(let i = 0;i <= infoForm.length; i+=1){
+    if (infoForm[i] !== " "){
+       isValid = true;
+    }else{
+      isValid = false;
+    }
+  }
+  evento.preventDefault();
+  if (isValid ===false){
+    document.getElementById("answerVal").innerText ="Campos Inválidos";
+  }
+}
