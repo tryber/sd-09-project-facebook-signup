@@ -1,4 +1,3 @@
-// const getInputs = document.querySelectorAll('#register-form input');
 const getRegisterBnt = document.querySelector('#facebook-register');
 const getButton = document.querySelector('#button-login');
 const personalizedInput = document.querySelector('#personalized');
@@ -38,7 +37,7 @@ function validateEmptyFields(fields) {
   const form = document.querySelector('#register-form');
   if (fields > 0) {
     const text = document.createElement('p');
-    text.innerHTML = 'Campos Invalidos';
+    text.innerHTML = 'Campos inválidos';
     form.appendChild(text);
   } else {
     changeChosenGender();
