@@ -1,6 +1,7 @@
 const buttonLogin = document.getElementById('button-login');
 // const buttonRegister = document.getElementById('facebook-register');
-
+const genderCustom = document.getElementById('other');
+const formGroup = document.querySelector('.right-content .form-group');
 
 buttonLogin.addEventListener('click', function () {
   const userEmail = document.getElementById('user-email-phone');
@@ -25,22 +26,45 @@ function validateForm() {
     password === '' || birthdate === '' || female === '' ||
     male === '' || custom === '') {
 
-    let form = document.querySelector('#register-form')
+    let form = document.querySelector('#register-form');
 
-    let errorMessage = document.createElement('p')
+    let errorMessage = document.createElement('p');
 
-    errorMessage.textContent = 'Campos inválidos'
+    errorMessage.textContent = 'Campos inválidos';
 
-    errorMessage.id = 'form-message'
+    errorMessage.id = 'form-message';
 
-    form.appendChild(errorMessage)
+    form.appendChild(errorMessage);
 
 
   } else {
-    console.log('foi')
+
+    let formCompleted = document.querySelector('.right-content');
+
+
+    let form = [
+      firstName, lastName, phone_email, password,
+      birthdate, female, male, custom
+    ];
+
+    formCompleted.innerHTML = '';
+
+    for (index = 0; index < form.length; index += 1) {
+
+      let element = document.createElement('p');
+
+      element.innerHTML = form[index]
+
+      formCompleted.appendChild(element)
+
+
+    }
+
+    console.log(form)
+
   }
 
-}
+};
 
 function btn() {
   let button = document.querySelector('#facebook-register')
@@ -50,10 +74,22 @@ function btn() {
 
 btn()
 
-// Recuperar o form  x
-// Percorrer o form x
-// Recuperar os valores dos inputs 
-// Verificar se estão vazios 
-// Se estiver vazio, exibir a mensagem de erro
-// Se estiver preenchido, ok
+function createInputText() {
+  const createInput = document.createElement('input');
+  createInput.className = 'gender-custom';
+  createInput.name = 'gender-custom';
+  createInput.placeholder = 'Gênero (opcional)';
 
+  return createInput;
+};
+
+genderCustom.addEventListener('click', function () {
+  const register = document.querySelector('.form-group .gender-custom');
+  if (register === null) {
+    formGroup.appendChild(createInputText());
+  }
+});
+
+// cria um elemento
+// adiciona o valor da lista no elemento 
+// manda pro html
