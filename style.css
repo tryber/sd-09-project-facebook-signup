@@ -26,7 +26,7 @@
 }
 
 .facebook-slogan {
-  color:rgb( 66, 103, 178 );
+  color: rgb(66,103,178);
   font-size: 30px;
 }
 
@@ -84,10 +84,6 @@
   color: rgb(66, 103, 178);
   margin-top: 5px;
   margin-bottom: 3px;
-}
-
-#feminino {
-  font-size: 5px;
 }
 
 #facebook-register {
