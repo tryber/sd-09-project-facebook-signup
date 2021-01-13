@@ -59,7 +59,7 @@ function createSection() {
   const createSectionValidate = document.createElement('section');
   createSectionValidate.id = 'appendRegister';
   createSectionValidate.className = 'appendRegister';
-  document.getElementById('right-content').appendChild(createSection);
+  document.getElementById('right-content').appendChild(createSectionValidate);
 }
 
 function checkValidRegister() {
