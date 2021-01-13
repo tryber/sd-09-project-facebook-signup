@@ -88,6 +88,6 @@ body {
 }
 
 .left-content img {
+  margin-left: 100px;
   width: 50%;
-  margin-left:100px ;
 }
