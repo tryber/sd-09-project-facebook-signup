@@ -76,7 +76,7 @@ body {
   width: 800px;
 }
 
-.left-content :nth-child(2) {
+.left-content :nth-child( 2 ) {
   align-self: flex-end;
 }
 
