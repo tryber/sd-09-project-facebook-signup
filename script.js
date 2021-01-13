@@ -25,9 +25,9 @@ function registerValidate() {
 function createValidRegister() {
   for (let index = 0; index < 5; index += 1) {
     if (validateCamps[index].value !== '') {
-    const createDiv = document.createElement('div');
-    createDiv.innerHTML = `${validateCamps[index].name}: ${validateCamps[index].value}`;
-    document.getElementById('appendRegister').appendChild(createDiv);
+      const createDiv = document.createElement('div');
+      createDiv.innerHTML = `${validateCamps[index].name}: ${validateCamps[index].value}`;
+      document.getElementById('appendRegister').appendChild(createDiv);
     }
   }
 }
@@ -42,7 +42,7 @@ function createGenderRegister() {
     }
   }
   if (getGender[2].checked === true) {
-    const customGender = document.getElementById('genderText')
+    const customGender = document.getElementById('genderText');
     const createDiv = document.createElement('div');
     createDiv.innerHTML = `${customGender.name}: ${customGender.value}`;
     document.getElementById('appendRegister').appendChild(createDiv);
