@@ -1,5 +1,14 @@
 body {
+  background-image: linear-gradient(to bottom, #fefefe, #d3d4e8);
+  font-family: sans-serif;
+  height: 100vh;
   margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(66, 103, 178);
+  padding: 10px 0;
 }
 
 p {
@@ -8,12 +17,13 @@ p {
 }
 
 .btn {
+  background-color: mediumseagreen;
+  border: 0 solid;
+  border-radius: 4px;
+  color: white;
+  font-size: large;
+  padding: 8px;
   width: 170px;
-}
-
-.calendar {
-  display: flex;
-  flex-direction: row;
 }
 
 .data-content {
@@ -22,26 +32,27 @@ p {
 }
 
 .facebook-login {
+  align-self: flex-end;
   display: flex;
   margin: 10px;
-  position: absolute;
-  right: 180px;
 }
 
 .facebook-login label {
   color: white;
-  font-family: fantasy;
-  margin: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 5px 0;
+}
+
+.facebook-logo {
+  align-self: center;
+  height: 60px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-}
-
-.genero {
-  display: block;
-  margin: 0 0 15px;
+  margin: 0 10px;
 }
 
 .form-control {
@@ -49,13 +60,10 @@ p {
   display: flex;
 }
 
-.genero-radio {
-  margin: 8px;
-}
-
-.inputs-content {
-  display: flex;
-  flex-wrap: wrap;
+.genero {
+  display: none;
+  margin: 0 0 15px;
+  width: 100%;
 }
 .row {
   display: flex;
@@ -66,13 +74,14 @@ p {
   margin: 0 10px;
 }
 
-.label-content {
-  margin: 15px 0;
-  padding: 0;
-}
-
 .left-content {
   width: 800px;
+}
+
+.login-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .main-content {
@@ -84,10 +93,6 @@ p {
 
 .nome {
   display: flex;
-}
-
-.pad-zero {
-  padding: 0;
 }
 
 .radios {
@@ -103,7 +108,8 @@ p {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-  color: white;
   display: flex;
-  height: 80px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 60%;
 }
