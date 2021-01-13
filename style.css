@@ -57,6 +57,10 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+.row {
+  display: flex;
+  flex-direction: column;
+}
 
 .gender {
   margin: 0 10px;
