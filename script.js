@@ -25,7 +25,6 @@ function checkRegister() {
   let countInvalidFields = 0;
   const errorMessageLocation = document.querySelector('#invalidFields');
   const registerButton = document.querySelector('#facebook-register');
-  const userData = [];
 
   registerButton.addEventListener('click', function (event) {
     for (let index = 0; index < inputLocation.length; index += 1) {
@@ -46,7 +45,7 @@ function checkRegister() {
       }
 
       const welcomeMessageLocation = document.createElement('p');
-      welcomeMessageLocation.innerText = `Olá ${userData[0]} ${userData[1]}, ${userData[2]} e ${userData[4]}`
+      welcomeMessageLocation.innerText = `Olá ${inputLocation[0].value} ${inputLocation[1].value}, ${inputLocation[2].value} e ${inputLocation[4].value}`
 
       rightContentLocation.appendChild(welcomeMessageLocation);
     }
