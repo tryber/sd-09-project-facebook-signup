@@ -4,9 +4,99 @@
   margin: auto;
   position: fixed;
   width: 100%;
-  color:yelow;
+  margin: 0px;
 }
 
 .facebook-logo {
   float: left;
+}
+
+.top-bar{
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-control{
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.main-content{
+  display: flex;
+  padding-top: 40px;
+}
+
+#facebook-slogan{
+  font-size: 30px;
+  color:rgb(66, 103, 178)
+}
+
+.left-content{
+  width: 800px;
+}
+
+.right-content{
+  width: 300px;
+  justify-content:flex-start;
+}
+
+#lado{
+  display: flex;
+}
+
+#phone_email{
+  width: 310px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+#firstname{
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+#lastname{
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+#password{
+  width: 310px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+#label-birthdate{
+  color: rgb(66, 103, 178);
+  margin-top: 5px;
+}
+
+#birthdate{
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+#feminino{
+  font-size: 10px;
+}
+
+#label-gender{
+  color: rgb(66, 103, 178);
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+#feminino{
+  font-size: 5px;
+}
+
+#facebook-register{
+  background-color: seagreen;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: antiquewhite;
 }
