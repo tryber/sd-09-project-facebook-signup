@@ -8,7 +8,7 @@ loginButton.addEventListener('click', function () {
 const registerButton = document.getElementById('facebook-register');
 
 function validateInputBoxes() {
-  const myForm = document.getElementsByTagName("input");
+  const myForm = document.getElementsByTagName('input');
   let fieldsAreInvalid = false;
   for (let index = 2; index <= 6; index += 1) {
     fieldsAreInvalid = (myForm[index].value === '');
