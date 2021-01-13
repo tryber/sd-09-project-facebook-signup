@@ -46,3 +46,19 @@ body {
 .user-name {
   display: flex;
 }
+
+.facebook-register-form {
+  display: flex;
+  flex-flow:column wrap;
+}
+
+.Empty-Field-Warning {
+  background-color: yellow;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+  font-family: sans-serif;
+  font-size:large;
+  text-align: center;
+  font-weight: bold;
+}

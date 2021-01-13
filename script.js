@@ -26,10 +26,27 @@ function validateRadioButtons() {
 
 function validateForm() {
   let areFieldsInvalid = validateInputBoxes();
-  let areRadioBttnsInvalid = validateRadioButtons();
-  if (areFieldsInvalid || areRadioBttnsInvalid) {
-    alert('Campos inválidos');
+  let areRadioButtonsInvalid = validateRadioButtons();
+  if (areFieldsInvalid || areRadioButtonsInvalid) {
+    let registerForm = document.querySelector('.facebook-register-form');
+    let warning = document.createElement('p');
+    warning.innerText = 'Campos inválidos';
+    warning.className = 'Empty-Field-Warning'
+    registerForm.appendChild(warning);
   }
 }
 
 registerButton.addEventListener('click', validateForm);
+
+const customGender = document.getElementById('custom');
+
+customGender.addEventListener('click', (event) => {
+  const customGenderExists = document.querySelector('.Custom-Gender');
+  if (customGenderExists === null) {
+    let newGenderField = document.createElement('input');
+    newGenderField.setAttribute('name', 'Gender-Custom');
+    newGenderField.setAttribute('placeholder', 'Gênero (opcional)');
+    newGenderField.className = 'Custom-Gender';
+    registerButton.before(newGenderField);
+  }
+})
