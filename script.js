@@ -42,12 +42,6 @@ function write() {
   box.innerText = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);
 }
 
-// function del() {
-//   const box2 = document.getElementById('right-content');
-//   const form2 = document.getElementById('form');
-//   box2.removeChild(form2);
-// }
-
 const btnCadastre = document.getElementById('facebook-register');
 function validInput(event) {
   event.preventDefault();
