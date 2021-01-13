@@ -70,6 +70,11 @@ p {
   width: 100%;
 }
 
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
 .gender {
   margin: 0 10px;
 }
