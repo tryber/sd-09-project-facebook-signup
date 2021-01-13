@@ -27,9 +27,9 @@ function createValidRegister() {
     if (validateCamps[index].value !== '') {
     const createDiv = document.createElement('div');
     createDiv.innerHTML = `${validateCamps[index].name}: ${validateCamps[index].value}`;
-    document.getElementById('appendRegister').appendChild(createDiv);    
+    document.getElementById('appendRegister').appendChild(createDiv);
     }
-  }   
+  }
 }
 
 function createGenderRegister() {
@@ -54,7 +54,7 @@ function checkValidRegister() {
   if (sectionCheck === 0) {
     createValidRegister();
     createGenderRegister();
-    document.getElementById('cadastro').remove()
+    document.getElementById('cadastro').remove();
   }
 }
 
@@ -62,10 +62,8 @@ function listeners() {
   const registerButton = document.getElementById('facebook-register');
   registerButton.addEventListener('click', stopDefault);
   registerButton.addEventListener('click', registerValidate);
-  registerButton.addEventListener('click', checkValidRegister);  
+  registerButton.addEventListener('click', checkValidRegister);
 }
-// 
-// 
 
 // function checkEmail() {
 //   const email = document.querySelector('.input-login');
