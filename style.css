@@ -24,6 +24,9 @@ p {
 
 .facebook-login {
   display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: flex-end;
   margin: 10px;
 }
 
