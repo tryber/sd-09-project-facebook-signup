@@ -25,8 +25,8 @@ function registerValidate() {
 // function createValidRegister() {
 //   for (let index = 0; index < 5; index += 1) {
 //     if (validateCamps[index].value !== '') {
-//       const createDiv = document.createElement('div');     
-//       document.getElementById('appendRegister').appendChild(createDiv);   
+//       const createDiv = document.createElement('div');
+//       document.getElementById('appendRegister').appendChild(createDiv);
 //     }
 //   }
 // }
