@@ -1,8 +1,9 @@
 const buttonLogin = document.querySelector('#button-login');
 const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
-// const botaoVerifica = document.querySelector('.btn');
-// const containerDireito = document.querySelector('.row').childNodes;
+const botaoVerifica = document.querySelector('.btn');
+const containerDireito = document.querySelectorAll('.form-control');
+let contador = 0;
 
 function alertaBotao() {
   buttonLogin.addEventListener('click', function () {
@@ -21,9 +22,20 @@ function botaoAbreGenero(event) {
 }
 roudePersonl.addEventListener('click', botaoAbreGenero);
 
-// function verificandoVazios() {
-//   for (let index = 0; index < containerDireito.length; index += 1) {
-//     const elemento = containerDireito[index];
-//   }
-// }
-// botaoVerifica.addEventListener('click', verificandoVazios);
+function verificandoVazios() {
+  for (let index = 0; index < containerDireito.length; index += 1) {
+    const elemento = containerDireito[index];
+    contador+=1;
+    if (elemento.value === '') {
+      msgDeCampoVazio();
+      break;
+    }
+  }
+}
+botaoVerifica.addEventListener('click', verificandoVazios);
+
+function msgDeCampoVazio() {
+  if (contador > 0) {
+    alert('Campos inválidos');
+  }
+}
