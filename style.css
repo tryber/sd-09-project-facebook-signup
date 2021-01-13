@@ -12,9 +12,12 @@ body {
 }
 
 .form-group {
-  align-self: flex-end;
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .facebook-login {
