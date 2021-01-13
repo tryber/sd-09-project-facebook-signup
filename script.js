@@ -9,7 +9,7 @@ buttonAlertLogin();
 
 function checkPersonalizado() {
   const outers = document.querySelector('#personalizado');
-  const gender = document.querySelector('.radio-buttons');
+  const gender = document.querySelector('#textGender');
   outers.addEventListener('click', function () {
     gender.innerHTML = '<input placeholder="Gênero (opcional)" name="gender-custom">';
   });
@@ -27,7 +27,7 @@ function validate(evento) {
   }
   evento.preventDefault();
   if (isValid === false) {
-    document.getElementById('answerVal').innerText = 'Campos Inválidos';
+    document.getElementById('answerVal').innerText = 'Campos inválidos';
   }
 }
 
