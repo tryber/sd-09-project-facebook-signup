@@ -34,10 +34,10 @@ function validateForm() {
     warning.innerText = 'Campos inválidos';
     warning.className = 'Empty-Field-Warning';
     registerForm.appendChild(warning);
+    return false;
   }
+  return true;
 }
-
-registerButton.addEventListener('click', validateForm);
 
 const customGender = document.getElementById('custom');
 
@@ -52,3 +52,25 @@ customGender.addEventListener('click', () => {
     registerButton.before(newGenderField);
   }
 });
+
+function readFormData() {
+  const readRadio = document.querySelector('input[type="radio"]:checked');
+  const read = document.getElementsByTagName('input');
+  const userDataString = `Olá, ${read[2].value} ${read[3].value}
+  ${read[4].value}
+  ${read[6].value}
+  ${readRadio.value}`;
+  return userDataString;
+}
+
+function showCompletedForm() {
+  const formValidated = validateForm();
+  if(formValidated){
+    const contentRight = document.querySelector(".right-content");
+    const userForm = document.querySelector('.facebook-register-form');
+    contentRight.innerText = readFormData();
+    userForm.style.display = "none";
+  }
+}
+
+registerButton.addEventListener('click', showCompletedForm);
