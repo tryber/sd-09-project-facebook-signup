@@ -4,39 +4,39 @@
   display: flex;
   height: 82px;
   justify-content: space-between;
-}
-
-.facebook-login {
-  display: flex;
-}
-
-.form-control {
-  align-self: flex-end;
-}
-
-.main-content {
-  display: flex;
-  padding-top: 40px;
-}
-
-.facebook-slogan {
-  color: rgb(66, 103, 178);
-  font-size: 30px;
-}
-
-.left-content {
-  width: 800px;
-}
-
-.right-content {
-  justify-content: flex-start;
-  width: 300px;
-}
+}  
 
 .aolado {
   color: white;
   display: flex;
 }
+
+.facebook-slogan {
+  color: rgb(66, 103, 178);
+  font-size: 30px;
+}  
+
+.facebook-login {
+  display: flex;
+}    
+
+.form-control {
+  align-self: flex-end;
+}      
+
+.left-content {
+  width: 800px;
+}  
+
+.main-content {
+  display: flex;
+  padding-top: 40px;
+}      
+
+.right-content {
+  justify-content: flex-start;
+  width: 300px;
+}  
 
 .phone_email {
   border-radius: 5px;
@@ -49,10 +49,6 @@
   margin-bottom: 5px;
 }
 
-.phone_email {
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
 
 .pass-word {
   border-radius: 5px;
