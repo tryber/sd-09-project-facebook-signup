@@ -21,26 +21,24 @@ function logIn() {
 }
 
 function registerUser() {
-  const buttonRegister = document.querySelector('#facebook-register')
-  
-  buttonRegister.addEventListener('click', function() {
+  const buttonRegister = document.querySelector('#facebook-register');
 
+  buttonRegister.addEventListener('click', function () {
     const dataFields = document.querySelectorAll('.input');
-    let checkContent = 0
+    let checkContent = 0;
 
-    for(let index = 0; index < dataFields.length; index += 1) {
-      if (dataFields[index].value === "") {
-        checkContent = checkContent + 1
+    for (let index = 0; index < dataFields.length; index += 1) {
+      if (dataFields[index].value === '') {
+        checkContent += 1
       }
     }
-    
+
     if (checkContent !== 0) {
-      document.querySelector('#invalidFields').innerText = 'Campos inválidos'
+      document.querySelector('#invalidFields').innerText = 'Campos inválidos';
     }
-  })
+  });
 }
 
-
+genderInput();
 logIn();
-genderInput()
-registerUser()
+registerUser();
