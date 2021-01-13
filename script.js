@@ -1,8 +1,8 @@
 function login() {
   const btn = document.querySelector('#button-login');
-  const msg = document.querySelector('#user-email-phone-label');
   btn.addEventListener('click', function () {
-    alert(msg.value);
+    const msg = document.querySelector('#user-email-phone').value;
+    alert(msg);
     e.preventDefault();
   });
 }

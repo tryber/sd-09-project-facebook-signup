@@ -62,17 +62,23 @@ body {
 }
 
 .main-content{
+  align-items: baseline;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: hotpink;
+  padding: 0;
 }
 
 .left-content{
-  width: 800px;
+  flex-basis: 800px;
+  background-color: yellow;
+  margin: 0;
 }
 
 .right-content {
-  width: 300px;
-  justify-content: right;
-  
+  flex-basis: 300px;
+  background-color: green;
+  margin: 0;
 }
