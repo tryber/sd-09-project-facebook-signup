@@ -7,7 +7,9 @@ body {
 }
 
 .facebook-login {
+  color: white;
   display: flex;
+  margin: 10px 0;
 }
 
 .facebook-logo {
@@ -30,6 +32,10 @@ body {
 .main-content {
   display: flex;
   justify-content: center;
+}
+
+.nome {
+  display: flex;
 }
 
 .right-content {
