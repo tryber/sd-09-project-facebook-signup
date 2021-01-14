@@ -31,7 +31,7 @@ function checkInput() {
   if (inputName === '' || inputLastname === '' || inputEmail === '' || inputPassword === '' || birthdate === '') {
     form.innerHTML = 'Campos inválidos';
   } else {
-    welcomeMessege()
+    welcomeMessege();
   }
 }
 
