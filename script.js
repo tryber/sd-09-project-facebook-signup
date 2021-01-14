@@ -4,7 +4,6 @@ const inputGenero = document.querySelector('.genero');
 const botaoVerifica = document.querySelector('.btn');
 const containerDireito = document.querySelectorAll('.form-control');
 const radiosOpcoes = document.querySelectorAll('.radios input');
-const dataNasci = document.querySelector('.data-nascimento');
 let contador = 0;
 
 function alertaBotao() {
@@ -30,15 +29,15 @@ function msgDeCampoVazio() {
   }
 }
 
-function verificaGeneroVazios() {
-  for (let index = 0; index < radiosOpcoes.length; index++) {
-    const elementos = radiosOpcoes[index];
-    elementos.addEventListener('click', function(event) {
+// function verificaGeneroVazios() {
+//   for (let index = 0; index < radiosOpcoes.length; index =+ 1) {
+//     const elementos = radiosOpcoes[index];
+//     elementos.addEventListener('click', function (event) {
 
-    });
-  }
-}
-verificaGeneroVazios();
+//     });
+//   }
+// }
+// verificaGeneroVazios();
 
 function verificandoVazios() {
   for (let index = 0; index < containerDireito.length; index += 1) {
