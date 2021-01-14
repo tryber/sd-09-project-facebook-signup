@@ -51,12 +51,12 @@
         <!-- INPUT GENERO -->
         <label for="gender" id="label-gender">Gênero</label>
         <div class="gender">
-            <label for="female" class="binary-genders">Feminino</label><br>
-            <input type="radio" class="binary-genders" id="female" name="gender" value="female" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
-            <label for="male" class="binary-genders" >Masculino</label><br>
-            <input type="radio" class="binary-genders" id="male" name="gender" value="male" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
-            <label for="other">Personalizado</label>
-            <input class="other-gender" type="radio" id="other" name="gender" value="other" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
+          <input type="radio" class="binary-genders" id="female" name="gender" value="female" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
+          <label for="female" class="binary-genders">Feminino</label><br>
+          <input type="radio" class="binary-genders" id="male" name="gender" value="male" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
+          <label for="male" class="binary-genders" >Masculino</label><br>
+          <input class="other-gender" type="radio" id="other" name="gender" value="other" required oninvalid="this.setCustomValidity('Campos inválidos')" onchange="try{setCustomValidity('')}catch(e){}">
+          <label for="other">Personalizado</label>
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
