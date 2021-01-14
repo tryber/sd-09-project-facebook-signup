@@ -15,10 +15,25 @@ function welcomeMessege() {
   const birthdate = document.getElementsByName('birthdate')[0].value;
   const birth = document.createElement('p');
   birth.innerHTML = `Data de nascimento: ${birthdate}`;
+  const gender = document.getElementsByClassName('input-gender');
+  const g = document.createElement('p');
+
+  for (var i = 0, length = gender.length; i < length; i++) {
+    if (gender[i].checked) {
+      if(gender[i].value == 'Personalizado') {
+        g.innerHTML = `Personalizado`;
+         break;
+      }
+      g.innerHTML = `${gender[i].value}`;
+      break;
+    }
+  }
+
   rigthContent.innerHTML = '';
   rigthContent.appendChild(text);
   rigthContent.appendChild(email);
   rigthContent.appendChild(birth);
+  rigthContent.appendChild(g);
 }
 
 function checkInput() {
