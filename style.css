@@ -49,8 +49,11 @@ body {
 }
 
 .right-content {
+  color: #4567b2;
   display: flex;
   flex-direction: column;
+  font-size: 1em;
+  font-weight: 700;
   padding: 10px;
   width: 300px;
 }
@@ -157,6 +160,10 @@ body {
 
 .right-content input {
   border-color: rgba(155, 154, 195, 0.231);
+}
+
+.right-content div {
+  margin-top: 2%;
 }
 
 ::placeholder {

@@ -23,7 +23,7 @@
       </container>
       <container class='form-group'>
         <label for="user-password" id="user-password-label">Senha</label>
-        <input type="text" name="senha" id="user-password" maxlength="60" required>
+        <input type="password" name="senha" id="user-password" maxlength="60" required>
 
         <!-- sugestão para tamanho do input > width: 107px; height: 7px; -->
 
@@ -38,35 +38,39 @@
   </header>
 
   <!-- main content -->
+
   <section class="main-content">
+
+    <!-- left content -->
+
     <div class="left-content">
       <p id="facebook-slogan" class="slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img src="imgs/networking.png" alt="glogal net" id="facebook-networking" class="network">
     </div>
 
-    <div class="right-content">
+    <!-- right content -->
+
+    <div class="right-content" id="right-content">
       <h1 class="h1">Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" class="cadastro">
+      <form action="" class="cadastro" id="cadastro">
         <section class="nomeSobrenome">
           <input type="text"  name="firstname" placeholder="Nome"  required>
           <input type="text"  name="lastname" placeholder="Sobrenome" required>
         </section>
         <input type="text"  name="phone_email"  placeholder="Celular ou email"  required>
         <input type="password"  name="password" placeholder="Nova senha"  required>
-
-        <!-- Troquei o "id" por "for" no label abaixo para fazer o vinculo da label com o input. Repeti a operacao nos outros labels-->
         <label for="label-birthday" id="label-birthdate" class="nascimento">Data de nascimento</label>
         <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa" required>
         <label for="" id="label-gender" class="labelGender">Gênero</label>
-        <div class="radioButtons">
+        <section class="radioButtons">
           <input type="radio" name="gender" id="gender-female" value="Feminino">
           <label for="gender-female">Feminino</label>
           <input type="radio" name="gender" id="gender-male" value="Masculino">
           <label for="gender-male">Masculino</label>
           <input type="radio" name="gender" id="gender-custom" value="Personalizado">
           <label for="gender-custom">Personalizado</label>
-        </div>
+        </section>
         <input type="text"  name="gender-custom" id="genderText" placeholder="Gênero (opcional)">
         <button type="submit" id="facebook-register" class="submit">Cadastre-se</button>
       </form>
