@@ -43,34 +43,41 @@ const clearSection = () => {
   sectionToReset.innerHTML = '';
 };
 
-const validForm = (event) => {
-  const allInputs = document.querySelector('.dataform').querySelectorAll('input');
-  for (let index = 0; index < allInputs.length - 3; index += 1) {
-    if (allInputs[index].value === '') {
-      document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
-      document.getElementById('campos_invalidos').style.color = 'red';
-      event.preventDefault();
-    }
-  }
-};
+// const validForm = () => {
+//   const allInputs = document.querySelector('.dataform').querySelectorAll('input');
+//   for (let index = 0; index < allInputs.length - 3; index += 1) {
+//     if (allInputs[index].value === '') {
+//       document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
+//       document.getElementById('campos_invalidos').style.color = 'red';
+//     }
+//   }
+// };
 
 const onClick = (event) => {
-  validForm();
+  const allInputs = document.querySelector('.dataform').querySelectorAll('input');
+  // validForm();
   const firstName = document.getElementById('first_name').value;
   const lastName = document.getElementById('last_name').value;
   const fullName = `${firstName} ${lastName}`;
   const telEmail = document.getElementById('telEmail').value;
   const birthDate = document.getElementById('input_birthdate').value;
   const textGenre = genre();
-  clearSection();
-  const h1 = document.querySelector('#welcome');
-  h1.innerText = `Olá, ${fullName}`;
-  const p = document.querySelector('.quick-easy');
-  p.innerText = `
-    ${telEmail}
-    ${birthDate}
-    ${textGenre}`;
-  event.preventDefault();
+  for (let index = 0; index < allInputs.length - 3; index += 1) {
+    if (allInputs[index].value === '') {
+    document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
+    document.getElementById('campos_invalidos').style.color = 'red';
+    } else {
+      clearSection();
+      const h1 = document.querySelector('#welcome');
+      h1.innerText = `Olá, ${fullName}`;
+      const p = document.querySelector('.quick-easy');
+      p.innerText = `
+        ${telEmail}
+        ${birthDate}
+        ${textGenre}`;
+      event.preventDefault();
+    }
+  }
 };
 
 const btnCadastrar = document.getElementById('facebook-register');
