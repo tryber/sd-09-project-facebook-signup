@@ -77,7 +77,6 @@ function listeners() {
   registerButton.addEventListener('click', cleanDivs);
   registerButton.addEventListener('click', registerValidate);
   registerButton.addEventListener('click', checkValidRegister);
-  registerButton.addEventListener('click', () => { document.querySelector('form.cadastro').reset(); });
 }
 
 // function to call another functions when the page opens
