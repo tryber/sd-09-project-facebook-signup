@@ -68,11 +68,11 @@ function checkInputedData(inputs, index) {
     case (inputs[index].id === 'user-email-phone-apply' && inputs[index].value === ''):
       showMessage('error', `The field ${inputs[index].id} must be filled.`);
       break;
-      case (inputs[index].id === 'password' && inputs[index].value === ''):
-        showMessage('error', `The field ${inputs[index].id} must be filled.`);
-        break;
-      case (checkRadioButtons(inputs, index)):
-        break;
+    case (inputs[index].id === 'password' && inputs[index].value === ''):
+      showMessage('error', `The field ${inputs[index].id} must be filled.`);
+      break;
+    case (checkRadioButtons(inputs, index)):
+      break;
     case (inputs[index].id === 'otherGender' && inputs[index].value === ''):
       showMessage('error', `The field ${inputs[index].id} must be filled.`);
       break;
