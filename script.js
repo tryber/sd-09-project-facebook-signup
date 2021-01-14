@@ -23,7 +23,7 @@ function validation() {
   }else if (passWord.value === "") {
     alert("Campos inválidos");
   }else*/ 
-  /*if (firstName.value === "") {
+  if (firstName.value === "") {
     alert("Campos inválidos");
   }else if (lastName.value === "") {
     alert("Campos inválidos");
@@ -35,8 +35,8 @@ function validation() {
     alert("Campos inválidos");
   }else if (gender.value === "") {
     alert("Campos inválidos");
-  }*/
-  console.log(gender.value);
+  }
+  /*console.log(gender.value);*/
   /*alert(emailPhone.value);*/
 });
 }
