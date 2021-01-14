@@ -4,9 +4,7 @@
 function yearIsValid(year) {
   const nowDate = new Date();
   let returnValue = true;
-  const isNunmber = isNaN(parseInt(year));
-  const numberYear = parseInt(year);
-  if (isNunmber|| numberYear < 1990 || numberYear > nowDate.getFullYear()) {
+  if (Number.isNaN(parseInt(year)) || Number.parseInt(year) < 1990 || Number.parseInt(year) > nowDate.getFullYear()) {
     returnValue = false;
   }
   return returnValue;
@@ -15,7 +13,7 @@ function yearIsValid(year) {
 /* Valida mes */
 function mounthIsValid(mounth) {
   let returnValue = true;
-  if (isNaN(parseInt(mounth) || parseInt(mounth) < 1 || parseInt(mounth) > 12)) {
+  if (Number.isNaN(parseInt(mounth) || Number.parseInt(mounth) < 1 || Number.parseInt(mounth) > 12)) {
     returnValue = false;
   }
   return returnValue;
@@ -88,7 +86,7 @@ buttonRegister.addEventListener('click', function (event) {
   if (formPassword.value.length < 1) {
     formValid = false;
   }
-  if (dateIsValid(formBirthDate.value)) {
+    if (!dateIsValid(formBirthDate.value)) {
     formValid = false;
   }
   if (!genderIsValid(formFemale.checked, formMale.checked, formCustom.checked)) {
