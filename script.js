@@ -43,13 +43,13 @@ const clearSection = () => {
   sectionToReset.innerHTML = '';
 };
 
-const validForm = (e) => {
+const validForm = (event) => {
   const allInputs = document.querySelector('.dataform').querySelectorAll('input');
   for (let index = 0; index < allInputs.length - 3; index += 1) {
     if (allInputs[index].value === '') {
       document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
       document.getElementById('campos_invalidos').style.color = 'red';
-      e.preventDefault();
+      event.preventDefault();
     }
   }
 };
