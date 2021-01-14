@@ -4,18 +4,18 @@ body {
 }
 
 .top-bar {
-  background-color: rgb(66 , 103 , 178);
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
 }
 
-.top-bar .facebook-logo {
-  justify-self: left;
-}
+/* .top-bar .facebook-logo {
+  justify-self: flex-start;
+} */
 
 .top-bar .facebook-login {
   display: flex;
-  justify-self: right;
+  /* justify-self: flex-end; */
 }
 
 .form-group {
