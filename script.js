@@ -32,11 +32,20 @@ function validacaoRadio() {
   return status;
 }
 
+function msgCheck() {
+  const form = document.querySelector('#formRegister');
+  const paragraph = document.createElement('p');
+  paragraph.innerText = 'Campos inválidos';
+  paragraph.id = 'msgCheck';
+  paragraph.className = 'paragraph-Msg';
+  form.appendChild(paragraph);
+}
+
 function validacao(event) {
   const status1 = validacaoInput();
   const status2 = validacaoRadio();
   if (status1 === true || status2 === false) {
-    alert('Campos inválidos');
+    msgCheck();
     event.preventDefault();
   }
 }
