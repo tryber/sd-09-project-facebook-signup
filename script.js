@@ -22,9 +22,17 @@ function mudarTexto() {
   const textLastName = document.querySelector('.lastname');
   const textEmailT = document.querySelector('.emailT');
   const textBirth = document.querySelector('.birth');
+  const textRadio = document.querySelector('.container-radios');
+  let genero;
+  if (textRadio.value == 'Feminino'){
+    genero = 'Feminino';
+  } else {
+     genero = 'Masculino';
+  }
   newText.innerHTML = `Olá, ${textName.value} ${textLastName.value}
   Email/Telefone: ${textEmailT.value}
-  Data de Aniversário: ${textBirth.value}`;
+  Data de Aniversário: ${textBirth.value}
+  Genero: ${genero}`;
   newText.className = 'right-content';
   newText.style.width = '200px';
 }
