@@ -62,12 +62,6 @@ body {
   width: 50px;
 }
 
-label {
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 4px;
-}
-
 .main-content {
   display: flex;
   font-size: 20px;
@@ -102,6 +96,9 @@ label {
 
 label {
   display: block;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 4px;
 }
 
 .gender-option {
