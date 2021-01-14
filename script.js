@@ -55,17 +55,9 @@ function dateIsValid(date) {
   let returnValue = true;
   if (isNaN(numberDay) || isNaN(numberMounth) || isNaN(numberYear)) {
     returnValue = false;
-  } else {
-    if (!yearIsValid(numberYear)) {
+  } else if (!yearIsValid(numberYear) || !mounthIsValid(numberMounth) || !dayIsValid(numberDay)) {
       returnValue = false;
     }
-    if (!mounthIsValid(numberMounth)) {
-      returnValue = false;
-    }
-    if (!dayIsValid(numberDay, numberMounth, numberYear)) {
-      returnValue = false;
-    }
-  }
   return returnValue;
 }
 
