@@ -2,7 +2,7 @@
 
 /* Valida Ano */
 function yearIsValid(year) {
-  let nowDate = new Date;
+  const nowDate = new Date();
   let returnValue = true;
   console.log(parseInt(year));
   if (isNaN(parseInt(year)) || parseInt(year) < 1990 || parseInt(year) > nowDate.getFullYear()) {
@@ -97,5 +97,5 @@ buttonRegister.addEventListener('click', function (event) {
   if (!formValid) {
     invalidFields(buttonRegister);
   }
-    event.preventDefault();
+  event.preventDefault();
 });
