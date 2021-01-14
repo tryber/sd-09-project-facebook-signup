@@ -7,11 +7,11 @@ btLogin.addEventListener('click', () => {
 });
 
 const genderSelector = document.querySelector('.radio-gender');
-genderSelector.addEventListener('click', (e) => {
-  const genderSelected = e.target;
+genderSelector.addEventListener('click', (event) => {
+  const genderSelected = event.target;
   if (genderSelected.value === 'Personalizado') {
-    genderCustomInput.style.display = 'inline';
+    genderCustomInput.style.visibility = 'visible';
   } else {
-    genderCustomInput.style.display = 'none';
+    genderCustomInput.style.visibility = 'hidden';
   }
 });
