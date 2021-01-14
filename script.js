@@ -17,20 +17,20 @@ function checkPersonalizado() {
 checkPersonalizado();
 
 function mudarTexto() {
-  const newText = document.querySelector('.main-content');
+  const newText = document.querySelector('.right-content');
   const textName = document.querySelector('.firstname');
   const textLastName = document.querySelector('.lastname');
   const textEmailT = document.querySelector('.emailT');
   const textBirth = document.querySelector('.birth');
   const textRadio = document.querySelector('.container-radios');
   const textPersonal = document.getElementById('Personal');
-  let genero;
+  let genero = 'Feminino';
   if (textRadio.value === 'Feminino') {
     genero = 'Feminino';
   } else if (textRadio.value === 'Masculino') {
     genero = 'Masculino';
   } else {
-    genero = `${textPersonal.value}`;
+    genero = textPersonal.value;
   } 
   newText.innerHTML = `Olá, ${textName.value} ${textLastName.value}
   Email/Telefone: ${textEmailT.value}
