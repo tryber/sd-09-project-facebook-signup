@@ -77,16 +77,16 @@ label {
 }
 
 .left-content {
-  color: #0e385f;
   box-sizing: border-box;
+  color: #0e385f;
   display: inline-grid;
   justify-content: flex-end;
   width: 800px;
 }
 
 .right-content {
-  color: black;
   box-sizing: border-box;
+  color: black;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -100,15 +100,11 @@ label {
   width: 100%;
 }
 
-#label-gender {
+label {
   display: block;
-  justify-content: space-evenly;
 }
 
 .gender-option {
-  font-size: 12px; 
-}
-
-#label-birthdate {
-  display: block;
+  display: inline;
+  font-size: 12px;
 }
