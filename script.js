@@ -30,7 +30,7 @@ function mudarTexto() {
 }
 function validate(event) {
   const infoForm = document.querySelectorAll('.form-sign-in input');
-  event.preventDefault ();
+  event.preventDefault();
   const notValid = [];
   for (let i = 0; i < infoForm.length; i += 1) {
     if (infoForm[i].value === '') {
