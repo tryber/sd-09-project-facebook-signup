@@ -9,7 +9,8 @@ function showEmailPhoneAlert() {
 }
 
 function pushIfUniqueIn(item, targetArray) {
-  const isValid = !targetArray.includes(item) && item !== '';
+  const invalidNames = ['', 'gender-custom'];
+  const isValid = !targetArray.includes(item) && !invalidNames.includes(item);
   if (isValid) {
     targetArray.push(item);
   }
