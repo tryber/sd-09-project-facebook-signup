@@ -94,3 +94,20 @@
   width: 100%;
   align-items: stretch
 }
+
+.message {
+  font-weight: 500;
+  padding: 3px;
+  text-align: center;
+  width: 100%; 
+}
+
+.error {
+  background-color: lightcoral;
+  color: whitesmoke; 
+}
+
+.success {
+  background-color: rgba(47, 255, 89, 0.461);
+  color: rgba(58, 58, 53, 0.55); 
+}
