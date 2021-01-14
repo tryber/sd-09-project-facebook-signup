@@ -1,3 +1,4 @@
+// function to alert when dont fill mail camp
 function alertLogin() {
   const buttonLogin = document.getElementById('button-login');
   const inputLogin = document.getElementById('user-email-phone');
@@ -7,6 +8,7 @@ function alertLogin() {
   });
 }
 
+// function to prevent usual default
 function stopDefault(event) {
   event.preventDefault();
 }
@@ -15,6 +17,7 @@ const sectionRight = document.querySelector('#right-content');
 const validateCamps = document.querySelectorAll('.cadastro input');
 const getGender = document.querySelectorAll('.radioButtons input');
 
+// function to validate all registred inputs
 function registerValidate() {
   for (let index = 0; index < 5; index += 1) {
     if (validateCamps[index].value === '') {
@@ -24,7 +27,7 @@ function registerValidate() {
     }
   }
 }
-
+//  function to get right gender on register
 function createGenderRegister() {
   let gender1 = '';
   let gender2 = '';
@@ -40,6 +43,7 @@ function createGenderRegister() {
   return gender1 + gender2;
 }
 
+// function to print all choosed values after validate register
 function setValueOnSectionRight() {
   sectionRight.innerText = `Olá, ${validateCamps[0].value} ${validateCamps[1].value},
   contato: ${validateCamps[2].value},
@@ -48,6 +52,7 @@ function setValueOnSectionRight() {
   Seus dados foram cadastrados com sucesso!`;
 }
 
+// function to verify if all registred inputs already validate before print info
 function checkValidRegister() {
   const checkDivLenght = document.querySelectorAll('form div');
   if (checkDivLenght.length === 0) {
@@ -55,6 +60,7 @@ function checkValidRegister() {
   }
 }
 
+// function to delete divs from screen
 function cleanDivs() {
   const formDiv = document.querySelectorAll('.cadastro div');
   for (let index = 0; index < formDiv.length; index += 1) {
@@ -64,15 +70,17 @@ function cleanDivs() {
   }
 }
 
+// function to encapsulate all listeners
 function listeners() {
   const registerButton = document.getElementById('facebook-register');
   registerButton.addEventListener('click', stopDefault);
   registerButton.addEventListener('click', cleanDivs);
   registerButton.addEventListener('click', registerValidate);
   registerButton.addEventListener('click', checkValidRegister);
-  registerButton.addEventListener('click', () => { document.querySelector('form.cadastro').reset();});
+  registerButton.addEventListener('click', () => { document.querySelector('form.cadastro').reset(); });
 }
 
+// function to call another functions when the page opens
 window.onload = function () {
   alertLogin();
   listeners();
