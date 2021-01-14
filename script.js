@@ -1,5 +1,4 @@
 const btnEntrar = document.querySelector('#button-login');
-const genreConteiner = document.querySelector('.genero');
 const choosedGenre = document.getElementById('personalizado');
 
 const alertMsg = (event) => {
