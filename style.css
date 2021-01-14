@@ -38,7 +38,7 @@ header {
   font-weight: 700;
 }
 
-.form-control button {
+.form-control-button {
   background-color: #3b5998;
   border: 1px solid #3b5998;
   border-radius: 0.2em;
@@ -48,7 +48,7 @@ header {
   transition: 0.3s;
 }
 
-.form-control button:hover {
+.form-control-button:hover {
   background-color: #4267b2;
   border: 1px solid #8b9dc3;
 }
@@ -59,7 +59,7 @@ header {
   margin: 0 10px;
 }
 
-.form-group input {
+.form-group-input {
   border: 1px solid #4267b2;
   margin: 5px 0;
   opacity: 0.9;
@@ -68,7 +68,7 @@ header {
   width: 150px;
 }
 
-.form-group input:hover {
+.form-group-input:hover {
   border: 1px solid #8b9dc3;
   opacity: 1;
 }
