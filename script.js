@@ -13,7 +13,7 @@ function stopDefault(event) {
   event.preventDefault();
 }
 
-const sectionRight = document.querySelector('#right-content');
+const sectionRight = document.querySelector('.right-content');
 const validateCamps = document.querySelectorAll('.cadastro input');
 const getGender = document.querySelectorAll('.radioButtons input');
 
