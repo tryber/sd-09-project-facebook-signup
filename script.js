@@ -3,11 +3,8 @@ button.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
 
-document.getElementById('facebook-register').addEventListener('click', checkInput)
-
-
 function checkInput() {
-  const form = document.getElementById('signup-form')
+  const form = document.getElementById('signup-form');
   const inputName = document.getElementsByName('firstname')[0].value;
   const inputLastname = document.getElementsByName('lastname')[0].value;
   const inputEmail = document.getElementsByName('phone_email')[0].value;
@@ -17,3 +14,5 @@ function checkInput() {
     form.innerHTML = 'Campos inválidos';
   }
 }
+
+document.getElementById('facebook-register').addEventListener('click', checkInput);
