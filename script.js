@@ -76,7 +76,6 @@ function listeners() {
   });
 }
 
-<<<<<<< HEAD
 // COMECEI AQUI
 function createSection() {
   const appendSection = document.getElementById('scriptSection')
@@ -86,7 +85,7 @@ function createSection() {
 }
 
 function confirmAllPersonalProfile() {
-  const cvSection = document.getElementById('.checkCV'); 
+  const cvSection = document.getElementById('.checkCV');
   let getInput = document.querySelectorAll('.right-content input');
   for(let index = 0; index < getInput.length; index += 1) {
     let div = document.createElement('div');
@@ -94,11 +93,7 @@ function confirmAllPersonalProfile() {
     cvSection.appendChild(div)
   }
 }
-// Ate AQUI
 
-=======
-// function to call another functions when the page opens
->>>>>>> aeadbeceacc1c745a189c17c57af6b308ac58f40
 window.onload = function () {
   alertLogin();
   listeners();
