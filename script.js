@@ -2,9 +2,9 @@
 
 /* Valida Ano */
 function yearIsValid(year) {
-  const nowDate = new Date;
+  const nowDate = new Date();
   let returnValue = true;
-   if (year < 1900 || year > nowDate.getFullYear()) {
+  if (year < 1900 || year > nowDate.getFullYear()) {
     returnValue = false;
   }
   return returnValue;
@@ -15,7 +15,7 @@ function mounthIsValid(day, mounth) {
   let returnValue = true;
   if (mounth < 1 || mounth > 12) {
     returnValue = false;
-  } 
+  }
   return returnValue;
 }
 
@@ -32,7 +32,7 @@ function daysOfMounth(mounth, year) {
       returnValue = 29;
     } else {
         returnValue = 28;
-     }
+      }
   return returnValue;
 }
 
