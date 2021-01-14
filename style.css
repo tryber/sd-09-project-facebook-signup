@@ -9,13 +9,8 @@ body {
   justify-content: space-between;
 }
 
-/* .top-bar .facebook-logo {
-  justify-self: flex-start;
-} */
-
 .top-bar .facebook-login {
   display: flex;
-  /* justify-self: flex-end; */
 }
 
 .form-group {
