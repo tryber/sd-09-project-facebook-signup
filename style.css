@@ -62,7 +62,7 @@ body {
 }
 
 .form-register > input {
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
 
 .form-register > input , .form-register label , .form-register div , .form-register p {
@@ -70,10 +70,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-.form-register > input {
-  margin-bottom: 1rem;
 }
 
 .form-register > input:first-child , .form-register > input:nth-child( 2 ) {
@@ -119,4 +115,9 @@ body {
   }
 }
 
-@media screen and ( max-width : 600px ) {}
+@media screen and ( max-width : 600px ) {
+
+  .left-content {
+    display: none;
+  }
+}
