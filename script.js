@@ -3,7 +3,7 @@ const inputName = document.querySelector('#user-email-phone');
 button.addEventListener('click', () => alert(inputName.value));
 
 function validateTextInputs() {
-  const inputText = document.querySelectorAll('input');
+  const inputText = document.querySelectorAll('.form-info');
   let isTextValid = true;
   for (let index = 0; index < inputText.length; index += 1) {
     if (!inputText[index].value) {
