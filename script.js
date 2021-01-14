@@ -4,7 +4,9 @@
 function yearIsValid(year) {
   const nowDate = new Date();
   let returnValue = true;
-  if (isNaN(parseInt(year))) {
+  const isNunmber = isNaN(parseInt(year));
+  const numberYear = parseInt(year);
+  if (isNunmber|| numberYear < 1990 || numberYear > nowDate.getFullYear()) {
     returnValue = false;
   }
   return returnValue;
