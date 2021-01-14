@@ -3,7 +3,7 @@ const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
 const botaoVerifica = document.querySelector('.btn');
 const containerDireito = document.querySelectorAll('.form-control');
-const radiosOpcoes = document.querySelector('.radios').children;
+const radiosOpcoes = document.querySelectorAll('.radios input');
 const dataNasci = document.querySelector('.data-nascimento');
 let contador = 0;
 
@@ -30,6 +30,16 @@ function msgDeCampoVazio() {
   }
 }
 
+function verificaGeneroVazios() {
+  for (let index = 0; index < radiosOpcoes.length; index++) {
+    const elementos = radiosOpcoes[index];
+    elementos.addEventListener('click', function(event) {
+
+    });
+  }
+}
+verificaGeneroVazios();
+
 function verificandoVazios() {
   for (let index = 0; index < containerDireito.length; index += 1) {
     const elemento = containerDireito[index];
@@ -37,14 +47,8 @@ function verificandoVazios() {
       contador += 1;
       msgDeCampoVazio();
       break;
-    } else if (dataNasci.value === '') {
-      contador += 1;
-      msgDeCampoVazio();
-      break;
-    } else if (radiosOpcoes[0].checked === false && radiosOpcoes[2].checked === false && radiosOpcoes[4].checked === false) {
-      contador += 1;
-      msgDeCampoVazio();
-      break;
+    } else {
+      verificaGeneroVazios();
     }
   }
 }
