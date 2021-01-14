@@ -1,5 +1,5 @@
 const btnEntrar = document.querySelector('#button-login');
-const genre_conteiner = document.querySelector('.genero');
+const genreConteiner = document.querySelector('.genero');
 const choosedGenre = document.getElementById('personalizado');
 
 const alertMsg = (event) => {
@@ -20,7 +20,7 @@ const genre = () => {
     textGenre = 'Personalizado';
   }
   return textGenre;
-}
+};
 
 const checkGenre = () => {
   const divCustonGenre = document.getElementById('custonGenre');
@@ -47,13 +47,13 @@ const clearSection = () => {
 const validForm = (e) => {
   const allInputs = document.querySelector('.dataform').querySelectorAll('input');
   for (let index = 0; index < allInputs.length - 3; index += 1) {
-    if (allInputs[index].value == '') {
+    if (allInputs[index].value === '') {
       document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
       document.getElementById('campos_invalidos').style.color = 'red';
       e.preventDefault();
     }
   }
-}
+};
 
 const onClick = (event) => {
   validForm();
@@ -72,14 +72,14 @@ const onClick = (event) => {
     ${birthDate}
     ${textGenre}`;
   event.preventDefault();
-}
+};
 
 const btnCadastrar = document.getElementById('facebook-register');
 
 const eventslistener = () => {
   btnEntrar.addEventListener('click', alertMsg);
   choosedGenre.addEventListener('click', checkGenre);
-  btnCadastrar.addEventListener('click', onClick)
+  btnCadastrar.addEventListener('click', onClick);
 };
 
 window.onload = () => {
