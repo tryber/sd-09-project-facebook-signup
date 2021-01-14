@@ -1,18 +1,18 @@
 /* Funcoes */
 
 /* Valida Ano */
-function yearIsValid (year) {
-  let now = new Date;
+function yearIsValid(year) {
+  let nowDate = new Date;
   let returnValue = true;
   console.log(parseInt(year));
-  if (isNaN(parseInt(year)) ||  parseInt(year) < 1990 || parseInt(year) > now.getFullYear()) {
+  if (isNaN(parseInt(year)) || parseInt(year) < 1990 || parseInt(year) > nowDate.getFullYear()) {
     returnValue = false;
   }
   return returnValue;
 }
 
 /* Valida mes */
-function mounthIsValid (mounth) {
+function mounthIsValid(mounth) {
   let returnValue = true;
   if (isNaN(parseInt(mounth) || parseInt(mounth) < 1 || parseInt(mounth) > 12)) {
     returnValue = false;
@@ -21,7 +21,7 @@ function mounthIsValid (mounth) {
 }
 
 /* Validacao da data */
-function dateIsValid (date) {
+function dateIsValid(date) {
   const arrayDate = date.split('/');
   let returnValue = true;
   if (!yearIsValid(arrayDate[2])) {
@@ -34,12 +34,12 @@ function dateIsValid (date) {
 }
 
 /* Validacao do genero */
-function genderIsValid (gFemale, gMale, gCustom) {
+function genderIsValid(gFemale, gMale, gCustom) {
   return gFemale || gMale || gCustom;
 }
 
 /* Funcao para exibir mensagem - Registos inválidos */
-function invalidFields (button) {
+function invalidFields(button) {
   const formMessage = document.querySelector('#message-item');
   const registerForm = document.querySelector('#register-form');
   if (document.querySelector('#invalid-fields') == null) {
@@ -47,7 +47,7 @@ function invalidFields (button) {
     addMessage.id = 'invalid-fields';
     addMessage.innerText = 'Campos inválidos';
     addMessage.style.color = 'rgb(255, 0, 0)';
-    const teste = registerForm.insertBefore(addMessage, button);
+    registerForm.insertBefore(addMessage, button);
   }
 }
 
@@ -95,7 +95,7 @@ buttonRegister.addEventListener('click', function (event) {
     formValid = false;
   }
   if (!formValid) {
-    invalidFields (buttonRegister);
+    invalidFields(buttonRegister);
   }
-   event.preventDefault();
+    event.preventDefault();
 });
