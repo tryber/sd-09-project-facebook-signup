@@ -14,6 +14,7 @@ function stopDefault(event) {
 const sectionRight = document.querySelector('#right-content');
 const validateCamps = document.querySelectorAll('.cadastro input');
 const getGender = document.querySelectorAll('.radioButtons input');
+
 function registerValidate() {
   for (let index = 0; index < 5; index += 1) {
     if (validateCamps[index].value === '') {
@@ -23,6 +24,7 @@ function registerValidate() {
     }
   }
 }
+
 function createGenderRegister() {
   let gender1 = '';
   let gender2 = '';
