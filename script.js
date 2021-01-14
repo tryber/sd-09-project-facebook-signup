@@ -3,12 +3,12 @@
 /* Valida Ano */
 function yearIsValid(year) {
   const nowDate = new Date();
-  // let returnValue = true;
-  return (Number.isNaN(parseInt(year)) || Number.parseInt(year) < 1990 || Number.parseInt(year) > nowDate.getFullYear());
-  // if (Number.isNaN(parseInt(year)) || Number.parseInt(year) < 1990 || Number.parseInt(year) > nowDate.getFullYear()) {
-  //   returnValue = false;
-  // }
-  // return returnValue;
+  const numberYear = parseInt(year, 10);
+  let returnValue = true;
+  if (isNaN(numberYear) || numberYear < 1990 || numberYear > nowDate.getFullYear()) {
+    returnValue = false;
+  }
+  return returnValue;
 }
 
 /* Valida mes */
