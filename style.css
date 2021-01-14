@@ -2,4 +2,9 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
 }
