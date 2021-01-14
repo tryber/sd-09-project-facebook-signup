@@ -51,7 +51,7 @@ function setValueOnSectionRight() {
 function checkValidRegister() {
   const checkDivLenght = document.querySelectorAll('form div');
   if (checkDivLenght.length === 0) {
-    setValueOnSectionRight();    
+    setValueOnSectionRight();
   }
 }
 
@@ -67,10 +67,10 @@ function cleanDivs() {
 function listeners() {
   const registerButton = document.getElementById('facebook-register');
   registerButton.addEventListener('click', stopDefault);
-  registerButton.addEventListener('click', cleanDivs); 
+  registerButton.addEventListener('click', cleanDivs);
   registerButton.addEventListener('click', registerValidate);
   registerButton.addEventListener('click', checkValidRegister);
-  registerButton.addEventListener('click', _=> {document.querySelector('form.cadastro').reset()});
+  registerButton.addEventListener('click', () => { document.querySelector('form.cadastro').reset();});
 }
 
 window.onload = function () {
