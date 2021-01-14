@@ -28,17 +28,24 @@ function listeners() {
   registerButton.addEventListener('click', registerValidate);
 }
 
-// function checkEmail() {
-//   const email = document.querySelector('.input-login');
-//   let insertedEmail = email.value;
-//   const emailFormat = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+$/.test(insertedEmail);
-//   if (!emailFormat && insertedEmail.length) {
-//     email.value = '';
-//     alert('email inválido');
-//     return false;
-//   }
-//   return emailFormat
-// }
+// COMECEI AQUI
+function createSection() {
+  const appendSection = document.getElementById('scriptSection')
+  const cvSection = document.createElement('section');
+  cvSection.id = 'checkCV';
+  appendSection.appendChild(cvSection)
+}
+
+function confirmAllPersonalProfile() {
+  const cvSection = document.getElementById('.checkCV'); 
+  let getInput = document.querySelectorAll('.right-content input');
+  for(let index = 0; index < getInput.length; index += 1) {
+    let div = document.createElement('div');
+    div.innerHTML = `${getInput[index].name}: ${getInput[index].value}`
+    cvSection.appendChild(div)
+  }
+}
+// Ate AQUI
 
 window.onload = function () {
   alertLogin();
