@@ -2,7 +2,8 @@
   align-items: flex-end;
   color: white;
   display: flex;
-
+  margin: 0 5px 3px 0;
+  font-family: 'Lucida Sans', sans-serif;
 }
 
 .form-control {
@@ -18,6 +19,19 @@
   flex-direction: column;
 }
 
+.form-register input {
+  margin-bottom: 4px;
+}
+
+.form-register input[type=submit] {
+  margin: 8px 0;
+  border-radius: 5px;
+}
+
+.form-register label {
+  margin: 4px 0 0 4px;
+}
+
 .left-content {
   width: 800px;
 }
@@ -25,6 +39,15 @@
 .main-content {
   display: flex;
   justify-content: space-around;
+}
+
+.name-container {
+  display: flex;
+}
+
+.name-container input[type=text] {
+  width: 140px;
+  margin-right: 3px;
 }
 
 .radio-gender {
