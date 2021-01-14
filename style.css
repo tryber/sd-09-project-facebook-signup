@@ -38,7 +38,7 @@
 .register-name {
   display: flex;
   flex-direction: row;
-  padding: 5px
+  padding: 5px;
 }
 
 .top-bar {
@@ -89,25 +89,25 @@
 }
 
 .general-test {
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: stretch
 }
 
 .message {
   font-weight: 500;
   padding: 3px;
   text-align: center;
-  width: 100%; 
+  width: 100%;
 }
 
 .error {
   background-color: lightcoral;
-  color: whitesmoke; 
+  color: whitesmoke;
 }
 
 .success {
   background-color: rgba(47, 255, 89, 0.461);
-  color: rgba(58, 58, 53, 0.55); 
+  color: rgba(58, 58, 53, 0.55);
 }

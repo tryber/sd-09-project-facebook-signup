@@ -42,26 +42,26 @@
           <div>
               <form class="main-form">
                 <div class="register-name">
-                  <input type="text" name="firstname" placeholder="Nome" id="first-name" />
-                  <input type="text" name="lastname" placeholder="Sobrenome" id="last-name" />
+                  <input type="text" name="firstname" placeholder="Nome" id="first-name" required/>
+                  <input type="text" name="lastname" placeholder="Sobrenome" id="last-name" required/>
                 </div>
                 <div class="mail-input">
-                  <input type="email" type="number" name="phone_email" placeholder="Celular ou email" id="user-email-phone-apply"/>
+                  <input type="email" type="number" name="phone_email" placeholder="Celular ou email" id="user-email-phone-apply" required/>
                 </div>
                 <div class="password-input">
-                  <input type="password" name="password" placeholder="Nova senha" id="password"/>
+                  <input type="password" name="password" placeholder="Nova senha" id="password" required/>
                 </div>
                 <div class="radio-column" id="radios-father">
                   <label id="label-gender" for="gender">Gênero</label>
                   <div class="radio-in-line" id="radios">
-                    <input type="radio" name="gender" value="Feminino" id="female">Feminino
-                    <input type="radio" name="gender" value="Masculino" id="male">Masculino
-                    <input type="radio" name="gender" value="Personalizado" id="other">Personalizado
+                    <input type="radio" name="gender" value="Feminino" id="female" required>Feminino
+                    <input type="radio" name="gender" value="Masculino" id="male" required>Masculino
+                    <input type="radio" name="gender" value="Personalizado" id="other" required>Personalizado
                   </div>
                 </div>
                 <div class="date">
                   <label for="" id="label-birthdate">Data de nascimento</label>
-                  <input type="date" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate" />
+                  <input type="date" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate" required/>
                 </div>
                 <div class="button">
                   <button id="facebook-register" type="submit">Cadastre-se</button>
