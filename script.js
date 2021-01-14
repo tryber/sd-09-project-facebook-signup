@@ -12,13 +12,13 @@ clicar();
 function verificarCamposVazios() {
   const btnforms = document.querySelectorAll('#facebook-register');
   const forms = document.querySelectorAll('#forms');
-  btnforms.addEventListener('click', function(event){
+  btnforms.addEventListener('click', function() {
     for (let i = 0; i < forms.length; i +=1) {
-      if (forms[i].value == ""){
-        alert("Campos Inválidos");
+      if (forms[i].value === '') {
+        alert('Campos Inválidos');
       }
     }
-  })
+  });
 }
 
 verificarCamposVazios();
