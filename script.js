@@ -11,7 +11,7 @@ function checkPersonalizado() {
   const outers = document.querySelector('#personalizado');
   const gender = document.querySelector('#textGender');
   outers.addEventListener('click', function () {
-    gender.innerHTML = '<input placeholder="Gênero (opcional)" name="gender-custom">';
+    gender.innerHTML = '<input type="text" id="Personal" placeholder="Gênero (opcional)" name="gender-custom">';
   });
 }
 checkPersonalizado();
@@ -23,16 +23,19 @@ function mudarTexto() {
   const textEmailT = document.querySelector('.emailT');
   const textBirth = document.querySelector('.birth');
   const textRadio = document.querySelector('.container-radios');
+  const textPersonal = document.getElementById('Personal');
   let genero;
   if (textRadio.value === 'Feminino') {
     genero = 'Feminino';
-  } else {
+  } else if (textRadio.value === 'Masculino') {
     genero = 'Masculino';
-  }
+  } else {
+    genero = `${textPersonal.value}`;
+  } 
   newText.innerHTML = `Olá, ${textName.value} ${textLastName.value}
   Email/Telefone: ${textEmailT.value}
   Data de Aniversário: ${textBirth.value}
-  Genero: ${genero}`;
+  Genero: ${genero.value}`;
   newText.className = 'right-content';
   newText.style.width = '200px';
 }
