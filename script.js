@@ -3,37 +3,50 @@ button.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
 
-function welcomeMessege() {
-  const rigthContent = document.getElementById('right-content');
+function FactoryFormValue() {
   const inputName = document.getElementsByName('firstname')[0].value;
   const inputLastname = document.getElementsByName('lastname')[0].value;
-  const text = document.createElement('p');
-  text.innerHTML = `Olá, ${inputName} ${inputLastname}`;
   const inputEmail = document.getElementsByName('phone_email')[0].value;
-  const email = document.createElement('p');
-  email.innerHTML = ` e-mail ou telefone: ${inputEmail}`;
   const birthdate = document.getElementsByName('birthdate')[0].value;
-  const birth = document.createElement('p');
-  birth.innerHTML = `Data de nascimento: ${birthdate}`;
   const gender = document.getElementsByClassName('input-gender');
-  const g = document.createElement('p');
-
-  for (var i = 0, length = gender.length; i < length; i++) {
-    if (gender[i].checked) {
-      if(gender[i].value == 'Personalizado') {
-        g.innerHTML = `Personalizado`;
-         break;
+  const genderValue = Checked(gender)
+  return {
+    InputName: inputName,
+    InputLastName: inputLastname,
+    InputEmail: inputEmail,
+    BirthDate: birthdate,
+    GenderValue: genderValue,
+  }
+}
+function Checked(genders) {
+    for (let i = 0, length = genders.length; i < length; i += 1 ) {
+    if (genders[i].checked) {
+      if (genders[i].value === 'Personalizado') {
+        return'Personalizado';
       }
-      g.innerHTML = `${gender[i].value}`;
-      break;
+      return `${genders[i].value}`;
+
     }
   }
+}
+
+function welcomeMessege() {
+  const factory = FactoryFormValue()
+  const rigthContent = document.getElementById('right-content');
+  const text = document.createElement('p');
+  text.innerHTML = `Olá, ${inputName} ${factory.inputLastname}`;
+  const email = document.createElement('p');
+  email.innerHTML = ` e-mail ou telefone: ${factory.inputEmail}`;
+  const birth = document.createElement('p');
+  birth.innerHTML = `Data de nascimento: ${factory.birthdate}`;
+  const gender = document.createElement('p');
+  gender.innerHTML = `${factory.GenderValue}`;
 
   rigthContent.innerHTML = '';
   rigthContent.appendChild(text);
   rigthContent.appendChild(email);
   rigthContent.appendChild(birth);
-  rigthContent.appendChild(g);
+  rigthContent.appendChild(gender);
 }
 
 function checkInput() {
