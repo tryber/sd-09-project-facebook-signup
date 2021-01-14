@@ -48,7 +48,7 @@ function setValueOnSectionRight() {
   sectionRight.innerText = `Olá, ${validateCamps[0].value} ${validateCamps[1].value},
   contato: ${validateCamps[2].value},
   nascido em: ${validateCamps[4].value}
-  e de ${createGenderRegister()};
+  e de ${createGenderRegister()}.
   Seus dados foram cadastrados com sucesso!`;
 }
 
