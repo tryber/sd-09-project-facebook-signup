@@ -78,19 +78,19 @@ function listeners() {
 
 // COMECEI AQUI
 function createSection() {
-  const appendSection = document.getElementById('scriptSection')
+  const appendSection = document.getElementById('scriptSection');
   const cvSection = document.createElement('section');
   cvSection.id = 'checkCV';
-  appendSection.appendChild(cvSection)
+  appendSection.appendChild(cvSection);
 }
 
 function confirmAllPersonalProfile() {
   const cvSection = document.getElementById('.checkCV');
-  let getInput = document.querySelectorAll('.right-content input');
-  for(let index = 0; index < getInput.length; index += 1) {
-    let div = document.createElement('div');
-    div.innerHTML = `${getInput[index].name}: ${getInput[index].value}`
-    cvSection.appendChild(div)
+  const getInput = document.querySelectorAll('.right-content input');
+  for (let index = 0; index < getInput.length; index += 1) {
+    const div = document.createElement('div');
+    div.innerHTML = `${getInput[index].name}: ${getInput[index].value}`;
+    cvSection.appendChild(div);
   }
 }
 
