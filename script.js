@@ -13,8 +13,9 @@ function yearIsValid(year) {
 
 /* Valida mes */
 function mounthIsValid(mounth) {
+  const numberMounth = parseInt(mounth, 10);
   let returnValue = true;
-  if (Number.isNaN(parseInt(mounth) || Number.parseInt(mounth) < 1 || Number.parseInt(mounth) > 12)) {
+  if (Number.isNaN(numberMounth) || numberMounth < 1 || numberMounth> 12)) {
     returnValue = false;
   }
   return returnValue;
