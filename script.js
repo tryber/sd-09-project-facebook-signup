@@ -15,7 +15,6 @@ function changeChosenGender() {
     chosenGender = pickGender.value;
   }
 }
-//
 
 function insertWelcome() {
   const firstName = document.querySelector('input[name="firstname"]');
@@ -48,9 +47,8 @@ function validateEmptyFields(fields) {
 function checkEmptyFields() {
   let invalidField = 0;
   const checked = document.querySelector('input[type="radio"]:checked');
-  const inputsNotRadio = document.querySelectorAll(
-    '#register-form input:not([type=radio])'
-  );
+  const inputsNotRadio = document
+    .querySelectorAll('#register-form input:not([type=radio])');
   for (let index = 0; index < inputsNotRadio.length; index += 1) {
     if (inputsNotRadio[index].value === '' || checked === null) {
       invalidField += 1;
