@@ -76,7 +76,24 @@ function listeners() {
   });
 }
 
-// function to call another functions when the page opens
+// COMECEI AQUI
+function createSection() {
+  const appendSection = document.getElementById('scriptSection');
+  const cvSection = document.createElement('section');
+  cvSection.id = 'checkCV';
+  appendSection.appendChild(cvSection);
+}
+
+function confirmAllPersonalProfile() {
+  const cvSection = document.getElementById('.checkCV');
+  const getInput = document.querySelectorAll('.right-content input');
+  for (let index = 0; index < getInput.length; index += 1) {
+    const div = document.createElement('div');
+    div.innerHTML = `${getInput[index].name}: ${getInput[index].value}`;
+    cvSection.appendChild(div);
+  }
+}
+
 window.onload = function () {
   alertLogin();
   listeners();
