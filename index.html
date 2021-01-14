@@ -15,13 +15,15 @@
             <img src="imgs/facebook-logo.png" class="facebook-logo">
         </div>
         <div class="form-control">
-            <form class="facebook-login">
-                <label for="user-email-phone-label">Email ou telefone</label>
-                <input type="text" name="user-email-phone-label" id="user-email-phone-label">
-                <label for="user-password">Senha</label>
-                <input type="password" name="user-password" id="user-password">
-                <button id="button-login">Entrar</button>
-            </form>
+            <div class="form-group">
+                <form class="facebook-login">
+                    <label for="user-email-phone-label">Email ou telefone</label>
+                    <label for="user-password">Senha</label>
+                    <input type="text" name="user-email-phone-label" id="user-email-phone-label">
+                    <input type="password" name="user-password" id="user-password">
+                    <button id="button-login">Entrar</button>
+                </form>
+            </div>
         </div>
     </header>
     <main class="main-content">
@@ -37,31 +39,30 @@
             <div class="quick-easy">É rápido e fácil.
             </div>
             <form>
-              <div class="aolado">
-                <input type="text" name="firstname" id="firstname" placeholder="Nome">
-                <input type="text" name="lastname" id="lastname" placeholder="Sobrenome">
-            </div>
-            <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email">
-            <input type="password" name="pass-word" id="pass-word" placeholder="Nova Senha">
-            <div id="label-birthdate">Data de nascimento</div>
-            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
-            <nave>
-                <div id="label-gender">Gênero</div>
-                <input type="radio" name="gender" id="feminino">
-                <label for="feminino">Feminino</label>
-
-                <input type="radio" name="gender" id="masculino">
-                <label for="masculino">Masculino</label>
-
-                <input type="radio" name="gender" id="personalizado">
-                <label for="personalizado">Personalizado</label>
-                <p></p>
-                <button type="submit" id="facebook-register">Cadastre-se</button>
-              </form>
-            </div>
-          </nave>
+                <div class="aolado">
+                    <input type="text" name="firstname" id="firstname" placeholder="Nome">
+                    <input type="text" name="lastname" id="lastname" placeholder="Sobrenome">
+                </div>
+                <input type="text" name="phone_email" id="phone-email" placeholder="Celular ou email">
+                <input type="password" name="pass-word" id="pass-word" placeholder="Nova Senha">
+                <div id="label-birthdate">Data de nascimento</div>
+                <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+                <nave>
+                    <div class="label-gender">Gênero</div>
+                    <input type="radio" name="gender" id="feminino" class="feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="gender" id="masculino" class="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="gender" id="personalizado" class="Personalizado">
+                    <label for="personalizado">Personalizado</label>
+                    <p></p>
+                    <button type="submit" id="facebook-register" class="facebook-register">Cadastre-se</button>
+            </form>
+        </div>
+        </nave>
         </div>
 
     </main>
 </body>
+
 </html>
