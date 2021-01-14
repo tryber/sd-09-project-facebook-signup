@@ -1,9 +1,7 @@
 const buttonLogin = document.getElementById('button-login');
 
-function buttonLoginClick(event) {
+function buttonLoginClick() {
   buttonLogin.addEventListener('click', () => {
   });
-
-  console.alert(event);
 };
 buttonLoginClick();
