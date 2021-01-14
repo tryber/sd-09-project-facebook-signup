@@ -25,6 +25,10 @@
   margin: 4px 0 0 4px;
 }
 
+.gender-custom {
+  display: none;
+}
+
 .left-content {
   width: 800px;
 }
