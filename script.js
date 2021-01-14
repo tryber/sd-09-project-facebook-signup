@@ -1,7 +1,5 @@
 const btnEntrar = document.querySelector('#button-login');
 const choosedGenre = document.getElementById('personalizado');
-// const btnCadastrar = document.getElementById('facebook-register');
-
 
 const alertMsg = (event) => {
   const textEmailTel = document.querySelector('#user-email-phone');
@@ -84,33 +82,8 @@ const btnCadastrar = document.getElementById('facebook-register');
 const eventslistener = () => {
   btnEntrar.addEventListener('click', alertMsg);
   choosedGenre.addEventListener('click', checkGenre);
-<<<<<<< HEAD
-  // btnCadastrar.addEventListener('click', divDataGenerator);
-=======
   btnCadastrar.addEventListener('click', onClick);
->>>>>>> b41c3d34e4e18e4a015a9b6974991c85223f2da6
 };
-
-// const divDataGenerator = (event) => {
-//   event.preventDefault();
-//   const form = document.getElementById('dataform');
-//   const queryString = window.location.search;
-//   const urlParams = new URLSearchParams(queryString);
-//   const firstName = urlParams.get('firstname');
-//   const lastName = urlParams.get('lastname');
-//   const fullName = `${firstName} ${lastName}`;
-//   const emailOrPhone = urlParams.get('phone_email');
-//   const birthDate = urlParams.get('birthdate');
-//   const gender = urlParams.get('gender');
-//   const h1Welcome = document.getElementById('welcome');
-//   const pData = document.getElementById('phrasedata');
-//   h1Welcome.innerText = `Olá, ${fullName}`;
-//   // pData.innerText = `
-//   // Telefone-email: ${emailOrPhone}.
-//   // Data de nascimento: ${birthDate}.
-//   // Gênero: ${gender}.`;
-//   form.style.display = 'none';
-// }
 
 window.onload = () => {
   eventslistener();
