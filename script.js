@@ -7,12 +7,12 @@ btnAlert.addEventListener('click', showAlert);
 
 const otherGender = document.getElementById('other');
 
-function personalizedGender () {
-  const father = document.getElementById('inputParent')
-  const child = document.createElement('input')
-  father.appendChild(child)
+function personalizedGender() {
+  const father = document.getElementById('inputParent');
+  const child = document.createElement('input');
+  father.appendChild(child);
   child.setAttribute('name', 'gender-custom');
-  child.setAttribute('placeholder', 'Gênero(opcional)')
+  child.setAttribute('placeholder', 'Gênero(opcional)');
 }
 
-otherGender.addEventListener('click',personalizedGender );
+otherGender.addEventListener('click', personalizedGender);
