@@ -1,0 +1,174 @@
+body {
+  font-family: Freight--Sans--Condensed--Bold, Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.network {
+  height: 206px;
+  width: 502px;
+}
+
+/* .facebook-logo {
+  padding: 10px;
+} */
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+  padding: 19px 8px;
+}
+
+.form-group {
+  align-items: flex-start;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: x-small;
+  margin-right: 1rem;
+}
+
+.main-content {
+  background-color: #f1f3ff;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+}
+
+.left-content {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  width: 800px;
+}
+
+.right-content {
+  color: #4567b2;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 10px;
+  width: 300px;
+}
+
+.password-login p {
+  color: gray;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cadastro {
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+}
+
+.labelGender {
+  display: flex;
+  font-size: small;
+  justify-content: center;
+}
+
+.nascimento , .labelGender {
+  align-items: inherit;
+  color: #43464a8c;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 2%;
+}
+
+.nomeSobrenome {
+  display: flex;
+}
+
+.nomeSobrenome input {
+  width: 50%;
+}
+
+.cadastro input {
+  border-radius: 4px;
+  height: 2em;
+  margin: 1%;
+}
+
+.radioButtons {
+  align-items: center;
+  color: #000000ab;
+  display: flex;
+  font-size: 2vh;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.submit {
+  background-color: rgb(86, 147, 62);
+  border: 1px solid rgb(109, 130, 85);
+  border-radius: 4px;
+  color: white;
+  font: caption;
+  font-size: large;
+  font-weight: 700;
+  height: 35px;
+  margin-top: 3%;
+  text-shadow: 1.5px 1.5px rgba(128, 128, 128, 0.62);
+  width: 70%;
+}
+
+.slogan {
+  color: rgb(66, 103, 178);
+  font-size: large;
+  font-weight: 700;
+  margin-right: 7%;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.42);
+  width: 50%;
+}
+
+.facebook-logo {
+  display: flex;
+  height: 57px;
+  width: 150px;
+}
+
+.right-content .h1 {
+  color: #181846;
+  font-size: 2em;
+  margin-bottom: 0.1%;
+  text-shadow: 1px 1px rgb(204, 204, 255);
+}
+
+.right-content p {
+  color: #181846;
+  font-size: larger;
+  margin-top: 1%;
+  text-shadow: 1px 1px rgb(204, 204, 255);
+}
+
+.right-content input {
+  border-color: rgba(155, 154, 195, 0.231);
+}
+
+.right-content div {
+  margin-top: 2%;
+}
+
+::placeholder {
+  font-size: medium;
+  font-weight: 700;
+  opacity: 0.5;
+  text-indent: 3%;
+}
