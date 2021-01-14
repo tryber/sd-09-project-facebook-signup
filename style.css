@@ -51,6 +51,7 @@ header {
 .form-control-button:hover {
   background-color: #4267b2;
   border: 1px solid #8b9dc3;
+  box-shadow: 0 1px 5px #8b9dc3;
 }
 
 .form-group {
@@ -62,15 +63,14 @@ header {
 .form-group-input {
   border: 1px solid #4267b2;
   margin: 5px 0;
-  opacity: 0.9;
   padding: 0.2em;
   transition: 0.3s;
   width: 150px;
 }
 
-.form-group-input:hover {
+.form-group-input:focus, .form-group-input:hover  {
   border: 1px solid #8b9dc3;
-  opacity: 1;
+  box-shadow: 0 1px 5px white;
 }
 
 .hidden-input {
