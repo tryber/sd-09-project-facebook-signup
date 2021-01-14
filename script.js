@@ -1,6 +1,5 @@
 const btnEntrar = document.querySelector('#button-login');
 const choosedGenre = document.getElementById('personalizado');
-const rContent = document.getElementsByClassName('right-content');
 const btnCadastrar = document.getElementById('facebook-register');
 
 
@@ -46,7 +45,7 @@ const checkGenre = () => {
 const eventslistener = () => {
   btnEntrar.addEventListener('click', alertMsg);
   choosedGenre.addEventListener('click', checkGenre);
-  btnCadastrar.addEventListener('click', divDataGenerator);
+  // btnCadastrar.addEventListener('click', divDataGenerator);
 };
 
 // const divDataGenerator = (event) => {
