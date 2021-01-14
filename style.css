@@ -37,7 +37,3 @@ body {
   padding: 3rem 0;
   width: 300px;
 }
-
-.field-body > .form-control {
-  order: 1;
-}
