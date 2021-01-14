@@ -23,11 +23,6 @@
   margin-bottom: 4px;
 }
 
-.form-register input[ type = 'submit' ] {
-  border-radius: 5px;
-  margin: 8px 0;
-}
-
 .form-register label {
   margin: 4px 0 0 4px;
 }
@@ -45,13 +40,18 @@
   display: flex;
 }
 
-.name-container input[ type = 'text' ] {
+.name-placeholder {
   margin-right: 3px;
   width: 140px;
 }
 
 .radio-gender {
   display: flex;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  margin: 8px 0;
 }
 
 .right-content {
