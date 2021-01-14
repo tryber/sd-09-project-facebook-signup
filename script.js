@@ -64,8 +64,8 @@ const onClick = (event) => {
   const textGenre = genre();
   for (let index = 0; index < allInputs.length - 3; index += 1) {
     if (allInputs[index].value === '') {
-    document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
-    document.getElementById('campos_invalidos').style.color = 'red';
+      document.getElementById('campos_invalidos').innerText = 'Campos inválidos';
+      document.getElementById('campos_invalidos').style.color = 'red';
     } else {
       clearSection();
       const h1 = document.querySelector('#welcome');
