@@ -50,6 +50,10 @@ body {
   width: 300px;
 }
 
+.right-content p {
+  margin-bottom: 1rem;
+}
+
 .form-register {
   box-sizing: border-box;
   display: flex;
@@ -68,7 +72,7 @@ body {
   width: 100%;
 }
 
-.form-register > input , p {
+.form-register > input {
   margin-bottom: 1rem;
 }
 
