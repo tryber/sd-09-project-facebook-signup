@@ -28,17 +28,17 @@ function daysOfMounth(mounth, year) {
     returnValue = 31;
   } else if (arrayMounth30.includes(mounth)) {
     returnValue = 30;
-    } else if ((year % 4) === 0) {
+  } else if ((year % 4) === 0) {
       returnValue = 29;
-    } else {
-        returnValue = 28;
-      }
+  } else {
+      returnValue = 28;
+  }
   return returnValue;
 }
 
 /* Valida dia */
-function dayIsValid (day, mounth, year) {
-  const days = daysOfMounth (mounth, year);
+function dayIsValid(day, mounth, year) {
+  const days = daysOfMounth(mounth, year);
   let returnValue = true;
   if (day < 1 || day > days) {
     returnValue = false;
@@ -65,7 +65,6 @@ function dateIsValid(date) {
     if (!dayIsValid(numberDay, numberMounth, numberYear)) {
       returnValue = false;
     }
-    console.log(returnValue);
   }
   return returnValue;
 }
