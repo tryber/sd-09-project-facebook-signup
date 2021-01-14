@@ -16,21 +16,23 @@ function checkPersonalizado() {
 }
 checkPersonalizado();
 
-function validate(evento) {
-  const infoForm = document.querySelectorAll('.form-sign-in input');
-  let isValid = false;
+function validate (event){
+  let infoForm = document.querySelectorAll('.form-sign-in input');
+  event.preventDefault();
+  let notValid = [];
   for (let i = 0; i <= infoForm.length; i += 1) {
-    if (infoForm[i] !== ' ') {
-      isValid = true;
-    } else {
-      isValid = false;
+    if (infoForm[i].value ==="") {
+      notValid.push([i]);
+
+      
     }
   }
-  evento.preventDefault();
-  if (isValid === false) {
+  if (notValid.length !== "") {
     document.getElementById('answerVal').innerText = 'Campos inválidos';
+    document.getElementById('answerVal').style.color = 'red'
+  } else {
+    
   }
 }
-
 const validation = document.getElementById('facebook-register');
 validation.addEventListener('click', validate);
