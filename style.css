@@ -6,17 +6,7 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: rgb(66, 103, 178);
-  padding: 10px 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-.btn {
+/* .btn {
   background-color: mediumseagreen;
   border: 0 solid;
   border-radius: 4px;
@@ -24,12 +14,12 @@ p {
   font-size: large;
   padding: 8px;
   width: 170px;
-}
+} */
 
-.data-content {
+/* .data-content {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .facebook-login {
   display: flex;
@@ -61,11 +51,6 @@ p {
   width: 100%;
 }
 
-.row {
-  display: flex;
-  flex-direction: column;
-}
-
 .gender {
   margin: 0 10px;
 }
@@ -74,11 +59,11 @@ p {
   width: 800px;
 }
 
-.login-content {
+/* .login-content {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
+} */
 
 .main-content {
   display: flex;
@@ -93,7 +78,6 @@ p {
 
 .radios {
   display: flex;
-  padding: 0;
 }
 
 .right-content {
@@ -107,5 +91,4 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 60%;
 }

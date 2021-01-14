@@ -3,6 +3,8 @@ const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
 const botaoVerifica = document.querySelector('.btn');
 const containerDireito = document.querySelectorAll('.form-control');
+const radiosOpcoes = document.querySelector('.radios').children;
+const dataNasci = document.querySelector('.data-nascimento');
 let contador = 0;
 
 function alertaBotao() {
@@ -31,8 +33,16 @@ function msgDeCampoVazio() {
 function verificandoVazios() {
   for (let index = 0; index < containerDireito.length; index += 1) {
     const elemento = containerDireito[index];
-    contador += 1;
     if (elemento.value === '') {
+      contador += 1;
+      msgDeCampoVazio();
+      break;
+    } else if (dataNasci.value === '') {
+      contador += 1;
+      msgDeCampoVazio();
+      break;
+    } else if (radiosOpcoes[0].checked === false && radiosOpcoes[2].checked === false && radiosOpcoes[4].checked === false) {
+      contador += 1;
       msgDeCampoVazio();
       break;
     }
