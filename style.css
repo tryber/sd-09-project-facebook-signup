@@ -1,19 +1,15 @@
 body {
-  font-size: 11px;
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(white, #D3D8E8);
 }
 
 .top-bar {
-  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  padding: 1em;
 }
 
 .facebook-login {
-  align-items: center;
   color: aliceblue;
   display: flex;
 }
@@ -28,55 +24,16 @@ body {
 }
 
 .main-content {
-  color: #1c1e21;
   display: flex;
-  height: 600px;
   justify-content: center;
-  width: 100%;
 }
 
 .left-content {
-  text-align: left;
+  text-align: center;
   width: 800px;
 }
 
 .right-content {
   width: 300px;
-}
-
-.facebook-slogan {
-  padding: 3rem;
-}
-
-.facebook-networking {
-  margin-left: 8rem;
-}
-
-.line-content {
-  display: flex;
-  justify-content: space-around;
-}
-
-.register {
-  display: flex;
-  flex-direction: column;
-}
-
-.register-child {
-  align-self: center;
-  display: flex;
-}
-
-.birthdate-register {
-  display: flex;
-  flex-direction: column;
-}
-
-.gender {
-  display: flex;
-  flex-direction: column;
-}
-
-.gender-label {
-  display: block;
+  padding: 3rem 0;
 }

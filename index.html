@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <title>Sign Up</title>
-</head>
-
-<body>
+    <link rel="stylesheet" href="bulma.min.css">
+  </head>
+  <body>
     <header class="top-bar">
-        <div>
-            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
-        </div>
-        <form action="" class="facebook-login">
-         <div class="form-group">
-          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-            <input type="text" name="login" maxlength="30" id="user-email-phone">
-         </div>
-         <div class="form-group">
-          <label for="user-password" id="user-password-label">Senha</label>
-            <input type="password" name="senha" maxlength="30" id="user-password">
-         </div>
-         <div class="form-control"><button id="button-login">Entrar</button></div>
-        </form>
+      <div>
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+      </div>
+      <form action="" class="facebook-login">
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="form-group field">
+              <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+              <input type="text" name="login" id="user-email-phone" class="input is-small">
+            </div>
+            <div class="form-group field">
+              <label for="user-password" id="user-password-label">Senha</label>
+              <input type="password" name="senha" maxlength="30" id="user-password" class="input is-small">
+            </div>
+            <div class="form-control field">
+              <button id="button-login" class="button is-small is-link is-active">Entrar</button>
+            </div>
+          </div>
+        </div> 
+      </form>
     </header>
     <main class="main-content">
-     <div class="left-content">
-         <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-         <img src="imgs/networking.png" id="facebook-networking" class="facebook-networking" alt="Facebook">
-     </div>
-     <div class="right-content">
-         <h1>Abra uma conta</h1>
-         <p class="quick-easy">É rápido e fácil.</p>
-         <form action="" class="register">
-            <div class="line-content">
-                <label for="name"></label>
-                <input type="text" name="firstname" size="8" id="name" maxlength="30" placeholder="Nome" required>
-                <label for="last-name"></label>
-                <input type="text" name="lastname" size="8" id="last-name" maxlength="30" placeholder="Sobrenome" required>
+      <div class="left-content section">
+        <p id="facebook-slogan" class="subtitle" >O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <img src="imgs/networking.png" id="facebook-networking" class="facebook-networking" alt="Facebook">
+      </div>
+      <div class="right-content">
+        <h1 class="title">Abra uma conta</h1>
+        <p class="quick-easy subtitle">É rápido e fácil.</p>
+        <div>
+          <form action="" class="register">
+            <div class="line-content field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <p class="control is-expanded">
+                    <label class="label" for="name"></label>
+                    <input class="input" type="text" name="firstname" id="name" placeholder="Nome" required>
+                  </p>
+                </div>
+                <div class="field">
+                  <p class="control is-expanded">
+                    <label for="last-name" class="label"></label>
+                    <input class="input" type="text" name="lastname"  id="last-name" placeholder="Sobrenome" required>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="register-child">
-                <label for="email"></label>
-                <input class="email-input" type="email" name="phone_email" id="email" maxlength="50" placeholder="Celular ou email" required>
+            <div class="register-child field">
+              <label for="email" class="label" ></label>
+              <input class="email-input input" type="email" name="phone_email" id="email" placeholder="Celular ou email" required>
             </div>
-            <div class="register-pass register-child">
-                <label for="new-password" id="new-user-password-label"></label>
-                  <input type="password" name="password" maxlength="30" id="new-password" placeholder="Nova senha">
+            <div class="register-pass register-child field">
+              <label for="new-password" id="new-user-password-label" class="label" ></label>
+              <input class="input" type="password" name="password" id="new-password" placeholder="Nova senha">
             </div>
-            <div class="register-child birthdate-register">
-                <label for="new-password" id="label-birthdate">Data de nascimento</label>
-                  <input type="text" name="birthdate" maxlength="10" id="new-password" placeholder="dd/mm/aaaa">
+            <div class="register-child birthdate-register field">
+              <label for="new-password" id="label-birthdate" class="label" >Data de nascimento</label>
+              <input class="input" type="text" name="birthdate"  id="new-password" placeholder="dd/mm/aaaa">
             </div>
-            <div>
-            <label for="gender" id="label-gender" class="gender-label">Gênero</label>
-                 <label for="female">
-                 <input type="radio" name="gender" id="female" value="Feminino" required>Feminino</label>
-                  <label for="male">
-                  <input type="radio" name="gender" id="male" value="Masculino">Masculino</label>
-                  <label for="custom">
-                  <input type="radio" name="gender" id="custom" value="Personalizado">Personalizado</label>
-                <label for="gender-custom">
-            <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" class="gender-input hidden">
-            <button type="submit" id="facebook-register">Cadastre-se</button>
+            <div class="field">
+              <label for="gender" id="label-gender" class="gender-label label ">Gênero</label>
+              <div class="field is-horizontal ">     
+                <div class="control is-flex-shrink-0">
+                  <label for="female" class="radio" >
+                    <input type="radio" name="gender" id="female" value="Feminino" required>Feminino
+                  </label>
+                  <label for="male" class="radio" >
+                   <input type="radio" name="gender" id="male" value="Masculino">Masculino
+                  </label>
+                  <label for="custom" class="radio">
+                    <input type="radio" name="gender" id="custom" value="Personalizado">Personalizado
+                  </label>
+                </div>
+              </div>
+              <label for="gender-custom" class="label">
+                <input class="input" type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" class="gender-input hidden">
+              </label>
+              <button type="submit" id="facebook-register" class="button is-success">Cadastre-se</button>
             </div>
-         </form>
-     </div>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-        Desenvolvido por Micaela Alves
-      </footer>
+      <div class="content has-text-centered">
+        <p>
+          <strong>Facebook Sign Up</strong> by Matheus & Micaela © 2021.
+        </p>
+      </div>
+    </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
