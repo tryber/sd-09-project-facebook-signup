@@ -69,10 +69,10 @@ function cleanDivs() {
 function listeners() {
   const registerButton = document.getElementById('facebook-register');
   registerButton.addEventListener('click', function (event) {
-    event.preventDefault()
+    event.preventDefault();
     cleanDivs();
     registerValidate();
-    checkValidRegister()
+    checkValidRegister();
   });
 }
 
