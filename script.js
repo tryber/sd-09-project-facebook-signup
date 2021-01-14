@@ -10,7 +10,7 @@ buttonLogin.addEventListener('click', function () {
 
 // Validar form de cadastro
 
-let formInput = firstName = document.querySelector('.first-name').value,
+const formInput = firstName = document.querySelector('.first-name').value,
   lastName = document.querySelector('.last-name').value,
   phoneEmail = document.querySelector('.password').value,
   password = document.querySelector('.birthdate').value,
@@ -54,7 +54,6 @@ function validateForm() {
 
       formCompleted.appendChild(element)
     }
-
     console.log(form)
 
   }
