@@ -46,7 +46,7 @@ function verificandoVazios() {
       contador += 1;
       msgDeCampoVazio();
       break;
-    } 
+    }
     // else {
     //   verificaGeneroVazios();
     // }
