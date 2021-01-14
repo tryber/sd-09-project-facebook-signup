@@ -11,13 +11,13 @@ buttonLogin.addEventListener('click', function () {
 // Validar form de cadastro
 
 let formInput = firstName = document.querySelector('.first-name').value,
-      lastName = document.querySelector('.last-name').value, 
-      phone_email = document.querySelector('.password').value, 
-      password = document.querySelector('.birthdate').value,
-      birthdate = document.querySelector('.birthdate').value,
-      female = document.querySelector('.female').value, 
-      male = document.querySelector('.male').value, 
-      custom = document.querySelector('.custom').value
+  lastName = document.querySelector('.last-name').value,
+  phoneEmail = document.querySelector('.password').value,
+  password = document.querySelector('.birthdate').value,
+  birthdate = document.querySelector('.birthdate').value,
+  female = document.querySelector('.female').value,
+  male = document.querySelector('.male').value,
+  custom = document.querySelector('.custom').value
 
 function validateForm() {
 
@@ -40,7 +40,7 @@ function validateForm() {
 
 
     let form = [
-      firstName, lastName, phone_email, password,
+      firstName, lastName, phoneEmail, password,
       birthdate, female, male, custom
     ];
 
@@ -53,8 +53,6 @@ function validateForm() {
       element.innerHTML = form[index]
 
       formCompleted.appendChild(element)
-
-
     }
 
     console.log(form)
@@ -88,10 +86,10 @@ genderCustom.addEventListener('click', function () {
 });
 
 // cria um elemento
-// adiciona o valor da lista no elemento 
+// adiciona o valor da lista no elemento
 // manda pro html
 
-/* 
+/*
 
 
 let firstName = document.querySelector('.first-name').value
