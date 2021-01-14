@@ -31,7 +31,7 @@ function mudarTexto() {
     genero = 'Masculino';
   } else {
     genero = textPersonal.value;
-  } 
+  }
   newText.innerHTML = `Olá, ${textName.value} ${textLastName.value}
   Email/Telefone: ${textEmailT.value}
   Data de Aniversário: ${textBirth.value}
