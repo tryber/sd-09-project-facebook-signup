@@ -69,7 +69,6 @@ label {
 }
 
 .main-content {
-  color: #0e385f;
   display: flex;
   font-size: 20px;
   font-weight: 800;
@@ -78,14 +77,18 @@ label {
 }
 
 .left-content {
+  color: #0e385f;
   box-sizing: border-box;
   display: inline-grid;
   justify-content: flex-end;
-  padding-left: 73%;
   width: 800px;
 }
 
 .right-content {
+  color: black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   width: 300px;
 }
 
@@ -95,4 +98,17 @@ label {
 
 .secondLine input {
   width: 100%;
+}
+
+#label-gender {
+  display: block;
+  justify-content: space-evenly;
+}
+
+.gender-option {
+  font-size: 12px; 
+}
+
+#label-birthdate {
+  display: block;
 }
