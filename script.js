@@ -1,4 +1,4 @@
-const genderCustomInput = document.querySelector('.gender-custom')
+const genderCustomInput = document.querySelector('.gender-custom');
 
 const btLogin = document.getElementById('button-login');
 btLogin.addEventListener('click', () => {
@@ -8,10 +8,10 @@ btLogin.addEventListener('click', () => {
 
 const genderSelector = document.querySelector('.radio-gender');
 genderSelector.addEventListener('click', (e) => {
-  const genderSelected = e.target
+  const genderSelected = e.target;
   if (genderSelected.value === 'Personalizado') {
-    genderCustomInput.style.display = 'inline'
+    genderCustomInput.style.display = 'inline';
   } else {
-    genderCustomInput.style.display = 'none'
+    genderCustomInput.style.display = 'none';
   }
-})
+});
