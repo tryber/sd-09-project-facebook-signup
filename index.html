@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook - entre ou cadastre-se</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="libs/bulma.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <img class='facebook-logo' src=imgs/facebook-logo.png>
+        <form class="facebook-login">
+          <div class="form-group">
+            <label for="user-email-phone" id="user-email-phone-label"
+              >Email ou telefone</label
+            >
+            <input
+              id="user-email-phone"
+              class="header-input"
+              type="text"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="user-password" id="user-password-label">Senha</label>
+            <input
+              id="user-password"
+              class="header-input"
+              type="password"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <button id="button-login" class="button-entrar">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </header>
+    <main class="main-content">
+      <!-- Lado Esquerdo < -->
+      <div class="left-content">
+        <p id="facebook-slogan">
+          O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+          fazem parte da sua vida.
+        </p>
+        <img
+          id="facebook-networking"
+          src="imgs/networking.png"
+          alt="Pessoas ao redor do mundo conectadas através do Facebook"
+        />
+      </div>
+
+      <!-- Lado Direito > -->
+      <div class="right-content">
+        <h1 class="main-title">Abra uma conta</h1>
+        <div class="quick-easy">É rápido e fácil.</div>
+        <form action="" method="GET" required>
+          <div class="full-name">
+            <input
+              class="input is-small"
+              type="text"
+              name="firstname"
+              placeholder="Nome"
+            />
+
+            <input
+              class="input is-small"
+              type="text"
+              name="lastname"
+              placeholder="Sobrenome"
+            />
+          </div>
+          <input
+            class="input is-small"
+            type="text"
+            name="phone_email"
+            placeholder="Celular ou email"
+          />
+
+          <input
+            class="input is-small"
+            type="password"
+            name="password"
+            placeholder="Nova senha"
+          />
+
+          <label id="label-birthdate">Data de nascimento</label>
+          <div>
+            <input
+              class="input is-small"
+              type="text"
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+            />
+          </div>
+          <label id="label-gender">Gênero</label>
+          <div class="gender-control">
+            <input
+              id="female"
+              class="gender-select"
+              type="radio"
+              name="gender"
+              value="Feminino"
+            />
+            <label for="female">Feminino</label>
+            <input
+              id="male"
+              class="gender-select"
+              type="radio"
+              name="gender"
+              value="Masculino"
+            />
+            <label for="male">Masculino</label>
+            <input
+              id="other"
+              class="gender-select"
+              type="radio"
+              name="gender"
+              value="Personalizado"
+            />
+            <label for="other">Personalizado</label>
+          </div>
+          <input
+            id="input-gender"
+            class="other-gender"
+            type="text"
+            name="gender-custom"
+            placeholder="Gênero (opcional)"
+          />
+          <button
+            id="facebook-register"
+            type="submit"
+            class="button is-success"
+            >Cadastre-se</button>
+          <p id="invalidFields"></p>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
