@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, #d3d8e8);
 }
 
 .top-bar {
@@ -34,6 +34,6 @@ body {
 }
 
 .right-content {
-  width: 300px;
   padding: 3rem 0;
+  width: 300px;
 }
