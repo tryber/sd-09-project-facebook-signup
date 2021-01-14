@@ -40,9 +40,9 @@ function createWelcomeParagraph() {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerText = `
   Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}
-  ${document.querySelector('#phone_email').value}
-  ${document.querySelector('#birthdate').value}
-  ${checkRadio()}`;
+  Celular ou email: ${document.querySelector('#phone_email').value}
+  Data de nascimento: ${document.querySelector('#birthdate').value}
+  Gênero: ${checkRadio()}`;
 }
 
 window.onload = function () {
