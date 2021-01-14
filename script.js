@@ -29,9 +29,9 @@ function daysOfMounth(mounth, year) {
   } else if (arrayMounth30.includes(mounth)) {
     returnValue = 30;
   } else if ((year % 4) === 0) {
-      returnValue = 29;
+    returnValue = 29;
   } else {
-      returnValue = 28;
+    returnValue = 28;
   }
   return returnValue;
 }
@@ -56,8 +56,8 @@ function dateIsValid(date) {
   if (isNaN(numberDay) || isNaN(numberMounth) || isNaN(numberYear)) {
     returnValue = false;
   } else if (!yearIsValid(numberYear) || !mounthIsValid(numberMounth) || !dayIsValid(numberDay)) {
-      returnValue = false;
-    }
+    returnValue = false;
+  }
   return returnValue;
 }
 
