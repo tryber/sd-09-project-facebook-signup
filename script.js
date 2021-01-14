@@ -3,13 +3,21 @@ button.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
 
+function Checked(genders) {
+    for (let i = 0, length = genders.length; i < length; i += 1 ) {
+    if (genders[i].checked) {
+      return `${genders[i].value}`;
+    }
+  }
+}
+
 function FactoryFormValue() {
   const inputName = document.getElementsByName('firstname')[0].value;
   const inputLastname = document.getElementsByName('lastname')[0].value;
   const inputEmail = document.getElementsByName('phone_email')[0].value;
   const birthdate = document.getElementsByName('birthdate')[0].value;
   const gender = document.getElementsByClassName('input-gender');
-  const genderValue = Checked(gender)
+  const genderValue = Checked(gender);
   return {
     InputName: inputName,
     InputLastName: inputLastname,
@@ -18,23 +26,12 @@ function FactoryFormValue() {
     GenderValue: genderValue,
   }
 }
-function Checked(genders) {
-    for (let i = 0, length = genders.length; i < length; i += 1 ) {
-    if (genders[i].checked) {
-      if (genders[i].value === 'Personalizado') {
-        return'Personalizado';
-      }
-      return `${genders[i].value}`;
-
-    }
-  }
-}
 
 function welcomeMessege() {
   const factory = FactoryFormValue()
   const rigthContent = document.getElementById('right-content');
   const text = document.createElement('p');
-  text.innerHTML = `Olá, ${inputName} ${factory.inputLastname}`;
+  text.innerHTML = `Olá, ${factory.inputName} ${factory.inputLastname}`;
   const email = document.createElement('p');
   email.innerHTML = ` e-mail ou telefone: ${factory.inputEmail}`;
   const birth = document.createElement('p');
