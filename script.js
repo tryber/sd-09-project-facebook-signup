@@ -47,13 +47,15 @@ function checkForEmptyValuesIn(formValuesObject) {
 
 const alertMessage = {
   element: document.querySelector('#alert-msg'),
-  hide: () => {
-    alertMessage.element.innerHTML = '';
-    alertMessage.element.classList.remove('fail');
+  message: 'Campos inválidos',
+  class: 'fail',
+  hide: function () {
+    this.element.innerHTML = '';
+    this.element.classList.remove(this.class);
   },
-  show: () => {
-    alertMessage.element.innerHTML = 'Campos inválidos';
-    alertMessage.element.classList.add('fail');
+  show: function () {
+    this.element.innerHTML = alertMessage.message;
+    this.element.classList.add(this.class);
   },
 };
 
