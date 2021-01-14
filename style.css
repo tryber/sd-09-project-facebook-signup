@@ -10,7 +10,7 @@ body {
   display: flex;
   height: 50px;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 10px 250px;
 }
 
 .facebook-login {
