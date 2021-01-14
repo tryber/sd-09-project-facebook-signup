@@ -15,10 +15,7 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
-  margin-left: 0;
-
-  /* padding-right: 80px;
-  width: 13rem; */
+  margin-right: auto;
 }
 
 .facebook-login {
@@ -84,7 +81,7 @@ label {
   box-sizing: border-box;
   display: inline-grid;
   justify-content: flex-end;
-  padding-right: 80px;
+  padding-left: 73%;
   width: 800px;
 }
 
