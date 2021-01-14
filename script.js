@@ -68,7 +68,6 @@ function checkInputedData(inputs, index) {
     default:
       showMessage('success', 'All ok!');
   }
-
   return 1;
 }
 
@@ -87,7 +86,6 @@ function checkRadioButtons(inputs, index) {
 }
 
 function showUserData(inputs) {
-  
 }
 
 function validateInputs(evt) {
@@ -100,8 +98,7 @@ function validateInputs(evt) {
     }
   }
   showUserData(inputs);
-  //Genadi, chame a sua funcao para mostrar os dados aqui!
-
+  /** Genadi, chame a sua funcao para mostrar os dados aqui! */
 }
 
 const btnEntrar = document.getElementById('button-login');
