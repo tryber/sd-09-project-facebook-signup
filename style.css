@@ -68,7 +68,7 @@ header {
   width: 150px;
 }
 
-.form-group-input:focus, .form-group-input:hover  {
+.form-group-input:focus , .form-group-input:hover {
   border: 1px solid #8b9dc3;
   box-shadow: 0 1px 5px white;
 }
