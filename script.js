@@ -3,7 +3,7 @@ const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
 const botaoVerifica = document.querySelector('.btn');
 const containerDireito = document.querySelectorAll('.form-control');
-const radiosOpcoes = document.querySelectorAll('.radios input');
+// const radiosOpcoes = document.querySelectorAll('.radios input');
 let contador = 0;
 
 function alertaBotao() {
@@ -46,9 +46,10 @@ function verificandoVazios() {
       contador += 1;
       msgDeCampoVazio();
       break;
-    } else {
-      verificaGeneroVazios();
-    }
+    } 
+    // else {
+    //   verificaGeneroVazios();
+    // }
   }
 }
 botaoVerifica.addEventListener('click', verificandoVazios);
