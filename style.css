@@ -36,3 +36,8 @@ body {
 .name-fields {
   display: flex;
 }
+
+.birthdate-field {
+  display: flex;
+  flex-direction: column;
+}
