@@ -29,13 +29,13 @@
   display: flex;
 }
 
-.left-content {
-  width: 800px;
-}
-
 .facebook-slogan-css {
   color: rgb(66, 103, 178);
   font-size: 30px;
+}
+
+.left-content {
+  width: 800px;
 }
 
 .main-content {
