@@ -21,3 +21,12 @@ body {
 .form-control {
   align-self: flex-end;
 }
+
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.right-content {
+  width: 300px;
+}
