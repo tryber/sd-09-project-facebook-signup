@@ -8,12 +8,7 @@ function alertLogin() {
   });
 }
 
-// function to prevent usual default
-function stopDefault(event) {
-  event.preventDefault();
-}
-
-const sectionRight = document.querySelector('#right-content');
+const sectionRight = document.querySelector('.right-content');
 const validateCamps = document.querySelectorAll('.cadastro input');
 const getGender = document.querySelectorAll('.radioButtons input');
 
@@ -48,7 +43,7 @@ function setValueOnSectionRight() {
   sectionRight.innerText = `Olá, ${validateCamps[0].value} ${validateCamps[1].value},
   contato: ${validateCamps[2].value},
   nascido em: ${validateCamps[4].value}
-  e de ${createGenderRegister()}.
+  e de ${createGenderRegister()};
   Seus dados foram cadastrados com sucesso!`;
 }
 
@@ -73,11 +68,12 @@ function cleanDivs() {
 // function to encapsulate all listeners
 function listeners() {
   const registerButton = document.getElementById('facebook-register');
-  registerButton.addEventListener('click', stopDefault);
-  registerButton.addEventListener('click', cleanDivs);
-  registerButton.addEventListener('click', registerValidate);
-  registerButton.addEventListener('click', checkValidRegister);
-  registerButton.addEventListener('click', () => { document.querySelector('form.cadastro').reset(); });
+  registerButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    cleanDivs();
+    registerValidate();
+    checkValidRegister();
+  });
 }
 
 // function to call another functions when the page opens
