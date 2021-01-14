@@ -3,11 +3,12 @@
 /* Valida Ano */
 function yearIsValid(year) {
   const nowDate = new Date();
-  let returnValue = true;
-  if (Number.isNaN(parseInt(year)) || Number.parseInt(year) < 1990 || Number.parseInt(year) > nowDate.getFullYear()) {
-    returnValue = false;
-  }
-  return returnValue;
+  // let returnValue = true;
+  return (Number.isNaN(parseInt(year)) || Number.parseInt(year) < 1990 || Number.parseInt(year) > nowDate.getFullYear());
+  // if (Number.isNaN(parseInt(year)) || Number.parseInt(year) < 1990 || Number.parseInt(year) > nowDate.getFullYear()) {
+  //   returnValue = false;
+  // }
+  // return returnValue;
 }
 
 /* Valida mes */
@@ -86,7 +87,7 @@ buttonRegister.addEventListener('click', function (event) {
   if (formPassword.value.length < 1) {
     formValid = false;
   }
-    if (!dateIsValid(formBirthDate.value)) {
+  if (!dateIsValid(formBirthDate.value)) {
     formValid = false;
   }
   if (!genderIsValid(formFemale.checked, formMale.checked, formCustom.checked)) {
