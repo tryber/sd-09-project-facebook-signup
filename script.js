@@ -4,7 +4,7 @@ button.addEventListener('click', function () {
 });
 
 function Checked(genders) {
-    for (let i = 0, length = genders.length; i < length; i += 1 ) {
+  for (let i = 0; i < genders.length; i += 1) {
     if (genders[i].checked) {
       return `${genders[i].value}`;
     }
@@ -24,11 +24,11 @@ function FactoryFormValue() {
     InputEmail: inputEmail,
     BirthDate: birthdate,
     GenderValue: genderValue,
-  }
+  };
 }
 
 function welcomeMessege() {
-  const factory = FactoryFormValue()
+  const factory = FactoryFormValue();
   const rigthContent = document.getElementById('right-content');
   const text = document.createElement('p');
   text.innerHTML = `Olá, ${factory.inputName} ${factory.inputLastname}`;
