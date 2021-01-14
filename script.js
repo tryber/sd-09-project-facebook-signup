@@ -10,6 +10,13 @@ function removeInputGender() {
   }
 }
 
+function removeContent() {
+  const rightContent = document.querySelector('.right-content');
+  while (rightContent.firstChild) {
+    rightContent.removeChild(rightContent.firstChild);
+  }
+}
+
 function validacaoInput() {
   let status = false;
   const input = document.querySelectorAll('.input');
@@ -41,12 +48,33 @@ function msgCheck() {
   form.appendChild(paragraph);
 }
 
+function report() {
+  const name = document.querySelector('#name');
+  const lastname = document.querySelector('#lastname');
+  const email = document.querySelector('#phonemail');
+  const birthdate = document.querySelector('#birthdate');
+  let gender = '';
+  const genders = document.querySelectorAll('.radio');
+  for (let index = 0; index < genders.length; index += 1) {
+    if (genders[index].checked === true) {
+      gender = genders[index].value;
+    }
+  }
+  removeContent();
+  const rightContent = document.querySelector('.right-content');
+  const paragraph = document.createElement('p');
+  paragraph.innerText = `Olá, ${name.value} ${lastname.value}\n${email.value}\n${birthdate.value}\n${gender}`
+  rightContent.appendChild(paragraph);
+}
+
 function validacao(event) {
   const status1 = validacaoInput();
   const status2 = validacaoRadio();
   if (status1 === true || status2 === false) {
     msgCheck();
     event.preventDefault();
+  } else {
+    report();
   }
 }
 
