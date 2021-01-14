@@ -1,4 +1,4 @@
-top-bar {
+.top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -19,6 +19,7 @@ top-bar {
   display: flex;
   flex-direction: column;
 }
+
 .form-control {
   align-self: flex-end;
 }
