@@ -1,0 +1,71 @@
+.facebook-login {
+  align-items: flex-end;
+  color: white;
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-register {
+  flex-direction: column;
+}
+
+.form-register input {
+  margin-bottom: 4px;
+}
+
+.form-register label {
+  margin: 4px 0 0 4px;
+}
+
+.gender-custom {
+  visibility: hidden;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.name-container {
+  display: flex;
+}
+
+.name-placeholder {
+  margin-right: 3px;
+  width: 140px;
+}
+
+.radio-gender {
+  display: flex;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  margin: 8px 0;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content form {
+  display: flex;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
