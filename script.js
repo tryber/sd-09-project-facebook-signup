@@ -16,3 +16,13 @@ function checkInput() {
 }
 
 document.getElementById('facebook-register').addEventListener('click', checkInput);
+
+function newGender() {
+  const genderForm = document.getElementById('gender-form');
+  const newInput = document.createElement('input');
+  newInput.name = 'gender-custom';
+  newInput.placeholder = 'Gênero (opcional)';
+  genderForm.appendChild(newInput);
+}
+
+document.getElementById('personalizado').addEventListener('click', newGender);
