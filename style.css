@@ -2,7 +2,6 @@
   align-items: flex-end;
   color: white;
   display: flex;
-  padding: 0 3px 3px 0;
 
 }
 
@@ -15,6 +14,10 @@
   flex-direction: column;
 }
 
+.form-register {
+  flex-direction: column;
+}
+
 .left-content {
   width: 800px;
 }
@@ -22,6 +25,10 @@
 .main-content {
   display: flex;
   justify-content: space-around;
+}
+
+.radio-gender {
+  display: flex;
 }
 
 .right-content {
