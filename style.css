@@ -4,11 +4,20 @@ body {
   padding: 0;
 }
 
+input {
+  border-style: solid;
+  margin: 0;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
 }
+
+/* .top-bar img {
+  margin: 0;
+} */
 
 /* .max-width {
   display: flex;
@@ -18,6 +27,7 @@ body {
   width: 100%;
 } */
 
+
 .facebook-login {
   display: flex;
 }
@@ -25,7 +35,13 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 0;
   justify-content: center;
+  align-self: flex-end;
+}
+
+.form-group label {
+  color: rgb(236, 225, 225);
 }
 
 .form-control {
@@ -34,21 +50,32 @@ body {
 
 .main-content {
   display: flex;
+  justify-content: center;
 }
 
 .left-content {
+  text-align: center;
   width: 800px;
+  /* border: 1px solid slateblue; */
 }
 
 .right-content {
   display: flex;
   flex-direction: column;
+  text-align: center;
   width: 300px;
+  /* border: 1px solid slateblue; */
 }
 
 .form-register {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.form-register > input {
+  margin-bottom: 5px;
 }
 
 .form-register > input , .form-register label , .form-register div , .form-register p {
@@ -59,9 +86,55 @@ body {
 }
 
 .form-register > input:first-child , .form-register > input:nth-child( 2 ) {
-  width: 50%;
+  margin-right: 0.5rem;
+  width: calc(50% - 0.5rem);
+}
+
+.form-register > input:nth-child( 2 ) {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+.form-register > input , p  {
+  margin-bottom: 1rem;
+}
+
+.form-register button {
+  margin: 1rem auto;
+}
+
+.form-register p {
+  color: red;
+  font-weight: bold;
+  text-align: center;
 }
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 1099px) {
+  .main-content {
+    flex-wrap: wrap;
+  }
+
+  .left-content , .right-content {
+    justify-content: center;
+    position: relative;
+    width: 90%;
+  }
+  
+  /* .hidden {
+    display: flex;
+  } */
+
+  .form-register {
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
 }
