@@ -50,11 +50,11 @@ const alertMessage = {
   element: document.querySelector('#alert-msg'),
   message: 'Campos inválidos',
   class: 'fail',
-  hide: function () {
+  hide() {
     this.element.innerHTML = '';
     this.element.classList.remove(this.class);
   },
-  show: function () {
+  show() {
     this.element.innerHTML = alertMessage.message;
     this.element.classList.add(this.class);
   },
