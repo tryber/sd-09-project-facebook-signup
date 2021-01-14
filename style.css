@@ -40,10 +40,17 @@ header {
 
 .form-control button {
   background-color: #3b5998;
-  border: none;
+  border: 1px solid #3b5998;
+  border-radius: 0.2em;
   color: white;
   font-weight: 700;
   padding: 0.5em 1em;
+  transition: 0.3s;
+}
+
+.form-control button:hover {
+  background-color: #4267b2;
+  border: 1px solid #8b9dc3;
 }
 
 .form-group {
@@ -53,8 +60,17 @@ header {
 }
 
 .form-group input {
+  border: 1px solid #4267b2;
   margin: 5px 0;
+  opacity: 0.9;
+  padding: 0.2em;
+  transition: 0.3s;
   width: 150px;
+}
+
+.form-group input:hover {
+  border: 1px solid #8b9dc3;
+  opacity: 1;
 }
 
 .hidden-input {
@@ -90,7 +106,13 @@ header {
 }
 
 .radio-container label {
+  color: #2d2d2d;
   margin: 0 1em 0 0.2em;
+  opacity: 0.8;
+}
+
+.radio-container label:hover {
+  opacity: 1;
 }
 
 .right-content {
@@ -111,6 +133,11 @@ header {
   border-radius: 0.3em;
   margin: 0.5em 0;
   padding: 0.5em;
+  transition: 0.3s;
+}
+
+.right-content input:hover {
+  border: 1px solid #3b5998;
 }
 
 .small-input {
@@ -125,6 +152,11 @@ header {
   font-weight: 700;
   margin: 1em 0;
   padding: 0.8em 2em;
+  transition: 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #6cc644;
 }
 
 .top-bar {
