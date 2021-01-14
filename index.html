@@ -31,7 +31,7 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" method="GET">
+      <form action="" method="GET" id="register-form">
         <div class="nome-sobrenome">
           <input type="text" name="firstname" id="id-firstname" placeholder="Nome">
           <input type="text" name="lastname" id="id-lastname" placeholder="Sobrenome">
@@ -61,10 +61,11 @@
           </label>
         </div>
         <button id="facebook-register" type="submit">Cadastre-se</button>
+        <div id="message-item">
+        </div>
       </form>
     </div>
   </section>
-  <!-- <script src="libs/moment.js"></script> -->
   <script src="script.js"></script>
  </body>
 </html>

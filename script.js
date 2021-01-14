@@ -1,5 +1,56 @@
 /* Funcoes */
 
+/* Valida Ano */
+function yearIsValid (year) {
+  let now = new Date;
+  let returnValue = true;
+  console.log(parseInt(year));
+  if (isNaN(parseInt(year)) ||  parseInt(year) < 1990 || parseInt(year) > now.getFullYear()) {
+    returnValue = false;
+  }
+  return returnValue;
+}
+
+/* Valida mes */
+function mounthIsValid (mounth) {
+  let returnValue = true;
+  if (isNaN(parseInt(mounth) || parseInt(mounth) < 1 || parseInt(mounth) > 12)) {
+    returnValue = false;
+  }
+  return returnValue;
+}
+
+/* Validacao da data */
+function dateIsValid (date) {
+  const arrayDate = date.split('/');
+  let returnValue = true;
+  if (!yearIsValid(arrayDate[2])) {
+    returnValue = false;
+  }
+  if (!mounthIsValid(arrayDate[1])) {
+    returnValue = false;
+  }
+  return returnValue;
+}
+
+/* Validacao do genero */
+function genderIsValid (gFemale, gMale, gCustom) {
+  return gFemale || gMale || gCustom;
+}
+
+/* Funcao para exibir mensagem - Registos inválidos */
+function invalidFields (button) {
+  const formMessage = document.querySelector('#message-item');
+  const registerForm = document.querySelector('#register-form');
+  if (document.querySelector('#invalid-fields') == null) {
+    const addMessage = document.createElement('p');
+    addMessage.id = 'invalid-fields';
+    addMessage.innerText = 'Campos inválidos';
+    addMessage.style.color = 'rgb(255, 0, 0)';
+    const teste = registerForm.insertBefore(addMessage, button);
+  }
+}
+
 /* Inicio do codigo */
 
 const inputEmailPhone = document.querySelector('#user-email-phone');
@@ -9,10 +60,10 @@ const formFirstName = document.querySelector('#id-firstname');
 const formLastName = document.querySelector('#id-lastname');
 const formPhoneEmail = document.querySelector('#id-phone_email');
 const formPassword = document.querySelector('#id-password');
-/*  const formBirthDate = document.querySelector('#id-birthdate');
+const formBirthDate = document.querySelector('#id-birthdate');
 const formFemale = document.querySelector('#id-female');
 const formMale = document.querySelector('#id-male');
-const FormCustom = document.querySelector('#id-custom');  */
+const formCustom = document.querySelector('#id-custom');
 
 /* Exibe e-mail-telefone */
 buttonSender.addEventListener('click', function (event) {
@@ -37,9 +88,14 @@ buttonRegister.addEventListener('click', function (event) {
   if (formPassword.value.length < 1) {
     formValid = false;
   }
-  if (formValid) {
-    let teste = 0;
-    teste += 1;
+  if (dateIsValid(formBirthDate.value)) {
+    formValid = false;
   }
-  event.preventDefault();
+  if (!genderIsValid(formFemale.checked, formMale.checked, formCustom.checked)) {
+    formValid = false;
+  }
+  if (!formValid) {
+    invalidFields (buttonRegister);
+  }
+   event.preventDefault();
 });
