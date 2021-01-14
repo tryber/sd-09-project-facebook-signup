@@ -39,7 +39,6 @@ function genderIsValid(gFemale, gMale, gCustom) {
 
 /* Funcao para exibir mensagem - Registos inválidos */
 function invalidFields(button) {
-  const formMessage = document.querySelector('#message-item');
   const registerForm = document.querySelector('#register-form');
   if (document.querySelector('#invalid-fields') == null) {
     const addMessage = document.createElement('p');
