@@ -24,10 +24,10 @@ function mudarTexto() {
   const textBirth = document.querySelector('.birth');
   const textRadio = document.querySelector('.container-radios');
   let genero;
-  if (textRadio.value == 'Feminino'){
+  if (textRadio.value === 'Feminino') {
     genero = 'Feminino';
   } else {
-     genero = 'Masculino';
+    genero = 'Masculino';
   }
   newText.innerHTML = `Olá, ${textName.value} ${textLastName.value}
   Email/Telefone: ${textEmailT.value}
