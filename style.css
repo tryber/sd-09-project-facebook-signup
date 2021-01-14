@@ -1,43 +1,27 @@
+/* Globals */
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-input {
-  border-style: solid;
-  margin: 0;
-}
-
+/* Header */
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
 }
 
-/* .top-bar img {
-  margin: 0;
-} */
-
-/* .max-width {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 100%;
-} */
-
-
 .facebook-login {
   display: flex;
 }
 
 .form-group {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
-  margin: 0;
   justify-content: center;
-  align-self: flex-end;
+  margin: 0;
 }
 
 .form-group label {
@@ -48,6 +32,7 @@ input {
   align-self: flex-end;
 }
 
+/* Main */
 .main-content {
   display: flex;
   justify-content: center;
@@ -56,7 +41,6 @@ input {
 .left-content {
   text-align: center;
   width: 800px;
-  /* border: 1px solid slateblue; */
 }
 
 .right-content {
@@ -64,13 +48,12 @@ input {
   flex-direction: column;
   text-align: center;
   width: 300px;
-  /* border: 1px solid slateblue; */
 }
 
 .form-register {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   text-align: left;
 }
 
@@ -85,6 +68,10 @@ input {
   width: 100%;
 }
 
+.form-register > input , p {
+  margin-bottom: 1rem;
+}
+
 .form-register > input:first-child , .form-register > input:nth-child( 2 ) {
   margin-right: 0.5rem;
   width: calc(50% - 0.5rem);
@@ -95,17 +82,13 @@ input {
   margin-right: 0;
 }
 
-.form-register > input , p  {
-  margin-bottom: 1rem;
-}
-
 .form-register button {
   margin: 1rem auto;
 }
 
 .form-register p {
   color: red;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -113,7 +96,8 @@ input {
   display: none;
 }
 
-@media screen and (max-width: 1099px) {
+@media screen and ( max-width : 1099px ) {
+
   .main-content {
     flex-wrap: wrap;
   }
@@ -123,10 +107,6 @@ input {
     position: relative;
     width: 90%;
   }
-  
-  /* .hidden {
-    display: flex;
-  } */
 
   .form-register {
     justify-content: center;
@@ -135,6 +115,4 @@ input {
   }
 }
 
-@media screen and (max-width: 600px) {
-  
-}
+@media screen and ( max-width : 600px ) {}
