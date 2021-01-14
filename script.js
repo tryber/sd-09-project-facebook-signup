@@ -6,6 +6,5 @@ function alertEmail() {
   alert(email);
 }
 // function checkInputs() {
-//   if 
 // }
 loginButton.addEventListener('click', alertEmail);
