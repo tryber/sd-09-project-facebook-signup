@@ -125,3 +125,30 @@ buttonRegister.addEventListener('click', function (event) {
   }
   event.preventDefault();
 });
+
+/* Inclui campo para genero personalizado */
+formCustom.addEventListener('click', function () {
+  if (document.querySelector('#id-gender-custom') == null) {
+    const registerForm = document.querySelector('#register-form');
+    const addGenderCustom = document.createElement('input');
+    addGenderCustom.id = 'id-gender-custom';
+    addGenderCustom.name = 'gender-custom';
+    addGenderCustom.placeholder = 'Gênero (opcional)';
+    addGenderCustom.type = 'text';
+    addGenderCustom.style.display = 'block';
+    registerForm.insertBefore(addGenderCustom, buttonRegister);
+  }
+});
+
+/* Inclui campo para genero personalizado */
+formFemale.addEventListener('click', function () {
+  if (document.querySelector('#id-gender-custom') !== null) {
+    document.querySelector('#id-gender-custom').remove();
+  }
+});
+
+formMale.addEventListener('click', function () {
+  if (document.querySelector('#id-gender-custom') !== null) {
+    document.querySelector('#id-gender-custom').remove();
+  }
+});
