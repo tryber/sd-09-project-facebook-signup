@@ -21,7 +21,7 @@ const formInput = firstName = document.querySelector('.first-name').value,
 
 function validateForm() {
 
-  if (formInput === '') {
+  if(formInput === '') {
 
     let form = document.querySelector('#register-form');
 
@@ -34,7 +34,7 @@ function validateForm() {
     form.appendChild(errorMessage);
 
 
-  } else {
+  }else{
 
     let formCompleted = document.querySelector('.right-content');
 
@@ -55,9 +55,7 @@ function validateForm() {
       formCompleted.appendChild(element)
     }
     console.log(form)
-
   }
-
 };
 
 function btn() {
