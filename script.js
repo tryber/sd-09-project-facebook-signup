@@ -42,6 +42,21 @@ function showMessage(messageType, message) {
   mainForm.insertBefore(newMessage, mainForm.firstChild);
 }
 
+function checkRadioButtons(inputs, index) {
+  switch (true) {
+    case (inputs[index].id === 'female' && (inputs[index].checked === false && inputs[index + 1].checked === false && inputs[index + 2].checked === false)):
+      break;
+    case (inputs[index].id === 'male' && (inputs[index].checked === false && inputs[index - 1].checked === false && inputs[index + 1].checked === false)):
+      break;
+    case (inputs[index].id === 'other' && (inputs[index].checked === false && inputs[index - 1].checked === false && inputs[index - 2].checked === false)):
+      break;
+    default:
+      return 0;
+  }
+  showMessage('error', `The field ${inputs[index].name} must have one option checked at least.`);
+  return 1;
+}
+
 function checkInputedData(inputs, index) {
   switch (true) {
     case (inputs[index].id === 'first-name' && inputs[index].value === ''):
@@ -53,12 +68,11 @@ function checkInputedData(inputs, index) {
     case (inputs[index].id === 'user-email-phone-apply' && inputs[index].value === ''):
       showMessage('error', `The field ${inputs[index].id} must be filled.`);
       break;
-    case (checkRadioButtons(inputs, index)):
-      showMessage('error', `The field ${inputs[index].name} must have one option checked at least.`);
-      break;
-    case (inputs[index].id === 'password' && inputs[index].value === ''):
-      showMessage('error', `The field ${inputs[index].id} must be filled.`);
-      break;
+      case (inputs[index].id === 'password' && inputs[index].value === ''):
+        showMessage('error', `The field ${inputs[index].id} must be filled.`);
+        break;
+      case (checkRadioButtons(inputs, index)):
+        break;
     case (inputs[index].id === 'otherGender' && inputs[index].value === ''):
       showMessage('error', `The field ${inputs[index].id} must be filled.`);
       break;
@@ -71,21 +85,8 @@ function checkInputedData(inputs, index) {
   return 1;
 }
 
-function checkRadioButtons(inputs, index) {
-  switch(true) {
-    case (inputs[index].id === 'female' && (inputs[index].checked === false && inputs[index + 1].checked === false && inputs[index + 2].checked === false)):
-      break;
-    case (inputs[index].id === 'male' && (inputs[index].checked === false && inputs[index - 1].checked === false && inputs[index + 1].checked === false)):
-      break;
-    case (inputs[index].id === 'other' && (inputs[index].checked === false && inputs[index - 1].checked === false && inputs[index - 2].checked === false)):
-      break;
-    default:
-      return 0;
-  }
-  return 1;
-}
-
 function showUserData(inputs) {
+  inputs.querySelector('.password');
 }
 
 function validateInputs(evt) {
