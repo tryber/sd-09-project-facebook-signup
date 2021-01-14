@@ -1,6 +1,6 @@
-const nameEmail = document.getElementById(user - email - phone - label);
-const passWord = document.getElementById(user - password);
-const buttonLogin = document.getElementById(button - login);
+const nameEmail = document.getElementById("user-email-phone-label");
+const passWord = document.getElementById("user-password");
+const buttonLogin = document.getElementById("button-login");
 
 
 function buttonLoginClick(event) {
@@ -11,3 +11,4 @@ function buttonLoginClick(event) {
 
   console.alert(event)
 };
+buttonLoginClick()
