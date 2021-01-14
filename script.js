@@ -42,13 +42,16 @@ function getUserFormText() {
   const inputs = document.querySelectorAll('.right-content input[type=text]');
   const newUserInfos = [];
   for (let index = 0; index < inputs.length; index += 1) {
-    newUserInfo.push(inputs[index].value);
+    newUserInfos.push(inputs[index].value);
     // if(index === 5){
     //   continue;
     // }
   }
   return newUserInfos;
 }
+
+const customGender = document.querySelector('#unique');
+const custom = document.querySelector('#custom-gender');
 
 function openCustomGenderInput() {
   if (customGender.classList.contains('checked')) {
@@ -64,8 +67,6 @@ function openCustomGenderInput() {
   customGender.classList = 'checked';
 }
 
-const custom = document.querySelector('#custom-gender');
-const customGender = document.querySelector('#unique');
 customGender.addEventListener('click', openCustomGenderInput);
 
 function getUserGender() {
