@@ -66,10 +66,10 @@ const onClick = (event) => {
   const h1 = document.querySelector('#welcome');
   h1.innerText = `Olá, ${fullName}`;
   const p = document.querySelector('.quick-easy');
-    p.innerText = `
-  ${telEmail}
-  ${birthDate}
-  ${textGenre}`;
+  p.innerText = `
+    ${telEmail}
+    ${birthDate}
+    ${textGenre}`;
   event.preventDefault();
 };
 
