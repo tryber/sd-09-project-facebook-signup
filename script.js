@@ -1,6 +1,6 @@
 const btnEntrar = document.querySelector('#button-login');
 const choosedGenre = document.getElementById('personalizado');
-const btnCadastrar = document.getElementById('facebook-register');
+// const btnCadastrar = document.getElementById('facebook-register');
 
 
 const alertMsg = (event) => {
