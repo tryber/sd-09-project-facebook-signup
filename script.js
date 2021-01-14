@@ -2,20 +2,45 @@
 
 /* Valida Ano */
 function yearIsValid(year) {
-  const nowDate = new Date();
-  const numberYear = parseInt(year, 10);
+  const nowDate = new Date;
   let returnValue = true;
-  if (isNaN(numberYear) || numberYear < 1990 || numberYear > nowDate.getFullYear()) {
+   if (year < 1900 || year > nowDate.getFullYear()) {
     returnValue = false;
   }
   return returnValue;
 }
 
 /* Valida mes */
-function mounthIsValid(mounth) {
-  const numberMounth = parseInt(mounth, 10);
+function mounthIsValid(day, mounth) {
   let returnValue = true;
-  if (isNaN(numberMounth) || numberMounth < 1 || numberMounth > 12) {
+  if (mounth < 1 || mounth > 12) {
+    returnValue = false;
+  } 
+  return returnValue;
+}
+
+/* Retorna numero de dias do mês */
+function daysOfMounth(mounth, year) {
+  const arrayMounth31 = [1, 3, 5, 7, 8, 10, 12];
+  const arrayMounth30 = [4, 6, 9, 11];
+  let returnValue;
+  if (arrayMounth31.includes(mounth)) {
+    returnValue = 31;
+  } else if (arrayMounth30.includes(mounth)) {
+    returnValue = 30;
+    } else if ((year % 4) === 0) {
+      returnValue = 29;
+    } else {
+        returnValue = 28;
+     }
+  return returnValue;
+}
+
+/* Valida dia */
+function dayIsValid (day, mounth, year) {
+  const days = daysOfMounth (mounth, year);
+  let returnValue = true;
+  if (day < 1 || day > days) {
     returnValue = false;
   }
   return returnValue;
@@ -24,12 +49,23 @@ function mounthIsValid(mounth) {
 /* Validacao da data */
 function dateIsValid(date) {
   const arrayDate = date.split('/');
+  const numberDay = parseInt(arrayDate[0], 10);
+  const numberMounth = parseInt(arrayDate[1], 10);
+  const numberYear = parseInt(arrayDate[2], 10);
   let returnValue = true;
-  if (!yearIsValid(arrayDate[2])) {
+  if (isNaN(numberDay) || isNaN(numberMounth) || isNaN(numberYear)) {
     returnValue = false;
-  }
-  if (!mounthIsValid(arrayDate[1])) {
-    returnValue = false;
+  } else {
+    if (!yearIsValid(numberYear)) {
+      returnValue = false;
+    }
+    if (!mounthIsValid(numberMounth)) {
+      returnValue = false;
+    }
+    if (!dayIsValid(numberDay, numberMounth, numberYear)) {
+      returnValue = false;
+    }
+    console.log(returnValue);
   }
   return returnValue;
 }
@@ -52,7 +88,6 @@ function invalidFields(button) {
 }
 
 /* Inicio do codigo */
-
 const inputEmailPhone = document.querySelector('#user-email-phone');
 const buttonSender = document.querySelector('#button-login');
 const buttonRegister = document.querySelector('#facebook-register');
