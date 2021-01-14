@@ -51,3 +51,85 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* @media screen and (max-width:679px) {} */
+@media screen and (min-width: 680px) {
+
+  body {
+    background-color: rgb(219, 224, 245);
+  }
+
+  /* header */
+  .top-bar {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+/* main */
+  main {
+    display: flex;
+    justify-content: space-around;
+    line-height: 35px;
+  }
+
+  .left-content {
+    color: rgb(28, 60, 122);
+    width: 500px;
+    padding: 40px 60px;
+  }
+
+  .left-content img {
+    width: 500px;
+  }
+  
+  .right-content {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+  }
+
+  .genders {
+    display: flex;
+    font-size: 14px;
+  }
+
+  .full-name {
+    width: 308px;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .in {
+    width: 100%;
+    border-color: rgb(210, 221, 252);
+    border-radius: 4px;
+  }
+
+  #facebook-register {
+    background-color: rgb(71, 141, 54);
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    width: 120px;
+  }
+
+/* footer */
+  .footer {
+    align-items: center;
+    background-color: white;
+    color: rgb(28, 60, 122);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+    width: 100%;
+  }
+
+}
