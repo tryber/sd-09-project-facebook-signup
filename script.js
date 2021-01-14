@@ -39,7 +39,7 @@ genderCustom.addEventListener('click', showHiddenInput);
 function createWelcomeParagraph() {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerText = `
-  Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}
+  Olá, ${document.querySelector('#firstname').value} ${document.querySelector('#lastname').value}!
   Celular ou email: ${document.querySelector('#phone_email').value}
   Data de nascimento: ${document.querySelector('#birthdate').value}
   Gênero: ${checkRadio()}`;
