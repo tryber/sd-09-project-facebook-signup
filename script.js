@@ -31,11 +31,11 @@ function welcomeMessege() {
   const factory = FactoryFormValue();
   const rigthContent = document.getElementById('right-content');
   const text = document.createElement('p');
-  text.innerHTML = `Olá, ${factory.inputName} ${factory.inputLastname}`;
+  text.innerHTML = `Olá, ${factory.InputName} ${factory.InputLastName}`;
   const email = document.createElement('p');
-  email.innerHTML = ` e-mail ou telefone: ${factory.inputEmail}`;
+  email.innerHTML = ` e-mail ou telefone: ${factory.InputEmail}`;
   const birth = document.createElement('p');
-  birth.innerHTML = `Data de nascimento: ${factory.birthdate}`;
+  birth.innerHTML = `Data de nascimento: ${factory.BirthDate}`;
   const gender = document.createElement('p');
   gender.innerHTML = `${factory.GenderValue}`;
 
