@@ -6,22 +6,32 @@
   justify-content: space-between;
 }
 
+.facebook-login {
+  display: flex;
+}
+
+.input-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
 .aolado {
   color: white;
   display: flex;
 }
 
-.facebook-slogan {
+.facebook-slogan-css {
   color: rgb(66, 103, 178);
   font-size: 30px;
-}
-
-.facebook-login {
-  display: flex;
-}
-
-.form-control {
-  align-self: flex-end;
 }
 
 .left-content {
