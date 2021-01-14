@@ -55,18 +55,20 @@
                 </div>
                 </div>
                 <div>
-                <label for="gender" id="label-gender">Gênero</div>
-                 <input type="radio" name="gender" id="feminino" class="feminino">
-                 <label for="feminino">Feminino</label>
-                 <input type="radio" name="gender" id="masculino" class="masculino">
-                 <label for="masculino">Masculino</label>
-                 <input type="radio" name="gender" id="personalizado" class="Personalizado">
-                 <label for="personalizado">Personalizado</label>
-                    <p class="nem-gender">
-                        <input type="text" name="new-gender" id="new-gender">
-                    </p>
-                </div>
-                    <button type="submit" id="facebook-register" class="facebook-register">Cadastre-se</button>
+                 <label for="female">
+                 <input type="radio" name="gender" value="Feminino" id="female" >Feminino
+                 </label>
+                 <label for="male">
+                 <input type="radio" name="gender" value="Masculino" id="male" >Masculino
+                 </label>
+                 <label for="custom"><input type="radio" name="gender" value="Personalizado" id="custom" >Personalizado
+                 </label>
+                 <label for="gender-custom">
+                 <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)">
+                 </label>
+                 </div>
+                   <div> <button type="submit" id="facebook-register" class="facebook-register">Cadastre-se</button>
+                   </div>
             </form>
         </div>
         </div>
