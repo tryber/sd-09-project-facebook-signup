@@ -32,22 +32,14 @@
 
 .main-form {
   display: flex;
-  flex-direction: column;
-  padding: 8px 10px;
-}
-
-.form-content {
-width: 200px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .register-name {
   display: flex;
   flex-direction: row;
-  padding: 8px 10px;
-}
-
-.phone-password {
-
+  padding: 5px;
 }
 
 .top-bar {
@@ -75,13 +67,48 @@ width: 200px;
 .form-control {
   align-self: flex-end;
   order: 2;
+  padding: 5px;
 }
 
 .radio-in-line {
   display: flex;
+  padding: 5px;
 }
 
 .radio-column {
   display: flex;
   flex-direction: column;
+  padding: 5px;
+}
+
+.date {
+  padding: 5px;
+}
+
+.button {
+  padding: 5px;
+}
+
+.general-test {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.message {
+  font-weight: 500;
+  padding: 3px;
+  text-align: center;
+  width: 100%;
+}
+
+.error {
+  background-color: lightcoral;
+  color: whitesmoke;
+}
+
+.success {
+  background-color: rgba(47, 255, 89, 0.461);
+  color: rgba(58, 58, 53, 0.55);
 }
