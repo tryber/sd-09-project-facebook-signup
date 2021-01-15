@@ -40,26 +40,31 @@
       <!-- Formulário para cadastro de conta -->
       <form action="" method="GET">
         <div class="form-data">
+          <!-- Input Nome e Sobrenome -->
           <div class="input-username">
-            <input type="text" name="firstname" placeholder="Nome">
-            <input type="text" name="lastname" placeholder="Sobrenome">
+            <input type="text" name="firstname" placeholder="Nome" required>
+            <input type="text" name="lastname" placeholder="Sobrenome" required>
           </div>
+          <!-- Input Email -->
           <div class="input-email">
-            <input type="text" name="phone_email" placeholder="Celular ou email">
+            <input type="text" name="phone_email" placeholder="Celular ou email" required>
           </div>
+          <!-- Input Senha -->
           <div class="input-password">
-            <input type="password" name="password" placeholder="Nova senha">
+            <input type="password" name="password" placeholder="Nova senha" required>
           </div>
+          <!-- Input Nascimento -->
           <div class="input-birthday">
             <label for="" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
           </div>
+          <!-- Seleção de Gênero -->
           <div class="input-gender">
             <div class="label-gender">
               <label for="" id="label-gender" >Gênero</label>
             </div>
             <label for="select-gender-femmale">
-              <input type="radio" name="gender" id="select-gender-femmale" value="Feminino">Feminino
+              <input type="radio" name="gender" id="select-gender-femmale" value="Feminino" required>Feminino
             </label>
             <label for="select-gender-male">
               <input type="radio" name="gender" id="select-gender-male" value="Masculino">Masculino
