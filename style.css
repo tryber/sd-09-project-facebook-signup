@@ -41,8 +41,8 @@ header {
   align-self: flex-end;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   font-weight: 800;
+  justify-content: center;
 }
 
 .form-control-button {
@@ -52,7 +52,7 @@ header {
   color: #fefefe;
   font-weight: 800;
   margin: 1em 0 0;
-  padding: 1em 1em;
+  padding: 1em;
   transition: 0.3s;
   width: 9100%;
 }
@@ -64,7 +64,7 @@ header {
   color: #fefefe;
   font-weight: 700;
   margin: 2em 0;
-  padding: 1em 1em;
+  padding: 1em;
   transition: 0.3s;
   width: 50%;
 }
