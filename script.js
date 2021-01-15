@@ -73,10 +73,7 @@ function addPersonalInfos() {
     }
   }
   const form = document.createElement('p');
-  form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
-  ${getInputValues(emaiLrOrPhone)}
-  ${getInputValues(birthDate)}
-  ${localStorage.getItem('genero')}`;
+  form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)} ${getInputValues(emaiLrOrPhone)} ${getInputValues(birthDate)} ${localStorage.getItem('genero')}`;
   rightContent.appendChild(form);
 }
 
