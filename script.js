@@ -41,6 +41,29 @@ function validation() {
 });
 }
 
+function validation() {
+  const firstName = document.querySelector('#first-name');
+  const lastName = document.querySelector('#last-name');
+  const phoneEmail = document.querySelector('#phone-email');
+  const newPassword = document.querySelector('#pass-word');
+  const birthDate = document.querySelector('#birthdate');
+  const button = document.querySelector('#facebook-register');
+  button.addEventListener('click', function () {
+    if (firstName.value === '') {
+      invalidFields();
+    } else if (lastName.value === '') {
+      invalidFields();
+    } else if (phoneEmail.value === '') {
+      invalidFields();
+    } else if (newPassword.value === '') {
+      invalidFields();
+    } else if (birthDate.value === '') {
+      invalidFields();
+    } else {
+      validationRadio();
+    }
+  });
+}
 
 window.onload = function () {
   login();
