@@ -98,11 +98,12 @@ function validateInputs(evt) {
     } else if (inputs[index].className === 'radios' && checkRadioButtons(radios)) {
       showMessage('error', 'Campos inválidos');
       radios[0].focus();
-      return `Erro no campo Gênero.`;
+      return 'Erro no campo Gênero.';
     }
   }
-  showMessage('success', 'Tudo certo')
+  showMessage('success', 'Tudo certo');
   showUserData(inputs);
+  return 'Sucesso';
   /** Genadi, chame a sua funcao para mostrar os dados aqui! */
 }
 
