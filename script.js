@@ -6,6 +6,11 @@ function login() {
   });
 }
 
+function invalidFields() {
+  const span = document.getElementById('invalid-fields');
+  span.innerText = 'Campos inválidos';
+}
+
 function validationRadio() {
   const gender = document.getElementsByName('gender');
   let aux = 0;
@@ -15,7 +20,7 @@ function validationRadio() {
     }
   }
   if (aux === 3) {
-    alert('Campos inválidos');
+    invalidFields();
   }
 }
 
@@ -28,15 +33,15 @@ function validation() {
   const button = document.querySelector('#facebook-register');
   button.addEventListener('click', function () {
     if (firstName.value === '') {
-      alert('Campos inválidos');
+      invalidFields();
     } else if (lastName.value === '') {
-      alert('Campos inválidos');
+      invalidFields();
     } else if (phoneEmail.value === '') {
-      alert('Campos inválidos');
+      invalidFields();
     } else if (newPassword.value === '') {
-      alert('Campos inválidos');
+      invalidFields();
     } else if (birthDate.value === '') {
-      alert('Campos inválidos');
+      invalidFields();
     } else {
       validationRadio();
     }
