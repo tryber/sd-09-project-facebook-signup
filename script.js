@@ -114,7 +114,7 @@ function displayRegister(firstName, lastName, phoneEmail, birthDate, gender) {
   addRegister.innerText = gender;
   addRegister.style.fontSize = '25px';
   rightContent.appendChild(addRegister);
-};
+}
 
 /* Inicio do codigo */
 const inputEmailPhone = document.querySelector('#user-email-phone');
