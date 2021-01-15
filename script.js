@@ -16,7 +16,7 @@ function customizedGender(event) {
     creatInput.setAttribute('name', 'gender-custom');
     creatInput.setAttribute('placeholder', 'Gênero (opcional)');
     creatInput.setAttribute('class', 'info');
-    creatInput.setAttribute('id', 'gender-input')
+    creatInput.setAttribute('id', 'gender-input');
     genderInput.appendChild(creatInput);
   }
 }
@@ -47,7 +47,7 @@ customGender.addEventListener('change', getCustomizedGender);
 
 function getGenderValue(event) {
   if (event.target.name === 'gender') {
-    console.log(event.target.value);
+    event.target.value;
   }
 }
 
