@@ -23,9 +23,9 @@ const vali = new window.JustValidate('.js-form', {
   },
 });
 const btnRegis = document.getElementById('facebook-register');
-btnRegis.addEventListener('click', function() {
-  console.log(vali);
-})
+btnRegis.addEventListener('click', function(){
+  return console.log(vali);
+});
 
 
 const otherGender = document.getElementById('other');
