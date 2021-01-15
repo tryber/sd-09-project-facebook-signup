@@ -41,3 +41,25 @@ function personalizedGender() {
   }
 }
 otherGender.addEventListener('click', personalizedGender);
+
+//retorna os dados do novo usuário cadastrado - requisito 20
+function userData() {
+  const data = document.getElementsByTagName('input');
+  const userGender = document.querySelector('input[type="radio"]:checked');
+  const welcome = `Olá, ${data[2].value} ${data[3].value}
+  ${data[4].value}
+  ${data[6].value}
+  ${userGender.value}`;
+  return welcome;
+}
+
+//retorna os dados do usuário cadastrado na div da direita - requisito 20
+const registerButton = document.getElementById('facebook-register');
+registerButton.addEventListener('click', function () {
+  if (validate) {
+    const selectRight = document.querySelector('.right-content');
+    const newSignUp = document.querySelector('.facebook-register-form');
+    selectRight.innerText = userData();
+    //newSignUp.style.display = 'none';
+  }
+});
