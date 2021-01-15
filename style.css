@@ -97,9 +97,9 @@ body {
 
 .labels {
   color: rgb(144, 148, 156);
+  flex-basis: 100%;
   font-weight: 600;
   line-height: 30px;
-  flex-basis: 100%;
 }
 
 .left-content {
@@ -114,7 +114,7 @@ body {
 .left-content p {
   color: rgb(14, 56, 95);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
