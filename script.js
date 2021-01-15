@@ -6,6 +6,19 @@ function login() {
   });
 }
 
+function validationRadio() {
+  const gender = document.getElementsByName('gender');
+  let aux = 0;
+  for (let index = 0; index < gender.length; index += 1) {
+    if (gender[index].checked !== true) {
+      aux += 1;
+    }
+  }
+  if (aux === 3) {
+    alert('Campos inválidos');
+  }
+}
+
 function validation() {
   const firstName = document.querySelector('#first-name');
   const lastName = document.querySelector('#last-name');
@@ -28,19 +41,6 @@ function validation() {
       validationRadio();
     }
   });
-}
-
-function validationRadio() {
-  const gender = document.getElementsByName('gender');
-  let aux = 0;
-  for (let index = 0; index < gender.length; index += 1) {
-    if (gender[index].checked !== true) {
-      aux += 1;
-    }
-  }
-  if (aux === 3) {
-    alert('Campos inválidos');
-  }
 }
 
 window.onload = function () {
