@@ -4,14 +4,14 @@ function showAlert() {
 }
 btnAlert.addEventListener('click', showAlert);
 
-new window.JustValidate('.js-form', {
+let jv = new window.JustValidate('.js-form', {
   rules: {
     data: {
-      required: true
+      required: true,
     },
     radio: {
-      required: true
-    }
+      required: true,
+    },
   },
   messages: {
     email: 'Campo Inválido',
@@ -19,8 +19,8 @@ new window.JustValidate('.js-form', {
     password: 'Campo Inválido',
     radio: 'Campo Inválido',
     text: 'Campo Inválido',
-    data: 'Campo Inválido'
-  }
+    data: 'Campo Inválido',
+  },
 });
 
 
@@ -28,12 +28,13 @@ const otherGender = document.getElementById('other');
 function personalizedGender() {
   const father = document.getElementById('inputParent');
   if (father.childNodes[0]) {
+    console.log(false)
   } else {
     const child = document.createElement('input');
     father.appendChild(child);
     child.setAttribute('name', 'gender-custom');
     child.setAttribute('placeholder', 'Gênero(opcional)');
-    child.setAttribute('id', 'perGender')
+    child.setAttribute('id', 'perGender');
   }
 }
 otherGender.addEventListener('click', personalizedGender);
