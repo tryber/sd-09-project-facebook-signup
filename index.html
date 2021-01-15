@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook</title>
+  <link href="//db.onlinewebfonts.com/c/10cd88b40fb235886aa6d35d44c2441c?family=FreightSansCondensedW01-Bold" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div>
+      <img class="facebook-logo" alt="Facebook logo" src="imgs/facebook-logo.png">
+    </div>
+    <Form class='facebook-login'>
+
+      <!-- sugestão de alinhamento para este form  > justify-content: space-around; -->
+      <container class='form-group'>
+        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+        <input type="text" class='input-login' name="login" id="user-email-phone" maxlength="60" required>
+
+        <!-- sugestão para tamanho do input > width: 107px; height: 7px; -->
+      </container>
+      <container class='form-group'>
+        <label for="user-password" id="user-password-label">Senha</label>
+        <input type="password" name="senha" id="user-password" maxlength="60" required>
+
+        <!-- sugestão para tamanho do input > width: 107px; height: 7px; -->
+
+        <!-- <p href="">Esqueceu a Senha</p> -->
+      </container>
+      <container class='form-control'>
+        <button id="button-login">Entrar</button>
+
+        <!--  sugestão para style do button > height: 16px; background: transparent; font-size: xx-small; color: white; display: flex; align-self: baseline; -->
+      </container>
+    </Form>
+  </header>
+
+  <!-- main content -->
+
+  <section class="main-content">
+
+    <!-- left content -->
+
+    <div class="left-content">
+      <p id="facebook-slogan" class="slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img src="imgs/networking.png" alt="glogal net" id="facebook-networking" class="network">
+    </div>
+
+    <!-- .right content. -->
+
+    <div class="right-content" id="right-content">
+      <h1 class="h1">Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form action="" class="cadastro" id="cadastro">
+        <section class="nomeSobrenome">
+          <input type="text"  name="firstname" placeholder="Nome"  required>
+          <input type="text"  name="lastname" placeholder="Sobrenome" required>
+        </section>
+        <input type="text"  name="phone_email"  placeholder="Celular ou email"  required>
+        <input type="password"  name="password" placeholder="Nova senha"  required>
+        <label for="label-birthday" id="label-birthdate" class="nascimento">Data de nascimento</label>
+        <input type="text" name="birthdate" id="label-birthday" placeholder="dd/mm/aaaa" required>
+        <label for="" id="label-gender" class="labelGender">Gênero</label>
+        <section class="radioButtons">
+          <input type="radio" name="gender" id="gender-female" value="Feminino">
+          <label for="gender-female">Feminino</label>
+          <input type="radio" name="gender" id="gender-male" value="Masculino">
+          <label for="gender-male">Masculino</label>
+          <input type="radio" name="gender" id="gender-custom" value="Personalizado">
+          <label for="gender-custom">Personalizado</label>
+        </section>
+        <input type="text"  name="gender-custom" id="genderText" placeholder="Gênero (opcional)">
+        <button type="submit" id="facebook-register" class="submit">Cadastre-se</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- adicionei este script . -->
+  <section class=""  id="scriptSection"></section>
+  <script src="script.js"></script>
+</body>
+</html>
