@@ -1,3 +1,5 @@
+const btnSignUp = document.querySelector('#facebook-register');
+
 function alertEmailOrPhone() {
   const inputEmail = document.querySelector('#user-email-phone');
   alert(inputEmail.value);
@@ -34,27 +36,26 @@ function getInputValues(inpuType) {
   return inpuType.value;
 }
 
-function getCustomizedGender(event) {
-  if (event.target.className === 'custom-gender') {
-    customizedGender();
-    event.target.value = document.querySelector('#gender-input').value;
+function getGenderValue() {
+  const gender = document.querySelectorAll('input[name="gender"]');
+  let choice = [];
+  for (let index = 0; index < gender.length; index += 1) {
+    if (gender[index].checked) {
+      choice.push(gender[index].value);
+    }
   }
+  localStorage.setItem('genero', choice);
 }
+genderOption.addEventListener('click', getGenderValue);
+// function getCustomizedGender(event) {
+//   if (event.target.className === 'custom-gender') {
+//     customizedGender();
+//     event.target.value = document.querySelector('#gender-input').value;
+//   }
+// }
 
-const customGender = document.querySelector('.customized-gender');
-customGender.addEventListener('change', getCustomizedGender);
-
-
-function getGenderValue(event) {
-  let result = '';
-  if (event.target.name === 'gender') {
-    result = event.target.value;
-  }
-  return result;
-}
-
-const gender = document.querySelector('.gender-options');
-gender.addEventListener('click', getGenderValue);
+// const customGender = document.querySelector('.customized-gender');
+// customGender.addEventListener('change', getCustomizedGender);
 
 
 function clearParagraph() {
@@ -70,13 +71,13 @@ function addPersonalInfos() {
     while (rightContent.firstChild) {
       rightContent.removeChild(rightContent.lastChild);
     }
-    const form = document.createElement('p');
-    form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
-    Email ou Telefone: ${getInputValues(emaiLrOrPhone)}
-    Data de nascimento: ${getInputValues(birthDate)}
-    Gênero: ${getGenderValue()}`;
-    rightContent.appendChild(form);
   }
+  const form = document.createElement('p');
+  form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
+  Email ou Telefone: ${getInputValues(emaiLrOrPhone)}
+  Data de nascimento: ${getInputValues(birthDate)}
+  Gênero: ${localStorage.getItem('genero')}`;
+  rightContent.appendChild(form);
 }
 
 function checkEmptyinputs() {
@@ -105,7 +106,6 @@ function buttonSignUp(event) {
   }
 }
 
-const btnSignUp = document.querySelector('#facebook-register');
 btnSignUp.addEventListener('click', buttonSignUp);
 
 function removeMessage(event) {
