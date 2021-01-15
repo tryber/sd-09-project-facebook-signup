@@ -46,6 +46,15 @@ function createWelcomeParagraph() {
 }
 
 window.onload = function () {
+  const rightContent = document.querySelector('.right-content');
+  const facebookLogin = document.querySelector('.facebook-login');
+  const createAccountButton = document.querySelector('.form-control-submit ');
+  createAccountButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    facebookLogin.style.display = 'none';
+    rightContent.style.display = 'flex';
+  });
+
   const submitButton = document.querySelector('#facebook-register');
   const errorMessage = document.querySelector('#errorMessage');
   submitButton.addEventListener('click', (event) => {

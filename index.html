@@ -9,18 +9,21 @@
 <body>
   <header >
     <section class="top-bar">
-      <img src="imgs/facebook-logo.png" alt="Logo do Facebook" class="facebook-logo">
+      <section class="facebook-logo-container">
+        <img src="imgs/facebook-logo.png" alt="Logo do Facebook" class="facebook-logo">
+      </section>
       <form class="facebook-login">
         <section class="form-group">
-          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-          <input type="text" class="form-group-input" id="user-email-phone">
+          <label for="user-email-phone" class="form-group-label" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" placeholder="Email ou telefone" class="form-group-input" id="user-email-phone">
         </section>
         <section class="form-group">
-          <label for="user-password" id="user-password-label">Senha</label>
-          <input type="password" class="form-group-input" id="user-password">
+          <label for="user-password" class="form-group-label" id="user-password-label">Senha</label>
+          <input type="password" placeholder="Senha" class="form-group-input" id="user-password">
         </section>
         <section class="form-control">
           <button class="form-control-button" id="button-login">Entrar</button>
+          <button class="form-control-submit">Criar nova conta</button>
         </section>
       </form>
     </section>

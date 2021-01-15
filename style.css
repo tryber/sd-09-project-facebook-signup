@@ -13,8 +13,6 @@ form input {
 
 header {
   background-color: #4267b2;
-  margin: 0;
-  padding: 10px 0;
   width: 100%;
 }
 
@@ -23,11 +21,67 @@ header {
 }
 
 .facebook-login {
-  display: none;
+  margin: 2em;
+  width: 80%;
+}
+
+.facebook-logo-container {
+  background-color: #4267b2;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .form {
-  color: gray;
+  color: #7f7f7f;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.form-control-button {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  border-radius: 0.2em;
+  color: #fefefe;
+  font-weight: 800;
+  margin: 1em 0 0;
+  padding: 1em 1em;
+  transition: 0.3s;
+  width: 9100%;
+}
+
+.form-control-submit {
+  background-color: #2ea043;
+  border: 1px solid #2ea043;
+  border-radius: 0.2em;
+  color: #fefefe;
+  font-weight: 700;
+  margin: 2em 0;
+  padding: 1em 1em;
+  transition: 0.3s;
+  width: 50%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-input {
+  border: 1px solid #4267b2;
+  padding: 1em;
+  transition: 0.3s;
+}
+
+.form-group-label {
+  display: none;
 }
 
 .hidden-input {
@@ -55,15 +109,15 @@ header {
 .radio-container label {
   color: #2d2d2d;
   font-size: 0.9em;
-  margin: 0 1em 0 0.2em;
+  margin: 0 0.5em 0 0.2em;
   opacity: 0.8;
 }
 
 .right-content {
-  display: flex;
+  display: none;
   flex-flow: column;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
 .right-content form {
@@ -81,6 +135,10 @@ header {
   transition: 0.3s;
 }
 
+.right-content label {
+  width: 100%;
+}
+
 .small-input {
   width: 48%;
 }
@@ -90,16 +148,16 @@ header {
   border: none;
   border-radius: 0.3em;
   color: #fefefe;
-  font-weight: 700;
+  font-weight: 800;
   margin: 1em 0;
   padding: 0.8em 2em;
   transition: 0.3s;
 }
 
 .top-bar {
-  background-color: #4267b2;
-  color: #fefefe;
+  background-color: #f7f7f7;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   margin: 0 auto;
 }
@@ -117,21 +175,22 @@ header {
     display: flex;
     font-size: 0.8em;
     font-weight: 700;
+    margin: 0;
+    width: unset;
   }
 
-  .form-control {
-    align-self: flex-end;
-    font-weight: 700;
+  .facebook-logo-container {
+    background-color: #4267b2;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
   }
 
   .form-control-button {
-    background-color: #3b5998;
-    border: 1px solid #3b5998;
-    border-radius: 0.2em;
-    color: #fefefe;
-    font-weight: 700;
+    margin: 0;
     padding: 0.5em 1em;
-    transition: 0.3s;
+    width: fit-content;
   }
 
   .form-control-button:hover {
@@ -140,23 +199,31 @@ header {
     box-shadow: 0 1px 5px #8b9dc3;
   }
 
+  .form-control-submit {
+    display: none;
+  }
+
   .form-group {
-    display: flex;
-    flex-direction: column;
     margin: 0 10px;
   }
 
   .form-group-input {
-    border: 1px solid #4267b2;
     margin: 5px 0;
     padding: 0.2em;
-    transition: 0.3s;
     width: 150px;
   }
 
   .form-group-input:focus , .form-group-input:hover {
     border: 1px solid #8b9dc3;
     box-shadow: 0 1px 5px #fefefe;
+  }
+
+  .form-group-input::placeholder {
+    opacity: 0;
+  }
+
+  .form-group-label {
+    display: unset;
   }
 
   .left-content {
@@ -172,7 +239,7 @@ header {
     color: #123456;
     font-weight: 700;
     margin: 1em 0;
-    width: 50%;
+    width: 80%;
   }
 
   .radio-container label:hover {
@@ -180,6 +247,7 @@ header {
   }
 
   .right-content {
+    display: flex;
     width: 40%;
   }
 
@@ -192,7 +260,10 @@ header {
   }
 
   .top-bar {
+    background-color: #4267b2;
+    color: #fefefe;
     justify-content: space-between;
+    padding: 10px 0;
     width: 90%;
   }
 }
