@@ -79,7 +79,7 @@ function invalidFields(button) {
 }
 
 /* Retorna o genero */
-function getGender() {
+function getGen() {
   const nameGender = document.getElementsByName('gender');
   let returnValue;
   for (let index = 0; index < nameGender.length; index += 1) {
@@ -122,9 +122,9 @@ const buttonSender = document.querySelector('#button-login');
 const buttonRegister = document.querySelector('#facebook-register');
 const formFirstName = document.querySelector('#id-firstname');
 const formLastName = document.querySelector('#id-lastname');
-const formPhoneEmail = document.querySelector('#id-phone_email');
+const formPhone = document.querySelector('#id-phone_email');
 const formPassword = document.querySelector('#id-password');
-const formBirthDate = document.querySelector('#id-birthdate');
+const formDate = document.querySelector('#id-birthdate');
 const formFemale = document.querySelector('#id-female');
 const formMale = document.querySelector('#id-male');
 const formCustom = document.querySelector('#id-custom');
@@ -146,13 +146,13 @@ buttonRegister.addEventListener('click', function (event) {
   if (formLastName.value.length < 1) {
     formValid = false;
   }
-  if (formPhoneEmail.value.length < 1 || !formPhoneEmail.value.includes('@')) {
+  if (formPhone.value.length < 1 || !formPhone.value.includes('@')) {
     formValid = false;
   }
   if (formPassword.value.length < 1) {
     formValid = false;
   }
-  if (!dateIsValid(formBirthDate.value)) {
+  if (!dateIsValid(formDate.value)) {
     formValid = false;
   }
   if (!genderIsValid(formFemale.checked, formMale.checked, formCustom.checked)) {
@@ -161,7 +161,7 @@ buttonRegister.addEventListener('click', function (event) {
   if (!formValid) {
     invalidFields(buttonRegister);
   } else {
-    dispReg(formFirstName.value, formLastName.value, formPhoneEmail.value, formBirthDate.value, getGender());
+    dispReg(formFirstName.value, formLastName.value, formPhone.value, formDate.value, getGen());
   }
   event.preventDefault();
 });
