@@ -56,19 +56,6 @@ function clearParagraph() {
   }
 }
 
-function addPersonalInfos() {
-  const rightContent = document.querySelector('.right-content');
-  const messageAndName = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}`;
-  if (rightContent.hasChildNodes) {
-    while (rightContent.firstChild) {
-      rightContent.removeChild(rightContent.lastChild);
-    }
-  }
-  // const form = document.createElement('p');
-  rightContent.innerText = `${messageAndName} ${getInputValues(emaiLrOrPhone)} ${getInputValues(birthDate)} ${localStorage.getItem('genero')}`;
-  // rightContent.appendChild(form);
-}
-
 function checkEmptyinputs() {
   const infoClass = document.querySelectorAll('.info');
   let emptyInputs = 0;
@@ -78,6 +65,30 @@ function checkEmptyinputs() {
     }
   }
   return emptyInputs;
+}
+
+function removeMessage(event) {
+  const form = document.querySelector('.message');
+  if (event.target) {
+    if (form.hasChildNodes()) {
+      form.removeChild(form.lastChild);
+    }
+  }
+}
+const personalInfos = document.querySelector('.remove-child');
+personalInfos.addEventListener('click', removeMessage);
+
+function addPersonalInfos() {
+  const rightContent = document.querySelector('.right-content');
+  const messageAndName = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}`;
+  if (rightContent.hasChildNodes) {
+    while (rightContent.firstChild) {
+      rightContent.removeChild(rightContent.lastChild);
+    }
+  }
+  const form = document.createElement('p');
+  form.innerText = `${messageAndName} ${getInputValues(emaiLrOrPhone)} ${getInputValues(birthDate)} ${localStorage.getItem('genero')}`;
+  rightContent.appendChild(form);
 }
 
 function buttonSignUp(event) {
@@ -96,15 +107,3 @@ function buttonSignUp(event) {
 }
 
 btnSignUp.addEventListener('click', buttonSignUp);
-
-function removeMessage(event) {
-  const form = document.querySelector('.message');
-  if (event.target) {
-    if (form.hasChildNodes()) {
-      form.removeChild(form.lastChild);
-    }
-  }
-}
-
-const personalInfos = document.querySelector('.remove-child');
-personalInfos.addEventListener('click', removeMessage);
