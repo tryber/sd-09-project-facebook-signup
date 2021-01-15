@@ -98,7 +98,7 @@ function displayRegister(firstName, lastName, phoneEmail, birthDate, gender) {
   }
   document.querySelector('.quick-easy').remove();
   const rightContent = document.querySelector('.right-content');
-  let addRegister = document.createElement('p')
+  let addRegister = document.createElement('p');
   addRegister.innerText = `Olá,  ${firstName} ${lastName}`;
   addRegister.style.fontSize = '25px';
   rightContent.appendChild(addRegister);
@@ -114,7 +114,7 @@ function displayRegister(firstName, lastName, phoneEmail, birthDate, gender) {
   addRegister.innerText = gender;
   addRegister.style.fontSize = '25px';
   rightContent.appendChild(addRegister);
-}
+};
 
 /* Inicio do codigo */
 const inputEmailPhone = document.querySelector('#user-email-phone');
@@ -161,7 +161,7 @@ buttonRegister.addEventListener('click', function (event) {
   if (!formValid) {
     invalidFields(buttonRegister);
   } else {
-    displayRegister(formFirstName.value,formLastName.value, formPhoneEmail.value, formBirthDate.value, getGender());
+    displayRegister(formFirstName.value, formLastName.value, formPhoneEmail.value, formBirthDate.value, getGender());
   }
   event.preventDefault();
 });
