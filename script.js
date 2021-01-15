@@ -21,10 +21,9 @@ function mounthIsValid(day, mounth) {
 
 /* Valida dia */
 function dayIsValid(day, mounth, year) {
-  let arraDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  const arraDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   let returnValue = true;
-  if (mounth == 2 && (year % 4) === 0) {
-    console.log('aqui');
+  if (mounth === 2 && (year % 4) === 0) {
     arraDays[1] = 29;
   }
   if (day < 1 || day > arraDays[mounth - 1]) {
@@ -36,13 +35,13 @@ function dayIsValid(day, mounth, year) {
 /* Validacao da data */
 function dateIsValid(date) {
   const arrayDate = date.split('/');
-  const numberDay = parseInt(arrayDate[0], 10);
-  const numberMounth = parseInt(arrayDate[1], 10);
-  const numberYear = parseInt(arrayDate[2], 10);
+  const day = parseInt(arrayDate[0], 10);
+  const mounth = parseInt(arrayDate[1], 10);
+  const year = parseInt(arrayDate[2], 10);
   let returnValue = true;
-  if (isNaN(numberDay) || isNaN(numberMounth) || isNaN(numberYear)) {
+  if (isNaN(day) || isNaN(mounth) || isNaN(year)) {
     returnValue = false;
-  } else if (!yearIsValid(numberYear) || !mounthIsValid(numberMounth) || !dayIsValid(numberDay, numberMounth, numberYear)) {
+  } else if (!yearIsValid(year) || !mounthIsValid(mounth) || !dayIsValid(day, mounth, year)) {
     returnValue = false;
   }
   return returnValue;
