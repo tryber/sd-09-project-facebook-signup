@@ -22,7 +22,7 @@ function validation() {
       alert("Campos inválidos");
     } else if (passWord.value === "") {
       alert("Campos inválidos");
-    } else */ 
+    } */
     if (firstName.value === '') {
       alert('Campos inválidos');
     } else if (lastName.value === '') {
