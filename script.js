@@ -42,59 +42,40 @@ function write() {
   box.innerText = (`Olá, ${inputNameValue2} ${inputLastnameValue2} ${inputPhoneValue2} ${inputBirthValue2} ${checked2}`);
 }
 
-const btnCadastre = document.getElementById('facebook-register');
-function validInput(event) {
-  event.preventDefault();
+function validInputText() {
   const inputs = document.querySelectorAll('.input');
-  const inputsRadio = document.querySelectorAll('.inputradio')
   let vaziosText = 0;
-  let vaziosRadio = 0;
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
-      vaziosText = vaziosText + 1;
+      vaziosText += 1;
     }
   }
+  return vaziosText;
+}
+
+function validInputRadio() {
+  const inputsRadio = document.querySelectorAll('.inputradio');
+  let vaziosRadio = 0;
   for (let index = 0; index < inputsRadio.length; index += 1) {
     if (inputsRadio[index].checked === true) {
       vaziosRadio = 1;
     }
   }
-  if (vaziosText !== 0 || vaziosRadio === 0) {
+  return vaziosRadio;
+}
+
+const btnCadastre = document.getElementById('facebook-register');
+function validAll(event) {
+  event.preventDefault();
+  // validInputText();
+  // validInputRadio();
+  if (validInputText() !== 0 || validInputRadio() === 0) {
     createP();
   } else {
     write();
   }
 }
-btnCadastre.addEventListener('click', validInput);
-
-// const btnCadastre = document.getElementById('facebook-register');
-// function validInput(event) {
-//   event.preventDefault();
-//   const inputName = document.getElementById('name');
-//   const inputLastname = document.getElementById('lastname');
-//   const inputPhone = document.getElementById('phoneemail');
-//   const inputNewpw = document.getElementById('newpassword');
-//   const inputBirth = document.getElementById('birthdate');
-//   const inputFeminino = document.getElementById('feminino');
-//   const inputMasculino = document.getElementById('masculino');
-//   const inputPersonalizado = document.getElementById('personalizado');
-//   const inputNameValue = inputName.value;
-//   const inputLastnameValue = inputLastname.value;
-//   const inputPhoneValue = inputPhone.value;
-//   const inputNewpwValue = inputNewpw.value;
-//   const inputBirthValue = inputBirth.value;
-//   const inputFemininoValue = inputFeminino.checked;
-//   const inputMasculinoValue = inputMasculino.checked;
-//   const inputPersonalizadoValue = inputPersonalizado.checked;
-//   if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '' || (inputFemininoValue === false &&
-//     inputMasculinoValue === false &&
-//     inputPersonalizadoValue === false)) {
-//     createP();
-//   } else {
-//     write();
-//   }
-// }
-// btnCadastre.addEventListener('click', validInput);
+btnCadastre.addEventListener('click', validAll);
 
 const rdoPerso = document.getElementById('personalizado');
 function inputTxtPerso() {
