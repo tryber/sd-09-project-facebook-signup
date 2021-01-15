@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Facebook</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!--Barra Superior-->
@@ -36,28 +38,29 @@
         <form>
           <div class="fullname">
             <label>
-              <input type="text" placeholder="Nome" name="firstname">
+              <input type="text" placeholder="Nome" name="firstname" required oninvalid="this.setCustomValidity('Campos inválidos')"
+              oninput="setCustomValidity('')">
             </label>
             <label>
-              <input type="text" placeholder="Sobrenome" name="lastname">
+              <input type="text" placeholder="Sobrenome" name="lastname" required>
             </label>
           </div>
           <label>
-            <input type="text" name="phone_email" placeholder="Celular ou email">
+            <input type="text" name="phone_email" placeholder="Celular ou email" required>
           </label>
           <label>
-            <input type="password" name="password" placeholder="Nova senha">
+            <input type="password" name="password" placeholder="Nova senha" required>
           </label>
           <div class="flex-axis">
             <label id="label-birthdate">Data de nascimento
             </label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
           </div>
           <label id="label-gender">Gênero</label>
           <div>
-            <label><input class="other-gender" type="radio" name="gender" value="Feminino">Feminino</label>
-            <label><input  class="other-gender" type="radio" name="gender" value="Masculino">Masculino</label>
-            <label><input id ="personalyzed-gender" type="radio" name="gender" value="Personalizado">Personalizado</label>
+            <label><input class="other-gender" type="radio" name="gender" value="Feminino" required>Feminino</label>
+            <label><input  class="other-gender" type="radio" name="gender" value="Masculino" required>Masculino</label>
+            <label><input id ="personalyzed-gender" type="radio" name="gender" value="Personalizado" required>Personalizado</label>
           </div>
           <div id="personalyzedPlaceholder"></div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
