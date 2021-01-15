@@ -4,15 +4,17 @@ document.querySelector('#button-login').addEventListener('click', function () {
 });
 
 function validateForm() {
-  var inputs = document.getElementsByClassName('required');
-  var lengths = inputs.length;
-  var valid = true;
-  for(var i=0; i < lengths; i++){
-    if (!inputs[i].value){ valid = false; }
+  let inputs = document.getElementsByClassName('required');
+  let lengths = inputs.length;
+  let valid = true;
+  for (let i = 0; i < lengths; i += 1){
+    if (inputs[i].value) {
+      valid = false; }
   }
-  if (!valid){
-  alert('Campos Inválidos');
-  return false;
-  } else { return true; }
+  if (valid) {
+    return true;
   }
+    alert('Campos Inválidos');
+}
+
 document.querySelector('#facebook-register').addEventListener('click', validateForm);
