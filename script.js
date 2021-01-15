@@ -78,6 +78,44 @@ function invalidFields(button) {
   }
 }
 
+/* Retorna o genero */
+function getGender() {
+  const nameGender = document.getElementsByName('gender');
+  let returnValue;
+  for (let index = 0; index < nameGender.length; index += 1) {
+    if (nameGender[index].checked) {
+      returnValue = nameGender[index].value;
+    }
+  }
+  return returnValue;
+}
+
+/* Exibir dados de registro */
+function displayRegister(firstName, lastName, phoneEmail, birthDate, gender) {
+ 
+  const rightContentChild = document.querySelector('.right-content').children;
+  for (let index = 0; index <= rightContentChild.length; index += 1) {
+    rightContentChild [index].remove();
+  }
+  const rightContent = document.querySelector('.right-content');
+  let addRegister = document.createElement('p')
+  addRegister.innerText = `Olá,  ${firstName} ${lastName}`;
+  addRegister.style.fontSize = '25px';
+  rightContent.appendChild(addRegister);
+  addRegister = document.createElement('p')
+  addRegister.innerText = phoneEmail;
+  addRegister.style.fontSize = '25px';
+  rightContent.appendChild(addRegister);
+  addRegister = document.createElement('p')
+  addRegister.innerText = birthDate;
+  addRegister.style.fontSize = '25px';
+  rightContent.appendChild(addRegister);
+  addRegister = document.createElement('p')
+  addRegister.innerText = gender;
+  addRegister.style.fontSize = '25px';
+  rightContent.appendChild(addRegister);
+};
+
 /* Inicio do codigo */
 const inputEmailPhone = document.querySelector('#user-email-phone');
 const buttonSender = document.querySelector('#button-login');
@@ -122,6 +160,8 @@ buttonRegister.addEventListener('click', function (event) {
   }
   if (!formValid) {
     invalidFields(buttonRegister);
+  } else {
+    displayRegister(formFirstName.value,formLastName.value, formPhoneEmail.value, formBirthDate.value, getGender());
   }
   event.preventDefault();
 });
