@@ -64,9 +64,9 @@ function addPersonalInfos() {
       rightContent.removeChild(rightContent.lastChild);
     }
   }
-  const form = document.createElement('p');
-  form.innerText = `${messageAndName} ${getInputValues(emaiLrOrPhone)} ${getInputValues(birthDate)} ${localStorage.getItem('genero')}`;
-  rightContent.appendChild(form);
+  // const form = document.createElement('p');
+  rightContent.innerText = `${messageAndName} ${getInputValues(emaiLrOrPhone)} ${getInputValues(birthDate)} ${localStorage.getItem('genero')}`;
+  // rightContent.appendChild(form);
 }
 
 function checkEmptyinputs() {
