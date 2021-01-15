@@ -92,10 +92,9 @@ function getGender() {
 
 /* Exibir dados de registro */
 function displayRegister(firstName, lastName, phoneEmail, birthDate, gender) {
- 
   const rightContentChild = document.querySelector('.right-content').children;
   for (let index = 0; index <= rightContentChild.length; index += 1) {
-    rightContentChild [index].remove();
+    rightContentChild[index].remove();
   }
   document.querySelector('.quick-easy').remove();
   const rightContent = document.querySelector('.right-content');
@@ -103,19 +102,19 @@ function displayRegister(firstName, lastName, phoneEmail, birthDate, gender) {
   addRegister.innerText = `Olá,  ${firstName} ${lastName}`;
   addRegister.style.fontSize = '25px';
   rightContent.appendChild(addRegister);
-  addRegister = document.createElement('p')
+  addRegister = document.createElement('p');
   addRegister.innerText = phoneEmail;
   addRegister.style.fontSize = '25px';
   rightContent.appendChild(addRegister);
-  addRegister = document.createElement('p')
+  addRegister = document.createElement('p');
   addRegister.innerText = birthDate;
   addRegister.style.fontSize = '25px';
   rightContent.appendChild(addRegister);
-  addRegister = document.createElement('p')
+  addRegister = document.createElement('p');
   addRegister.innerText = gender;
   addRegister.style.fontSize = '25px';
   rightContent.appendChild(addRegister);
-};
+}
 
 /* Inicio do codigo */
 const inputEmailPhone = document.querySelector('#user-email-phone');
@@ -162,7 +161,8 @@ buttonRegister.addEventListener('click', function (event) {
   if (!formValid) {
     invalidFields(buttonRegister);
   } else {
-    displayRegister(formFirstName.value,formLastName.value, formPhoneEmail.value, formBirthDate.value, getGender());
+    displayRegister(formFirstName.value,formLastName.value, formPhoneEmail.value,
+    formBirthDate.value, getGender());
   }
   event.preventDefault();
 });
