@@ -37,14 +37,6 @@ function contadorDeVaziosGenero() {
   }
 }
 
-function contadorDeVaziosTextos() {
-  if (controlador < 5) {
-    msgDeCampoVazio();
-  } else {
-    controlador = 0;
-  }
-}
-
 function verificaGeneroVazios() {
   for (let index = 0; index < radiosOpcoes.length; index += 1) {
     const elementos = radiosOpcoes[index];
@@ -64,8 +56,7 @@ function verificandoVazios() {
     const elemento = containerDireito[index];
     if (elemento.value === '') {
       contador += 1;
-      controlador += 1;
-      contadorDeVaziosTextos();
+      msgDeCampoVazio();
     } else {
       verificaGeneroVazios();
     }
