@@ -91,7 +91,7 @@ function getGender() {
 }
 
 /* Exibir dados de registro */
-function displayRegister(firstName, lastName, phoneEmail, birthDate, gender) {
+function dispReg(firstName, lastName, phoneEmail, birthDate, gender) {
   const rightContentChild = document.querySelector('.right-content').children;
   for (let index = 0; index <= rightContentChild.length; index += 1) {
     rightContentChild[index].remove();
@@ -161,7 +161,7 @@ buttonRegister.addEventListener('click', function (event) {
   if (!formValid) {
     invalidFields(buttonRegister);
   } else {
-    displayRegister(formFirstName.value, formLastName.value, formPhoneEmail.value, formBirthDate.value, getGender());
+    dispReg(formFirstName.value, formLastName.value, formPhoneEmail.value, formBirthDate.value, getGender());
   }
   event.preventDefault();
 });
