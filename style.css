@@ -21,9 +21,10 @@
   align-items: stretch;
 }
 
-.form-control{
+.form-control {
   align-self: flex-end
 }
+
 .main-content {
   display: flex;
   justify-content: center;
