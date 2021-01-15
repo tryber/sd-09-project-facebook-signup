@@ -1,10 +1,16 @@
 .ajust {
-  width: 276px;
+  width: 100%;
 }
 
 body {
   font-family: sans-serif;
   margin: 0;
+}
+
+.facebook-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -77,7 +83,7 @@ body {
 }
 
 .gender {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -93,11 +99,26 @@ body {
   color: rgb(144, 148, 156);
   font-weight: 600;
   line-height: 30px;
+  flex-basis: 100%;
 }
 
 .left-content {
   flex-basis: 800px;
   margin: 0;
+}
+
+.left-content img {
+  width: 537px;
+}
+
+.left-content p {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
 }
 
 .main-content {
@@ -122,6 +143,6 @@ body {
   display: flex;
   font-size: 12px;
   height: 53px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
 }
