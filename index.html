@@ -33,12 +33,10 @@
       <img src="imgs/networking.png" id="facebook-networking" >
     </section>
 
-    
-
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil.</h3>
-      <form onsubmit="return Validate_form()">
+      <form method="GET">
         <div class="name-fields">
           <input type="text" class="required" value="" name="firstname" placeholder="Nome">
           <input type="text" class="required" value="" name="lastname" placeholder="Sobrenome">
@@ -52,7 +50,7 @@
           <input type="text" class="required" value="" name="birthdate" placeholder="dd/mm/aaaa">
         </div>
 
-        <label for="gender" id="label-gender">Gênero</label>
+        <label for="gender" class="required" id="label-gender">Gênero</label>
         <div class="gender-input">
           <input type="radio" name="gender" id="female" value="Feminino">
           <label for="female">Feminino</label>

@@ -3,8 +3,7 @@ document.querySelector('#button-login').addEventListener('click', function () {
   alert(userEmailPhoneValue);
 });
 
-
-function Validate_form() {
+function validateForm() {
   var inputs = document.getElementsByClassName('required');
   var lengths = inputs.length;
   var valid = true;
@@ -16,3 +15,4 @@ function Validate_form() {
   return false;
   } else { return true; }
   }
+document.querySelector('#facebook-register').addEventListener('click', validateForm);
