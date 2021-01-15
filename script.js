@@ -89,7 +89,7 @@ function addPersonalInfos() {
   form.innerText = ` Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
   ${getInputValues(emaiLrOrPhone)}
   ${getInputValues(birthDate)}
-   ${messageAndName}`;
+  ${messageAndName}`;
   rightContent.appendChild(form);
 }
 
