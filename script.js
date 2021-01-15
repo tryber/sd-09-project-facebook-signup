@@ -5,6 +5,7 @@ const botaoVerifica = document.querySelector('.btn');
 const containerDireito = document.querySelectorAll('.form-control');
 const radiosOpcoes = document.querySelectorAll('.radios input');
 let contador = 0;
+let controlador = 0;
 
 function alertaBotao() {
   buttonLogin.addEventListener('click', function () {
@@ -30,13 +31,29 @@ function msgDeCampoVazio() {
 }
 
 function verificaGeneroVazios() {
-  if (radiosOpcoes[0].checked === false) {
-    if (radiosOpcoes[1].checked === false) {
-      if (radiosOpcoes[2].checked === false) {
-        contador += 1;
-        msgDeCampoVazio();
-      } 
+  for (let index = 0; index < radiosOpcoes.length; index += 1) {
+    const elementos = radiosOpcoes[index];
+    if (elementos.checked === false) {
+      contador += 1;
+      controlador += 1;
+      contadorDeVazios();
+    } else {
+      break;
     }
+  }
+  // if (radiosOpcoes[0].checked === false) {
+  //   if (radiosOpcoes[1].checked === false) {
+  //     if (radiosOpcoes[2].checked === false) {
+  //       contador += 1;
+  //       msgDeCampoVazio();
+  //     }
+  //   }
+  // }
+}
+
+function contadorDeVazios() {
+  if (controlador === 3) {
+    msgDeCampoVazio();
   }
 }
 
