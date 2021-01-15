@@ -4,7 +4,7 @@ function showAlert() {
 }
 btnAlert.addEventListener('click', showAlert);
 
-new window.JustValidate('.js-form', {
+const vali = new window.JustValidate('.js-form', {
   rules: {
     data: {
       required: true,
@@ -22,6 +22,10 @@ new window.JustValidate('.js-form', {
     data: 'Campo Inválido',
   },
 });
+const btnRegis = document.getElementById('facebook-register');
+btnRegis.addEventListener('click', function() {
+  console.log(vali);
+})
 
 
 const otherGender = document.getElementById('other');
