@@ -23,7 +23,7 @@ function write() {
   const inputs = document.querySelectorAll('.input');
 
   const array = [];
-  for (let index = 0; index < inputs.length; index +=1) {
+  for (let index = 0; index < inputs.length; index += 1) {
     array.push(inputs[index].value);
   }
 
