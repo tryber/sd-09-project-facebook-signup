@@ -30,6 +30,12 @@ function msgDeCampoVazio() {
   }
 }
 
+function contadorDeVazios() {
+  if (controlador === 3) {
+    msgDeCampoVazio();
+  }
+}
+
 function verificaGeneroVazios() {
   for (let index = 0; index < radiosOpcoes.length; index += 1) {
     const elementos = radiosOpcoes[index];
@@ -49,12 +55,6 @@ function verificaGeneroVazios() {
   //     }
   //   }
   // }
-}
-
-function contadorDeVazios() {
-  if (controlador === 3) {
-    msgDeCampoVazio();
-  }
 }
 
 function verificandoVazios() {
