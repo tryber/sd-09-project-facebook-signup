@@ -22,8 +22,8 @@ function write() {
   const inputPersonalizado2 = document.getElementById('personalizado');
   const inputs = document.querySelectorAll('.input');
 
-  let array = [];
-  for (let index = 0; index < inputs.length; index +=1){
+  const array = [];
+  for (let index = 0; index < inputs.length; index +=1) {
     array.push(inputs[index].value);
   }
 
