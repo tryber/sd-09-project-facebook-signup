@@ -7,22 +7,15 @@ function login() {
 }
 
 function validation() {
-  /* const emailPhone = document.querySelector('#user-email-phone'); */
-  /* const passWord = document.querySelector('#user-password-label'); */
   const firstName = document.querySelector('#first-name');
   const lastName = document.querySelector('#last-name');
   const phoneEmail = document.querySelector('#phone-email');
   const newPassword = document.querySelector('#pass-word');
   const birthDate = document.querySelector('#birthdate');
-  const gender = document.querySelector('input[name="gender"]:checked');
-  /* document.getElementsByName('gender'); */
+  // const gender = document.querySelector('input[name="gender"]:checked');
+  const gender = document.getElementsByName('gender');
   const button = document.querySelector('#facebook-register');
   button.addEventListener('click', function () {
-    /* if (emailPhone.value === "") {
-      alert("Campos inválidos");
-    } else if (passWord.value === "") {
-      alert("Campos inválidos");
-    } */
     if (firstName.value === '') {
       alert('Campos inválidos');
     } else if (lastName.value === '') {
@@ -33,11 +26,13 @@ function validation() {
       alert('Campos inválidos');
     } else if (birthDate.value === '') {
       alert('Campos inválidos');
-    } else if (gender.value === '') {
-      alert('Campos inválidos');
+    } else {
+      for (let index = 0; index < gender.length; index += 1) {
+        if (gender[index].checked !== true) {
+          alert('Campos inválidos');
+        }
+      }
     }
-    /* console.log(gender.value); */
-    /* alert(emailPhone.value); */
   });
 }
 
