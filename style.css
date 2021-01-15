@@ -17,12 +17,12 @@
 }
 
 .form-group {
-  display: flex;
   align-items: stretch;
+  display: flex;
 }
 
 .form-control {
-  align-self: flex-end
+  align-self: flex-end;
 }
 
 .main-content {
