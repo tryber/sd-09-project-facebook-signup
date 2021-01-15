@@ -33,21 +33,23 @@
       <img src="imgs/networking.png" id="facebook-networking" >
     </section>
 
+    
+
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil.</h3>
-      <form>
+      <form onsubmit="return Validate_form()">
         <div class="name-fields">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" class="required" value="" name="firstname" placeholder="Nome">
+          <input type="text" class="required" value="" name="lastname" placeholder="Sobrenome">
         </div>
 
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" class="required" value="" name="phone_email" placeholder="Celular ou email">
+        <input type="password" class="required" value="" name="password" placeholder="Nova senha">
 
         <div class="birthdate-field">
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" class="required" value="" name="birthdate" placeholder="dd/mm/aaaa">
         </div>
 
         <label for="gender" id="label-gender">Gênero</label>
