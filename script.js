@@ -47,15 +47,6 @@ function getGenderValue() {
   localStorage.setItem('genero', choice);
 }
 genderOption.addEventListener('click', getGenderValue);
-// function getCustomizedGender(event) {
-//   if (event.target.className === 'custom-gender') {
-//     customizedGender();
-//     event.target.value = document.querySelector('#gender-input').value;
-//   }
-// }
-
-// const customGender = document.querySelector('.customized-gender');
-// customGender.addEventListener('change', getCustomizedGender);
 
 
 function clearParagraph() {
@@ -67,13 +58,14 @@ function clearParagraph() {
 
 function addPersonalInfos() {
   const rightContent = document.querySelector('.right-content');
+  const messageAndName = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}`
   if (rightContent.hasChildNodes) {
     while (rightContent.firstChild) {
       rightContent.removeChild(rightContent.lastChild);
     }
   }
   const form = document.createElement('p');
-  form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)} ${getInputValues(emaiLrOrPhone)} ${getInputValues(birthDate)} ${localStorage.getItem('genero')}`;
+  form.innerText = `${messageAndName} ${getInputValues(emaiLrOrPhone)} ${getInputValues(birthDate)} ${localStorage.getItem('genero')}`;
   rightContent.appendChild(form);
 }
 
