@@ -74,9 +74,9 @@ function addPersonalInfos() {
   }
   const form = document.createElement('p');
   form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
-  Email ou Telefone: ${getInputValues(emaiLrOrPhone)}
-  Data de nascimento: ${getInputValues(birthDate)}
-  Gênero: ${localStorage.getItem('genero')}`;
+  ${getInputValues(emaiLrOrPhone)}
+  ${getInputValues(birthDate)}
+  ${localStorage.getItem('genero')}`;
   rightContent.appendChild(form);
 }
 
