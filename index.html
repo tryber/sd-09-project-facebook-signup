@@ -11,31 +11,27 @@
 
 <body>
     <header class="top-bar">
-        <div >
-            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
-        </div>
-        <div class="facebook-login">
-            <form action="">
-                <div class="field is-grouped">
-                    <div class="field">
-                        <label class="label form-group" id="user-email-phone-label">Email ou telefone</label>
-                        <div class="control">
-                            <input class="input is-small" id="user-email-phone" type="text">
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label form-group" id="user-password-label">Senha</label>
-                        <div class="control">
-                            <input class="input is-small" id="user-password" type="text">
-                        </div>
-                    </div>
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+        <form class="facebook-login" action="">
+            <div class="field is-grouped">
+                <div class="field">
+                    <label class="label form-group" id="user-email-phone-label">Email ou telefone</label>
                     <div class="control">
-                        <button class="button is-primary form-control" id="button-login">Entrar</button>
+                        <input class="input is-small" id="user-email-phone" type="text">
                     </div>
                 </div>
-            </form>
-        </div>
+
+                <div class="field">
+                    <label class="label form-group" id="user-password-label">Senha</label>
+                    <div class="control">
+                        <input class="input is-small" id="user-password" type="text">
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-primary form-control" id="button-login">Entrar</button>
+                </div>
+            </div>
+        </form>
     </header>
 
     <section class="main-content">
