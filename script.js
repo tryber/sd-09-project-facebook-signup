@@ -97,6 +97,7 @@ function displayRegister(firstName, lastName, phoneEmail, birthDate, gender) {
   for (let index = 0; index <= rightContentChild.length; index += 1) {
     rightContentChild [index].remove();
   }
+  document.querySelector('.quick-easy').remove();
   const rightContent = document.querySelector('.right-content');
   let addRegister = document.createElement('p')
   addRegister.innerText = `Olá,  ${firstName} ${lastName}`;
