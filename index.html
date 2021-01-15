@@ -38,21 +38,21 @@
       <h3 class="quick-easy">É rápido e fácil.</h3>
       <form method="GET">
         <div class="name-fields">
-          <input type="text" class="required" value="" name="firstname" placeholder="Nome">
-          <input type="text" class="required" value="" name="lastname" placeholder="Sobrenome">
+          <input type="text" value="" name="firstname" placeholder="Nome" required>
+          <input type="text" value="" name="lastname" placeholder="Sobrenome" required>
         </div>
 
-        <input type="text" class="required" value="" name="phone_email" placeholder="Celular ou email">
-        <input type="password" class="required" value="" name="password" placeholder="Nova senha">
+        <input type="text" value="" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" value="" name="password" placeholder="Nova senha" required>
 
         <div class="birthdate-field">
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input type="text" class="required" value="" name="birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" value="" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
 
-        <label for="gender" class="required" id="label-gender">Gênero</label>
+        <label for="gender" id="label-gender">Gênero</label>
         <div class="gender-input">
-          <input type="radio" name="gender" id="female" value="Feminino">
+          <input type="radio" name="gender" id="female" value="Feminino" required>
           <label for="female">Feminino</label>
 
           <input type="radio" name="gender" id="male" value="Masculino">
