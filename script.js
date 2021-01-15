@@ -4,7 +4,7 @@ function showAlert() {
 }
 btnAlert.addEventListener('click', showAlert);
 
-let jv = new window.JustValidate('.js-form', {
+const validate = new window.JustValidate('.js-form', {
   rules: {
     data: {
       required: true,
@@ -28,7 +28,7 @@ const otherGender = document.getElementById('other');
 function personalizedGender() {
   const father = document.getElementById('inputParent');
   if (father.childNodes[0]) {
-    console.log(false)
+    console.log('Já existe um input');
   } else {
     const child = document.createElement('input');
     father.appendChild(child);
