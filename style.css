@@ -2,8 +2,8 @@ body {
   background-color: #f7f7f7;
   color: #2d2d2d;
   font-family: sans-serif;
-  min-height: 100vh;
   margin: 0;
+  min-height: 100vh;
   padding: 0;
 }
 
@@ -43,7 +43,7 @@ header {
   align-items: baseline;
   display: flex;
   margin: 1em auto;
-  padding: 2em;;
+  padding: 2em;
   width: fit-content;
 }
 
@@ -89,7 +89,7 @@ header {
   background-color: #2ea043;
   border: none;
   border-radius: 0.3em;
-  color:  #fefefe;
+  color: #fefefe;
   font-weight: 700;
   margin: 1em 0;
   padding: 0.8em 2em;
@@ -98,16 +98,17 @@ header {
 
 .top-bar {
   background-color: #4267b2;
-  color:  #fefefe;
+  color: #fefefe;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and ( min-width : 768px ) {
+
   body {
     background-color: unset;
-    background-image: linear-gradient(to bottom,  #fefefe, #dfe3ee);
+    background-image: linear-gradient(to bottom, #fefefe, #dfe3ee);
     min-width: 768px;
   }
 
@@ -127,7 +128,7 @@ header {
     background-color: #3b5998;
     border: 1px solid #3b5998;
     border-radius: 0.2em;
-    color:  #fefefe;
+    color: #fefefe;
     font-weight: 700;
     padding: 0.5em 1em;
     transition: 0.3s;
@@ -152,6 +153,7 @@ header {
     transition: 0.3s;
     width: 150px;
   }
+
   .form-group-input:focus , .form-group-input:hover {
     border: 1px solid #8b9dc3;
     box-shadow: 0 1px 5px #fefefe;
@@ -195,7 +197,8 @@ header {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and ( min-width : 1200px ) {
+
   body {
     min-width: 1200px;
   }
