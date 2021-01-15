@@ -46,9 +46,11 @@ customGender.addEventListener('change', getCustomizedGender);
 
 
 function getGenderValue(event) {
+  let result = '';
   if (event.target.name === 'gender') {
-    event.target.value;
+    result = event.target.value;
   }
+  return result;
 }
 
 const gender = document.querySelector('.gender-options');
