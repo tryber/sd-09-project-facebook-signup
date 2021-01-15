@@ -85,12 +85,12 @@ function addPersonalInfos() {
       rightContent.removeChild(rightContent.lastChild);
     }
   }
-  const form = document.createElement('p');
-  form.innerText = ` Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
+  const newForm = document.createElement('p');
+  newForm.innerText = ` Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
   ${getInputValues(emaiLrOrPhone)}
   ${getInputValues(birthDate)}
   ${messageAndName}`;
-  rightContent.appendChild(form);
+  rightContent.appendChild(newForm);
 }
 
 function buttonSignUp(event) {
