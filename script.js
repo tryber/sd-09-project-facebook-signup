@@ -42,45 +42,42 @@ function showMessage(messageType, message) {
   mainForm.insertBefore(newMessage, mainForm.firstChild);
 }
 
-function checkRadioButtons(inputs, index) {
+function checkRadioButtons(input) {
   switch (true) {
-    case (inputs[index].id === 'female' && (inputs[index].checked === false && inputs[index + 1].checked === false && inputs[index + 2].checked === false)):
+    case (input[0].id === 'female' && (input[0].checked === false && input[1].checked === false && input[2].checked === false)):
       break;
-    case (inputs[index].id === 'male' && (inputs[index].checked === false && inputs[index - 1].checked === false && inputs[index + 1].checked === false)):
+    case (input[1].id === 'male' && (input[1].checked === false && input[0].checked === false && input[2].checked === false)):
       break;
-    case (inputs[index].id === 'other' && (inputs[index].checked === false && inputs[index - 1].checked === false && inputs[index - 2].checked === false)):
+    case (input[2].id === 'other' && (input[2].checked === false && input[1].checked === false && input[0].checked === false)):
       break;
     default:
       return 0;
   }
-  showMessage('error', `The field ${inputs[index].name} must have one option checked at least.`);
   return 1;
 }
 
-function checkInputedData(inputs, index) {
+function checkInputedData(input) {
   switch (true) {
-    case (inputs[index].id === 'first-name' && inputs[index].value === ''):
-      showMessage('error', `The field ${inputs[index].id} must be filled.`);
+    case (input.id === 'first-name' && input.value === ''):
+      input.focus();
       break;
-    case (inputs[index].id === 'last-name' && inputs[index].value === ''):
-      showMessage('error', `The field ${inputs[index].id} must be filled.`);
+    case (input.id === 'last-name' && input.value === ''):
+      input.focus();
       break;
-    case (inputs[index].id === 'user-email-phone-apply' && inputs[index].value === ''):
-      showMessage('error', `The field ${inputs[index].id} must be filled.`);
+    case (input.id === 'user-email-phone-apply' && input.value === ''):
+      input.focus();
       break;
-    case (inputs[index].id === 'password' && inputs[index].value === ''):
-      showMessage('error', `The field ${inputs[index].id} must be filled.`);
+    case (input.id === 'password' && input.value === ''):
+      input.focus();
       break;
-    case (checkRadioButtons(inputs, index)):
+    case (input.id === 'otherGender' && input.value === ''):
+      input.focus();
       break;
-    case (inputs[index].id === 'otherGender' && inputs[index].value === ''):
-      showMessage('error', `The field ${inputs[index].id} must be filled.`);
-      break;
-    case (inputs[index].id === 'birthdate' && inputs[index].value === ''):
-      showMessage('error', `The field ${inputs[index].id} must be filled.`);
+    case (input.id === 'birthdate' && input.value === ''):
+      input.focus();
       break;
     default:
-      showMessage('success', 'All ok!');
+      return 0;
   }
   return 1;
 }
@@ -93,11 +90,18 @@ function validateInputs(evt) {
   evt.preventDefault();
   const inputs = document.querySelector('.main-form');
   inputs.querySelectorAll('.main-form > input');
+  const radios = inputs.getElementsByClassName('radios');
   for (let index = 0; index < inputs.length; index += 1) {
-    if (checkInputedData(inputs, index)) {
-      break;
+    if (inputs[index].className !== 'radios' && checkInputedData(inputs[index])) {
+      showMessage('error', 'Campos inválidos');
+      return `Erro no campo ${inputs[index].id}.`;
+    } else if (inputs[index].className === 'radios' && checkRadioButtons(radios)) {
+      showMessage('error', 'Campos inválidos');
+      radios[0].focus();
+      return `Erro no campo Gênero.`;
     }
   }
+  showMessage('success', 'Tudo certo')
   showUserData(inputs);
   /** Genadi, chame a sua funcao para mostrar os dados aqui! */
 }
