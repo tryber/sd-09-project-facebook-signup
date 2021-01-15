@@ -16,17 +16,22 @@
         </div>
         <div class="facebook-login">
             <form action="">
-                <div class="field">
-                    <label class="label">Email ou telefone</label>
-                    <div class="control">
-                        <input class="input is-small" type="text">
+                <div class="field is-grouped">
+                    <div class="field">
+                        <label class="label form-group" id="user-email-phone-label">Email ou telefone</label>
+                        <div class="control">
+                            <input class="input is-small" id="user-email-phone" type="text">
+                        </div>
                     </div>
-                </div>
 
-                <div class="field">
-                    <label class="label">Senha</label>
+                    <div class="field">
+                        <label class="label form-group" id="user-password-label">Senha</label>
+                        <div class="control">
+                            <input class="input is-small" id="user-password" type="text">
+                        </div>
+                    </div>
                     <div class="control">
-                        <input class="input is-small" type="text">
+                        <button class="button is-primary form-control" id="button-login">Entrar</button>
                     </div>
                 </div>
             </form>

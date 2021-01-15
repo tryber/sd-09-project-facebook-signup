@@ -18,9 +18,12 @@
 
 .form-group {
   display: flex;
-  flex-direction: column;
+  align-items: stretch;
 }
 
+.form-control{
+  align-self: flex-end
+}
 .main-content {
   display: flex;
   justify-content: center;
