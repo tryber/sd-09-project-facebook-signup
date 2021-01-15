@@ -7,6 +7,18 @@ function falert(event) {
 }
 button.addEventListener('click', falert);
 
+const rdoPerso = document.getElementById('personalizado');
+function inputTxtPerso() {
+  const rdoPerso2 = document.querySelector('.radios');
+  const rdoPersoNew = document.createElement('input');
+  const rdoPersoNewName = 'gender-custom';
+  const rdoPersoNewPh = 'Gênero (opcional)';
+  rdoPersoNew.name = rdoPersoNewName;
+  rdoPersoNew.placeholder = rdoPersoNewPh;
+  rdoPerso2.appendChild(rdoPersoNew);
+}
+rdoPerso.addEventListener('click', inputTxtPerso);
+
 function createP() {
   const newP = document.querySelector('.form');
   const newP2 = document.createElement('p');
@@ -71,15 +83,3 @@ function validAll(event) {
   }
 }
 btnCadastre.addEventListener('click', validAll);
-
-const rdoPerso = document.getElementById('personalizado');
-function inputTxtPerso() {
-  const rdoPerso2 = document.querySelector('.radios');
-  const rdoPersoNew = document.createElement('input');
-  const rdoPersoNewName = 'gender-custom';
-  const rdoPersoNewPh = 'Gênero (opcional)';
-  rdoPersoNew.name = rdoPersoNewName;
-  rdoPersoNew.placeholder = rdoPersoNewPh;
-  rdoPerso2.appendChild(rdoPersoNew);
-}
-rdoPerso.addEventListener('click', inputTxtPerso);
