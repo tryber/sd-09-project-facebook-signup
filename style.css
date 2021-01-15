@@ -31,12 +31,10 @@
   width: 300px;
 }
 
-#mid-right-form {
-  background-color: lawngreen;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.mid-right-form {
   align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .mid-right-form-leftCollum {
