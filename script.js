@@ -19,28 +19,15 @@ function mounthIsValid(day, mounth) {
   return returnValue;
 }
 
-/* Retorna numero de dias do mês */
-function daysOfMounth(mounth, year) {
-  const arrayMounth31 = [1, 3, 5, 7, 8, 10, 12];
-  const arrayMounth30 = [4, 6, 9, 11];
-  let returnValue;
-  if (arrayMounth31.includes(mounth)) {
-    returnValue = 31;
-  } else if (arrayMounth30.includes(mounth)) {
-    returnValue = 30;
-  } else if ((year % 4) === 0) {
-    returnValue = 29;
-  } else {
-    returnValue = 28;
-  }
-  return returnValue;
-}
-
 /* Valida dia */
 function dayIsValid(day, mounth, year) {
-  const days = daysOfMounth(mounth, year);
+  let arraDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   let returnValue = true;
-  if (day < 1 || day > days) {
+  if (mounth == 2 && (year % 4) === 0) {
+    console.log('aqui');
+    arraDays[1] = 29;
+  }
+  if (day < 1 || day > arraDays[mounth - 1]) {
     returnValue = false;
   }
   return returnValue;
@@ -55,7 +42,7 @@ function dateIsValid(date) {
   let returnValue = true;
   if (isNaN(numberDay) || isNaN(numberMounth) || isNaN(numberYear)) {
     returnValue = false;
-  } else if (!yearIsValid(numberYear) || !mounthIsValid(numberMounth) || !dayIsValid(numberDay)) {
+  } else if (!yearIsValid(numberYear) || !mounthIsValid(numberMounth) || !dayIsValid(numberDay, numberMounth, numberYear)) {
     returnValue = false;
   }
   return returnValue;
