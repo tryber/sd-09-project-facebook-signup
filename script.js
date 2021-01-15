@@ -26,7 +26,6 @@ function customizedGender(event) {
 const genderOption = document.querySelector('.gender-options');
 genderOption.addEventListener('click', customizedGender);
 
-
 const firstname = document.querySelector('input[name="firstname"]');
 const lastname = document.querySelector('input[name="lastname"]');
 const emaiLrOrPhone = document.querySelector('input[name="phone_email"]');
@@ -80,14 +79,17 @@ personalInfos.addEventListener('click', removeMessage);
 
 function addPersonalInfos() {
   const rightContent = document.querySelector('.right-content');
-  const messageAndName = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}`;
+  const messageAndName = localStorage.getItem('genero');
   if (rightContent.hasChildNodes) {
     while (rightContent.firstChild) {
       rightContent.removeChild(rightContent.lastChild);
     }
   }
   const form = document.createElement('p');
-  form.innerText = `${messageAndName} ${getInputValues(emaiLrOrPhone)} ${getInputValues(birthDate)} ${localStorage.getItem('genero')}`;
+  form.innerText = ` Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
+  ${getInputValues(emaiLrOrPhone)}
+  ${getInputValues(birthDate)}
+   ${messageAndName}`;
   rightContent.appendChild(form);
 }
 
