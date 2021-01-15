@@ -24,10 +24,10 @@ const validate = new window.JustValidate('.js-form', {
 });
 const btnvalidate = document.getElementById('facebook-register');
 btnvalidate.addEventListener('click', function () {
-  if(validate.isValidationSucess){
-    alert('Os campos são obrigatórios')
+  if (validate.isValidationSucess) {
+    alert('Os campos são obrigatórios');
   }
-})
+});
 
 const otherGender = document.getElementById('other');
 function personalizedGender() {
