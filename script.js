@@ -58,7 +58,7 @@ function clearParagraph() {
 
 function addPersonalInfos() {
   const rightContent = document.querySelector('.right-content');
-  const messageAndName = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}`
+  const messageAndName = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}`;
   if (rightContent.hasChildNodes) {
     while (rightContent.firstChild) {
       rightContent.removeChild(rightContent.lastChild);
