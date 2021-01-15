@@ -22,8 +22,12 @@ const validate = new window.JustValidate('.js-form', {
     data: 'Campo Inválido',
   },
 });
-new validate();
-
+const btnvalidate = document.getElementById('facebook-register');
+btnvalidate.addEventListener('click', function () {
+  if(validate.isValidationSucess){
+    alert('Os campos são obrigatórios')
+  }
+})
 
 const otherGender = document.getElementById('other');
 function personalizedGender() {
