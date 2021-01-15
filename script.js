@@ -36,7 +36,7 @@ function write() {
     checked2 = 'Personalizado';
   }
 
-  box.innerText = (`Olá, ${array[0]} ${array[1]} ${array[2]} ${array[3]} ${checked2}`);
+  box.innerText = (`Olá, ${array[0]} ${array[1]} ${array[2]} ${array[4]} ${checked2}`);
 }
 
 function validInputText() {
