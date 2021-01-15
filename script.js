@@ -161,8 +161,7 @@ buttonRegister.addEventListener('click', function (event) {
   if (!formValid) {
     invalidFields(buttonRegister);
   } else {
-    displayRegister(formFirstName.value,formLastName.value, formPhoneEmail.value,
-    formBirthDate.value, getGender());
+    displayRegister(formFirstName.value,formLastName.value, formPhoneEmail.value, formBirthDate.value, getGender());
   }
   event.preventDefault();
 });
