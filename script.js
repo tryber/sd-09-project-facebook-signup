@@ -23,8 +23,12 @@ const vali = new window.JustValidate('.js-form', {
   },
 });
 const btnRegis = document.getElementById('facebook-register');
-btnRegis.addEventListener('click', function(){
-  return console.log(vali);
+btnRegis.addEventListener('click', function () {
+  if(vali.isValidationSucess){
+    console.log('O formulário está completo')
+  } else {
+    console.log('O formulário está incompleto')
+  }
 });
 
 
