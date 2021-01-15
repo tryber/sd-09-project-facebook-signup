@@ -4,7 +4,7 @@ function showAlert() {
 }
 btnAlert.addEventListener('click', showAlert);
 
-const vali = new window.JustValidate('.js-form', {
+const validate = new window.JustValidate('.js-form', {
   rules: {
     data: {
       required: true,
@@ -22,14 +22,7 @@ const vali = new window.JustValidate('.js-form', {
     data: 'Campo Inválido',
   },
 });
-const btnRegis = document.getElementById('facebook-register');
-btnRegis.addEventListener('click', function () {
-  if(vali.isValidationSucess){
-    console.log('O formulário está completo')
-  } else {
-    console.log('O formulário está incompleto')
-  }
-});
+new validate();
 
 
 const otherGender = document.getElementById('other');
