@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(white, #d3d8e8);
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.facebook-login {
+  color: aliceblue;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  text-align: center;
+  width: 800px;
+}
+
+.right-content {
+  padding: 3rem 0;
+  width: 300px;
+}
