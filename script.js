@@ -27,7 +27,7 @@ function addTextBoxCustom() {
 addTextBoxCustom();
 
 const optFemale = document.querySelector('#Feminino');
-const optMale = document.querySelector ('#Masculino');
+const optMale = document.querySelector('#Masculino');
 
 function removeTextBoxCustom() {
   optFemale.addEventListener('click', function () {
