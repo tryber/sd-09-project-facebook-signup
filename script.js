@@ -38,7 +38,7 @@ function getInputValues(inpuType) {
 
 function getGenderValue() {
   const gender = document.querySelectorAll('input[name="gender"]');
-  let choice = [];
+  const choice = [];
   for (let index = 0; index < gender.length; index += 1) {
     if (gender[index].checked) {
       choice.push(gender[index].value);
