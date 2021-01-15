@@ -16,6 +16,7 @@ function customizedGender(event) {
     creatInput.setAttribute('name', 'gender-custom');
     creatInput.setAttribute('placeholder', 'Gênero (opcional)');
     creatInput.setAttribute('class', 'info');
+    creatInput.setAttribute('id', 'gender-input')
     genderInput.appendChild(creatInput);
   }
 }
@@ -33,14 +34,33 @@ function getInputValues(inpuType) {
   return inpuType.value;
 }
 
-function getGenderValue(event) {
-  if (event.target.name === 'gender') {
-    alert(event.target.value);
+function getCustomizedGender(event) {
+  if (event.target.className === 'custom-gender') {
+    customizedGender();
+    event.target.value = document.querySelector('#gender-input').value;
   }
 }
+
+const customGender = document.querySelector('.customized-gender');
+customGender.addEventListener('change', getCustomizedGender);
+
+
+function getGenderValue(event) {
+  if (event.target.name === 'gender') {
+    console.log(event.target.value);
+  }
+}
+
 const gender = document.querySelector('.gender-options');
 gender.addEventListener('click', getGenderValue);
 
+
+function clearParagraph() {
+  const form = document.querySelector('.message');
+  while (form.firstChild) {
+    form.removeChild(form.lastChild);
+  }
+}
 
 function addPersonalInfos() {
   const rightContent = document.querySelector('.right-content');
@@ -52,15 +72,8 @@ function addPersonalInfos() {
     form.innerText = `Olá, ${getInputValues(firstname)} ${getInputValues(lastname)}
     Email ou Telefone: ${getInputValues(emaiLrOrPhone)}
     Data de nascimento: ${getInputValues(birthDate)}
-    Gênero: ${getGenderValue(event)}`;
+    Gênero: ${getGenderValue()}`;
     rightContent.appendChild(form);
-  }
-}
-
-function clearParagraph() {
-  const form = document.querySelector('.message');
-  while (form.firstChild) {
-    form.removeChild(form.lastChild);
   }
 }
 
