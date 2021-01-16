@@ -71,7 +71,7 @@ function findGender() {
 
 function replaceRightContent() {
   rightContent.classList.add('isVisible');
-  let newContent = document.createElement('div');
+  const newContent = document.createElement('div');
   newContent.innerText = `Olá, ${userFirstName.value} ${userLastName.value}
   ${userPhoneEmail.value}
   ${userBirthdate.value}
