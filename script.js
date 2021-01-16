@@ -15,8 +15,8 @@ function verificaInputs() {
   btncadastro.addEventListener('click', function () {
     for (let i = 0; i < inputs.length; i += 1) {
       if (inputs[i].value === '') {
-      const errorMsg = document.createElement('p');
-      errorMsg.innerText = 'Campos inválidos';
+        const errorMsg = document.createElement('p');
+        errorMsg.innerText = 'Campos inválidos';
       }
     }
   });
