@@ -1,13 +1,17 @@
 function login() {
   const btn = document.querySelector('#button-login');
-  btn.addEventListener('click', function () {
+  btn.addEventListener('click', function (event) {
+    event.preventDefault();
     const msg = document.querySelector('#user-email-phone').value;
-    alert(msg);
+    if (msg !== '') {
+      alert(msg);
+    }
   });
 }
 
 function invalidFields() {
   const span = document.getElementById('invalid-fields');
+  span.className = 'invalid-fields';
   span.innerText = 'Campos inválidos';
 }
 
@@ -25,13 +29,17 @@ function validationRadio() {
 }
 
 function validation() {
-  const firstName = document.querySelector('#first-name');
-  const lastName = document.querySelector('#last-name');
-  const phoneEmail = document.querySelector('#phone-email');
-  const newPassword = document.querySelector('#pass-word');
-  const birthDate = document.querySelector('#birthdate');
   const button = document.querySelector('#facebook-register');
-  button.addEventListener('click', function () {
+  button.addEventListener('click', function (event) {
+    event.preventDefault();
+    const span = document.getElementById('invalid-fields');
+    const firstName = document.querySelector('#first-name');
+    const lastName = document.querySelector('#last-name');
+    const phoneEmail = document.querySelector('#phone-email');
+    const newPassword = document.querySelector('#pass-word');
+    const birthDate = document.querySelector('#birthdate');
+    span.className = '';
+    span.innerText = '';
     if (firstName.value === '') {
       invalidFields();
     } else if (lastName.value === '') {
