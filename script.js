@@ -2,7 +2,6 @@ const buttonLogin = document.querySelector('#button-login');
 const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
 const botaoVerifica = document.querySelector('.btn');
-const radiosOpcoes = document.querySelectorAll('.radios input');
 let contador = 0;
 
 function alertaBotao() {
@@ -29,22 +28,38 @@ function msgDeCampoVazio() {
   }
 }
 
-function validaNomeESobrenome() {
-  const nome = formulario.firstname;
-  const sobrenome = formulario.lastname;
-  if (nome.value === '') {
+function verificaGenero() {
+  const radios = document.querySelectorAll('.radios input');
+  if (!radios[0].checked &&
+    !radios[1].checked &&
+    !radios[2].checked) {
     contador += 1;
     msgDeCampoVazio();
-    nome.focus();
     return;
   }
-  if (sobrenome.value === '') {
+}
+
+function validaData() {
+  const data = formulario.birthdate;
+  if (data.value === '') {
     contador += 1;
     msgDeCampoVazio();
-    sobrenome.focus();
+    data.focus();
     return;
   }
-  validaEmail();
+  verificaGenero();
+  return;
+}
+
+function validaSenha() {
+  const senha = formulario.password;
+  if (senha.value === '') {
+    contador += 1;
+    msgDeCampoVazio();
+    senha.focus();
+    return;
+  }
+  validaData();
   return;
 }
 
@@ -63,38 +78,22 @@ function validaEmail() {
   return;
 }
 
-function validaSenha() {
-  const senha = formulario.password;
-  if (senha.value === '') {
+function validaNomeESobrenome() {
+  const nome = document.querySelector('.firstname');
+  const sobrenome = document.querySelector('.lastname');
+  if (nome.value === '') {
     contador += 1;
     msgDeCampoVazio();
-    senha.focus();
+    nome.focus();
     return;
   }
-  validaData();
+  if (sobrenome.value === '') {
+    contador += 1;
+    msgDeCampoVazio();
+    sobrenome.focus();
+    return;
+  }
+  validaEmail();
   return;
-}
-
-function validaData() {
-  const data = formulario.birthdate;
-  if (data.value === '') {
-    contador += 1;
-    msgDeCampoVazio();
-    data.focus();
-    return;
-  }
-  verificaGenero();
-  return;
-}
-
-function verificaGenero() {
-  const radios = document.querySelectorAll('.radios input');
-  if (!radios[0].checked &&
-    !radios[1].checked &&
-    !radios[2].checked) {
-    contador += 1;
-    msgDeCampoVazio();
-    return;
-  }
 }
 botaoVerifica.addEventListener('click', validaNomeESobrenome);
