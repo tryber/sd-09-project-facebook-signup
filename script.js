@@ -9,7 +9,7 @@ function addAlert() {
 
 addAlert();
 
-const listRegister = document.querySelector('.register');
+const register = document.querySelector('.register');
 const btnRegister = document.querySelector('#facebook-register');
 const requiredCamps = document.getElementsByClassName('confirmation');
 
@@ -29,14 +29,14 @@ const optCustom = document.querySelector('#Personalizado');
 
 function addTextBoxCustom() {
   optCustom.addEventListener('click', function () {
-    if (listRegister.lastElementChild.previousElementSibling.previousElementSibling.type !== 'text') {
+    if (register.lastElementChild.previouselementSibling.previousElementSibling.type !== 'text') {
       const textBoxCustom = document.createElement('input');
       textBoxCustom.type = 'text';
       textBoxCustom.name = 'gender-custom';
       textBoxCustom.required = true;
       textBoxCustom.className = 'confirmation';
       textBoxCustom.placeholder = 'Gênero (opcional)';
-      listRegister.insertBefore(textBoxCustom, listRegister.lastElementChild.previousElementSibling);
+      register.insertBefore(textBoxCustom, register.lastElementChild.previouselementSibling);
     }
   });
 }
@@ -48,13 +48,13 @@ const optMale = document.querySelector('#Masculino');
 
 function removeTextBoxCustom() {
   optFemale.addEventListener('click', function () {
-    if (listRegister.lastElementChild.previousElementSibling.previousElementSibling.type === 'text') {
-      listRegister.lastElementChild.previousElementSibling.previousElementSibling.remove();
+    if (register.lastElementChild.previouselementSibling.previousElementSibling.type === 'text') {
+      register.lastElementChild.previouselementSibling.previousElementSibling.remove();
     }
   });
   optMale.addEventListener('click', function () {
-    if (listRegister.lastElementChild.previousElementSibling.previousElementSibling.type === 'text') {
-      listRegister.lastElementChild.previousElementSibling.previousElementSibling.remove();
+    if (register.lastElementChild.previouselementSibling.previousElementSibling.type === 'text') {
+      register.lastElementChild.previouselementSibling.previousElementSibling.remove();
     }
   });
 }
