@@ -11,10 +11,10 @@ const submitButton = document.querySelector('#facebook-register');
 const invalidMessage = document.querySelector('.invalid-message');
 const rightContent = document.querySelector('.right-content');
 const mainContent = document.querySelector('.main-content');
-let userFirstName = document.querySelector('.fullname input:nth-child(1)');
-let userLastName = document.querySelector('.fullname input:nth-child(2)');
-let userPhoneEmail = document.querySelector('.personal-data input:nth-child(1)');
-let userBirthdate = document.querySelector('.personal-data input:nth-child(3)');
+const userFirstName = document.querySelector('.fullname input:nth-child(1)');
+const userLastName = document.querySelector('.fullname input:nth-child(2)');
+const userPhoneEmail = document.querySelector('.personal-data input:nth-child(1)');
+const userBirthdate = document.querySelector('.personal-data input:nth-child(3)');
 
 
 buttonLogin.addEventListener('click', function () {
@@ -57,16 +57,6 @@ function checkPersonalData() {
   }
   return true;
 }
-function checkInputs(event) {
-  if (checkUserName() && checkPersonalData() && checkGender()) {
-    event.preventDefault();
-    replaceRightContent();
-  } else {
-    event.preventDefault();
-    informInvalidField();
-  }
-}
-
 function findGender() {
   const female = document.querySelector('#female');
   const male = document.querySelector('#male');
@@ -84,9 +74,17 @@ function replaceRightContent() {
   let newContent = document.createElement('div');
   newContent.innerText = `Olá, ${userFirstName.value} ${userLastName.value}
   ${userPhoneEmail.value}
-  ${userBirthdate.value}  
+  ${userBirthdate.value}
   ${findGender()}`;
   mainContent.appendChild(newContent);
 }
-
+function checkInputs(event) {
+  if (checkUserName() && checkPersonalData() && checkGender()) {
+    event.preventDefault();
+    replaceRightContent();
+  } else {
+    event.preventDefault();
+    informInvalidField();
+  }
+}
 submitButton.addEventListener('click', checkInputs);
