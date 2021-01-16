@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -13,18 +17,34 @@
 
 .facebook-login {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: space-around;
+  
 }
 
 .form-group {
   color: white;
-  display: flex;
-  flex-direction: column;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.form-control {
-  align-self: flex-end;
+.form-group span {
+  margin-top: 2px;
+  color: lightgray;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+section.form-control {
+  align-self: center;
+}
+
+.form-control button {
+  background-color: rgb(66, 103, 178);
+  font-size: 12px;
+  padding: 2px;
+  color: white;
+  font-weight: 900;
+  border: 1px solid gray;
 }
 
 .form-group input {
