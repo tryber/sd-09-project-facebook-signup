@@ -42,6 +42,7 @@ function verificaGenero() {
     msgDeCampoVazio();
     return false;
   }
+  return true;
 }
 
 function validaData() {
