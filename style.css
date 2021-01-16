@@ -135,7 +135,7 @@ footer ul li {
 }
 
 .links-footer li {
-  display: inline;
+  display: inline-block;
   /* margin: 3px; */
   padding: 5px;
 }
