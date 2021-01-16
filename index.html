@@ -33,16 +33,19 @@
       <p class='quick-easy'>É rápido e fácil.</p>
       <form class='register' action='' method='GET'>
         <div class='side-by-side-containers'>
-          <input name='firstname' type='text' placeholder='Nome'>
-          <input name='lastname' type='text' placeholder='Sobrenome'>
+          <input name='firstname' type='text' placeholder='Nome' class='confirmation'>
+          <input name='lastname' type='text' placeholder='Sobrenome' class='confirmation'>
         </div>
-        <input name='phone_email' type='text' placeholder='Celular ou email'>
-        <input name='password' type='password' placeholder='Nova senha'>
+
+        <input name='phone_email' type='text' placeholder='Celular ou email' class='confirmation'>
+        <input name='password' type='password' placeholder='Nova senha' class='confirmation'>
+
         <label for='birthdate' id='label-birthdate'>Data de nascimento</label>
-        <input name='birthdate' id='birthdate' type='text' placeholder='dd/mm/aaaa'>
+        <input name='birthdate' id='birthdate' type='text' placeholder='dd/mm/aaaa' class='confirmation'>
+
         <label id='label-gender'>Gênero</label>
         <div class='side-by-side-containers'>
-            <input type='radio' id='Feminino' name='gender' value='Feminino' checked>
+            <input type='radio' id='Feminino' name='gender' value='Feminino'>
             <label for='Feminino'>Feminino</label>
             <input type='radio' id='Masculino' name='gender' value='Masculino'>
             <label for='Masculino'>Masculino</label>
