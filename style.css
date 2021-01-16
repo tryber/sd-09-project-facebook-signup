@@ -36,7 +36,7 @@ body {
   width: 300px;
 }
 
-.right-content input[type='text'], .right-content input[type='password'] {
+.right-content input[ type = 'text' ] , .right-content input[ type = 'password' ] {
   width: calc(100% - 8px);
 }
 
@@ -44,12 +44,10 @@ body {
   display: flex;
 }
 
-.name-input-roll input{
+.name-input-roll input {
   width: 50%;
 }
 
-
-
-input[type='radio'] {
+input[ type = 'radio' ] {
   margin: 0;
 }
