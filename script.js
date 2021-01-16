@@ -10,6 +10,12 @@ const genderRadioButtons = document.querySelectorAll('.radio');
 const submitButton = document.querySelector('#facebook-register');
 const invalidMessage = document.querySelector('.invalid-message');
 const rightContent = document.querySelector('.right-content');
+const mainContent = document.querySelector('.main-content');
+let userFirstName = document.querySelector('.fullname input:nth-child(1)');
+let userLastName = document.querySelector('.fullname input:nth-child(2)');
+let userPhoneEmail = document.querySelector('.personal-data input:nth-child(1)');
+let userBirthdate = document.querySelector('.personal-data input:nth-child(3)');
+
 
 buttonLogin.addEventListener('click', function () {
   alert(emailOrPhone.value);
@@ -28,12 +34,9 @@ customGenderRadio.addEventListener('click', function () {
 });
 
 function checkGender() {
-  if (genderRadioButtons[2].checked && document.getElementById('custom-gender-input').value.length !== '') {
-    return true;
-  }
-  if (genderRadioButtons[0].checked || genderRadioButtons[1].checked) {
-    return true;
-  }
+  if (genderRadioButtons[2].checked && document.getElementById('custom-gender-input').value.length !== '') return true;
+  if (genderRadioButtons[0].checked || genderRadioButtons[1].checked) return true;
+
   return false;
 }
 
@@ -55,8 +58,10 @@ function checkPersonalData() {
   return true;
 }
 function checkInputs(event) {
-  if (checkUserName() && checkPersonalData() && checkGender()) return true;
-  else {
+  if (checkUserName() && checkPersonalData() && checkGender()) {
+    event.preventDefault();
+    replaceRightContent();
+  } else {
     event.preventDefault();
     informInvalidField();
   }
@@ -74,17 +79,14 @@ function findGender() {
   return gender;
 }
 
-function replaceRightContent(event) {
-  const userFirstName = document.querySelector('.fullname input:nth-child(1)').value;
-  const userLastName = document.querySelector('.fullname input:nth-child(2)').value;
-  const userPhone = document.querySelector('.personal-data input:nth-child(1)').value;
-  const userBirthdate = document.querySelector('.personal-data input:nth-child(3)').value;
-
-  if(checkInputs) {
-    event.preventDefault();
-    rightContent.classList.add('isVisible');
-
-  }
+function replaceRightContent() {
+  rightContent.classList.add('isVisible');
+  let newContent = document.createElement('div');
+  newContent.innerText = `Olá, ${userFirstName.value} ${userLastName.value}
+  ${userPhoneEmail.value}
+  ${userBirthdate.value}  
+  ${findGender()}`;
+  mainContent.appendChild(newContent);
 }
 
 submitButton.addEventListener('click', checkInputs);
