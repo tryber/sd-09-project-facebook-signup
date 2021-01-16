@@ -20,3 +20,8 @@ femaleRadio.addEventListener('click', function () {
 customGenderRadio.addEventListener('click', function () {
   customGenderInput.classList.remove('isVisible');
 });
+
+function validateForm() {
+  const rightContentInputs = document.querySelector('.right-content').querySelectorAll('input');
+  for (let index = 0; index < rightContentInputs.length)
+}
