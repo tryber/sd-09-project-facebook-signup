@@ -40,7 +40,7 @@ function verificaGenero() {
     !radios[2].checked) {
     contador += 1;
     msgDeCampoVazio();
-    return;
+    return false;
   }
 }
 
@@ -49,10 +49,10 @@ function validaData() {
     contador += 1;
     msgDeCampoVazio();
     data.focus();
-    return;
+    return false;
   }
   verificaGenero();
-  return;
+  return true;
 }
 
 function validaSenha() {
@@ -60,10 +60,10 @@ function validaSenha() {
     contador += 1;
     msgDeCampoVazio();
     senha.focus();
-    return;
+    return false;
   }
   validaData();
-  return;
+  return true;
 }
 
 function validaEmail() {
@@ -74,10 +74,10 @@ function validaEmail() {
     email.focus();
     email.placeholder = 'Email incorreto!';
     email.value = '';
-    return;
+    return false;
   }
   validaSenha();
-  return;
+  return true;
 }
 
 function validaNomeESobrenome() {
@@ -85,15 +85,15 @@ function validaNomeESobrenome() {
     contador += 1;
     msgDeCampoVazio();
     nome.focus();
-    return;
+    return false;
   }
   if (sobrenome.value === '') {
     contador += 1;
     msgDeCampoVazio();
     sobrenome.focus();
-    return;
+    return false;
   }
   validaEmail();
-  return;
+  return true;
 }
 botaoVerifica.addEventListener('click', validaNomeESobrenome);
