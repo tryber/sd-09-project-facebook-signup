@@ -8,7 +8,6 @@ const senha = document.querySelector('.password');
 const email = document.querySelector('.phone_email');
 const nome = document.querySelector('.firstname');
 const sobrenome = document.querySelector('.lastname');
-let contador = 0;
 
 function alertaBotao() {
   buttonLogin.addEventListener('click', function () {
@@ -27,72 +26,97 @@ function botaoAbreGenero(event) {
 }
 roudePersonl.addEventListener('click', botaoAbreGenero);
 
-function msgDeCampoVazio() {
-  if (contador === 1) {
-    contador -= 1;
-    alert('Campos inválidos');
-  }
-}
-
 function verificaGenero() {
+  const msgAniversario = document.querySelector('.msg-genero');
   if (!radios[0].checked &&
     !radios[1].checked &&
     !radios[2].checked) {
     contador += 1;
-    msgDeCampoVazio();
+    msgAniversario.innerText = 'Campos inválidos';
+    msgAniversario.style.display = 'block';
     return false;
   }
   return true;
 }
 
 function validaData() {
+  const msgAniversario = document.querySelector('.msg-aniversario');
   if (data.value === '') {
     contador += 1;
-    msgDeCampoVazio();
+    msgAniversario.innerText = 'Campos inválidos';
+    msgAniversario.style.display = 'block';
     data.focus();
     return false;
+  }
+  if (data.value !== '') {
+    msgAniversario.innerText = '';
+    msgAniversario.style.display = 'none';
   }
   verificaGenero();
   return true;
 }
 
 function validaSenha() {
+  const msgSenha = document.querySelector('.msg-senha');
   if (senha.value === '') {
     contador += 1;
-    msgDeCampoVazio();
+    msgSenha.innerText = 'Campos inválidos';
+    msgSenha.style.display = 'block';
     senha.focus();
     return false;
+  }
+  if (senha.value !== '') {
+    msgSenha.innerText = '';
+    msgSenha.style.display = 'none';
   }
   validaData();
   return true;
 }
 
 function validaEmail() {
+  const msgEmail = document.querySelector('.msg-email');
   const filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   if (!filtro.test(email.value)) {
     contador += 1;
-    msgDeCampoVazio();
-    email.focus();
     email.placeholder = 'Email incorreto!';
     email.value = '';
+    email.focus();
+    msgEmail.innerText = 'Campos inválidos';
+    msgEmail.style.display = 'block';
     return false;
+  }
+  if (filtro.test(email.value)) {
+    msgEmail.innerText = '';
+    msgEmail.style.display = 'none';
   }
   validaSenha();
   return true;
 }
 
 function validaNomeESobrenome() {
+  const msgNome = document.querySelector('.msg-nome');
+  const msgSobrenome = document.querySelector('.msg-sobrenome');
   if (nome.value === '') {
     contador += 1;
-    msgDeCampoVazio();
+    msgNome.innerText = 'Campos inválidos';
+    msgNome.style.display = 'block';
     nome.focus();
     return false;
+  } 
+  if (nome.value !== '') {
+    msgNome.innerText = '';
+    msgNome.style.display = 'none';
   }
   if (sobrenome.value === '') {
     contador += 1;
-    msgDeCampoVazio();
+    msgSobrenome.innerText = 'Campos inválidos';
+    msgSobrenome.style.display = 'block';
     sobrenome.focus();
     return false;
+  } 
+  if (sobrenome.value !== '') {
+    msgSobrenome.innerText = '';
+    msgSobrenome.style.display = 'none';
   }
   validaEmail();
   return true;
