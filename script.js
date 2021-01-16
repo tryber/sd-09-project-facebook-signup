@@ -35,7 +35,7 @@ function genderCustom() {
   const newElement = document.createElement('input');
   newElement.type = 'text';
   newElement.name = 'gender-custom';
-  newElement.placeholder = "Gênero (opcional)";
+  newElement.placeholder = 'Gênero (opcional)';
   newElement.className = 'input ajust';
   if (option === 'Personalizado') {
     element.appendChild(newBr);
@@ -78,6 +78,6 @@ function validation() {
 
 window.onload = function () {
   login();
-  clickRadio()
+  clickRadio();
   validation();
 };
