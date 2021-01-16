@@ -2,10 +2,8 @@ const buttonLogin = document.querySelector('#button-login');
 const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
 const botaoVerifica = document.querySelector('.btn');
-const containerDireito = document.querySelectorAll('input.form-control');
 const radiosOpcoes = document.querySelectorAll('.radios input');
 let contador = 0;
-let controlador = 0;
 
 function alertaBotao() {
   buttonLogin.addEventListener('click', function () {
@@ -31,35 +29,72 @@ function msgDeCampoVazio() {
   }
 }
 
-function contadorDeVaziosGenero() {
-  if (controlador === 1) {
+function validaNomeESobrenome() {
+  const nome = formulario.firstname;
+  const sobrenome = formulario.lastname;
+  if (nome.value === '') {
+    contador += 1;
     msgDeCampoVazio();
+    nome.focus();
+    return;
   }
+  if (sobrenome.value === '') {
+    contador += 1;
+    msgDeCampoVazio();
+    sobrenome.focus();
+    return;
+  }
+  validaEmail();
+  return;
 }
 
-function verificaGeneroVazios() {
-  for (let index = 0; index < radiosOpcoes.length; index += 1) {
-    const elementos = radiosOpcoes[index];
-    if (elementos.checked === false) {
-      contador += 1;
-      controlador += 1;
-      contadorDeVaziosGenero();
-    } else {
-      controlador = 0;
-      break;
-    }
+function validaEmail() {
+  const email = formulario.phone_email;
+  const filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  if (!filtro.test(email.value)) {
+    contador += 1;
+    msgDeCampoVazio();
+    email.focus();
+    email.placeholder = 'Email incorreto!';
+    email.value = '';
+    return;
   }
+  validaSenha();
+  return;
 }
 
-function verificandoVazios() {
-  for (let index = 0; index < containerDireito.length; index += 1) {
-    const elemento = containerDireito[index];
-    if (elemento.value === '') {
-      contador += 1;
-      msgDeCampoVazio();
-    } else {
-      verificaGeneroVazios();
-    }
+function validaSenha() {
+  const senha = formulario.password;
+  if (senha.value === '') {
+    contador += 1;
+    msgDeCampoVazio();
+    senha.focus();
+    return;
+  }
+  validaData();
+  return;
+}
+
+function validaData() {
+  const data = formulario.birthdate;
+  if (data.value === '') {
+    contador += 1;
+    msgDeCampoVazio();
+    data.focus();
+    return;
+  }
+  verificaGenero();
+  return;
+}
+
+function verificaGenero() {
+  const radios = document.querySelectorAll('.radios input');
+  if (!radios[0].checked &&
+    !radios[1].checked &&
+    !radios[2].checked) {
+    contador += 1;
+    msgDeCampoVazio();
+    return;
   }
 }
-botaoVerifica.addEventListener('click', verificandoVazios);
+botaoVerifica.addEventListener('click', validaNomeESobrenome);
