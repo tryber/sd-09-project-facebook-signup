@@ -36,6 +36,20 @@ body {
   width: 300px;
 }
 
-.small {
-  width: 140px;
+.right-content input[type='text'], .right-content input[type='password'] {
+  width: calc(100% - 8px);
+}
+
+.name-input-roll {
+  display: flex;
+}
+
+.name-input-roll input{
+  width: 50%;
+}
+
+
+
+input[type='radio'] {
+  margin: 0;
 }
