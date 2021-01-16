@@ -28,6 +28,26 @@ function validationRadio() {
   }
 }
 
+function genderCustom() {
+  const option = document.querySelector('input[name="gender"]:checked').value;
+  const element = document.querySelector('#gender-custom');
+  const newBr = document.createElement('br');
+  const newElement = document.createElement('input');
+  newElement.type = 'text';
+  newElement.name = 'gender-custom';
+  newElement.placeholder = "Gênero (opcional)";
+  newElement.className = 'input ajust';
+  if (option === 'Personalizado') {
+    element.appendChild(newBr);
+    element.appendChild(newElement);
+  }
+}
+
+function clickRadio() {
+  const optionCustom = document.querySelector('#custom');
+  optionCustom.addEventListener('click', genderCustom);
+}
+
 function validation() {
   const button = document.querySelector('#facebook-register');
   button.addEventListener('click', function (event) {
@@ -58,5 +78,6 @@ function validation() {
 
 window.onload = function () {
   login();
+  clickRadio()
   validation();
 };
