@@ -11,8 +11,8 @@ clicar();
 
 function verificaInputs() {
   const inputs = document.querySelectorAll('input');
-    for (let i = 0; i < inputs.length; i += 1) {
-      if(inputs[i] === '') {
+  for (let i = 0; i < inputs.length; i += 1) {
+      if (inputs[i] === '') {
         const errorMsg = document.createElement('p');
         errorMsg.innerText = 'Campos inválidos';
       }
