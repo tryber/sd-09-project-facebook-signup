@@ -10,13 +10,16 @@ function clicar() {
 clicar();
 
 function verificaInputs() {
+  const btncadastro = document.getElementById('facebook-register');
   const inputs = document.querySelectorAll('input');
-  for (let i = 0; i < inputs.length; i += 1) {
-      if (inputs[i] === '') {
-        const errorMsg = document.createElement('p');
-        errorMsg.innerText = 'Campos inválidos';
+  btncadastro.addEventListener('click', function() {
+    for (let i = 0; i < inputs.length; i += 1) {
+        if (inputs[i].value === '') {
+          const errorMsg = document.createElement('p');
+          errorMsg.innerText = 'Campos inválidos';
+        }
       }
-    }
+  });
 }
 
 verificaInputs();
