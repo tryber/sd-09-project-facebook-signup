@@ -23,6 +23,8 @@ body {
 
 .form-group {
   color: white;
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   font-weight: 700;
 }
@@ -34,8 +36,8 @@ body {
   margin-top: 2px;
 }
 
-section .form-control {
-  align-self: center;
+.form-control {
+  align-self: flex-end;
 }
 
 .form-control button {
