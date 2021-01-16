@@ -47,7 +47,7 @@ div input {
 } */
 
 .main-content {
-  background-image: linear-gradient(rgb( 252 , 251 , 250 ), rgb( 203 , 210 , 228 ));
+  background-image: linear-gradient(rgb(252, 251, 250), rgb(203, 210, 228));
   display: flex;
   justify-content: center;
   padding: 40px 20px;
