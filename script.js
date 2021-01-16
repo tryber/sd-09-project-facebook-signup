@@ -9,7 +9,7 @@ function addAlert() {
 
 addAlert();
 
-const register = document.querySelector('.register');
+const listRegister = document.querySelector('.register');
 const btnRegister = document.querySelector('#facebook-register');
 const requiredCamps = document.getElementsByClassName('confirmation');
 
@@ -26,17 +26,18 @@ function checkCamps() {
 checkCamps();
 
 const optCustom = document.querySelector('#Personalizado');
+const secToLast = listRegister.lastElementChild.previousElementSibling;
 
 function addTextBoxCustom() {
   optCustom.addEventListener('click', function () {
-    if (register.lastElementChild.previouselementSibling.previousElementSibling.type !== 'text') {
+    if (secToLast.previousElementSibling.type !== 'text') {
       const textBoxCustom = document.createElement('input');
       textBoxCustom.type = 'text';
       textBoxCustom.name = 'gender-custom';
       textBoxCustom.required = true;
       textBoxCustom.className = 'confirmation';
       textBoxCustom.placeholder = 'Gênero (opcional)';
-      register.insertBefore(textBoxCustom, register.lastElementChild.previouselementSibling);
+      listRegister.insertBefore(textBoxCustom, secToLast);
     }
   });
 }
@@ -48,13 +49,13 @@ const optMale = document.querySelector('#Masculino');
 
 function removeTextBoxCustom() {
   optFemale.addEventListener('click', function () {
-    if (register.lastElementChild.previouselementSibling.previousElementSibling.type === 'text') {
-      register.lastElementChild.previouselementSibling.previousElementSibling.remove();
+    if (secToLast.previousElementSibling.type === 'text') {
+      secToLast.previousElementSibling.remove();
     }
   });
   optMale.addEventListener('click', function () {
-    if (register.lastElementChild.previouselementSibling.previousElementSibling.type === 'text') {
-      register.lastElementChild.previouselementSibling.previousElementSibling.remove();
+    if (secToLast.previousElementSibling.type === 'text') {
+      secToLast.previousElementSibling.remove();
     }
   });
 }
