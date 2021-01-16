@@ -92,7 +92,7 @@ function showUserData(inputs) {
   rightContent.innerText = '';
   nameElement.innerText = `Olá, ${inputs[0].value} ${inputs[1].value}`;
   setDataIntoDiv(nameElement, rightContent);
-  for (let index = 2; index < inputs.length - 1; index += 1) {
+  for (let index = 2; index < inputs.length; index += 1) {
     const elementCreator = document.createElement('p');
     elementCreator.innerText = `${inputs[index].name}: ${inputs[index].value} `;
     if (inputs[index].name !== 'gender' && inputs[index].name !== 'password') {
