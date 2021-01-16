@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Facebook Project</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Do item 1 ao 7 -->
@@ -109,13 +111,22 @@
                   />Personalizado
                 </div>
               </div>
-              <label for="" id="label-birthdate">Data de nascimento</label>
-              <input
-                type="date"
-                placeholder="dd/mm/aaaa"
-                name="birthdate"
-                id="birthdate"
-              />
+              <div class="form-group">
+                <label for="" id="label-birthdate">Data de nascimento</label>
+                <div class="input-group date" data-date-format="dd/mm/yyyy">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="dd/mm/aaaa"
+                    value="{{ date('d/m/Y') }}"
+                    name="birthdate"
+                    id="birthdate"
+                  />
+                  <div class="input-group-addon" >
+                    <span class="glyphicon glyphicon-th"></span>
+                  </div>
+                </div>
+              </div>
               <button type="submit" id="facebook-register">Cadastre-se</button>
             </form>
           </div>
@@ -124,4 +135,10 @@
     </div>
   </body>
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+  <script>
+    $('.input-group.date').datepicker({format: "dd/mm/yyyy"});
+  </script>
 </html>
