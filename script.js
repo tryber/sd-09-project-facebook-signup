@@ -14,7 +14,7 @@ const mainContent = document.querySelector('.main-content');
 const userFirstName = document.querySelector('.fullname input:nth-child(1)');
 const userLastName = document.querySelector('.fullname input:nth-child(2)');
 const userPhoneEmail = document.querySelector('.personal-data input:nth-child(1)');
-const userBirthdate = document.querySelector('.personal-data input:nth-child(3)');
+const userBirthdate = document.querySelector('.personal-data input:nth-child(4)');
 
 
 buttonLogin.addEventListener('click', function () {
