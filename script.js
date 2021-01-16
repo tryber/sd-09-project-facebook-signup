@@ -20,4 +20,3 @@ clicar();
   };
 } */
 
-verificaInputs();
