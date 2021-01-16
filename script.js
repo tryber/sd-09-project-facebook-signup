@@ -120,4 +120,4 @@ function validaNome() {
   validaSobrenome();
   return true;
 }
-botaoVerifica.addEventListener('click', validaNomeESobrenome);
+botaoVerifica.addEventListener('click', validaNome);
