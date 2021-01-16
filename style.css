@@ -18,12 +18,8 @@ body {
 .facebook-login {
   align-items: center;
   display: flex;
-<<<<<<< HEAD
   justify-content: space-around;
   
-=======
-  justify-content: flex-end;
->>>>>>> 3b6999138a460b95e0f56e61b8fae702ba0a8758
 }
 
 .form-group {
