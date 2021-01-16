@@ -18,7 +18,7 @@ function checkCamps() {
   btnRegister.addEventListener('click', function () {
     for (let i = 0; i < requiredCamps.length; i += 1) {
       if (requiredCamps[i].innerText === '') {
-        emptyCamps += 1; 
+        emptyCamps += 1;
       }
     }
     if (emptyCamps > 0) {
