@@ -36,20 +36,20 @@
       <h2 class="quick-easy">É rápido e fácil.</h2>
       <form>
         <aside class="fullname">
-          <input type="text" name="firstname" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
         </aside>
-        <div>
-          <input type="text" name="phone_email" placeholder="Celular ou email" required>
-          <input type="password" name="password" placeholder="Nova senha" required>
+        <div class="personal-data">
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="password" name="password" placeholder="Nova senha">
           <label for="birth-date" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
         </div>
 
         <label for="gender" id="label-gender" class="label-gender">Gênero</label>
 
           <label for="female">
-            <input value="Feminino" id="female" class="radio" type="radio" name="gender" required>Feminino</input>
+            <input value="Feminino" id="female" class="radio" type="radio" name="gender">Feminino</input>
           </label>
 
           <label for="male">
@@ -63,6 +63,7 @@
         <input id="custom-gender-input" class="isVisible" type="text" name="gender-custom" placeholder="Gênero (opcional)"></input>
 
         <button type="submit" id="facebook-register">Cadastre-se</button>
+        <p class="invalid-message isVisible">Campos inválidos</p>
 
       </form>
     </aside>

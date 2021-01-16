@@ -4,10 +4,12 @@ const maleRadio = document.querySelector('#male');
 const femaleRadio = document.querySelector('#female');
 const customGenderRadio = document.querySelector('#gender-custom');
 const customGenderInput = document.querySelector('#custom-gender-input');
-const inputFields = document.querySelectorAll('input');
+const userName = document.querySelector('.fullname');
+const personalData = document.querySelector('.personal-data');
 const genderRadioButtons = document.querySelectorAll('.radio');
 const submitButton = document.querySelector('#facebook-register');
-submitButton.addEventListener('click', validateForm);
+const invalidMessage = document.querySelector('.invalid-message');
+submitButton.addEventListener('click', checkInputs);
 
 buttonLogin.addEventListener('click', function () {
   alert(emailOrPhone.value);
@@ -25,15 +27,16 @@ customGenderRadio.addEventListener('click', function () {
   customGenderInput.classList.remove('isVisible');
 });
 
-function checkInputs() {
-  for (let i = 2; i < inputFields.length; i += 1) {
-    if (inputFields[i].value.length === 0) {
-      return false;
-    }
-  }
+function checkInputs(event) {
+  if (checkUserName() && checkPersonalData() && checkGender());
+  else {
+    event.preventDefault();
+    informInvalidField();
+  };
+    
 }
 function checkGender() {
-  if (genderRadioButtons[2].checked && document.getElementById('custom-gender-input').value.length != 0) {
+  if (genderRadioButtons[2].checked && document.getElementById('custom-gender-input').value.length !== '') {
     return true;
   }
   if(genderRadioButtons[0].checked || genderRadioButtons[1].checked) {
@@ -41,9 +44,20 @@ function checkGender() {
   }
 }
 
-function validateForm() {
-  if(checkInputs === false || checkGender === false) {
-    
-  }
+function informInvalidField() {
+  invalidMessage.classList.remove('isVisible');
+}
 
+function checkUserName() {
+  for (let i = 0; i < userName.length; i += 1) {
+    if (userName[i].value === '') return false;
+  }
+  return true;
+}
+
+function checkPersonalData() {
+  for (let i = 0; i < personalData.length; i += 1) {
+    if (personalData[i].value === '') return false;
+  }
+  return true;
 }
