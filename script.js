@@ -33,7 +33,6 @@ function checkInputs(event) {
     event.preventDefault();
     informInvalidField();
   };
-    
 }
 function checkGender() {
   if (genderRadioButtons[2].checked && document.getElementById('custom-gender-input').value.length !== '') {
@@ -61,3 +60,4 @@ function checkPersonalData() {
   }
   return true;
 }
+s

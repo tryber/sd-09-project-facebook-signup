@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: helvetica, arial, sans-serif;
@@ -16,9 +16,14 @@ body {
 }
 
 .facebook-login {
+  align-items: center;
   display: flex;
+<<<<<<< HEAD
   justify-content: space-around;
   
+=======
+  justify-content: flex-end;
+>>>>>>> 3b6999138a460b95e0f56e61b8fae702ba0a8758
 }
 
 .form-group {
@@ -47,6 +52,17 @@ section.form-control {
   border: 1px solid gray;
 }
 
+div label , input {
+  display: flex;
+  flex-direction: column;
+}
+
+div input {
+  align-self: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
 .form-group input {
   width: 90%;
 }
@@ -56,7 +72,7 @@ section.form-control {
 } */
 
 .main-content {
-  background-image: linear-gradient(#FCFBFA, #CBD2E4 );
+  background-image: linear-gradient(rgb(252, 251, 250), rgb(203, 210, 228));
   display: flex;
   justify-content: center;
   padding: 40px 20px;
@@ -65,8 +81,8 @@ section.form-control {
 .left-content {
   display: flex;
   flex-direction: column;
-  width: 800px;
   justify-content: space-between;
+  width: 800px;
 }
 
 .left-content img {
@@ -81,19 +97,16 @@ section.form-control {
 form aside {
   display: flex;
   justify-content: space-between;
-}
-
-aside h1 {
-  font-size: 2rem;
-}
-
-aside h2 {
-  font-size: 1.3rem;
-}
-
-form aside {
   margin-top: 20px;
 }
+
+/* aside h1 {
+  font-size: 2rem;
+} */
+
+/* aside h2 {
+  font-size: 1.3rem;
+} */
 
 .fullname input {
   width: 45%;
@@ -104,19 +117,8 @@ form div {
   flex-direction: column;
 }
 
-div input {
-  margin-top: 10px;
-  width: 100%;
-  align-self: center;
-}
-
 div label {
   margin-top: 10px;
-}
-
-div label , input {
-  display: flex;
-  flex-direction: column;
 }
 
 form label {
@@ -156,7 +158,7 @@ footer ul li {
 
 .links-footer li {
   display: inline-block;
-  /* margin: 3px; */
+  margin: 3px;
   padding: 5px;
 }
 
