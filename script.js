@@ -1,3 +1,14 @@
+const buttonLogin = document.querySelector('#button-login');
+const emailOrPhone = document.querySelector('#user-email-phone');
+const maleRadio = document.querySelector('#male');
+const femaleRadio = document.querySelector('#female');
+const customGenderRadio = document.querySelector('#gender-custom');
+const customGenderInput = document.querySelector('#custom-gender-input');
+const userName = document.querySelector('.fullname');
+const personalData = document.querySelector('.personal-data');
+const genderRadioButtons = document.querySelectorAll('.radio');
+const submitButton = document.querySelector('#facebook-register');
+const invalidMessage = document.querySelector('.invalid-message');
 
 buttonLogin.addEventListener('click', function () {
   alert(emailOrPhone.value);
@@ -15,13 +26,6 @@ customGenderRadio.addEventListener('click', function () {
   customGenderInput.classList.remove('isVisible');
 });
 
-function checkInputs(event) {
-  if (checkUserName() && checkPersonalData() && checkGender());
-  else {
-    event.preventDefault();
-    informInvalidField();
-  }
-}
 function checkGender() {
   if (genderRadioButtons[2].checked && document.getElementById('custom-gender-input').value.length !== '') {
     return true;
@@ -49,16 +53,12 @@ function checkPersonalData() {
   }
   return true;
 }
+function checkInputs(event) {
+  if (checkUserName() && checkPersonalData() && checkGender());
+  else {
+    event.preventDefault();
+    informInvalidField();
+  }
+}
 
-const buttonLogin = document.querySelector('#button-login');
-const emailOrPhone = document.querySelector('#user-email-phone');
-const maleRadio = document.querySelector('#male');
-const femaleRadio = document.querySelector('#female');
-const customGenderRadio = document.querySelector('#gender-custom');
-const customGenderInput = document.querySelector('#custom-gender-input');
-const userName = document.querySelector('.fullname');
-const personalData = document.querySelector('.personal-data');
-const genderRadioButtons = document.querySelectorAll('.radio');
-const submitButton = document.querySelector('#facebook-register');
-const invalidMessage = document.querySelector('.invalid-message');
 submitButton.addEventListener('click', checkInputs);
