@@ -31,7 +31,6 @@ function verificaGenero() {
   if (!radios[0].checked &&
     !radios[1].checked &&
     !radios[2].checked) {
-    contador += 1;
     msgAniversario.innerText = 'Campos inválidos';
     msgAniversario.style.display = 'block';
     return false;
@@ -42,7 +41,6 @@ function verificaGenero() {
 function validaData() {
   const msgAniversario = document.querySelector('.msg-aniversario');
   if (data.value === '') {
-    contador += 1;
     msgAniversario.innerText = 'Campos inválidos';
     msgAniversario.style.display = 'block';
     data.focus();
@@ -59,7 +57,6 @@ function validaData() {
 function validaSenha() {
   const msgSenha = document.querySelector('.msg-senha');
   if (senha.value === '') {
-    contador += 1;
     msgSenha.innerText = 'Campos inválidos';
     msgSenha.style.display = 'block';
     senha.focus();
@@ -77,7 +74,6 @@ function validaEmail() {
   const msgEmail = document.querySelector('.msg-email');
   const filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   if (!filtro.test(email.value)) {
-    contador += 1;
     email.placeholder = 'Email incorreto!';
     email.value = '';
     email.focus();
@@ -93,32 +89,35 @@ function validaEmail() {
   return true;
 }
 
-function validaNomeESobrenome() {
-  const msgNome = document.querySelector('.msg-nome');
+function validaSobrenome() {
   const msgSobrenome = document.querySelector('.msg-sobrenome');
-  if (nome.value === '') {
-    contador += 1;
-    msgNome.innerText = 'Campos inválidos';
-    msgNome.style.display = 'block';
-    nome.focus();
-    return false;
-  } 
-  if (nome.value !== '') {
-    msgNome.innerText = '';
-    msgNome.style.display = 'none';
-  }
   if (sobrenome.value === '') {
-    contador += 1;
     msgSobrenome.innerText = 'Campos inválidos';
     msgSobrenome.style.display = 'block';
     sobrenome.focus();
     return false;
-  } 
+  }
   if (sobrenome.value !== '') {
     msgSobrenome.innerText = '';
     msgSobrenome.style.display = 'none';
   }
   validaEmail();
+  return true;
+}
+
+function validaNome() {
+  const msgNome = document.querySelector('.msg-nome');
+  if (nome.value === '') {
+    msgNome.innerText = 'Campos inválidos';
+    msgNome.style.display = 'block';
+    nome.focus();
+    return false;
+  }
+  if (nome.value !== '') {
+    msgNome.innerText = '';
+    msgNome.style.display = 'none';
+  }
+  validaSobrenome();
   return true;
 }
 botaoVerifica.addEventListener('click', validaNomeESobrenome);
