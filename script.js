@@ -2,6 +2,12 @@ const buttonLogin = document.querySelector('#button-login');
 const roudePersonl = document.querySelector('.radios');
 const inputGenero = document.querySelector('.genero');
 const botaoVerifica = document.querySelector('.btn');
+const radios = document.querySelectorAll('.radios input');
+const data = document.querySelector('.birthdate');
+const senha = document.querySelector('.password');
+const email = document.querySelector('.phone_email');
+const nome = document.querySelector('.firstname');
+const sobrenome = document.querySelector('.lastname');
 let contador = 0;
 
 function alertaBotao() {
@@ -29,7 +35,6 @@ function msgDeCampoVazio() {
 }
 
 function verificaGenero() {
-  const radios = document.querySelectorAll('.radios input');
   if (!radios[0].checked &&
     !radios[1].checked &&
     !radios[2].checked) {
@@ -40,7 +45,6 @@ function verificaGenero() {
 }
 
 function validaData() {
-  const data = formulario.birthdate;
   if (data.value === '') {
     contador += 1;
     msgDeCampoVazio();
@@ -52,7 +56,6 @@ function validaData() {
 }
 
 function validaSenha() {
-  const senha = formulario.password;
   if (senha.value === '') {
     contador += 1;
     msgDeCampoVazio();
@@ -64,7 +67,6 @@ function validaSenha() {
 }
 
 function validaEmail() {
-  const email = formulario.phone_email;
   const filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   if (!filtro.test(email.value)) {
     contador += 1;
@@ -79,8 +81,6 @@ function validaEmail() {
 }
 
 function validaNomeESobrenome() {
-  const nome = document.querySelector('.firstname');
-  const sobrenome = document.querySelector('.lastname');
   if (nome.value === '') {
     contador += 1;
     msgDeCampoVazio();
