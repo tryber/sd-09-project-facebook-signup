@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://www.lixil.co.jp/lineup/kitchen/s/richelle_sp/pic/icon_facebook.png"
         type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Facebook</title>
+    <title>Facebook - entre ou cadastre-se</title>
 </head>
 <body>
     <header class="top-bar">
@@ -41,20 +40,15 @@
                 <input type="text" id="last-name" class="input full-name" value="" name="lastname"" placeholder="Sobrenome">
                 <input type="text" id="phone-email" class="input ajust" value="" name="phone_email"" placeholder="Celular ou email">
                 <input type="password" id="pass-word" class="input ajust" name="password" placeholder="Nova senha"><br>
-                <label for="birthdate" id="label-birthdate" class="labels">Data de nascimento<br>
-                    <input type="text" id="birthdate" class="input date" name="birthdate" placeholder="dd/mm/aaaa">
-                </label><br>
-                <label id="label-gender" class="labels">Gênero<br>
-                    <label class="gender" for="Famale">
-                        <input type="radio" id="female" name="gender" value="Feminino">Feminino
-                    </label>
-                    <label class="gender" for="Male">
-                        <input type="radio" id="male" name="gender" value="Masculino">Masculino
-                    </label>
-                    <label class="gender" for="Custom">
-                        <input type="radio" id="custom" name="gender" value="Personalizado">Personalizado
-                    </label><br>
-                </label><br>
+                <label for="birthdate" id="label-birthdate" class="labels">Data de nascimento</label><br>
+                <input type="text" id="birthdate" class="input date" name="birthdate" placeholder="dd/mm/aaaa"><br>
+                <label id="label-gender" class="labels">Gênero</label><br>
+                <div class="radio-group">
+                    <input type="radio" id="female" name="gender" value="Feminino"><label class="gender" for="famale">Feminino</label>
+                    <input type="radio" id="male" name="gender" value="Masculino"><label class="gender" for="male">Masculino</label>
+                    <input type="radio" id="custom" name="gender" value="Personalizado"><label class="gender" for="custom">Personalizado</label>
+                </div>
+                <div id="gender-custom"></div>
                 <button type="submit" id="facebook-register" class="facebook-register">Cadastre-se</button><br>
                 <span id="invalid-fields"></span>
             </form>

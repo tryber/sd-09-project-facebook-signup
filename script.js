@@ -1,8 +1,11 @@
 function login() {
   const btn = document.querySelector('#button-login');
-  btn.addEventListener('click', function () {
+  btn.addEventListener('click', function (event) {
+    event.preventDefault();
     const msg = document.querySelector('#user-email-phone').value;
-    alert(msg);
+    if (msg !== '') {
+      alert(msg);
+    }
   });
 }
 
@@ -41,31 +44,88 @@ function validation() {
 });
 }
 
+function clickRadio() {
+  const optionCustom = document.querySelector('#custom');
+  optionCustom.addEventListener('click', genderCustom);
+}
+
+function clearForm() {
+  const form = document.querySelector('.right-content');
+  form.style.display = 'none';
+}
+
 function validation() {
-  const firstName = document.querySelector('#first-name');
-  const lastName = document.querySelector('#last-name');
-  const phoneEmail = document.querySelector('#phone-email');
-  const newPassword = document.querySelector('#pass-word');
-  const birthDate = document.querySelector('#birthdate');
   const button = document.querySelector('#facebook-register');
-  button.addEventListener('click', function () {
-    if (firstName.value === '') {
+  button.addEventListener('click', function (event) {
+    event.preventDefault();
+    const firstName = document.querySelector('#first-name').value;
+    const lastName = document.querySelector('#last-name').value;
+    const phoneEmail = document.querySelector('#phone-email').value;
+    const newPassword = document.querySelector('#pass-word').value;
+    const birthDate = document.querySelector('#birthdate').value;
+    if (firstName === '') {
       invalidFields();
-    } else if (lastName.value === '') {
+    } else if (lastName === '') {
       invalidFields();
-    } else if (phoneEmail.value === '') {
+    } else if (phoneEmail === '') {
       invalidFields();
-    } else if (newPassword.value === '') {
+    } else if (newPassword === '') {
       invalidFields();
-    } else if (birthDate.value === '') {
+    } else if (birthDate === '') {
       invalidFields();
     } else {
       validationRadio();
     }
+    confirmValidation();
   });
+}
+
+function confirmRegistration() {
+  const mainContent = document.querySelector('main');
+  const rightContent = document.createElement('div');
+  rightContent.className = 'right-content resume';
+  const resume = document.createElement('div');
+  const fName = document.querySelector('#first-name').value;
+  const lName = document.querySelector('#last-name').value;
+  const birthday = document.querySelector('#birthdate').value;
+  const phoneOrEmail = document.querySelector('#phone-email').value;
+  const genderOption = document.querySelector('input[name="gender"]:checked').value;
+  resume.innerHTML = `<p>✌😎 Olá, <strong>${fName} ${lName}</strong>! Beleza?!</p>
+  <p>‣ Telefone / e-mail: <strong>${phoneOrEmail}</strong></p>
+  <p>‣ Data de Nasc.: <strong>${birthday}</strong></p>
+  <p>‣ Gênero: <strong>${genderOption}</strong></p>
+  <br><p>Projeto realizado por:</p>
+  <p>👉 <em>Frederico Canoeira</em></p>
+  <p>👉 <em>Cleber Teixeira</em></p>
+  <p><strong>#GoTrybe!</strong> 🚀</p>`;
+  rightContent.appendChild(resume);
+  mainContent.appendChild(rightContent);
+}
+
+function confirmValidation() {
+  const firstName = document.querySelector('#first-name').value;
+  const lastName = document.querySelector('#last-name').value;
+  const phoneEmail = document.querySelector('#phone-email').value;
+  const newPassword = document.querySelector('#pass-word').value;
+  const birthDate = document.querySelector('#birthdate').value;
+  if (firstName !== '') {
+    if (lastName !== '') {
+      if (phoneEmail !== '') {
+        if (newPassword !== '') {
+          if (birthDate !== '') {
+            if (validationRadio() === true) {
+              clearForm();
+              confirmRegistration();
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 window.onload = function () {
   login();
+  clickRadio();
   validation();
 };
