@@ -9,14 +9,4 @@ function clicar() {
 //  campo e-mail e telefone. Agora deu!//
 clicar();
 
-/* function verificaInputs() {
-  const inputs = document.querySelectorAll('input[type=text]');
-    for (let i = 0; i < inputs.length; i += 1) {
-
-      if (inputs[i].value === null) {
-        const errorMsg = document.createElement('p');
-        errorMsg.innerText = 'Campos inválidos';
-    }
-  };
-} */
 
