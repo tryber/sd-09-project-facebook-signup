@@ -9,6 +9,7 @@ const personalData = document.querySelector('.personal-data');
 const genderRadioButtons = document.querySelectorAll('.radio');
 const submitButton = document.querySelector('#facebook-register');
 const invalidMessage = document.querySelector('.invalid-message');
+const rightContent = document.querySelector('.right-content');
 
 buttonLogin.addEventListener('click', function () {
   alert(emailOrPhone.value);
@@ -54,10 +55,35 @@ function checkPersonalData() {
   return true;
 }
 function checkInputs(event) {
-  if (checkUserName() && checkPersonalData() && checkGender());
+  if (checkUserName() && checkPersonalData() && checkGender()) return true;
   else {
     event.preventDefault();
     informInvalidField();
+  }
+}
+
+function findGender() {
+  const female = document.querySelector('#female');
+  const male = document.querySelector('#male');
+  const genderCustom = document.querySelector('#gender-custom');
+  let gender = '';
+
+  if (female.checked) gender = female.value;
+  if (male.checked) gender = male.value;
+  if (genderCustom.checked) gender = genderCustom.value;
+  return gender;
+}
+
+function replaceRightContent(event) {
+  const userFirstName = document.querySelector('.fullname input:nth-child(1)').value;
+  const userLastName = document.querySelector('.fullname input:nth-child(2)').value;
+  const userPhone = document.querySelector('.personal-data input:nth-child(1)').value;
+  const userBirthdate = document.querySelector('.personal-data input:nth-child(3)').value;
+
+  if(checkInputs) {
+    event.preventDefault();
+    rightContent.classList.add('isVisible');
+
   }
 }
 
