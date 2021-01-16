@@ -33,15 +33,15 @@
       <p class='quick-easy'>É rápido e fácil.</p>
       <form class='register' action='' method='GET'>
         <div class='side-by-side-containers'>
-          <input name='firstname' type='text' placeholder='Nome' class='confirmation'>
-          <input name='lastname' type='text' placeholder='Sobrenome' class='confirmation'>
+          <input name='firstname' type='text' placeholder='Nome' class='confirmation' required>
+          <input name='lastname' type='text' placeholder='Sobrenome' class='confirmation' required>
         </div>
 
-        <input name='phone_email' type='text' placeholder='Celular ou email' class='confirmation'>
-        <input name='password' type='password' placeholder='Nova senha' class='confirmation'>
+        <input name='phone_email' type='text' placeholder='Celular ou email' class='confirmation' required>
+        <input name='password' type='password' placeholder='Nova senha' class='confirmation' required>
 
         <label for='birthdate' id='label-birthdate'>Data de nascimento</label>
-        <input name='birthdate' id='birthdate' type='text' placeholder='dd/mm/aaaa' class='confirmation'>
+        <input name='birthdate' id='birthdate' type='text' placeholder='dd/mm/aaaa' class='confirmation' required>
 
         <label id='label-gender'>Gênero</label>
         <div class='side-by-side-containers'>
@@ -52,7 +52,10 @@
             <input type='radio' id='Personalizado' name='gender' value='Personalizado'>
             <label for='Personalizado'>Personalizado</label>
         </div>
+
         <button id='facebook-register' type='submit'>Cadastre-se</button>
+
+        <p id='invalidCamps'></p>
       </form>
     </div>
   </section>

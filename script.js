@@ -14,17 +14,11 @@ const btnRegister = document.querySelector('#facebook-register');
 const requiredCamps = document.getElementsByClassName('confirmation');
 
 function checkCamps() {
-  let emptyCamps = 0;
   btnRegister.addEventListener('click', function () {
     for (let i = 0; i < requiredCamps.length; i += 1) {
       if (requiredCamps[i].innerText === '') {
-        emptyCamps += 1;
+        document.getElementById('invalidCamps').innerText = 'Campos inválidos';
       }
-    }
-    if (emptyCamps > 0) {
-      const requiringMessage = document.createElement('p');
-      requiringMessage.innerText = 'Campos inválidos';
-      listRegister.appendChild(requiringMessage);
     }
   });
 }
@@ -35,13 +29,14 @@ const optCustom = document.querySelector('#Personalizado');
 
 function addTextBoxCustom() {
   optCustom.addEventListener('click', function () {
-    if (listRegister.lastElementChild.previousElementSibling.type !== 'text') {
+    if (listRegister.lastElementChild.previousElementSibling.previousElementSibling.type !== 'text') {
       const textBoxCustom = document.createElement('input');
       textBoxCustom.type = 'text';
       textBoxCustom.name = 'gender-custom';
+      textBoxCustom.required = true;
       textBoxCustom.className = 'confirmation';
       textBoxCustom.placeholder = 'Gênero (opcional)';
-      listRegister.insertBefore(textBoxCustom, listRegister.lastElementChild);
+      listRegister.insertBefore(textBoxCustom, listRegister.lastElementChild.previousElementSibling);
     }
   });
 }
@@ -53,13 +48,13 @@ const optMale = document.querySelector('#Masculino');
 
 function removeTextBoxCustom() {
   optFemale.addEventListener('click', function () {
-    if (listRegister.lastElementChild.previousElementSibling.type === 'text') {
-      listRegister.lastElementChild.previousElementSibling.remove();
+    if (listRegister.lastElementChild.previousElementSibling.previousElementSibling.type === 'text') {
+      listRegister.lastElementChild.previousElementSibling.previousElementSibling.remove();
     }
   });
   optMale.addEventListener('click', function () {
-    if (listRegister.lastElementChild.previousElementSibling.type === 'text') {
-      listRegister.lastElementChild.previousElementSibling.remove();
+    if (listRegister.lastElementChild.previousElementSibling.previousElementSibling.type === 'text') {
+      listRegister.lastElementChild.previousElementSibling.previousElementSibling.remove();
     }
   });
 }
