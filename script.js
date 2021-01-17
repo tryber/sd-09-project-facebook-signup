@@ -9,7 +9,6 @@ const email = document.querySelector('.phone_email');
 const nome = document.querySelector('.firstname');
 const sobrenome = document.querySelector('.lastname');
 const containerDireito = document.querySelector('.right-content');
-const respostaContainer = document.querySelector('.resposta-content');
 let contador = 0;
 
 function alertaBotao() {
@@ -33,7 +32,7 @@ function dadosGenero() {
   const sexo = document.querySelector('.sexo');
   if (radios[0].checked) {
     sexo.innerText = `Sexo: ${radios[0].value}`;
-  } else if (radios[1].checked ) {
+  } else if (radios[1].checked) {
     sexo.innerText = `Sexo: ${radios[1].value}`;
   } else {
     sexo.innerText = `Sexo: ${radios[2].value}`;
