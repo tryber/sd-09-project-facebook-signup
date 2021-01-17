@@ -32,27 +32,27 @@ function dadosGenero() {
   const sexo = document.querySelector('.sexo');
   if (radios[0].checked) {
     sexo.innerText = `Sexo: ${radios[0].value}`;
+    containerDireito.appendChild(sexo);
   } else if (radios[1].checked) {
     sexo.innerText = `Sexo: ${radios[1].value}`;
+    containerDireito.appendChild(sexo);
   } else {
     sexo.innerText = `Sexo: ${radios[2].value}`;
+    containerDireito.appendChild(sexo);
   }
   return true;
 }
 
 function containerNovo() {
-  const containerResp = document.querySelector('.resposta-content');
   const nomeCont = document.querySelector('.nome-content');
   const emailTel = document.querySelector('.email-telefone');
   const aniversario = document.querySelector('.aniversario');
-  containerResp.style.display = 'block';
   nomeCont.innerText = `Olá, ${nome.value} ${sobrenome.value}`;
   emailTel.innerText = `email/telefone: ${email.value}`;
   aniversario.innerText = `Data nascimento: ${data.value}`;
   containerDireito.appendChild(nomeCont);
   containerDireito.appendChild(emailTel);
   containerDireito.appendChild(aniversario);
-  containerDireito.appendChild(containerResp);
   dadosGenero();
   return true;
 }
