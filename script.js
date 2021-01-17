@@ -12,14 +12,14 @@ function addCustomGenderInput(event) {
   }
 }
 
-function loginButtonAlert(event) {
+function loginButtonAlert() {
   const emailOrPhoneInput = document.getElementById('user-email-phone');
   alert(emailOrPhoneInput.value);
 }
 
 window.onload = function () {
   // const signInButton = document.getElementById('facebook-register');
-  const loginButton = document.getElementById('button-login')
+  const loginButton = document.getElementById('button-login');
   const customGenderOptions = document.getElementsByClassName('gender-radio');
 
   loginButton.addEventListener('click', loginButtonAlert);
