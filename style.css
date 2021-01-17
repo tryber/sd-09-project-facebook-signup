@@ -11,8 +11,8 @@
 }
 
 .form-group {
-  align-items: stretch;
   display: flex;
+  flex-direction: row;
 }
 
 .form-control {
