@@ -60,6 +60,15 @@ const alertMessage = {
   },
 };
 
+const appendToRightContent = (rightContentElement, fieldsNamesArray, formValuesObject) => {
+  for (let index = 0; index < fieldsNamesArray.length; index += 1) {
+    const element = document.createElement('p');
+    const fieldName = fieldsNamesArray[index];
+    element.innerText = formValuesObject[fieldName];
+    rightContentElement.appendChild(element);
+  }
+}
+
 function checkRegisterFields(event) {
   event.preventDefault();
   alertMessage.hide();
@@ -74,14 +83,8 @@ function checkRegisterFields(event) {
     const greetingsMessage = document.createElement('h1');
     greetingsMessage.innerText = `Olá, ${formValuesObject.firstname} ${formValuesObject.lastname}`;
     rightContent.appendChild(greetingsMessage);
-    // Adiciona email ou telefone
-    const emailOrPhoneEl = document.createElement('p');
-    emailOrPhoneEl.innerText = formValuesObject.phone_email;
-    rightContent.appendChild(emailOrPhoneEl);
-    // Adiciona data de aniversario
-    const birthdateEl = document.createElement('p');
-    birthdateEl.innerText = formValuesObject.birthdate;
-    rightContent.appendChild(birthdateEl);
+    const fieldnamesToShow = ['phone_email', 'birthdate', 'gender'];
+    appendToRightContent(rightContent, fieldnamesToShow, formValuesObject);
   }
 }
 
