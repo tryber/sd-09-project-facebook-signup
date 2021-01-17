@@ -8,6 +8,9 @@ const senha = document.querySelector('.password');
 const email = document.querySelector('.phone_email');
 const nome = document.querySelector('.firstname');
 const sobrenome = document.querySelector('.lastname');
+const containerDireito = document.querySelector('.right-content');
+const respostaContainer = document.querySelector('.resposta-content');
+let contador = 0;
 
 function alertaBotao() {
   buttonLogin.addEventListener('click', function () {
@@ -26,6 +29,37 @@ function botaoAbreGenero(event) {
 }
 roudePersonl.addEventListener('click', botaoAbreGenero);
 
+function dadosGenero() {
+  const sexo = document.querySelector('.sexo');
+  if (radios[0].checked) {
+    sexo.innerText = `Sexo: ${radios[0].value}`;
+  } else if (radios[1].checked ) {
+    sexo.innerText = `Sexo: ${radios[1].value}`;
+  } else {
+    sexo.innerText = `Sexo: ${radios[2].value}`;
+  }
+  return true;
+}
+
+function containerNovo() {
+  const nomeComp = document.querySelector('.nome-completo');
+  const emailTel = document.querySelector('.email-telefone');
+  const aniversario = document.querySelector('.aniversario');
+  nomeComp.innerText = `Olá ${nome.value} ${sobrenome.value}`;
+  emailTel.innerText = `email/telefone: ${email.value}`;
+  aniversario.innerText = `Data nascimento: ${data.value}`;
+  dadosGenero();
+  return true;
+}
+
+function limpaContainer() {
+  if (contador === 6) {
+    containerDireito.innerHTML = '';
+    containerNovo();
+  }
+  return true;
+}
+
 function verificaGenero() {
   const msgAniversario = document.querySelector('.msg-genero');
   if (!radios[0].checked &&
@@ -35,6 +69,13 @@ function verificaGenero() {
     msgAniversario.style.display = 'block';
     return false;
   }
+  if (radios[0].checked ||
+    radios[1].checked ||
+    radios[2].checked) {
+    msgAniversario.innerText = '';
+    msgAniversario.style.display = 'none';
+  }
+  contador += 1;
   return true;
 }
 
@@ -50,6 +91,7 @@ function validaData() {
     msgAniversario.innerText = '';
     msgAniversario.style.display = 'none';
   }
+  contador += 1;
   verificaGenero();
   return true;
 }
@@ -66,6 +108,7 @@ function validaSenha() {
     msgSenha.innerText = '';
     msgSenha.style.display = 'none';
   }
+  contador += 1;
   validaData();
   return true;
 }
@@ -85,6 +128,7 @@ function validaEmail() {
     msgEmail.innerText = '';
     msgEmail.style.display = 'none';
   }
+  contador += 1;
   validaSenha();
   return true;
 }
@@ -101,6 +145,7 @@ function validaSobrenome() {
     msgSobrenome.innerText = '';
     msgSobrenome.style.display = 'none';
   }
+  contador += 1;
   validaEmail();
   return true;
 }
@@ -117,7 +162,9 @@ function validaNome() {
     msgNome.innerText = '';
     msgNome.style.display = 'none';
   }
+  contador += 1;
   validaSobrenome();
+  limpaContainer();
   return true;
 }
 botaoVerifica.addEventListener('click', validaNome);
