@@ -16,32 +16,47 @@ function checkPersonalizado() {
 }
 checkPersonalizado();
 
-function mudarTexto() {
+
+function excluir() {
+  const excluirH1 = document.querySelector('h1');
+  const excluirH2 = document.querySelector('h2');
+  const excluirForms = document.querySelector('.form-sign-in');
+  excluirH1.remove();
+  excluirH2.remove();
+  excluirForms.remove();
+}
+
+function criap() {
   const newText = document.querySelector('.right-content');
+  const paragraph = document.createElement('p');
+  paragraph.id = 'paragrafo';
+  newText.appendChild(paragraph);
+}
+
+function mudarTexto() {
+  const dados = [];
   const textName = document.querySelector('.firstname');
+  dados.push(textName.value);
   const textLastName = document.querySelector('.lastname');
+  dados.push(textLastName.value);
   const textEmailT = document.querySelector('.emailT');
+  dados.push(textEmailT.value);
   const textBirth = document.querySelector('.birth');
+  dados.push(textBirth.value);
   const radioChecker = document.querySelector('#feminino');
   const radioChecker1 = document.querySelector('#masculino');
   const textPersonal = document.getElementById('textGender');
-  let genero = '';
   if (radioChecker.checked) {
-    genero = 'Feminino';
+    dados.push('Feminino');
   } else if (radioChecker1.checked) {
-    genero = 'Masculino';
+    dados.push('Masculino');
   } else {
-    genero = textPersonal.innerText;
+    dados.push(textPersonal.innerText);
   }
-  for (let i = 0; i < newText.length; i += 1) {
-    newText.removeChild(newText.firstChild);
-  }
-  newText.innerHTML = `Olá, ${textName.value} ${textLastName.value}
-  Email/Telefone: ${textEmailT.value}
-  Data de Aniversário: ${textBirth.value}
-  Genero: ${genero}`;
-  newText.className = 'right-content';
-  newText.style.width = '200px';
+  excluir();
+  criap();
+  const parag = document.querySelector('#paragrafo');
+  parag.innerText = `Olá, ${dados[0]} ${dados[1]} Email/Telefone: ${dados[2]} Data de Aniversário: ${dados[3]} Genero: ${dados[4]}`;
 }
 
 function validateChecked() {
