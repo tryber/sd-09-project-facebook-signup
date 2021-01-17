@@ -68,6 +68,20 @@ function checkRegisterFields(event) {
   const hasEmptyValues = checkForEmptyValuesIn(formValuesObject);
   if (hasEmptyValues) {
     alertMessage.show();
+  } else {
+    const rightContent = document.querySelector('.right-content');
+    rightContent.innerHTML = '';
+    const greetingsMessage = document.createElement('h1');
+    greetingsMessage.innerText = `Olá, ${formValuesObject.firstname} ${formValuesObject.lastname}`;
+    rightContent.appendChild(greetingsMessage);
+    // Adiciona email ou telefone
+    const emailOrPhoneEl = document.createElement('p');
+    emailOrPhoneEl.innerText = formValuesObject.phone_email;
+    rightContent.appendChild(emailOrPhoneEl);
+    // Adiciona data de aniversario
+    const birthdateEl = document.createElement('p');
+    birthdateEl.innerText = formValuesObject.birthdate;
+    rightContent.appendChild(birthdateEl);
   }
 }
 
