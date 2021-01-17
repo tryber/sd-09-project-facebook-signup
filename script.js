@@ -89,3 +89,9 @@ function checkInputs(event) {
   }
 }
 submitButton.addEventListener('click', checkInputs);
+
+// Date Mask in dd/mm/yyyy format
+$(document).ready(function () {
+  $('#input-birthdate').mask('99/99/9999');
+  return false;
+});
