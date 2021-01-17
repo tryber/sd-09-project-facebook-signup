@@ -33,6 +33,9 @@ function mudarTexto() {
   } else {
     genero = textPersonal.innerText;
   }
+  for (let i = 0; i < newText.length; i += 1){
+    newText.removeChild(newText.firstChild);
+  }
   newText.innerHTML = `Olá, ${textName.value} ${textLastName.value}
   Email/Telefone: ${textEmailT.value}
   Data de Aniversário: ${textBirth.value}
