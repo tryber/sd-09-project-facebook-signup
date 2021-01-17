@@ -48,6 +48,6 @@ body {
   width: 50%;
 }
 
-input[ type = 'radio' ] {
+.radio-button {
   margin: 0;
 }
