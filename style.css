@@ -57,7 +57,7 @@ body {
 }
 
 .invalid-message-container {
-  justify-content: space-evenly;
   flex-grow: 1;
+  justify-content: space-around;
   visibility: hidden;
 }

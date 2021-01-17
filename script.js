@@ -42,16 +42,15 @@ function validateRadioButtons() {
 function validateInputs(event) {
   const isTextInputsValid = validateTextInputs();
   const isRadioButtonsValid = validateRadioButtons();
-  const invalidMessageContainerDiv = document.querySelector('.invalid-message-container')
+  const invalidMessageContainerDiv = document.querySelector('.invalid-message-container');
 
   if (isTextInputsValid === false || isRadioButtonsValid === false) {
     // window.alert('Campos inválidos');
-    invalidMessageContainerDiv.style.visibility = 'visible'
-
+    invalidMessageContainerDiv.style.visibility = 'visible';
   }
 
   if (isTextInputsValid === true && isRadioButtonsValid === true) {
-    invalidMessageContainerDiv.style.visibility = 'hidden'
+    invalidMessageContainerDiv.style.visibility = 'hidden';
   }
 
   event.preventDefault();
