@@ -1,8 +1,8 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
-  border: 1px red solid;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .facebook-logo {
