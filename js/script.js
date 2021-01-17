@@ -41,27 +41,6 @@ inputOtherGender.addEventListener('click', createTextArea);
 
 const btnFacebookRegister = document.getElementById('facebook-register');
 
-function addParagraphoToWarn() {
-  const rightForm = document.querySelector('.right-form');
-  const validationWarn = document.getElementById('validation-warn');
-    if (validationWarn === null) {
-    const pToWarn = document.createElement('p');
-    pToWarn.innerText = 'Campos inválidos';
-    pToWarn.id = 'validation-warn';
-    rightForm.appendChild(pToWarn);
-  }
-}
-
-function removeParagraphWarn() {
-  const rightForm = document.querySelector('.right-form');
-  const validationWarn = document.getElementById('validation-warn');
-    if (validationWarn !== null) {
-      rightForm.removeChild(validationWarn);
-    }
-}
-
-btnFacebookRegister.addEventListener('click', allTheChecksOfTheForm);
-
 function checkIfNameIsFilled() {
   const nameField = document.querySelectorAll('.fullname input');
   for (let index = 0; index < nameField.length; index += 1) {
@@ -97,11 +76,36 @@ function checkIfRadioBtnIsChecked() {
   } return true
 }
 
+function addParagraphoToWarn() {
+  const rightForm = document.querySelector('.right-form');
+  const validationWarn = document.getElementById('validation-warn');
+  if (validationWarn === null) {
+    const pToWarn = document.createElement('p');
+    pToWarn.innerText = 'Campos inválidos';
+    pToWarn.id = 'validation-warn';
+    rightForm.appendChild(pToWarn);
+  }
+}
+
+function removeParagraphWarn() {
+  const rightForm = document.querySelector('.right-form');
+  const validationWarn = document.getElementById('validation-warn');
+  if (validationWarn !== null) {
+    rightForm.removeChild(validationWarn);
+  }
+}
+
 function allTheChecksOfTheForm(event) {
   event.preventDefault();
-  if (checkIfNameIsFilled() === false || checkIfPhoneIsFilled() === false || checkIfPasswordIsFilled() === false ||checkIfBirthdateIsFilled() === false || checkIfRadioBtnIsChecked() === false) {
+  if (checkIfNameIsFilled() === false || 
+  checkIfPhoneIsFilled() === false || 
+  checkIfPasswordIsFilled() === false ||
+  checkIfBirthdateIsFilled() === false || 
+  checkIfRadioBtnIsChecked() === false) {
     addParagraphoToWarn();
   } else {
     removeParagraphWarn();
   }
 }
+
+btnFacebookRegister.addEventListener('click', allTheChecksOfTheForm);
