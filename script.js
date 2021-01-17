@@ -41,13 +41,18 @@ function dadosGenero() {
 }
 
 function containerNovo() {
-  const nomeComp = document.querySelector('.nome-completo');
+  const containerResp = document.querySelector('.resposta-content');
+  const nomeCont = document.querySelector('.nome-content');
   const emailTel = document.querySelector('.email-telefone');
   const aniversario = document.querySelector('.aniversario');
-  nomeComp.innerText = `Olá ${nome.value} ${sobrenome.value}`;
-  nomeComp.style.display = 'block';
+  containerResp.style.display = 'block';
+  nomeCont.innerText = `Olá ${nome.value} ${sobrenome.value}`;
   emailTel.innerText = `email/telefone: ${email.value}`;
   aniversario.innerText = `Data nascimento: ${data.value}`;
+  containerDireito.appendChild(nomeCont);
+  containerDireito.appendChild(emailTel);
+  containerDireito.appendChild(aniversario);
+  containerDireito.appendChild(containerResp);
   dadosGenero();
   return true;
 }
