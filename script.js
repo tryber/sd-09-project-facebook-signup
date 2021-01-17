@@ -45,13 +45,13 @@ function mudarTexto() {
   dados.push(textBirth.value);
   const radioChecker = document.querySelector('#feminino');
   const radioChecker1 = document.querySelector('#masculino');
-  const textPersonal = document.getElementById('textGender');
+  const textPersonal = document.getElementById('Personal');
   if (radioChecker.checked) {
     dados.push('Feminino');
   } else if (radioChecker1.checked) {
     dados.push('Masculino');
   } else {
-    dados.push(textPersonal.innerText);
+    dados.push(textPersonal.value);
   }
   excluir();
   criap();
