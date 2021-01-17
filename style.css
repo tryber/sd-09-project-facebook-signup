@@ -3,8 +3,8 @@ body {
 }
 
 .container {
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 .top-bar {
@@ -13,9 +13,9 @@ body {
 }
 
 .top-bar .container {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .facebook-login {
@@ -42,8 +42,8 @@ body {
 }
 
 .left-content {
-  width: 800px;
   padding-right: 50px;
+  width: 800px;
 }
 
 .left-content p {
@@ -73,12 +73,8 @@ body {
   flex-direction: column;
 }
 
-.facebook-register input[type='text']{
-  height: 25px;
-}
-
 .facebook-register button {
-  background-color: rgb(64 , 128 , 0);
+  background-color: rgb(64, 128, 0);
   border-radius: 4px;
   color: white;
   font-size: 18px;

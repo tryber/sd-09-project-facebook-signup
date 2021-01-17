@@ -9,6 +9,17 @@ buttonLogin.addEventListener('click', handleClickButtonLogin);
 
 const formSubmit = document.querySelector('.facebook-register');
 
+function customFieldIsShow() {
+  const customFieldElement = document.querySelector('.gender-custom');
+  const customFieldDisplay = customFieldElement.style.display;
+  if (customFieldDisplay === 'block') {
+    if (customFieldElement.value === '') {
+      return false;
+    }
+  }
+  return true;
+}
+
 function handleValidateFields(event) {
   event.preventDefault();
   let filledFields = true;
@@ -29,17 +40,17 @@ function handleValidateFields(event) {
     for (let index = 0; index < inputs.length; index += 1) {
       if (inputs[index].name === 'firstname') {
         const greeting = document.querySelector('.greeting');
-        greeting.innerText = `Olá, ${inputs[index].value} ${inputs[index + 1].value}`; 
+        greeting.innerText = `Olá, ${inputs[index].value} ${inputs[index + 1].value}`;
       } else if (inputs[index].name === 'phone_email') {
         const phoneMail = document.querySelector('.email-phone');
-        phoneMail.innerText = inputs[index].value; 
+        phoneMail.innerText = inputs[index].value;
       } else if (inputs[index].name === 'birthdate') {
         const datOfBirth = document.querySelector('.date-of-birth');
-        datOfBirth.innerText = inputs[index].value; 
+        datOfBirth.innerText = inputs[index].value;
       } else if (inputs[index].name === 'gender' && inputs[index].checked === true) {
         const genderResult = document.querySelector('.gender-result');
-        genderResult.innerText = inputs[index].value; 
-      } 
+        genderResult.innerText = inputs[index].value;
+      }
     }
 
     const register = document.querySelector('.register');
@@ -49,17 +60,6 @@ function handleValidateFields(event) {
     result.style.display = 'block';
   }
   // formSubmit.submit();
-}
-
-function customFieldIsShow() {
-  const customFieldElement = document.querySelector('.gender-custom');
-  let customFieldDisplay = customFieldElement.style.display;
-  if (customFieldDisplay === 'block') {
-    if (customFieldElement.value === '') {
-      return false;
-    }
-  }
-  return true;
 }
 
 formSubmit.addEventListener('submit', handleValidateFields);
