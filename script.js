@@ -125,31 +125,28 @@ function validation() {
   const button = document.querySelector('#facebook-register');
   button.addEventListener('click', function (event) {
     event.preventDefault();
-    let aux = true;
-    if (document.querySelector('#first-name').value === '') {
-      aux = false;
-      invalidFields();
-    } else if (document.querySelector('#last-name').value === '') {
-      aux = false;
-      invalidFields();
-    } else if (document.querySelector('#phone-email').value === '') {
-      aux = false;
-      invalidFields();
-    } else if (document.querySelector('#pass-word').value === '') {
-      aux = false;
-      invalidFields();
-    } else if (document.querySelector('#birthdate').value === '') {
-      aux = false;
-      invalidFields();
-    } else { aux = validationRadio();
-      validationRadio();
+    let aux = 0;
+    const inputs = document.querySelectorAll('.input');
+    const radios = document.querySelector('input[name="gender"]:checked');
+    for (let index = 0; index < inputs.length; index += 1) {
+      if (inputs[index].value === '') {
+        aux = 0;
+        invalidFields();
+      } else {
+        aux += 1;
+      }
     }
-    if (aux === true) {
+    if (radios === null) {
+      aux = 0;
+      invalidFields();
+    }
+    console.log(aux);
+    if (aux === 5) {
       clearForm();
     }
   });
 }
-
+    
 window.onload = function () {
   login();
   clickRadio();
