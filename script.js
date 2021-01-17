@@ -103,7 +103,7 @@ function mask(i, t) {
   }
 }
 
-mask;
+mask();
 
 // if(t == "cpf") {
 //   i.setAttribute("maxlength", "14");
