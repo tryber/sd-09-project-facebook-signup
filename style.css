@@ -82,6 +82,10 @@ span {
   display: flex;
 }
 
+.nome-completo {
+  display: none;
+}
+
 .radios {
   display: flex;
 }
