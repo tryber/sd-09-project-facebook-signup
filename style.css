@@ -186,8 +186,8 @@ header {
   }
 
   .facebook-logo-container {
+    align-items: center;
     background-color: #4267b2;
-    display: unset;
     margin: 0;
     padding: 0;
     width: fit-content;
