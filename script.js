@@ -101,7 +101,6 @@ function mask(i,t) {
     i.setAttribute("maxlength", "10");
     if (v.length == 2 || v.length == 5) i.value += "/";
   }
- 
 }
 
 // if(t == "cpf") {
