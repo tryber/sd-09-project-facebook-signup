@@ -60,17 +60,6 @@ function clickRadio() {
   optionCustom.addEventListener('click', genderCustom);
 }
 
-
-
-// Cria o container "right-content"
-function confirmRegistration() {
-  const mainContent = document.querySelector('main');
-  const rightContent = document.createElement('div');
-  rightContent.className = 'right-content teste resume';
-  mainContent.appendChild(rightContent);
-  addData();
-}
-
 // Adiciona os campos "first-name" e "last-name"
 function fullName() {
   const fName = document.querySelector('#first-name').value;
@@ -104,21 +93,34 @@ function addGender() {
 function addMensage() {
   const mensage = document.createElement('p');
   mensage.innerHTML = `Projeto realizado por:</br>
-   <p>👉 <em>Frederico Canoeira</em></p>
-   <p>👉 <em>Cleber Teixeira</em></p>
-   <p><strong>#GoTrybe!</strong> 🚀</p>`;
+    <p>👉 <em>Frederico Canoeira</em></p>
+    <p>👉 <em>Cleber Teixeira</em></p>
+    <p><strong>#GoTrybe!</strong> 🚀</p>`;
   return mensage;
 }
 
-// Adiciona dados cadastrados
-function addData() {
-  const rightContainer = document.querySelector('.teste');
-  rightContainer.appendChild(fullName());
-  rightContainer.appendChild(addPhoneOrEmail());
-  rightContainer.appendChild(addBirthDate());
-  rightContainer.appendChild(addGender());
-  rightContainer.appendChild(addMensage());
+// Cria o container "right-content"
+function confirmRegistration() {
+  const mainContent = document.querySelector('main');
+  const rightContent = document.createElement('div');
+  rightContent.className = 'right-content teste resume';
+  rightContent.appendChild(fullName());
+  rightContent.appendChild(addPhoneOrEmail());
+  rightContent.appendChild(addBirthDate());
+  rightContent.appendChild(addGender());
+  rightContent.appendChild(addMensage());
+  mainContent.appendChild(rightContent);
 }
+
+// Adiciona dados cadastrados
+// function addData() {
+//   const rightContainer = document.querySelector('.teste');
+//   rightContainer.appendChild(fullName());
+//   rightContainer.appendChild(addPhoneOrEmail());
+//   rightContainer.appendChild(addBirthDate());
+//   rightContainer.appendChild(addGender());
+//   rightContainer.appendChild(addMensage());
+// }
 
 // function confirmRegistration() {
 //   const mainContent = document.querySelector('main');
@@ -156,18 +158,20 @@ function confirmValidation() {
   const phoneEmail = document.querySelector('#phone-email').value;
   const newPassword = document.querySelector('#pass-word').value;
   const birthDate = document.querySelector('#birthdate').value;
-  if (firstName !== '') {
-    if (lastName !== '') {
-      if (phoneEmail !== '') {
-        if (newPassword !== '') {
-          if (birthDate !== '') {
-            if (validationRadio() === true) {
-              clearForm();
-            }
-          }
-        }
-      }
-    }
+  if (firstName === '') {
+    false;
+  } else if (lastName === '') {
+    false;
+  } else if (phoneEmail === '') {
+    false;
+  } else if (newPassword === '') {
+    false;
+  } else if (birthDate === '') {
+    false;
+  } else if (validationRadio() !== true) {
+    false;
+  } else {
+    clearForm();
   }
 }
 
