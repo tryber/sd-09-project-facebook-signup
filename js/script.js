@@ -45,36 +45,40 @@ function checkIfNameIsFilled() {
   const nameField = document.querySelectorAll('.fullname input');
   for (let index = 0; index < nameField.length; index += 1) {
     if (nameField[index].value !== '') {
-      return true
-    } 
-    return false
+      return true;
+    }
+    return false;
   }
 }
 
 function checkIfPhoneIsFilled() {
   const phoneField = document.getElementById('phone-input');
   if (phoneField.value !== '') {
-    return true
-  } return false
+    return true;
+  }
+  return false;
 }
 
 function checkIfPasswordIsFilled() {
   const passwordField = document.getElementById('password-input');
   if (passwordField.value !== '') {
-    return true
-  } return false
+    return true;
+  } 
+  return false;
 }
 function checkIfBirthdateIsFilled() {
   const birthdateField = document.getElementById('birthdate-input');
   if (birthdateField.value !== '') {
-    return true
-  } return false
+    return true;
+  }
+  return false;
 }
 
 function checkIfRadioBtnIsChecked() {
   if (document.querySelectorAll('.gender input')[0].checked === false && document.querySelectorAll('.gender input')[1].checked === false && document.querySelectorAll('.gender input')[2].checked === false) {
-    return false
-  } return true
+    return false;
+  } 
+  return true;
 }
 
 function addParagraphoToWarn() {
