@@ -1,7 +1,6 @@
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
-  color: white;
   display: flex;
   justify-content: space-between;
 }
@@ -10,9 +9,13 @@
   display: flex;
 }
 
+.is-white-text{
+  color: white;
+}
 .form-group {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .form-control {
