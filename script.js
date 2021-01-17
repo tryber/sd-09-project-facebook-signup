@@ -61,10 +61,10 @@ function mudarTexto() {
 
 function validateChecked() {
   const mudanca = document.getElementById('answerVal');
-  const radioChecker = document.querySelector('#feminino').checked;
-  const radioChecker1 = document.querySelector('#masculino').checked;
-  const radioChecker2 = document.querySelector('#personalizado').checked;
-  if (radioChecker === '' && radioChecker1 === '' && radioChecker2 === '') {
+  const radioChecker = document.querySelector('#feminino');
+  const radioChecker1 = document.querySelector('#masculino');
+  const radioChecker2 = document.querySelector('#personalizado');
+  if (radioChecker.checked === '' && radioChecker1.checked === '' && radioChecker2.checked === '') {
     mudanca.innerText = 'Campos inválidos';
     mudanca.style.color = 'red';
   }
