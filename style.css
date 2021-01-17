@@ -7,8 +7,8 @@
 }
 
 .facebook-login {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .is-white-text {
@@ -23,7 +23,6 @@
 
 .form-control {
   align-self: flex-end;
-  
 }
 
 .main-content {
