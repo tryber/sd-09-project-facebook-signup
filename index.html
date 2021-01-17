@@ -6,57 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-</head>
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  </head>
 <body>
   <header class="top-bar">
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+    <div class="coluna-direita">
     <form class="facebook-login">
       <div class="form-group">
-        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+        <label class="white-letter" id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
         <input type="text" id="user-email-phone">
       </div>
       <div class="form-group">
-        <label id="user-password-label" for="user-password">Senha</label>
+        <label class="white-letter" id="user-password-label" for="user-password">Senha</label>
         <input type="password" name="password-user" id="user-password">
+        <div class="fonte-cabecalho">Esqueceu a conta?</div>
       </div>
       <div class="form-control">
         <button class="button-login" type="submit" id="button-login">Entrar</button>
       </div>
     </form>
+  </div>
   </header>
-  <div class="main-content">
+  <div class="main-content coluna-direita">
     <div class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img src="imgs/networking.png" id="facebook-networking" alt="imagem facebook networking">
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
-      <h2 class="quick-easy">É rápido e fácil.</h2>
+      <h4 class="quick-easy">É rápido e fácil.</h4>
       <form class="form-sign-in">
           <section class="names">
             <label for="firstname"></label>
-            <input type="text" placeholder="Nome" id="firstname" class="firstname" name="firstname">
-            <input type="text" name="lastname"  class="lastname" placeholder="Sobrenome">
+            <input type="text" placeholder="Nome" id="firstname" class="firstname tabulacao" name="firstname">
+            <input type="text" name="lastname"  class="lastname tabulacao" placeholder="Sobrenome">
           </section>
-            <input class="emailT" type="text" placeholder="Celular ou email" name="phone_email">
-            <input type="password" name="password" placeholder="Nova senha">
-            <label for="birthdate" id="label-birthdate" >Data de nascimento</label>
-            <input  class="birth" type="text" name="birthdate" placeholder="dd/mm/aaaa" >
+            <input class="emailT tabulacao" type="text" placeholder="Celular ou email" name="phone_email">
+            <input class="senha tabulacao" type="password" name="password" placeholder="Nova senha">
+            <label for="birthdate" id="label-birthdate" > Data de nascimento</label>
+            <input  class="birth tabulacao" type="text" name="birthdate" placeholder="dd/mm/aaaa" >
           <section class="container-radios">
             <label for="gender" id="label-gender">Gênero</label>
             <section class="radio-buttons">
-              <label for="feminino">Feminino</label>
               <input type="radio" name="gender" value="Feminino" id="feminino" >
-              <label for="masculino">Masculino</label>
+              <label for="feminino">Feminino</label>
               <input type="radio" name="gender" value="Masculino" id="masculino">
-              <label for="personalizado">Personalizado</label>
+              <label for="masculino">Masculino</label>
               <input type="radio" name="gender" value="Personalizado" id="personalizado">
+              <label for="personalizado">Personalizado</label>
             </section>
           </section>
           <div class="textButton">
             <div id="textGender"></div>
-            <button type="submit" id="facebook-register">Cadastre-se</button>
+            <button class="tabulacao submit-button" type="submit" id="facebook-register">Cadastre-se</button>
           </div>
           <p id="answerVal"></p>
        </form>
