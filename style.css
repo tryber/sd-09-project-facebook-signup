@@ -5,11 +5,6 @@
   align-items: center;
 }
 
-.facebook-logo {
-  border: 1px red solid;
-  text-align: left;
-}
-
 .facebook-login {
   border: 1px black solid;
   display: flex;
