@@ -91,15 +91,15 @@ function checkInputs(event) {
 submitButton.addEventListener('click', checkInputs);
 
 // Masks for forms inputs
-function mask(i,t) {
-  let v = i.value;
-  if(isNaN(v[v.length-1])){
-    i.value = v.substring(0, v.length-1);
+function mask(i, t) {
+  const v = i.value;
+  if (isNaN (v[v.length - 1])) {
+    i.value = v.substring(0, v.length - 1);
     return;
   }
-  if(t == "date") {
-    i.setAttribute("maxlength", "10");
-    if (v.length == 2 || v.length == 5) i.value += "/";
+  if (t === 'date') {
+    i.setAttribute('maxlength', '10');
+    if (v.length === 2 || v.length === 5) i.value += '/';
   }
 }
 
