@@ -67,7 +67,7 @@ const appendToRightContent = (rightContentElement, fieldsNamesArray, formValuesO
     element.innerText = formValuesObject[fieldName];
     rightContentElement.appendChild(element);
   }
-}
+};
 
 function checkRegisterFields(event) {
   event.preventDefault();
