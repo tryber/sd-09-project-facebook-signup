@@ -22,23 +22,36 @@ function mudarTexto() {
   const textLastName = document.querySelector('.lastname');
   const textEmailT = document.querySelector('.emailT');
   const textBirth = document.querySelector('.birth');
-  const textRadio = document.querySelector('.container-radios');
-  const textPersonal = document.getElementById('Personal');
-  let genero = 'Feminino';
-  if (textRadio.value === 'Feminino') {
+  const radioChecker = document.querySelector('#feminino');
+  const radioChecker1 = document.querySelector('#masculino');
+  const textPersonal = document.getElementById('textGender');
+  let genero = '';
+  if (radioChecker.checked) {
     genero = 'Feminino';
-  } else if (textRadio.value === 'Masculino') {
+  } else if (radioChecker1.checked) {
     genero = 'Masculino';
   } else {
-    genero = textPersonal.value;
+    genero = textPersonal.innerText;
   }
   newText.innerHTML = `Olá, ${textName.value} ${textLastName.value}
   Email/Telefone: ${textEmailT.value}
   Data de Aniversário: ${textBirth.value}
-  Genero: ${genero.value}`;
+  Genero: ${genero}`;
   newText.className = 'right-content';
   newText.style.width = '200px';
 }
+
+function validateChecked() {
+  const mudanca = document.getElementById('answerVal');
+  const radioChecker = document.querySelector('#feminino').checked;
+  const radioChecker1 = document.querySelector('#masculino').checked;
+  const radioChecker2 = document.querySelector('#personalizado').checked;
+  if (radioChecker === '' && radioChecker1 === '' && radioChecker2 === '') {
+    mudanca.innerText = 'Campos inválidos';
+    mudanca.style.color = 'red';
+  }
+}
+
 function validate(event) {
   const infoForm = document.querySelectorAll('.form-sign-in input');
   event.preventDefault();
@@ -58,3 +71,4 @@ function validate(event) {
 
 const validation = document.getElementById('facebook-register');
 validation.addEventListener('click', validate);
+validation.addEventListener('click', validateChecked);
