@@ -9,13 +9,13 @@
   display: flex;
 }
 
-.is-white-text{
+.is-white-text {
   color: white;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
-  color: white;
 }
 
 .form-control {

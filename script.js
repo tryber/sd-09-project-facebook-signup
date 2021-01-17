@@ -12,7 +12,7 @@ function addCustomGenderInput(event) {
   }
 }
 
-function loginButtonAlert(event){
+function loginButtonAlert(event) {
   const emailOrPhoneInput = document.getElementById('user-email-phone');
   alert(emailOrPhoneInput.value);
 }
