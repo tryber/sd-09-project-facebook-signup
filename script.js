@@ -46,7 +46,8 @@ function fullName() {
   const fName = document.querySelector('#first-name').value;
   const lName = document.querySelector('#last-name').value;
   const name = document.createElement('p');
-  name.innerHTML = `Olá, <strong>${fName} ${lName}`;
+  const firstAndLastName = `${fName} ${lName}`;
+  name.innerHTML = `Olá, <strong>${firstAndLastName}</strong>`;
   return name;
 }
 
