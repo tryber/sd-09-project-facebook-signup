@@ -17,6 +17,7 @@ body {
 .facebook-login {
   align-items: flex-start;
   display: flex;
+  margin-right: 35px;
 }
 
 p {
@@ -90,7 +91,7 @@ p {
   justify-content: flex-start;
   margin-right: 25%;
   padding: 5px;
-  width: 300px;
+  width: 250px;
 }
 
 .tabulacao {
@@ -136,13 +137,13 @@ p {
 
 .left-content p {
   color: rgb(2, 29, 80);
-  margin-left: 28%;
-  width: 60%;
+  margin-left: 18%;
+  width: 55%;
 }
 
 .left-content img {
-  margin-left: 26%;
-  width: 52%;
+  margin-left: 6%;
+  width: 80%;
 }
 
 h1 {
