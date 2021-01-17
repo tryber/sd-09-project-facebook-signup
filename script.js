@@ -100,6 +100,21 @@ function clearForm() {
   confirmRegistration();
 }
 
+// Realiza a validação dos botões de radio e chama a função limpar o formulário
+function validationRadio(count) {
+  const radios = document.querySelector('input[name="gender"]:checked');
+  let result;
+  if (radios === null) {
+    result = false;
+    invalidFields();
+  } else {
+    result = true;
+  }
+  if (count === 5 && result === true) {
+    clearForm();
+  }
+}
+
 /* Realiza a validação de cada campo e verifica se foi preenchido
 caso contrário chama a função que exibe a mensagem "Campos inválidos" */
 function validation() {
@@ -118,21 +133,6 @@ function validation() {
     }
     validationRadio(count);
   });
-}
-
-// Realiza a validação dos botões de radio e chama a função limpar o formulário
-function validationRadio(count) {
-  const radios = document.querySelector('input[name="gender"]:checked');
-  let result;
-  if (radios === null) {
-    result = false;
-    invalidFields();
-  } else {
-    result = true;
-  }
-  if (count === 5 && result === true) {
-    clearForm();
-  }
 }
 
 // Chama as funções após o carregamento da página HTML
