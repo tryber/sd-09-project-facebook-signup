@@ -93,7 +93,7 @@ submitButton.addEventListener('click', checkInputs);
 // Masks for forms inputs
 function mask(i, t) {
   const v = i.value;
-  if (isNaN (v[v.length - 1])) {
+  if (isNaN(v[v.length - 1])) {
     i.value = v.substring(0, v.length - 1);
     return;
   }
@@ -102,6 +102,8 @@ function mask(i, t) {
     if (v.length === 2 || v.length === 5) i.value += '/';
   }
 }
+
+mask;
 
 // if(t == "cpf") {
 //   i.setAttribute("maxlength", "14");
