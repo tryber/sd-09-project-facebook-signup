@@ -47,8 +47,8 @@ function checkIfNameIsFilled() {
     if (nameField[index].value !== '') {
       return true;
     }
-    return false;
   }
+  return false;
 }
 
 function checkIfPhoneIsFilled() {
@@ -63,7 +63,7 @@ function checkIfPasswordIsFilled() {
   const passwordField = document.getElementById('password-input');
   if (passwordField.value !== '') {
     return true;
-  } 
+  }
   return false;
 }
 function checkIfBirthdateIsFilled() {
@@ -77,7 +77,7 @@ function checkIfBirthdateIsFilled() {
 function checkIfRadioBtnIsChecked() {
   if (document.querySelectorAll('.gender input')[0].checked === false && document.querySelectorAll('.gender input')[1].checked === false && document.querySelectorAll('.gender input')[2].checked === false) {
     return false;
-  } 
+  }
   return true;
 }
 
