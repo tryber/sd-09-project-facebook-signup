@@ -121,26 +121,28 @@ function clearForm() {
 
 /* Realiza a validação de cada campo e verifica se foi preenchido
 caso contrário chama a função que exibe a mensagem "Campos inválidos" */
-function validation() {
-  const button = document.querySelector('#facebook-register');
-  button.addEventListener('click', function (event) {
-    event.preventDefault();
+function validation() { const button = document.querySelector('#facebook-register');
+  button.addEventListener('click', function (event) { event.preventDefault();
     const firstName = document.querySelector('#first-name').value;
     const lastName = document.querySelector('#last-name').value;
     const phoneEmail = document.querySelector('#phone-email').value;
     const newPassword = document.querySelector('#pass-word').value;
     const birthDate = document.querySelector('#birthdate').value;
     let aux = true;
-    if (firstName === '') {aux = false; invalidFields();
-    } else if (lastName === '') {aux = false; invalidFields();
-    } else if (phoneEmail === '') {aux = false; invalidFields();
-    } else if (newPassword === '') {aux = false; invalidFields();
-    } else if (birthDate === '') {aux = false; invalidFields();
-    } else {aux = validationRadio(); validationRadio();
+    if (firstName === '') { aux = false;
+      invalidFields();
+    } else if (lastName === '') { aux = false;
+      invalidFields();
+    } else if (phoneEmail === '') { aux = false;
+      invalidFields();
+    } else if (newPassword === '') { aux = false;
+      invalidFields();
+    } else if (birthDate === '') { aux = false;
+      invalidFields();
+    } else { aux = validationRadio();
+      validationRadio();
     }
-    if (aux === true) {clearForm();}
-  });
-}
+    if (aux === true) {clearForm();}});}
 
 window.onload = function () {
   login();
