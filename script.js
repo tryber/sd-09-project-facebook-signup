@@ -46,7 +46,7 @@ function containerNovo() {
   const emailTel = document.querySelector('.email-telefone');
   const aniversario = document.querySelector('.aniversario');
   containerResp.style.display = 'block';
-  nomeCont.innerText = `Olá ${nome.value} ${sobrenome.value}`;
+  nomeCont.innerText = `Olá, ${nome.value} ${sobrenome.value}`;
   emailTel.innerText = `email/telefone: ${email.value}`;
   aniversario.innerText = `Data nascimento: ${data.value}`;
   containerDireito.appendChild(nomeCont);
