@@ -89,5 +89,3 @@ function validate(event) {
 const validation = document.getElementById('facebook-register');
 validation.addEventListener('click', validate);
 validation.addEventListener('click', validateChecked);
-
-window.onload();
