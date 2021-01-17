@@ -29,7 +29,7 @@ function validateTextInputs() {
 
 function validateRadioButtons() {
   const checkedRadioButtonsNodeList = document.querySelectorAll(
-    '.right-content input[type="radio"]:checked',
+    '.right-content input[ type = "radio" ]:checked',
   );
   let isValid = true;
 
@@ -42,9 +42,16 @@ function validateRadioButtons() {
 function validateInputs(event) {
   const isTextInputsValid = validateTextInputs();
   const isRadioButtonsValid = validateRadioButtons();
+  const invalidMessageContainerDiv = document.querySelector('.invalid-message-container')
 
   if (isTextInputsValid === false || isRadioButtonsValid === false) {
-    window.alert('Campos inválidos');
+    // window.alert('Campos inválidos');
+    invalidMessageContainerDiv.style.visibility = 'visible'
+
+  }
+
+  if (isTextInputsValid === true && isRadioButtonsValid === true) {
+    invalidMessageContainerDiv.style.visibility = 'hidden'
   }
 
   event.preventDefault();

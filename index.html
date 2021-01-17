@@ -42,7 +42,7 @@
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
             <form action="">
-                <div class="name-input-roll">
+                <div class="name-input-roll flex-container">
                     <input class="right-content-input" type="text" name="firstname" placeholder="Nome" id="firstname">
                     <input class="right-content-input" type="text" name="lastname" placeholder="Sobrenome" id="lastname">
                 </div>
@@ -67,8 +67,12 @@
                     <input value="Personalizado" class="radio-button" type="radio" name="gender" id="custom">
                     <label for="custom">Personalizado</label>
                 </div>
-                <div>
+                <div class="flex-container signup-container">
                     <button id="facebook-register" type="submit">Cadastre-se</button>
+                    <div class="flex-container invalid-message-container">
+                        <span class="invalid-message">Campos inválidos</span>
+                    </div>
+                    
                 </div>
             </form>
         </section>
