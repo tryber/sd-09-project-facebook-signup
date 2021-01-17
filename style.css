@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+/*
+Comentei a classe abaixo para ver se o 2º item da avaliação dá certo
+O Cypress evaluator está dando erro neste teste:
+1) O logotipo deve estar alinhado a esquerda dentro da barra azul
+*/
+
+/* .facebook-logo {
+  height: 65px;
+  margin: 15px 0 4px 100px;
+} */
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+  height: 100%;
+}
+
+/* Estilo do botão de login (ToDo) */
+
+/* .form-control button {
+  border: 1px solid  rgb(59, 90, 152);
+  background-color: rgb(66, 103, 178);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+} */
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.container {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
