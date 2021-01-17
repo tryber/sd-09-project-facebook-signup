@@ -19,7 +19,7 @@ checkPersonalizado();
 
 function excluir() {
   const excluirH1 = document.querySelector('h1');
-  const excluirH2 = document.querySelector('h2');
+  const excluirH2 = document.querySelector('h4');
   const excluirForms = document.querySelector('.form-sign-in');
   excluirH1.remove();
   excluirH2.remove();
@@ -59,20 +59,20 @@ function mudarTexto() {
 }
 
 function validateChecked() {
-  const mudanca = document.getElementById('answerVal');
   const radioChecker = document.querySelector('#feminino');
   const radioChecker1 = document.querySelector('#masculino');
   const radioChecker2 = document.querySelector('#personalizado');
-  if (radioChecker.checked === '' && radioChecker1.checked === '' && radioChecker2.checked === '') {
-    mudanca.innerText = 'Campos inválidos';
-    mudanca.style.color = 'red';
+  if (radioChecker.checked === 'true' || radioChecker1.checked === 'true' || radioChecker2.checked === 'true') {
+    return true;
   }
+  return false;
 }
 
 function validate(event) {
   const infoForm = document.querySelectorAll('.form-sign-in input');
   event.preventDefault();
   const notValid = [];
+  validateChecked();
   for (let i = 0; i < infoForm.length; i += 1) {
     if (infoForm[i].value === '') {
       notValid.push([i]);
@@ -88,4 +88,3 @@ function validate(event) {
 
 const validation = document.getElementById('facebook-register');
 validation.addEventListener('click', validate);
-validation.addEventListener('click', validateChecked);
