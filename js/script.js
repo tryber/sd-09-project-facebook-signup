@@ -25,7 +25,8 @@ function createTextArea() {
     const lastElement = document.querySelector('.gender').lastElementChild;
     genderContainer.removeChild(lastElement);
   }
-  const textarea = document.createElement('textarea');
+  const textarea = document.createElement('input');
+  textarea.type = 'textarea';
   textarea.name = 'gender-custom';
   textarea.className = 'textarea-gender';
   textarea.placeholder = 'Gênero (opcional)';
