@@ -11,15 +11,55 @@ const formSubmit = document.querySelector('.facebook-register');
 
 function handleValidateFields(event) {
   event.preventDefault();
+  let filledFields = true;
+
+  const customField = customFieldIsShow();
 
   const inputs = document.querySelectorAll('.facebook-register input');
   for (let index = 0; index < inputs.length; index += 1) {
-    if (inputs[index].value === '') {
+    if (inputs[index].value === '' && customField === false) {
       const alertMessage = document.getElementById('alert');
       alertMessage.style.display = 'block';
+      filledFields = false;
+      return;
     }
   }
-  formSubmit.submit();
+
+  if (filledFields) {
+    for (let index = 0; index < inputs.length; index += 1) {
+      if (inputs[index].name === 'firstname') {
+        const greeting = document.querySelector('.greeting');
+        greeting.innerText = `Olá, ${inputs[index].value} ${inputs[index + 1].value}`; 
+      } else if (inputs[index].name === 'phone_email') {
+        const phoneMail = document.querySelector('.email-phone');
+        phoneMail.innerText = inputs[index].value; 
+      } else if (inputs[index].name === 'birthdate') {
+        const datOfBirth = document.querySelector('.date-of-birth');
+        datOfBirth.innerText = inputs[index].value; 
+      } else if (inputs[index].name === 'gender' && inputs[index].checked === true) {
+        const genderResult = document.querySelector('.gender-result');
+        genderResult.innerText = inputs[index].value; 
+      } 
+    }
+
+    const register = document.querySelector('.register');
+    register.style.display = 'none';
+
+    const result = document.querySelector('.result');
+    result.style.display = 'block';
+  }
+  // formSubmit.submit();
+}
+
+function customFieldIsShow() {
+  const customFieldElement = document.querySelector('.gender-custom');
+  let customFieldDisplay = customFieldElement.style.display;
+  if (customFieldDisplay === 'block') {
+    if (customFieldElement.value === '') {
+      return false;
+    }
+  }
+  return true;
 }
 
 formSubmit.addEventListener('submit', handleValidateFields);

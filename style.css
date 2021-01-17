@@ -1,14 +1,33 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
+  padding: 10px 0;
+}
+
+.top-bar .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .facebook-login {
   display: flex;
 }
 
+.facebook-login div {
+  padding-right: 5px;
+}
+
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
 }
@@ -24,10 +43,20 @@
 
 .left-content {
   width: 800px;
+  padding-right: 50px;
+}
+
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-weight: 700;
 }
 
 .right-content {
   width: 300px;
+}
+
+.quick-easy {
+  margin-bottom: 20px;
 }
 
 .input-group {
@@ -44,10 +73,33 @@
   flex-direction: column;
 }
 
+.facebook-register input[type='text']{
+  height: 25px;
+}
+
+.facebook-register button {
+  background-color: rgb(64 , 128 , 0);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40px;
+  width: 200px;
+}
+
 .alert-message {
   display: none;
 }
 
+.radio-group label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .gender-custom {
+  display: none;
+}
+
+.result {
   display: none;
 }
