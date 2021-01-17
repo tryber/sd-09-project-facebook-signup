@@ -2,6 +2,7 @@
   background-color: rgb(66, 103, 178);
   border: 1px red solid;
   display: flex;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -10,7 +11,6 @@
 }
 
 .facebook-login {
-  align-self: flex-end;
   border: 1px black solid;
   display: flex;
 }
