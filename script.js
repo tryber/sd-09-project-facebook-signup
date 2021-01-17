@@ -42,6 +42,7 @@ ao clicar no botão de rádio "Personalizado" */
 function genderCustom() {
   const option = document.querySelector('input[name="gender"]:checked').value;
   const element = document.querySelector('#gender-custom');
+  element.removeAttributeNode;
   const newBr = document.createElement('br');
   const newElement = document.createElement('input');
   newElement.type = 'text';
@@ -103,7 +104,7 @@ function addMensage() {
 function confirmRegistration() {
   const mainContent = document.querySelector('main');
   const rightContent = document.createElement('div');
-  rightContent.className = 'right-content teste resume';
+  rightContent.className = 'right-content resume';
   rightContent.appendChild(fullName());
   rightContent.appendChild(addPhoneOrEmail());
   rightContent.appendChild(addBirthDate());
@@ -112,67 +113,11 @@ function confirmRegistration() {
   mainContent.appendChild(rightContent);
 }
 
-// Adiciona dados cadastrados
-// function addData() {
-//   const rightContainer = document.querySelector('.teste');
-//   rightContainer.appendChild(fullName());
-//   rightContainer.appendChild(addPhoneOrEmail());
-//   rightContainer.appendChild(addBirthDate());
-//   rightContainer.appendChild(addGender());
-//   rightContainer.appendChild(addMensage());
-// }
-
-// function confirmRegistration() {
-//   const mainContent = document.querySelector('main');
-//   const rightContent = document.createElement('div');
-//   const resume = document.createElement('div');
-//   const fName = document.querySelector('#first-name').value;
-//   const lName = document.querySelector('#last-name').value;
-//   const birthday = document.querySelector('#birthdate').value;
-//   const phoneOrEmail = document.querySelector('#phone-email').value;
-//   const genderOption = document.querySelector('input[name="gender"]:checked').value;
-//   rightContent.className = 'right-content resume';
-//   resume.innerHTML = `<p>✌😎 Olá, <strong>${fName} ${lName}</strong>! Beleza?!</p>
-//   <p>‣ Telefone / e-mail: <strong>${phoneOrEmail}</strong></p>
-//   <p>‣ Data de Nasc.: <strong>${birthday}</strong></p>
-//   <p>‣ Gênero: <strong>${genderOption}</strong></p>
-//   <br><p>Projeto realizado por:</p>
-//   <p>👉 <em>Frederico Canoeira</em></p>
-//   <p>👉 <em>Cleber Teixeira</em></p>
-//   <p><strong>#GoTrybe!</strong> 🚀</p>`;
-//   rightContent.appendChild(resume);
-//   mainContent.appendChild(rightContent);
-// }
-
 // Limpa o "right-content"
 function clearForm() {
   const form = document.querySelector('.right-content');
   form.style.display = 'none';
   confirmRegistration();
-}
-
-// Realiza a validação dos dados de cadastro antes do envio
-function confirmValidation() {
-  const firstName = document.querySelector('#first-name').value;
-  const lastName = document.querySelector('#last-name').value;
-  const phoneEmail = document.querySelector('#phone-email').value;
-  const newPassword = document.querySelector('#pass-word').value;
-  const birthDate = document.querySelector('#birthdate').value;
-  if (firstName === '') {
-    false;
-  } else if (lastName === '') {
-    false;
-  } else if (phoneEmail === '') {
-    false;
-  } else if (newPassword === '') {
-    false;
-  } else if (birthDate === '') {
-    false;
-  } else if (validationRadio() !== true) {
-    false;
-  } else {
-    clearForm();
-  }
 }
 
 /* Realiza a validação de cada campo e verifica se foi preenchido
@@ -186,20 +131,30 @@ function validation() {
     const phoneEmail = document.querySelector('#phone-email').value;
     const newPassword = document.querySelector('#pass-word').value;
     const birthDate = document.querySelector('#birthdate').value;
+    let aux = true;
     if (firstName === '') {
+      aux = false;
       invalidFields();
     } else if (lastName === '') {
+      aux = false;
       invalidFields();
     } else if (phoneEmail === '') {
+      aux = false;
       invalidFields();
     } else if (newPassword === '') {
+      aux = false;
       invalidFields();
     } else if (birthDate === '') {
+      aux = false;
       invalidFields();
     } else {
+      aux = validationRadio();
       validationRadio();
     }
-    confirmValidation();
+    console.log(aux);
+    if (aux === true) {
+      clearForm();
+    }
   });
 }
 
