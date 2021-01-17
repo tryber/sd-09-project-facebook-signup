@@ -18,25 +18,6 @@ function invalidFields() {
   span.innerText = 'Campos inválidos';
 }
 
-// Realiza a validação dos botões de radio
-function validationRadio() {
-  const gender = document.getElementsByName('gender');
-  let result;
-  let aux = 0;
-  for (let index = 0; index < gender.length; index += 1) {
-    if (gender[index].checked !== true) {
-      aux += 1;
-    }
-  }
-  if (aux === 3) {
-    invalidFields();
-    result = false;
-  } else {
-    result = true;
-  }
-  return result;
-}
-
 /* Adiciona o campo "gênero personalizado"
 ao clicar no botão de rádio "Personalizado" */
 function genderCustom() {
@@ -125,28 +106,36 @@ function validation() {
   const button = document.querySelector('#facebook-register');
   button.addEventListener('click', function (event) {
     event.preventDefault();
-    let aux = 0;
-    const inputs = document.querySelectorAll('.input');
-    const radios = document.querySelector('input[name="gender"]:checked');
+    let count = 0;
+    const inputs = document.querySelectorAll('.aux');
     for (let index = 0; index < inputs.length; index += 1) {
       if (inputs[index].value === '') {
-        aux = 0;
+        count = 0;
         invalidFields();
       } else {
-        aux += 1;
+        count += 1;
       }
     }
-    if (radios === null) {
-      aux = 0;
-      invalidFields();
-    }
-    console.log(aux);
-    if (aux === 5) {
-      clearForm();
-    }
+    validationRadio(count);
   });
 }
-    
+
+// Realiza a validação dos botões de radio e chama a função limpar o formulário
+function validationRadio(count) {
+  const radios = document.querySelector('input[name="gender"]:checked');
+  let result;
+  if (radios === null) {
+    result = false;
+    invalidFields();
+  } else {
+    result = true;
+  }
+  if (count === 5 && result === true) {
+    clearForm();
+  }
+}
+
+// Chama as funções após o carregamento da página HTML
 window.onload = function () {
   login();
   clickRadio();
