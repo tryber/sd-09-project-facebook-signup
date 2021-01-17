@@ -46,7 +46,8 @@ function checkIfNameIsFilled() {
   for (let index = 0; index < nameField.length; index += 1) {
     if (nameField[index].value !== '') {
       return true
-    } return false
+    } 
+    return false
   }
 }
 
@@ -97,10 +98,10 @@ function removeParagraphWarn() {
 
 function allTheChecksOfTheForm(event) {
   event.preventDefault();
-  if (checkIfNameIsFilled() === false || 
-  checkIfPhoneIsFilled() === false || 
+  if (checkIfNameIsFilled() === false ||
+  checkIfPhoneIsFilled() === false ||
   checkIfPasswordIsFilled() === false ||
-  checkIfBirthdateIsFilled() === false || 
+  checkIfBirthdateIsFilled() === false ||
   checkIfRadioBtnIsChecked() === false) {
     addParagraphoToWarn();
   } else {
