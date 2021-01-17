@@ -33,6 +33,12 @@ header {
   width: 100%;
 }
 
+.facebook-logo-container img {
+  height: 30px;
+  margin: 5px 0;
+  width: 150px;
+}
+
 .form {
   color: #7f7f7f;
 }
