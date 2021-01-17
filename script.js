@@ -42,7 +42,6 @@ ao clicar no botão de rádio "Personalizado" */
 function genderCustom() {
   const option = document.querySelector('input[name="gender"]:checked').value;
   const element = document.querySelector('#gender-custom');
-  element.removeAttributeNode;
   const newBr = document.createElement('br');
   const newElement = document.createElement('input');
   newElement.type = 'text';
@@ -132,29 +131,14 @@ function validation() {
     const newPassword = document.querySelector('#pass-word').value;
     const birthDate = document.querySelector('#birthdate').value;
     let aux = true;
-    if (firstName === '') {
-      aux = false;
-      invalidFields();
-    } else if (lastName === '') {
-      aux = false;
-      invalidFields();
-    } else if (phoneEmail === '') {
-      aux = false;
-      invalidFields();
-    } else if (newPassword === '') {
-      aux = false;
-      invalidFields();
-    } else if (birthDate === '') {
-      aux = false;
-      invalidFields();
-    } else {
-      aux = validationRadio();
-      validationRadio();
+    if (firstName === '') {aux = false; invalidFields();
+    } else if (lastName === '') {aux = false; invalidFields();
+    } else if (phoneEmail === '') {aux = false; invalidFields();
+    } else if (newPassword === '') {aux = false; invalidFields();
+    } else if (birthDate === '') {aux = false; invalidFields();
+    } else {aux = validationRadio(); validationRadio();
     }
-    console.log(aux);
-    if (aux === true) {
-      clearForm();
-    }
+    if (aux === true) {clearForm();}
   });
 }
 
