@@ -11,7 +11,7 @@ body {
   display: flex;
   font-family: roboto , Courier, monospace;
   height: 60px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-login {
