@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook Signup</title>
+</head>
+
+<body>
+    <header>
+        <section class="top-bar">
+            <img class="facebook-logo" src="imgs/facebook-logo.png">
+            <form class="facebook-login">
+                <div class="form-group">
+                    <label id="user-email-phone-label">Email ou telefone</label>
+                    <input type="email" name="emailPhone" id="user-email-phone" class="formInput"/>
+                </div>
+                <div class="form-group">
+                    <label id="user-password-label" class="form-group">Senha</label>
+                    <input type="password" name="user-password" id="user-password" class="formInput"/>
+                </div>
+                <div class="form-control">
+                    <button id="button-login">Entrar</button>
+                </div>
+            </form>
+        </section>
+    </header>
+    <!-- Requisito 8 -->
+    <div class="main-content">
+        <!-- Requisito 9 -->
+        <div class="left-content">
+            <p id="facebook-slogan" class="slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+                fazem parte da sua vida.</p>
+            <img id="facebook-networking" src="imgs/networking.png" alt="people connected">
+        </div>
+        <!-- Requisito 10 -->
+        <div class="right-content">
+            <h1>Abra uma conta</h1>
+            <h2 class="quick-easy">É rápido e fácil.</h2>
+            <!-- Requisito 11 -->
+            <form class="js-form">
+                <div class="flex1">
+                    <input type="text" name="firstname" placeholder="Nome" data-validate-field="text">
+                    <!-- Requisito 12 -->
+                    <input type="text" name="lastname" placeholder="Sobrenome" data-validate-field="name">
+                </div>
+                <div class="flex">
+                    <!-- Requisito 13 -->
+                    <input type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="email">
+                    <!-- Requisito 14 -->
+                    <input type="password" name="password" placeholder="Nova senha" data-validate-field="password">
+                    <!-- Requisito 15 -->
+                    <label id="label-birthdate" for="birth_date">Data de nascimento</label>
+                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birth_date"
+                        data-validate-field="data">
+                </div>
+								<!-- Requisito 16 -->
+                <label id="label-gender" class="labelgender" for="Gênero">Gênero</label>
+                <input type="radio" id="female" name="gender" value="Feminino" data-validate-field="radio" required>
+                <label for="Feminino">Feminino</label>
+                <input type="radio" id="male" name="gender" value="Masculino" data-validate-field="radio" required>
+                <label for="Masculino">Masculino</label>
+                <input type="radio" id="other" name="gender" value="Personalizado" data-validate-field="radio" required>
+								<label for="Personalizado">Personalizado</label>
+                <!--Added tag(div) for requirement 18-->
+                <div id="inputParent"></div>
+                <!-- Requisito 17 -->
+                <button id="facebook-register" class="buttonregister" type="submit">Cadastre-se</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/just-validate@1.5.0/dist/js/just-validate.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
