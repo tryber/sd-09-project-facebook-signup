@@ -14,12 +14,12 @@ const validate = new window.JustValidate('.js-form', {
     },
   },
   messages: {
-    email: 'Campo Inválidos',
-    name: 'Campo Inválidos',
-    password: 'Campo Inválidos',
-    radio: 'Campo Inválidos',
-    text: 'Campo Inválidos',
-    data: 'Campo Inválidos',
+    email: 'Campos Inválidos',
+    name: 'Campos Inválidos',
+    password: 'Campos Inválidos',
+    radio: 'Campos Inválidos',
+    text: 'Campos Inválidos',
+    data: 'Campos Inválidos',
   },
 });
 const btnvalidate = document.getElementById('facebook-register');
