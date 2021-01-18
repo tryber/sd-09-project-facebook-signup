@@ -1,0 +1,115 @@
+body , div , input , button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(230, 233, 242);
+  font-family: Roboto, sans-serif;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.facebook-login div {
+  padding-right: 5px;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-control button {
+  background-color: rgb(66, 103, 178);
+  border-color: rgb(66, 103, 198);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  padding-right: 50px;
+  width: 800px;
+}
+
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-weight: 700;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.quick-easy {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group input {
+  max-width: 145px;
+}
+
+.facebook-register {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.facebook-register > label {
+  color: rgb(137, 142, 152);
+  font-weight: 700;
+}
+
+.facebook-register button {
+  background-color: rgb(97, 170, 78);
+  border-color: rgb(137, 142, 152);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40px;
+  width: 200px;
+}
+
+.alert-message {
+  display: none;
+}
+
+.radio-group label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gender-custom {
+  display: none;
+}
+
+.result {
+  display: none;
+}
