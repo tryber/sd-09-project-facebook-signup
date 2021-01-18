@@ -1,0 +1,150 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-group span {
+  color: lightgray;
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.form-control button {
+  background-color: rgb(66, 103, 178);
+  border: 1px solid gray;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 2px;
+}
+
+div label , input {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+}
+
+div label {
+  margin-top: 10px;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+.personal-data label {
+  width: auto;
+}
+
+form div input {
+  align-self: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form-group input {
+  width: 90%;
+}
+
+.main-content {
+  background-image: linear-gradient(rgb(252, 251, 250), rgb(203, 210, 228));
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 50px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.left-content img {
+  margin-top: 30px;
+  width: 80%;
+}
+
+.right-content {
+  width: 300px;
+}
+
+form aside {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.fullname input {
+  width: 45%;
+}
+
+.label-gender {
+  display: block;
+}
+
+.radio-buttons {
+  display: flex;
+}
+
+.radio-buttons div {
+  width: 30%;
+}
+
+.custom-gender {
+  width: 100%;
+}
+
+.isVisible {
+  display: none;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+.links-footer {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.links-footer li {
+  display: inline-block;
+  margin: 3px;
+  padding: 5px;
+}
+
+.plus-sign {
+  border: solid gray 1px;
+}
