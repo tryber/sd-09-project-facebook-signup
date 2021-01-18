@@ -62,7 +62,7 @@ function clearInfos() {
   const formInfosUnorderedList = document.querySelector('#form-infos');
   const formInfosUnorderedListChildremNodeList = document.querySelectorAll('#form-infos li');
 
-  for (let i = 0; i <  formInfosUnorderedListChildremNodeList.length; i += 1) {
+  for (let i = 0; i < formInfosUnorderedListChildremNodeList.length; i += 1) {
     formInfosUnorderedList.removeChild(formInfosUnorderedListChildremNodeList[i]);
   }
 }
