@@ -51,10 +51,10 @@ function userData() {
   ${userGender.value}`;
   return welcome;
 }
-let date = document.querySelector('#birth_date');
+const date = document.querySelector('#birth_date');
 const registerButton = document.getElementById('facebook-register');
 registerButton.addEventListener('click', function () {
-  if(date.value !== ""){
+  if (date.value !== '') {
     if (validate) {
       const selectRight = document.querySelector('.right-content');
       selectRight.innerText = userData();
