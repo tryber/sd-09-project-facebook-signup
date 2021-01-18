@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://www.lixil.co.jp/lineup/kitchen/s/richelle_sp/pic/icon_facebook.png" type="image/x-icon">
+  <title>Facebook Project</title>
+</head>
+<body>
+  <header class='top-bar'>
+    <img id='facebook-logo-id' class='facebook-logo' src='imgs/facebook-logo.png' alt='Facebook Logo'>
+    <form class='facebook-login' action='' method='GET'>
+      <div class='form-group'>
+        <label for='user-email-phone' id='user-email-phone-label' class='label-autentication'>Email ou telefone</label>
+        <input id='user-email-phone' name='user-autentication' type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='user-password' id='user-password-label' class='label-autentication'>Senha</label>
+        <input id='user-password' name='password-autentication' type='password'>
+      </div>
+      <div class='form-control'>
+        <button id='button-login'>Entrar</button>
+      </div>
+    </form>
+  </header>
+  <main id='main-container' class='main-content'>
+    <div class='left-content'>
+      <p id='facebook-slogan'>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img id='facebook-networking' src='imgs/networking.png' alt='Facebook networking'>
+    </div>
+    <div class='right-content'>
+      <h1>Abra uma conta</h1>
+      <p class='quick-easy'>É rápido e fácil.</p>
+      <div>
+        <form class='register' action='' method='GET'>
+          <div class='container-name-lastname'>
+            <input id='input-firstname' class='input-text-inscription text' name='firstname' type='text' placeholder='Nome'>
+            <input id='input-lastname' class='input-text-inscription text' name='lastname' type='test' placeholder='Sobrenome'>
+          </div>
+          <input class='input-text-inscription text' name='phone_email' type='text' placeholder='Celular ou email'>
+          <input class='input-text-inscription' name='password' type='password' placeholder='Nova senha'>
+          <label for='' id='label-birthdate'>Data de nascimento</label>
+          <input class='input-text-incription text' name='birthdate' type='text' placeholder='dd/mm/aaaa'>
+          <label id='label-gender'>Gênero</label>
+          <div id='container-gender-id' class='container-gender'>
+            <input id='feminino' class='input-radio-inscription' name='gender' type='radio' value='Feminino'>
+            <label for='feminino'>Feminino</label>
+            <input id='masculino' class='input-radio-inscription' name='gender' type='radio' value='Masculino'>
+            <label for='masculino'>Masculino</label>
+            <input id='personalizado' class='input-radio-inscription' name='gender' type='radio' value='Personalizado'>
+            <label for='personalizado'>Personalizado</label>
+          </div>
+          <div id='input-gender'>
+          </div>
+          <button id='facebook-register' type='submit'>Cadastre-se</button>
+          <p id='invalid'></p>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

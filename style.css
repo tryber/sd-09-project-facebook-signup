@@ -1,0 +1,52 @@
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.label-autentication {
+  color: white;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin: 0 15px 5px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-name-lastname {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container-gender {
+  display: flex;
+  flex-direction: row;
+}
