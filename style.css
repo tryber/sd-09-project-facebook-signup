@@ -1,15 +1,15 @@
 body {
+  background-color: aliceblue;
   margin: 0;
   padding: 0;
-  background-color: aliceblue;
 }
 
-.facebook-logo{
-  margin-left:400px;
+.facebook-logo {
+  margin-left: 400px;
 }
 
-#button-login{
-  margin-bottom:5px;
+.button-login {
+  margin-bottom: 5px;
 }
 
 .top-bar {
@@ -53,13 +53,13 @@ body {
 }
 
 .input-phone-password-birthdate {
-  width:369px;
+  width: 369px;
 }
 
-#birthdate{
+.password-birthdate {
   margin-top: 15px;
 }
 
-#facebook-register {
+.facebook-register {
   background-color: rgb(3, 238, 3);
 }
