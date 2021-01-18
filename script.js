@@ -66,6 +66,21 @@ function listenToFacebookRegisterButton() {
 
 listenToFacebookRegisterButton();
 
+function createGenderInputField() {
+  const custonGenderInputDiv = document.querySelector('.custom-gender-input');
+  const textInput = document.createElement('input');
+  const customRadioButton = document.querySelector('#custom');
+
+  textInput.name = 'gender-custom';
+  textInput.id = 'gender-custom';
+  textInput.placeholder = 'Gênero (opcional)';
+
+  custonGenderInputDiv.appendChild(textInput);
+
+  customRadioButton.removeEventListener('click', createGenderInputField);
+  listenToGenderButtons();
+}
+
 function listenToCustomRadioButton() {
   const customRadioButton = document.querySelector('#custom');
 
@@ -91,21 +106,6 @@ function listenToGenderButtons() {
 
   maleRadioButton.addEventListener('click', clearCustonGenderInputDiv);
   femaleRadioButton.addEventListener('click', clearCustonGenderInputDiv);
-}
-
-function createGenderInputField() {
-  const custonGenderInputDiv = document.querySelector('.custom-gender-input');
-  const textInput = document.createElement('input');
-  const customRadioButton = document.querySelector('#custom');
-
-  textInput.name = 'gender-custom';
-  textInput.id = 'gender-custom';
-  textInput.placeholder = 'Gênero (opcional)';
-
-  custonGenderInputDiv.appendChild(textInput);
-
-  customRadioButton.removeEventListener('click', createGenderInputField);
-  listenToGenderButtons();
 }
 
 listenToCustomRadioButton();
