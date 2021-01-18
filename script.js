@@ -1,5 +1,3 @@
-let final = 'acabou';
-
 function showLoginData(evt) {
   evt.preventDefault();
   const loginEmailPhone = document.getElementById('user-email-phone').value;
