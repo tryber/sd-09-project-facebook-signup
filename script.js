@@ -7,9 +7,9 @@ function formCheck() {
   const emailFone = document.getElementById('emailFone').value;
   const newPassword = document.getElementById('newPassword').value;
   const birthdate = document.getElementById('birthdate').value;
-  if (name === '' && lastName === '' && emailFone === '' && newPassword === '' && birthdate == '') {
+  if (name === '' && lastName === '' && emailFone === '' && newPassword === '' && birthdate === '') {
     alert('Campos inválidos');
   } else {
-      alert('Cadastro realizado');
+    alert('Cadastro realizado');
   }
 }
