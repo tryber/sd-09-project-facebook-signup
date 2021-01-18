@@ -28,7 +28,7 @@ const removePersonalyzed = () => {
 
 const personalizedGender = document.getElementById('personalyzed-gender');
 personalizedGender.addEventListener('click', showPersonalyzed);
-//teste
+
 const otherGender = document.querySelectorAll('.other-gender');
 otherGender[0].addEventListener('click', removePersonalyzed);
 otherGender[1].addEventListener('click', removePersonalyzed);
