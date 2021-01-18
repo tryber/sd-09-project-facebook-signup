@@ -1,12 +1,12 @@
-body, div, input, button {
+body , div , input , button {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Roboto, sans-serif;
   background-color: rgb(230, 233, 242);
+  font-family: Roboto, sans-serif;
 }
 
 .container {
@@ -84,9 +84,9 @@ body {
 }
 
 .facebook-register {
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
 }
 
 .facebook-register > label {
@@ -99,11 +99,11 @@ body {
   border-color: rgb(137, 142, 152);
   border-radius: 5px;
   color: white;
+  cursor: pointer;
   font-size: 18px;
   font-weight: 700;
   height: 40px;
   width: 200px;
-  cursor: pointer;
 }
 
 .alert-message {

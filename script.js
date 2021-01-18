@@ -41,10 +41,9 @@ const validateFields = () => {
   if (!inputsTextOk || !inputsPasswordOk) {
     alertMessage.style.display = 'block';
     return false;
-  } else {
-    alertMessage.style.display = 'none';
-    return true;
   }
+  alertMessage.style.display = 'none';
+  return true;
 };
 
 const getRegisterResult = () => {
