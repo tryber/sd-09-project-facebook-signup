@@ -8,10 +8,6 @@ body {
   margin-left: 400px;
 }
 
-.button-login {
-  margin-bottom: 5px;
-}
-
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -60,6 +56,6 @@ body {
   margin-top: 15px;
 }
 
-.facebook-register {
+.button-register {
   background-color: rgb(3, 238, 3);
 }

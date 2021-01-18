@@ -1,7 +1,7 @@
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
-function formCheck() {
+document.getElementById('facebook-register').addEventListener('click', function () {
   const name = document.getElementById('name').value;
   const lastName = document.getElementById('lastName').value;
   const emailFone = document.getElementById('emailFone').value;
@@ -12,4 +12,4 @@ function formCheck() {
   } else {
     alert('Cadastro realizado');
   }
-}
+});
