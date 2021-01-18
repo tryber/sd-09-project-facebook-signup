@@ -83,19 +83,8 @@ const getGender = () => {
   }
 };
 
-/* const getRegisterResult = () => {
-  for (let index = 0; index < inputs.length; index += 1) {
-     else 
-    } else if (inputs[index].name === 'birthdate') {
-      const datOfBirth = document.querySelector('.date-of-birth');
-      datOfBirth.innerText = inputs[index].value;
-    } else 
-  }
-};
- */
 const displayRegisterResult = (isCompleted) => {
   if (isCompleted) {
-    // getRegisterResult();
     getFullName();
     getPhoneEmail();
     getBirthdate();
