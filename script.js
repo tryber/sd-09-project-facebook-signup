@@ -46,17 +46,17 @@ function validInput(event) {
 }
 btnCadastre.addEventListener('click', validInput);
 
-const rdoPerso = document.getElementById('personalizado');
-function inputTxtPerso() {
-  const rdoPerso2 = document.querySelector('.radios');
-  const rdoPersoNew = document.createElement('input');
-  const rdoPersoNewName = 'gender-custom';
-  const rdoPersoNewPh = 'Gênero (opcional)';
-  rdoPersoNew.name = rdoPersoNewName;
-  rdoPersoNew.placeholder = rdoPersoNewPh;
-  rdoPerso2.appendChild(rdoPersoNew);
-}
-rdoPerso.addEventListener('click', inputTxtPerso);
+// const rdoPerso = document.getElementById('personalizado');
+// function inputTxtPerso() {
+//   const rdoPerso2 = document.querySelector('.radios');
+//   const rdoPersoNew = document.createElement('input');
+//   const rdoPersoNewName = 'gender-custom';
+//   const rdoPersoNewPh = 'Gênero (opcional)';
+//   rdoPersoNew.name = rdoPersoNewName;
+//   rdoPersoNew.placeholder = rdoPersoNewPh;
+//   rdoPerso2.appendChild(rdoPersoNew);
+// }
+// rdoPerso.addEventListener('click', inputTxtPerso);
 
 function deleteWrite() {
   const inputName2 = document.getElementById('name');
