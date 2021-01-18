@@ -51,11 +51,11 @@ function userData() {
   ${userGender.value}`;
   return welcome;
 }
-const date = document.querySelector('#birth_date')
+
 const registerButton = document.getElementById('facebook-register');
 registerButton.addEventListener('click', function () {
-    if (validate) {
-      const selectRight = document.querySelector('.right-content');
-      selectRight.innerText = userData();
-    }
+  if (validate) {
+    const selectRight = document.querySelector('.right-content');
+    selectRight.innerText = userData();
+  }
 });
