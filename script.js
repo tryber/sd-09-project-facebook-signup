@@ -26,26 +26,26 @@ function createElement() {
 
 function formatDate(value) {
   const dataComplete = value.split('-');
-
   return `${dataComplete[2]}/${dataComplete[1]}/${dataComplete[0]}`;
 }
 
-function breakLine(index) {
+function breakLine(index, parent) {
   if (index > 0 && index !== 2) {
     parent.innerText += '\n';
   }
 }
 
 function inputWriteValues(index, value, parent) {
-  if (!(index === 3 || (index > 4 && !value.checked))) {
+  if (index < 3 || (index > 4 && value.checked) || (index === 8)) {
     parent.innerText += ` ${value.value}`;
+    breakLine(index, parent);
   }
 
-  if (index === 3) {
-    parent.innerText += formatDate(index);
+  if (index === 4) {
+    breakLine(index, parent);
+    parent.innerText += formatDate(value.value);
+    breakLine(index, parent);
   }
-
-  breakLine(index);
 }
 
 function writeValues() {
