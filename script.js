@@ -1,6 +1,7 @@
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
+
 document.getElementById('facebook-register').addEventListener('click', function () {
   const name = document.getElementById('name').value;
   const lastName = document.getElementById('lastName').value;
