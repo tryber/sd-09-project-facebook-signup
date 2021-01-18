@@ -18,7 +18,7 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 10px 0;
 }
 
