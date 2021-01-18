@@ -66,38 +66,16 @@ function listenToFacebookRegisterButton() {
 
 listenToFacebookRegisterButton();
 
-function createGenderInputField() {
-  const custonGenderInputDiv = document.querySelector('.custom-gender-input');
-  const textInput = document.createElement('input');
-  const customRadioButton = document.querySelector('#custom');
-
-  textInput.name = 'gender-custom';
-  textInput.id = 'gender-custom';
-  textInput.placeholder = 'Gênero (opcional)';
-
-  custonGenderInputDiv.appendChild(textInput);
-
-  customRadioButton.removeEventListener('click', createGenderInputField);
-  listenToGenderButtons();
-}
-
-function listenToCustomRadioButton() {
-  const customRadioButton = document.querySelector('#custom');
-
-  customRadioButton.addEventListener('click', createGenderInputField);
-}
-
 function clearCustonGenderInputDiv() {
-  const maleRadioButton = document.querySelector('#male');
-  const femaleRadioButton = document.querySelector('#female');
+  const custonGenderInputDivChildNodeList = document.querySelector(
+    '.custom-gender-input *',
+  );
   const custonGenderInputDiv = document.querySelector('.custom-gender-input');
   const textInput = document.querySelector('#gender-custom');
 
-  custonGenderInputDiv.removeChild(textInput);
-
-  maleRadioButton.removeEventListener('click', clearCustonGenderInputDiv);
-  femaleRadioButton.removeEventListener('click', clearCustonGenderInputDiv);
-  listenToCustomRadioButton();
+  if (custonGenderInputDivChildNodeList) {
+    custonGenderInputDiv.removeChild(textInput);
+  }
 }
 
 function listenToGenderButtons() {
@@ -106,6 +84,30 @@ function listenToGenderButtons() {
 
   maleRadioButton.addEventListener('click', clearCustonGenderInputDiv);
   femaleRadioButton.addEventListener('click', clearCustonGenderInputDiv);
+}
+
+listenToGenderButtons();
+
+function createGenderInputField() {
+  const custonGenderInputDivChildNodeList = document.querySelectorAll(
+    '.custom-gender-input *',
+  );
+  const custonGenderInputDiv = document.querySelector('.custom-gender-input');
+  const textInput = document.createElement('input');
+
+  textInput.name = 'gender-custom';
+  textInput.id = 'gender-custom';
+  textInput.placeholder = 'Gênero (opcional)';
+
+  if (custonGenderInputDivChildNodeList.length === 0) {
+    custonGenderInputDiv.appendChild(textInput);
+  }
+}
+
+function listenToCustomRadioButton() {
+  const customRadioButton = document.querySelector('#custom');
+
+  customRadioButton.addEventListener('click', createGenderInputField);
 }
 
 listenToCustomRadioButton();
