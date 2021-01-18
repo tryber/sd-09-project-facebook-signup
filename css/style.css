@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  border: 1px solid black;
+  height: 23px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullname {
+  display: flex;
+}
+
+.gender {
+  display: flex;
+  flex-wrap: wrap;
+}
