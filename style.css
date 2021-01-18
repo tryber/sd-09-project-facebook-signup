@@ -10,12 +10,15 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
   padding: 10px 0;
 }
 
@@ -53,7 +56,7 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .left-content {
