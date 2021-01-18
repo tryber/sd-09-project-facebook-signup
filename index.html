@@ -47,16 +47,16 @@
         </div>
         <label for="gender" id="label-gender" class="label-gender">Gênero</label>
         <div class="radio-buttons">
-           <label for="female">
-            <input value="Feminino" id="female" class="radio" type="radio" name="gender">Feminino</input>
-          </label>
-          <label for="male">
-            <input value="Masculino" id="male" class="radio" type="radio" name="gender">Masculino</input>
-          </label>
-          <label for="gender-custom">
-            <input value="Personalizado" id="gender-custom" class="radio gender-custom" type="radio" name="gender">Personalizado</input>
-          </label>
-        <input id="custom-gender-input" class="isVisible" type="text" name="gender-custom" placeholder="Gênero (opcional)"></input>
+          <div>
+            <label for="female"><input value="Feminino" id="female" class="radio" type="radio" name="gender">Feminino</input></label>
+          </div>
+          <div>
+            <label for="male"><input value="Masculino" id="male" class="radio" type="radio" name="gender">Masculino</input></label>
+          </div>
+          <div>
+            <label for="gender-custom"><input value="Personalizado" id="gender-custom" class="radio gender-custom" type="radio" name="gender">Personalizado</input></label>
+            <input id="custom-gender-input" class="isVisible" type="text" name="gender-custom" placeholder="Gênero (opcional)"></input>
+          </div>
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
         <p class="invalid-message isVisible">Campos inválidos</p>
