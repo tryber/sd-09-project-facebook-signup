@@ -1,3 +1,5 @@
+let final = 'acabou';
+
 function showLoginData(evt) {
   evt.preventDefault();
   const loginEmailPhone = document.getElementById('user-email-phone').value;
@@ -82,27 +84,32 @@ function checkInputedData(input) {
   return 1;
 }
 
+function setDataIntoDiv(childElement, fatherElement) {
+  fatherElement.appendChild(childElement);
+}
+
 function showUserData(inputs) {
   const rightContent = document.querySelector('.right-content');
+  const nameElement = document.createElement('p');
   rightContent.innerText = '';
-  for (let index = 0; index < inputs.length; index = + 1) {
+  nameElement.innerText = `Olá, ${inputs[0].value} ${inputs[1].value}`;
+  setDataIntoDiv(nameElement, rightContent);
+  for (let index = 2; index < inputs.length; index += 1) {
     const elementCreator = document.createElement('p');
-    const append =
+    elementCreator.innerText = `${inputs[index].name}: ${inputs[index].value} `;
     if (inputs[index].name !== 'gender' && inputs[index].name !== 'password') {
-      elementCreator.innerText = `${inputs[index].name}: ${inputs[index].value}`;
-      rightContent.appendChild(elementCreator);
+      setDataIntoDiv(elementCreator, rightContent);
     } else if (inputs[index].checked === true) {
-      elementCreator.innerText = `${inputs[index].name}: ${inputs[index].value}`;
-      rightContent.appendChild(elementCreator);
+      setDataIntoDiv(elementCreator, rightContent);
     }
   }
 }
 
 function validateInputs(evt) {
   evt.preventDefault();
-  const inputs = document.querySelector('.main-form');
-  inputs.querySelectorAll('.main-form > input');
-  const radios = inputs.getElementsByClassName('radios');
+  const mainForm = document.querySelector('.main-form');
+  const inputs = mainForm.querySelectorAll('input');
+  const radios = mainForm.querySelectorAll('.radios');
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].className !== 'radios' && checkInputedData(inputs[index])) {
       showMessage('error', 'Campos inválidos');
@@ -116,10 +123,7 @@ function validateInputs(evt) {
   showMessage('success', 'Tudo certo');
   showUserData(inputs);
   return 'Sucesso';
-
-  /** Genadi, chame a sua funcao para mostrar os dados aqui! */
 }
-
 
 const btnEntrar = document.getElementById('button-login');
 btnEntrar.addEventListener('click', showLoginData);
