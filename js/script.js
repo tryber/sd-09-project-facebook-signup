@@ -1,3 +1,9 @@
+const nameField = document.querySelectorAll('.fullname input');
+const phoneField = document.getElementById('phone-input');
+const passwordField = document.getElementById('password-input');
+const birthdateField = document.getElementById('birthdate-input');
+const rightForm = document.querySelector('.right-form');
+
 document.querySelector('#button-login').addEventListener('click', function (event) {
   event.preventDefault();
   const userEmailPhone = document.getElementById('user-email-phone').value;
@@ -42,7 +48,6 @@ inputOtherGender.addEventListener('click', createTextArea);
 const btnFacebookRegister = document.getElementById('facebook-register');
 
 function checkIfNameIsFilled() {
-  const nameField = document.querySelectorAll('.fullname input');
   for (let index = 0; index < nameField.length; index += 1) {
     if (nameField[index].value !== '') {
       return true;
@@ -52,7 +57,6 @@ function checkIfNameIsFilled() {
 }
 
 function checkIfPhoneIsFilled() {
-  const phoneField = document.getElementById('phone-input');
   if (phoneField.value !== '') {
     return true;
   }
@@ -60,14 +64,12 @@ function checkIfPhoneIsFilled() {
 }
 
 function checkIfPasswordIsFilled() {
-  const passwordField = document.getElementById('password-input');
   if (passwordField.value !== '') {
     return true;
   }
   return false;
 }
 function checkIfBirthdateIsFilled() {
-  const birthdateField = document.getElementById('birthdate-input');
   if (birthdateField.value !== '') {
     return true;
   }
@@ -82,7 +84,6 @@ function checkIfRadioBtnIsChecked() {
 }
 
 function addParagraphoToWarn() {
-  const rightForm = document.querySelector('.right-form');
   const validationWarn = document.getElementById('validation-warn');
   if (validationWarn === null) {
     const pToWarn = document.createElement('p');
@@ -93,7 +94,6 @@ function addParagraphoToWarn() {
 }
 
 function removeParagraphWarn() {
-  const rightForm = document.querySelector('.right-form');
   const validationWarn = document.getElementById('validation-warn');
   if (validationWarn !== null) {
     rightForm.removeChild(validationWarn);
@@ -110,7 +110,51 @@ function allTheChecksOfTheForm(event) {
     addParagraphoToWarn();
   } else {
     removeParagraphWarn();
+    return true
   }
 }
 
 btnFacebookRegister.addEventListener('click', allTheChecksOfTheForm);
+btnFacebookRegister.addEventListener('click', addInformations);
+
+function addRadioCheckedToAVariable() {
+  if (document.querySelectorAll('.gender input')[0].checked === true) {
+    return 'Feminino'
+  } else if (document.querySelectorAll('.gender input')[1].checked === true) {
+    return 'Masculino'
+  } else if (document.querySelectorAll('.gender input')[2].checked === true) {
+    return 'Personalizado'
+  }
+}
+
+function addInformations() {
+  const mainContent = document.querySelector('.main-content');
+  const rightContent = document.querySelector('.right-content');
+  const rightContentChilds = document.querySelector('.right-content').children;
+  const newDiv = document.createElement('div');
+
+  if (allTheChecksOfTheForm(event) === true) {
+    newDiv.className = 'div-with-data';
+    mainContent.appendChild(newDiv);
+
+    let paragraph = document.createElement('p');
+    paragraph.innerText = `Olá, ${document.querySelectorAll('.fullname input')[0].value} ${document.querySelectorAll('.fullname input')[1].value}`;
+    newDiv.appendChild(paragraph);
+
+    paragraph = document.createElement('p');
+    paragraph.innerText = `Seu número/email é ${phoneField.value}`;
+    newDiv.appendChild(paragraph);
+
+    paragraph = document.createElement('p');
+    paragraph.innerText = birthdateField.value;
+    newDiv.appendChild(paragraph);
+    
+    paragraph = document.createElement('p');
+    paragraph.innerText = addRadioCheckedToAVariable();
+    newDiv.appendChild(paragraph);
+    for (let index = 0; index < rightContentChilds.length; index += 1) {
+      rightContent.removeChild(rightContentChilds[index])
+      index -= 1;
+    }
+  }
+}
