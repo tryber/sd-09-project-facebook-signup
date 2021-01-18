@@ -41,3 +41,21 @@ function personalizedGender() {
   }
 }
 otherGender.addEventListener('click', personalizedGender);
+
+function userData() {
+  const data = document.getElementsByTagName('input');
+  const userGender = document.querySelector('input[type="radio"]:checked');
+  const welcome = `Olá, ${data[2].value} ${data[3].value}
+  ${data[4].value}
+  ${data[6].value}
+  ${userGender.value}`;
+  return welcome;
+}
+
+const registerButton = document.getElementById('facebook-register');
+registerButton.addEventListener('click', function () {
+  if (validate) {
+    const selectRight = document.querySelector('.right-content');
+    selectRight.innerText = userData();
+  }
+});
