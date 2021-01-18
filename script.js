@@ -3,18 +3,14 @@ document.querySelector('#button-login').addEventListener('click', function () {
   alert(userEmailPhoneValue);
 });
 
-// function validateForm() {
-//   let inputs = document.getElementsByClassName('required');
-//   let lengths = inputs.length;
-//   let valid = true;
-//   for (let i = 0; i < lengths; i += 1){
-//     if (inputs[i].value) {
-//       valid = false; }
-//   }
-//   if (valid) {
-//     return true;
-//   }
-//     alert('Campos Inválidos');
-// }
+// Adiciona input de gênero personalizado
+const customGenderInput = () => {
+  const inputGender = document.querySelector('#gender-custom');
+  if(document.querySelector('#other').checked === true) {
+    inputGender.classList.remove('hidden');
+  } else {
+    inputGender.classList.add('hidden');
+  }
+}
 
-// document.querySelector('#facebook-register').addEventListener('click', validateForm);
+document.querySelector('.gender-input').addEventListener('click', customGenderInput);
