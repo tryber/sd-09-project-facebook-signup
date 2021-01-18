@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Facebook Project</title>
+  </head>
+  <body>
+    <!-- Do item 1 ao 7 -->
+    <div class="top-bar">
+      <img
+        class="facebook-logo"
+        src="imgs/facebook-logo.png"
+        alt="facebook logo"
+      />
+      <form class="facebook-login">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone"
+            >Email ou telefone</label
+          >
+          <input type="text" id="user-email-phone" name="user-email-phone" />
+        </div>
+        <div class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input type="password" name="user-password" id="user-password" />
+        </div>
+        <div class="form-control">
+          <button id="button-login">Entrar</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Do item 8 ao 15 -->
+    <div>
+      <main class="main-content">
+        <div class="left-content slogan image">
+          <p id="facebook-slogan">
+            O Facebook ajuda você a se conectar e compartilhar com as pessoas
+            que fazem parte da sua vida.
+          </p>
+          <img id="facebook-networking" src="imgs/networking.png" />
+        </div>
+        <div class="right-content">
+          <h1>Abra uma conta</h1>
+          <p class="quick-easy">É rápido e fácil.</p>
+          <div>
+            <form class="main-form">
+              <div class="register-name">
+                <input
+                  type="text"
+                  name="firstname"
+                  placeholder="Nome"
+                  id="firstname"
+                />
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Sobrenome"
+                  id="lastname"
+                />
+              </div>
+              <div class="mail-input">
+                <input
+                  type="text"
+                  type="number"
+                  name="phone_email"
+                  placeholder="Celular ou email"
+                  id="user-email-phone-apply"
+                  required
+                />
+              </div>
+              <div class="password-input">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Nova senha"
+                  id="password"
+                  required
+                />
+              </div>
+              <div class="radio-column" id="radios-father">
+                <label id="label-gender" for="gender">Gênero</label>
+                <div class="radio-in-line" id="radios">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="Feminino"
+                    id="female"
+                    class="radios"
+                    required
+                  />Feminino
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="Masculino"
+                    id="male"
+                    class="radios"
+                    required
+                  />Masculino
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="Personalizado"
+                    id="other"
+                    class="radios"
+                    required
+                  />Personalizado
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" id="label-birthdate">Data de nascimento</label>
+                <div class="input-group date" data-date-format="dd/mm/yyyy">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="dd/mm/aaaa"
+                    name="birthdate"
+                    id="birthdate"
+                  />
+                  <div class="input-group-addon" >
+                    <span class="glyphicon glyphicon-th"></span>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" id="facebook-register">Cadastre-se</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+  <script>
+    $('.input-group.date').datepicker({format: "dd/mm/yyyy"});
+  </script>
+</html>
