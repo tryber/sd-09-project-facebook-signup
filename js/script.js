@@ -112,7 +112,7 @@ function allTheChecksOfTheForm(event) {
     removeParagraphWarn();
     return true;
   }
-  return ''
+  return '';
 }
 
 btnFacebookRegister.addEventListener('click', allTheChecksOfTheForm);
