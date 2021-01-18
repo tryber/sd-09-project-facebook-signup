@@ -1,9 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 body {
   font-family: helvetica, arial, sans-serif;
 }
@@ -12,13 +6,17 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 80px;
 }
 
 .facebook-login {
-  align-items: center;
   display: flex;
-  justify-content: space-around;
+}
+
+.form-control {
+  align-self: center;
+  margin-top: 10px;
 }
 
 .form-group {
@@ -34,10 +32,6 @@ body {
   font-size: 10px;
   font-weight: 500;
   margin-top: 2px;
-}
-
-.form-control {
-  align-self: flex-end;
 }
 
 .form-control button {
@@ -64,15 +58,11 @@ div input {
   width: 90%;
 }
 
-/* main.main-content {
-  background-image: linear-gradient(white, rgb(204, 202, 202));
-} */
-
 .main-content {
   background-image: linear-gradient(rgb(252, 251, 250), rgb(203, 210, 228));
   display: flex;
-  justify-content: center;
-  padding: 40px 20px;
+  justify-content: space-around;
+  padding: 80px 50px;
 }
 
 .left-content {
@@ -96,14 +86,6 @@ form aside {
   justify-content: space-between;
   margin-top: 20px;
 }
-
-/* aside h1 {
-  font-size: 2rem;
-} */
-
-/* aside h2 {
-  font-size: 1.3rem;
-} */
 
 .fullname input {
   width: 45%;
