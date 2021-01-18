@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--HEADER-->
+  <header class='top-bar'>
+    <img src="imgs/facebook-logo.png" alt="facebook" class="facebook-logo">
+    <form class='facebook-login'>
+      <div class='form-group'>
+        <label for="user-email-phone" class='login-label' id='user-email-phone-label'>Email ou telefone</label>
+        <input type="text" id='user-email-phone'>
+      </div>
+      <div class='form-group'>
+        <label for="user-password" id="user-password-label" class="login-label">Senha</label>
+        <input type="password" id="user-password">
+      </div>
+      <div class='form-control'>
+      <button id='button-login'>Entrar</button>
+      </div>
+    </form>
+  </header>
+
+  <!-- MAIN -->
+<main class="main-content">
+  <aside class='left-content'>
+    <p id='facebook-slogan'>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+    <img src="imgs/networking.png" alt="" id="facebook-networking">
+  </aside>
+  <aside class="right-content">
+    <h1>Abra uma conta</h1>
+    <p class="quick-easy">É rápido e fácil.</p>
+    <form action="" id='register-form'>
+      <input type="text" name="firstname" placeholder='Nome' class="lastname marginName countInput">
+      <input type="text" name="lastname" class="lastname countInput" placeholder="Sobrenome">
+      <input type="text" name="phone_email" placeholder="Celular ou email" class="formInput countInput">
+      <input type="password" name="password" placeholder="Nova senha" class="formInput countInput">
+      <label for="" id="label-birthdate">Data de nascimento</label>
+      <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="formInput countInput">
+      <label for="" id="label-gender">Gênero</label><br>
+      <input type="radio" name="gender" class="countInput" value="Feminino">Feminino
+      <input type="radio" name="gender" class="countInput" value="Masculino">Masculino
+      <input type="radio" name="gender" class="countInput" id='custom-input' value="Personalizado">Personalizado
+      <button type='submit' id="facebook-register">Cadastre-se</button>
+      <p id="alertP"></p>
+    </form>
+  </aside>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>
