@@ -6,7 +6,7 @@ document.getElementById('facebook-register').addEventListener('click', function 
   const lastName = document.getElementById('lastName').value;
   const emailFone = document.getElementById('emailFone').value;
   const newPassword = document.getElementById('newPassword').value;
-  const birthdate = document.getElementById('birthdate').value;
+  const birthdate = document.getElementById('birth-date').value;
   if (name === '' && lastName === '' && emailFone === '' && newPassword === '' && birthdate === '') {
     alert('Campos inválidos');
   } else {
