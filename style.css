@@ -9,12 +9,8 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-<<<<<<< HEAD
-  height: 10%;
-=======
   font-family: roboto , Courier, monospace;
-  height: 60px;
->>>>>>> e1d65551701a27b5a5cce0a5ea363db1169c8b38
+  height: 10%;
   justify-content: space-between;
 }
 
