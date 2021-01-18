@@ -8,24 +8,24 @@
   display: flex;
 }
 
-.label-autentication {
-  color: white;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 0 15px;
 }
 
+.label-autentication {
+  color: white;
+}
+
 .form-control {
   align-self: flex-end;
+  margin: 0 15px 5px;
 }
 
 .main-content {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .left-content {
@@ -46,7 +46,7 @@
   flex-wrap: nowrap;
 }
 
-.container-sex {
+.container-gender {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
 }

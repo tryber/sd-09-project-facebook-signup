@@ -14,41 +14,44 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## Sumário
 
-- [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
-  - [Dicas](#dicas)
-- [Como desenvolver](#como-desenvolver)
-- [Code Climate](#code-climate)
-- [Requisitos do projeto](#requisitos-do-projeto)
-- [Lista de requisitos obrigatórios](#lista-de-requisitos-obrigatórios)
-  - [1. Crie uma barra azul na parte superior da página](#1-crie-uma-barra-azul-na-parte-superior-da-página)
-  - [2. Posicione o logotipo do Facebook no canto esquerdo na barra superior](#2-posicione-o-logotipo-do-facebook-no-canto-esquerdo-na-barra-superior)
-  - [3. Adicione um formulário de autenticação no canto direito da barra superior](#3-adicione-um-formulário-de-autenticação-no-canto-direito-da-barra-superior)
-  - [4. Crie uma classe no CSS](#4-crie-uma-classe-no-CSS)
-  - [5. Adicione um subcontainer para agrupar o rótulo e campo "E-mail ou telefone" dentro do formulário criado na etapa 3](#5-adicione-um-subcontainer-para-agrupar-o-rótulo-e-campo-"E-mail-ou-telefone"-dentro-do-formulário-criado-na-etapa-3)
-  - [6. Adicione um subcontainer para agrupar o rótulo e campo "Senha" dentro do formulário criado na etapa 3](#6-adicione-um-subcontainer-para-agrupar-o-rótulo-e-campo-"Senha"-dentro-do-formulário-criado-na-etapa-3)
-  - [7. Adicione um subcontainer com o botão "Entrar" dentro do formulário criado na etapa 3](#7-adicione-um-subcontainer-com-o-botão-"Entrar"-dentro-do-formulário-criado-na-etapa-3)
-  - [8. Crie um container com a classe main-content abaixo da barra azul para agrupar o conteúdo principal da página](#8-crie-um-container-com-a-classe-main-content-abaixo-da-barra-azul-para-agrupar-o-conteúdo-principal-da-página)
-  - [9. Crie um subcontainer para colocar o conteúdo do lado esquerdo](#9-crie-um-subcontainer-para-colocar-o-conteúdo-do-lado-esquerdo)
-  - [10. Crie um subcontainer para colocar o conteúdo do lado direito](#10-crie-um-subcontainer-para-colocar-o-conteúdo-do-lado-direito)
-  - [11. Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10](#11-crie-um-campo-de-entrada-de-texto-para-o-nome-do-usuário-dentro-do-formulário-criado-no-requisito-10)
-  - [12. Crie um campo de entrada de texto para o sobrenome do usuário dentro do formulário criado no requisito 10](#12-crie-um-campo-de-entrada-de-texto-para-o-sobrenome-do-usuário-dentro-do-formulário-criado-no-requisito-10)
-  - [13. Crie um campo de entrada de texto para o celular ou email do usuário dentro do formulário criado no requisito 10](#13-crie-um-campo-de-entrada-de-texto-para-o-celular-ou-email-do-usuário-dentro-do-formulário-criado-no-requisito-10)
-  - [14. Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10](#14-crie-um-campo-de-entrada-para-senha-do-usuário-dentro-do-formulário-criado-no-requisito-10)
-  - [15. Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10](#15-crie-um-campo-de-entrada-para-data-de-nascimento-do-usuário-dentro-do-formulário-criado-no-requisito-10)
-  - [16. Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10](#16-crie-um-campo-de-entrada-para-gênero-do-usuário-dentro-do-formulário-criado-no-requisito-10)
-  - [17. Crie um botão para finalizar o cadastro dentro do formulário criado no requisito 10](#17-crie-um-botão-para-finalizar-o-cadastro-dentro-do-formulário-criado-no-requisito-10)
-  - [18. Validar se todos os campos foram preenchidos ao clicar no botão Cadastre-se](#18-validar-se-todos-os-campos-foram-preenchidos-ao-clicar-no-botão-cadastre-se)
-  - [19. Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção `Personalizado` no campo Gênero](#19-adicione-um-novo-campo-de-texto-no-formulário-se-a-pessoa-usuária-selecionar-a-opção-personalizado-no-campo-gênero)
-  - [20. Substitua o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado](#20-substitua-o-conteúdo-do-container-com-a-classe-right-content-se-o-formulário-estiver-completamente-preenchido-e-validado)
-  - [Requisito Bônus](#requisito-bônus)
+- [Boas vindas ao repositório do projeto do Facebook Signup!](#boas-vindas-ao-repositório-do-projeto-do-facebook-signup)
+  - [Sumário](#sumário)
+  - [Habilidades](#habilidades)
+  - [Entregáveis](#entregáveis)
+    - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+    - [Desenvolvimento](#desenvolvimento)
+    - [Data de Entrega](#data-de-entrega)
+  - [Instruções para entregar seu projeto:](#instruções-para-entregar-seu-projeto)
+    - [Antes de começar a desenvolver:](#antes-de-começar-a-desenvolver)
+    - [Durante o desenvolvimento](#durante-o-desenvolvimento)
+    - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
+    - [Dicas](#dicas)
+  - [Como desenvolver](#como-desenvolver)
+    - [Observações técnicas:](#observações-técnicas)
+  - [Code Climate](#code-climate)
+  - [Requisitos do projeto](#requisitos-do-projeto)
+    - [Lista de requisitos obrigatórios:](#lista-de-requisitos-obrigatórios)
+    - [1. Crie uma barra azul na parte superior da página](#1-crie-uma-barra-azul-na-parte-superior-da-página)
+    - [2. Posicione o logotipo do Facebook no canto esquerdo na barra superior](#2-posicione-o-logotipo-do-facebook-no-canto-esquerdo-na-barra-superior)
+    - [3. Adicione um formulário de autenticação no canto direito da barra superior](#3-adicione-um-formulário-de-autenticação-no-canto-direito-da-barra-superior)
+    - [4. Crie uma classe no CSS](#4-crie-uma-classe-no-css)
+    - [5. Adicione um subcontainer para agrupar o rótulo e campo "E-mail ou telefone" dentro do formulário criado na etapa 3](#5-adicione-um-subcontainer-para-agrupar-o-rótulo-e-campo-e-mail-ou-telefone-dentro-do-formulário-criado-na-etapa-3)
+    - [6. Adicione um subcontainer para agrupar o rótulo e campo "Senha" dentro do formulário criado na etapa 3](#6-adicione-um-subcontainer-para-agrupar-o-rótulo-e-campo-senha-dentro-do-formulário-criado-na-etapa-3)
+    - [7. Adicione um subcontainer com o botão "Entrar" dentro do formulário criado na etapa 3](#7-adicione-um-subcontainer-com-o-botão-entrar-dentro-do-formulário-criado-na-etapa-3)
+    - [8. Crie um container abaixo da barra azul para agrupar o conteúdo principal da página](#8-crie-um-container-abaixo-da-barra-azul-para-agrupar-o-conteúdo-principal-da-página)
+    - [9. Crie um subcontainer para colocar o conteúdo do lado esquerdo](#9-crie-um-subcontainer-para-colocar-o-conteúdo-do-lado-esquerdo)
+    - [10. Crie um subcontainer para colocar o conteúdo do lado direito](#10-crie-um-subcontainer-para-colocar-o-conteúdo-do-lado-direito)
+    - [11. Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10](#11-crie-um-campo-de-entrada-de-texto-para-o-nome-do-usuário-dentro-do-formulário-criado-no-requisito-10)
+    - [12. Crie um campo de entrada de texto para o sobrenome do usuário dentro do formulário criado no requisito 10](#12-crie-um-campo-de-entrada-de-texto-para-o-sobrenome-do-usuário-dentro-do-formulário-criado-no-requisito-10)
+    - [13. Crie um campo de entrada de texto para o celular ou email do usuário dentro do formulário criado no requisito 10](#13-crie-um-campo-de-entrada-de-texto-para-o-celular-ou-email-do-usuário-dentro-do-formulário-criado-no-requisito-10)
+    - [14. Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10](#14-crie-um-campo-de-entrada-para-senha-do-usuário-dentro-do-formulário-criado-no-requisito-10)
+    - [15. Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10](#15-crie-um-campo-de-entrada-para-data-de-nascimento-do-usuário-dentro-do-formulário-criado-no-requisito-10)
+    - [16. Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10](#16-crie-um-campo-de-entrada-para-gênero-do-usuário-dentro-do-formulário-criado-no-requisito-10)
+    - [17. Crie um botão para finalizar o cadastro dentro do formulário criado no requisito 10](#17-crie-um-botão-para-finalizar-o-cadastro-dentro-do-formulário-criado-no-requisito-10)
+    - [18. Validar se todos os campos foram preenchidos ao clicar no botão Cadastre-se](#18-validar-se-todos-os-campos-foram-preenchidos-ao-clicar-no-botão-cadastre-se)
+    - [19. Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção `Personalizado` no campo Gênero](#19-adicione-um-novo-campo-de-texto-no-formulário-se-a-pessoa-usuária-selecionar-a-opção-personalizado-no-campo-gênero)
+    - [20. Substitua o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado](#20-substitua-o-conteúdo-do-container-com-a-classe-right-content-se-o-formulário-estiver-completamente-preenchido-e-validado)
+    - [Requisito Bônus](#requisito-bônus)
 - [Avisos finais](#avisos-finais)
 
 ---
@@ -90,7 +93,7 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
     - Projeto em dupla.
 
     - Será um dia de projeto.
-    
+
     - O projeto tem até a seguinte data: `DD/MM/YYYY - 14:00h`. Para ser entregue a avaliação final.
 
 ---
@@ -270,7 +273,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
   * O formulário deve ser um flex container
 
 
-### 4. Crie uma classe no CSS 
+### 4. Crie uma classe no CSS
 
   Pontos importantes:
   * Essa classe deve se chamar form-group
