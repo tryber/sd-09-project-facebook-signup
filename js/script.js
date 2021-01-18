@@ -108,23 +108,22 @@ function allTheChecksOfTheForm(event) {
   checkIfBirthdateIsFilled() === false ||
   checkIfRadioBtnIsChecked() === false) {
     addParagraphoToWarn();
-  } else {
-    removeParagraphWarn();
-    return true
-  }
+  } 
+  removeParagraphWarn();
+  return true
 }
 
 btnFacebookRegister.addEventListener('click', allTheChecksOfTheForm);
-btnFacebookRegister.addEventListener('click', addInformations);
 
 function addRadioCheckedToAVariable() {
   if (document.querySelectorAll('.gender input')[0].checked === true) {
-    return 'Feminino'
+    return 'Feminino';
   } else if (document.querySelectorAll('.gender input')[1].checked === true) {
-    return 'Masculino'
+    return 'Masculino';
   } else if (document.querySelectorAll('.gender input')[2].checked === true) {
-    return 'Personalizado'
+    return 'Personalizado';
   }
+  return 'Por favor, selecione uma das opções.'
 }
 
 function addInformations() {
@@ -136,25 +135,22 @@ function addInformations() {
   if (allTheChecksOfTheForm(event) === true) {
     newDiv.className = 'div-with-data';
     mainContent.appendChild(newDiv);
-
     let paragraph = document.createElement('p');
     paragraph.innerText = `Olá, ${document.querySelectorAll('.fullname input')[0].value} ${document.querySelectorAll('.fullname input')[1].value}`;
     newDiv.appendChild(paragraph);
-
     paragraph = document.createElement('p');
     paragraph.innerText = `Seu número/email é ${phoneField.value}`;
     newDiv.appendChild(paragraph);
-
     paragraph = document.createElement('p');
     paragraph.innerText = birthdateField.value;
     newDiv.appendChild(paragraph);
-    
     paragraph = document.createElement('p');
     paragraph.innerText = addRadioCheckedToAVariable();
     newDiv.appendChild(paragraph);
     for (let index = 0; index < rightContentChilds.length; index += 1) {
-      rightContent.removeChild(rightContentChilds[index])
+      rightContent.removeChild(rightContentChilds[index]);
       index -= 1;
     }
   }
 }
+btnFacebookRegister.addEventListener('click', addInformations);
