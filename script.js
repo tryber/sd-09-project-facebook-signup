@@ -62,7 +62,7 @@ function showTheInfos() {
   const isTextInputsValid = validateTextInputs();
   const isRadioButtonsValid = validateRadioButtons();
   const infosToBeShown = document.querySelectorAll(
-    '.info, input[ type = "radio"]:checked'
+    '.info, input[ type = "radio"]:checked',
   );
   const greetingsDiv = document.querySelector('#greetings');
   const formInfosDiv = document.querySelector('#form-infos');
@@ -71,8 +71,6 @@ function showTheInfos() {
   const quickEasy = document.querySelector('.quick-easy');
 
   if (isTextInputsValid === true && isRadioButtonsValid === true) {
-    console.log(infosToBeShown);
-
     greetingsDiv.innerText = `Olá, ${infosToBeShown[0].value} ${infosToBeShown[1].value}.`;
     formInfosDiv.innerHTML = `<p>Celular ou e-mail: ${infosToBeShown[2].value}.</p><p>Data de nascimento: ${infosToBeShown[3].value}.</p>`;
 
