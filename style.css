@@ -1,0 +1,47 @@
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.facebook-login {
+  align-items: center;
+  display: flex;
+}
+
+.is-white-text {
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 7px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.form-gender-option .control label {
+  font-size: 90%;
+}
+
+.centered-image {
+  text-align: center;
+}
