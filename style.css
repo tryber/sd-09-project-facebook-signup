@@ -1,0 +1,154 @@
+body {
+  background-color: rgb(236, 240, 245);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  font-family: roboto , Courier, monospace;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  align-items: flex-start;
+  display: flex;
+}
+
+p {
+  font-size: small;
+}
+
+.fonte-cabecalho {
+  color: rgba(255, 255, 255, 0.404);
+  font-size: small;
+}
+
+.submit-button {
+  background-color: rgb(62, 95, 62);
+  color: white;
+  font-family: roboto , Courier, monospace;
+  margin-top: 5px;
+  width: 180%;
+}
+
+.emailT , .birth , .senha {
+  font-family: roboto , Courier, monospace;
+  width: 400px;
+}
+
+.firstname , .lastname {
+  font-family: roboto , Courier, monospace;
+  width: 50%;
+}
+
+.white-letter {
+  color: white;
+  font-size: x-small;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+  font-family: roboto , Courier, monospace;
+  justify-content: center;
+}
+
+.button-login {
+  background-color: rgb(9, 32, 245);
+  border-radius: 3px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.main-content {
+  display: flex;
+  font-family: roboto , Courier, monospace;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.left-content {
+  justify-content: flex-end;
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.tabulacao {
+  border-color: aliceblue;
+  border-radius: 3px;
+  border-style: groove;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.senha .emailT {
+  width: 80%;
+}
+
+.form-sign-in {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.names {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.container-radios {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.radio-buttons {
+  display: flex;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.textButton {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.left-content p {
+  color: rgb(2, 29, 80);
+  margin-left: 18%;
+  width: 55%;
+}
+
+.left-content img {
+  margin-left: 6%;
+  width: 80%;
+}
+
+h1 {
+  font-size: x-large;
+  margin-bottom: 1px;
+}
+
+h4 {
+  font-size: small;
+}
