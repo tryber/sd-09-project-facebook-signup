@@ -15,7 +15,7 @@ body {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   margin-top: 10px;
 }
 
@@ -34,10 +34,6 @@ body {
   margin-top: 2px;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
 .form-control button {
   background-color: rgb(66, 103, 178);
   border: 1px solid gray;
@@ -51,6 +47,14 @@ div label , input {
   display: flex;
   flex-direction: column;
   width: 30px;
+}
+
+div label {
+  margin-top: 10px;
+}
+
+form label {
+  margin-top: 10px;
 }
 
 .personal-data label {
@@ -100,19 +104,11 @@ form aside {
   width: 45%;
 }
 
-div label {
-  margin-top: 10px;
-}
-
-form label {
-  margin-top: 10px;
-}
-
 .label-gender {
   display: block;
 }
 
-.radio-buttons{
+.radio-buttons {
   display: flex;
 }
 
