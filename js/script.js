@@ -108,9 +108,11 @@ function allTheChecksOfTheForm(event) {
   checkIfBirthdateIsFilled() === false ||
   checkIfRadioBtnIsChecked() === false) {
     addParagraphoToWarn();
+  } else {
+    removeParagraphWarn();
+    return true;
   }
-  removeParagraphWarn();
-  return true;
+  return ''
 }
 
 btnFacebookRegister.addEventListener('click', allTheChecksOfTheForm);
