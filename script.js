@@ -60,3 +60,4 @@ function validateAndRegister(event) {
 }
 const facebookRegister = document.getElementById('facebook-register');
 facebookRegister.addEventListener('click', validateAndRegister);
+//commit final
