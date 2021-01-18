@@ -1,5 +1,5 @@
 
-const loginButton = document.querySelector('#button-login');
+const loginButton = document.getElementById('button-login');
 const loginInput = document.querySelector('#user-email-phone');
 const registerButton = document.querySelector('#facebook-register');
 const formInputs = document.querySelectorAll('.countInput');
