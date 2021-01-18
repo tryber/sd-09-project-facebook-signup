@@ -60,9 +60,6 @@ function inputGender(event) {
     inputGenderCamp.name = 'gender-custom';
     inputGenderCamp.placeholder = 'Gênero (opicional)';
     divGenderCustom.appendChild(inputGenderCamp);
-  } else {
-    divGenderCustom.removeChild(inputGenderCamp);
-  }
 }
 
 btnSubmit.addEventListener('click', validation);
