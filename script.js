@@ -38,6 +38,8 @@ function inputWriteValues(index, value, parent) {
 
   if (index === 4) {
     breakLine(index, parent);
+    parent.innerText += value.value;
+    breakLine(index, parent);
   }
 }
 
