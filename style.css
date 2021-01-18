@@ -88,9 +88,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-right: 25%;
-  padding: 5px;
-  width: 250px;
+  margin-right: 10px;
+  width: 300px;
 }
 
 .tabulacao {
