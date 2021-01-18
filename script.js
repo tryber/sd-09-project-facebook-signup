@@ -46,22 +46,9 @@ function validInput(event) {
 }
 btnCadastre.addEventListener('click', validInput);
 
-// const rdoPerso = document.getElementById('personalizado');
-// function inputTxtPerso() {
-//   const rdoPerso2 = document.querySelector('.radios');
-//   const rdoPersoNew = document.createElement('input');
-//   const rdoPersoNewName = 'gender-custom';
-//   const rdoPersoNewPh = 'Gênero (opcional)';
-//   rdoPersoNew.name = rdoPersoNewName;
-//   rdoPersoNew.placeholder = rdoPersoNewPh;
-//   rdoPerso2.appendChild(rdoPersoNew);
-// }
-// rdoPerso.addEventListener('click', inputTxtPerso);
-
-function deleteWrite() {
-  const inputName2 = document.getElementById('name');
+function write() {
   const box = document.getElementById('right-content');
-  const form = document.getElementById('form');
+  const inputName2 = document.getElementById('name');
   const inputLastname2 = document.getElementById('lastname');
   const inputPhone2 = document.getElementById('phoneemail');
   const inputBirth2 = document.getElementById('birthdate');
@@ -75,7 +62,6 @@ function deleteWrite() {
   const inputFemininoValue2 = inputFeminino2.checked;
   const inputMasculinoValue2 = inputMasculino2.checked;
   const inputPersonalizadoValue2 = inputPersonalizado2.checked;
-  box.removeChild(form);
   let checked2 = '';
   if (inputFemininoValue2 === true) {
     checked2 = 'Feminino';
