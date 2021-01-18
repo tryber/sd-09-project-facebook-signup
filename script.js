@@ -24,6 +24,16 @@ function createElement() {
   }
 }
 
+function inputWriteValues(index, value, parent) {
+  if (!(index === 3 || (index > 4 && !value.checked))) {
+    parent.innerText += ` ${value.value}`;
+  }
+
+  if (index > 0 && index !== 2) {
+    parent.innerText += '\n';
+  }
+}
+
 function writeValues() {
   const hidden = document.querySelector('#hidden');
   hidden.classList.toggle('hidden');
@@ -31,9 +41,7 @@ function writeValues() {
   const writeInputValues = document.querySelector('.write-values');
   writeInputValues.innerText = 'Olá,';
   for (let index = 0; index < input.length; index += 1) {
-    if (!(index === 3 || (index > 4 && !input[index].checked))) {
-      writeInputValues.innerText += ` ${input[index].value}`;
-    }
+    inputWriteValues(index, input[index], writeInputValues);
   }
 }
 
@@ -72,6 +80,7 @@ function customGender(event) {
     const element = document.createElement('input');
     element.name = 'gender-custom';
     element.id = 'gender-custom';
+    element.className = 'gender-custom';
     element.placeholder = 'Gênero';
     radios.appendChild(element);
   } else {
@@ -83,3 +92,9 @@ const radios = document.querySelectorAll('.radios input');
 for (let index = 0; index < radios.length; index += 1) {
   radios[index].addEventListener('click', customGender);
 }
+
+const fieldsetBlock = document.querySelector('.fieldset-block');
+fieldsetBlock.addEventListener('click', () => {
+  fieldsetBlock.remove();
+  document.querySelector('.right-content').style.display = 'block';
+});
