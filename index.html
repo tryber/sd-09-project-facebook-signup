@@ -41,20 +41,20 @@
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action="">
+            <form action="" id="form-signup">
                 <div class="name-input-roll flex-container">
-                    <input class="right-content-input" type="text" name="firstname" placeholder="Nome" id="firstname">
+                    <input class="right-content-input info" type="text" name="firstname" placeholder="Nome" id="firstname">
                     <input class="right-content-input" type="text" name="lastname" placeholder="Sobrenome" id="lastname">
                 </div>
                 <div>
-                    <input class="right-content-input" type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
+                    <input class="right-content-input info" type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
                 </div>
                 <div>
                     <input class="right-content-input" type="password" name="password" placeholder="Nova senha" id="password">
                 </div>
                 <div>
                     <label class="right-content-input" id="label-birthdate" for="">Data de nascimento</label>
-                    <input class="right-content-input" type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
+                    <input class="right-content-input info" type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
                 </div>
                 <label id="label-gender" for="">Gênero</label>
                 <div>
@@ -76,6 +76,9 @@
                     </div>
                 </div>
             </form>
+            <div>
+                <span id="form-infos"></span>
+            </div>
         </section>
     </main>
     <script src="script.js"></script>

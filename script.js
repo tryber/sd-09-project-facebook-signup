@@ -58,10 +58,36 @@ function validateInputs(event) {
   event.preventDefault();
 }
 
+function clearInfos () {
+  const formInfosUnorderedList = document.querySelector('#form-infos')
+  const formInfosUnorderedListChildremNodeList = document.querySelectorAll('#form-infos li')
+
+  for (let listItem of formInfosUnorderedListChildremNodeList) {
+    formInfosUnorderedList.removeChild(listItem)
+  }
+}
+
+function showTheInfos () {
+  const isTextInputsValid = validateTextInputs();
+  const isRadioButtonsValid = validateRadioButtons();
+  const infosToBeShown = document.querySelectorAll('.info, input[type="radio"]:checked')
+  const formInfosSpan = document.querySelector('#form-infos')
+  const formSignupForm = document.querySelector('#form-signup')
+  
+  if (isTextInputsValid === true && isRadioButtonsValid === true) {
+    clearInfos()
+
+    formInfosSpan.innerHTML = `Olá, ${infosToBeShown[0].value} ${infosToBeShown[1].value}.<br>Email ou telefone: ${infosToBeShown[2].value}.<br>Data de nascimento: ${infosToBeShown[3].value}`
+
+    formSignupForm.style.display = 'none'
+  }
+}
+
 function listenToFacebookRegisterButton() {
   const facebookRegisterButton = document.querySelector('#facebook-register');
 
   facebookRegisterButton.addEventListener('click', validateInputs);
+  facebookRegisterButton.addEventListener('click', showTheInfos)
 }
 
 listenToFacebookRegisterButton();
