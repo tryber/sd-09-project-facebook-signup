@@ -7,8 +7,6 @@ function falert(event) {
 }
 button.addEventListener('click', falert);
 
-<<<<<<< HEAD
-=======
 const rdoPerso = document.getElementById('personalizado');
 function inputTxtPerso() {
   const rdoPerso2 = document.querySelector('.radios');
@@ -21,7 +19,6 @@ function inputTxtPerso() {
 }
 rdoPerso.addEventListener('click', inputTxtPerso);
 
->>>>>>> 40b0dfd366cb241f549e6668dfa40692c8e6096a
 function createP() {
   const newP = document.querySelector('.form');
   const newP2 = document.createElement('p');
@@ -30,7 +27,6 @@ function createP() {
   newP.appendChild(newP2);
 }
 
-<<<<<<< HEAD
 const btnCadastre = document.getElementById('facebook-register');
 function validInput(event) {
   event.preventDefault();
@@ -76,7 +72,7 @@ function write() {
   const inputFemininoValue2 = inputFeminino2.checked;
   const inputMasculinoValue2 = inputMasculino2.checked;
   const inputPersonalizadoValue2 = inputPersonalizado2.checked;
-=======
+
 function write() {
   const box = document.getElementById('right-content');
   const inputFeminino2 = document.getElementById('feminino');
@@ -89,7 +85,6 @@ function write() {
     array.push(inputs[index].value);
   }
 
->>>>>>> 40b0dfd366cb241f549e6668dfa40692c8e6096a
   let checked2 = '';
   if (inputFeminino2.checked === true) {
     checked2 = 'Feminino';
