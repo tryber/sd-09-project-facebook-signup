@@ -4,10 +4,6 @@ body {
   padding: 0;
 }
 
-.facebook-logo {
-  margin-left: 400px;
-}
-
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
