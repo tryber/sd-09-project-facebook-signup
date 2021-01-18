@@ -83,6 +83,7 @@ function checkIfRadioBtnIsChecked() {
   return true;
 }
 
+/* Função para adicionar o parágrafo de aviso ao usuário, caso haja algum campo a ser preenchido. */
 function addParagraphoToWarn() {
   const validationWarn = document.getElementById('validation-warn');
   if (validationWarn === null) {
@@ -93,6 +94,7 @@ function addParagraphoToWarn() {
   }
 }
 
+/* Função para remover o parágrafo de aviso ao usuário, caso todos os campos estejam preenchidos. */
 function removeParagraphWarn() {
   const validationWarn = document.getElementById('validation-warn');
   if (validationWarn !== null) {
@@ -125,7 +127,7 @@ function addRadioCheckedToAVariable() {
   } else if (document.querySelectorAll('.gender input')[2].checked === true) {
     return 'Personalizado';
   }
-  return 'Por favor, selecione uma das opções.';
+  return 'Por favor, selecione uma das opções de gênero.';
 }
 
 function addInformations() {
