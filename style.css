@@ -1,0 +1,114 @@
+.main-content {
+  background-color: #ebedf0;
+  display: flex;
+  height: 70vh;
+  justify-content: space-around;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.left-content {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  width: 800px;
+}
+
+.slogan {
+  color: rgb(50, 68, 128);
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.right-content {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 300px;
+}
+
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.register-name {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.facebook-logo {
+  align-self: center;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form-control {
+  align-self: flex-end;
+  order: 2;
+  padding: 5px;
+}
+
+.radio-in-line {
+  display: flex;
+  padding: 5px;
+}
+
+.radio-column {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.date {
+  padding: 5px;
+}
+
+.button {
+  padding: 5px;
+}
+
+.general-test {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.message {
+  font-weight: 500;
+  padding: 3px;
+  text-align: center;
+  width: 100%;
+}
+
+.error {
+  background-color: lightcoral;
+  color: whitesmoke;
+}
+
+.success {
+  background-color: rgba(47, 255, 89, 0.461);
+  color: rgba(58, 58, 53, 0.55);
+}
