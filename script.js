@@ -83,19 +83,16 @@ function checkInputedData(input) {
 }
 
 function showUserData(inputs) {
-  inputs.querySelector('.password');
-}
-
-function showUserData(inputs) {
   const rightContent = document.querySelector('.right-content');
-  rightContent.innerText = "";
-  for (let index = 0; index < inputs.length; index++) {
+  rightContent.innerText = '';
+  for (let index = 0; index < inputs.length; index = + 1) {
     const elementCreator = document.createElement('p');
+    const append =
     if (inputs[index].name !== 'gender' && inputs[index].name !== 'password') {
-      elementCreator.innerText = `${inputs[index].name}: ${inputs[index].value} `;
+      elementCreator.innerText = `${inputs[index].name}: ${inputs[index].value}`;
       rightContent.appendChild(elementCreator);
     } else if (inputs[index].checked === true) {
-      elementCreator.innerText = `${inputs[index].name}: ${inputs[index].value} `;
+      elementCreator.innerText = `${inputs[index].name}: ${inputs[index].value}`;
       rightContent.appendChild(elementCreator);
     }
   }
