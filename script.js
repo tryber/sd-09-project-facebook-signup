@@ -10,18 +10,48 @@ buttonLogin.addEventListener('click', function () {
 
 // Validar form de cadastro
 
-const formInput = firstName = document.querySelector('.first-name').value,
-  lastName = document.querySelector('.last-name').value,
-  phoneEmail = document.querySelector('.password').value,
-  password = document.querySelector('.birthdate').value,
-  birthdate = document.querySelector('.birthdate').value,
-  female = document.querySelector('.female').value,
-  male = document.querySelector('.male').value,
-  custom = document.querySelector('.custom').value
+
 
 function validateForm() {
 
-  if(formInput === '') {
+  const formInputs = document.querySelectorAll('#register-form input');
+  console.log(formInputs)
+  let hasInputEmpty = false;
+
+  for(index = 0; index < formInputs.length; index += 1) {
+
+    const inputs = formInputs[index].value;
+
+    if (inputs === '') {
+
+      hasInputEmpty = true;
+    
+    } 
+
+  }
+    
+  // Verifica se tem input vazio e exibe mensagem de erro
+  if (hasInputEmpty) {
+    let form = document.querySelector('#register-form');
+    let errorMessage = document.createElement('p');
+    errorMessage.textContent = 'Campos inválidos';
+    errorMessage.id = 'form-message';
+    form.appendChild(errorMessage);
+  } else {  
+    // Aqui eu vou subtituir o html pelo valor do input
+    const formCompleted = document.querySelector('.right-content');
+    formCompleted.innerHTML = '';
+    for(index = 0; index < formInputs.length; index += 1) {
+      const element = document.createElement('p'); 
+      let formContent = formInputs[index].value;
+      element.innerHTML = formContent;
+      formCompleted.appendChild(element);
+    }
+  }
+
+
+
+  /*if(formInput === '') {
 
     let form = document.querySelector('#register-form');
 
@@ -34,7 +64,7 @@ function validateForm() {
     form.appendChild(errorMessage);
 
 
-  }else{
+  } else {
 
     let formCompleted = document.querySelector('.right-content');
 
@@ -55,8 +85,8 @@ function validateForm() {
       formCompleted.appendChild(element)
     }
     console.log(form)
-  }
-};
+  }*/
+}
 
 function btn() {
   let button = document.querySelector('#facebook-register')
@@ -81,6 +111,43 @@ genderCustom.addEventListener('click', function () {
     formGroup.appendChild(createInputText());
   }
 });
+
+
+// Capturar todos os inputs x
+// Percorrer a lista x
+// Acessar o valor dos inputs x
+// Verificar se estão vazios x
+// Se tiverem valor
+// Substituir os inputs do form pelo seu valor
+
+
+
+
+
+
+
+
+/*  
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 // cria um elemento
 // adiciona o valor da lista no elemento
