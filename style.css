@@ -5,6 +5,12 @@ body {
   padding: 0;
 }
 
+input {
+  border: 1px solid rgb(223 , 225 , 227);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
 /* Header */
 .top-bar {
   background-color: rgb(66, 103, 178);
@@ -12,8 +18,14 @@ body {
   justify-content: space-between;
 }
 
+.facebook-logo {
+  width: 100%;
+  max-width: 117px;
+}
+
 .facebook-login {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .form-group {
@@ -28,8 +40,33 @@ body {
   color: rgb(236, 225, 225);
 }
 
+.form-group input {
+  border-radius: 0;
+}
+
+.form-group input::placeholder {
+  color: transparent;
+}
+
 .form-control {
   align-self: flex-end;
+}
+
+.div-fieldset {
+  background-color: white;
+  padding: 1rem;
+  padding-top: 0;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  border-top: 1px solid rgb(201 , 201 , 201);
+}
+
+legend {
+  text-align: center;
+  padding: 0 1rem;
 }
 
 /* Main */
@@ -117,7 +154,50 @@ body {
 
 @media screen and ( max-width : 600px ) {
 
-  .left-content {
+  .top-bar {
+    flex-direction: column;
+  }
+
+  .facebook-logo {
+    align-self: center;
+  }
+
+  .facebook-login {
+    justify-content: center;
+    background-color: white;;
+    padding: 1rem;
+  }
+
+  .facebook-login label {
     display: none;
   }
+
+  .form-group {
+    flex: 1 0 100%;
+  }
+
+  .form-group:first-child input {
+    border-bottom: none;
+  }
+
+  .form-group input {
+    background-color: rgb(244 , 245 , 247);
+  }
+
+  .form-group input::placeholder {
+    color: black;
+  }
+
+  .left-content, .right-content {
+    display: none;
+  }
+
+  .form-control {
+    margin-top: 0.5rem;
+  }
+
+
 }
+
+
+/* estamos na estilização dos inputs, falta botões e esconder o fieldset/legend/botão cadastre-se */
