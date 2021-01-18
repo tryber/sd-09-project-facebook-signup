@@ -58,28 +58,28 @@ function validateInputs(event) {
   event.preventDefault();
 }
 
-function clearInfos () {
-  const formInfosUnorderedList = document.querySelector('#form-infos')
-  const formInfosUnorderedListChildremNodeList = document.querySelectorAll('#form-infos li')
+function clearInfos() {
+  const formInfosUnorderedList = document.querySelector('#form-infos');
+  const formInfosUnorderedListChildremNodeList = document.querySelectorAll('#form-infos li');
 
-  for (let listItem of formInfosUnorderedListChildremNodeList) {
-    formInfosUnorderedList.removeChild(listItem)
+  for (let i in formInfosUnorderedListChildremNodeList) {
+    formInfosUnorderedList.removeChild(formInfosUnorderedListChildremNodeList[i]);
   }
 }
 
-function showTheInfos () {
+function showTheInfos() {
   const isTextInputsValid = validateTextInputs();
   const isRadioButtonsValid = validateRadioButtons();
-  const infosToBeShown = document.querySelectorAll('.info, input[type="radio"]:checked')
-  const formInfosSpan = document.querySelector('#form-infos')
-  const formSignupForm = document.querySelector('#form-signup')
-  
+  const infosToBeShown = document.querySelectorAll('.info, input[type="radio"]:checked');
+  const formInfosSpan = document.querySelector('#form-infos');
+  const formSignupForm = document.querySelector('#form-signup');
+
   if (isTextInputsValid === true && isRadioButtonsValid === true) {
-    clearInfos()
+    clearInfos();
 
-    formInfosSpan.innerHTML = `Olá, ${infosToBeShown[0].value} ${infosToBeShown[1].value}.<br>Email ou telefone: ${infosToBeShown[2].value}.<br>Data de nascimento: ${infosToBeShown[3].value}`
+    formInfosSpan.innerHTML = `Olá, ${infosToBeShown[0].value} ${infosToBeShown[1].value}.<br>Email ou telefone: ${infosToBeShown[2].value}.<br>Data de nascimento: ${infosToBeShown[3].value}`;
 
-    formSignupForm.style.display = 'none'
+    formSignupForm.style.display = 'none';
   }
 }
 
@@ -87,7 +87,7 @@ function listenToFacebookRegisterButton() {
   const facebookRegisterButton = document.querySelector('#facebook-register');
 
   facebookRegisterButton.addEventListener('click', validateInputs);
-  facebookRegisterButton.addEventListener('click', showTheInfos)
+  facebookRegisterButton.addEventListener('click', showTheInfos);
 }
 
 listenToFacebookRegisterButton();
