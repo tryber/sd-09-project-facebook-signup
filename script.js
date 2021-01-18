@@ -54,7 +54,7 @@ function userData() {
 
 const registerButton = document.getElementById('facebook-register');
 registerButton.addEventListener('click', function () {
-  if (validate) {
+  if (validate === true) {
     const selectRight = document.querySelector('.right-content');
     selectRight.innerText = userData();
   }
