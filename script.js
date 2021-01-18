@@ -36,12 +36,10 @@ function validInput(event) {
   const inputPersonalizadoValue = inputPersonalizado.checked;
   if (inputNameValue === '' || inputLastnameValue === '' || inputPhoneValue === '' || inputNewpwValue === '' || inputBirthValue === '') {
     createP();
-  } else if (inputFemininoValue === false &&
-      inputMasculinoValue === false &&
-      inputPersonalizadoValue === false) {
+  } else if (inputFemininoValue === false && inputMasculinoValue === false && inputPersonalizadoValue === false) {
     createP();
   } else {
-    deleteWrite();
+    write();
   }
 }
 btnCadastre.addEventListener('click', validInput);
