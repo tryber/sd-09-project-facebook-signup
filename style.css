@@ -11,6 +11,12 @@ input {
   border-radius: 4px;
 }
 
+input {
+  border: 1px solid rgb(223 , 225 , 227);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
 /* Header */
 .top-bar {
   background-color: rgb(66, 103, 178);
@@ -22,6 +28,11 @@ input {
   align-self: center;
   max-width : 117px;
   width     : 100%;
+}
+
+.facebook-logo {
+  width: 100%;
+  max-width: 117px;
 }
 
 .facebook-login {
@@ -41,6 +52,14 @@ input {
 .form-group label {
   color        : rgb(236, 225, 225);
   margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  border-radius: 0;
+}
+
+.form-group input::placeholder {
+  color: transparent;
 }
 
 .form-group input {
@@ -318,3 +337,6 @@ footer {
     width: 100%;
   }
 }
+
+
+/* estamos na estilização dos inputs, falta botões e esconder o fieldset/legend/botão cadastre-se */
