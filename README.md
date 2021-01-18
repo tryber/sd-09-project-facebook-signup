@@ -270,7 +270,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
   * O formulário deve ser um flex container
 
 
-### 4. Crie uma classe no CSS
+### 4. Crie uma classe no CSS 
 
   Pontos importantes:
   * Essa classe deve se chamar form-group
