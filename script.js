@@ -46,28 +46,60 @@ const validateFields = () => {
   return true;
 };
 
-const getRegisterResult = () => {
-  const inputs = document.querySelectorAll('.facebook-register input');
+const inputs = document.querySelectorAll('.facebook-register input');
+const getFullName = () => {
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].name === 'firstname') {
       const greeting = document.querySelector('.greeting');
       greeting.innerText = `Olá, ${inputs[index].value} ${inputs[index + 1].value}`;
-    } else if (inputs[index].name === 'phone_email') {
+    }
+  }
+};
+
+const getPhoneEmail = () => {
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].name === 'phone_email') {
       const phoneMail = document.querySelector('.email-phone');
       phoneMail.innerText = inputs[index].value;
-    } else if (inputs[index].name === 'birthdate') {
+    }
+  }
+};
+
+const getBirthdate = () => {
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].name === 'birthdate') {
       const datOfBirth = document.querySelector('.date-of-birth');
       datOfBirth.innerText = inputs[index].value;
-    } else if (inputs[index].name === 'gender' && inputs[index].checked === true) {
+    }
+  }
+};
+
+const getGender = () => {
+  for (let index = 0; index < inputs.length; index += 1) {
+    if (inputs[index].name === 'gender' && inputs[index].checked === true) {
       const genderResult = document.querySelector('.gender-result');
       genderResult.innerText = inputs[index].value;
     }
   }
 };
 
+/* const getRegisterResult = () => {
+  for (let index = 0; index < inputs.length; index += 1) {
+     else 
+    } else if (inputs[index].name === 'birthdate') {
+      const datOfBirth = document.querySelector('.date-of-birth');
+      datOfBirth.innerText = inputs[index].value;
+    } else 
+  }
+};
+ */
 const displayRegisterResult = (isCompleted) => {
   if (isCompleted) {
-    getRegisterResult();
+    // getRegisterResult();
+    getFullName();
+    getPhoneEmail();
+    getBirthdate();
+    getGender();
     const register = document.querySelector('.register');
     register.style.display = 'none';
     const result = document.querySelector('.result');
