@@ -61,3 +61,11 @@ body {
   justify-content: space-around;
   visibility: hidden;
 }
+
+.custom-gender-input {
+  display: flex;
+}
+
+.custom-gender-input input {
+  width: 100%;
+}

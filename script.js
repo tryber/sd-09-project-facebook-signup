@@ -63,3 +63,47 @@ function listenToFacebookRegisterButton() {
 }
 
 listenToFacebookRegisterButton();
+
+function createGenderInputField () {
+  const custonGenderInputDiv = document.querySelector('.custom-gender-input')
+  const textInput = document.createElement('input')
+  const customRadioButton = document.querySelector('#custom')
+
+  textInput.name = 'gender-custom'
+  textInput.id = 'gender-custom'
+  textInput.placeholder = 'Gênero (opcional)'
+
+  custonGenderInputDiv.appendChild(textInput)
+
+  customRadioButton.removeEventListener('click', createGenderInputField)
+  listenToGenderButtons()
+}
+
+function listenToCustomRadioButton () {
+  const customRadioButton = document.querySelector('#custom')
+
+  customRadioButton.addEventListener('click', createGenderInputField)
+}
+
+listenToCustomRadioButton();
+
+function clearCustonGenderInputDiv () {
+  const maleRadioButton = document.querySelector('#male')
+  const femaleRadioButton = document.querySelector('#female')
+  const custonGenderInputDiv = document.querySelector('.custom-gender-input')
+  const textInput = document.querySelector('#gender-custom')
+
+  custonGenderInputDiv.removeChild(textInput)
+
+  maleRadioButton.removeEventListener('click', clearCustonGenderInputDiv)
+  femaleRadioButton.removeEventListener('click', clearCustonGenderInputDiv)
+  listenToCustomRadioButton()
+}
+
+function listenToGenderButtons () {
+  const maleRadioButton = document.querySelector('#male')
+  const femaleRadioButton = document.querySelector('#female')
+
+  maleRadioButton.addEventListener('click', clearCustonGenderInputDiv)
+  femaleRadioButton.addEventListener('click', clearCustonGenderInputDiv)
+}
