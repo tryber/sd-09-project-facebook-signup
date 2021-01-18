@@ -14,7 +14,7 @@ listenToButtonLoginButton();
 
 function validateTextInputs() {
   const textInputsNodeList = document.querySelectorAll(
-    '.right-content input:not([type="radio"])',
+    '.right-content input:not([ type = "radio" ])',
   );
   let isValid = true;
 
@@ -58,28 +58,27 @@ function validateInputs(event) {
   event.preventDefault();
 }
 
-function clearInfos() {
-  const formInfosUnorderedList = document.querySelector('#form-infos');
-  const formInfosUnorderedListChildremNodeList = document.querySelectorAll('#form-infos li');
-
-  for (let i = 0; i < formInfosUnorderedListChildremNodeList.length; i += 1) {
-    formInfosUnorderedList.removeChild(formInfosUnorderedListChildremNodeList[i]);
-  }
-}
-
 function showTheInfos() {
   const isTextInputsValid = validateTextInputs();
   const isRadioButtonsValid = validateRadioButtons();
-  const infosToBeShown = document.querySelectorAll('.info, input[type="radio"]:checked');
-  const formInfosSpan = document.querySelector('#form-infos');
+  const infosToBeShown = document.querySelectorAll(
+    '.info, input[ type = "radio"]:checked'
+  );
+  const greetingsDiv = document.querySelector('#greetings');
+  const formInfosDiv = document.querySelector('#form-infos');
   const formSignupForm = document.querySelector('#form-signup');
+  const mainHeader = document.querySelector('main h1');
+  const quickEasy = document.querySelector('.quick-easy');
 
   if (isTextInputsValid === true && isRadioButtonsValid === true) {
-    clearInfos();
+    console.log(infosToBeShown);
 
-    formInfosSpan.innerHTML = `Olá, ${infosToBeShown[0].value} ${infosToBeShown[1].value}.<br>Email ou telefone: ${infosToBeShown[2].value}.<br>Data de nascimento: ${infosToBeShown[3].value}`;
+    greetingsDiv.innerText = `Olá, ${infosToBeShown[0].value} ${infosToBeShown[1].value}.`;
+    formInfosDiv.innerHTML = `<p>Celular ou e-mail: ${infosToBeShown[2].value}.</p><p>Data de nascimento: ${infosToBeShown[3].value}.</p>`;
 
     formSignupForm.style.display = 'none';
+    mainHeader.style.display = 'none';
+    quickEasy.style.display = 'none';
   }
 }
 
