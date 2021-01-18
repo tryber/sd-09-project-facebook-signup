@@ -108,9 +108,9 @@ function allTheChecksOfTheForm(event) {
   checkIfBirthdateIsFilled() === false ||
   checkIfRadioBtnIsChecked() === false) {
     addParagraphoToWarn();
-  } 
+  }
   removeParagraphWarn();
-  return true
+  return true;
 }
 
 btnFacebookRegister.addEventListener('click', allTheChecksOfTheForm);
@@ -123,7 +123,7 @@ function addRadioCheckedToAVariable() {
   } else if (document.querySelectorAll('.gender input')[2].checked === true) {
     return 'Personalizado';
   }
-  return 'Por favor, selecione uma das opções.'
+  return 'Por favor, selecione uma das opções.';
 }
 
 function addInformations() {
