@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +26,15 @@ html {
   flex-direction: column;
 }
 
+#user-password {
+  margin-left: 10px;
+}
+
+.form-group input {
+  border: 1px solid black;
+  height: 23px;
+}
+
 .form-control {
   align-self: flex-end;
 }
@@ -34,6 +45,8 @@ html {
 }
 
 .left-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   width: 800px;
 }
 
