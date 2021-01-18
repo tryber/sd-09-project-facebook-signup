@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(217, 221, 235);
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 10px 250px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.signup-form input {
+  border: none;
+  border-radius: 4px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 100%;
+}
+
+.fullname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fullname input {
+  margin: 0;
+  width: 49%;
+}
+
+.right-content .label-form {
+  color: rgb(93, 99, 102);
+  display: block;
+  font-weight: 900;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.right-content .input-gender {
+  width: auto;
+}
+
+.signup-form button {
+  background-color: rgb(126, 189, 108);
+  border: 0.5px solid rgba(0, 0, 0, 0.308);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.main-mobile {
+  display: none;
+}

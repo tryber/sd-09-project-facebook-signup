@@ -1,0 +1,87 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  justify-content: center;
+  padding: 0;
+}
+
+.facebook-login {
+  display: none;
+}
+
+.left-content {
+  display: none;
+}
+
+.right-content {
+  display: none;
+}
+
+.main-mobile {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.facebook-login-mobile {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 30px 10px;
+  width: 80%;
+}
+
+.form-group-mobile {
+  width: 100%;
+}
+
+.user {
+  border: 0.2px solid rgb(167, 152, 152);
+  border-radius: 2px;
+  line-height: 2.1;
+  padding: 7px;
+  width: 94%;
+}
+
+.form-control-mobile {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.button-login-mobile {
+  background-color: rgb(24, 119, 242);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 900;
+  margin: 10px 0;
+  padding: 7px;
+  width: 100%;
+}
+
+.nova-conta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nova-conta-button {
+  background-color: rgb(0, 164, 1);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 900;
+  padding: 9px;
+}
+
+.nova-conta p {
+  color: rgb(103, 132, 177);
+  font-size: 13px;
+}
