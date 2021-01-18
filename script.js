@@ -100,4 +100,4 @@ function mask(i) {
   i.setAttribute('maxlength', '10');
   if (v.length === 2 || v.length === 5) i.value += '/';
 }
-document.querySelector('#input-birthdate').oninput = function() { mask(this); };
+document.querySelector('#input-birthdate').oninput = function() { mask (this); };
