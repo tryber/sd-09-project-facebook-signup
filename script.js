@@ -91,13 +91,13 @@ function checkInputs(event) {
 submitButton.addEventListener('click', checkInputs);
 
 // Masks for forms inputs
-function mask(i) {
-  const v = i.value;
+function mask(input) {
+  const v = input.value;
   if (isNaN(v[v.length - 1])) {
-    i.value = v.substring(0, v.length - 1);
+    input.value = v.substring(0, v.length - 1);
     return;
   }
-  i.setAttribute('maxlength', '10');
-  if (v.length === 2 || v.length === 5) i.value += '/';
+  input.setAttribute('maxlength', '10');
+  if (v.length === 2 || v.length === 5) input.value += '/';
 }
-document.querySelector('#input-birthdate').oninput = function() { mask (this); };
+document.querySelector('#input-birthdate').oninput = function () { mask(this); };
