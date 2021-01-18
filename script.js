@@ -14,7 +14,7 @@ listenToButtonLoginButton();
 
 function validateTextInputs() {
   const textInputsNodeList = document.querySelectorAll(
-    '.right-content input:not([type="radio"])'
+    '.right-content input:not([type="radio"])',
   );
   let isValid = true;
 
@@ -29,7 +29,7 @@ function validateTextInputs() {
 
 function validateRadioButtons() {
   const checkedRadioButtonsNodeList = document.querySelectorAll(
-    '.right-content input[ type = "radio" ]:checked'
+    '.right-content input[ type = "radio" ]:checked',
   );
   let isValid = true;
 
@@ -43,7 +43,7 @@ function validateInputs(event) {
   const isTextInputsValid = validateTextInputs();
   const isRadioButtonsValid = validateRadioButtons();
   const invalidMessageContainerDiv = document.querySelector(
-    '.invalid-message-container'
+    '.invalid-message-container',
   );
 
   if (isTextInputsValid === false || isRadioButtonsValid === false) {
@@ -65,6 +65,14 @@ function listenToFacebookRegisterButton() {
 }
 
 listenToFacebookRegisterButton();
+
+function listenToGenderButtons() {
+  const maleRadioButton = document.querySelector('#male');
+  const femaleRadioButton = document.querySelector('#female');
+
+  maleRadioButton.addEventListener('click', clearCustonGenderInputDiv);
+  femaleRadioButton.addEventListener('click', clearCustonGenderInputDiv);
+}
 
 function createGenderInputField() {
   const custonGenderInputDiv = document.querySelector('.custom-gender-input');
@@ -100,12 +108,4 @@ function clearCustonGenderInputDiv() {
   maleRadioButton.removeEventListener('click', clearCustonGenderInputDiv);
   femaleRadioButton.removeEventListener('click', clearCustonGenderInputDiv);
   listenToCustomRadioButton();
-}
-
-function listenToGenderButtons() {
-  const maleRadioButton = document.querySelector('#male');
-  const femaleRadioButton = document.querySelector('#female');
-
-  maleRadioButton.addEventListener('click', clearCustonGenderInputDiv);
-  femaleRadioButton.addEventListener('click', clearCustonGenderInputDiv);
 }
