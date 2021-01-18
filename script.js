@@ -1,10 +1,10 @@
 document.querySelector('#button-login').addEventListener('click', () => {
-  alert(document.querySelector('#user-mail-phone').value);
+  alert(document.querySelector('#user-email-phone').value);
 });
 
 function validateText(formInputs) {
   let isValid = true;
-  for (let index = 0; index < formInputs.length; index += 1) {
+  for (let index = 0; index < formInputs.length - 1; index += 1) {
     if (!formInputs[index].value) {
       isValid = false;
     }
@@ -23,14 +23,23 @@ function validateRadios(formInputs) {
 }
 
 function genderSelected() {
-  let gender = "";
+  let gender = '';
   const genderRadioInputs = document.querySelectorAll('input[name="gender"]');
   for (let index = 0; index < genderRadioInputs.length; index += 1) {
     if (genderRadioInputs[index].checked) {
       gender = genderRadioInputs[index].value;
     }
-  } 
+  }
   return gender;
+}
+
+function showCustomGender(event) {
+  const customGenderInput = document.querySelector('.input-genero');
+  if (event.target.id === 'gender-custom') {
+    customGenderInput.style.display = 'block';
+  } else {
+    customGenderInput.style.display = 'none';
+  }
 }
 
 function validateAndRegister(event) {
@@ -47,7 +56,7 @@ function validateAndRegister(event) {
     const nome = document.getElementById('firstName').value;
     const sobrenome = document.getElementById('lastName').value;
     const phoneEmail = document.getElementById('phoneEmail').value;
-    const birthdate = document.getElementById('birthdate').value;    
+    const birthdate = document.getElementById('birthdate').value;
     const gender = genderSelected();
 
     const rightContent = document.querySelector('.right-content');
@@ -58,6 +67,14 @@ function validateAndRegister(event) {
     <p>Gênero: ${gender}</p>`;
   }
 }
-const facebookRegister = document.getElementById('facebook-register');
-facebookRegister.addEventListener('click', validateAndRegister);
-//commit final
+
+function addEventListeners() {
+  const facebookRegister = document.getElementById('facebook-register');
+  facebookRegister.addEventListener('click', validateAndRegister);
+  const genderRadioInputs = document.querySelectorAll('input[name="gender"]');
+  for (let index = 0; index < genderRadioInputs.length; index += 1) {
+    genderRadioInputs[index].addEventListener('input', showCustomGender);
+  }
+}
+
+addEventListeners();
