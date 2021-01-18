@@ -24,14 +24,28 @@ function createElement() {
   }
 }
 
+function formatDate (value) {
+  const dataComplete = value.split('-');
+
+  return `${dataComplete[2]}/${dataComplete[1]}/${dataComplete[0]}`;
+}
+
+function breakLine (index) {
+  if (index > 0 && index !== 2) {
+    parent.innerText += '\n';
+  }
+}
+
 function inputWriteValues(index, value, parent) {
   if (!(index === 3 || (index > 4 && !value.checked))) {
     parent.innerText += ` ${value.value}`;
   }
-
-  if (index > 0 && index !== 2) {
-    parent.innerText += '\n';
+  
+  if (index === 3) {
+    parent.innerText += formatDate(index);
   }
+
+  breakLine(index);
 }
 
 function writeValues() {
