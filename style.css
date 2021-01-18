@@ -9,10 +9,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.top-bar .container {
-  align-items: center;
+.top-bar {
+  background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
 }
 
 .facebook-login {
