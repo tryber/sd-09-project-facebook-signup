@@ -97,7 +97,7 @@ function mask(i) {
     i.value = v.substring(0, v.length - 1);
     return;
   }
-    i.setAttribute('maxlength', '10');
-    if (v.length === 2 || v.length === 5) i.value += '/';
+  i.setAttribute('maxlength', '10');
+  if (v.length === 2 || v.length === 5) i.value += '/';
 }
-document.querySelector('#input-birthdate').oninput = function() {mask(this)};
+document.querySelector('#input-birthdate').oninput = function() { mask(this); };
