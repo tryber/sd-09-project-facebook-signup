@@ -137,7 +137,7 @@ function addInformations() {
   const newDiv = document.createElement('div');
 
   if (allTheChecksOfTheForm(event) === true) {
-    newDiv.className = 'div-with-data';
+    newDiv.className = 'right-content';
     mainContent.appendChild(newDiv);
     let paragraph = document.createElement('p');
     paragraph.innerText = `Olá, ${document.querySelectorAll('.fullname input')[0].value} ${document.querySelectorAll('.fullname input')[1].value}`;
