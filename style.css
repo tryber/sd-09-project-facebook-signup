@@ -9,19 +9,6 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-}
-
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
 .top-bar .container {
   align-items: center;
   display: flex;
