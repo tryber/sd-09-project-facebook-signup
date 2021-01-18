@@ -7,18 +7,6 @@ function falert(event) {
 }
 button.addEventListener('click', falert);
 
-const rdoPerso = document.getElementById('personalizado');
-function inputTxtPerso() {
-  const rdoPerso2 = document.querySelector('.radios');
-  const rdoPersoNew = document.createElement('input');
-  const rdoPersoNewName = 'gender-custom';
-  const rdoPersoNewPh = 'Gênero (opcional)';
-  rdoPersoNew.name = rdoPersoNewName;
-  rdoPersoNew.placeholder = rdoPersoNewPh;
-  rdoPerso2.appendChild(rdoPersoNew);
-}
-rdoPerso.addEventListener('click', inputTxtPerso);
-
 function createP() {
   const newP = document.querySelector('.form');
   const newP2 = document.createElement('p');
@@ -72,19 +60,6 @@ function write() {
   const inputFemininoValue2 = inputFeminino2.checked;
   const inputMasculinoValue2 = inputMasculino2.checked;
   const inputPersonalizadoValue2 = inputPersonalizado2.checked;
-
-function write() {
-  const box = document.getElementById('right-content');
-  const inputFeminino2 = document.getElementById('feminino');
-  const inputMasculino2 = document.getElementById('masculino');
-  const inputPersonalizado2 = document.getElementById('personalizado');
-  const inputs = document.querySelectorAll('.input');
-
-  const array = [];
-  for (let index = 0; index < inputs.length; index += 1) {
-    array.push(inputs[index].value);
-  }
-
   let checked2 = '';
   if (inputFeminino2.checked === true) {
     checked2 = 'Feminino';
