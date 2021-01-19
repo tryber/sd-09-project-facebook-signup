@@ -75,7 +75,7 @@ function makeMsg() {
   const main = document.getElementsByClassName('main-content')[0];
   const element = document.createElement('p');
 
-  element.classList.add('right-contet');
+  element.classList.add('right-content');
   element.innerText = makePersona();
 
   rightElement.remove();
