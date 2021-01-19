@@ -45,6 +45,7 @@ function createElementInput() {
   const element = document.createElement('input');
   element.placeholder = 'Gênero (opcional)';
   element.classList.add('input-personalizado');
+  element.name = 'gender-custom';
   inputG[0].appendChild(element);
 }
 
