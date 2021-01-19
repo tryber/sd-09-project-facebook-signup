@@ -10,12 +10,7 @@ const radioPersonalizadoM = document.getElementById('male');
 const radioPersonalizadoF = document.getElementById('female');
 const rightElement = document.getElementsByClassName('right-content')[0];
 let alvo;
-let persona = [
-  nome = '',
-  emailOrPhone = '',
-  DtNasc = '',
-  genero = ''
-]
+const persona = [];
 
 function addlistener(obj, func) {
   obj.addEventListener('click', func);
@@ -56,6 +51,17 @@ function createElementInput() {
   inputG[0].appendChild(element);
 }
 
+function makeMsg() {
+  const main = document.getElementsByClassName('main-content')[0];
+  const element = document.createElement('p');
+
+  element.classList.add('right-contet');
+  element.innerText = makePersona();
+
+  rightElement.remove();
+  main.appendChild(element);
+}
+
 function verifyInputValue(event) {
   event.preventDefault();
 
@@ -79,7 +85,7 @@ function testeIfCheckRadio() {
 }
 
 function getGenero() {
-  isCheck(listInputRadioCad)
+  isCheck(listInputRadioCad);
   if (alvo === 'other') {
     persona.genero = 'Personalizado';
   } else if (alvo === 'male') {
@@ -97,18 +103,6 @@ function makePersona() {
 
   return `Olá, ${persona.nome}. iremos te encontrar por aqui: ${persona.emailOrPhone} no seu anivesário no dia ${persona.DtNasc}. Você selecionou: ${persona.genero}`;
 }
-
-function makeMsg() {
-  const main = document.getElementsByClassName('main-content')[0];
-  let element = document.createElement('p');
-
-  element.classList.add('right-contet');
-  element.innerText = makePersona();
-
-  rightElement.remove();
-  main.appendChild(element);
-}
-
 
 addlistener(btnEntrar, () => alert(inputEmail.value));
 addlistener(btnReg, verifyInputValue);
