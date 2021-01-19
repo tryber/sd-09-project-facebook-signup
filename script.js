@@ -60,7 +60,7 @@ function verifyInputValue(event) {
 
 function testeIfCheckRadio() {
   isCheck(listInputRadioCad);
-  if(alvo === 'other') {
+  if (alvo === 'other') {
     createElementInput();
   } else {
     const element = document.getElementsByClassName('input-personalizado');
