@@ -1,21 +1,19 @@
-const btnEnter = document.querySelector('#button-login');
+const listRegister = document.querySelector('.register');
+const secToLast = listRegister.lastElementChild.previousElementSibling;
 
 function addAlert() {
+  const btnEnter = document.querySelector('#button-login');
   btnEnter.addEventListener('click', function () {
     const valueEmail = document.querySelector('#user-email-phone');
     alert(valueEmail.value);
   });
 }
 
-addAlert();
-
-const listRegister = document.querySelector('.register');
-const btnRegister = document.querySelector('#facebook-register');
-const requiredCamps = document.getElementsByClassName('confirmation');
-
 function checkCamps() {
+  const btnRegister = document.querySelector('#facebook-register');
   btnRegister.addEventListener('click', function () {
     let flag = 0;
+    const requiredCamps = document.getElementsByClassName('confirmation');
     const campsText = document.getElementById('invalidCamps');
     for (let i = 0; i < requiredCamps.length; i += 1) {
       if (requiredCamps[i].innerText === '') {
@@ -30,12 +28,8 @@ function checkCamps() {
   });
 }
 
-checkCamps();
-
-const optCustom = document.querySelector('#Personalizado');
-const secToLast = listRegister.lastElementChild.previousElementSibling;
-
 function addTextBoxCustom() {
+  const optCustom = document.querySelector('#Personalizado');
   optCustom.addEventListener('click', function () {
     if (secToLast.previousElementSibling.type !== 'text') {
       const textBoxCustom = document.createElement('input');
@@ -49,17 +43,14 @@ function addTextBoxCustom() {
   });
 }
 
-addTextBoxCustom();
-
-const optFemale = document.querySelector('#Feminino');
-const optMale = document.querySelector('#Masculino');
-
 function removeTextBoxCustom() {
+  const optFemale = document.querySelector('#Feminino');
   optFemale.addEventListener('click', function () {
     if (secToLast.previousElementSibling.type === 'text') {
       secToLast.previousElementSibling.remove();
     }
   });
+  const optMale = document.querySelector('#Masculino');
   optMale.addEventListener('click', function () {
     if (secToLast.previousElementSibling.type === 'text') {
       secToLast.previousElementSibling.remove();
@@ -67,4 +58,7 @@ function removeTextBoxCustom() {
   });
 }
 
+addAlert();
+checkCamps();
+addTextBoxCustom();
 removeTextBoxCustom();
