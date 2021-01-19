@@ -24,8 +24,7 @@ function checkCamps() {
     }
     if (flag === 0) {
       campsText.innerText = 'Sucesso!';
-    }
-    else {
+    } else {
       campsText.innerText = 'Campos inválidos';
     }
   });
