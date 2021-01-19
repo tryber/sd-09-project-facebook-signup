@@ -98,7 +98,7 @@ function testeIfCheckRadio() {
   isCheck(listInputRadioCad);
   if (alvo === 'other') {
     createElementInput();
-  } else {
+  } else if(document.getElementsByClassName('input-personalizado')[0] != undefined) {
     const element = document.getElementsByClassName('input-personalizado');
     element[0].remove();
   }
