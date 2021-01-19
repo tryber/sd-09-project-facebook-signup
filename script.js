@@ -29,12 +29,10 @@ function isCheck(obj) {
 }
 
 function createElementCI() {
-  let element = document.createElement('p');
+  const element = document.createElement('p');
   element.innerText = 'Campos inválidos';
   element.classList.add('msg-erro');
   forms[0].appendChild(element);
-  console.log(forms);
-  console.log(element);
 }
 
 function verifyInputValue(event) {
