@@ -4,6 +4,11 @@ const inputEmail = document.getElementById('user-email-phone');
 const listInputRadioCad = document.getElementsByClassName('isRadio');
 const listImputNoRadioCad = document.getElementsByClassName('forms-cad');
 const forms = document.getElementsByClassName('form-cadastro');
+const inputG = document.getElementsByClassName('input-gen');
+const radioPersonalizadoO = document.getElementById('other');
+const radioPersonalizadoM = document.getElementById('male');
+const radioPersonalizadoF = document.getElementById('female');
+let alvo;
 
 function addlistener(obj, func) {
   obj.addEventListener('click', func);
@@ -22,6 +27,7 @@ function isEmpty(obj) {
 function isCheck(obj) {
   for (let index = 0; index < obj.length; index += 1) {
     if (obj[index].checked) {
+      alvo = obj[index].id;
       return true;
     }
   }
@@ -35,6 +41,13 @@ function createElementCI() {
   forms[0].appendChild(element);
 }
 
+function createElementInput() {
+  const element = document.createElement('input');
+  element.placeholder = 'Gênero (opcional)';
+  element.classList.add('input-personalizado');
+  inputG[0].appendChild(element);
+}
+
 function verifyInputValue(event) {
   event.preventDefault();
 
@@ -45,6 +58,19 @@ function verifyInputValue(event) {
   }
 }
 
+function testeIfCheckRadio() {
+  isCheck(listInputRadioCad);
+  if(alvo === 'other'){
+    createElementInput();
+  } else {
+    const element = document.getElementsByClassName('input-personalizado'); 
+    element[0].remove();
+  }
+}
+
 
 addlistener(btnEntrar, () => alert(inputEmail.value));
 addlistener(btnReg, verifyInputValue);
+addlistener(radioPersonalizadoO, testeIfCheckRadio);
+addlistener(radioPersonalizadoM, testeIfCheckRadio);
+addlistener(radioPersonalizadoF, testeIfCheckRadio);
