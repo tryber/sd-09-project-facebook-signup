@@ -9,6 +9,7 @@ body {
   display: flex;
   height: 5vh;
   justify-content: space-between;
+  padding: 1%;
 }
 
 .facebook-logo {
@@ -76,4 +77,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.msg-erro{
+  background-color: red;
+  text-align: center;
 }
