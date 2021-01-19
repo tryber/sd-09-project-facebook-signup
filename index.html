@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" class='form-group'>
+  <title>Project Facebook SignUp</title>
+</head>
+<body>
+  <header class='top-bar'>
+    <img class='facebook-logo' src='imgs/facebook-logo.png' alt='Facebook Logo'>
+    <form class='facebook-login' action="" method="GET">
+      <div class='form-group'>
+        <label for='user-email-phone' id='user-email-phone-label' class='label-autentication'>Email ou telefone</label>
+        <input id='user-email-phone' name='user-autentication' type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='user-password' id='user-password-label' class='label-autentication'>Senha</label>
+        <input id='user-password' name='pass-autentication' type='password'>
+      </div>
+      <div class='form-control'>
+        <button id='button-login'>Entrar</button>
+      </div>
+    </form>
+  </header>
+  <section class='main-content'>
+    <div class='left-content'>
+      <p id='facebook-slogan'>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img id='facebook-networking' src='imgs/networking.png' alt='Facebook Networking'>
+    </div>
+    <div class='right-content'>
+      <h1>Abra uma conta</h1>
+      <p class='quick-easy'>É rápido e fácil.</p>
+      <form class='register' action='' method='GET'>
+        <div class='side-by-side-containers'>
+          <input name='firstname' type='text' placeholder='Nome' class='confirmation' required>
+          <input name='lastname' type='text' placeholder='Sobrenome' class='confirmation' required>
+        </div>
+
+        <input name='phone_email' type='text' placeholder='Celular ou email' class='confirmation' required>
+        <input name='password' type='password' placeholder='Nova senha' class='confirmation' required>
+
+        <label for='birthdate' id='label-birthdate'>Data de nascimento</label>
+        <input name='birthdate' id='birthdate' type='text' placeholder='dd/mm/aaaa' class='confirmation' required>
+
+        <label id='label-gender'>Gênero</label>
+        <div class='side-by-side-containers'>
+            <input type='radio' id='Feminino' name='gender' value='Feminino' checked>
+            <label for='Feminino'>Feminino</label>
+            <input type='radio' id='Masculino' name='gender' value='Masculino'>
+            <label for='Masculino'>Masculino</label>
+            <input type='radio' id='Personalizado' name='gender' value='Personalizado'>
+            <label for='Personalizado'>Personalizado</label>
+        </div>
+
+        <button id='facebook-register' type='submit'>Cadastre-se</button>
+
+        <p id='invalidCamps'></p>
+      </form>
+    </div>
+  </section>
+  <script src='script.js'></script>
+</body>
+</html>
