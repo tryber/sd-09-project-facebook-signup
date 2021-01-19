@@ -51,6 +51,17 @@ function createElementInput() {
   inputG[0].appendChild(element);
 }
 
+function getGenero() {
+  isCheck(listInputRadioCad);
+  if (alvo === 'other') {
+    persona.genero = 'Personalizado';
+  } else if (alvo === 'male') {
+    persona.genero = 'Masculino';
+  } else {
+    persona.genero = 'Feminino';
+  }
+}
+
 function makePersona() {
   getGenero();
   persona.nome = `${document.getElementById('nome').value} ${document.getElementById('sobre-nome').value}`;
@@ -90,17 +101,6 @@ function testeIfCheckRadio() {
   } else {
     const element = document.getElementsByClassName('input-personalizado');
     element[0].remove();
-  }
-}
-
-function getGenero() {
-  isCheck(listInputRadioCad);
-  if (alvo === 'other') {
-    persona.genero = 'Personalizado';
-  } else if (alvo === 'male') {
-    persona.genero = 'Masculino';
-  } else {
-    persona.genero = 'Feminino';
   }
 }
 
