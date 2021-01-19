@@ -8,7 +8,14 @@ const inputG = document.getElementsByClassName('input-gen');
 const radioPersonalizadoO = document.getElementById('other');
 const radioPersonalizadoM = document.getElementById('male');
 const radioPersonalizadoF = document.getElementById('female');
+const rightElement = document.getElementsByClassName('right-content')[0];
 let alvo;
+let persona = [
+  nome = '',
+  emailOrPhone = '',
+  DtNasc = '',
+  genero = ''
+]
 
 function addlistener(obj, func) {
   obj.addEventListener('click', func);
@@ -56,6 +63,8 @@ function verifyInputValue(event) {
     createElementCI();
   } else if (!isCheck(listInputRadioCad)) {
     createElementCI();
+  } else {
+    makeMsg();
   }
 }
 
@@ -67,6 +76,37 @@ function testeIfCheckRadio() {
     const element = document.getElementsByClassName('input-personalizado');
     element[0].remove();
   }
+}
+
+function getGenero() {
+  isCheck(listInputRadioCad)
+  if (alvo === 'other') {
+    persona.genero = 'Personalizado';
+  } else if (alvo === 'male') {
+    persona.genero = 'Masculino';
+  } else {
+    persona.genero = 'Feminino';
+  }
+}
+
+function makePersona() {
+  getGenero();
+  persona.nome = `${document.getElementById('nome').value} ${document.getElementById('sobre-nome').value}`;
+  persona.emailOrPhone = document.getElementById('contato').value;
+  persona.DtNasc = document.getElementById('dt-nasc').value;
+
+  return `Olá, ${persona.nome}. iremos te encontrar por aqui: ${persona.emailOrPhone} no seu anivesário no dia ${persona.DtNasc}. Você selecionou: ${persona.genero}`;
+}
+
+function makeMsg() {
+  const main = document.getElementsByClassName('main-content')[0];
+  let element = document.createElement('p');
+
+  element.classList.add('right-contet');
+  element.innerText = makePersona();
+
+  rightElement.remove();
+  main.appendChild(element);
 }
 
 
