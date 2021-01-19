@@ -15,10 +15,18 @@ const requiredCamps = document.getElementsByClassName('confirmation');
 
 function checkCamps() {
   btnRegister.addEventListener('click', function () {
+    let flag = 0;
+    const campsText = document.getElementById('invalidCamps');
     for (let i = 0; i < requiredCamps.length; i += 1) {
       if (requiredCamps[i].innerText === '') {
-        document.getElementById('invalidCamps').innerText = 'Campos inválidos';
+        flag = 1;
       }
+    }
+    if (flag === 0) {
+      campsText.innerText = 'Sucesso!';
+    }
+    else {
+      campsText.innerText = 'Campos inválidos';
     }
   });
 }
