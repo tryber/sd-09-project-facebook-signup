@@ -68,7 +68,7 @@ function makePersona() {
   persona.emailOrPhone = document.getElementById('contato').value;
   persona.DtNasc = document.getElementById('dt-nasc').value;
 
-  return `Olá, ${persona.nome}. iremos te encontrar por aqui: ${persona.emailOrPhone} no seu anivesário no dia ${persona.DtNasc}. Você selecionou: ${persona.genero}`;
+  return `Olá, ${persona.nome} \n${persona.emailOrPhone} \n${persona.DtNasc} \n${persona.genero}`;
 }
 
 function makeMsg() {
