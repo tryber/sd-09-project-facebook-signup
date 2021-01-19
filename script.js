@@ -51,6 +51,15 @@ function createElementInput() {
   inputG[0].appendChild(element);
 }
 
+function makePersona() {
+  getGenero();
+  persona.nome = `${document.getElementById('nome').value} ${document.getElementById('sobre-nome').value}`;
+  persona.emailOrPhone = document.getElementById('contato').value;
+  persona.DtNasc = document.getElementById('dt-nasc').value;
+
+  return `Olá, ${persona.nome}. iremos te encontrar por aqui: ${persona.emailOrPhone} no seu anivesário no dia ${persona.DtNasc}. Você selecionou: ${persona.genero}`;
+}
+
 function makeMsg() {
   const main = document.getElementsByClassName('main-content')[0];
   const element = document.createElement('p');
@@ -95,14 +104,6 @@ function getGenero() {
   }
 }
 
-function makePersona() {
-  getGenero();
-  persona.nome = `${document.getElementById('nome').value} ${document.getElementById('sobre-nome').value}`;
-  persona.emailOrPhone = document.getElementById('contato').value;
-  persona.DtNasc = document.getElementById('dt-nasc').value;
-
-  return `Olá, ${persona.nome}. iremos te encontrar por aqui: ${persona.emailOrPhone} no seu anivesário no dia ${persona.DtNasc}. Você selecionou: ${persona.genero}`;
-}
 
 addlistener(btnEntrar, () => alert(inputEmail.value));
 addlistener(btnReg, verifyInputValue);
