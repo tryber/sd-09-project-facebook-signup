@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+.facebook-login {
+  align-items: center;
+  color: white;
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.left-content {
+  min-width: 800px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em 15px;
+}
+
+.new-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-e-sobrenome {
+  display: flex;
+}
+
+.other-gender {
+  display: none;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.top-bar img {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.right-content form {
+  display: flex;
+  flex-direction: column;
+}
