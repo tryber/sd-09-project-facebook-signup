@@ -1,3 +1,5 @@
+// Código criado por Brenno Calado e Marcos Albuquerque
+
 const loginButton = document.getElementById('button-login');
 const registerButton = document.getElementById('facebook-register');
 const loginField = document.getElementById('user-email-phone');
