@@ -77,6 +77,7 @@ function validacao(event) {
     report();
   }
 }
+
 function generoPersonaliza() {
   removeInputGender();
   const input = document.createElement('input');
@@ -86,6 +87,7 @@ function generoPersonaliza() {
   const genero = document.querySelector('#genero');
   genero.appendChild(input);
 }
+
 window.onload = function () {
   const btn = document.querySelector('#button-login');
   btn.addEventListener('click', alerta);
