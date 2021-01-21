@@ -41,7 +41,7 @@
     <div class="main-content">
       <!-- lado esquerdo - slogan -->
       <div class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e <br>compartilhar com as pessoas que fazem parte <br> da sua vida.</p>
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
         <img src="imgs/networking.png" alt="" id="facebook-networking">
       </div>
       <!-- lado direito - cadastro -->
@@ -51,20 +51,17 @@
         <!-- formulario de inscrição -->
         <form id="formRegister" action="">
           <!-- nome -->
-          <div class="inputs">
-            <div class="full-name">
-              <input class="input in" type="text" name="firstname" placeholder="Nome" id="name">
-              <input class="input in" type="text" name="lastname" placeholder="Sobrenome" id="lastname">
-            </div>
-            <!-- dados -->
-            <input class="input in" type="text" name="phone_email" placeholder="Celular ou email" id="phonemail">
-            <input class="input in" type="password" name="password" placeholder="Nova senha" id="password">
-
+          <div class="full-name">
+            <input class="input" type="text" name="firstname" placeholder="Nome" id="name">
+            <input class="input" type="text" name="lastname" placeholder="Sobrenome" id="lastname">
           </div>
+          <!-- dados -->
+          <input class="input" type="text" name="phone_email" placeholder="Celular ou email" id="phonemail">
+          <input class="input" type="password" name="password" placeholder="Nova senha" id="password">
           <!-- informações -->
           <div class="div-birthdate">
             <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-            <input class="input in" id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            <input class="input" id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
           </div>
           <label id="label-gender" for="">Gênero</label>
           <div class="genders">
@@ -82,16 +79,11 @@
             </label>
           </div>
           <div id="genero"></div>
-          <button id="facebook-register" class="facebook-register" type="submit">Cadastre-se</button>
+          <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>
       </div>
     </div>
   </main>
-  <footer>
-    <div class="footer">
-      <p>Trabalho desenvolvido por Pedro e Rafael <br><em> Trybe <br> 14 de Janeiro , 2020 <br> Todos os direitos reservados</em></p>
-    </div>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>
