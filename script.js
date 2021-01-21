@@ -60,9 +60,11 @@ function report() {
       gender = genders[index].value;
     }
   }
+
   removeContent();
   const rightContent = document.querySelector('.right-content');
   const paragraph = document.createElement('p');
+  paragraph.innerText = `Olá, ${name.value} ${lastname.value}\n${email.value}\n${birthdate.value}\n${gender}`;
   paragraph.innerText = `Olá, ${name.value} ${lastname.value}\n${email.value}\n${birthdate.value}\n${gender}`;
   rightContent.appendChild(paragraph);
 }
