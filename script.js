@@ -74,9 +74,7 @@ function replaceRightContent() {
   const newContent = document.createElement('div');
   newContent.className = 'right-content';
   newContent.innerText = `Olá, ${userFirstName.value} ${userLastName.value}
-  ${userPhoneEmail.value}
-  ${userBirthdate.value}
-  ${findGender()}`;
+  Confirme o seu cadastro no email enviado para ${userPhoneEmail.value}`;
   mainContent.appendChild(newContent);
 }
 function checkInputs(event) {

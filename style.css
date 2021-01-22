@@ -34,10 +34,23 @@ body {
   font-size: 10px;
   font-weight: 500;
   margin-top: 2px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.form-control {
-  align-self: flex-end;
+.keep-login-in {
+  width: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+section.form-group.password {
+  height: 70px;
+}
+
+span.keep-login-in-span {
+  display: flex;
+  justify-content: initial;
 }
 
 .form-control button {
@@ -61,12 +74,22 @@ div input {
 }
 
 .form-group input {
-  width: 90%;
+  /* width: 90%; */
 }
 
-/* main.main-content {
-  background-image: linear-gradient(white, rgb(204, 202, 202));
-} */
+form.facebook-login {
+  width: 400px;
+}
+
+input.keep-login-in {
+  width: 10px;
+  margin-top: 8px;
+}
+
+span a {
+  margin-top: 5px;
+  color: lightgray;
+}
 
 .main-content {
   background-image: linear-gradient(rgb(252, 251, 250), rgb(203, 210, 228));
@@ -139,9 +162,21 @@ footer ul li {
   list-style: none;
 }
 
+footer span {
+  margin-left: 50px;
+  color: gray;
+}
+
+.languages {
+  font-size: 12px;
+  display: flex;
+  margin-right: 35px;
+}
+
 .links-footer {
   display: inline-block;
   margin-top: 25px;
+  font-size: 12px;
 }
 
 .links-footer li {
@@ -152,4 +187,13 @@ footer ul li {
 
 .plus-sign {
   border: solid gray 1px;
+}
+
+.invalid-message {
+  background-color: indianred;
+}
+
+i {
+  font-size: 15px;
+  padding: 5px 10px;
 }
