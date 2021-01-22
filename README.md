@@ -90,7 +90,7 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
     - Projeto em dupla.
 
     - Será um dia de projeto.
-    
+
     - O projeto tem até a seguinte data: `DD/MM/YYYY - 14:00h`. Para ser entregue a avaliação final.
 
 ---
@@ -270,7 +270,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
   * O formulário deve ser um flex container
 
 
-### 4. Crie uma classe no CSS 
+### 4. Crie uma classe no CSS
 
   Pontos importantes:
   * Essa classe deve se chamar form-group
@@ -281,7 +281,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
 ### 5. Adicione um subcontainer para agrupar o rótulo e campo "E-mail ou telefone" dentro do formulário criado na etapa 3
 
   Pontos importantes:
-  * Este subcontainer deve se chamar `form-group`
+  * Este subcontainer deve ter a classe `form-group`
   * Dentro do subcontainer `form-group` criado, deve haver um rótulo com o id user-email-phone-label e o texto "Email ou telefone"
   * Dentro do subcontainer `form-group` criado, abaixo do rótulo deve haver campo de entrada de texto para receber o email ou o telefone do usuário com o id user-email-phone'
 
