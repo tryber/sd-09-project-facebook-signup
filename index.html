@@ -84,16 +84,19 @@
               <br />
               <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
             </div>
+            <label for="" id="label-gender">Gênero</label>
             <div class="gender-radios">
-              <label for="" id="label-gender">Gênero</label>
               <div class="gender-container">
-                <input type="radio" name="gender" value="feminino" />Feminino
-                <input type="radio" name="gender" value="masculino" />Masculino
+                <input type="radio" name="gender" value="Feminino" />
+                <label for="gender-female">Feminino</label>
+                <input type="radio" name="gender" value="Masculino" />
+                <label for="gender-male">Masculino</label>
                 <input
                   type="radio"
-                  name="gender"
-                  value="personalizado"
-                />Personalizado
+                  name="gender-custom"
+                  value="Personalizado"
+                />
+                <label for="gender-custom">Personalizado</label>
               </div>
             </div>
             <div class="button-container">
