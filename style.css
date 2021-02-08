@@ -1,38 +1,174 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
+  background-color: #3b5998;
+  background-image: linear-gradient(#4e69a2, #3b5998 50%);
+  border-bottom: 1px solid #133783;
+  height: 82px;
+}
+
+.top-bar-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 989px;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+.top-bar img {
+  margin-top: 17px;
+  width: 175px;
+  height: 33px;
+  cursor: pointer;
 }
 
 .facebook-login {
   display: flex;
 }
 
+#facebook-networking {
+  width: 537px;
+  aspect-ratio: auto 537 / 195;
+  height: 195px;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  height: 87px;
+  line-height: 29px;
+  margin-bottom: 1px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+#facebook-register {
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  height: 39px;
+  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+  font-size: 19px;
+  font-weight: bolder;
+  line-height: 126%;
+  letter-spacing: normal;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: 124px;
+  padding: 7px 20px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+  width: 194px;
+}
+
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  font-size: 12px;
+  margin-top: -8px;
+}
+
+.form-group input {
+  border: 1px solid #1d2a5b;
+  width: 142px;
+  margin-right: 14px;
+  width: 140px;
+  height: 20.60px;
+}
+
+.form-group label {
+  margin-bottom: 4px;
 }
 
 .form-control {
   align-self: flex-end;
 }
 
+.form-control button {
+  background-color: #4267b2;
+  border-radius: 2px;
+  border: 1px solid #29487d;
+  color: white;
+  font-weight: bold;
+  height: 25px;
+}
+
+.form-control button:hover {
+  background-color: #365899;
+  cursor: pointer;
+}
+
+.account-recovery {
+  color: #9cb4d8;
+  position: absolute;
+  top: 52px;
+}
+
+.account-recovery:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main-conteiner {
+  background: linear-gradient(white, #D3D8E8);
+  height: 629.83px;
+}
+
 .main-content {
   display: flex;
-  justify-content: center;
+  width: 989px;
+  margin: 0 auto;
 }
 
 .left-content {
-  width: 800px;
+  width: 575px;
 }
 
 .right-content {
-  width: 300px;
+  width: 400px;
+}
+
+.right-content input[type='text'], input[type='password'] {
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #bdc7d8;
+  margin-bottom: 10px;
+  outline: transparent;
+}
+
+input::placeholder {
+  color: rgb(143, 143, 143);
+}
+
+.right-content h1 {
+  color: #333333;
+  font-size: 36px;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.quick-easy {
+  font-size: 18px;
+  margin-top: 12px;
 }
 
 .sign-up-fullname {
@@ -42,7 +178,31 @@ body {
 }
 
 .sign-up-fullname input {
-  width: 45%;
+  width: 43%;
+}
+
+#label-birthdate, #label-gender {
+  margin-top: 14px;
+  margin-bottom: 10px;
+  color: #90949c;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.birthday-input-date {
+  margin-bottom: 10px;
+}
+
+.day, .month, .year {
+  outline: transparent;
+  padding: 5px;
+  margin-right: -6px;
+}
+
+.question-mark {
+  position: relative;
+  top: 6px;
+  left: 10px;
 }
 
 .sign-up-form {
@@ -52,4 +212,14 @@ body {
 
 .gender-input {
   font-size: 14px;
+}
+
+#text-bellow-button {
+  color: #666666;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 33px;
+  margin: 10px 0px 0px;
+  padding: 15px 0px 0px;
+  width: 400px;
 }

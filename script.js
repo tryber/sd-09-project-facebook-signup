@@ -112,3 +112,25 @@ submitForm.addEventListener('click', function (event) {
     newUserInfo(userInfo, userGender);
   }
 });
+
+function birthdayDataMaker() {
+  const daySelect = document.querySelector('.day');
+  const yearSelect = document.querySelector('.year');
+  for (let i = 1; i < 32; i += 1) {
+    const day = document.createElement('option');
+    day.value = i;
+    day.innerText = i;
+    daySelect.appendChild(day);
+  }
+
+  for (let i = 2021; i > 1904; i -= 1) {
+    const year = document.createElement('option');
+    year.value = i;
+    year.innerText = i;
+    yearSelect.appendChild(year);
+  }
+}
+
+window.onload = () => {
+  birthdayDataMaker();
+}
