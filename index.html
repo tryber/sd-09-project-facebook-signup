@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/jpg" href="imgs/iconeAba.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Facebook - entre ou cadastre-se</title>
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <div class="top-bar-content">
+        <img class="facebook-logo" src="imgs/facebook-new-logo.png" />
+      <form class="facebook-login">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone"
+            >Email ou telefone</label
+          >
+          <input type="text" name="" id="user-email-phone" />
+        </div>
+        <div class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input type="text" name="" id="user-password" />
+          <p class="account-recovery">Esqueceu a conta?</p>
+        </div>
+        <div class="form-control">
+          <button id="button-login" type="button">Entrar</button>
+        </div>
+      </form>
+      </div>
+      
+    </header>
+    <div class="main-conteiner">
+      <main class="main-content">
+        <section class="left-content">
+          <p id="facebook-slogan">
+            O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+            fazem parte da sua vida.
+          </p>
+          <img id="facebook-networking" src="imgs/networking.png" />
+        </section>
+        <section class="right-content">
+          <h1>Abra uma conta</h1>
+          <p class="quick-easy">É rápido e fácil.</p>
+          <form class="sign-up-form">
+            <div class="sign-up-fullname">
+              <input class="form-info" type="text" name="firstname" placeholder="Nome" required />
+              <input
+                class="form-info"
+                type="text"
+                name="lastname"
+                placeholder="Sobrenome"
+                required
+              />
+            </div>
+            <input
+              class="form-info"
+              type="text"
+              name="phone_email"
+              placeholder="Celular ou email"
+              required
+            />
+            <input
+              class="form-info"
+              type="password"
+              name="password"
+              placeholder="Nova senha"
+              required
+            />
+            <label for="" id="label-birthdate">Data de nascimento</label>
+            <div class="birthday-input-date">
+              <select name="" id="" class="day">
+                <option value="0">Dia</option>
+              </select>
+              <select name="" id="" class="month">
+                <option value="0">Mês</option>
+                <option value="1">Jan</option>
+                <option value="2">Fev</option>
+                <option value="3">Mar</option>
+                <option value="4">Abr</option>
+                <option value="5">Mai</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Ago</option>
+                <option value="9">Set</option>
+                <option value="10">Out</option>
+                <option value="11">Nov</option>
+                <option value="12">Dez</option>
+              </select>
+              <select name="" id="" class="year">
+                <option value="0">Ano</option>
+              </select>
+              <img class="question-mark" src="imgs/questionMark.png" alt="">
+            </div>
+            <div class="gender-input">
+              <label id="label-gender">Gênero</label>
+              <div>
+                <label for="feminine"
+                  ><input
+                    type="radio"
+                    name="gender"
+                    value="Feminino"
+                    id="feminine"
+                  />Feminino</label
+                >
+                <label for="masculine"
+                  ><input
+                    type="radio"
+                    name="gender"
+                    value="Masculino"
+                    id="masculine"
+                  />Masculino</label
+                >
+                <label for="unique"
+                  ><input
+                    type="radio"
+                    name="gender"
+                    value="Personalizado"
+                    id="unique"
+                  />Personalizado</label
+                >
+              </div>
+            </div>
+            <div id="custom-gender"></div>
+            <button type="submit" id="facebook-register">Cadastre-se</button>
+            <p id="text-bellow-button"><a href='https://web.archive.org/web/20191203000824/https://pt-br.facebook.com/pages/create/?ref_type=registration_form'>Criar uma Página</a> para uma celebridade, banda ou empresa</p>
+            <p id="invalid-fields"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
