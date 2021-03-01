@@ -10,12 +10,12 @@ buttonLogin.addEventListener('click', function () {
 
 //  Validar form de cadastro
 
-function errorMessage() {
+function showErrorMessage() {
   const form = document.querySelector('#register-form');
-    const errorMessage = document.createElement('p');
-    errorMessage.textContent = 'Campos inválidos';
-    errorMessage.className = 'form-message';
-    form.appendChild(errorMessage);
+  const errorMessage = document.createElement('p');
+  errorMessage.textContent = 'Campos inválidos';
+  errorMessage.className = 'form-message';
+  form.appendChild(errorMessage);
 }
 
 function showValidatedInfo(inputs) {
@@ -43,7 +43,7 @@ function validateForm() {
 
   //  Verifica se tem input vazio e exibe mensagem de erro
   if (hasInputEmpty) {
-    errorMessage();
+    showErrorMessage();
   } else {
     //  Aqui eu vou subtituir o html pelo valor do input
     showValidatedInfo(formInputs);
