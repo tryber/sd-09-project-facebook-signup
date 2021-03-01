@@ -92,7 +92,7 @@ header {
 }
 
 #form-message {
-  font-size: 10px;
   color: red;
   cursor: pointer;
+  font-size: 10px;
 }

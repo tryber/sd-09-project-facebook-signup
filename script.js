@@ -27,7 +27,7 @@ function validateForm() {
     errorMessage.textContent = 'Campos inválidos';
     errorMessage.id = 'form-message';
     form.appendChild(errorMessage);
-  }else{
+  } else {
     //  Aqui eu vou subtituir o html pelo valor do input
     const formCompleted = document.querySelector('.right-content');
     formCompleted.innerHTML = '';
