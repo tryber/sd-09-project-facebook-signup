@@ -12,8 +12,10 @@ buttonLogin.addEventListener('click', function () {
 
 function validateForm() {
   const formInputs = document.querySelectorAll('#register-form input');
+
   let hasInputEmpty = false;
-  for (index = 0; index < formInputs.length; index += 1) {
+
+  for (let index = 0; index < formInputs.length; index += 1) {
     const inputs = formInputs[index].value;
     if (inputs === '') {
       hasInputEmpty = true;
@@ -31,7 +33,7 @@ function validateForm() {
     //  Aqui eu vou subtituir o html pelo valor do input
     const formCompleted = document.querySelector('.right-content');
     formCompleted.innerHTML = '';
-    for (index = 0; index < formInputs.length; index += 1) {
+    for (let index = 0; index < formInputs.length; index += 1) {
       const element = document.createElement('p');
       const formContent = formInputs[index].value;
       element.innerHTML = formContent;
