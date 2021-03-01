@@ -91,7 +91,7 @@ header {
   display: flex;
 }
 
-#form-message {
+.form-message {
   color: red;
   cursor: pointer;
   font-size: 10px;

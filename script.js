@@ -10,6 +10,25 @@ buttonLogin.addEventListener('click', function () {
 
 //  Validar form de cadastro
 
+function errorMessage() {
+  const form = document.querySelector('#register-form');
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = 'Campos inválidos';
+    errorMessage.className = 'form-message';
+    form.appendChild(errorMessage);
+}
+
+function showValidatedInfo(inputs) {
+  const formCompleted = document.querySelector('.right-content');
+  formCompleted.innerHTML = '';
+  for (let index = 0; index < inputs.length; index += 1) {
+    const element = document.createElement('p');
+    const formContent = inputs[index].value;
+    element.innerHTML = formContent;
+    formCompleted.appendChild(element);
+  }
+}
+
 function validateForm() {
   const formInputs = document.querySelectorAll('#register-form input');
 
@@ -24,21 +43,10 @@ function validateForm() {
 
   //  Verifica se tem input vazio e exibe mensagem de erro
   if (hasInputEmpty) {
-    const form = document.querySelector('#register-form');
-    const errorMessage = document.createElement('p');
-    errorMessage.textContent = 'Campos inválidos';
-    errorMessage.id = 'form-message';
-    form.appendChild(errorMessage);
+    errorMessage();
   } else {
     //  Aqui eu vou subtituir o html pelo valor do input
-    const formCompleted = document.querySelector('.right-content');
-    formCompleted.innerHTML = '';
-    for (let index = 0; index < formInputs.length; index += 1) {
-      const element = document.createElement('p');
-      const formContent = formInputs[index].value;
-      element.innerHTML = formContent;
-      formCompleted.appendChild(element);
-    }
+    showValidatedInfo(formInputs);
   }
 }
 
