@@ -1,0 +1,98 @@
+body {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.facebook-logo {
+  margin-top: 5px;
+  width: 140px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.top-bar input {
+  width: 130px;
+}
+
+.top-bar .form-group label {
+  color: white;
+  font-size: 12px;
+}
+
+.label a {
+  color: #9cb4d8;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-control button {
+  align-self: flex-end;
+  background-color: #4267b2;
+  border: 1px solid;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  height: 20px;
+  line-height: 18px;
+  padding: 0 6px;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.facebook-cadastro {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.name-and-lastname {
+  display: flex;
+}
+
+.form-message {
+  color: red;
+  cursor: pointer;
+  font-size: 10px;
+}
