@@ -18,14 +18,29 @@ function showErrorMessage() {
   form.appendChild(errorMessage);
 }
 
-function showValidatedInfo(inputs) {
+function showValidatedInfo() {
   const formCompleted = document.querySelector('.right-content');
+  const inputName = document.querySelector('.first-name').value;
+  const inputLastName = document.querySelector('.last-name').value;
+  const inputBirthDate = document.querySelector('.birthdate').value;
+  const phoneMail = document.querySelector('.phone_email').value;
+  const inputGender = selectedGenderClass();
+  let message = `Olá, ${inputName} ${inputLastName}
+  \n${phoneMail} \n${inputBirthDate} \n${inputGender}`;
   formCompleted.innerHTML = '';
-  for (let index = 0; index < inputs.length; index += 1) {
-    const element = document.createElement('p');
-    const formContent = inputs[index].value;
-    element.innerHTML = formContent;
-    formCompleted.appendChild(element);
+  const element = document.createElement('p');
+  element.innerHTML = message
+  formCompleted.appendChild(element);
+}
+
+function selectedGenderClass() {
+  const genderInput = document.getElementsByName('gender');
+  let selectedGender = '';
+  for (let index = 0; index < genderInput.length; index += 1) {
+    if (genderInput[index].checked) {
+      selectedGender = genderInput[index].value;
+      return selectedGender;
+    }
   }
 }
 
@@ -46,7 +61,7 @@ function validateForm() {
     showErrorMessage();
   } else {
     //  Aqui eu vou subtituir o html pelo valor do input
-    showValidatedInfo(formInputs);
+    showValidatedInfo();
   }
 }
 
