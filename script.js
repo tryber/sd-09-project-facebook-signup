@@ -18,6 +18,17 @@ function showErrorMessage() {
   form.appendChild(errorMessage);
 }
 
+function selectedGenderClass() {
+  const genderInput = document.getElementsByName('gender');
+  let selectedGender = '';
+  for (let index = 0; index < genderInput.length; index += 1) {
+    if (genderInput[index].checked) {
+      selectedGender = genderInput[index].value;
+    }
+  }
+  return selectedGender;
+}
+
 function showValidatedInfo() {
   const formCompleted = document.querySelector('.right-content');
   const inputName = document.querySelector('.first-name').value;
@@ -25,23 +36,12 @@ function showValidatedInfo() {
   const inputBirthDate = document.querySelector('.birthdate').value;
   const phoneMail = document.querySelector('.phone_email').value;
   const inputGender = selectedGenderClass();
-  let message = `Olá, ${inputName} ${inputLastName}
+  const message = `Olá, ${inputName} ${inputLastName}
   \n${phoneMail} \n${inputBirthDate} \n${inputGender}`;
   formCompleted.innerHTML = '';
   const element = document.createElement('p');
-  element.innerHTML = message
+  element.innerHTML = message;
   formCompleted.appendChild(element);
-}
-
-function selectedGenderClass() {
-  const genderInput = document.getElementsByName('gender');
-  let selectedGender = '';
-  for (let index = 0; index < genderInput.length; index += 1) {
-    if (genderInput[index].checked) {
-      selectedGender = genderInput[index].value;
-      return selectedGender;
-    }
-  }
 }
 
 function validateForm() {
