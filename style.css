@@ -1,104 +1,409 @@
 body {
-  color: white;
-  font-family: helvetica, sans-serif;
+  background-color: #f7f7f7;
+  color: #2d2d2d;
+  font-family: sans-serif;
   margin: 0;
+  min-height: 100vh;
+  padding: 0;
 }
 
-.top-bar {
-  align-items: center;
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  height: 5rem;
+form input {
+  box-sizing: border-box;
 }
 
-.facebook-logo {
-  justify-content: flex-start;
-  margin-right: auto;
+header {
+  background-color: #4267b2;
+  width: 100%;
+}
+
+.big-input {
+  width: 100%;
 }
 
 .facebook-login {
-  align-items: center;
+  margin: 2em;
+  width: 80%;
+}
+
+.facebook-logo-container {
+  background-color: #4267b2;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.facebook-logo-container img {
+  height: 44px;
+  margin: 0;
+  width: 117px;
+}
+
+.form {
+  color: #7f7f7f;
+}
+
+.form-control {
   align-self: flex-end;
   display: flex;
-  height: 2rem;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  width: 23rem;
+  flex-flow: row wrap;
+  font-weight: 800;
+  justify-content: center;
+}
+
+.form-control-button {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  border-radius: 0.2em;
+  color: #fefefe;
+  font-weight: 800;
+  margin: 1em 0 0;
+  padding: 1em;
+  transition: 0.3s;
+  width: 9100%;
+}
+
+.form-control-submit {
+  background-color: #2ea043;
+  border: 1px solid #2ea043;
+  border-radius: 0.2em;
+  color: #fefefe;
+  font-weight: 700;
+  margin: 2em 0;
+  padding: 1em;
+  transition: 0.3s;
+  width: 50%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  font-size: 0.6rem;
-  margin-bottom: 0.5rem;
 }
 
-.form-control {
-  align-self: flex-end;
+.form-group-input {
+  border: 1px solid #4267b2;
+  padding: 1em;
+  transition: 0.3s;
 }
 
-.form-group input {
-  height: 1.1rem;
-  margin: 0.1rem 0.85rem 0 0;
-  width: 8.9rem;
+.form-group-label {
+  display: none;
 }
 
-.button-login {
-  align-items: center;
-  align-self: flex-end;
-  background-color: #4267b2;
-  border: 1px solid #ccd0d5;
-  border-radius: 2px;
-  color: white;
-  display: flex;
-  font-size: 12px;
-  font-weight: 800;
-  height: 23px;
-  justify-content: center;
-  margin-top: 0.375rem;
-  width: 50px;
-}
-
-.main-content {
-  display: flex;
-  font-size: 20px;
-  font-weight: 800;
-  justify-content: space-around;
-  margin: 0 16rem 0 0;
+.hidden-input {
+  display: none;
+  width: 95%;
 }
 
 .left-content {
-  box-sizing: border-box;
-  color: #0e385f;
-  display: inline-grid;
-  justify-content: flex-end;
-  width: 800px;
+  display: none;
+}
+
+.main-content {
+  align-items: baseline;
+  display: flex;
+  margin: 1em auto;
+  padding: 2em;
+  width: fit-content;
+}
+
+.radio-container {
+  align-items: center;
+  display: flex;
+}
+
+.radio-container label {
+  color: #2d2d2d;
+  font-size: 0.9em;
+  margin: 0 0.5em 0 0.2em;
+  opacity: 0.8;
 }
 
 .right-content {
-  box-sizing: border-box;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-.firstLine {
-  display: flex;
-}
-
-.secondLine input {
+  display: none;
+  flex-flow: column;
+  margin: 0 auto;
   width: 100%;
 }
 
-label {
-  display: block;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 4px;
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.gender-option {
-  display: inline;
-  font-size: 12px;
+.right-content input {
+  border: 1px solid #8b9dc3;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  transition: 0.3s;
+}
+
+.right-content label {
+  width: 100%;
+}
+
+.fix-layout-container {
+  width: 6.25rem;
+}
+
+.small-input {
+  width: 48%;
+}
+
+.submitButton {
+  background-color: #2ea043;
+  border: none;
+  border-radius: 0.3em;
+  color: #fefefe;
+  font-weight: 800;
+  margin: 1em 0;
+  padding: 0.8em 2em;
+  transition: 0.3s;
+}
+
+.top-bar {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media screen and ( min-width : 768px ) {
+
+  body {
+    background-color: unset;
+    background-image: linear-gradient(to bottom, #fefefe, #dfe3ee);
+    min-width: 768px;
+  }
+
+  .facebook-login {
+    align-items: flex-end;
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin: 0;
+    width: unset;
+  }
+
+  .facebook-logo-container {
+    align-items: center;
+    background-color: #4267b2;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+  }
+
+  .form-control-button {
+    margin: 0;
+    padding: 0.5em 1em;
+    width: fit-content;
+  }
+
+  .form-control-button:hover {
+    background-color: #4267b2;
+    border: 1px solid #8b9dc3;
+    box-shadow: 0 1px 5px #8b9dc3;
+  }
+
+  .form-control-submit {
+    display: none;
+  }
+
+  .form-group {
+    margin: 0 10px;
+  }
+
+  .form-group-input {
+    margin: 5px 0;
+    padding: 0.2em;
+    width: 150px;
+  }
+
+  .form-group-input:focus , .form-group-input:hover {
+    border: 1px solid #8b9dc3;
+    box-shadow: 0 1px 5px #fefefe;
+  }
+
+  .form-group-input::placeholder {
+    opacity: 0;
+  }
+
+  .form-group-label {
+    display: unset;
+  }
+
+  .left-content {
+    display: unset;
+    width: 60%;
+    margin-left: 1rem;
+  }
+
+  .left-content img {
+    width: 90%;
+  }
+
+  .left-content p {
+    color: #123456;
+    font-weight: 700;
+    margin: 1em 0;
+    width: 80%;
+  }
+
+  .radio-container label:hover {
+    opacity: 1;
+  }
+
+  .right-content {
+    display: flex;
+    width: 40%;
+  }
+
+  .right-content input:hover {
+    border: 1px solid #3b5998;
+  }
+
+  .submitButton:hover {
+    background-color: #6cc644;
+  }
+
+  .top-bar {
+    background-color: #4267b2;
+    color: #fefefe;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 90%;
+  }
+}
+
+@media screen and ( min-width : 1000px ) {
+  body {
+    background-color: unset;
+    background-image: linear-gradient(to bottom, #fefefe, #dfe3ee);
+    min-width: 768px;
+  }
+
+  .facebook-login {
+    align-items: flex-end;
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin: 0;
+    width: unset;
+  }
+
+  .facebook-logo-container {
+    align-items: center;
+    background-color: #4267b2;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+  }
+
+  .form-control-button {
+    margin: 0;
+    padding: 0.5em 1em;
+    width: fit-content;
+  }
+
+  .form-control-button:hover {
+    background-color: #4267b2;
+    border: 1px solid #8b9dc3;
+    box-shadow: 0 1px 5px #8b9dc3;
+  }
+
+  .form-control-submit {
+    display: none;
+  }
+
+  .form-group {
+    margin: 0 10px;
+  }
+
+  .form-group-input {
+    margin: 5px 0;
+    padding: 0.2em;
+    width: 150px;
+  }
+
+  .form-group-input:focus , .form-group-input:hover {
+    border: 1px solid #8b9dc3;
+    box-shadow: 0 1px 5px #fefefe;
+  }
+
+  .form-group-input::placeholder {
+    opacity: 0;
+  }
+
+  .form-group-label {
+    display: unset;
+  }
+
+  .left-content {
+    display: unset;
+    width: 60%;
+    margin-left: 1.5rem;
+  }
+
+  .left-content img {
+    width: 90%;
+  }
+
+  .left-content p {
+    color: #123456;
+    font-weight: 700;
+    margin: 1em 0;
+    width: 80%;
+  }
+
+  .radio-container label:hover {
+    opacity: 1;
+  }
+
+  .right-content {
+    display: flex;
+    width: 40%;
+  }
+
+  .right-content input:hover {
+    border: 1px solid #3b5998;
+  }
+
+  .submitButton:hover {
+    background-color: #6cc644;
+  }
+
+  .top-bar {
+    background-color: #4267b2;
+    color: #fefefe;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 90%;
+  }
+}
+
+@media screen and ( min-width : 1200px ) {
+
+  body {
+    min-width: 1200px;
+  }
+
+  .left-content {
+    width: 700px;
+  }
+
+  .left-content img {
+    width: 537px;
+  }
+
+  .right-content {
+    width: 300px;
+  }
+
+  .top-bar {
+    width: 1100px;
+  }
 }
